@@ -1,0 +1,103 @@
+.dashboard h1 {
+  font-size: 2rem;
+  color: #f1f5f9;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  color: #64748b;
+  margin-bottom: 2rem;
+}
+
+.stats-overview {
+  background: #1e293b;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border: 1px solid #334155;
+}
+
+.action-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.action-card {
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  transition: all 0.2s;
+  display: block;
+}
+
+.action-card:hover {
+  transform: translateY(-2px);
+  border-color: #475569;
+}
+
+.action-card.learn { border-left: 3px solid #0ea5e9; }
+.action-card.quiz { border-left: 3px solid #a78bfa; }
+.action-card.listen { border-left: 3px solid #34d399; }
+.action-card.stats-card { border-left: 3px solid #fbbf24; }
+
+.card-icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.action-card h3 {
+  color: #f1f5f9;
+  margin-bottom: 0.5rem;
+}
+
+.action-card p {
+  color: #64748b;
+  font-size: 0.875rem;
+}
+
+.recent-sessions {
+  background: #1e293b;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  border: 1px solid #334155;
+}
+
+.recent-sessions h3 {
+  color: #f1f5f9;
+  margin-bottom: 1rem;
+}
+
+.recent-sessions table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.recent-sessions th {
+  text-align: left;
+  color: #64748b;
+  font-weight: 500;
+  padding: 0.5rem;
+  border-bottom: 1px solid #334155;
+  font-size: 0.875rem;
+}
+
+.recent-sessions td {
+  padding: 0.5rem;
+  color: #94a3b8;
+  border-bottom: 1px solid #1e293b;
+}
+
+.error-count {
+  color: #f87171 !important;
+  font-weight: 600;
+}
+
+.loading {
+  text-align: center;
+  color: #64748b;
+  padding: 3rem;
+  font-size: 1.25rem;
+}

@@ -1,0 +1,277 @@
+.grammar-page {
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.grammar-start {
+  text-align: center;
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 1rem;
+  padding: 3rem 2rem;
+}
+
+.grammar-start h2 {
+  font-size: 1.75rem;
+  color: #f1f5f9;
+  margin-bottom: 0.5rem;
+}
+
+.grammar-desc {
+  color: #94a3b8;
+  margin-bottom: 2rem;
+}
+
+.topic-selector {
+  margin-bottom: 2rem;
+}
+
+.topic-selector label {
+  color: #94a3b8;
+  margin-right: 0.75rem;
+}
+
+.topic-selector select {
+  padding: 0.5rem 1rem;
+  background: #0f172a;
+  border: 1px solid #334155;
+  border-radius: 0.5rem;
+  color: #e2e8f0;
+  font-size: 1rem;
+}
+
+.start-btn {
+  padding: 0.875rem 2.5rem;
+  background: #0ea5e9;
+  color: white;
+  border-radius: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.start-btn:hover:not(:disabled) {
+  background: #0284c7;
+}
+
+.start-btn:disabled {
+  opacity: 0.6;
+}
+
+.grammar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.grammar-header h2 {
+  font-size: 1.5rem;
+  color: #f1f5f9;
+}
+
+.grammar-progress {
+  color: #94a3b8;
+  background: #334155;
+  padding: 0.25rem 0.75rem;
+  border-radius: 1rem;
+  font-size: 0.875rem;
+}
+
+.grammar-score-bar {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.grammar-topic-badge {
+  margin-left: auto;
+  color: #a78bfa;
+  background: rgba(167, 139, 250, 0.1);
+  padding: 0.2rem 0.75rem;
+  border-radius: 1rem;
+  font-size: 0.8rem;
+  border: 1px solid rgba(167, 139, 250, 0.3);
+}
+
+.grammar-card {
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 1rem;
+  padding: 2rem;
+}
+
+.grammar-sentence {
+  font-size: 1.25rem;
+  color: #e2e8f0;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+.grammar-blank {
+  display: inline-block;
+  min-width: 6rem;
+  border-bottom: 2px solid #0ea5e9;
+  color: #38bdf8;
+  font-weight: 600;
+  text-align: center;
+  padding: 0 0.25rem;
+  margin: 0 0.25rem;
+}
+
+.blank-correct {
+  border-color: #34d399;
+  color: #34d399;
+}
+
+.blank-wrong {
+  border-color: #f87171;
+  color: #34d399;
+}
+
+.grammar-choices {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+}
+
+.grammar-choice-btn {
+  padding: 0.875rem 1rem;
+  background: #0f172a;
+  border: 2px solid #334155;
+  border-radius: 0.5rem;
+  color: #e2e8f0;
+  font-size: 1rem;
+  text-align: left;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.grammar-choice-btn:hover:not(:disabled) {
+  border-color: #0ea5e9;
+  background: #1e293b;
+}
+
+.choice-letter {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background: #334155;
+  color: #94a3b8;
+  font-size: 0.75rem;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.grammar-choice-btn.choice-correct {
+  border-color: #34d399 !important;
+  background: rgba(52, 211, 153, 0.15) !important;
+}
+
+.grammar-choice-btn.choice-correct .choice-letter {
+  background: #34d399;
+  color: #0f172a;
+}
+
+.grammar-choice-btn.choice-wrong {
+  border-color: #f87171 !important;
+  background: rgba(248, 113, 113, 0.15) !important;
+}
+
+.grammar-choice-btn.choice-wrong .choice-letter {
+  background: #f87171;
+  color: #0f172a;
+}
+
+.grammar-choice-btn.choice-dim {
+  opacity: 0.4;
+}
+
+.grammar-explanation {
+  color: #cbd5e1;
+  margin-top: 0.5rem;
+  line-height: 1.6;
+}
+
+.grammar-point-tag {
+  display: inline-block;
+  margin-top: 0.75rem;
+  padding: 0.2rem 0.75rem;
+  background: rgba(167, 139, 250, 0.1);
+  border: 1px solid rgba(167, 139, 250, 0.3);
+  border-radius: 1rem;
+  color: #a78bfa;
+  font-size: 0.8rem;
+}
+
+.grammar-actions {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.grammar-result-summary {
+  text-align: center;
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 1rem;
+  padding: 3rem 2rem;
+}
+
+.grammar-result-summary h2 {
+  font-size: 1.75rem;
+  color: #f1f5f9;
+  margin-bottom: 1.5rem;
+}
+
+.grammar-info {
+  color: #64748b;
+  font-size: 0.875rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Reuse quiz styles */
+.grammar-page .score-circle,
+.grammar-page .score-pct,
+.grammar-page .score-details,
+.grammar-page .correct-score,
+.grammar-page .wrong-score,
+.grammar-page .correct-count,
+.grammar-page .wrong-count,
+.grammar-page .restart-btn,
+.grammar-page .result-feedback,
+.grammar-page .result-feedback.correct,
+.grammar-page .result-feedback.wrong,
+.grammar-page .result-feedback.correct p:first-child,
+.grammar-page .result-feedback.wrong p:first-child,
+.grammar-page .speak-btn-inline,
+.grammar-page .speak-btn-inline:hover,
+.grammar-page .next-btn {
+  /* Inherit from QuizPage.css which is globally loaded */
+}
+
+.grammar-page .next-btn {
+  padding: 0.6rem 1.5rem;
+  background: #0ea5e9;
+  color: white;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.grammar-page .next-btn:hover {
+  background: #0284c7;
+}
+
+@media (max-width: 480px) {
+  .grammar-choices {
+    grid-template-columns: 1fr;
+  }
+}

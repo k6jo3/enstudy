@@ -1,0 +1,52 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background: #1e293b;
+  border-bottom: 1px solid #334155;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #38bdf8;
+  letter-spacing: -0.5px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.nav-links a {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  color: #94a3b8;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.nav-links a:hover {
+  color: #e2e8f0;
+  background: #334155;
+}
+
+.nav-links a.active {
+  color: #38bdf8;
+  background: #0f172a;
+}
+
+.main-content {
+  flex: 1;
+  padding: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+  width: 100%;
+}

@@ -1,0 +1,40 @@
+.phrase-card {
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 1rem;
+  padding: 2rem;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.phrase-card.has-error {
+  border-color: #f87171;
+  box-shadow: 0 0 0 1px rgba(248, 113, 113, 0.2);
+}
+
+.phrase-main {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.phrase-text {
+  font-size: 1.5rem;
+  color: #a78bfa;
+  font-weight: 700;
+}
+
+.phrase-meaning {
+  font-size: 1.25rem;
+  color: #e2e8f0;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #334155;
+}
+
+.phrase-example {
+  color: #94a3b8;
+  margin-top: 0.75rem;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
