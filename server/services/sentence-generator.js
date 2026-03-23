@@ -117,6 +117,7 @@ const bodyDialogues = [
   },
 ];
 
+// Food dialogue templates — must work for ingredients, meals, dishes, and drinks
 const foodDialogues = [
   {
     lines: [
@@ -127,21 +128,21 @@ const foodDialogues = [
   },
   {
     lines: [
-      { speaker: 'A', text: "This {word} tastes amazing! What's the recipe?", zh: '這個{word}超好吃的！怎麼做的？' },
-      { speaker: 'B', text: "My mom taught me. I'll share it with you.", zh: '我媽教我的。我分享給你。' },
+      { speaker: 'A', text: "Have you ever tried {word}?", zh: '你有吃過{word}嗎？' },
+      { speaker: 'B', text: "Yes, I love it! It's one of my favorites.", zh: '有啊，我超愛的！是我的最愛之一。' },
     ]
   },
   {
     lines: [
-      { speaker: 'A', text: "We're out of {word}. Can you buy some?", zh: '{word}用完了。你可以去買嗎？' },
-      { speaker: 'B', text: "Sure, I'll stop by the store on my way home.", zh: '好，我回家路上順便買。' },
+      { speaker: 'A', text: "What do you think about {word}?", zh: '你覺得{word}怎麼樣？' },
+      { speaker: 'B', text: "I like it a lot! It's one of my favorites.", zh: '我很喜歡！是我的最愛之一。' },
     ]
   },
   {
     lines: [
-      { speaker: 'A', text: "I had {word} for breakfast this morning.", zh: '我今天早餐吃了{word}。' },
-      { speaker: 'B', text: "Sounds delicious! I just had toast.", zh: '聽起來好好吃！我只吃了吐司。' },
-      { speaker: 'A', text: "You should try it sometime.", zh: '你改天也試試。' },
+      { speaker: 'A', text: "I'm craving {word} right now.", zh: '我現在好想吃{word}。' },
+      { speaker: 'B', text: "Me too! Let's go get some.", zh: '我也是！我們去買吧。' },
+      { speaker: 'A', text: "There's a good place nearby.", zh: '附近有一間不錯的。' },
     ]
   },
 ];
@@ -174,31 +175,32 @@ const animalDialogues = [
   },
 ];
 
+// Nature dialogue templates — must work for weather, disasters, geography, and ecology
 const natureDialogues = [
   {
     lines: [
-      { speaker: 'A', text: "The {word} is really strong today.", zh: '今天的{word}好強。' },
-      { speaker: 'B', text: "I know! Be careful when you go outside.", zh: '對啊！出門小心。' },
+      { speaker: 'A', text: "Did you learn about {word} in school?", zh: '你在學校有學過{word}嗎？' },
+      { speaker: 'B', text: "Yes, it was really interesting. Nature is amazing.", zh: '有，真的很有趣。大自然很神奇。' },
     ]
   },
   {
     lines: [
-      { speaker: 'A', text: "Look at the {word}! It's so beautiful.", zh: '你看那個{word}！好美。' },
-      { speaker: 'B', text: "Wow, let me take a picture.", zh: '哇，讓我拍張照。' },
-      { speaker: 'A', text: "Hurry! It might disappear soon.", zh: '快！可能很快就不見了。' },
+      { speaker: 'A', text: "I saw a documentary about {word} last night.", zh: '我昨晚看了一部關於{word}的紀錄片。' },
+      { speaker: 'B', text: "Really? Was it good?", zh: '真的嗎？好看嗎？' },
+      { speaker: 'A', text: "Yes! I learned a lot. You should watch it.", zh: '很好看！我學了很多。你也應該看。' },
     ]
   },
   {
     lines: [
-      { speaker: 'A', text: "I love the {word} in the morning.", zh: '我喜歡早上的{word}。' },
-      { speaker: 'B', text: "Me too. It feels so peaceful.", zh: '我也是。感覺很平靜。' },
+      { speaker: 'A', text: "Have you ever seen a {word} in real life?", zh: '你有在現實生活中見過{word}嗎？' },
+      { speaker: 'B', text: "No, only in photos. It must be impressive.", zh: '沒有，只看過照片。一定很壯觀。' },
     ]
   },
   {
     lines: [
-      { speaker: 'A', text: "Did you hear the {word} last night?", zh: '你昨晚有聽到{word}嗎？' },
-      { speaker: 'B', text: "Yes! It woke me up at midnight.", zh: '有！半夜被吵醒了。' },
-      { speaker: 'A', text: "Same here. I couldn't fall back asleep.", zh: '我也是。睡不回去了。' },
+      { speaker: 'A', text: "The news said there might be a {word} this week.", zh: '新聞說這週可能會有{word}。' },
+      { speaker: 'B', text: "We should be prepared just in case.", zh: '我們以防萬一先準備好。' },
+      { speaker: 'A', text: "Good idea. Better safe than sorry.", zh: '好主意。小心為上。' },
     ]
   },
 ];
@@ -345,6 +347,270 @@ const abstractDialogues = [
   },
 ];
 
+// Transport dialogue templates (vehicles, travel items, roads)
+const transportDialogues = [
+  {
+    lines: [
+      { speaker: 'A', text: "How do you get to work? By {word}?", zh: '你怎麼去上班？搭{word}嗎？' },
+      { speaker: 'B', text: "Yes, I take the {word} every day. It's very convenient.", zh: '對，我每天搭{word}。很方便。' },
+    ]
+  },
+  {
+    lines: [
+      { speaker: 'A', text: "The {word} is running late today.", zh: '{word}今天誤點了。' },
+      { speaker: 'B', text: "Again? We should leave earlier next time.", zh: '又來？下次我們早點出門好了。' },
+    ]
+  },
+  {
+    lines: [
+      { speaker: 'A', text: "Have you ever been on a {word}?", zh: '你有搭過{word}嗎？' },
+      { speaker: 'B', text: "No, but I've always wanted to try it!", zh: '沒有，但我一直很想試試！' },
+      { speaker: 'A', text: "Let's plan a trip together then.", zh: '那我們一起計畫一趟旅行吧。' },
+    ]
+  },
+  {
+    lines: [
+      { speaker: 'A', text: "Don't forget to check the {word} before we leave.", zh: '出發前別忘了檢查{word}。' },
+      { speaker: 'B', text: "Good reminder. Safety first!", zh: '好提醒。安全第一！' },
+    ]
+  },
+];
+
+// Activity dialogue templates (sports, hobbies, entertainment)
+// NOTE: templates must work for all activity words (sports, music, shows, crafts)
+const activityDialogues = [
+  {
+    lines: [
+      { speaker: 'A', text: "Have you tried {word} before?", zh: '你有試過{word}嗎？' },
+      { speaker: 'B', text: "Yes! It was so fun. You should try it too.", zh: '有啊！超好玩的。你也應該試試。' },
+      { speaker: 'A', text: "Maybe this weekend. Can you teach me?", zh: '也許這週末。你可以教我嗎？' },
+    ]
+  },
+  {
+    lines: [
+      { speaker: 'A', text: "I just started getting into {word}.", zh: '我最近開始接觸{word}。' },
+      { speaker: 'B', text: "Really? How do you like it so far?", zh: '真的嗎？目前覺得怎麼樣？' },
+      { speaker: 'A', text: "It's harder than I thought, but really rewarding.", zh: '比我想像的難，但很有成就感。' },
+    ]
+  },
+  {
+    lines: [
+      { speaker: 'A', text: "Are you into {word}?", zh: '你有在玩{word}嗎？' },
+      { speaker: 'B', text: "Sounds great! I've always been curious about it.", zh: '聽起來不錯！我一直很好奇。' },
+    ]
+  },
+  {
+    lines: [
+      { speaker: 'A', text: "I enjoy {word}. It helps me relax after a long day.", zh: '我很喜歡{word}。忙了一天後很紓壓。' },
+      { speaker: 'B', text: "I need a hobby like that too. I'm so stressed lately.", zh: '我也需要這種嗜好。最近壓力好大。' },
+    ]
+  },
+];
+
+// Household dialogue templates (home items, tools, kitchenware)
+const householdDialogues = [
+  {
+    lines: [
+      { speaker: 'A', text: "Where did you put the {word}?", zh: '你把{word}放哪裡了？' },
+      { speaker: 'B', text: "I think it's in the drawer. Let me check.", zh: '我覺得在抽屜裡。我看看。' },
+    ]
+  },
+  {
+    lines: [
+      { speaker: 'A', text: "We need to buy a new {word}. This one is falling apart.", zh: '我們需要買個新的{word}。這個快壞了。' },
+      { speaker: 'B', text: "You're right. Let's go shopping this weekend.", zh: '你說得對。這週末去買吧。' },
+    ]
+  },
+  {
+    lines: [
+      { speaker: 'A', text: "Can you pass me the {word}?", zh: '你可以把{word}遞給我嗎？' },
+      { speaker: 'B', text: "Sure, here you go.", zh: '好，給你。' },
+      { speaker: 'A', text: "Thanks! This will make things much easier.", zh: '謝啦！這樣方便多了。' },
+    ]
+  },
+  {
+    lines: [
+      { speaker: 'A', text: "Do you know how to use this {word}?", zh: '你知道怎麼用這個{word}嗎？' },
+      { speaker: 'B', text: "Let me read the instructions first.", zh: '讓我先看一下說明書。' },
+    ]
+  },
+];
+
+// Tech dialogue templates (devices, programming, digital)
+const techDialogues = [
+  {
+    lines: [
+      { speaker: 'A', text: "Do you know what a {word} is?", zh: '你知道什麼是{word}嗎？' },
+      { speaker: 'B', text: "Yes, it's very common in the tech industry.", zh: '知道，在科技業很常見。' },
+      { speaker: 'A', text: "Can you explain it in simple terms?", zh: '你可以用簡單的方式解釋嗎？' },
+    ]
+  },
+  {
+    lines: [
+      { speaker: 'A', text: "I've been learning about {word} recently.", zh: '我最近在學{word}。' },
+      { speaker: 'B', text: "That's really useful! Where did you learn it?", zh: '那真的很實用！你在哪學的？' },
+      { speaker: 'A', text: "Mostly from online tutorials and YouTube.", zh: '主要是線上教學和 YouTube。' },
+    ]
+  },
+  {
+    lines: [
+      { speaker: 'A', text: "There's a problem with the {word}.", zh: '{word}有問題。' },
+      { speaker: 'B', text: "Have you tried restarting it?", zh: '你有試過重新啟動嗎？' },
+      { speaker: 'A', text: "Not yet. Let me try that first.", zh: '還沒。我先試試看。' },
+    ]
+  },
+  {
+    lines: [
+      { speaker: 'A', text: "This new {word} is amazing. It saves so much time.", zh: '這個新的{word}超讚。省了好多時間。' },
+      { speaker: 'B', text: "I should check it out. Send me the link!", zh: '我應該看看。傳連結給我！' },
+    ]
+  },
+];
+
+// Time dialogue templates (periods, calendar, events)
+const timeDialogues = [
+  {
+    lines: [
+      { speaker: 'A', text: "I love the {word}. Everything feels so peaceful.", zh: '我喜歡{word}。一切都很平靜。' },
+      { speaker: 'B', text: "Me too. It's the best part of the day.", zh: '我也是。那是一天中最棒的時候。' },
+    ]
+  },
+  {
+    lines: [
+      { speaker: 'A', text: "It's already {word}! Time flies.", zh: '已經{word}了！時間過得好快。' },
+      { speaker: 'B', text: "I know! It feels like the year just started.", zh: '對啊！感覺才剛過新年。' },
+    ]
+  },
+  {
+    lines: [
+      { speaker: 'A', text: "What are your plans for the {word}?", zh: '你{word}有什麼計畫？' },
+      { speaker: 'B', text: "Not sure yet. Maybe just stay home and relax.", zh: '還不確定。也許就待在家放鬆。' },
+    ]
+  },
+  {
+    lines: [
+      { speaker: 'A', text: "Can you believe it's been a whole {word}?", zh: '你能相信已經過了一整個{word}嗎？' },
+      { speaker: 'B', text: "Time really flies when you're busy.", zh: '忙起來時間真的過得很快。' },
+    ]
+  },
+];
+
+// Academic dialogue templates — must work for courses, concepts, tools, and science terms
+const academicDialogues = [
+  {
+    lines: [
+      { speaker: 'A', text: "We learned about {word} in class today.", zh: '我們今天上課學了{word}。' },
+      { speaker: 'B', text: "Oh, that sounds interesting. What did you learn?", zh: '聽起來很有趣。你學了什麼？' },
+      { speaker: 'A', text: "It was a lot of new information. I need to review it.", zh: '有很多新資訊。我需要複習。' },
+    ]
+  },
+  {
+    lines: [
+      { speaker: 'A', text: "Do you know anything about {word}?", zh: '你知道{word}的事嗎？' },
+      { speaker: 'B', text: "A little. I studied it in college.", zh: '知道一點。我大學有學過。' },
+    ]
+  },
+  {
+    lines: [
+      { speaker: 'A', text: "The professor explained {word} really clearly.", zh: '教授把{word}講得很清楚。' },
+      { speaker: 'B', text: "Lucky you! I still don't fully understand it.", zh: '你真幸運！我還是不太懂。' },
+      { speaker: 'A', text: "I can lend you my notes if you want.", zh: '你要的話我可以借你筆記。' },
+    ]
+  },
+  {
+    lines: [
+      { speaker: 'A', text: "I need to look up {word} for my assignment.", zh: '我需要查{word}來寫作業。' },
+      { speaker: 'B', text: "Try the library or Google Scholar.", zh: '試試圖書館或 Google 學術搜尋。' },
+    ]
+  },
+];
+
+// Legal / government dialogue templates
+const legalDialogues = [
+  {
+    lines: [
+      { speaker: 'A', text: "Have you heard about the {word} in the news?", zh: '你有聽說新聞上的{word}嗎？' },
+      { speaker: 'B', text: "Yes, it's a big deal. Everyone's talking about it.", zh: '有，很大條的事。大家都在講。' },
+    ]
+  },
+  {
+    lines: [
+      { speaker: 'A', text: "I need to learn more about {word}.", zh: '我需要多了解一下{word}。' },
+      { speaker: 'B', text: "There are some good articles online about it.", zh: '網路上有一些不錯的文章。' },
+    ]
+  },
+  {
+    lines: [
+      { speaker: 'A', text: "The {word} was announced on the news today.", zh: '今天新聞上公布了{word}。' },
+      { speaker: 'B', text: "I saw that! It could affect a lot of people.", zh: '我看到了！可能會影響很多人。' },
+      { speaker: 'A', text: "We should pay attention to what happens next.", zh: '我們應該留意接下來的發展。' },
+    ]
+  },
+  {
+    lines: [
+      { speaker: 'A', text: "Do you understand how {word} works?", zh: '你了解{word}是怎麼運作的嗎？' },
+      { speaker: 'B', text: "Honestly, it's pretty complicated. Let's look it up.", zh: '老實說蠻複雜的。我們查一下。' },
+    ]
+  },
+];
+
+// Shopping dialogue templates — must work for goods, accessories, and shopping concepts
+const shoppingDialogues = [
+  {
+    lines: [
+      { speaker: 'A', text: "Excuse me, where can I find the {word}?", zh: '不好意思，請問{word}在哪裡？' },
+      { speaker: 'B', text: "It should be on the second floor, aisle three.", zh: '應該在二樓第三走道。' },
+    ]
+  },
+  {
+    lines: [
+      { speaker: 'A', text: "I need to get a new {word}. Want to come shopping?", zh: '我需要買個新的{word}。要一起逛嗎？' },
+      { speaker: 'B', text: "Sure! I could use some shopping therapy too.", zh: '好啊！我也需要購物療法。' },
+    ]
+  },
+  {
+    lines: [
+      { speaker: 'A', text: "What do you think of this {word}?", zh: '你覺得這個{word}怎麼樣？' },
+      { speaker: 'B', text: "It looks nice. Is it within your budget?", zh: '看起來不錯。在你預算內嗎？' },
+      { speaker: 'A', text: "Let me check the price first.", zh: '我先看一下價格。' },
+    ]
+  },
+  {
+    lines: [
+      { speaker: 'A', text: "I saw a great {word} online. Should I buy it?", zh: '我在網路上看到一個很棒的{word}。該買嗎？' },
+      { speaker: 'B', text: "Read the reviews first. Don't impulse buy!", zh: '先看評價。不要衝動購物！' },
+    ]
+  },
+];
+
+// Measurement dialogue templates (numbers, units, math)
+const measurementDialogues = [
+  {
+    lines: [
+      { speaker: 'A', text: "What's the {word} of this room?", zh: '這個房間的{word}是多少？' },
+      { speaker: 'B', text: "I'm not sure. Let me measure it.", zh: '我不確定。讓我量一下。' },
+    ]
+  },
+  {
+    lines: [
+      { speaker: 'A', text: "Can you help me calculate the {word}?", zh: '你可以幫我算一下{word}嗎？' },
+      { speaker: 'B', text: "Sure, give me the numbers.", zh: '好，把數字給我。' },
+    ]
+  },
+  {
+    lines: [
+      { speaker: 'A', text: "The {word} is higher than we expected.", zh: '{word}比我們預期的高。' },
+      { speaker: 'B', text: "We need to adjust our plan then.", zh: '那我們需要調整一下計畫。' },
+    ]
+  },
+  {
+    lines: [
+      { speaker: 'A', text: "Do you remember the {word} from the report?", zh: '你記得報告中的{word}嗎？' },
+      { speaker: 'B', text: "Let me pull up the file and check.", zh: '我把檔案叫出來看看。' },
+    ]
+  },
+];
+
 // Map noun subcategories to their dialogue templates
 const nounDialoguesByCategory = {
   person: personDialogues,
@@ -356,6 +622,15 @@ const nounDialoguesByCategory = {
   object: objectDialogues,
   work: workDialogues,
   abstract: abstractDialogues,
+  transport: transportDialogues,
+  activity: activityDialogues,
+  household: householdDialogues,
+  tech: techDialogues,
+  time: timeDialogues,
+  academic: academicDialogues,
+  legal: legalDialogues,
+  shopping: shoppingDialogues,
+  measurement: measurementDialogues,
 };
 
 const adjDialogues = [
@@ -472,6 +747,63 @@ const phraseNaturalDialogues = [
   },
 ];
 
+// Casual/gossip-style phrase dialogue templates — for daily life / chat phrases
+const phraseCasualDialogues = [
+  {
+    lines: [
+      { speaker: 'A', text: 'OMG, you have to hear this. {example}', zh: '天啊，你一定要聽這個。{example_zh}' },
+      { speaker: 'B', text: 'No way! Tell me everything!', zh: '不會吧！全部告訴我！' },
+    ]
+  },
+  {
+    lines: [
+      { speaker: 'A', text: "So, what's the latest gossip?", zh: '所以，最新的八卦是什麼？' },
+      { speaker: 'B', text: 'Well... {example}', zh: '嗯⋯{example_zh}' },
+      { speaker: 'A', text: "Seriously?! That's wild!", zh: '認真？！太扯了！' },
+    ]
+  },
+  {
+    lines: [
+      { speaker: 'A', text: "You won't believe what happened yesterday.", zh: '你不會相信昨天發生了什麼。' },
+      { speaker: 'B', text: "What? Spill it!", zh: '什麼？快說！' },
+      { speaker: 'A', text: '{example}', zh: '{example_zh}' },
+    ]
+  },
+  {
+    lines: [
+      { speaker: 'A', text: '{example}', zh: '{example_zh}' },
+      { speaker: 'B', text: "Haha, that's so relatable!", zh: '哈哈，太有共鳴了！' },
+    ]
+  },
+  {
+    lines: [
+      { speaker: 'A', text: "Okay, real talk. {example}", zh: '好，認真講。{example_zh}' },
+      { speaker: 'B', text: "I mean, yeah, that totally makes sense.", zh: '對啊，完全有道理。' },
+      { speaker: 'A', text: "Right?! I thought I was the only one who noticed.", zh: '對吧？！我以為只有我注意到。' },
+    ]
+  },
+  {
+    lines: [
+      { speaker: 'A', text: "I need to vent. {example}", zh: '我需要吐苦水。{example_zh}' },
+      { speaker: 'B', text: "I feel you. That sounds super frustrating.", zh: '我懂。那聽起來超煩的。' },
+    ]
+  },
+  {
+    lines: [
+      { speaker: 'A', text: "Guess what I just found out?", zh: '你猜我剛發現什麼？' },
+      { speaker: 'B', text: "What?! Don't keep me waiting!", zh: '什麼？！別賣關子！' },
+      { speaker: 'A', text: '{example}', zh: '{example_zh}' },
+    ]
+  },
+  {
+    lines: [
+      { speaker: 'A', text: '{example}', zh: '{example_zh}' },
+      { speaker: 'B', text: "LOL, classic. That sounds about right.", zh: '哈哈，經典。意料之中。' },
+      { speaker: 'A', text: "I know, right? Some things never change.", zh: '就是啊，有些事永遠不會變。' },
+    ]
+  },
+];
+
 // Learning-style phrase dialogue templates
 const phraseDialogues = [
   {
@@ -572,14 +904,23 @@ function generateDialogues(words, phrases, count = 10) {
     });
   }
 
-  // Generate phrase-based dialogues (70% natural, 30% learning-style)
+  // Generate phrase-based dialogues (casual / natural / learning-style)
+  // Casual phrases (gossip, slang, chat) use casual templates
+  // Other phrases: 70% natural, 30% learning-style
+  const casualKeywords = /gossip|slang|八卦|吐槽|抱怨|嗆|酸|吐苦水|炫耀|搭訕|已讀不回|爆料|翻白眼|翻臉|嘴砲|廢話|幹話|挖苦|諷刺|嫉妒|吃醋|崩潰|翻車|嗑|瓜|茶|drama|shade|flex|vibe|slay|cap|ghost|sip|vent|roast|crush|friendzone|cringe|simp|stan/i;
   const phraseCount = count - dialogues.length;
   for (let i = 0; i < phraseCount && i < phrases.length; i++) {
     const p = phrases[i];
-    const useNatural = (p.id || i) % 10 < 7;
-    const tmpl = useNatural
-      ? pickTemplate(phraseNaturalDialogues, p.id || i)
-      : pickTemplate(phraseDialogues, p.id || i);
+    const isCasual = casualKeywords.test(p.meaning || '') || casualKeywords.test(p.phrase || '');
+    let tmpl;
+    if (isCasual) {
+      tmpl = pickTemplate(phraseCasualDialogues, p.id || i);
+    } else {
+      const useNatural = (p.id || i) % 10 < 7;
+      tmpl = useNatural
+        ? pickTemplate(phraseNaturalDialogues, p.id || i)
+        : pickTemplate(phraseDialogues, p.id || i);
+    }
 
     const exampleText = p.example || p.phrase;
     const exampleZh = p.meaning || '';

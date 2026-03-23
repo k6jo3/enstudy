@@ -1,6 +1,7 @@
 .reading-page {
   max-width: 800px;
   margin: 0 auto;
+  padding-bottom: 5rem; /* space for floating bar */
 }
 
 .story-header {
@@ -19,6 +20,57 @@
   font-size: 1.5rem;
 }
 
+/* ---- Full article TTS controls ---- */
+.tts-article-controls {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.tts-article-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.5rem 1rem;
+  background: #1e293b;
+  border: 1px solid #3b82f6;
+  border-radius: 0.5rem;
+  color: #60a5fa;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.tts-article-btn:hover {
+  background: #3b82f6;
+  color: #fff;
+}
+
+.tts-icon {
+  font-size: 0.75rem;
+}
+
+.tts-playback-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.tts-now-playing {
+  color: #60a5fa;
+  font-size: 0.9rem;
+  font-weight: 600;
+  animation: tts-pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes tts-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+/* ---- Story card ---- */
 .story-card {
   background: #1e293b;
   border: 1px solid #334155;
@@ -27,13 +79,66 @@
   margin-bottom: 1.5rem;
 }
 
-.story-content p {
-  color: #cbd5e1;
-  line-height: 1.8;
-  margin-bottom: 1rem;
-  font-size: 1rem;
+/* ---- Paragraph row with TTS button ---- */
+.story-para-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  transition: background 0.3s;
 }
 
+.story-para-row.para-active {
+  background: rgba(59, 130, 246, 0.08);
+}
+
+.story-para-text {
+  color: #cbd5e1;
+  line-height: 1.8;
+  font-size: 1rem;
+  flex: 1;
+  margin: 0;
+}
+
+.tts-para-btn {
+  flex-shrink: 0;
+  width: 2rem;
+  height: 2rem;
+  margin-top: 0.15rem;
+  background: transparent;
+  border: 1px solid #475569;
+  border-radius: 50%;
+  color: #94a3b8;
+  font-size: 0.85rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border-color 0.2s, color 0.2s, background 0.2s;
+}
+
+.tts-para-btn:hover {
+  border-color: #60a5fa;
+  color: #60a5fa;
+  background: rgba(59, 130, 246, 0.1);
+}
+
+.tts-para-btn.playing {
+  border-color: #ef4444;
+  color: #ef4444;
+  background: rgba(239, 68, 68, 0.1);
+}
+
+/* ---- Sentence highlighting ---- */
+.sentence-active {
+  background: rgba(251, 191, 36, 0.15);
+  border-radius: 2px;
+  transition: background 0.2s;
+}
+
+/* ---- Vocab highlight & tooltip ---- */
 .vocab-highlight {
   color: #60a5fa;
   font-weight: 600;
@@ -63,6 +168,61 @@
   font-style: italic;
 }
 
+/* ---- Floating playback bar ---- */
+.tts-floating-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #0f172a;
+  border-top: 1px solid #334155;
+  padding: 0.75rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  z-index: 100;
+  box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.tts-bar-label {
+  color: #60a5fa;
+  font-weight: 600;
+  font-size: 0.9rem;
+  animation: tts-pulse 1.5s ease-in-out infinite;
+}
+
+.tts-bar-controls {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.tts-bar-btn {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  border: 1px solid #475569;
+  background: #1e293b;
+  color: #e2e8f0;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.tts-bar-btn:hover {
+  background: #334155;
+  border-color: #60a5fa;
+}
+
+.tts-bar-stop:hover {
+  border-color: #ef4444;
+  color: #ef4444;
+}
+
+/* ---- Quiz styles (unchanged) ---- */
 .quiz-start-btn {
   display: block;
   width: 100%;

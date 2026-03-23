@@ -3,10 +3,11 @@ const words = require('../data/words');
 const phrases = require('../data/phrases');
 const phrases2 = require('../data/phrases2');
 const phrases3 = require('../data/phrases3');
+const phrases4 = require('../data/phrases4');
 const grammarQuestions = require('../data/grammar');
 const stories = require('../data/stories');
 
-const allPhrases = [...phrases, ...phrases2, ...phrases3];
+const allPhrases = [...phrases, ...phrases2, ...phrases3, ...phrases4];
 
 async function seedData() {
   const db = await getDb();
