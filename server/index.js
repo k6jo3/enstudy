@@ -5,6 +5,7 @@ const { initSchema } = require('./db/schema');
 const { seedData } = require('./db/seed');
 const { setupAutoSave } = require('./db/connection');
 const { backfillMastery } = require('./services/mastery-service');
+const { run } = require('./db/helpers');
 
 async function start() {
   // Initialize database
@@ -14,6 +15,9 @@ async function start() {
   // Backfill mastery records for previously learned items
   const today = new Date().toISOString().split('T')[0];
   await backfillMastery(today);
+
+  // Backfill: mark all past sessions as completed (one-time migration)
+  await run('UPDATE sessions SET completed = 1 WHERE session_date < ? AND completed = 0', [today]);
 
   setupAutoSave();
 

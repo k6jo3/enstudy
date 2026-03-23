@@ -54,6 +54,32 @@ async function getRandomPhrases(count, excludeIds = []) {
   return queryAll('SELECT * FROM phrases ORDER BY RANDOM() LIMIT ?', [count]);
 }
 
+async function getLearnedRandomPhrases(count, excludeIds = [], difficulty = null) {
+  const conditions = ['ll.item_type = \'phrase\'', 'll.is_review = 0'];
+  const params = [];
+
+  if (excludeIds.length > 0) {
+    conditions.push(`p.id NOT IN (${excludeIds.map(() => '?').join(',')})`);
+    params.push(...excludeIds);
+  }
+  if (difficulty !== null) {
+    conditions.push('p.difficulty = ?');
+    params.push(difficulty);
+  }
+
+  params.push(count);
+  const results = await queryAll(`
+    SELECT p.* FROM phrases p
+    INNER JOIN learning_log ll ON ll.item_id = p.id AND ${conditions.join(' AND ')}
+    ORDER BY RANDOM() LIMIT ?
+  `, params);
+
+  if (results.length < count && difficulty !== null) {
+    return getLearnedRandomPhrases(count, excludeIds, null);
+  }
+  return results;
+}
+
 module.exports = {
   getNewPhrases,
   getPhraseById,
@@ -61,5 +87,6 @@ module.exports = {
   getUnlearnedCount,
   getTotalCount,
   getLearnedCount,
-  getRandomPhrases
+  getRandomPhrases,
+  getLearnedRandomPhrases
 };

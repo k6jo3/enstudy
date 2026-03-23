@@ -23,6 +23,37 @@ router.get('/', async (req, res) => {
   }
 });
 
+// GET /api/stats/learned - All learned words/phrases with mastery info
+router.get('/learned', async (req, res) => {
+  try {
+    const words = await queryAll(`
+      SELECT w.*, 'word' as item_type,
+             COALESCE(wm.mastery_level, 0) as mastery_level,
+             wm.next_review_date,
+             ll.learn_date
+      FROM words w
+      INNER JOIN learning_log ll ON ll.item_id = w.id AND ll.item_type = 'word' AND ll.is_review = 0
+      LEFT JOIN word_mastery wm ON wm.item_type = 'word' AND wm.item_id = w.id
+      ORDER BY ll.learn_date DESC, w.word ASC
+    `);
+
+    const phrases = await queryAll(`
+      SELECT p.*, 'phrase' as item_type,
+             COALESCE(wm.mastery_level, 0) as mastery_level,
+             wm.next_review_date,
+             ll.learn_date
+      FROM phrases p
+      INNER JOIN learning_log ll ON ll.item_id = p.id AND ll.item_type = 'phrase' AND ll.is_review = 0
+      LEFT JOIN word_mastery wm ON wm.item_type = 'phrase' AND wm.item_id = p.id
+      ORDER BY ll.learn_date DESC, p.phrase ASC
+    `);
+
+    res.json({ words, phrases });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
 router.get('/errors', async (req, res) => {
   try {
     const errors = await errorTracker.getErrorItems();

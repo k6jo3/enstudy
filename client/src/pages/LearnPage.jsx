@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import PhraseCard from '../components/PhraseCard';
 import WordCard from '../components/WordCard';
-import { useApi } from '../hooks/useApi';
+import { useApi, postApi } from '../hooks/useApi';
 import { useTTS } from '../hooks/useTTS';
 import './LearnPage.css';
 
@@ -9,6 +9,12 @@ function LearnPage() {
   const { data, loading, error } = useApi('/daily');
   const [phase, setPhase] = useState(null);
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [sessionCompleted, setSessionCompleted] = useState(false);
+
+  // Check if this session is already completed
+  useEffect(() => {
+    if (data?.session?.completed) setSessionCompleted(true);
+  }, [data]);
 
   // Set initial phase once data loads
   useEffect(() => {
@@ -90,7 +96,17 @@ function LearnPage() {
             <SentenceItem key={i} sentence={s} index={i} />
           ))}
           <div className="learn-complete">
-            <p>今日學習完成！前往測驗鞏固記憶。</p>
+            {sessionCompleted ? (
+              <p>今日學習已完成！前往測驗鞏固記憶。</p>
+            ) : (
+              <>
+                <p>已瀏覽所有內容，完成後可進入下一天的學習。</p>
+                <button className="complete-btn" onClick={async () => {
+                  await postApi('/daily/complete', {});
+                  setSessionCompleted(true);
+                }}>完成今日學習</button>
+              </>
+            )}
           </div>
         </div>
       );
@@ -102,7 +118,8 @@ function LearnPage() {
   return (
     <div className="learn-page">
       <div className="learn-header">
-        <h2>今日學習</h2>
+        <h2>今日學習 {data.session?.session_date && data.session.session_date !== new Date().toISOString().split('T')[0]
+          ? `(${data.session.session_date})` : ''}</h2>
         <span className="phase-label">{renderPhaseLabel()}</span>
       </div>
 

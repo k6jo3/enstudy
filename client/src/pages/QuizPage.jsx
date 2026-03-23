@@ -37,7 +37,9 @@ function QuizPage() {
       setChoicesReady(false);
       setChoices([]);
       if (mode === 'choice') {
-        generateChoices(quizItems[currentIndex]);
+        const controller = new AbortController();
+        generateChoices(quizItems[currentIndex], controller.signal);
+        return () => controller.abort();
       }
     }
   }, [currentIndex, quizItems.length]);
@@ -48,19 +50,38 @@ function QuizPage() {
     }
   }, [quizMode, currentIndex]);
 
-  const generateChoices = async (item) => {
+  const generateChoices = async (item, signal) => {
     try {
-      const res = await fetch(`/api/quiz/options?itemType=${item.item_type}&itemId=${item.id}&count=3`);
+      const res = await fetch(
+        `/api/quiz/options?itemType=${item.item_type}&itemId=${item.id}&count=5&difficulty=${item.difficulty || ''}`,
+        { signal }
+      );
+      if (signal?.aborted) return;
       const distractors = await res.json();
+      if (signal?.aborted) return;
+
       const correctAnswer = { text: item.hint, correct: true };
+      const correctLower = item.hint.toLowerCase();
       const wrongAnswers = distractors
-        .filter(d => d.meaning !== item.hint)
+        .filter(d => {
+          const dLower = d.meaning.toLowerCase();
+          // Filter out semantically similar meanings (substring check)
+          return dLower !== correctLower
+            && !dLower.includes(correctLower)
+            && !correctLower.includes(dLower);
+        })
         .map(d => ({ text: d.meaning, correct: false }))
         .slice(0, 3);
+
+      if (wrongAnswers.length < 2) {
+        setQuizMode('typing');
+        return;
+      }
       const allChoices = [correctAnswer, ...wrongAnswers].sort(() => Math.random() - 0.5);
       setChoices(allChoices);
       setChoicesReady(true);
-    } catch {
+    } catch (err) {
+      if (err.name === 'AbortError') return;
       setQuizMode('typing');
     }
   };
@@ -116,6 +137,8 @@ function QuizPage() {
       setChoicesReady(false);
     } else {
       setFinished(true);
+      // Mark daily session as complete when quiz finishes
+      postApi('/daily/complete', {}).catch(() => {});
     }
   };
 

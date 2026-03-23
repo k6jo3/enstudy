@@ -29,13 +29,23 @@ router.post('/submit', async (req, res) => {
 // Get quiz options (distractors) for multiple choice
 router.get('/options', async (req, res) => {
   try {
-    const { itemType, itemId, count = 3 } = req.query;
+    const { itemType, itemId, count = 5, difficulty } = req.query;
+    const n = Number(count);
+    const excludeIds = [Number(itemId)];
+    const diff = difficulty ? Number(difficulty) : null;
     let distractors;
 
     if (itemType === 'word') {
-      distractors = await wordService.getRandomWords(Number(count), [Number(itemId)]);
+      // Prefer learned words as distractors, fallback to all
+      distractors = await wordService.getLearnedRandomWords(n, excludeIds, diff);
+      if (distractors.length < n) {
+        distractors = await wordService.getRandomWords(n, excludeIds);
+      }
     } else {
-      distractors = await phraseService.getRandomPhrases(Number(count), [Number(itemId)]);
+      distractors = await phraseService.getLearnedRandomPhrases(n, excludeIds, diff);
+      if (distractors.length < n) {
+        distractors = await phraseService.getRandomPhrases(n, excludeIds);
+      }
     }
 
     res.json(distractors);
@@ -50,7 +60,7 @@ router.get('/items', async (req, res) => {
     const limit = Number(req.query.limit) || 60;
     const today = getToday();
 
-    const totalDays = await queryScalar('SELECT COUNT(*) FROM sessions') || 0;
+    const totalDays = await queryScalar('SELECT COUNT(*) FROM sessions WHERE completed = 1') || 0;
     const quizCount = Math.min(10 + Math.floor(totalDays / 7) * 5, limit);
 
     // Priority 1: SRS-due items (from word_mastery)

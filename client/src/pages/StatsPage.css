@@ -206,3 +206,97 @@
   color: #94a3b8;
   font-size: 0.875rem;
 }
+
+/* Learned words section */
+.learned-section {
+  background: #1e293b;
+  border-radius: 1rem;
+  padding: 1.25rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid #334155;
+}
+
+.learned-toggle {
+  cursor: pointer;
+  user-select: none;
+  color: #f1f5f9;
+}
+
+.learned-filters {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.learned-filters button {
+  padding: 0.375rem 0.75rem;
+  border: 1px solid #475569;
+  border-radius: 0.375rem;
+  background: transparent;
+  color: #94a3b8;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+
+.learned-filters button.active {
+  background: #334155;
+  color: #f1f5f9;
+  border-color: #3b82f6;
+}
+
+.learned-table {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.learned-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #1e293b;
+  font-size: 0.85rem;
+}
+
+.speak-btn-sm {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 0;
+  flex-shrink: 0;
+}
+
+.learned-word {
+  color: #60a5fa;
+  font-weight: 600;
+  min-width: 120px;
+}
+
+.learned-meaning {
+  color: #cbd5e1;
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.learned-mastery {
+  font-size: 0.75rem;
+  padding: 0.15rem 0.5rem;
+  border-radius: 0.25rem;
+  flex-shrink: 0;
+}
+
+.mastery-lv-0 { background: #991b1b; color: #fca5a5; }
+.mastery-lv-1 { background: #92400e; color: #fcd34d; }
+.mastery-lv-2 { background: #854d0e; color: #fde68a; }
+.mastery-lv-3 { background: #166534; color: #86efac; }
+.mastery-lv-4 { background: #1e40af; color: #93c5fd; }
+.mastery-lv-5 { background: #6b21a8; color: #d8b4fe; }
+
+.learned-date {
+  color: #64748b;
+  font-size: 0.75rem;
+  flex-shrink: 0;
+}

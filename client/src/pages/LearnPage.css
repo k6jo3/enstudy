@@ -170,6 +170,22 @@
   margin-top: 1rem;
 }
 
+.complete-btn {
+  margin-top: 1rem;
+  padding: 0.75rem 2rem;
+  background: #22c55e;
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.complete-btn:hover {
+  background: #16a34a;
+}
+
 .error-msg {
   text-align: center;
   color: #f87171;

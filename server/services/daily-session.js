@@ -12,7 +12,7 @@ function getToday() {
 
 // Progressive learning pace — reduced new words, mastery-driven reviews
 async function getDailyPace() {
-  const totalDays = await queryScalar('SELECT COUNT(*) FROM sessions') || 0;
+  const totalDays = await queryScalar('SELECT COUNT(*) FROM sessions WHERE completed = 1') || 0;
   const today = getToday();
   const dueCount = await masteryService.getDueCount(today);
 
@@ -41,6 +41,29 @@ async function getOrCreateSession(date) {
     session = await queryOne('SELECT * FROM sessions WHERE session_date = ?', [date]);
   }
   return session;
+}
+
+async function getActiveSession() {
+  return queryOne(
+    'SELECT * FROM sessions WHERE completed = 0 ORDER BY session_date ASC LIMIT 1'
+  );
+}
+
+async function completeSession(sessionDate) {
+  await run('UPDATE sessions SET completed = 1 WHERE session_date = ?', [sessionDate]);
+  saveDb();
+  return queryOne('SELECT * FROM sessions WHERE session_date = ?', [sessionDate]);
+}
+
+async function getSessionStatus() {
+  const today = getToday();
+  const activeSession = await getActiveSession();
+  return {
+    activeDate: activeSession ? activeSession.session_date : today,
+    isComplete: !activeSession,
+    todayDate: today,
+    activeSession
+  };
 }
 
 async function getDailyContent(date) {
@@ -209,4 +232,4 @@ async function getOrCreateDialogues(date, words, phrases) {
   return dialogues;
 }
 
-module.exports = { getDailyContent, getToday, getOrCreateSession };
+module.exports = { getDailyContent, getToday, getOrCreateSession, getActiveSession, completeSession, getSessionStatus };

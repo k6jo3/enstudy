@@ -1,10 +1,15 @@
+import { useState } from 'react';
 import ProgressBar from '../components/ProgressBar';
 import { useApi } from '../hooks/useApi';
+import { useTTS } from '../hooks/useTTS';
 import './StatsPage.css';
 
 function StatsPage() {
   const { data: stats, loading } = useApi('/stats');
   const { data: errors, loading: errLoading } = useApi('/stats/errors');
+  const { data: learned } = useApi('/stats/learned');
+  const [showLearned, setShowLearned] = useState(false);
+  const [learnedFilter, setLearnedFilter] = useState('all');
 
   if (loading) return <div className="loading">載入統計資料...</div>;
   if (!stats) return null;
@@ -80,6 +85,23 @@ function StatsPage() {
         </div>
       )}
 
+      {learned && (learned.words?.length > 0 || learned.phrases?.length > 0) && (
+        <div className="learned-section">
+          <h3 className="learned-toggle" onClick={() => setShowLearned(!showLearned)}>
+            已學詞彙 ({(learned.words?.length || 0) + (learned.phrases?.length || 0)} 個)
+            {showLearned ? ' ▼' : ' ▶'}
+          </h3>
+          {showLearned && (
+            <LearnedWordsList
+              words={learned.words || []}
+              phrases={learned.phrases || []}
+              filter={learnedFilter}
+              setFilter={setLearnedFilter}
+            />
+          )}
+        </div>
+      )}
+
       {stats.recentSessions?.length > 0 && (
         <div className="session-history">
           <h3>學習歷史</h3>
@@ -112,3 +134,39 @@ function StatsPage() {
 }
 
 export default StatsPage;
+
+function LearnedWordsList({ words, phrases, filter, setFilter }) {
+  const { speak } = useTTS();
+
+  const items = filter === 'word'
+    ? words.map(w => ({ ...w, display: w.word }))
+    : filter === 'phrase'
+    ? phrases.map(p => ({ ...p, display: p.phrase }))
+    : [
+        ...words.map(w => ({ ...w, display: w.word })),
+        ...phrases.map(p => ({ ...p, display: p.phrase }))
+      ];
+
+  return (
+    <div className="learned-list">
+      <div className="learned-filters">
+        <button className={filter === 'all' ? 'active' : ''} onClick={() => setFilter('all')}>全部</button>
+        <button className={filter === 'word' ? 'active' : ''} onClick={() => setFilter('word')}>單字 ({words.length})</button>
+        <button className={filter === 'phrase' ? 'active' : ''} onClick={() => setFilter('phrase')}>片語 ({phrases.length})</button>
+      </div>
+      <div className="learned-table">
+        {items.map((item) => (
+          <div key={`${item.item_type}-${item.id}`} className="learned-row">
+            <button className="speak-btn-sm" onClick={() => speak(item.display)}>&#128264;</button>
+            <span className="learned-word">{item.display}</span>
+            <span className="learned-meaning">{item.meaning}</span>
+            <span className={`learned-mastery mastery-lv-${item.mastery_level}`}>
+              Lv.{item.mastery_level}
+            </span>
+            <span className="learned-date">{item.learn_date}</span>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}

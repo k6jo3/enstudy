@@ -427,7 +427,52 @@ const generalDialogues = [
   },
 ];
 
-// Phrase dialogue templates
+// Natural phrase dialogue templates — use {example} in real conversation context
+const phraseNaturalDialogues = [
+  {
+    lines: [
+      { speaker: 'A', text: '{example}', zh: '{example_zh}' },
+      { speaker: 'B', text: 'That makes sense. What happened next?', zh: '有道理。後來怎麼了？' },
+      { speaker: 'A', text: "I'll tell you later. Let's grab lunch first.", zh: '晚點再說吧。先去吃午餐。' },
+    ]
+  },
+  {
+    lines: [
+      { speaker: 'A', text: 'How was your day?', zh: '你今天過得怎樣？' },
+      { speaker: 'B', text: '{example}', zh: '{example_zh}' },
+      { speaker: 'A', text: "Oh, I see! Well, tomorrow will be better.", zh: '原來如此！明天會更好的。' },
+    ]
+  },
+  {
+    lines: [
+      { speaker: 'A', text: 'Did you hear about the project update?', zh: '你聽說專案的更新了嗎？' },
+      { speaker: 'B', text: 'Yeah. {example}', zh: '聽說了。{example_zh}' },
+      { speaker: 'A', text: "Exactly. We need to prepare for that.", zh: '沒錯。我們得準備一下。' },
+    ]
+  },
+  {
+    lines: [
+      { speaker: 'A', text: "I'm not sure what to do about the meeting.", zh: '我不確定會議要怎麼處理。' },
+      { speaker: 'B', text: '{example}', zh: '{example_zh}' },
+      { speaker: 'A', text: "Good point. I'll do that.", zh: '好主意。我會照做。' },
+    ]
+  },
+  {
+    lines: [
+      { speaker: 'A', text: '{example}', zh: '{example_zh}' },
+      { speaker: 'B', text: "I agree. Let's keep that in mind.", zh: '同意。我們記住就好。' },
+    ]
+  },
+  {
+    lines: [
+      { speaker: 'A', text: 'Can you explain what happened?', zh: '你可以解釋一下發生什麼事嗎？' },
+      { speaker: 'B', text: 'Sure. {example}', zh: '好的。{example_zh}' },
+      { speaker: 'A', text: 'Thanks, that clears things up.', zh: '謝謝，這下清楚了。' },
+    ]
+  },
+];
+
+// Learning-style phrase dialogue templates
 const phraseDialogues = [
   {
     lines: [
@@ -527,22 +572,30 @@ function generateDialogues(words, phrases, count = 10) {
     });
   }
 
-  // Generate phrase-based dialogues
+  // Generate phrase-based dialogues (70% natural, 30% learning-style)
   const phraseCount = count - dialogues.length;
   for (let i = 0; i < phraseCount && i < phrases.length; i++) {
     const p = phrases[i];
-    const tmpl = pickTemplate(phraseDialogues, p.id || i);
+    const useNatural = (p.id || i) % 10 < 7;
+    const tmpl = useNatural
+      ? pickTemplate(phraseNaturalDialogues, p.id || i)
+      : pickTemplate(phraseDialogues, p.id || i);
+
+    const exampleText = p.example || p.phrase;
+    const exampleZh = p.meaning || '';
 
     const lines = tmpl.lines.map(line => ({
       speaker: line.speaker,
       text: line.text
         .replace(/\{phrase\}/g, p.phrase)
         .replace(/\{meaning\}/g, p.meaning || '')
-        .replace(/\{example\}/g, p.example || p.phrase),
+        .replace(/\{example\}/g, exampleText)
+        .replace(/\{example_zh\}/g, exampleZh),
       zh: line.zh
         .replace(/\{phrase\}/g, p.phrase)
         .replace(/\{meaning\}/g, p.meaning || '')
-        .replace(/\{example\}/g, p.example || p.phrase)
+        .replace(/\{example\}/g, exampleText)
+        .replace(/\{example_zh\}/g, exampleZh)
     }));
 
     dialogues.push({

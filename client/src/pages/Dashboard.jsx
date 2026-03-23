@@ -1,7 +1,6 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
-import { useApi } from '../hooks/useApi';
 import ProgressBar from '../components/ProgressBar';
+import { useApi } from '../hooks/useApi';
 import './Dashboard.css';
 
 function Dashboard() {
@@ -26,6 +25,13 @@ function Dashboard() {
             total={stats.totalPhrases}
             label="片語進度"
           />
+        </div>
+      )}
+
+      {stats?.recentSessions?.[0] && !stats.recentSessions[0].completed && (
+        <div className="active-session-banner">
+          <p>進行中的學習：{stats.recentSessions[0].session_date}</p>
+          <Link to="/learn">繼續學習</Link>
         </div>
       )}
 
