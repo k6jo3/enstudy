@@ -215,9 +215,12 @@ async function getOrCreateDialogues(date, words, phrases) {
 
   if (existing.length > 0) {
     const parsed = existing.map(row => JSON.parse(row.dialogue_json));
-    // Check if old format (no zh field) — regenerate if so
+    const firstText = parsed[0]?.lines?.[0]?.text || '';
     const hasZh = parsed[0]?.lines?.[0]?.zh;
-    if (hasZh) {
+    // New example-based format uses quoted words like 'word' or mentions "mean"/"sentence"/"example"
+    // Old POS-template format puts words directly into conversational sentences
+    const isExampleFormat = /mean|sentence|example|'^/.test(firstText);
+    if (hasZh && isExampleFormat) {
       return parsed;
     }
     // Clear old format and regenerate below
