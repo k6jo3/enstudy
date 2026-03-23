@@ -1,16 +1,31 @@
 const { getDb, saveDb } = require('./connection');
 const words = require('../data/words');
 const phrases = require('../data/phrases');
+const phrases2 = require('../data/phrases2');
+const phrases3 = require('../data/phrases3');
 const grammarQuestions = require('../data/grammar');
+const stories = require('../data/stories');
+
+const allPhrases = [...phrases, ...phrases2, ...phrases3];
 
 async function seedData() {
   const db = await getDb();
 
+  // Incremental word seeding — INSERT OR IGNORE handles duplicates
   const wordCount = db.exec('SELECT COUNT(*) as cnt FROM words')[0]?.values[0][0] || 0;
-  if (wordCount === 0) {
-    console.log('Seeding words...');
+  if (wordCount < words.length) {
+    console.log(`Seeding words (${wordCount} existing, ${words.length} total)...`);
     const seen = new Set();
-    const stmt = db.prepare('INSERT INTO words (word, phonetic, meaning, part_of_speech, difficulty, example) VALUES (?, ?, ?, ?, ?, ?)');
+    // Build set of existing words to avoid prepare/run overhead
+    if (wordCount > 0) {
+      const existing = db.exec('SELECT word FROM words');
+      if (existing[0]) {
+        for (const row of existing[0].values) {
+          seen.add(row[0].toLowerCase());
+        }
+      }
+    }
+    const stmt = db.prepare('INSERT OR IGNORE INTO words (word, phonetic, meaning, part_of_speech, difficulty, example) VALUES (?, ?, ?, ?, ?, ?)');
     let count = 0;
     for (const w of words) {
       const key = w.word.toLowerCase();
@@ -20,16 +35,25 @@ async function seedData() {
       count++;
     }
     stmt.free();
-    console.log(`Seeded ${count} words.`);
+    console.log(`Seeded ${count} new words (total now: ${wordCount + count}).`);
   }
 
+  // Incremental phrase seeding
   const phraseCount = db.exec('SELECT COUNT(*) as cnt FROM phrases')[0]?.values[0][0] || 0;
-  if (phraseCount === 0) {
-    console.log('Seeding phrases...');
+  if (phraseCount < allPhrases.length) {
+    console.log(`Seeding phrases (${phraseCount} existing, ${allPhrases.length} total)...`);
     const seenPhrases = new Set();
-    const stmtP = db.prepare('INSERT INTO phrases (phrase, meaning, example, difficulty) VALUES (?, ?, ?, ?)');
+    if (phraseCount > 0) {
+      const existing = db.exec('SELECT phrase FROM phrases');
+      if (existing[0]) {
+        for (const row of existing[0].values) {
+          seenPhrases.add(row[0].toLowerCase());
+        }
+      }
+    }
+    const stmtP = db.prepare('INSERT OR IGNORE INTO phrases (phrase, meaning, example, difficulty) VALUES (?, ?, ?, ?)');
     let pCount = 0;
-    for (const p of phrases) {
+    for (const p of allPhrases) {
       const key = p.phrase.toLowerCase();
       if (seenPhrases.has(key)) continue;
       seenPhrases.add(key);
@@ -37,9 +61,10 @@ async function seedData() {
       pCount++;
     }
     stmtP.free();
-    console.log(`Seeded ${pCount} phrases.`);
+    console.log(`Seeded ${pCount} new phrases (total now: ${phraseCount + pCount}).`);
   }
 
+  // Grammar questions
   const grammarCount = db.exec('SELECT COUNT(*) as cnt FROM grammar_questions')[0]?.values[0][0] || 0;
   if (grammarCount === 0) {
     console.log('Seeding grammar questions...');
@@ -53,6 +78,28 @@ async function seedData() {
     }
     stmtG.free();
     console.log(`Seeded ${gCount} grammar questions.`);
+  }
+
+  // Stories
+  const storyCount = db.exec('SELECT COUNT(*) as cnt FROM stories')[0]?.values[0][0] || 0;
+  if (storyCount < stories.length) {
+    console.log(`Seeding stories (${storyCount} existing, ${stories.length} total)...`);
+    const stmtS = db.prepare(
+      'INSERT OR IGNORE INTO stories (series, series_name, episode, title, content, vocabulary, vocab_meanings, questions, difficulty, sort_order) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)'
+    );
+    let sCount = 0;
+    for (const s of stories) {
+      stmtS.run([
+        s.series, s.seriesName, s.episode, s.title, s.content,
+        JSON.stringify(s.vocabulary || []),
+        JSON.stringify(s.vocabMeanings || {}),
+        JSON.stringify(s.questions || []),
+        s.difficulty || 2, s.sort_order || s.id || 0
+      ]);
+      sCount++;
+    }
+    stmtS.free();
+    console.log(`Seeded ${sCount} stories.`);
   }
 
   saveDb();

@@ -5,7 +5,8 @@ const { initSchema } = require('./db/schema');
 const { seedData } = require('./db/seed');
 const { setupAutoSave } = require('./db/connection');
 const { backfillMastery } = require('./services/mastery-service');
-const { run } = require('./db/helpers');
+const { run, queryScalar } = require('./db/helpers');
+const roundService = require('./services/round-service');
 
 async function start() {
   // Initialize database
@@ -19,6 +20,9 @@ async function start() {
   // Backfill: mark all past sessions as completed (one-time migration)
   await run('UPDATE sessions SET completed = 1 WHERE session_date < ? AND completed = 0', [today]);
 
+  // Ensure round 1 exists
+  await roundService.getCurrentRound();
+
   setupAutoSave();
 
   const app = express();
@@ -30,6 +34,10 @@ async function start() {
   app.use('/api/quiz', require('./routes/quiz'));
   app.use('/api/grammar', require('./routes/grammar'));
   app.use('/api/stats', require('./routes/stats'));
+  app.use('/api/rounds', require('./routes/rounds'));
+  app.use('/api/reading', require('./routes/reading'));
+  app.use('/api/playback', require('./routes/playback'));
+  app.use('/api/games', require('./routes/games'));
 
   // Serve static files in production
   const clientDist = path.join(__dirname, '..', 'client', 'dist');

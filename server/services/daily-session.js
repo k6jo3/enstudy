@@ -5,33 +5,40 @@ const phraseService = require('./phrase-service');
 const masteryService = require('./mastery-service');
 const errorTracker = require('./error-tracker');
 const { generateDialogues } = require('./sentence-generator');
+const roundService = require('./round-service');
 
 function getToday() {
   return new Date().toISOString().split('T')[0];
 }
 
-// Progressive learning pace — reduced new words, mastery-driven reviews
+// Progressive learning pace — round-aware
 async function getDailyPace() {
-  const totalDays = await queryScalar('SELECT COUNT(*) FROM sessions WHERE completed = 1') || 0;
+  const round = await roundService.getCurrentRound();
+  const roundNumber = round ? round.round_number : 1;
   const today = getToday();
   const dueCount = await masteryService.getDueCount(today);
 
   let words, phrases;
-  if (totalDays < 7) {
-    words = 5;
-    phrases = 3;
-  } else if (totalDays < 21) {
-    words = 10;
-    phrases = 5;
+
+  if (roundNumber >= 2 && round.word_pace > 0) {
+    words = round.word_pace;
+    phrases = round.phrase_pace || 5;
   } else {
-    words = 15;
-    phrases = 5;
+    const totalDays = await queryScalar('SELECT COUNT(*) FROM sessions WHERE completed = 1') || 0;
+    if (totalDays < 7) {
+      words = 5;
+      phrases = 3;
+    } else if (totalDays < 21) {
+      words = 10;
+      phrases = 5;
+    } else {
+      words = 15;
+      phrases = 5;
+    }
   }
 
-  // Review count driven by SRS schedule, capped at 40
   const review = Math.min(dueCount, 40);
-
-  return { words, phrases, review };
+  return { words, phrases, review, roundNumber };
 }
 
 async function getOrCreateSession(date) {
@@ -102,28 +109,28 @@ async function getDailyContent(date) {
     }
   } else {
     // First visit today — generate new content
-    newWords = await wordService.getNewWords(date, pace.words);
-    newPhrases = await phraseService.getNewPhrases(date, pace.phrases);
+    newWords = await wordService.getNewWords(date, pace.words, pace.roundNumber);
+    newPhrases = await phraseService.getNewPhrases(date, pace.phrases, pace.roundNumber);
     reviewItems = await getReviewContent(date, pace.review);
 
     for (const w of newWords) {
       await run(
-        'INSERT OR IGNORE INTO learning_log (item_type, item_id, learn_date, is_review) VALUES (?, ?, ?, ?)',
-        ['word', w.id, date, 0]
+        'INSERT OR IGNORE INTO learning_log (item_type, item_id, learn_date, is_review, round_number) VALUES (?, ?, ?, ?, ?)',
+        ['word', w.id, date, 0, pace.roundNumber]
       );
       await masteryService.initMastery('word', w.id, date);
     }
     for (const p of newPhrases) {
       await run(
-        'INSERT OR IGNORE INTO learning_log (item_type, item_id, learn_date, is_review) VALUES (?, ?, ?, ?)',
-        ['phrase', p.id, date, 0]
+        'INSERT OR IGNORE INTO learning_log (item_type, item_id, learn_date, is_review, round_number) VALUES (?, ?, ?, ?, ?)',
+        ['phrase', p.id, date, 0, pace.roundNumber]
       );
       await masteryService.initMastery('phrase', p.id, date);
     }
     for (const r of reviewItems) {
       await run(
-        'INSERT OR IGNORE INTO learning_log (item_type, item_id, learn_date, is_review) VALUES (?, ?, ?, ?)',
-        [r.item_type, r.id, date, 1]
+        'INSERT OR IGNORE INTO learning_log (item_type, item_id, learn_date, is_review, round_number) VALUES (?, ?, ?, ?, ?)',
+        [r.item_type, r.id, date, 1, pace.roundNumber]
       );
     }
 

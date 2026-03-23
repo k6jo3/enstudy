@@ -1,15 +1,15 @@
 const { queryAll, queryOne, queryScalar } = require('../db/helpers');
 
-async function getNewWords(date, limit = 20) {
+async function getNewWords(date, limit = 20, roundNumber = 1) {
   return queryAll(`
     SELECT w.* FROM words w
     WHERE w.id NOT IN (
       SELECT item_id FROM learning_log
-      WHERE item_type = 'word' AND is_review = 0
+      WHERE item_type = 'word' AND is_review = 0 AND round_number = ?
     )
     ORDER BY w.difficulty ASC, RANDOM()
     LIMIT ?
-  `, [limit]);
+  `, [roundNumber, limit]);
 }
 
 async function getWordById(id) {

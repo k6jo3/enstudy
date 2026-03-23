@@ -1,15 +1,15 @@
 const { queryAll, queryOne, queryScalar } = require('../db/helpers');
 
-async function getNewPhrases(date, limit = 10) {
+async function getNewPhrases(date, limit = 10, roundNumber = 1) {
   return queryAll(`
     SELECT p.* FROM phrases p
     WHERE p.id NOT IN (
       SELECT item_id FROM learning_log
-      WHERE item_type = 'phrase' AND is_review = 0
+      WHERE item_type = 'phrase' AND is_review = 0 AND round_number = ?
     )
     ORDER BY p.difficulty ASC, RANDOM()
     LIMIT ?
-  `, [limit]);
+  `, [roundNumber, limit]);
 }
 
 async function getPhraseById(id) {
