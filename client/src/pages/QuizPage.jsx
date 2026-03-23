@@ -52,18 +52,31 @@ function QuizPage() {
 
   const generateChoices = async (item, signal) => {
     try {
+      if (!item.hint) {
+        setQuizMode('typing');
+        return;
+      }
       const res = await fetch(
         `/api/quiz/options?itemType=${item.item_type}&itemId=${item.id}&count=5&difficulty=${item.difficulty || ''}`,
         { signal }
       );
       if (signal?.aborted) return;
+      if (!res.ok) {
+        setQuizMode('typing');
+        return;
+      }
       const distractors = await res.json();
       if (signal?.aborted) return;
+      if (!Array.isArray(distractors)) {
+        setQuizMode('typing');
+        return;
+      }
 
       const correctAnswer = { text: item.hint, correct: true };
       const correctLower = item.hint.toLowerCase();
       const wrongAnswers = distractors
         .filter(d => {
+          if (!d.meaning) return false;
           const dLower = d.meaning.toLowerCase();
           // Filter out semantically similar meanings (substring check)
           return dLower !== correctLower
@@ -78,6 +91,11 @@ function QuizPage() {
         return;
       }
       const allChoices = [correctAnswer, ...wrongAnswers].sort(() => Math.random() - 0.5);
+      // Defensive: ensure correct answer is present
+      if (!allChoices.some(c => c.correct)) {
+        setQuizMode('typing');
+        return;
+      }
       setChoices(allChoices);
       setChoicesReady(true);
     } catch (err) {
@@ -216,12 +234,7 @@ function QuizPage() {
               {!result && <button type="submit" className="submit-btn">確認</button>}
             </form>
           </>
-        ) : quizMode === 'choice' && !choicesReady ? (
-          <>
-            <p className="quiz-prompt">載入選項中...</p>
-            <h3 className="quiz-word-display">{item.display}</h3>
-          </>
-        ) : (
+        ) : quizMode === 'choice' && choicesReady && choices.length > 0 ? (
           <>
             <p className="quiz-prompt">請選擇正確的中文意思：</p>
             <h3 className="quiz-word-display">{item.display}</h3>
@@ -240,6 +253,11 @@ function QuizPage() {
                 </button>
               ))}
             </div>
+          </>
+        ) : (
+          <>
+            <p className="quiz-prompt">載入選項中...</p>
+            <h3 className="quiz-word-display">{item.display}</h3>
           </>
         )}
 
