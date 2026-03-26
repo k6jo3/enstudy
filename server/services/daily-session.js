@@ -217,9 +217,9 @@ async function getOrCreateDialogues(date, words, phrases) {
     const parsed = existing.map(row => JSON.parse(row.dialogue_json));
     const firstText = parsed[0]?.lines?.[0]?.text || '';
     const hasZh = parsed[0]?.lines?.[0]?.zh;
-    // New example-based format uses quoted words like 'word' or mentions "mean"/"sentence"/"example"
-    // Old POS-template format puts words directly into conversational sentences
-    const isExampleFormat = /mean|sentence|example|'^/.test(firstText);
+    // New example-based format always has single-quoted words/phrases like 'word' in the dialogue
+    // Old POS-template format puts words directly into conversational sentences without quotes
+    const isExampleFormat = /'[^']+'/i.test(firstText);
     if (hasZh && isExampleFormat) {
       return parsed;
     }
@@ -242,4 +242,29 @@ async function getOrCreateDialogues(date, words, phrases) {
   return dialogues;
 }
 
-module.exports = { getDailyContent, getToday, getOrCreateSession, getActiveSession, completeSession, getSessionStatus };
+// One-time cleanup: remove old-format dialogues so they regenerate with new example-based templates
+async function cleanOldDialogues() {
+  const all = await queryAll('SELECT id, session_date, dialogue_json FROM daily_sentences');
+  const datesToClear = new Set();
+  for (const row of all) {
+    try {
+      const d = JSON.parse(row.dialogue_json);
+      const firstText = d?.lines?.[0]?.text || '';
+      // New format always has single-quoted words like 'word' or 'phrase'
+      if (!/'[^']+'/i.test(firstText)) {
+        datesToClear.add(row.session_date);
+      }
+    } catch (e) {
+      datesToClear.add(row.session_date);
+    }
+  }
+  if (datesToClear.size > 0) {
+    for (const date of datesToClear) {
+      await run('DELETE FROM daily_sentences WHERE session_date = ?', [date]);
+    }
+    saveDb();
+    console.log(`[daily-session] Cleared old-format dialogues for ${datesToClear.size} date(s)`);
+  }
+}
+
+module.exports = { getDailyContent, getToday, getOrCreateSession, getActiveSession, completeSession, getSessionStatus, cleanOldDialogues };

@@ -7,6 +7,7 @@ const { setupAutoSave } = require('./db/connection');
 const { backfillMastery } = require('./services/mastery-service');
 const { run, queryScalar } = require('./db/helpers');
 const roundService = require('./services/round-service');
+const { cleanOldDialogues } = require('./services/daily-session');
 
 async function start() {
   // Initialize database
@@ -19,6 +20,9 @@ async function start() {
 
   // Backfill: mark all past sessions as completed (one-time migration)
   await run('UPDATE sessions SET completed = 1 WHERE session_date < ? AND completed = 0', [today]);
+
+  // Clean old-format dialogues so they regenerate with example-based templates
+  await cleanOldDialogues();
 
   // Ensure round 1 exists
   await roundService.getCurrentRound();

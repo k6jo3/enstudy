@@ -16,6 +16,8 @@ function QuizPage() {
   const [finished, setFinished] = useState(false);
   const inputRef = useRef(null);
   const { speak } = useTTS();
+  // Stable mode per question index — survives React StrictMode double-invoke
+  const modeMapRef = useRef({});
 
   useEffect(() => {
     if (data?.items) {
@@ -32,7 +34,11 @@ function QuizPage() {
 
   useEffect(() => {
     if (quizItems.length > 0 && currentIndex < quizItems.length && !finished) {
-      const mode = Math.random() > 0.5 ? 'typing' : 'choice';
+      // Use stable random mode per index to avoid StrictMode double-invoke issues
+      if (modeMapRef.current[currentIndex] === undefined) {
+        modeMapRef.current[currentIndex] = Math.random() > 0.5 ? 'typing' : 'choice';
+      }
+      const mode = modeMapRef.current[currentIndex];
       setQuizMode(mode);
       setChoicesReady(false);
       setChoices([]);
@@ -74,14 +80,20 @@ function QuizPage() {
 
       const correctAnswer = { text: item.hint, correct: true };
       const correctLower = item.hint.toLowerCase();
+
+      // Deduplicate distractors by meaning text
+      const seenMeanings = new Set([correctLower]);
       const wrongAnswers = distractors
         .filter(d => {
           if (!d.meaning) return false;
           const dLower = d.meaning.toLowerCase();
+          if (seenMeanings.has(dLower)) return false;
           // Filter out semantically similar meanings (substring check)
-          return dLower !== correctLower
+          const pass = dLower !== correctLower
             && !dLower.includes(correctLower)
             && !correctLower.includes(dLower);
+          if (pass) seenMeanings.add(dLower);
+          return pass;
         })
         .map(d => ({ text: d.meaning, correct: false }))
         .slice(0, 3);
