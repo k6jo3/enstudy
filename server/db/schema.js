@@ -136,9 +136,17 @@ async function initSchema() {
       vocab_meanings TEXT,
       questions TEXT,
       difficulty INTEGER DEFAULT 2,
-      sort_order INTEGER DEFAULT 0
+      sort_order INTEGER DEFAULT 0,
+      content_zh TEXT,
+      grammar_notes TEXT
     )
   `);
+
+  // Migration: add new columns for existing DBs
+  try { db.run('ALTER TABLE stories ADD COLUMN content_zh TEXT'); } catch(e) { /* column already exists */ }
+  try { db.run('ALTER TABLE stories ADD COLUMN grammar_notes TEXT'); } catch(e) { /* column already exists */ }
+  try { db.run('ALTER TABLE words ADD COLUMN example_zh TEXT'); } catch(e) { /* column already exists */ }
+  try { db.run('ALTER TABLE phrases ADD COLUMN example_zh TEXT'); } catch(e) { /* column already exists */ }
 
   db.run(`
     CREATE TABLE IF NOT EXISTS reading_log (

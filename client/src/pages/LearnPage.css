@@ -186,6 +186,27 @@
   background: #16a34a;
 }
 
+.continue-btn {
+  margin-top: 0.75rem;
+  padding: 0.75rem 2rem;
+  background: #3b82f6;
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.continue-btn:hover {
+  background: #2563eb;
+}
+
+.continue-btn:disabled {
+  background: #475569;
+  cursor: not-allowed;
+}
+
 .error-msg {
   text-align: center;
   color: #f87171;

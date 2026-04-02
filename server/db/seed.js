@@ -6,6 +6,7 @@ const phrases3 = require('../data/phrases3');
 const phrases4 = require('../data/phrases4');
 const grammarQuestions = require('../data/grammar');
 const stories = require('../data/stories');
+const storyTranslations = require('../data/stories-translations');
 
 const allPhrases = [...phrases, ...phrases2, ...phrases3, ...phrases4];
 
@@ -39,6 +40,18 @@ async function seedData() {
     console.log(`Seeded ${count} new words (total now: ${wordCount + count}).`);
   }
 
+  // Update words with example_zh translations
+  const stmtWZh = db.prepare('UPDATE words SET example_zh = ? WHERE word = ? AND (example_zh IS NULL OR example_zh = \'\')');
+  let wzCount = 0;
+  for (const w of words) {
+    if (w.exampleZh) {
+      stmtWZh.run([w.exampleZh, w.word]);
+      wzCount++;
+    }
+  }
+  stmtWZh.free();
+  if (wzCount > 0) console.log(`Updated ${wzCount} words with example_zh.`);
+
   // Incremental phrase seeding
   const phraseCount = db.exec('SELECT COUNT(*) as cnt FROM phrases')[0]?.values[0][0] || 0;
   if (phraseCount < allPhrases.length) {
@@ -65,6 +78,18 @@ async function seedData() {
     console.log(`Seeded ${pCount} new phrases (total now: ${phraseCount + pCount}).`);
   }
 
+  // Update phrases with example_zh translations
+  const stmtPZh = db.prepare('UPDATE phrases SET example_zh = ? WHERE phrase = ? AND (example_zh IS NULL OR example_zh = \'\')');
+  let pzCount = 0;
+  for (const p of allPhrases) {
+    if (p.exampleZh) {
+      stmtPZh.run([p.exampleZh, p.phrase]);
+      pzCount++;
+    }
+  }
+  stmtPZh.free();
+  if (pzCount > 0) console.log(`Updated ${pzCount} phrases with example_zh.`);
+
   // Grammar questions
   const grammarCount = db.exec('SELECT COUNT(*) as cnt FROM grammar_questions')[0]?.values[0][0] || 0;
   if (grammarCount === 0) {
@@ -86,7 +111,7 @@ async function seedData() {
   if (storyCount < stories.length) {
     console.log(`Seeding stories (${storyCount} existing, ${stories.length} total)...`);
     const stmtS = db.prepare(
-      'INSERT OR IGNORE INTO stories (series, series_name, episode, title, content, vocabulary, vocab_meanings, questions, difficulty, sort_order) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)'
+      'INSERT OR IGNORE INTO stories (series, series_name, episode, title, content, vocabulary, vocab_meanings, questions, difficulty, sort_order, content_zh, grammar_notes) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)'
     );
     let sCount = 0;
     for (const s of stories) {
@@ -95,13 +120,28 @@ async function seedData() {
         JSON.stringify(s.vocabulary || []),
         JSON.stringify(s.vocabMeanings || {}),
         JSON.stringify(s.questions || []),
-        s.difficulty || 2, s.sort_order || s.id || 0
+        s.difficulty || 2, s.sort_order || s.id || 0,
+        s.contentZh || null,
+        JSON.stringify(s.grammarNotes || null)
       ]);
       sCount++;
     }
     stmtS.free();
     console.log(`Seeded ${sCount} stories.`);
   }
+
+  // Always update stories with latest translations and grammar notes from translations file
+  const stmtUpdate = db.prepare('UPDATE stories SET content_zh = ?, grammar_notes = ? WHERE id = ?');
+  let tCount = 0;
+  for (const s of stories) {
+    const trans = storyTranslations[s.id];
+    if (trans && trans.contentZh) {
+      stmtUpdate.run([trans.contentZh, JSON.stringify(trans.grammarNotes || null), s.id]);
+      tCount++;
+    }
+  }
+  stmtUpdate.free();
+  if (tCount > 0) console.log(`Updated ${tCount} stories with translations.`);
 
   saveDb();
 }

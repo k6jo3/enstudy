@@ -4,7 +4,7 @@ const { saveDb } = require('../db/connection');
 async function getTodayStory(date) {
   const existing = await queryOne(
     `SELECT rl.*, s.id as story_id, s.series, s.series_name, s.episode, s.title, s.content,
-            s.vocabulary, s.vocab_meanings, s.questions, s.difficulty
+            s.vocabulary, s.vocab_meanings, s.questions, s.difficulty, s.content_zh, s.grammar_notes
      FROM reading_log rl JOIN stories s ON s.id = rl.story_id
      WHERE rl.read_date = ?`,
     [date]
@@ -51,6 +51,7 @@ function formatStory(row) {
     vocabulary: typeof row.vocabulary === 'string' ? JSON.parse(row.vocabulary) : (row.vocabulary || []),
     vocab_meanings: typeof row.vocab_meanings === 'string' ? JSON.parse(row.vocab_meanings) : (row.vocab_meanings || {}),
     questions: typeof row.questions === 'string' ? JSON.parse(row.questions) : (row.questions || []),
+    grammar_notes: typeof row.grammar_notes === 'string' ? JSON.parse(row.grammar_notes) : (row.grammar_notes || null),
   };
 }
 

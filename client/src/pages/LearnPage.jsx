@@ -6,10 +6,11 @@ import { useTTS } from '../hooks/useTTS';
 import './LearnPage.css';
 
 function LearnPage() {
-  const { data, loading, error } = useApi('/daily');
+  const { data, loading, error, refetch } = useApi('/daily');
   const [phase, setPhase] = useState(null);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [sessionCompleted, setSessionCompleted] = useState(false);
+  const [loadingNext, setLoadingNext] = useState(false);
 
   // Check if this session is already completed
   useEffect(() => {
@@ -97,7 +98,29 @@ function LearnPage() {
           ))}
           <div className="learn-complete">
             {sessionCompleted ? (
-              <p>今日學習已完成！前往測驗鞏固記憶。</p>
+              <>
+                <p>今日學習已完成！前往測驗鞏固記憶。</p>
+                <button
+                  className="continue-btn"
+                  disabled={loadingNext}
+                  onClick={async () => {
+                    setLoadingNext(true);
+                    try {
+                      await postApi('/daily/next', {});
+                      setSessionCompleted(false);
+                      setPhase(null);
+                      setCurrentIndex(0);
+                      refetch();
+                    } catch (e) {
+                      console.error(e);
+                    } finally {
+                      setLoadingNext(false);
+                    }
+                  }}
+                >
+                  {loadingNext ? '載入中...' : '繼續學習下一課'}
+                </button>
+              </>
             ) : (
               <>
                 <p>已瀏覽所有內容，完成後可進入下一天的學習。</p>

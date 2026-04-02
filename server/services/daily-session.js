@@ -62,6 +62,16 @@ async function completeSession(sessionDate) {
   return queryOne('SELECT * FROM sessions WHERE session_date = ?', [sessionDate]);
 }
 
+// Get the next available date after the latest session
+async function getNextSessionDate() {
+  const latest = await queryOne('SELECT session_date FROM sessions ORDER BY session_date DESC LIMIT 1');
+  if (!latest) return getToday();
+  // Add one day to the latest session date
+  const d = new Date(latest.session_date + 'T00:00:00');
+  d.setDate(d.getDate() + 1);
+  return d.toISOString().split('T')[0];
+}
+
 async function getSessionStatus() {
   const today = getToday();
   const activeSession = await getActiveSession();
@@ -267,4 +277,4 @@ async function cleanOldDialogues() {
   }
 }
 
-module.exports = { getDailyContent, getToday, getOrCreateSession, getActiveSession, completeSession, getSessionStatus, cleanOldDialogues };
+module.exports = { getDailyContent, getToday, getOrCreateSession, getActiveSession, completeSession, getSessionStatus, getNextSessionDate, cleanOldDialogues };
