@@ -18,6 +18,8 @@ function QuizPage() {
   const { speak } = useTTS();
   // Stable mode per question index — survives React StrictMode double-invoke
   const modeMapRef = useRef({});
+  // Track which item the current async work is for (StrictMode-safe)
+  const activeItemKeyRef = useRef(null);
 
   useEffect(() => {
     if (data?.items) {
@@ -39,13 +41,14 @@ function QuizPage() {
         modeMapRef.current[currentIndex] = Math.random() > 0.5 ? 'typing' : 'choice';
       }
       const mode = modeMapRef.current[currentIndex];
+      const item = quizItems[currentIndex];
+      const itemKey = `${item.item_type}:${item.id}:${currentIndex}`;
+      activeItemKeyRef.current = itemKey;
       setQuizMode(mode);
       setChoicesReady(false);
       setChoices([]);
       if (mode === 'choice') {
-        const controller = new AbortController();
-        generateChoices(quizItems[currentIndex], controller.signal);
-        return () => controller.abort();
+        generateChoices(item, itemKey);
       }
     }
   }, [currentIndex, quizItems.length]);
@@ -56,23 +59,23 @@ function QuizPage() {
     }
   }, [quizMode, currentIndex]);
 
-  const generateChoices = async (item, signal) => {
+  const generateChoices = async (item, itemKey) => {
+    const isStale = () => activeItemKeyRef.current !== itemKey;
     try {
       if (!item.hint) {
-        setQuizMode('typing');
+        if (!isStale()) setQuizMode('typing');
         return;
       }
       const res = await fetch(
-        `/api/quiz/options?itemType=${item.item_type}&itemId=${item.id}&count=5&difficulty=${item.difficulty || ''}`,
-        { signal }
+        `/api/quiz/options?itemType=${item.item_type}&itemId=${item.id}&count=5&difficulty=${item.difficulty || ''}`
       );
-      if (signal?.aborted) return;
+      if (isStale()) return;
       if (!res.ok) {
         setQuizMode('typing');
         return;
       }
       const distractors = await res.json();
-      if (signal?.aborted) return;
+      if (isStale()) return;
       if (!Array.isArray(distractors)) {
         setQuizMode('typing');
         return;
@@ -102,17 +105,26 @@ function QuizPage() {
         setQuizMode('typing');
         return;
       }
-      const allChoices = [correctAnswer, ...wrongAnswers].sort(() => Math.random() - 0.5);
-      // Defensive: ensure correct answer is present
+      // Fisher-Yates shuffle (proper, unlike sort + random)
+      const allChoices = [correctAnswer, ...wrongAnswers];
+      for (let i = allChoices.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [allChoices[i], allChoices[j]] = [allChoices[j], allChoices[i]];
+      }
+      // Defensive: ensure correct answer is present (should ALWAYS be true)
       if (!allChoices.some(c => c.correct)) {
+        console.error('[Quiz BUG] correct missing after shuffle', { item, allChoices });
         setQuizMode('typing');
         return;
       }
+      // Final stale check before applying state
+      if (isStale()) return;
+      console.log('[Quiz] setChoices', item.display, '→', allChoices.map(c => `${c.text}${c.correct ? '✓' : ''}`));
       setChoices(allChoices);
       setChoicesReady(true);
     } catch (err) {
-      if (err.name === 'AbortError') return;
-      setQuizMode('typing');
+      console.error('[Quiz] generateChoices error', err);
+      if (!isStale()) setQuizMode('typing');
     }
   };
 
@@ -160,6 +172,8 @@ function QuizPage() {
 
   const handleNext = () => {
     if (currentIndex < quizItems.length - 1) {
+      // Invalidate any in-flight generateChoices from the previous question
+      activeItemKeyRef.current = null;
       setCurrentIndex(i => i + 1);
       setAnswer('');
       setResult(null);
@@ -246,7 +260,7 @@ function QuizPage() {
               {!result && <button type="submit" className="submit-btn">確認</button>}
             </form>
           </>
-        ) : quizMode === 'choice' && choicesReady && choices.length > 0 ? (
+        ) : quizMode === 'choice' && choicesReady && choices.length > 0 && choices.some(c => c.correct) ? (
           <>
             <p className="quiz-prompt">請選擇正確的中文意思：</p>
             <h3 className="quiz-word-display">{item.display}</h3>

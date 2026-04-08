@@ -8,7 +8,12 @@ const { generateDialogues } = require('./sentence-generator');
 const roundService = require('./round-service');
 
 function getToday() {
-  return new Date().toISOString().split('T')[0];
+  // Use LOCAL date, not UTC — toISOString() returns UTC which can be off by 1 day
+  const now = new Date();
+  const yyyy = now.getFullYear();
+  const mm = String(now.getMonth() + 1).padStart(2, '0');
+  const dd = String(now.getDate()).padStart(2, '0');
+  return `${yyyy}-${mm}-${dd}`;
 }
 
 // Progressive learning pace — round-aware
@@ -66,10 +71,15 @@ async function completeSession(sessionDate) {
 async function getNextSessionDate() {
   const latest = await queryOne('SELECT session_date FROM sessions ORDER BY session_date DESC LIMIT 1');
   if (!latest) return getToday();
-  // Add one day to the latest session date
-  const d = new Date(latest.session_date + 'T00:00:00');
-  d.setDate(d.getDate() + 1);
-  return d.toISOString().split('T')[0];
+  // Parse YYYY-MM-DD and add 1 day using LOCAL date arithmetic
+  // (toISOString gives UTC date which can be off by 1 day in non-UTC timezones)
+  const [y, m, d] = latest.session_date.split('-').map(Number);
+  const date = new Date(y, m - 1, d);
+  date.setDate(date.getDate() + 1);
+  const yyyy = date.getFullYear();
+  const mm = String(date.getMonth() + 1).padStart(2, '0');
+  const dd = String(date.getDate()).padStart(2, '0');
+  return `${yyyy}-${mm}-${dd}`;
 }
 
 async function getSessionStatus() {
