@@ -48,6 +48,7 @@ function QuizPage() {
       setQuizMode(mode);
       setChoicesReady(false);
       setChoices([]);
+      setChoicesForId(null);
       if (mode === 'choice') {
         generateChoices(item, itemKey);
       }
@@ -120,8 +121,9 @@ function QuizPage() {
       }
       // Final stale check before applying state
       if (isStale()) return;
-      console.log('[Quiz] setChoices', item.display, '→', allChoices.map(c => `${c.text}${c.correct ? '✓' : ''}`));
+      console.log('[Quiz] setChoices', item.display, '(id:', item.id, ')→', allChoices.map(c => `${c.text}${c.correct ? '✓' : ''}`));
       setChoices(allChoices);
+      setChoicesForId(`${item.item_type}:${item.id}`);
       setChoicesReady(true);
     } catch (err) {
       console.error('[Quiz] generateChoices error', err);
@@ -180,6 +182,7 @@ function QuizPage() {
       setResult(null);
       setChoices([]);
       setChoicesReady(false);
+      setChoicesForId(null);
     } else {
       setFinished(true);
       // Mark daily session as complete when quiz finishes
@@ -261,7 +264,7 @@ function QuizPage() {
               {!result && <button type="submit" className="submit-btn">確認</button>}
             </form>
           </>
-        ) : quizMode === 'choice' && choicesReady && choices.length > 0 && choices.some(c => c.correct) ? (
+        ) : quizMode === 'choice' && choicesReady && choices.length > 0 && choices.some(c => c.correct) && choicesForId === `${item.item_type}:${item.id}` ? (
           <>
             <p className="quiz-prompt">請選擇正確的中文意思：</p>
             <h3 className="quiz-word-display">{item.display}</h3>
