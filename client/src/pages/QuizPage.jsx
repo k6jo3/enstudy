@@ -14,6 +14,7 @@ function QuizPage() {
   const [choices, setChoices] = useState([]);
   const [choicesReady, setChoicesReady] = useState(false);
   const [finished, setFinished] = useState(false);
+  const [choicesForId, setChoicesForId] = useState(null);
   const inputRef = useRef(null);
   const { speak } = useTTS();
   // Stable mode per question index — survives React StrictMode double-invoke
