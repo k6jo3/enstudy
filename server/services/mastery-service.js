@@ -31,14 +31,16 @@ async function initMastery(itemType, itemId, date) {
   );
 }
 
-async function updateMastery(itemType, itemId, isCorrect, date) {
+// questionMode: 'typing' | 'choice' | 'listen'
+// Score deltas: typing/listen correct = +1, choice correct = +0.5, wrong = -1.5
+async function updateMastery(itemType, itemId, isCorrect, date, questionMode) {
   const row = await queryOne(
     'SELECT * FROM word_mastery WHERE item_type = ? AND item_id = ?',
     [itemType, itemId]
   );
   if (!row) {
     await initMastery(itemType, itemId, date);
-    return updateMastery(itemType, itemId, isCorrect, date);
+    return updateMastery(itemType, itemId, isCorrect, date, questionMode);
   }
 
   let newLevel, newStreak, nextReview;
@@ -52,13 +54,32 @@ async function updateMastery(itemType, itemId, isCorrect, date) {
     nextReview = addDays(date, 1);
   }
 
+  // Calculate score delta based on question mode and correctness
+  let scoreDelta;
+  if (isCorrect) {
+    scoreDelta = (questionMode === 'choice') ? 0.5 : 1;
+  } else {
+    scoreDelta = -1.5;
+  }
+  const newScore = Math.max(0, Math.min(10, (row.score || 0) + scoreDelta));
+  const newPaused = newScore >= 10 ? 1 : (row.paused || 0);
+
   await run(
     `UPDATE word_mastery
      SET mastery_level = ?, review_count = review_count + 1, correct_streak = ?,
-         next_review_date = ?, last_review_date = ?
+         next_review_date = ?, last_review_date = ?,
+         score = ?, paused = ?
      WHERE item_type = ? AND item_id = ?`,
-    [newLevel, newStreak, nextReview, date, itemType, itemId]
+    [newLevel, newStreak, nextReview, date, newScore, newPaused, itemType, itemId]
   );
+  saveDb();
+}
+
+// Called when daily learning is completed.
+// All paused items lose 0.5 points. If score drops below 6, unpause.
+async function decayPausedItems() {
+  await run(`UPDATE word_mastery SET score = score - 0.5 WHERE paused = 1`);
+  await run(`UPDATE word_mastery SET paused = 0 WHERE paused = 1 AND score < 6`);
   saveDb();
 }
 
@@ -138,6 +159,7 @@ module.exports = {
   getMasteryInfo,
   backfillMastery,
   getMasteryStats,
+  decayPausedItems,
   getIntervalDays,
   INTERVALS
 };

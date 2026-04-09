@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const { getDailyContent, getToday, getActiveSession, completeSession, getSessionStatus, getNextSessionDate } = require('../services/daily-session');
+const { decayPausedItems } = require('../services/mastery-service');
 
 // GET /api/daily/status - Check session status
 router.get('/status', async (req, res) => {
@@ -20,6 +21,8 @@ router.post('/complete', async (req, res) => {
       return res.json({ success: true, message: 'No active session to complete' });
     }
     const session = await completeSession(active.session_date);
+    // Decay all paused (score=10) items by 0.5; unpause if score drops below 6
+    await decayPausedItems();
     res.json({ success: true, session });
   } catch (err) {
     res.status(500).json({ error: err.message });

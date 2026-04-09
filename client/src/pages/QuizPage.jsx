@@ -10,50 +10,28 @@ function QuizPage() {
   const [answer, setAnswer] = useState('');
   const [result, setResult] = useState(null);
   const [score, setScore] = useState({ correct: 0, wrong: 0 });
-  const [quizMode, setQuizMode] = useState(null);
-  const [choices, setChoices] = useState([]);
-  const [choicesReady, setChoicesReady] = useState(false);
   const [finished, setFinished] = useState(false);
-  const [choicesForId, setChoicesForId] = useState(null);
   const inputRef = useRef(null);
   const { speak } = useTTS();
-  // Stable mode per question index — survives React StrictMode double-invoke
-  const modeMapRef = useRef({});
-  // Track which item the current async work is for (StrictMode-safe)
-  const activeItemKeyRef = useRef(null);
 
+  // Lock quizItems on first successful load (StrictMode safety)
+  const loadedRef = useRef(false);
   useEffect(() => {
-    if (data?.items) {
-      const items = data.items.map(item => ({
+    if (data?.items && !loadedRef.current) {
+      loadedRef.current = true;
+      setQuizItems(data.items.map(item => ({
         ...item,
         item_type: item.item_type || (item.word ? 'word' : 'phrase'),
         display: item.word || item.phrase,
         hint: item.meaning,
         hasError: (item.error_count || 0) > 0
-      }));
-      setQuizItems(items);
+      })));
     }
   }, [data]);
 
-  useEffect(() => {
-    if (quizItems.length > 0 && currentIndex < quizItems.length && !finished) {
-      // Use stable random mode per index to avoid StrictMode double-invoke issues
-      if (modeMapRef.current[currentIndex] === undefined) {
-        modeMapRef.current[currentIndex] = Math.random() > 0.5 ? 'typing' : 'choice';
-      }
-      const mode = modeMapRef.current[currentIndex];
-      const item = quizItems[currentIndex];
-      const itemKey = `${item.item_type}:${item.id}:${currentIndex}`;
-      activeItemKeyRef.current = itemKey;
-      setQuizMode(mode);
-      setChoicesReady(false);
-      setChoices([]);
-      setChoicesForId(null);
-      if (mode === 'choice') {
-        generateChoices(item, itemKey);
-      }
-    }
-  }, [currentIndex, quizItems.length]);
+  const item = quizItems[currentIndex] || null;
+  // Server decides quizMode based on score; fallback to typing
+  const quizMode = item?.quizMode || 'typing';
 
   useEffect(() => {
     if (quizMode === 'typing' && inputRef.current) {
@@ -61,78 +39,7 @@ function QuizPage() {
     }
   }, [quizMode, currentIndex]);
 
-  const generateChoices = async (item, itemKey) => {
-    const isStale = () => activeItemKeyRef.current !== itemKey;
-    try {
-      if (!item.hint) {
-        if (!isStale()) setQuizMode('typing');
-        return;
-      }
-      const res = await fetch(
-        `/api/quiz/options?itemType=${item.item_type}&itemId=${item.id}&count=5&difficulty=${item.difficulty || ''}`
-      );
-      if (isStale()) return;
-      if (!res.ok) {
-        setQuizMode('typing');
-        return;
-      }
-      const distractors = await res.json();
-      if (isStale()) return;
-      if (!Array.isArray(distractors)) {
-        setQuizMode('typing');
-        return;
-      }
-
-      const correctAnswer = { text: item.hint, correct: true };
-      const correctLower = item.hint.toLowerCase();
-
-      // Deduplicate distractors by meaning text
-      const seenMeanings = new Set([correctLower]);
-      const wrongAnswers = distractors
-        .filter(d => {
-          if (!d.meaning) return false;
-          const dLower = d.meaning.toLowerCase();
-          if (seenMeanings.has(dLower)) return false;
-          // Filter out semantically similar meanings (substring check)
-          const pass = dLower !== correctLower
-            && !dLower.includes(correctLower)
-            && !correctLower.includes(dLower);
-          if (pass) seenMeanings.add(dLower);
-          return pass;
-        })
-        .map(d => ({ text: d.meaning, correct: false }))
-        .slice(0, 3);
-
-      if (wrongAnswers.length < 2) {
-        setQuizMode('typing');
-        return;
-      }
-      // Fisher-Yates shuffle (proper, unlike sort + random)
-      const allChoices = [correctAnswer, ...wrongAnswers];
-      for (let i = allChoices.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [allChoices[i], allChoices[j]] = [allChoices[j], allChoices[i]];
-      }
-      // Defensive: ensure correct answer is present (should ALWAYS be true)
-      if (!allChoices.some(c => c.correct)) {
-        console.error('[Quiz BUG] correct missing after shuffle', { item, allChoices });
-        setQuizMode('typing');
-        return;
-      }
-      // Final stale check before applying state
-      if (isStale()) return;
-      console.log('[Quiz] setChoices', item.display, '(id:', item.id, ')→', allChoices.map(c => `${c.text}${c.correct ? '✓' : ''}`));
-      setChoices(allChoices);
-      setChoicesForId(`${item.item_type}:${item.id}`);
-      setChoicesReady(true);
-    } catch (err) {
-      console.error('[Quiz] generateChoices error', err);
-      if (!isStale()) setQuizMode('typing');
-    }
-  };
-
   const checkAnswer = (userAnswer) => {
-    const item = quizItems[currentIndex];
     const correct = item.display.toLowerCase().trim();
     const input = userAnswer.toLowerCase().trim();
     const isCorrect = input === correct || fuzzyMatch(input, correct);
@@ -146,7 +53,8 @@ function QuizPage() {
     postApi('/quiz/submit', {
       itemType: item.item_type,
       itemId: item.id,
-      isCorrect
+      isCorrect,
+      questionMode: 'typing'
     });
   };
 
@@ -165,27 +73,21 @@ function QuizPage() {
       wrong: s.wrong + (isCorrect ? 0 : 1)
     }));
 
-    const item = quizItems[currentIndex];
     postApi('/quiz/submit', {
       itemType: item.item_type,
       itemId: item.id,
-      isCorrect
+      isCorrect,
+      questionMode: 'choice'
     });
   };
 
   const handleNext = () => {
     if (currentIndex < quizItems.length - 1) {
-      // Invalidate any in-flight generateChoices from the previous question
-      activeItemKeyRef.current = null;
       setCurrentIndex(i => i + 1);
       setAnswer('');
       setResult(null);
-      setChoices([]);
-      setChoicesReady(false);
-      setChoicesForId(null);
     } else {
       setFinished(true);
-      // Mark daily session as complete when quiz finishes
       postApi('/daily/complete', {}).catch(() => {});
     }
   };
@@ -223,8 +125,6 @@ function QuizPage() {
       </div>
     );
   }
-
-  const item = quizItems[currentIndex];
 
   return (
     <div className="quiz-page">
@@ -264,12 +164,12 @@ function QuizPage() {
               {!result && <button type="submit" className="submit-btn">確認</button>}
             </form>
           </>
-        ) : quizMode === 'choice' && choicesReady && choices.length > 0 && choices.some(c => c.correct) && choicesForId === `${item.item_type}:${item.id}` ? (
+        ) : quizMode === 'choice' && item.choices ? (
           <>
             <p className="quiz-prompt">請選擇正確的中文意思：</p>
             <h3 className="quiz-word-display">{item.display}</h3>
             <div className="choices">
-              {choices.map((c, i) => (
+              {item.choices.map((c, i) => (
                 <button
                   key={i}
                   className={`choice-btn ${
@@ -286,8 +186,22 @@ function QuizPage() {
           </>
         ) : (
           <>
-            <p className="quiz-prompt">載入選項中...</p>
-            <h3 className="quiz-word-display">{item.display}</h3>
+            <p className="quiz-prompt">請輸入這個中文意思對應的英文：</p>
+            <h3 className="quiz-hint">{item.hint}</h3>
+            {item.part_of_speech && <span className="quiz-pos">{item.part_of_speech}</span>}
+            <form onSubmit={handleTypingSubmit}>
+              <input
+                ref={inputRef}
+                type="text"
+                className={`quiz-input ${result === 'correct' ? 'input-correct' : result === 'wrong' ? 'input-wrong' : ''}`}
+                value={answer}
+                onChange={e => setAnswer(e.target.value)}
+                placeholder="輸入英文..."
+                disabled={result !== null}
+                autoComplete="off"
+              />
+              {!result && <button type="submit" className="submit-btn">確認</button>}
+            </form>
           </>
         )}
 
@@ -310,17 +224,10 @@ function QuizPage() {
 function fuzzyMatch(input, correct) {
   const inputWords = input.split(/\s+/);
   const correctWords = correct.split(/\s+/);
-
-  // Word count must match
   if (inputWords.length !== correctWords.length) return false;
-
-  // For single short word: allow levenshtein <= 1
   if (correctWords.length === 1) {
     return correct.length > 3 && levenshtein(input, correct) <= 1;
   }
-
-  // For phrases: each word must be exact match
-  // (user needs to spell every word correctly)
   return false;
 }
 

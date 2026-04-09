@@ -184,6 +184,13 @@ async function initSchema() {
   // Migration: add round_number to learning_log
   try { db.run('ALTER TABLE learning_log ADD COLUMN round_number INTEGER DEFAULT 1'); } catch (e) { /* already exists */ }
 
+  // Migration: add score + paused to word_mastery
+  try { db.run('ALTER TABLE word_mastery ADD COLUMN score REAL DEFAULT 0'); } catch (e) { /* already exists */ }
+  try { db.run('ALTER TABLE word_mastery ADD COLUMN paused INTEGER DEFAULT 0'); } catch (e) { /* already exists */ }
+  // Backfill score from mastery_level for existing data (0→0, 1→2, 2→4, 3→6, 4→8, 5→10)
+  db.run('UPDATE word_mastery SET score = mastery_level * 2 WHERE score = 0 AND mastery_level > 0');
+  db.run('UPDATE word_mastery SET paused = 1 WHERE score >= 10 AND paused = 0');
+
   // Indexes
   db.run('CREATE INDEX IF NOT EXISTS idx_learning_log_date ON learning_log(learn_date)');
   db.run('CREATE INDEX IF NOT EXISTS idx_learning_log_item ON learning_log(item_type, item_id)');

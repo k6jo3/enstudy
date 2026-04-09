@@ -3,7 +3,7 @@ import { postApi, useApi } from '../hooks/useApi';
 import './ListenPage.css';
 
 function ListenPage() {
-  const { data, loading } = useApi('/daily');
+  const { data, loading } = useApi('/quiz/items?type=listen');
   const [items, setItems] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [answer, setAnswer] = useState('');
@@ -13,18 +13,16 @@ function ListenPage() {
   const [hasPlayed, setHasPlayed] = useState(false);
   const inputRef = useRef(null);
 
+  // Lock items on first load (StrictMode safety)
+  const loadedRef = useRef(false);
   useEffect(() => {
-    if (data) {
-      const allItems = [
-        ...data.newWords.map(w => ({ ...w, item_type: 'word', text: w.word })),
-        ...data.newPhrases.map(p => ({ ...p, item_type: 'phrase', text: p.phrase })),
-        ...(data.reviewItems || []).map(r => ({
-          ...r,
-          item_type: r.item_type || (r.word ? 'word' : 'phrase'),
-          text: r.word || r.phrase
-        })),
-      ].sort(() => Math.random() - 0.5);
-      setItems(allItems);
+    if (data?.items && !loadedRef.current) {
+      loadedRef.current = true;
+      setItems(data.items.map(item => ({
+        ...item,
+        item_type: item.item_type || (item.word ? 'word' : 'phrase'),
+        text: item.word || item.phrase
+      })));
     }
   }, [data]);
 
@@ -77,7 +75,8 @@ function ListenPage() {
     postApi('/quiz/submit', {
       itemType: item.item_type,
       itemId: item.id,
-      isCorrect
+      isCorrect,
+      questionMode: 'typing'
     });
   };
 

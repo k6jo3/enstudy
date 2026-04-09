@@ -7,18 +7,228 @@ const phraseService = require('../services/phrase-service');
 const { queryAll, queryScalar } = require('../db/helpers');
 const { getToday } = require('../services/daily-session');
 
+// ---------- Tier distribution config ----------
+// Proportions for each score tier (must sum to 1.0)
+const TIER_CONFIG = [
+  { name: 'today',    ratio: 0.20 },  // today's daily session items
+  { name: 'untested', ratio: 0.10 },  // learned but never quizzed
+  { name: 'score0',   ratio: 0.30 },  // tested, score = 0
+  { name: 'weak',     ratio: 0.20 },  // 0 < score < 6
+  { name: 'medium',   ratio: 0.15 },  // 6 <= score < 8
+  { name: 'strong',   ratio: 0.05 },  // 8 <= score < 10 (score=10 paused, excluded)
+];
+
+// ---------- Helpers ----------
+
+// Determine quiz mode based on score
+function getQuizMode(score) {
+  if (score >= 8) return 'typing';
+  if (score <= 6) return 'choice';
+  return Math.random() > 0.5 ? 'typing' : 'choice';
+}
+
+// Build choices for a choice-mode item
+function buildChoices(item, distractors) {
+  const correct = item.meaning;
+  if (!correct) return null;
+  const correctLower = correct.toLowerCase();
+  const seen = new Set([correctLower]);
+  const wrongs = [];
+  for (const d of distractors) {
+    if (!d.meaning) continue;
+    const dLower = d.meaning.toLowerCase();
+    if (seen.has(dLower)) continue;
+    if (dLower.includes(correctLower) || correctLower.includes(dLower)) continue;
+    seen.add(dLower);
+    wrongs.push({ text: d.meaning, correct: false });
+    if (wrongs.length === 3) break;
+  }
+  if (wrongs.length < 2) return null;
+  const all = [{ text: correct, correct: true }, ...wrongs];
+  for (let i = all.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [all[i], all[j]] = [all[j], all[i]];
+  }
+  return all;
+}
+
+async function fetchDistractors(item) {
+  const excludeIds = [Number(item.id)];
+  const diff = item.difficulty != null ? Number(item.difficulty) : null;
+  if (item.item_type === 'word') {
+    let d = await wordService.getLearnedRandomWords(5, excludeIds, diff);
+    if (d.length < 5) d = await wordService.getRandomWords(5, excludeIds);
+    return d;
+  }
+  let d = await phraseService.getLearnedRandomPhrases(5, excludeIds, diff);
+  if (d.length < 5) d = await phraseService.getRandomPhrases(5, excludeIds);
+  return d;
+}
+
+// Fisher-Yates shuffle
+function shuffle(arr) {
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+  return arr;
+}
+
+// ---------- Core: select items by score tiers ----------
+async function selectItemsByTier(quizCount, today) {
+  // 1. Today's items (from learning_log, learn_date = today)
+  const todayItems = await queryAll(`
+    SELECT
+      ll.item_type, ll.item_id as id,
+      CASE WHEN ll.item_type = 'word' THEN w.word ELSE NULL END as word,
+      CASE WHEN ll.item_type = 'word' THEN w.phonetic ELSE NULL END as phonetic,
+      CASE WHEN ll.item_type = 'word' THEN w.meaning ELSE p.meaning END as meaning,
+      CASE WHEN ll.item_type = 'word' THEN w.part_of_speech ELSE NULL END as part_of_speech,
+      CASE WHEN ll.item_type = 'word' THEN w.example ELSE p.example END as example,
+      CASE WHEN ll.item_type = 'phrase' THEN p.phrase ELSE NULL END as phrase,
+      CASE WHEN ll.item_type = 'word' THEN w.difficulty ELSE p.difficulty END as difficulty,
+      COALESCE(wm.score, -1) as score,
+      COALESCE(e.total_errors, 0) as error_count,
+      'today' as tier
+    FROM learning_log ll
+    LEFT JOIN words w ON ll.item_type = 'word' AND ll.item_id = w.id
+    LEFT JOIN phrases p ON ll.item_type = 'phrase' AND ll.item_id = p.id
+    LEFT JOIN word_mastery wm ON wm.item_type = ll.item_type AND wm.item_id = ll.item_id
+    LEFT JOIN (
+      SELECT item_type, item_id, SUM(error_count) as total_errors
+      FROM errors GROUP BY item_type, item_id
+    ) e ON ll.item_type = e.item_type AND ll.item_id = e.item_id
+    WHERE ll.learn_date = ? AND (wm.paused IS NULL OR wm.paused = 0)
+    ORDER BY RANDOM()
+  `, [today]);
+
+  // 2. Untested items (learned, no word_mastery record, excluding today)
+  const untestedItems = await queryAll(`
+    SELECT
+      ll.item_type, ll.item_id as id,
+      CASE WHEN ll.item_type = 'word' THEN w.word ELSE NULL END as word,
+      CASE WHEN ll.item_type = 'word' THEN w.phonetic ELSE NULL END as phonetic,
+      CASE WHEN ll.item_type = 'word' THEN w.meaning ELSE p.meaning END as meaning,
+      CASE WHEN ll.item_type = 'word' THEN w.part_of_speech ELSE NULL END as part_of_speech,
+      CASE WHEN ll.item_type = 'word' THEN w.example ELSE p.example END as example,
+      CASE WHEN ll.item_type = 'phrase' THEN p.phrase ELSE NULL END as phrase,
+      CASE WHEN ll.item_type = 'word' THEN w.difficulty ELSE p.difficulty END as difficulty,
+      -1 as score,
+      COALESCE(e.total_errors, 0) as error_count,
+      'untested' as tier
+    FROM learning_log ll
+    LEFT JOIN words w ON ll.item_type = 'word' AND ll.item_id = w.id
+    LEFT JOIN phrases p ON ll.item_type = 'phrase' AND ll.item_id = p.id
+    LEFT JOIN (
+      SELECT item_type, item_id, SUM(error_count) as total_errors
+      FROM errors GROUP BY item_type, item_id
+    ) e ON ll.item_type = e.item_type AND ll.item_id = e.item_id
+    WHERE ll.is_review = 0
+      AND ll.learn_date != ?
+      AND NOT EXISTS (
+        SELECT 1 FROM word_mastery wm
+        WHERE wm.item_type = ll.item_type AND wm.item_id = ll.item_id
+      )
+    GROUP BY ll.item_type, ll.item_id
+    ORDER BY RANDOM()
+  `, [today]);
+
+  // 3. Scored items from word_mastery (not paused)
+  const scoredItems = await queryAll(`
+    SELECT
+      wm.item_type, wm.item_id as id,
+      CASE WHEN wm.item_type = 'word' THEN w.word ELSE NULL END as word,
+      CASE WHEN wm.item_type = 'word' THEN w.phonetic ELSE NULL END as phonetic,
+      CASE WHEN wm.item_type = 'word' THEN w.meaning ELSE p.meaning END as meaning,
+      CASE WHEN wm.item_type = 'word' THEN w.part_of_speech ELSE NULL END as part_of_speech,
+      CASE WHEN wm.item_type = 'word' THEN w.example ELSE p.example END as example,
+      CASE WHEN wm.item_type = 'phrase' THEN p.phrase ELSE NULL END as phrase,
+      CASE WHEN wm.item_type = 'word' THEN w.difficulty ELSE p.difficulty END as difficulty,
+      wm.score,
+      COALESCE(e.total_errors, 0) as error_count
+    FROM word_mastery wm
+    LEFT JOIN words w ON wm.item_type = 'word' AND wm.item_id = w.id
+    LEFT JOIN phrases p ON wm.item_type = 'phrase' AND wm.item_id = p.id
+    LEFT JOIN (
+      SELECT item_type, item_id, SUM(error_count) as total_errors
+      FROM errors GROUP BY item_type, item_id
+    ) e ON wm.item_type = e.item_type AND wm.item_id = e.item_id
+    WHERE wm.paused = 0
+    ORDER BY RANDOM()
+  `);
+
+  // Bucket scored items by tier
+  const score0 = [];
+  const weak = [];   // 0 < score < 6
+  const medium = []; // 6 <= score < 8
+  const strong = []; // 8 <= score < 10
+  for (const item of scoredItems) {
+    if (item.score === 0) { item.tier = 'score0'; score0.push(item); }
+    else if (item.score < 6) { item.tier = 'weak'; weak.push(item); }
+    else if (item.score < 8) { item.tier = 'medium'; medium.push(item); }
+    else { item.tier = 'strong'; strong.push(item); }
+  }
+
+  // Allocate per tier
+  const pools = {
+    today: todayItems,
+    untested: untestedItems,
+    score0,
+    weak,
+    medium,
+    strong,
+  };
+
+  const usedKeys = new Set();
+  const result = [];
+
+  // First pass: fill each tier up to its quota
+  for (const tier of TIER_CONFIG) {
+    const quota = Math.max(1, Math.round(quizCount * tier.ratio));
+    const pool = pools[tier.name];
+    let added = 0;
+    for (const item of pool) {
+      if (added >= quota) break;
+      const key = `${item.item_type}:${item.id}`;
+      if (usedKeys.has(key)) continue;
+      usedKeys.add(key);
+      result.push(item);
+      added++;
+    }
+  }
+
+  // Second pass: if under quizCount, fill from lowest tiers first (favour weak items)
+  if (result.length < quizCount) {
+    const fillOrder = ['score0', 'weak', 'untested', 'today', 'medium', 'strong'];
+    for (const tierName of fillOrder) {
+      if (result.length >= quizCount) break;
+      const pool = pools[tierName];
+      for (const item of pool) {
+        if (result.length >= quizCount) break;
+        const key = `${item.item_type}:${item.id}`;
+        if (usedKeys.has(key)) continue;
+        usedKeys.add(key);
+        result.push(item);
+      }
+    }
+  }
+
+  return shuffle(result.slice(0, quizCount));
+}
+
+// ---------- Routes ----------
+
 // Submit a quiz answer
 router.post('/submit', async (req, res) => {
   try {
-    const { itemType, itemId, isCorrect } = req.body;
+    const { itemType, itemId, isCorrect, questionMode } = req.body;
     const date = getToday();
 
     if (!isCorrect) {
       await errorTracker.recordError(itemType, itemId, date);
     }
 
-    // Update spaced repetition mastery
-    await masteryService.updateMastery(itemType, itemId, isCorrect, date);
+    await masteryService.updateMastery(itemType, itemId, isCorrect, date, questionMode || 'typing');
 
     res.json({ success: true });
   } catch (err) {
@@ -26,113 +236,38 @@ router.post('/submit', async (req, res) => {
   }
 });
 
-// Get quiz options (distractors) for multiple choice
-router.get('/options', async (req, res) => {
-  try {
-    const { itemType, itemId, count = 5, difficulty } = req.query;
-    const n = Number(count);
-    const excludeIds = [Number(itemId)];
-    const diff = difficulty ? Number(difficulty) : null;
-    let distractors;
-
-    if (itemType === 'word') {
-      // Prefer learned words as distractors, fallback to all
-      distractors = await wordService.getLearnedRandomWords(n, excludeIds, diff);
-      if (distractors.length < n) {
-        distractors = await wordService.getRandomWords(n, excludeIds);
-      }
-    } else {
-      distractors = await phraseService.getLearnedRandomPhrases(n, excludeIds, diff);
-      if (distractors.length < n) {
-        distractors = await phraseService.getRandomPhrases(n, excludeIds);
-      }
-    }
-
-    res.json(distractors);
-  } catch (err) {
-    res.status(500).json({ error: err.message });
-  }
-});
-
-// Get all previously learned items for quiz (progressive count, max 60)
+// Get quiz items with score-tier distribution
 router.get('/items', async (req, res) => {
   try {
     const limit = Number(req.query.limit) || 60;
+    const forListen = req.query.type === 'listen';
     const today = getToday();
 
     const totalDays = await queryScalar('SELECT COUNT(*) FROM sessions WHERE completed = 1') || 0;
     const quizCount = Math.min(10 + Math.floor(totalDays / 7) * 5, limit);
 
-    // Priority 1: SRS-due items (from word_mastery)
-    const dueItems = await queryAll(`
-      SELECT
-        wm.item_type, wm.mastery_level,
-        CASE WHEN wm.item_type = 'word' THEN w.id ELSE p.id END as id,
-        CASE WHEN wm.item_type = 'word' THEN w.word ELSE NULL END as word,
-        CASE WHEN wm.item_type = 'word' THEN w.phonetic ELSE NULL END as phonetic,
-        CASE WHEN wm.item_type = 'word' THEN w.meaning ELSE p.meaning END as meaning,
-        CASE WHEN wm.item_type = 'word' THEN w.part_of_speech ELSE NULL END as part_of_speech,
-        CASE WHEN wm.item_type = 'word' THEN w.example ELSE p.example END as example,
-        CASE WHEN wm.item_type = 'phrase' THEN p.phrase ELSE NULL END as phrase,
-        CASE WHEN wm.item_type = 'word' THEN w.difficulty ELSE p.difficulty END as difficulty,
-        COALESCE(e.total_errors, 0) as error_count
-      FROM word_mastery wm
-      LEFT JOIN words w ON wm.item_type = 'word' AND wm.item_id = w.id
-      LEFT JOIN phrases p ON wm.item_type = 'phrase' AND wm.item_id = p.id
-      LEFT JOIN (
-        SELECT item_type, item_id, SUM(error_count) as total_errors
-        FROM errors GROUP BY item_type, item_id
-      ) e ON wm.item_type = e.item_type AND wm.item_id = e.item_id
-      WHERE wm.next_review_date <= ?
-      ORDER BY wm.mastery_level ASC, RANDOM()
-      LIMIT ?
-    `, [today, quizCount]);
+    const items = await selectItemsByTier(quizCount, today);
 
-    let items = dueItems;
-    const usedIds = new Set(items.map(i => `${i.item_type}:${i.id}`));
+    // Set quizMode and generate choices
+    for (const item of items) {
+      const score = item.score != null && item.score >= 0 ? item.score : 0;
+      if (forListen) {
+        item.quizMode = 'typing';
+      } else {
+        item.quizMode = getQuizMode(score);
+      }
 
-    // Priority 2: Fill remaining with random learned items
-    const remaining = quizCount - items.length;
-    if (remaining > 0) {
-      const extraWords = await queryAll(`
-        SELECT w.*, 'word' as item_type,
-               COALESCE(wm.mastery_level, 0) as mastery_level,
-               COALESCE(e.total_errors, 0) as error_count
-        FROM words w
-        INNER JOIN learning_log ll ON ll.item_id = w.id AND ll.item_type = 'word' AND ll.is_review = 0
-        LEFT JOIN word_mastery wm ON wm.item_type = 'word' AND wm.item_id = w.id
-        LEFT JOIN (
-          SELECT item_id, SUM(error_count) as total_errors
-          FROM errors WHERE item_type = 'word' GROUP BY item_id
-        ) e ON e.item_id = w.id
-        ORDER BY RANDOM()
-        LIMIT ?
-      `, [remaining * 2]);
-
-      const extraPhrases = await queryAll(`
-        SELECT p.*, 'phrase' as item_type,
-               COALESCE(wm.mastery_level, 0) as mastery_level,
-               COALESCE(e.total_errors, 0) as error_count
-        FROM phrases p
-        INNER JOIN learning_log ll ON ll.item_id = p.id AND ll.item_type = 'phrase' AND ll.is_review = 0
-        LEFT JOIN word_mastery wm ON wm.item_type = 'phrase' AND wm.item_id = p.id
-        LEFT JOIN (
-          SELECT item_id, SUM(error_count) as total_errors
-          FROM errors WHERE item_type = 'phrase' GROUP BY item_id
-        ) e ON e.item_id = p.id
-        ORDER BY RANDOM()
-        LIMIT ?
-      `, [remaining * 2]);
-
-      for (const item of [...extraWords, ...extraPhrases]) {
-        if (!usedIds.has(`${item.item_type}:${item.id}`)) {
-          items.push(item);
-          usedIds.add(`${item.item_type}:${item.id}`);
+      if (item.quizMode === 'choice' && !forListen) {
+        const distractors = await fetchDistractors(item);
+        const choices = buildChoices(item, distractors);
+        if (choices) {
+          item.choices = choices;
+        } else {
+          // Not enough distractors → fall back to typing
+          item.quizMode = 'typing';
         }
       }
     }
-
-    items = items.sort(() => Math.random() - 0.5).slice(0, quizCount);
 
     res.json({
       items,
