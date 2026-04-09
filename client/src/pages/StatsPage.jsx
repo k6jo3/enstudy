@@ -57,27 +57,23 @@ function StatsPage() {
         </div>
       )}
 
-      {stats.masteryStats && stats.masteryStats.totalTracked > 0 && (
+      {stats.masteryStats && stats.masteryStats.totalLearned > 0 && (
         <div className="mastery-section">
-          <h3>間隔重複熟練度</h3>
+          <h3>熟練度分布</h3>
           <p className="mastery-summary">
-            追蹤中：{stats.masteryStats.totalTracked} 個詞彙 | 已精通（Lv.5）：{stats.masteryStats.totalMastered} 個
+            已學：{stats.masteryStats.totalLearned} 個詞彙 | 已測驗：{stats.masteryStats.totalTracked} 個 | 滿分暫停：{stats.masteryStats.pausedCount} 個
           </p>
           <div className="mastery-distribution">
-            {[0, 1, 2, 3, 4, 5].map(level => {
-              const item = stats.masteryStats.distribution.find(d => d.mastery_level === level);
-              const count = item ? item.count : 0;
-              const pct = stats.masteryStats.totalTracked > 0
-                ? Math.round((count / stats.masteryStats.totalTracked) * 100) : 0;
+            {stats.masteryStats.scoreTiers.map(tier => {
+              const total = stats.masteryStats.totalLearned;
+              const pct = total > 0 ? Math.round((tier.count / total) * 100) : 0;
               return (
-                <div key={level} className="mastery-row">
-                  <span className="mastery-label">
-                    Lv.{level} {'★'.repeat(level)}{'☆'.repeat(5 - level)}
-                  </span>
+                <div key={tier.name} className="mastery-row">
+                  <span className="mastery-label">{tier.label}</span>
                   <div className="mastery-bar-bg">
-                    <div className={`mastery-bar-fill mastery-fill-${level}`} style={{ width: `${pct}%` }} />
+                    <div className={`mastery-bar-fill score-fill-${tier.name}`} style={{ width: `${pct}%` }} />
                   </div>
-                  <span className="mastery-count">{count}</span>
+                  <span className="mastery-count">{tier.count}</span>
                 </div>
               );
             })}
@@ -135,6 +131,15 @@ function StatsPage() {
 
 export default StatsPage;
 
+function getScoreClass(score, paused) {
+  if (paused) return 'score-paused';
+  if (score < 0) return 'score-untested';
+  if (score === 0) return 'score-zero';
+  if (score < 6) return 'score-weak';
+  if (score < 8) return 'score-medium';
+  return 'score-strong';
+}
+
 function LearnedWordsList({ words, phrases, filter, setFilter }) {
   const { speak } = useTTS();
 
@@ -160,8 +165,8 @@ function LearnedWordsList({ words, phrases, filter, setFilter }) {
             <button className="speak-btn-sm" onClick={() => speak(item.display)}>&#128264;</button>
             <span className="learned-word">{item.display}</span>
             <span className="learned-meaning">{item.meaning}</span>
-            <span className={`learned-mastery mastery-lv-${item.mastery_level}`}>
-              Lv.{item.mastery_level}
+            <span className={`learned-mastery ${getScoreClass(item.score, item.paused)}`}>
+              {item.paused ? '暫停' : item.score < 0 ? '未計分' : `${item.score} 分`}
             </span>
             <span className="learned-date">{item.learn_date}</span>
           </div>

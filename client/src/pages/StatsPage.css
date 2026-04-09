@@ -193,12 +193,13 @@
   min-width: 2px;
 }
 
-.mastery-fill-0 { background: #64748b; }
-.mastery-fill-1 { background: #f59e0b; }
-.mastery-fill-2 { background: #f59e0b; }
-.mastery-fill-3 { background: #22c55e; }
-.mastery-fill-4 { background: #3b82f6; }
-.mastery-fill-5 { background: #a855f7; }
+/* Score tier bar colors */
+.score-fill-untested { background: #64748b; }
+.score-fill-score0   { background: #ef4444; }
+.score-fill-weak     { background: #f59e0b; }
+.score-fill-medium   { background: #22c55e; }
+.score-fill-strong   { background: #3b82f6; }
+.score-fill-paused   { background: #a855f7; }
 
 .mastery-count {
   width: 40px;
@@ -288,12 +289,13 @@
   flex-shrink: 0;
 }
 
-.mastery-lv-0 { background: #991b1b; color: #fca5a5; }
-.mastery-lv-1 { background: #92400e; color: #fcd34d; }
-.mastery-lv-2 { background: #854d0e; color: #fde68a; }
-.mastery-lv-3 { background: #166534; color: #86efac; }
-.mastery-lv-4 { background: #1e40af; color: #93c5fd; }
-.mastery-lv-5 { background: #6b21a8; color: #d8b4fe; }
+/* Score badge colors in learned list */
+.score-untested { background: #334155; color: #94a3b8; }
+.score-zero     { background: #991b1b; color: #fca5a5; }
+.score-weak     { background: #92400e; color: #fcd34d; }
+.score-medium   { background: #166534; color: #86efac; }
+.score-strong   { background: #1e40af; color: #93c5fd; }
+.score-paused   { background: #6b21a8; color: #d8b4fe; }
 
 .learned-date {
   color: #64748b;

@@ -29,6 +29,8 @@ router.get('/learned', async (req, res) => {
     const words = await queryAll(`
       SELECT w.*, 'word' as item_type,
              COALESCE(wm.mastery_level, 0) as mastery_level,
+             COALESCE(wm.score, -1) as score,
+             COALESCE(wm.paused, 0) as paused,
              wm.next_review_date,
              ll.learn_date
       FROM words w
@@ -40,6 +42,8 @@ router.get('/learned', async (req, res) => {
     const phrases = await queryAll(`
       SELECT p.*, 'phrase' as item_type,
              COALESCE(wm.mastery_level, 0) as mastery_level,
+             COALESCE(wm.score, -1) as score,
+             COALESCE(wm.paused, 0) as paused,
              wm.next_review_date,
              ll.learn_date
       FROM phrases p

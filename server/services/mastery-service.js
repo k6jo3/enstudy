@@ -136,19 +136,31 @@ async function backfillMastery(date) {
 }
 
 async function getMasteryStats() {
-  const distribution = await queryAll(`
-    SELECT mastery_level, COUNT(*) as count
-    FROM word_mastery
-    GROUP BY mastery_level
-    ORDER BY mastery_level
-  `);
-  const totalMastered = await queryScalar(
-    'SELECT COUNT(*) FROM word_mastery WHERE mastery_level >= 5'
+  const totalTracked = await queryScalar('SELECT COUNT(*) FROM word_mastery') || 0;
+  const totalLearned = await queryScalar(
+    "SELECT COUNT(DISTINCT item_type || ':' || item_id) FROM learning_log WHERE is_review = 0"
   ) || 0;
-  const totalTracked = await queryScalar(
-    'SELECT COUNT(*) FROM word_mastery'
-  ) || 0;
-  return { distribution, totalMastered, totalTracked };
+
+  const score0 = await queryScalar('SELECT COUNT(*) FROM word_mastery WHERE score = 0 AND paused = 0') || 0;
+  const scoreWeak = await queryScalar('SELECT COUNT(*) FROM word_mastery WHERE score > 0 AND score < 6 AND paused = 0') || 0;
+  const scoreMedium = await queryScalar('SELECT COUNT(*) FROM word_mastery WHERE score >= 6 AND score < 8 AND paused = 0') || 0;
+  const scoreStrong = await queryScalar('SELECT COUNT(*) FROM word_mastery WHERE score >= 8 AND paused = 0') || 0;
+  const pausedCount = await queryScalar('SELECT COUNT(*) FROM word_mastery WHERE paused = 1') || 0;
+  const untestedCount = Math.max(0, totalLearned - totalTracked);
+
+  return {
+    totalTracked,
+    totalLearned,
+    scoreTiers: [
+      { name: 'untested', label: '未計分', count: untestedCount },
+      { name: 'score0',   label: '0 分', count: score0 },
+      { name: 'weak',     label: '0.5 ~ 5.5 分', count: scoreWeak },
+      { name: 'medium',   label: '6 ~ 7.5 分', count: scoreMedium },
+      { name: 'strong',   label: '8 ~ 9.5 分', count: scoreStrong },
+      { name: 'paused',   label: '滿分（暫停中）', count: pausedCount },
+    ],
+    pausedCount,
+  };
 }
 
 module.exports = {
