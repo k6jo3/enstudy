@@ -76,19 +76,26 @@ router.get('/', async (req, res) => {
         // Active incomplete session — load it, no gate
         date = active.session_date;
       } else {
-        // No active session — would create a new one. Check score gate.
-        const blockedAvg = await checkScoreGate();
-        if (blockedAvg !== null) {
-          // Blocked: load last completed session so user can still review it
-          const lastSession = await queryOne(
-            'SELECT * FROM sessions WHERE completed = 1 ORDER BY session_date DESC LIMIT 1'
-          );
-          if (lastSession) {
-            const content = await getDailyContent(lastSession.session_date);
+        // No active session — all completed (or first time).
+        const today = getToday();
+        const latest = await queryOne(
+          'SELECT * FROM sessions ORDER BY session_date DESC LIMIT 1'
+        );
+
+        if (latest && latest.session_date >= today) {
+          // Already have a session for today or later (e.g. user did "next lesson"
+          // and quiz auto-completed it). Show that session, don't create a new one.
+          date = latest.session_date;
+        } else {
+          // New day — would create today's session. Check score gate first.
+          const blockedAvg = await checkScoreGate();
+          if (blockedAvg !== null && latest) {
+            // Blocked: show last completed session so user can still review it
+            const content = await getDailyContent(latest.session_date);
             return res.json({ ...content, scoreGated: true, averageScore: blockedAvg });
           }
+          date = today;
         }
-        date = getToday();
       }
     }
     const content = await getDailyContent(date);
