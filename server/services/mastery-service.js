@@ -163,6 +163,15 @@ async function getMasteryStats() {
   };
 }
 
+// Average score of all items that have been quizzed at least once.
+// Returns null if no items have been quizzed (first-time user → no gate).
+async function getAverageScore() {
+  const count = await queryScalar('SELECT COUNT(*) FROM word_mastery WHERE review_count > 0');
+  if (!count) return null;
+  const avg = await queryScalar('SELECT AVG(score) FROM word_mastery WHERE review_count > 0');
+  return avg != null ? avg : null;
+}
+
 module.exports = {
   initMastery,
   updateMastery,
@@ -172,6 +181,7 @@ module.exports = {
   backfillMastery,
   getMasteryStats,
   decayPausedItems,
+  getAverageScore,
   getIntervalDays,
   INTERVALS
 };

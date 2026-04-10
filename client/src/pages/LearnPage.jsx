@@ -11,10 +11,14 @@ function LearnPage() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [sessionCompleted, setSessionCompleted] = useState(false);
   const [loadingNext, setLoadingNext] = useState(false);
+  const [scoreGateMsg, setScoreGateMsg] = useState(null);
 
   // Check if this session is already completed
   useEffect(() => {
     if (data?.session?.completed) setSessionCompleted(true);
+    if (data?.scoreGated) {
+      setScoreGateMsg(`平均分數 ${data.averageScore} 分，需達到 6 分才能進入下一課。請先到測驗加強練習！`);
+    }
   }, [data]);
 
   // Set initial phase once data loads
@@ -97,20 +101,30 @@ function LearnPage() {
             <SentenceItem key={i} sentence={s} index={i} />
           ))}
           <div className="learn-complete">
+            {scoreGateMsg && (
+              <div className="score-gate-banner">
+                <p>{scoreGateMsg}</p>
+              </div>
+            )}
             {sessionCompleted ? (
               <>
                 <p>今日學習已完成！前往測驗鞏固記憶。</p>
                 <button
                   className="continue-btn"
-                  disabled={loadingNext}
+                  disabled={loadingNext || !!scoreGateMsg}
                   onClick={async () => {
                     setLoadingNext(true);
                     try {
-                      await postApi('/daily/next', {});
-                      setSessionCompleted(false);
-                      setPhase(null);
-                      setCurrentIndex(0);
-                      refetch();
+                      const result = await postApi('/daily/next', {});
+                      if (result.error === 'score_gate') {
+                        setScoreGateMsg(result.message);
+                      } else {
+                        setScoreGateMsg(null);
+                        setSessionCompleted(false);
+                        setPhase(null);
+                        setCurrentIndex(0);
+                        refetch();
+                      }
                     } catch (e) {
                       console.error(e);
                     } finally {
