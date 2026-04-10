@@ -1,5 +1,6 @@
 const { queryAll, queryOne, run, queryScalar } = require('../db/helpers');
 const { saveDb } = require('../db/connection');
+const { getToday } = require('../utils/date');
 
 async function getGameItems(gameType, count = 20) {
   const words = await queryAll(`
@@ -18,7 +19,7 @@ async function getAllLearnedWords() {
 }
 
 async function saveScore(gameType, score, durationSeconds, details) {
-  const today = new Date().toISOString().split('T')[0];
+  const today = getToday();
   await run(
     'INSERT INTO game_scores (game_type, score, played_date, duration_seconds, details_json) VALUES (?, ?, ?, ?, ?)',
     [gameType, score, today, durationSeconds || 0, JSON.stringify(details || {})]

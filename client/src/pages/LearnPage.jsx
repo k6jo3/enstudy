@@ -3,6 +3,7 @@ import PhraseCard from '../components/PhraseCard';
 import WordCard from '../components/WordCard';
 import { useApi, postApi } from '../hooks/useApi';
 import { useTTS } from '../hooks/useTTS';
+import { formatLocalDate } from '../utils/date';
 import './LearnPage.css';
 
 function LearnPage() {
@@ -13,17 +14,19 @@ function LearnPage() {
   const [loadingNext, setLoadingNext] = useState(false);
   const [scoreGateMsg, setScoreGateMsg] = useState(null);
 
-  // Check if this session is already completed
   useEffect(() => {
-    if (data?.session?.completed) setSessionCompleted(true);
+    if (data?.session?.completed) {
+      setSessionCompleted(true);
+    }
+
     if (data?.scoreGated) {
-      setScoreGateMsg(`平均分數 ${data.averageScore} 分，需達到 6 分才能進入下一課。請先到測驗加強練習！`);
+      setScoreGateMsg(`目前平均分數 ${data.averageScore} 低於 6，請先複習並完成測驗後再開啟新課程。`);
     }
   }, [data]);
 
-  // Set initial phase once data loads
   useEffect(() => {
     if (!data) return;
+
     const { reviewItems, newWords, newPhrases } = data;
     if (reviewItems.length > 0) setPhase('review');
     else if (newWords.length > 0) setPhase('words');
@@ -31,59 +34,92 @@ function LearnPage() {
     else setPhase('sentences');
   }, [data]);
 
-  if (loading) return <div className="loading">載入今日學習內容...</div>;
+  if (loading) return <div className="loading">載入今日學習內容中...</div>;
   if (error) return <div className="error-msg">載入失敗：{error}</div>;
   if (!data || !phase) return null;
 
   const { newWords, newPhrases, reviewItems, sentences } = data;
 
-  const handleNext = () => {
+  function handleNext() {
     if (phase === 'review') {
       if (currentIndex < reviewItems.length - 1) {
-        setCurrentIndex(i => i + 1);
+        setCurrentIndex((index) => index + 1);
       } else {
         setPhase('words');
         setCurrentIndex(0);
       }
-    } else if (phase === 'words') {
+      return;
+    }
+
+    if (phase === 'words') {
       if (currentIndex < newWords.length - 1) {
-        setCurrentIndex(i => i + 1);
+        setCurrentIndex((index) => index + 1);
       } else {
         setPhase('phrases');
         setCurrentIndex(0);
       }
-    } else if (phase === 'phrases') {
-      if (currentIndex < newPhrases.length - 1) {
-        setCurrentIndex(i => i + 1);
-      } else {
-        setPhase('sentences');
-        setCurrentIndex(0);
-      }
+      return;
     }
-  };
 
-  const renderPhaseLabel = () => {
+    if (phase === 'phrases' && currentIndex < newPhrases.length - 1) {
+      setCurrentIndex((index) => index + 1);
+    } else if (phase === 'phrases') {
+      setPhase('sentences');
+      setCurrentIndex(0);
+    }
+  }
+
+  function renderPhaseLabel() {
     switch (phase) {
       case 'review': {
         const item = reviewItems[currentIndex];
         const level = item?.mastery_level ?? '?';
         return `複習 (${currentIndex + 1}/${reviewItems.length}) - 熟練度 Lv.${level}`;
       }
-      case 'words': return `新單字 (${currentIndex + 1}/${newWords.length})`;
-      case 'phrases': return `新片語 (${currentIndex + 1}/${newPhrases.length})`;
-      case 'sentences': return '今日例句';
-      default: return '';
+      case 'words':
+        return `單字 (${currentIndex + 1}/${newWords.length})`;
+      case 'phrases':
+        return `片語 (${currentIndex + 1}/${newPhrases.length})`;
+      case 'sentences':
+        return '情境例句';
+      default:
+        return '';
     }
-  };
+  }
 
-  const renderContent = () => {
+  async function handleLoadNextSession() {
+    setLoadingNext(true);
+    try {
+      const result = await postApi('/daily/next', {});
+      if (result.error === 'score_gate') {
+        setScoreGateMsg(result.message);
+        return;
+      }
+
+      setScoreGateMsg(null);
+      setSessionCompleted(false);
+      setPhase(null);
+      setCurrentIndex(0);
+      refetch();
+    } catch (requestError) {
+      console.error(requestError);
+    } finally {
+      setLoadingNext(false);
+    }
+  }
+
+  async function handleCompleteSession() {
+    await postApi('/daily/complete', {});
+    setSessionCompleted(true);
+  }
+
+  function renderContent() {
     if (phase === 'review' && reviewItems.length > 0) {
       const item = reviewItems[currentIndex];
       if (item.item_type === 'word' || item.word) {
-        return <WordCard word={item} hasError={true} onNext={handleNext} />;
-      } else {
-        return <PhraseCard phrase={item} hasError={true} onNext={handleNext} />;
+        return <WordCard word={item} hasError onNext={handleNext} />;
       }
+      return <PhraseCard phrase={item} hasError onNext={handleNext} />;
     }
 
     if (phase === 'words' && newWords.length > 0) {
@@ -97,8 +133,8 @@ function LearnPage() {
     if (phase === 'sentences') {
       return (
         <div className="sentences-section">
-          {sentences.map((s, i) => (
-            <SentenceItem key={i} sentence={s} index={i} />
+          {sentences.map((sentence, index) => (
+            <SentenceItem key={index} sentence={sentence} index={index} />
           ))}
           <div className="learn-complete">
             {scoreGateMsg && (
@@ -108,40 +144,21 @@ function LearnPage() {
             )}
             {sessionCompleted ? (
               <>
-                <p>今日學習已完成！前往測驗鞏固記憶。</p>
+                <p>今日課程已完成。你可以直接開始下一課。</p>
                 <button
                   className="continue-btn"
                   disabled={loadingNext || !!scoreGateMsg}
-                  onClick={async () => {
-                    setLoadingNext(true);
-                    try {
-                      const result = await postApi('/daily/next', {});
-                      if (result.error === 'score_gate') {
-                        setScoreGateMsg(result.message);
-                      } else {
-                        setScoreGateMsg(null);
-                        setSessionCompleted(false);
-                        setPhase(null);
-                        setCurrentIndex(0);
-                        refetch();
-                      }
-                    } catch (e) {
-                      console.error(e);
-                    } finally {
-                      setLoadingNext(false);
-                    }
-                  }}
+                  onClick={handleLoadNextSession}
                 >
-                  {loadingNext ? '載入中...' : '繼續學習下一課'}
+                  {loadingNext ? '載入中...' : '開始下一課'}
                 </button>
               </>
             ) : (
               <>
-                <p>已瀏覽所有內容，完成後可進入下一天的學習。</p>
-                <button className="complete-btn" onClick={async () => {
-                  await postApi('/daily/complete', {});
-                  setSessionCompleted(true);
-                }}>完成今日學習</button>
+                <p>所有單字、片語和例句都看完後，請將今天課程標記為完成。</p>
+                <button className="complete-btn" onClick={handleCompleteSession}>
+                  完成今日課程
+                </button>
               </>
             )}
           </div>
@@ -149,40 +166,58 @@ function LearnPage() {
       );
     }
 
-    return <div className="learn-complete"><p>今日沒有新內容，所有內容已學完！</p></div>;
-  };
+    return (
+      <div className="learn-complete">
+        <p>目前沒有可顯示的學習內容。</p>
+      </div>
+    );
+  }
+
+  const today = formatLocalDate();
+  const showSessionDate = data.session?.session_date && data.session.session_date !== today;
 
   return (
     <div className="learn-page">
       <div className="learn-header">
-        <h2>今日學習 {data.session?.session_date && data.session.session_date !== new Date().toISOString().split('T')[0]
-          ? `(${data.session.session_date})` : ''}</h2>
+        <h2>今日學習 {showSessionDate ? `(${data.session.session_date})` : ''}</h2>
         <span className="phase-label">{renderPhaseLabel()}</span>
       </div>
 
       <div className="phase-nav">
         <button
           className={phase === 'review' ? 'active' : ''}
-          onClick={() => { setPhase('review'); setCurrentIndex(0); }}
+          onClick={() => {
+            setPhase('review');
+            setCurrentIndex(0);
+          }}
           disabled={reviewItems.length === 0}
         >
           複習 ({reviewItems.length})
         </button>
         <button
           className={phase === 'words' ? 'active' : ''}
-          onClick={() => { setPhase('words'); setCurrentIndex(0); }}
+          onClick={() => {
+            setPhase('words');
+            setCurrentIndex(0);
+          }}
         >
           單字 ({newWords.length})
         </button>
         <button
           className={phase === 'phrases' ? 'active' : ''}
-          onClick={() => { setPhase('phrases'); setCurrentIndex(0); }}
+          onClick={() => {
+            setPhase('phrases');
+            setCurrentIndex(0);
+          }}
         >
           片語 ({newPhrases.length})
         </button>
         <button
           className={phase === 'sentences' ? 'active' : ''}
-          onClick={() => { setPhase('sentences'); setCurrentIndex(0); }}
+          onClick={() => {
+            setPhase('sentences');
+            setCurrentIndex(0);
+          }}
         >
           例句 ({sentences.length})
         </button>
@@ -196,16 +231,15 @@ function LearnPage() {
 function SentenceItem({ sentence, index }) {
   const { speak } = useTTS();
 
-  // New dialogue format: sentence has .lines array
   if (sentence.lines) {
-    const fullText = sentence.lines.map(l => l.text).join(' ');
+    const fullText = sentence.lines.map((line) => line.text).join(' ');
     return (
       <div className="sentence-item dialogue-item">
         <span className="sentence-num">{index + 1}.</span>
         <div className="dialogue-content">
           <div className="dialogue-lines">
-            {sentence.lines.map((line, i) => (
-              <div key={i} className={`dialogue-line speaker-${line.speaker.toLowerCase()}`}>
+            {sentence.lines.map((line, lineIndex) => (
+              <div key={lineIndex} className={`dialogue-line speaker-${line.speaker.toLowerCase()}`}>
                 <span className="speaker-label">{line.speaker}:</span>
                 <div className="speaker-bubble">
                   <span className="speaker-text">{line.text}</span>
@@ -215,10 +249,12 @@ function SentenceItem({ sentence, index }) {
             ))}
           </div>
           <div className="dialogue-footer">
-            <button className="speak-btn small" onClick={() => speak(fullText)} title="播放">&#128264;</button>
+            <button className="speak-btn small" onClick={() => speak(fullText)} title="播放語音">
+              &#128264;
+            </button>
             <div className="sentence-words">
-              {(sentence.highlightWords || []).map((w, i) => (
-                <span key={i} className="highlight-word">{w}</span>
+              {(sentence.highlightWords || []).map((word, wordIndex) => (
+                <span key={wordIndex} className="highlight-word">{word}</span>
               ))}
             </div>
           </div>
@@ -227,15 +263,16 @@ function SentenceItem({ sentence, index }) {
     );
   }
 
-  // Fallback: old single-sentence format
   return (
     <div className="sentence-item">
       <span className="sentence-num">{index + 1}.</span>
       <p className="sentence-text">{sentence.sentence}</p>
-      <button className="speak-btn small" onClick={() => speak(sentence.sentence)} title="播放">&#128264;</button>
+      <button className="speak-btn small" onClick={() => speak(sentence.sentence)} title="播放語音">
+        &#128264;
+      </button>
       <div className="sentence-words">
-        {(sentence.highlightWords || []).map((w, i) => (
-          <span key={i} className="highlight-word">{w}</span>
+        {(sentence.highlightWords || []).map((word, wordIndex) => (
+          <span key={wordIndex} className="highlight-word">{word}</span>
         ))}
       </div>
     </div>

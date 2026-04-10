@@ -10,6 +10,18 @@ import ReadingPage from './pages/ReadingPage';
 import PlaybackPage from './pages/PlaybackPage';
 import GamesPage from './pages/GamesPage';
 
+const NAV_ITEMS = [
+  { path: '/', label: '首頁' },
+  { path: '/learn', label: '學習' },
+  { path: '/reading', label: '閱讀' },
+  { path: '/quiz', label: '測驗' },
+  { path: '/grammar', label: '文法' },
+  { path: '/listen', label: '聽寫' },
+  { path: '/playback', label: '播放' },
+  { path: '/games', label: '遊戲' },
+  { path: '/stats', label: '統計' },
+];
+
 function App() {
   const location = useLocation();
 
@@ -18,15 +30,15 @@ function App() {
       <nav className="navbar">
         <Link to="/" className="logo">enStudy</Link>
         <div className="nav-links">
-          <Link to="/" className={location.pathname === '/' ? 'active' : ''}>首頁</Link>
-          <Link to="/learn" className={location.pathname === '/learn' ? 'active' : ''}>學習</Link>
-          <Link to="/reading" className={location.pathname === '/reading' ? 'active' : ''}>閱讀</Link>
-          <Link to="/quiz" className={location.pathname === '/quiz' ? 'active' : ''}>測驗</Link>
-          <Link to="/grammar" className={location.pathname === '/grammar' ? 'active' : ''}>文法</Link>
-          <Link to="/listen" className={location.pathname === '/listen' ? 'active' : ''}>英聽</Link>
-          <Link to="/playback" className={location.pathname === '/playback' ? 'active' : ''}>播放</Link>
-          <Link to="/games" className={location.pathname === '/games' ? 'active' : ''}>遊戲</Link>
-          <Link to="/stats" className={location.pathname === '/stats' ? 'active' : ''}>統計</Link>
+          {NAV_ITEMS.map((item) => (
+            <Link
+              key={item.path}
+              to={item.path}
+              className={location.pathname === item.path ? 'active' : ''}
+            >
+              {item.label}
+            </Link>
+          ))}
         </div>
       </nav>
       <main className="main-content">

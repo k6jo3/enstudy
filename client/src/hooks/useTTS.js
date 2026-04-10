@@ -4,7 +4,7 @@ export function useTTS() {
   const utteranceRef = useRef(null);
 
   const speak = useCallback((text, rate = 0.9) => {
-    if (!window.speechSynthesis) return;
+    if (typeof window === 'undefined' || !window.speechSynthesis || !text) return;
 
     // Cancel any ongoing speech
     window.speechSynthesis.cancel();
@@ -24,7 +24,9 @@ export function useTTS() {
   }, []);
 
   const stop = useCallback(() => {
-    window.speechSynthesis?.cancel();
+    if (typeof window !== 'undefined') {
+      window.speechSynthesis?.cancel();
+    }
   }, []);
 
   return { speak, stop };

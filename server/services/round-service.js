@@ -1,12 +1,13 @@
 const { queryAll, queryOne, run, queryScalar } = require('../db/helpers');
 const { saveDb } = require('../db/connection');
+const { getToday } = require('../utils/date');
 
 async function getCurrentRound() {
   let round = await queryOne('SELECT * FROM rounds WHERE completed_date IS NULL ORDER BY round_number DESC LIMIT 1');
   if (!round) {
     const maxRound = await queryScalar('SELECT MAX(round_number) FROM rounds');
     if (!maxRound) {
-      const today = new Date().toISOString().split('T')[0];
+      const today = getToday();
       await run('INSERT INTO rounds (round_number, started_date, word_pace, phrase_pace) VALUES (1, ?, 0, 0)', [today]);
       saveDb();
       round = await queryOne('SELECT * FROM rounds WHERE round_number = 1');
@@ -35,7 +36,7 @@ async function isRoundComplete(roundNumber) {
 }
 
 async function completeRound(roundNumber) {
-  const today = new Date().toISOString().split('T')[0];
+  const today = getToday();
   await run('UPDATE rounds SET completed_date = ? WHERE round_number = ?', [today, roundNumber]);
   saveDb();
 }
@@ -43,7 +44,7 @@ async function completeRound(roundNumber) {
 async function startNextRound(wordPace, phrasePace) {
   const current = await getCurrentRound();
   const nextNumber = current ? current.round_number + 1 : 1;
-  const today = new Date().toISOString().split('T')[0];
+  const today = getToday();
   await run(
     'INSERT INTO rounds (round_number, started_date, word_pace, phrase_pace) VALUES (?, ?, ?, ?)',
     [nextNumber, today, wordPace || 20, phrasePace || 10]

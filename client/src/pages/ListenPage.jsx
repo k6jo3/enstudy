@@ -1,9 +1,11 @@
 import { useEffect, useRef, useState } from 'react';
 import { postApi, useApi } from '../hooks/useApi';
+import { useTTS } from '../hooks/useTTS';
 import './ListenPage.css';
 
 function ListenPage() {
   const { data, loading } = useApi('/quiz/items?type=listen');
+  const { speak } = useTTS();
   const [items, setItems] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [answer, setAnswer] = useState('');
@@ -12,16 +14,15 @@ function ListenPage() {
   const [finished, setFinished] = useState(false);
   const [hasPlayed, setHasPlayed] = useState(false);
   const inputRef = useRef(null);
-
-  // Lock items on first load (StrictMode safety)
   const loadedRef = useRef(false);
+
   useEffect(() => {
     if (data?.items && !loadedRef.current) {
       loadedRef.current = true;
       setItems(data.items.map(item => ({
         ...item,
         item_type: item.item_type || (item.word ? 'word' : 'phrase'),
-        text: item.word || item.phrase
+        text: item.word || item.phrase,
       })));
     }
   }, [data]);
@@ -32,33 +33,14 @@ function ListenPage() {
     }
   }, [currentIndex, result]);
 
-  const speak = (text, rate = 0.85) => {
-    if (!window.speechSynthesis) return;
-    window.speechSynthesis.cancel();
-    const u = new SpeechSynthesisUtterance(text);
-    u.lang = 'en-US';
-    u.rate = rate;
-    const voices = window.speechSynthesis.getVoices();
-    const enVoice = voices.find(v => v.lang.startsWith('en'));
-    if (enVoice) u.voice = enVoice;
-    window.speechSynthesis.speak(u);
+  function playCurrent(rate = 0.85) {
+    if (items.length === 0) return;
+    speak(items[currentIndex].text, rate);
     setHasPlayed(true);
-  };
+  }
 
-  const handlePlay = () => {
-    if (items.length > 0) {
-      speak(items[currentIndex].text);
-    }
-  };
-
-  const handlePlaySlow = () => {
-    if (items.length > 0) {
-      speak(items[currentIndex].text, 0.5);
-    }
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  function handleSubmit(event) {
+    event.preventDefault();
     if (!answer.trim() || result) return;
 
     const item = items[currentIndex];
@@ -67,46 +49,48 @@ function ListenPage() {
     const isCorrect = input === correct;
 
     setResult(isCorrect ? 'correct' : 'wrong');
-    setScore(s => ({
-      correct: s.correct + (isCorrect ? 1 : 0),
-      wrong: s.wrong + (isCorrect ? 0 : 1)
+    setScore((current) => ({
+      correct: current.correct + (isCorrect ? 1 : 0),
+      wrong: current.wrong + (isCorrect ? 0 : 1),
     }));
 
     postApi('/quiz/submit', {
       itemType: item.item_type,
       itemId: item.id,
       isCorrect,
-      questionMode: 'typing'
-    });
-  };
+      questionMode: 'typing',
+    }).catch(() => {});
+  }
 
-  const handleNext = () => {
+  function handleNext() {
     if (currentIndex < items.length - 1) {
-      setCurrentIndex(i => i + 1);
+      setCurrentIndex((index) => index + 1);
       setAnswer('');
       setResult(null);
       setHasPlayed(false);
-    } else {
-      setFinished(true);
+      return;
     }
-  };
 
-  if (loading) return <div className="loading">載入英聽練習...</div>;
-  if (!data || items.length === 0) return <div className="loading">今日沒有英聽內容。</div>;
+    setFinished(true);
+  }
+
+  if (loading) return <div className="loading">載入聽寫題目中...</div>;
+  if (!data || items.length === 0) return <div className="loading">目前沒有可用的聽寫題目。</div>;
 
   if (finished) {
     const total = score.correct + score.wrong;
     const pct = total > 0 ? Math.round((score.correct / total) * 100) : 0;
+
     return (
       <div className="listen-page">
         <div className="listen-result">
-          <h2>英聽練習完成！</h2>
+          <h2>聽寫完成</h2>
           <div className="score-circle">
             <span className="score-pct">{pct}%</span>
           </div>
           <div className="score-details">
-            <span className="correct-score">正確：{score.correct}</span>
-            <span className="wrong-score">錯誤：{score.wrong}</span>
+            <span className="correct-score">答對：{score.correct}</span>
+            <span className="wrong-score">答錯：{score.wrong}</span>
           </div>
         </div>
       </div>
@@ -118,7 +102,7 @@ function ListenPage() {
   return (
     <div className="listen-page">
       <div className="listen-header">
-        <h2>英聽練習</h2>
+        <h2>聽寫練習</h2>
         <span className="listen-progress">{currentIndex + 1} / {items.length}</span>
       </div>
 
@@ -128,13 +112,13 @@ function ListenPage() {
       </div>
 
       <div className="listen-card">
-        <p className="listen-instruction">聆聽發音，輸入你聽到的英文單字或片語</p>
+        <p className="listen-instruction">先播放音訊，再輸入你聽到的單字或片語。</p>
 
         <div className="listen-controls">
-          <button className="play-btn" onClick={handlePlay}>
+          <button className="play-btn" onClick={() => playCurrent(0.85)}>
             &#9654; 播放
           </button>
-          <button className="play-btn slow" onClick={handlePlaySlow}>
+          <button className="play-btn slow" onClick={() => playCurrent(0.5)}>
             &#128034; 慢速播放
           </button>
         </div>
@@ -145,14 +129,14 @@ function ListenPage() {
             type="text"
             className={`listen-input ${result === 'correct' ? 'input-correct' : result === 'wrong' ? 'input-wrong' : ''}`}
             value={answer}
-            onChange={e => setAnswer(e.target.value)}
-            placeholder={hasPlayed ? '輸入你聽到的...' : '先點擊播放按鈕'}
+            onChange={(event) => setAnswer(event.target.value)}
+            placeholder={hasPlayed ? '請輸入答案...' : '請先播放音訊'}
             disabled={result !== null}
             autoComplete="off"
           />
           {!result && (
             <button type="submit" className="submit-btn" disabled={!hasPlayed}>
-              確認
+              送出
             </button>
           )}
         </form>
@@ -160,11 +144,11 @@ function ListenPage() {
         {result && (
           <div className={`listen-feedback ${result}`}>
             {result === 'correct' ? (
-              <p className="feedback-text">&#10003; 正確！</p>
+              <p className="feedback-text">&#10003; 答對了</p>
             ) : (
-              <p className="feedback-text">&#10007; 錯誤！正確答案：<strong>{item.text}</strong></p>
+              <p className="feedback-text">&#10007; 答錯了，正確答案是 <strong>{item.text}</strong></p>
             )}
-            <p className="feedback-meaning">中文：{item.meaning}</p>
+            <p className="feedback-meaning">意思：{item.meaning}</p>
             <button className="next-btn" onClick={handleNext}>
               {currentIndex < items.length - 1 ? '下一題' : '查看結果'}
             </button>

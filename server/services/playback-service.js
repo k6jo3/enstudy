@@ -1,5 +1,6 @@
 const { queryAll, queryOne, run, queryScalar } = require('../db/helpers');
 const { saveDb } = require('../db/connection');
+const { getToday } = require('../utils/date');
 
 async function getPlaybackItems(count = 100) {
   // Priority 1: Unplayed learned words
@@ -59,7 +60,7 @@ async function getPlaybackItems(count = 100) {
 }
 
 async function recordPlay(itemType, itemId) {
-  const today = new Date().toISOString().split('T')[0];
+  const today = getToday();
   const existing = await queryOne(
     'SELECT * FROM playback_log WHERE item_type = ? AND item_id = ?',
     [itemType, itemId]

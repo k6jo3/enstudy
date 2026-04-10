@@ -1,18 +1,9 @@
 const { queryAll, queryOne, run, queryScalar } = require('../db/helpers');
 const { saveDb } = require('../db/connection');
+const { addDays, getToday } = require('../utils/date');
 
 // Reuse same interval schedule as word mastery
 const INTERVALS = { 0: 1, 1: 3, 2: 7, 3: 14, 4: 30, 5: 90 };
-
-function addDays(dateStr, days) {
-  const d = new Date(dateStr + 'T00:00:00');
-  d.setDate(d.getDate() + days);
-  return d.toISOString().split('T')[0];
-}
-
-function getToday() {
-  return new Date().toISOString().split('T')[0];
-}
 
 async function getItems(count = 15, topic = null) {
   const today = getToday();

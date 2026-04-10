@@ -1,5 +1,6 @@
 const { queryAll, queryOne, run, queryScalar } = require('../db/helpers');
 const { saveDb } = require('../db/connection');
+const { addDays } = require('../utils/date');
 
 // Interval schedule in days per mastery level
 const INTERVALS = {
@@ -13,12 +14,6 @@ const INTERVALS = {
 
 function getIntervalDays(level) {
   return INTERVALS[Math.min(level, 5)] || 1;
-}
-
-function addDays(dateStr, days) {
-  const d = new Date(dateStr + 'T00:00:00');
-  d.setDate(d.getDate() + days);
-  return d.toISOString().split('T')[0];
 }
 
 async function initMastery(itemType, itemId, date) {

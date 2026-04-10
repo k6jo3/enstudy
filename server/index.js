@@ -8,6 +8,7 @@ const { backfillMastery } = require('./services/mastery-service');
 const { run, queryScalar } = require('./db/helpers');
 const roundService = require('./services/round-service');
 const { cleanOldDialogues } = require('./services/daily-session');
+const { getToday } = require('./utils/date');
 
 async function start() {
   // Initialize database
@@ -15,7 +16,7 @@ async function start() {
   await seedData();
 
   // Backfill mastery records for previously learned items
-  const today = new Date().toISOString().split('T')[0];
+  const today = getToday();
   await backfillMastery(today);
 
   // Backfill: mark all past sessions as completed (one-time migration)

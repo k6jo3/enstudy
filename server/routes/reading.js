@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 const readingService = require('../services/reading-service');
 const { getToday } = require('../services/daily-session');
+const { badRequest, parseNumber, parsePositiveInt } = require('../utils/validation');
 
 // GET /api/reading - today's story
 router.get('/', async (req, res) => {
@@ -21,8 +22,16 @@ router.get('/', async (req, res) => {
 router.post('/complete', async (req, res) => {
   try {
     const { storyId, quizScore } = req.body;
+    const parsedStoryId = parsePositiveInt(storyId);
+    const parsedQuizScore = parseNumber(quizScore, { min: 0, max: 100 });
+    if (parsedStoryId === null) {
+      return badRequest(res, 'Invalid storyId');
+    }
+    if (parsedQuizScore === null) {
+      return badRequest(res, 'Invalid quizScore');
+    }
     const today = getToday();
-    await readingService.completeStory(storyId, today, quizScore);
+    await readingService.completeStory(parsedStoryId, today, parsedQuizScore);
     res.json({ success: true });
   } catch (err) {
     res.status(500).json({ error: err.message });

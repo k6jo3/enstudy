@@ -6,6 +6,7 @@ const masteryService = require('./mastery-service');
 const errorTracker = require('./error-tracker');
 const { generateDialogues } = require('./sentence-generator');
 const roundService = require('./round-service');
+const { addDays } = require('../utils/date');
 
 function getToday() {
   // Use LOCAL date, not UTC — toISOString() returns UTC which can be off by 1 day
@@ -71,15 +72,7 @@ async function completeSession(sessionDate) {
 async function getNextSessionDate() {
   const latest = await queryOne('SELECT session_date FROM sessions ORDER BY session_date DESC LIMIT 1');
   if (!latest) return getToday();
-  // Parse YYYY-MM-DD and add 1 day using LOCAL date arithmetic
-  // (toISOString gives UTC date which can be off by 1 day in non-UTC timezones)
-  const [y, m, d] = latest.session_date.split('-').map(Number);
-  const date = new Date(y, m - 1, d);
-  date.setDate(date.getDate() + 1);
-  const yyyy = date.getFullYear();
-  const mm = String(date.getMonth() + 1).padStart(2, '0');
-  const dd = String(date.getDate()).padStart(2, '0');
-  return `${yyyy}-${mm}-${dd}`;
+  return addDays(latest.session_date, 1);
 }
 
 async function getSessionStatus() {

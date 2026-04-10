@@ -6,6 +6,7 @@ const wordService = require('../services/word-service');
 const phraseService = require('../services/phrase-service');
 const { queryAll, queryScalar } = require('../db/helpers');
 const { getToday } = require('../services/daily-session');
+const { badRequest, isOneOf, parsePositiveInt } = require('../utils/validation');
 
 // ---------- Tier distribution config ----------
 // Proportions for each score tier (must sum to 1.0)
@@ -242,13 +243,28 @@ async function selectItemsByTier(quizCount, today) {
 router.post('/submit', async (req, res) => {
   try {
     const { itemType, itemId, isCorrect, questionMode } = req.body;
+    const parsedItemId = parsePositiveInt(itemId);
+
+    if (!isOneOf(itemType, ['word', 'phrase'])) {
+      return badRequest(res, 'Invalid itemType');
+    }
+    if (parsedItemId === null) {
+      return badRequest(res, 'Invalid itemId');
+    }
+    if (typeof isCorrect !== 'boolean') {
+      return badRequest(res, 'isCorrect must be boolean');
+    }
+    if (questionMode !== undefined && !isOneOf(questionMode, ['typing', 'choice', 'hint', 'listen'])) {
+      return badRequest(res, 'Invalid questionMode');
+    }
+
     const date = getToday();
 
     if (!isCorrect) {
-      await errorTracker.recordError(itemType, itemId, date);
+      await errorTracker.recordError(itemType, parsedItemId, date);
     }
 
-    await masteryService.updateMastery(itemType, itemId, isCorrect, date, questionMode || 'typing');
+    await masteryService.updateMastery(itemType, parsedItemId, isCorrect, date, questionMode || 'typing');
 
     res.json({ success: true });
   } catch (err) {
@@ -259,7 +275,10 @@ router.post('/submit', async (req, res) => {
 // Get quiz items with score-tier distribution
 router.get('/items', async (req, res) => {
   try {
-    const limit = Number(req.query.limit) || 60;
+    const limit = parsePositiveInt(req.query.limit, { defaultValue: 60, max: 200 });
+    if (limit === null) {
+      return badRequest(res, 'Invalid limit');
+    }
     const forListen = req.query.type === 'listen';
     const today = getToday();
 
