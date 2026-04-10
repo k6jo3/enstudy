@@ -21,11 +21,15 @@ const TIER_CONFIG = [
 
 // ---------- Helpers ----------
 
-// Determine quiz mode based on score
-// 0~4: choice | 4~8: choice or hint (50/50) | 8~12: typing (no hint)
-function getQuizMode(score) {
+// Determine quiz mode based on score and hint history
+// 0~4: choice | 4~8: hint (if <3 done) or choice/hint | 8~12: typing (no hint)
+function getQuizMode(score, hintCount) {
   if (score >= 8) return 'typing';
-  if (score >= 4) return Math.random() > 0.5 ? 'choice' : 'hint';
+  if (score >= 4) {
+    // Must complete at least 3 hint (fill-in-the-blank) answers before choice is allowed
+    if ((hintCount || 0) < 3) return 'hint';
+    return Math.random() > 0.5 ? 'choice' : 'hint';
+  }
   return 'choice';
 }
 
@@ -109,6 +113,7 @@ async function selectItemsByTier(quizCount, today) {
       CASE WHEN ll.item_type = 'phrase' THEN p.phrase ELSE NULL END as phrase,
       CASE WHEN ll.item_type = 'word' THEN w.difficulty ELSE p.difficulty END as difficulty,
       COALESCE(wm.score, -1) as score,
+      COALESCE(wm.hint_count, 0) as hint_count,
       COALESCE(e.total_errors, 0) as error_count,
       'today' as tier
     FROM learning_log ll
@@ -166,6 +171,7 @@ async function selectItemsByTier(quizCount, today) {
       CASE WHEN wm.item_type = 'phrase' THEN p.phrase ELSE NULL END as phrase,
       CASE WHEN wm.item_type = 'word' THEN w.difficulty ELSE p.difficulty END as difficulty,
       wm.score,
+      COALESCE(wm.hint_count, 0) as hint_count,
       COALESCE(e.total_errors, 0) as error_count
     FROM word_mastery wm
     LEFT JOIN words w ON wm.item_type = 'word' AND wm.item_id = w.id
@@ -293,7 +299,7 @@ router.get('/items', async (req, res) => {
       if (forListen) {
         item.quizMode = 'typing';
       } else {
-        item.quizMode = getQuizMode(score);
+        item.quizMode = getQuizMode(score, item.hint_count);
       }
 
       const display = item.word || item.phrase;

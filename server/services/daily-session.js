@@ -18,11 +18,12 @@ function getToday() {
 }
 
 // Progressive learning pace — round-aware
-async function getDailyPace() {
+// sessionDate: the date of the session (may be ahead of today via "next lesson")
+async function getDailyPace(sessionDate) {
   const round = await roundService.getCurrentRound();
   const roundNumber = round ? round.round_number : 1;
-  const today = getToday();
-  const dueCount = await masteryService.getDueCount(today);
+  const dueDate = sessionDate || getToday();
+  const dueCount = await masteryService.getDueCount(dueDate);
 
   let words, phrases;
 
@@ -88,7 +89,7 @@ async function getSessionStatus() {
 
 async function getDailyContent(date) {
   const session = await getOrCreateSession(date);
-  const pace = await getDailyPace();
+  const pace = await getDailyPace(date);
 
   const existingLog = await queryAll('SELECT * FROM learning_log WHERE learn_date = ?', [date]);
 
@@ -119,6 +120,19 @@ async function getDailyContent(date) {
         item.mastery_level = mastery.mastery_level;
         item.review_count = mastery.review_count;
       }
+    }
+
+    // Backfill: if no reviews were logged (bug: getDailyPace used wrong date),
+    // check for due items now and add them
+    if (reviewItems.length === 0 && pace.review > 0) {
+      reviewItems = await getReviewContent(date, pace.review);
+      for (const r of reviewItems) {
+        await run(
+          'INSERT OR IGNORE INTO learning_log (item_type, item_id, learn_date, is_review, round_number) VALUES (?, ?, ?, ?, ?)',
+          [r.item_type, r.id, date, 1, pace.roundNumber]
+        );
+      }
+      if (reviewItems.length > 0) saveDb();
     }
   } else {
     // First visit today — generate new content

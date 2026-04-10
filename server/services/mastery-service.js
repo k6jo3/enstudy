@@ -58,14 +58,15 @@ async function updateMastery(itemType, itemId, isCorrect, date, questionMode) {
   }
   const newScore = Math.max(0, Math.min(12, (row.score || 0) + scoreDelta));
   const newPaused = newScore >= 12 ? 1 : (row.paused || 0);
+  const hintInc = questionMode === 'hint' ? 1 : 0;
 
   await run(
     `UPDATE word_mastery
      SET mastery_level = ?, review_count = review_count + 1, correct_streak = ?,
          next_review_date = ?, last_review_date = ?,
-         score = ?, paused = ?
+         score = ?, paused = ?, hint_count = COALESCE(hint_count, 0) + ?
      WHERE item_type = ? AND item_id = ?`,
-    [newLevel, newStreak, nextReview, date, newScore, newPaused, itemType, itemId]
+    [newLevel, newStreak, nextReview, date, newScore, newPaused, hintInc, itemType, itemId]
   );
   saveDb();
 }

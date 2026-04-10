@@ -166,7 +166,7 @@ function LearnedWordsList({ words, phrases, filter, setFilter }) {
             <span className="learned-word">{item.display}</span>
             <span className="learned-meaning">{item.meaning}</span>
             <span className={`learned-mastery ${getScoreClass(item.score, item.paused)}`}>
-              {item.paused ? '暫停' : item.score < 0 ? '未計分' : `${item.score} 分`}
+              {item.paused ? `暫停 ${item.score}分` : item.score < 0 ? '未計分' : `${item.score} 分`}
             </span>
             <span className="learned-date">{item.learn_date}</span>
           </div>
