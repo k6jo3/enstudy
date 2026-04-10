@@ -135,7 +135,7 @@ function getScoreClass(score, paused) {
   if (paused) return 'score-paused';
   if (score < 0) return 'score-untested';
   if (score === 0) return 'score-zero';
-  if (score < 6) return 'score-weak';
+  if (score < 4) return 'score-weak';
   if (score < 8) return 'score-medium';
   return 'score-strong';
 }

@@ -13,18 +13,38 @@ const TIER_CONFIG = [
   { name: 'today',    ratio: 0.20 },  // today's daily session items
   { name: 'untested', ratio: 0.10 },  // learned but never quizzed
   { name: 'score0',   ratio: 0.30 },  // tested, score = 0
-  { name: 'weak',     ratio: 0.20 },  // 0 < score < 6
-  { name: 'medium',   ratio: 0.15 },  // 6 <= score < 8
-  { name: 'strong',   ratio: 0.05 },  // 8 <= score < 10 (score=10 paused, excluded)
+  { name: 'weak',     ratio: 0.20 },  // 0 < score < 4
+  { name: 'medium',   ratio: 0.15 },  // 4 <= score < 8
+  { name: 'strong',   ratio: 0.05 },  // 8 <= score < 12 (score=12 paused, excluded)
 ];
 
 // ---------- Helpers ----------
 
 // Determine quiz mode based on score
+// 0~4: choice | 4~8: choice or hint (50/50) | 8~12: typing (no hint)
 function getQuizMode(score) {
   if (score >= 8) return 'typing';
-  if (score <= 6) return 'choice';
-  return Math.random() > 0.5 ? 'typing' : 'choice';
+  if (score >= 4) return Math.random() > 0.5 ? 'choice' : 'hint';
+  return 'choice';
+}
+
+// Generate a hint display string: reveal ~1/3 of letters, rest as '_'
+// e.g. "adventure" → "a _ _ e _ _ _ r _"
+// e.g. "give up" → "g _ _ _   _ p"
+function generateHintDisplay(text) {
+  const words = text.split(' ');
+  return words.map(word => {
+    const chars = word.split('');
+    const revealCount = Math.max(1, Math.round(chars.length / 3));
+    const indices = chars.map((_, i) => i);
+    // Fisher-Yates to pick random positions
+    for (let i = indices.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [indices[i], indices[j]] = [indices[j], indices[i]];
+    }
+    const revealSet = new Set(indices.slice(0, revealCount));
+    return chars.map((c, i) => revealSet.has(i) ? c : '_').join(' ');
+  }).join('   ');
 }
 
 // Build choices for a choice-mode item
@@ -157,14 +177,14 @@ async function selectItemsByTier(quizCount, today) {
     ORDER BY RANDOM()
   `);
 
-  // Bucket scored items by tier
+  // Bucket scored items by tier (aligned with quiz mode thresholds)
   const score0 = [];
-  const weak = [];   // 0 < score < 6
-  const medium = []; // 6 <= score < 8
-  const strong = []; // 8 <= score < 10
+  const weak = [];   // 0 < score < 4 (choice only)
+  const medium = []; // 4 <= score < 8 (choice or hint)
+  const strong = []; // 8 <= score < 12 (typing only)
   for (const item of scoredItems) {
     if (item.score === 0) { item.tier = 'score0'; score0.push(item); }
-    else if (item.score < 6) { item.tier = 'weak'; weak.push(item); }
+    else if (item.score < 4) { item.tier = 'weak'; weak.push(item); }
     else if (item.score < 8) { item.tier = 'medium'; medium.push(item); }
     else { item.tier = 'strong'; strong.push(item); }
   }
@@ -248,7 +268,7 @@ router.get('/items', async (req, res) => {
 
     const items = await selectItemsByTier(quizCount, today);
 
-    // Set quizMode and generate choices
+    // Set quizMode and generate choices / hints
     for (const item of items) {
       const score = item.score != null && item.score >= 0 ? item.score : 0;
       if (forListen) {
@@ -257,15 +277,21 @@ router.get('/items', async (req, res) => {
         item.quizMode = getQuizMode(score);
       }
 
+      const display = item.word || item.phrase;
+
       if (item.quizMode === 'choice' && !forListen) {
         const distractors = await fetchDistractors(item);
         const choices = buildChoices(item, distractors);
         if (choices) {
           item.choices = choices;
         } else {
-          // Not enough distractors → fall back to typing
-          item.quizMode = 'typing';
+          // Not enough distractors → fall back to hint or typing
+          item.quizMode = score >= 8 ? 'typing' : 'hint';
         }
+      }
+
+      if (item.quizMode === 'hint' && display) {
+        item.hintDisplay = generateHintDisplay(display);
       }
     }
 

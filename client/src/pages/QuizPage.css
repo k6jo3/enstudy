@@ -74,6 +74,19 @@
   margin-bottom: 1.5rem;
 }
 
+.quiz-hint-letters {
+  font-family: 'Courier New', Consolas, monospace;
+  font-size: 1.5rem;
+  letter-spacing: 0.15em;
+  color: #fbbf24;
+  background: #0f172a;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  margin-bottom: 0.75rem;
+  border: 1px dashed #475569;
+}
+
 .quiz-input {
   width: 100%;
   padding: 0.75rem 1rem;

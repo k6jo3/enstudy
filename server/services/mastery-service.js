@@ -31,8 +31,8 @@ async function initMastery(itemType, itemId, date) {
   );
 }
 
-// questionMode: 'typing' | 'choice' | 'listen'
-// Score deltas: typing/listen correct = +1, choice correct = +0.5, wrong = -1.5
+// questionMode: 'typing' | 'choice' | 'hint' | 'listen'
+// Score deltas: typing/listen correct = +1, choice/hint correct = +0.5, wrong = -1.5
 async function updateMastery(itemType, itemId, isCorrect, date, questionMode) {
   const row = await queryOne(
     'SELECT * FROM word_mastery WHERE item_type = ? AND item_id = ?',
@@ -57,12 +57,12 @@ async function updateMastery(itemType, itemId, isCorrect, date, questionMode) {
   // Calculate score delta based on question mode and correctness
   let scoreDelta;
   if (isCorrect) {
-    scoreDelta = (questionMode === 'choice') ? 0.5 : 1;
+    scoreDelta = (questionMode === 'choice' || questionMode === 'hint') ? 0.5 : 1;
   } else {
     scoreDelta = -1.5;
   }
-  const newScore = Math.max(0, Math.min(10, (row.score || 0) + scoreDelta));
-  const newPaused = newScore >= 10 ? 1 : (row.paused || 0);
+  const newScore = Math.max(0, Math.min(12, (row.score || 0) + scoreDelta));
+  const newPaused = newScore >= 12 ? 1 : (row.paused || 0);
 
   await run(
     `UPDATE word_mastery
@@ -142,8 +142,8 @@ async function getMasteryStats() {
   ) || 0;
 
   const score0 = await queryScalar('SELECT COUNT(*) FROM word_mastery WHERE score = 0 AND paused = 0') || 0;
-  const scoreWeak = await queryScalar('SELECT COUNT(*) FROM word_mastery WHERE score > 0 AND score < 6 AND paused = 0') || 0;
-  const scoreMedium = await queryScalar('SELECT COUNT(*) FROM word_mastery WHERE score >= 6 AND score < 8 AND paused = 0') || 0;
+  const scoreWeak = await queryScalar('SELECT COUNT(*) FROM word_mastery WHERE score > 0 AND score < 4 AND paused = 0') || 0;
+  const scoreMedium = await queryScalar('SELECT COUNT(*) FROM word_mastery WHERE score >= 4 AND score < 8 AND paused = 0') || 0;
   const scoreStrong = await queryScalar('SELECT COUNT(*) FROM word_mastery WHERE score >= 8 AND paused = 0') || 0;
   const pausedCount = await queryScalar('SELECT COUNT(*) FROM word_mastery WHERE paused = 1') || 0;
   const untestedCount = Math.max(0, totalLearned - totalTracked);
@@ -153,11 +153,11 @@ async function getMasteryStats() {
     totalLearned,
     scoreTiers: [
       { name: 'untested', label: '未計分', count: untestedCount },
-      { name: 'score0',   label: '0 分', count: score0 },
-      { name: 'weak',     label: '0.5 ~ 5.5 分', count: scoreWeak },
-      { name: 'medium',   label: '6 ~ 7.5 分', count: scoreMedium },
-      { name: 'strong',   label: '8 ~ 9.5 分', count: scoreStrong },
-      { name: 'paused',   label: '滿分（暫停中）', count: pausedCount },
+      { name: 'score0',   label: '0 分（選擇題）', count: score0 },
+      { name: 'weak',     label: '0.5 ~ 3.5 分（選擇題）', count: scoreWeak },
+      { name: 'medium',   label: '4 ~ 7.5 分（選擇/提示填空）', count: scoreMedium },
+      { name: 'strong',   label: '8 ~ 11.5 分（填空）', count: scoreStrong },
+      { name: 'paused',   label: '滿分 12（暫停中）', count: pausedCount },
     ],
     pausedCount,
   };

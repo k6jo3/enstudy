@@ -189,7 +189,7 @@ async function initSchema() {
   try { db.run('ALTER TABLE word_mastery ADD COLUMN paused INTEGER DEFAULT 0'); } catch (e) { /* already exists */ }
   // Backfill score from mastery_level for existing data (0→0, 1→2, 2→4, 3→6, 4→8, 5→10)
   db.run('UPDATE word_mastery SET score = mastery_level * 2 WHERE score = 0 AND mastery_level > 0');
-  db.run('UPDATE word_mastery SET paused = 1 WHERE score >= 10 AND paused = 0');
+  db.run('UPDATE word_mastery SET paused = 1 WHERE score >= 12 AND paused = 0');
 
   // Indexes
   db.run('CREATE INDEX IF NOT EXISTS idx_learning_log_date ON learning_log(learn_date)');

@@ -34,12 +34,12 @@ function QuizPage() {
   const quizMode = item?.quizMode || 'typing';
 
   useEffect(() => {
-    if (quizMode === 'typing' && inputRef.current) {
+    if ((quizMode === 'typing' || quizMode === 'hint') && inputRef.current) {
       inputRef.current.focus();
     }
   }, [quizMode, currentIndex]);
 
-  const checkAnswer = (userAnswer) => {
+  const checkAnswer = (userAnswer, mode) => {
     const correct = item.display.toLowerCase().trim();
     const input = userAnswer.toLowerCase().trim();
     const isCorrect = input === correct || fuzzyMatch(input, correct);
@@ -54,14 +54,14 @@ function QuizPage() {
       itemType: item.item_type,
       itemId: item.id,
       isCorrect,
-      questionMode: 'typing'
+      questionMode: mode
     });
   };
 
   const handleTypingSubmit = (e) => {
     e.preventDefault();
     if (!answer.trim() || result) return;
-    checkAnswer(answer);
+    checkAnswer(answer, quizMode === 'hint' ? 'hint' : 'typing');
   };
 
   const handleChoiceSelect = (choice) => {
@@ -145,26 +145,7 @@ function QuizPage() {
       <div className={`quiz-card ${item.hasError ? 'has-error' : ''}`}>
         {item.hasError && <span className="error-badge">易錯字</span>}
 
-        {quizMode === 'typing' ? (
-          <>
-            <p className="quiz-prompt">請輸入這個中文意思對應的英文：</p>
-            <h3 className="quiz-hint">{item.hint}</h3>
-            {item.part_of_speech && <span className="quiz-pos">{item.part_of_speech}</span>}
-            <form onSubmit={handleTypingSubmit}>
-              <input
-                ref={inputRef}
-                type="text"
-                className={`quiz-input ${result === 'correct' ? 'input-correct' : result === 'wrong' ? 'input-wrong' : ''}`}
-                value={answer}
-                onChange={e => setAnswer(e.target.value)}
-                placeholder="輸入英文..."
-                disabled={result !== null}
-                autoComplete="off"
-              />
-              {!result && <button type="submit" className="submit-btn">確認</button>}
-            </form>
-          </>
-        ) : quizMode === 'choice' && item.choices ? (
+        {quizMode === 'choice' && item.choices ? (
           <>
             <p className="quiz-prompt">請選擇正確的中文意思：</p>
             <h3 className="quiz-word-display">{item.display}</h3>
@@ -186,9 +167,14 @@ function QuizPage() {
           </>
         ) : (
           <>
-            <p className="quiz-prompt">請輸入這個中文意思對應的英文：</p>
+            <p className="quiz-prompt">
+              {quizMode === 'hint' ? '根據提示輸入完整英文：' : '請輸入這個中文意思對應的英文：'}
+            </p>
             <h3 className="quiz-hint">{item.hint}</h3>
             {item.part_of_speech && <span className="quiz-pos">{item.part_of_speech}</span>}
+            {quizMode === 'hint' && item.hintDisplay && (
+              <div className="quiz-hint-letters">{item.hintDisplay}</div>
+            )}
             <form onSubmit={handleTypingSubmit}>
               <input
                 ref={inputRef}
