@@ -4,7 +4,7 @@ const wordService = require('./word-service');
 const phraseService = require('./phrase-service');
 const masteryService = require('./mastery-service');
 const errorTracker = require('./error-tracker');
-const { generateDialogues } = require('./sentence-generator');
+const { generateDialogues, GENERATOR_VERSION } = require('./sentence-generator');
 const roundService = require('./round-service');
 const { addDays } = require('../utils/date');
 
@@ -228,12 +228,9 @@ async function getOrCreateDialogues(date, words, phrases) {
 
   if (existing.length > 0) {
     const parsed = existing.map(row => JSON.parse(row.dialogue_json));
-    const firstText = parsed[0]?.lines?.[0]?.text || '';
+    const version = parsed[0]?.templateVersion || 0;
     const hasZh = parsed[0]?.lines?.[0]?.zh;
-    // New example-based format always has single-quoted words/phrases like 'word' in the dialogue
-    // Old POS-template format puts words directly into conversational sentences without quotes
-    const isExampleFormat = /'[^']+'/i.test(firstText);
-    if (hasZh && isExampleFormat) {
+    if (hasZh && version >= GENERATOR_VERSION) {
       return parsed;
     }
     // Clear old format and regenerate below
@@ -241,7 +238,7 @@ async function getOrCreateDialogues(date, words, phrases) {
   }
 
   // Generate new dialogues and save
-  const dialogues = generateDialogues(words, phrases, 10);
+  const dialogues = generateDialogues(words, phrases, 10, date);
 
   for (let i = 0; i < dialogues.length; i++) {
     const d = dialogues[i];
@@ -262,9 +259,8 @@ async function cleanOldDialogues() {
   for (const row of all) {
     try {
       const d = JSON.parse(row.dialogue_json);
-      const firstText = d?.lines?.[0]?.text || '';
-      // New format always has single-quoted words like 'word' or 'phrase'
-      if (!/'[^']+'/i.test(firstText)) {
+      const version = d?.templateVersion || 0;
+      if (version < GENERATOR_VERSION) {
         datesToClear.add(row.session_date);
       }
     } catch (e) {
