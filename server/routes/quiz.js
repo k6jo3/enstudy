@@ -281,7 +281,7 @@ router.post('/submit', async (req, res) => {
 // Get quiz items with score-tier distribution
 router.get('/items', async (req, res) => {
   try {
-    const limit = parsePositiveInt(req.query.limit, { defaultValue: 60, max: 200 });
+    const limit = parsePositiveInt(req.query.limit, { defaultValue: 85, max: 200 });
     if (limit === null) {
       return badRequest(res, 'Invalid limit');
     }
@@ -289,7 +289,14 @@ router.get('/items', async (req, res) => {
     const today = getToday();
 
     const totalDays = await queryScalar('SELECT COUNT(*) FROM sessions WHERE completed = 1') || 0;
-    const quizCount = Math.min(10 + Math.floor(totalDays / 7) * 5, limit);
+    const totalLearned = await queryScalar(`
+      SELECT COUNT(DISTINCT ll.item_type || ':' || ll.item_id)
+      FROM learning_log ll
+      LEFT JOIN word_mastery wm ON wm.item_type = ll.item_type AND wm.item_id = ll.item_id
+      WHERE ll.is_review = 0 AND (wm.paused IS NULL OR wm.paused = 0)
+    `) || 0;
+    // Base 15, +5 per week, +1 per 10 learned items, capped by limit
+    const quizCount = Math.min(15 + Math.floor(totalDays / 7) * 5 + Math.floor(totalLearned / 10), limit);
 
     const items = await selectItemsByTier(quizCount, today);
 
@@ -324,9 +331,7 @@ router.get('/items', async (req, res) => {
       items,
       quizCount,
       totalDays,
-      totalLearned: await queryScalar(`
-        SELECT COUNT(DISTINCT item_type || ':' || item_id) FROM learning_log WHERE is_review = 0
-      `) || 0
+      totalLearned
     });
   } catch (err) {
     console.error('Quiz items error:', err);
