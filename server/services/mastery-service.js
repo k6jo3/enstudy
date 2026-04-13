@@ -38,23 +38,31 @@ async function updateMastery(itemType, itemId, isCorrect, date, questionMode) {
     return updateMastery(itemType, itemId, isCorrect, date, questionMode);
   }
 
-  let newLevel, newStreak, nextReview;
+  let newLevel, newStreak, newWrongStreak, nextReview;
   if (isCorrect) {
     newLevel = Math.min(row.mastery_level + 1, 5);
     newStreak = row.correct_streak + 1;
+    newWrongStreak = 0;
     nextReview = addDays(date, getIntervalDays(newLevel));
   } else {
     newLevel = 0;
     newStreak = 0;
+    newWrongStreak = (row.wrong_streak || 0) + 1;
     nextReview = addDays(date, 1);
   }
 
   // Calculate score delta based on question mode and correctness
   let scoreDelta;
   if (isCorrect) {
-    scoreDelta = (questionMode === 'choice' || questionMode === 'hint') ? 0.5 : 1;
+    const base = (questionMode === 'choice' || questionMode === 'hint') ? 0.5 : 1;
+    // Streak bonus: 3+ consecutive correct → +0.2 extra (fixed, not cumulative)
+    scoreDelta = newStreak >= 3 ? base + 0.2 : base;
   } else {
-    scoreDelta = -1.5;
+    const base = -1.5;
+    // Wrong streak penalty: 2+ consecutive wrong → extra -0.1 cumulative
+    // 1st wrong: -1.5, 2nd: -1.5, 3rd: -1.6, 4th: -1.7, ...
+    const extraPenalty = newWrongStreak > 2 ? (newWrongStreak - 2) * 0.1 : 0;
+    scoreDelta = base - extraPenalty;
   }
   const newScore = Math.max(0, Math.min(12, (row.score || 0) + scoreDelta));
   const newPaused = newScore >= 12 ? 1 : (row.paused || 0);
@@ -63,10 +71,10 @@ async function updateMastery(itemType, itemId, isCorrect, date, questionMode) {
   await run(
     `UPDATE word_mastery
      SET mastery_level = ?, review_count = review_count + 1, correct_streak = ?,
-         next_review_date = ?, last_review_date = ?,
+         wrong_streak = ?, next_review_date = ?, last_review_date = ?,
          score = ?, paused = ?, hint_count = COALESCE(hint_count, 0) + ?
      WHERE item_type = ? AND item_id = ?`,
-    [newLevel, newStreak, nextReview, date, newScore, newPaused, hintInc, itemType, itemId]
+    [newLevel, newStreak, newWrongStreak, nextReview, date, newScore, newPaused, hintInc, itemType, itemId]
   );
   saveDb();
 }
