@@ -7,6 +7,7 @@ module.exports = [
   {
     phrase: "How are you?",
     meaning: "你好嗎？（常用問候語）",
+    context: "通用問候語，正式或非正式場合皆可；通常不需要認真回答",
     example: "Hi, John! How are you? I haven't seen you in a while.",
     exampleZh: "嗨，約翰！你好嗎？好一陣子沒見了。",
     difficulty: 1
@@ -28,6 +29,7 @@ module.exports = [
   {
     phrase: "What's up?",
     meaning: "怎麼了？/ 最近怎樣？（非正式問候）",
+    context: "很隨意的招呼語，朋友之間使用；回答常只是 Not much 或 Nothing much",
     example: "Hey, what's up? Are you free this weekend?",
     exampleZh: "嘿，最近怎樣？這個週末有空嗎？",
     difficulty: 1
@@ -63,6 +65,7 @@ module.exports = [
   {
     phrase: "You're welcome",
     meaning: "不客氣",
+    context: "標準回應「謝謝」的說法，適用所有場合；比較 No problem（較隨意）、My pleasure（較正式）",
     example: "You're welcome! I'm happy to help anytime.",
     exampleZh: "不客氣！我隨時樂意幫忙。",
     difficulty: 1
@@ -70,6 +73,7 @@ module.exports = [
   {
     phrase: "Excuse me",
     meaning: "打擾一下；對不起（用於引起注意或道歉）",
+    context: "用於引起注意、借過、或輕微打擾，不是真正的道歉；比較 I'm sorry（真正道歉）",
     example: "Excuse me, could you tell me where the restroom is?",
     exampleZh: "打擾一下，請問洗手間在哪裡？",
     difficulty: 1
@@ -79,6 +83,7 @@ module.exports = [
   {
     phrase: "I'm sorry",
     meaning: "對不起；我很抱歉",
+    context: "日常最常見的道歉用語，也可表達同情（如 I'm sorry to hear that）；比較 Excuse me（輕微打擾）、My apologies（較正式）",
     example: "I'm sorry for being late. The traffic was terrible.",
     exampleZh: "很抱歉我遲到了。交通狀況非常糟糕。",
     difficulty: 1
@@ -86,6 +91,7 @@ module.exports = [
   {
     phrase: "No problem",
     meaning: "沒問題；不客氣",
+    context: "較隨意的「不客氣」，強調這事不麻煩；也可表示「沒問題、可以」；年輕人常用",
     example: "No problem, I can finish it by tomorrow.",
     exampleZh: "沒問題，我明天之前能完成。",
     difficulty: 1
@@ -93,6 +99,7 @@ module.exports = [
   {
     phrase: "Of course",
     meaning: "當然",
+    context: "語氣肯定且理所當然，有時暗示「這還用問嗎」；比較 for sure（更口語隨意）、sure（中性簡短）",
     example: "Of course you can borrow my car this weekend.",
     exampleZh: "當然，這個週末你可以借我的車。",
     difficulty: 1
@@ -107,6 +114,7 @@ module.exports = [
   {
     phrase: "Never mind",
     meaning: "沒關係；算了",
+    context: "叫對方別在意或放棄追問，語氣可能帶些無奈或放棄；比較 It doesn't matter（客觀表達不重要）",
     example: "Never mind, I'll figure it out myself.",
     exampleZh: "算了，我自己想辦法。",
     difficulty: 1
@@ -128,6 +136,7 @@ module.exports = [
   {
     phrase: "That's great",
     meaning: "太好了",
+    context: "表達正面肯定的反應，語氣真誠；日常對話中最通用的稱讚回應",
     example: "You got the job? That's great! Congratulations!",
     exampleZh: "你得到這份工作了？太好了！恭喜！",
     difficulty: 1
@@ -142,6 +151,7 @@ module.exports = [
   {
     phrase: "I think so",
     meaning: "我想是的",
+    context: "語氣中性，一般表達個人看法或推測；比較 I suppose so（勉強同意）、I guess（更不確定、口語化）",
     example: "Will it rain today? I think so, you should bring an umbrella.",
     exampleZh: "今天會下雨嗎？我想會的，你應該帶把傘。",
     difficulty: 1
@@ -151,6 +161,7 @@ module.exports = [
   {
     phrase: "wake up",
     meaning: "醒來；起床",
+    context: "強調從睡眠中清醒過來的那一刻；比較 get up（強調從床上起身的動作）",
     example: "I usually wake up at 6:30 in the morning.",
     exampleZh: "我通常在早上六點半起床。",
     difficulty: 1
@@ -158,6 +169,7 @@ module.exports = [
   {
     phrase: "get up",
     meaning: "起床；站起來",
+    context: "強調離開床鋪、站起來的動作；比較 wake up（強調意識清醒的那一刻）",
     example: "I don't want to get up early on weekends.",
     exampleZh: "我不想在週末早起。",
     difficulty: 1
@@ -165,6 +177,7 @@ module.exports = [
   {
     phrase: "turn on",
     meaning: "打開（電器等）",
+    context: "日常最常用的「打開電器」說法；也有俚語意思「使…感興趣/興奮」",
     example: "Can you turn on the light? It's too dark in here.",
     exampleZh: "你能把燈打開嗎？這裡太暗了。",
     difficulty: 1
@@ -172,6 +185,7 @@ module.exports = [
   {
     phrase: "turn off",
     meaning: "關閉（電器等）",
+    context: "日常最常用的「關閉電器」說法；也有俚語意思「使…失去興趣/反感」",
     example: "Please turn off the TV before you go to bed.",
     exampleZh: "睡覺前請把電視關掉。",
     difficulty: 1
@@ -193,6 +207,7 @@ module.exports = [
   {
     phrase: "look for",
     meaning: "尋找",
+    context: "主動尋找某物或某人；比較 find out（查明資訊）、figure out（想清楚問題）",
     example: "I'm looking for my phone. Have you seen it?",
     exampleZh: "我在找我的手機。你有看到嗎？",
     difficulty: 1
@@ -207,6 +222,7 @@ module.exports = [
   {
     phrase: "give up",
     meaning: "放棄",
+    context: "完全停止嘗試或努力，語氣較消極決絕",
     example: "Don't give up! You're almost there.",
     exampleZh: "不要放棄！你快成功了。",
     difficulty: 1
@@ -223,6 +239,7 @@ module.exports = [
   {
     phrase: "by the way",
     meaning: "順便說一下",
+    context: "用於插入與當前話題不太相關的新話題，語氣隨意；比較 speaking of which（接續剛提到的話題）",
     example: "By the way, did you hear about the new restaurant downtown?",
     exampleZh: "順便說一下，你聽說市中心新開的餐廳了嗎？",
     difficulty: 1
@@ -251,6 +268,7 @@ module.exports = [
   {
     phrase: "a lot of",
     meaning: "許多；大量",
+    context: "口語中最常用的「很多」，可數不可數名詞都能用；正式寫作中偏好 many / much",
     example: "There are a lot of people at the park today.",
     exampleZh: "今天公園裡有很多人。",
     difficulty: 1
@@ -309,6 +327,7 @@ module.exports = [
   {
     phrase: "It doesn't matter",
     meaning: "沒關係；無所謂",
+    context: "客觀表達某事不重要，語氣中性；比較 Never mind（帶有放棄、不追究的語氣）",
     example: "It doesn't matter if we're a little late.",
     exampleZh: "我們稍微遲到一點沒關係。",
     difficulty: 1
@@ -316,6 +335,7 @@ module.exports = [
   {
     phrase: "That's too bad",
     meaning: "太遺憾了；太可惜了",
+    context: "口語化、語氣較輕的遺憾，日常對話中最常用；有時語氣可能帶點敷衍（視語調而定）；比較 What a shame（語氣更強烈真誠）",
     example: "You can't come to the party? That's too bad.",
     exampleZh: "你不能來派對？太可惜了。",
     difficulty: 1
@@ -358,6 +378,7 @@ module.exports = [
   {
     phrase: "I'm afraid",
     meaning: "恐怕（用於委婉表達）",
+    context: "委婉傳達壞消息或拒絕，不是真的害怕；商務和服務場合常用，語氣禮貌",
     example: "I'm afraid we don't have any rooms available tonight.",
     exampleZh: "恐怕我們今晚沒有空房了。",
     difficulty: 1
@@ -395,6 +416,7 @@ module.exports = [
   {
     phrase: "find out",
     meaning: "發現；查明",
+    context: "透過查詢或偶然得知新資訊；比較 figure out（經過思考推理）、look for（主動尋找實體物品）",
     example: "I need to find out what time the store closes.",
     exampleZh: "我需要查明這家店幾點關門。",
     difficulty: 1
@@ -409,6 +431,7 @@ module.exports = [
   {
     phrase: "hang on",
     meaning: "等一下",
+    context: "口語化的「等一下」，語氣隨意；也有「堅持住」的意思（如 Hang on, help is coming!）",
     example: "Hang on, let me grab my coat.",
     exampleZh: "等一下，我去拿外套。",
     difficulty: 1
@@ -446,6 +469,7 @@ module.exports = [
   {
     phrase: "It's up to you",
     meaning: "由你決定",
+    context: "把決定權完全交給對方；語氣中性，但有時帶點「我不在乎」的意味；比較 It depends（尚未決定，取決於條件）",
     example: "Where should we eat? It's up to you.",
     exampleZh: "我們要去哪裡吃飯？由你決定。",
     difficulty: 1
@@ -488,6 +512,7 @@ module.exports = [
   {
     phrase: "in the end",
     meaning: "最後；最終",
+    context: "強調經過漫長過程後的最終結果；比較 sooner or later（強調必然性）、finally（強調等待已久）",
     example: "We argued for hours, but in the end, we agreed.",
     exampleZh: "我們爭論了好幾個小時，但最終還是達成了共識。",
     difficulty: 1
@@ -502,6 +527,7 @@ module.exports = [
   {
     phrase: "My pleasure",
     meaning: "我的榮幸；樂意效勞",
+    context: "較正式有禮的「不客氣」，強調幫忙是件愉快的事；服務業常用；比較 You're welcome（通用）、No problem（隨意）",
     example: "Thank you for your help. My pleasure!",
     exampleZh: "謝謝你的幫忙。這是我的榮幸！",
     difficulty: 1
@@ -532,6 +558,7 @@ module.exports = [
   {
     phrase: "I guess",
     meaning: "我猜；我想",
+    context: "口語化的推測，比 I think 更不確定；有時帶無奈接受的語氣（如 I guess so = 好吧）",
     example: "I guess we should leave early to avoid traffic.",
     exampleZh: "我想我們應該早點出發以避開交通擁堵。",
     difficulty: 1
@@ -667,6 +694,7 @@ module.exports = [
   {
     phrase: "What a shame",
     meaning: "太可惜了；太遺憾了",
+    context: "語氣較強烈真誠的遺憾，表達真心覺得可惜；稍正式；比較 That's too bad（較口語輕鬆，有時略敷衍）",
     example: "The concert was canceled? What a shame!",
     exampleZh: "演唱會取消了？太可惜了！",
     difficulty: 1
@@ -695,6 +723,7 @@ module.exports = [
   {
     phrase: "How's it going?",
     meaning: "進展如何？你好嗎？",
+    context: "介於正式與非正式之間的問候，語氣較輕鬆自然；比較 How are you?（更通用正式）、What's up?（更隨意）",
     example: "Hey, how's it going? Haven't seen you in ages.",
     exampleZh: "嘿，最近怎麼樣？好久沒見了。",
     difficulty: 1
@@ -736,6 +765,7 @@ module.exports = [
   {
     phrase: "figure out",
     meaning: "弄清楚；想出",
+    context: "經過思考、推理後理解或解決問題；比較 find out（查到/得知資訊）、work out（經努力解決）",
     example: "I can't figure out how to solve this math problem.",
     exampleZh: "我弄不清楚這道數學題怎麼解。",
     difficulty: 2
@@ -872,7 +902,8 @@ module.exports = [
   // Conversational expressions
   {
     phrase: "as a matter of fact",
-    meaning: "事實上；其實",
+    meaning: "事實上；其���",
+    context: "用於補充事實或糾正對方的認知，語氣帶強調；比較 by the way（插入新話題）、speaking of which（接續同一話題）",
     example: "As a matter of fact, I've already finished the report.",
     exampleZh: "事實上，我已經完成報告了。",
     difficulty: 2
@@ -894,6 +925,7 @@ module.exports = [
   {
     phrase: "sooner or later",
     meaning: "遲早",
+    context: "強調事情必然會發生，只是時間早晚的問題；比較 in the end（經過一段過程後的最終結果）",
     example: "Sooner or later, the truth will come out.",
     exampleZh: "事實遲早會水落石出。",
     difficulty: 2
@@ -907,7 +939,8 @@ module.exports = [
   },
   {
     phrase: "It depends",
-    meaning: "視情況而定",
+    meaning: "視情況而��",
+    context: "表達尚未決定，結果取決於其他條件；比較 It's up to you（把決定權交給對方）",
     example: "Are you coming tonight? It depends on whether I finish work on time.",
     exampleZh: "你今晚會來嗎？這要看我能不能準時下班。",
     difficulty: 2
@@ -915,6 +948,7 @@ module.exports = [
   {
     phrase: "speaking of which",
     meaning: "說到這個",
+    context: "自然地延續剛剛提到的話題；比較 by the way（插入不相關的新話題）",
     example: "Speaking of which, have you booked the hotel yet?",
     exampleZh: "說到這個，你訂好飯店了嗎？",
     difficulty: 2
@@ -944,9 +978,10 @@ module.exports = [
   // More intermediate phrasal verbs
   {
     phrase: "work out",
-    meaning: "鍛鍊；解決；算出",
+    meaning: "鍛鍊；解���；算出",
+    context: "多義：1.運動鍛鍊 2.解決問題（經努力後成功）3.算出結果；比較 figure out（腦力推理）、find out（獲得資訊）",
     example: "I work out at the gym three times a week.",
-    exampleZh: "我每週去健身房鍛鍊三次。",
+    exampleZh: "我每週去健身房鍛鍊��次。",
     difficulty: 2
   },
   {

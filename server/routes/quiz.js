@@ -112,6 +112,7 @@ async function selectItemsByTier(quizCount, today) {
       CASE WHEN ll.item_type = 'word' THEN w.example ELSE p.example END as example,
       CASE WHEN ll.item_type = 'phrase' THEN p.phrase ELSE NULL END as phrase,
       CASE WHEN ll.item_type = 'word' THEN w.difficulty ELSE p.difficulty END as difficulty,
+      CASE WHEN ll.item_type = 'word' THEN w.context ELSE p.context END as context,
       COALESCE(wm.score, -1) as score,
       COALESCE(wm.hint_count, 0) as hint_count,
       COALESCE(e.total_errors, 0) as error_count,
@@ -139,6 +140,7 @@ async function selectItemsByTier(quizCount, today) {
       CASE WHEN ll.item_type = 'word' THEN w.example ELSE p.example END as example,
       CASE WHEN ll.item_type = 'phrase' THEN p.phrase ELSE NULL END as phrase,
       CASE WHEN ll.item_type = 'word' THEN w.difficulty ELSE p.difficulty END as difficulty,
+      CASE WHEN ll.item_type = 'word' THEN w.context ELSE p.context END as context,
       -1 as score,
       COALESCE(e.total_errors, 0) as error_count,
       'untested' as tier
@@ -170,6 +172,7 @@ async function selectItemsByTier(quizCount, today) {
       CASE WHEN wm.item_type = 'word' THEN w.example ELSE p.example END as example,
       CASE WHEN wm.item_type = 'phrase' THEN p.phrase ELSE NULL END as phrase,
       CASE WHEN wm.item_type = 'word' THEN w.difficulty ELSE p.difficulty END as difficulty,
+      CASE WHEN wm.item_type = 'word' THEN w.context ELSE p.context END as context,
       wm.score,
       COALESCE(wm.hint_count, 0) as hint_count,
       COALESCE(e.total_errors, 0) as error_count
@@ -206,11 +209,40 @@ async function selectItemsByTier(quizCount, today) {
     strong,
   };
 
+  // Dynamic ratio: boost the tier with the most items by 5~10%
+  const poolSizes = {};
+  let totalPoolSize = 0;
+  let maxTier = null;
+  let maxSize = 0;
+  for (const tier of TIER_CONFIG) {
+    const size = pools[tier.name].length;
+    poolSizes[tier.name] = size;
+    totalPoolSize += size;
+    if (size > maxSize) { maxSize = size; maxTier = tier.name; }
+  }
+
+  // Calculate dynamic ratios
+  let dynamicRatios;
+  if (totalPoolSize > 0 && maxTier) {
+    // Dominant ratio: how much of the total pool is in the largest tier (0~1)
+    const dominance = maxSize / totalPoolSize;
+    // Bonus scales linearly: 5% at low dominance → 10% when one tier is very dominant
+    const bonus = 0.05 + 0.05 * Math.min(dominance * 2, 1);
+    const baseRatio = TIER_CONFIG.find(t => t.name === maxTier).ratio;
+    const scale = (1 - baseRatio - bonus) / (1 - baseRatio);
+    dynamicRatios = TIER_CONFIG.map(t => ({
+      name: t.name,
+      ratio: t.name === maxTier ? t.ratio + bonus : t.ratio * scale,
+    }));
+  } else {
+    dynamicRatios = TIER_CONFIG;
+  }
+
   const usedKeys = new Set();
   const result = [];
 
-  // First pass: fill each tier up to its quota
-  for (const tier of TIER_CONFIG) {
+  // First pass: fill each tier up to its dynamic quota
+  for (const tier of dynamicRatios) {
     const quota = Math.max(1, Math.round(quizCount * tier.ratio));
     const pool = pools[tier.name];
     let added = 0;

@@ -24,6 +24,11 @@ function WordCard({ word, showMeaning = true, hasError = false, onNext }) {
       {showMeaning && (
         <>
           <p className="word-meaning">{word.meaning}</p>
+          {word.context && (
+            <p className="word-context">
+              <span className="context-label">語境：</span>{word.context}
+            </p>
+          )}
           <p className="word-example">
             <span className="example-label">例句：</span>
             {word.example}

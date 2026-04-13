@@ -171,6 +171,7 @@ function QuizPage() {
               {quizMode === 'hint' ? '根據提示輸入完整英文：' : '請輸入這個中文意思對應的英文：'}
             </p>
             <h3 className="quiz-hint">{item.hint}</h3>
+            {item.context && <p className="quiz-context"><span className="context-label">語境：</span>{item.context}</p>}
             {item.part_of_speech && <span className="quiz-pos">{item.part_of_speech}</span>}
             {quizMode === 'hint' && item.hintDisplay && (
               <div className="quiz-hint-letters">{item.hintDisplay}</div>
@@ -194,6 +195,7 @@ function QuizPage() {
         {result && (
           <div className={`result-feedback ${result}`}>
             <p>{result === 'correct' ? '正確！' : `錯誤！正確答案：${item.display}`}</p>
+            {item.context && <p className="result-context"><span className="context-label">語境：</span>{item.context}</p>}
             {item.example && <p className="result-example">例句：{item.example}</p>}
             <button className="speak-btn-inline" onClick={() => speak(item.display)}>&#128264; 聽發音</button>
             <button className="next-btn" onClick={handleNext}>

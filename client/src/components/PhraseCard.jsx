@@ -22,6 +22,11 @@ function PhraseCard({ phrase, showMeaning = true, hasError = false, onNext }) {
       {showMeaning && (
         <>
           <p className="phrase-meaning">{phrase.meaning}</p>
+          {phrase.context && (
+            <p className="phrase-context">
+              <span className="context-label">語境：</span>{phrase.context}
+            </p>
+          )}
           <p className="phrase-example">
             <span className="example-label">例句：</span>
             {phrase.example}

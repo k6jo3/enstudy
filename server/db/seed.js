@@ -52,6 +52,18 @@ async function seedData() {
   stmtWZh.free();
   if (wzCount > 0) console.log(`Updated ${wzCount} words with example_zh.`);
 
+  // Update words with context (usage notes)
+  const stmtWCtx = db.prepare('UPDATE words SET context = ? WHERE word = ? AND (context IS NULL OR context = \'\')');
+  let wcCount = 0;
+  for (const w of words) {
+    if (w.context) {
+      stmtWCtx.run([w.context, w.word]);
+      wcCount++;
+    }
+  }
+  stmtWCtx.free();
+  if (wcCount > 0) console.log(`Updated ${wcCount} words with context.`);
+
   // Incremental phrase seeding
   const phraseCount = db.exec('SELECT COUNT(*) as cnt FROM phrases')[0]?.values[0][0] || 0;
   if (phraseCount < allPhrases.length) {
@@ -89,6 +101,18 @@ async function seedData() {
   }
   stmtPZh.free();
   if (pzCount > 0) console.log(`Updated ${pzCount} phrases with example_zh.`);
+
+  // Update phrases with context (usage notes)
+  const stmtPCtx = db.prepare('UPDATE phrases SET context = ? WHERE phrase = ? AND (context IS NULL OR context = \'\')');
+  let pcCount = 0;
+  for (const p of allPhrases) {
+    if (p.context) {
+      stmtPCtx.run([p.context, p.phrase]);
+      pcCount++;
+    }
+  }
+  stmtPCtx.free();
+  if (pcCount > 0) console.log(`Updated ${pcCount} phrases with context.`);
 
   // Grammar questions
   const grammarCount = db.exec('SELECT COUNT(*) as cnt FROM grammar_questions')[0]?.values[0][0] || 0;

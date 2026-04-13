@@ -147,6 +147,8 @@ async function initSchema() {
   try { db.run('ALTER TABLE stories ADD COLUMN grammar_notes TEXT'); } catch(e) { /* column already exists */ }
   try { db.run('ALTER TABLE words ADD COLUMN example_zh TEXT'); } catch(e) { /* column already exists */ }
   try { db.run('ALTER TABLE phrases ADD COLUMN example_zh TEXT'); } catch(e) { /* column already exists */ }
+  try { db.run('ALTER TABLE words ADD COLUMN context TEXT'); } catch(e) { /* column already exists */ }
+  try { db.run('ALTER TABLE phrases ADD COLUMN context TEXT'); } catch(e) { /* column already exists */ }
 
   db.run(`
     CREATE TABLE IF NOT EXISTS reading_log (

@@ -92,7 +92,7 @@ module.exports = [
   { word: "summarize", phonetic: "/ˈsʌməraɪz/", meaning: "總結；摘要說明", pos: "v", difficulty: 3, example: "Could you summarize the main points of the discussion for the report?", exampleZh: "你可以為報告總結一下討論的重點嗎？" },
   { word: "takeaway", phonetic: "/ˈteɪkəˌweɪ/", meaning: "重點心得；要點", pos: "n", difficulty: 3, example: "The main takeaway from the meeting was to focus on reducing costs.", exampleZh: "會議的主要重點是要專注於降低成本。" },
   { word: "presenter", phonetic: "/prɪˈzentər/", meaning: "報告人；演講者", pos: "n", difficulty: 3, example: "The presenter used several charts to explain the quarterly sales results.", exampleZh: "報告人使用了幾張圖表來說明季度銷售成果。" },
-  { word: "commence", phonetic: "/kəˈmens/", meaning: "開始；著手", pos: "v", difficulty: 4, example: "The opening ceremony will commence at exactly nine o'clock tomorrow.", exampleZh: "開幕典禮將於明天整九點準時開始。" },
+  { word: "commence", phonetic: "/kəˈmens/", meaning: "開始；著手", pos: "v", difficulty: 4, example: "The opening ceremony will commence at exactly nine o'clock tomorrow.", exampleZh: "開幕典禮將於明天整九點準時開始。", context: "非常正式的「開始」，常用於典禮、法律、商業文件；比較 start（日常口語）、begin（中性，書面較多）" },
   { word: "recess", phonetic: "/ˈriːses/", meaning: "休息時間；暫停", pos: "n", difficulty: 3, example: "The chairperson called a short recess so participants could get refreshments.", exampleZh: "主席宣布短暫休息，讓與會者可以取用點心。" },
   { word: "decorum", phonetic: "/dɪˈkɔːrəm/", meaning: "禮儀；得體舉止", pos: "n", difficulty: 4, example: "Please maintain proper decorum during the formal board meeting.", exampleZh: "在正式的董事會議中請保持適當的禮儀。" },
   // ===== Email & Written Communication (101-150) =====
