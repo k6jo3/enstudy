@@ -254,6 +254,7 @@ module.exports = [
   {
     phrase: "you won't believe this",
     meaning: "你一定不會相信",
+    context: "較簡短直接，語氣可驚訝可戲劇化，隨口就能用；比較 you're not going to believe this（較完整鄭重，像在鋪陳一個故事）",
     example: "You won't believe this — I just ran into my ex at the dentist.",
     exampleZh: "你一定不會相信，我剛在牙醫診所碰到我前任了。",
     difficulty: 1
@@ -745,6 +746,7 @@ module.exports = [
   {
     phrase: "for sure",
     meaning: "當然；確定",
+    context: "口語化的「當然」，語氣熱情輕鬆，朋友間常用；比較 Of course（更正式，有時暗示理所當然）",
     example: "\"Want to hang out this Saturday?\" \"For sure! What do you want to do?\"",
     exampleZh: "「這週六要出來玩嗎？」「當然！你想做什麼？」",
     difficulty: 1
@@ -773,6 +775,7 @@ module.exports = [
   {
     phrase: "I suppose so",
     meaning: "我想是吧",
+    context: "語氣猶豫、勉強同意，帶有不太情願的意味；比較 I think so（中性推測）、I guess（口語化、帶無奈）",
     example: "\"Should we invite them?\" \"I suppose so, even though they're always late.\"",
     exampleZh: "「我們應該邀請他們嗎？」「我想是吧，雖然他們總是遲到。」",
     difficulty: 1
@@ -2071,6 +2074,7 @@ module.exports = [
   {
     phrase: "you're not going to believe this",
     meaning: "你一定不會相信這件事",
+    context: "較完整的說法，語氣像在鄭重地鋪陳即將分享的大事；比較 you won't believe this（較短較隨口）",
     example: "You're not going to believe this, but I just won free tickets!",
     exampleZh: "你一定不會相信，但我剛剛贏得了免費的票！",
     difficulty: 1

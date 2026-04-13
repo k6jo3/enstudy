@@ -28,7 +28,7 @@ module.exports = [
   { word: "sarcastic", phonetic: "/sɑːrˈkæstɪk/", meaning: "諷刺的；挖苦的", pos: "adj", difficulty: 3, example: "His sarcastic comments sometimes hurt people without him realizing it.", exampleZh: "他嘲諷的評論有時會傷害人，但他沒有意識到。" },
   { word: "witty", phonetic: "/ˈwɪti/", meaning: "機智的；妙語如珠的", pos: "adj", difficulty: 2, example: "Everyone loves her witty remarks during our group conversations.", exampleZh: "每個人都喜歡她在小組對話中的妙語如珠。" },
   { word: "grumpy", phonetic: "/ˈɡrʌmpi/", meaning: "脾氣暴躁的；愛抱怨的", pos: "adj", difficulty: 2, example: "Grandpa gets grumpy if he does not have his morning coffee.", exampleZh: "如果爺爺沒有晨間咖啡，他就會脾氣暴躁。" },
-  { word: "cheerful", phonetic: "/ˈtʃɪrfəl/", meaning: "開朗的；愉快的", pos: "adj", difficulty: 2, example: "She has such a cheerful personality that she brightens every room.", exampleZh: "她有著如此開朗的個性，使每個房間都明亮起來。" },
+  { word: "cheerful", phonetic: "/ˈtʃɪrfəl/", meaning: "開朗的；愉快的", pos: "adj", difficulty: 2, example: "She has such a cheerful personality that she brightens every room.", exampleZh: "她有著如此開朗的個性，使每個房間都明亮起來。", context: "描述天生開朗活潑的個性或令人愉快的氛圍；比較 happy（因某事快樂的狀態）、glad（因特定事情高興）" },
   { word: "insecure", phonetic: "/ˌɪnsɪˈkjʊr/", meaning: "沒安全感的；不自信的", pos: "adj", difficulty: 2, example: "He feels insecure about his appearance and avoids taking photos.", exampleZh: "他對自己的外表沒有安全感，避免拍照。" },
   { word: "envious", phonetic: "/ˈɛnviəs/", meaning: "羨慕的；眼紅的", pos: "adj", difficulty: 2, example: "I am a little envious of her amazing vacation photos online.", exampleZh: "我有點羨慕她在線上分享的驚人度假照片。" },
   { word: "cranky", phonetic: "/ˈkræŋki/", meaning: "暴躁的；易怒的", pos: "adj", difficulty: 2, example: "The baby gets cranky when she misses her afternoon nap.", exampleZh: "寶寶錯過下午小睡時會變得暴躁。" },

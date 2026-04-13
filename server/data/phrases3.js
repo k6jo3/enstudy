@@ -2312,6 +2312,7 @@ module.exports = [
   {
     phrase: "My apologies",
     meaning: "我很抱歉（較正式）",
+    context: "正式場合的道歉用語，書面或商務常用；比較 I'm sorry（日常通用）、Excuse me（輕微打擾）",
     example: "My apologies for arriving late. There was an accident on the highway.",
     exampleZh: "非常抱歉我遲到了。高速公路上發生了一起事故。",
     difficulty: 2
