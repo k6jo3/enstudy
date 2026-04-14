@@ -171,7 +171,7 @@ function QuizPage() {
               {quizMode === 'hint' ? '根據提示輸入完整英文：' : '請輸入這個中文意思對應的英文：'}
             </p>
             <h3 className="quiz-hint">{item.hint}</h3>
-            {item.context && <p className="quiz-context"><span className="context-label">語境：</span>{item.context}</p>}
+            {item.context && <p className="quiz-context"><span className="context-label">語境：</span>{item.context.replaceAll(item.display, '___')}</p>}
             {item.part_of_speech && <span className="quiz-pos">{item.part_of_speech}</span>}
             {quizMode === 'hint' && item.hintDisplay && (
               <div className="quiz-hint-letters">{item.hintDisplay}</div>
@@ -208,15 +208,25 @@ function QuizPage() {
   );
 }
 
-// Fuzzy matching: single word allows 1 typo, phrase checks each word individually
+// Fuzzy matching:
+// - Single word: allows 1 typo (levenshtein ≤ 1)
+// - Phrase: accepts if all correct words appear in order in input
+//   (allows extra words like "so", "really", e.g. "I'm so stressed out" matches "I'm stressed out")
 function fuzzyMatch(input, correct) {
   const inputWords = input.split(/\s+/);
   const correctWords = correct.split(/\s+/);
-  if (inputWords.length !== correctWords.length) return false;
   if (correctWords.length === 1) {
+    if (inputWords.length !== 1) return false;
     return correct.length > 3 && levenshtein(input, correct) <= 1;
   }
-  return false;
+  // Phrase: subsequence match — all correct words must appear in order
+  if (inputWords.length < correctWords.length) return false;
+  if (inputWords.length > correctWords.length + 2) return false; // at most 2 extra words
+  let ci = 0;
+  for (let ii = 0; ii < inputWords.length && ci < correctWords.length; ii++) {
+    if (inputWords[ii] === correctWords[ci]) ci++;
+  }
+  return ci === correctWords.length;
 }
 
 function levenshtein(a, b) {

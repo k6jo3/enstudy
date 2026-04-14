@@ -58,8 +58,17 @@ module.exports = [
   {
     phrase: "Thank you so much",
     meaning: "非常感謝",
+    context: "語氣溫暖真誠、帶感情，像發自內心的感動；口語常用；比較 Thank you very much（較正式禮貌、客氣）",
     example: "Thank you so much for helping me move last weekend.",
     exampleZh: "非常感謝你上週末幫我搬家。",
+    difficulty: 1
+  },
+  {
+    phrase: "Thank you very much",
+    meaning: "非常感謝",
+    context: "較正式有禮的感謝，適用商務或對長輩；語氣客氣但不如 so much 那麼有感情；比較 Thank you so much（更溫暖真誠、口語化）",
+    example: "Thank you very much for your time today.",
+    exampleZh: "非常感謝您今天撥出時間。",
     difficulty: 1
   },
   {

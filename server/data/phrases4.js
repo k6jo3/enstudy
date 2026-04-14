@@ -26,6 +26,7 @@ module.exports = [
   {
     phrase: "between you and me",
     meaning: "我們之間說說就好；私底下講",
+    context: "專門對一個人說的悄悄話，語氣較正式謹慎，像在鄭重交代「別跟別人說」；比較 just between us（較隨口輕鬆，對象可一人或小群）",
     example: "Between you and me, I think she's planning to quit her job.",
     exampleZh: "我們私底下說說，我覺得她在計劃辭職。",
     difficulty: 1
@@ -194,6 +195,7 @@ module.exports = [
   {
     phrase: "keep it between us",
     meaning: "我們之間的秘密就好",
+    context: "明確要求對方保密，語氣認真像在交代「不要跟別人說」；比較 between you and me / just between us（開場白，用在分享秘密之前）",
     example: "This is serious, so please keep it between us, okay?",
     exampleZh: "這是很重要的事，所以請保密，好嗎？",
     difficulty: 1
@@ -233,6 +235,7 @@ module.exports = [
   {
     phrase: "that's insane",
     meaning: "太扯了；太瘋了",
+    context: "語氣最強烈，表達極度震驚或難以置信；可正面可負面；比較 that's wild（較輕鬆好奇）、that's nuts（口語俏皮）",
     example: "You ran a marathon with no training? That's insane!",
     exampleZh: "你完全沒訓練就去跑馬拉松？太瘋了吧！",
     difficulty: 1
@@ -283,6 +286,7 @@ module.exports = [
   {
     phrase: "that's wild",
     meaning: "太扯了；太誇張了",
+    context: "語氣帶驚訝和好奇，覺得有趣或不可思議；偏正面或中性；比較 that's insane（震驚程度更強）、that's nuts（更俏皮）",
     example: "He quit his job to become a street artist? That's wild!",
     exampleZh: "他辭掉工作去當街頭藝人？太誇張了吧！",
     difficulty: 1
@@ -360,6 +364,7 @@ module.exports = [
   {
     phrase: "that's nuts",
     meaning: "太瘋了；太扯了",
+    context: "口語俏皮的「太瘋了」，語氣比 insane 輕，帶點幽默感；比較 that's insane（更震驚）、that's wild（更好奇）",
     example: "You stayed up for 48 hours straight? That's nuts!",
     exampleZh: "你連續熬夜四十八小時？太瘋了吧！",
     difficulty: 1
@@ -836,6 +841,7 @@ module.exports = [
   {
     phrase: "I'm stressed out",
     meaning: "我壓力好大",
+    context: "口語中常加 so/really 加強語氣（I'm so stressed out），stressed out 也可獨立當形容詞用",
     example: "I'm so stressed out. I have three exams next week.",
     exampleZh: "我壓力好大，下週有三場考試。",
     difficulty: 1
@@ -1906,6 +1912,7 @@ module.exports = [
   {
     phrase: "here's the deal",
     meaning: "情況是這樣的",
+    context: "直接切入重點說明狀況，語氣較認真果斷，像在談條件或解釋原因；比較 so here's the deal（加了 so 更像閒聊鋪陳，語氣較輕鬆）",
     example: "Here's the deal — I can't make it tonight because I have to babysit.",
     exampleZh: "情況是這樣的——我今晚沒辦法去，因為我要照顧小孩。",
     difficulty: 1
@@ -2039,6 +2046,7 @@ module.exports = [
   {
     phrase: "so here's the deal",
     meaning: "事情是這樣的",
+    context: "加了 so 當開場緩衝，語氣較輕鬆隨意，像朋友間更新近況；比較 here's the deal（更直接果斷，像在談正事）",
     example: "So here's the deal — the party got moved to Saturday.",
     exampleZh: "事情是這樣的——派對改到星期六了。",
     difficulty: 1
@@ -2046,6 +2054,7 @@ module.exports = [
   {
     phrase: "just between us",
     meaning: "我們私底下說",
+    context: "較輕鬆隨口的「別說出去喔」，us 可以是兩人或小群體；比較 between you and me（更正式、專門對一人說、語氣更慎重）",
     example: "Just between us, I think the meeting was a total waste of time.",
     exampleZh: "我們私底下說，我覺得那個會議完全是浪費時間。",
     difficulty: 1
