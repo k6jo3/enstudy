@@ -1912,7 +1912,7 @@ module.exports = [
   {
     phrase: "here's the deal",
     meaning: "情況是這樣的",
-    context: "直接切入重點說明狀況，語氣較認真果斷，像在談條件或解釋原因；比較 so here's the deal（加了 so 更像閒聊鋪陳，語氣較輕鬆）",
+    context: "直接切入重點說明狀況；口語常在前面加 so（so here's the deal）讓語氣更輕鬆隨意",
     example: "Here's the deal — I can't make it tonight because I have to babysit.",
     exampleZh: "情況是這樣的——我今晚沒辦法去，因為我要照顧小孩。",
     difficulty: 1
@@ -2041,14 +2041,6 @@ module.exports = [
     meaning: "重點就是；歸根究柢",
     example: "Bottom line is, if you're not happy, just leave.",
     exampleZh: "重點就是，如果你不快樂，就離開吧。",
-    difficulty: 1
-  },
-  {
-    phrase: "so here's the deal",
-    meaning: "事情是這樣的",
-    context: "加了 so 當開場緩衝，語氣較輕鬆隨意，像朋友間更新近況；比較 here's the deal（更直接果斷，像在談正事）",
-    example: "So here's the deal — the party got moved to Saturday.",
-    exampleZh: "事情是這樣的——派對改到星期六了。",
     difficulty: 1
   },
   {
