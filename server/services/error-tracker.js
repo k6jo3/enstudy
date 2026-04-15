@@ -47,8 +47,24 @@ async function getTodayErrorCount(date) {
   return total || 0;
 }
 
+// Reduce total error count by 1 (delete oldest record with remaining count)
+async function reduceError(itemType, itemId) {
+  const oldest = await queryOne(
+    'SELECT id, error_count FROM errors WHERE item_type = ? AND item_id = ? AND error_count > 0 ORDER BY error_date ASC LIMIT 1',
+    [itemType, itemId]
+  );
+  if (!oldest) return;
+  if (oldest.error_count <= 1) {
+    await run('DELETE FROM errors WHERE id = ?', [oldest.id]);
+  } else {
+    await run('UPDATE errors SET error_count = error_count - 1 WHERE id = ?', [oldest.id]);
+  }
+  saveDb();
+}
+
 module.exports = {
   recordError,
+  reduceError,
   getErrorItems,
   getErrorSet,
   getTodayErrorCount

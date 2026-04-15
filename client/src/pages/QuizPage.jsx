@@ -39,6 +39,26 @@ function QuizPage() {
     }
   }, [quizMode, currentIndex]);
 
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (e.key === 'Enter' && result) {
+        e.preventDefault();
+        handleNext();
+        return;
+      }
+      // Choice mode: press 1~4 to select
+      if (quizMode === 'choice' && !result && item?.choices) {
+        const num = parseInt(e.key);
+        if (num >= 1 && num <= item.choices.length) {
+          e.preventDefault();
+          handleChoiceSelect(item.choices[num - 1]);
+        }
+      }
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [result, currentIndex, quizItems.length, quizMode, item]);
+
   const checkAnswer = (userAnswer, mode) => {
     const correct = item.display.toLowerCase().trim();
     const input = userAnswer.toLowerCase().trim();
@@ -160,7 +180,7 @@ function QuizPage() {
                   onClick={() => handleChoiceSelect(c)}
                   disabled={result !== null}
                 >
-                  {c.text}
+                  <span className="choice-number">{i + 1}</span>{c.text}
                 </button>
               ))}
             </div>

@@ -1,6 +1,7 @@
 const { queryAll, queryOne, run, queryScalar } = require('../db/helpers');
 const { saveDb } = require('../db/connection');
 const { addDays } = require('../utils/date');
+const { reduceError } = require('./error-tracker');
 
 // Interval schedule in days per mastery level
 const INTERVALS = {
@@ -76,6 +77,12 @@ async function updateMastery(itemType, itemId, isCorrect, date, questionMode) {
      WHERE item_type = ? AND item_id = ?`,
     [newLevel, newStreak, newWrongStreak, nextReview, date, newScore, newPaused, hintInc, itemType, itemId]
   );
+
+  // Every 2 consecutive correct answers, reduce 1 error count
+  if (isCorrect && newStreak > 0 && newStreak % 2 === 0) {
+    await reduceError(itemType, itemId);
+  }
+
   saveDb();
 }
 

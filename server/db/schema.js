@@ -196,6 +196,17 @@ async function initSchema() {
   db.run('UPDATE word_mastery SET score = mastery_level * 2 WHERE score = 0 AND mastery_level > 0');
   db.run('UPDATE word_mastery SET paused = 1 WHERE score >= 12 AND paused = 0');
 
+  // One-time fix (2026-04-15): unpause items with 2+ total errors for re-testing
+  db.run(`
+    UPDATE word_mastery SET paused = 0, score = 6
+    WHERE paused = 1 AND EXISTS (
+      SELECT 1 FROM errors e
+      WHERE e.item_type = word_mastery.item_type AND e.item_id = word_mastery.item_id
+      GROUP BY e.item_type, e.item_id
+      HAVING SUM(e.error_count) >= 2
+    )
+  `);
+
   // Indexes
   db.run('CREATE INDEX IF NOT EXISTS idx_learning_log_date ON learning_log(learn_date)');
   db.run('CREATE INDEX IF NOT EXISTS idx_learning_log_item ON learning_log(item_type, item_id)');

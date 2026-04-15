@@ -238,6 +238,11 @@ async function selectItemsByTier(quizCount, today) {
     dynamicRatios = TIER_CONFIG;
   }
 
+  // Sort each pool: high error_count items first, then random within same error level
+  for (const name of Object.keys(pools)) {
+    pools[name].sort((a, b) => (b.error_count || 0) - (a.error_count || 0));
+  }
+
   const usedKeys = new Set();
   const result = [];
 

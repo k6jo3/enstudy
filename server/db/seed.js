@@ -90,6 +90,24 @@ async function seedData() {
     console.log(`Seeded ${pCount} new phrases (total now: ${phraseCount + pCount}).`);
   }
 
+  // Remove phrases that no longer exist in data files
+  const allPhraseKeys = new Set(allPhrases.map(p => p.phrase.toLowerCase()));
+  const dbPhrases = db.exec('SELECT id, phrase FROM phrases');
+  if (dbPhrases[0]) {
+    let removedCount = 0;
+    for (const row of dbPhrases[0].values) {
+      if (!allPhraseKeys.has(row[1].toLowerCase())) {
+        db.run('DELETE FROM phrases WHERE id = ?', [row[0]]);
+        db.run('DELETE FROM learning_log WHERE item_type = ? AND item_id = ?', ['phrase', row[0]]);
+        db.run('DELETE FROM word_mastery WHERE item_type = ? AND item_id = ?', ['phrase', row[0]]);
+        db.run('DELETE FROM errors WHERE item_type = ? AND item_id = ?', ['phrase', row[0]]);
+        db.run('DELETE FROM daily_sentences WHERE item_type = ? AND item_id = ?', ['phrase', row[0]]);
+        removedCount++;
+      }
+    }
+    if (removedCount > 0) console.log(`Removed ${removedCount} obsolete phrases from DB.`);
+  }
+
   // Update phrases with example_zh translations
   const stmtPZh = db.prepare('UPDATE phrases SET example_zh = ? WHERE phrase = ? AND (example_zh IS NULL OR example_zh = \'\')');
   let pzCount = 0;
