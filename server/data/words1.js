@@ -173,7 +173,7 @@ module.exports = [
   { word: "month", phonetic: "/mʌnθ/", meaning: "月份", pos: "n", difficulty: 1, example: "This month is March.", exampleZh: "這個月是三月。" },
   { word: "year", phonetic: "/jɪr/", meaning: "年", pos: "n", difficulty: 1, example: "A year has twelve months.", exampleZh: "一年有十二個月。" },
   { word: "hour", phonetic: "/aʊər/", meaning: "小時", pos: "n", difficulty: 1, example: "I studied for one hour.", exampleZh: "我讀了一個小時的書。" },
-  { word: "minute", phonetic: "/ˈmɪnɪt/", meaning: "分鐘", pos: "n", difficulty: 1, example: "Wait a minute, please.", exampleZh: "請等一下。" },
+  { word: "minute", phonetic: "/ˈmɪnɪt/", meaning: "分鐘；極微小的", pos: "n/adj", difficulty: 1, example: "Wait a minute, please. The difference is minute.", exampleZh: "請稍等一分鐘。這點差異極其微小。", context: "當名詞時讀 /ˈmɪnɪt/（分鐘）；當形容詞時讀 /maɪˈnuːt/（極微小的）。" },
   { word: "clock", phonetic: "/klɑːk/", meaning: "時鐘", pos: "n", difficulty: 1, example: "Look at the clock.", exampleZh: "看一下時鐘。" },
   { word: "now", phonetic: "/naʊ/", meaning: "現在", pos: "adv", difficulty: 1, example: "I am eating now.", exampleZh: "我現在正在吃東西。" },
   { word: "soon", phonetic: "/suːn/", meaning: "很快", pos: "adv", difficulty: 1, example: "She will come soon.", exampleZh: "她很快就會來。" },

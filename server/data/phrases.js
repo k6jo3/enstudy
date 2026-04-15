@@ -99,8 +99,8 @@ module.exports = [
   },
   {
     phrase: "No problem",
-    meaning: "沒問題；不客氣",
-    context: "較隨意的「不客氣」，強調這事不麻煩；也可表示「沒問題、可以」；年輕人常用",
+    meaning: "不客氣；沒問題",
+    context: "1. 回應謝謝（不客氣）；2. 答應請求（沒問題）。強調「舉手之勞、不麻煩」；比較 it doesn't matter（用於對方道歉或表示不介意時）。",
     example: "No problem, I can finish it by tomorrow.",
     exampleZh: "沒問題，我明天之前能完成。",
     difficulty: 1

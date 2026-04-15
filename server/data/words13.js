@@ -124,7 +124,7 @@ module.exports = [
   { word: "trending", phonetic: "/ˈtrɛndɪŋ/", meaning: "熱門的；趨勢中的", pos: "adj", difficulty: 2, example: "The topic has been trending on social media all day.", exampleZh: "該話題整天都在社交媒體上熱門。" },
   { word: "meme", phonetic: "/miːm/", meaning: "迷因；網路梗", pos: "n", difficulty: 2, example: "The funny meme about office life was shared thousands of times.", exampleZh: "有趣的辦公室生活迷因被分享了數千次。" },
   { word: "profile", phonetic: "/ˈproʊfaɪl/", meaning: "個人檔案；簡介", pos: "n", difficulty: 1, example: "Please update your profile picture and contact information.", exampleZh: "請更新你的個人檔案照片和聯繫資訊。" },
-  { word: "content", phonetic: "/ˈkɑːntɛnt/", meaning: "內容", pos: "n", difficulty: 1, example: "The marketing team creates content for all social media channels.", exampleZh: "行銷團隊為所有社交媒體管道建立內容。" },
+  { word: "content", phonetic: "/ˈkɑːntɛnt/", meaning: "內容；滿足的", pos: "n/adj", difficulty: 1, example: "The content of the book is good. She is content with her life.", exampleZh: "這本書的內容很好。她對自己的生活感到滿足。", context: "當名詞時讀 /ˈkɑːntɛnt/（內容）；當形容詞時讀 /kənˈtɛnt/（滿足的）。" },
 
   // ===== Information Technology — E-commerce & Mobile (141-170) =====
   { word: "checkout", phonetic: "/ˈtʃɛkaʊt/", meaning: "結帳", pos: "n", difficulty: 1, example: "Click the checkout button when you are ready to pay.", exampleZh: "當你準備好付款時，點擊結帳按鈕。" },
