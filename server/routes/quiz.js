@@ -33,21 +33,61 @@ function getQuizMode(score, hintCount) {
   return 'choice';
 }
 
-// Generate a hint display string: reveal ~1/3 of letters, rest as '_'
-// e.g. "adventure" → "a _ _ e _ _ _ r _"
-// e.g. "give up" → "g _ _ _   _ p"
-function generateHintDisplay(text) {
-  const words = text.split(' ');
-  return words.map(word => {
-    const chars = word.split('');
-    const revealCount = Math.max(1, Math.round(chars.length / 3));
+// Lazy word-difficulty map for per-token hint calculation.
+// Built once from the words table; phrases like "ramp up" can then look up
+// "ramp" individually and reveal more letters when a component word is harder
+// than the phrase itself.
+let _wordDiffMap = null;
+async function getWordDiffMap() {
+  if (_wordDiffMap) return _wordDiffMap;
+  const rows = await queryAll('SELECT word, difficulty FROM words');
+  const m = new Map();
+  for (const r of rows) {
+    if (r.word) m.set(r.word.toLowerCase(), r.difficulty || 1);
+  }
+  _wordDiffMap = m;
+  return m;
+}
+
+// Generate a hint display string with per-token difficulty.
+// For each token:
+//   base = ceil(length / 3)
+//   diffBonus = max(itemDifficulty, wordLookup) - 1, clamped 0..3
+//   longBonus = length >= 14 ? 2 : length >= 10 ? 1 : 0
+//   reveal = min( floor(length * 2/3),  base + diffBonus + longBonus )  // 67% cap
+// Examples:
+//   "adventure" (L1)                    -> 3 letters (33%)
+//   "adventure" (L4)                    -> 6 letters (67%, cap)
+//   "entrepreneurship" (L4, 16 chars)   -> 10 letters (62%, cap; was 56%)
+//   "ramp up" (phrase L2, ramp is L3)   -> ramp: 2 letters, up: 1 letter
+function generateHintDisplay(text, difficulty = 1, wordDiffMap = null) {
+  const tokens = text.split(' ');
+  return tokens.map(token => {
+    if (!token) return '';
+    const chars = token.split('');
+    const len = chars.length;
+
+    // Per-token effective difficulty: max of item difficulty and word lookup
+    let effectiveDiff = difficulty || 1;
+    if (wordDiffMap) {
+      const clean = token.toLowerCase().replace(/[^a-z'-]/g, '');
+      const wd = clean && wordDiffMap.get(clean);
+      if (wd && wd > effectiveDiff) effectiveDiff = wd;
+    }
+
+    const diffBonus = Math.max(0, Math.min(3, effectiveDiff - 1));
+    const longBonus = len >= 14 ? 2 : len >= 10 ? 1 : 0;
+    const revealTarget = Math.ceil(len / 3) + diffBonus + longBonus;
+    // Cap at 67% of length so the user still has something to recall
+    const revealCap = Math.max(1, Math.floor(len * 2 / 3));
+    const reveal = Math.max(1, Math.min(revealCap, revealTarget));
+
     const indices = chars.map((_, i) => i);
-    // Fisher-Yates to pick random positions
     for (let i = indices.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
       [indices[i], indices[j]] = [indices[j], indices[i]];
     }
-    const revealSet = new Set(indices.slice(0, revealCount));
+    const revealSet = new Set(indices.slice(0, reveal));
     return chars.map((c, i) => revealSet.has(i) ? c : '_').join(' ');
   }).join('   ');
 }
@@ -337,6 +377,11 @@ router.get('/items', async (req, res) => {
 
     const items = await selectItemsByTier(quizCount, today);
 
+    // Load word-difficulty map once per request for per-token hint calculation
+    const wordDiffMap = items.some(it => it.item_type === 'phrase')
+      ? await getWordDiffMap()
+      : null;
+
     // Set quizMode and generate choices / hints
     for (const item of items) {
       const score = item.score != null && item.score >= 0 ? item.score : 0;
@@ -360,7 +405,9 @@ router.get('/items', async (req, res) => {
       }
 
       if (item.quizMode === 'hint' && display) {
-        item.hintDisplay = generateHintDisplay(display);
+        // Only use per-token word lookup for phrases; words use their own difficulty
+        const map = item.item_type === 'phrase' ? wordDiffMap : null;
+        item.hintDisplay = generateHintDisplay(display, item.difficulty, map);
       }
     }
 

@@ -43,6 +43,7 @@ async function start() {
   app.use('/api/reading', require('./routes/reading'));
   app.use('/api/playback', require('./routes/playback'));
   app.use('/api/games', require('./routes/games'));
+  app.use('/api/graded-reading', require('./routes/graded-reading'));
 
   // Serve static files in production
   const clientDist = path.join(__dirname, '..', 'client', 'dist');

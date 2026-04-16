@@ -60,8 +60,8 @@ function QuizPage() {
   }, [result, currentIndex, quizItems.length, quizMode, item]);
 
   const checkAnswer = (userAnswer, mode) => {
-    const correct = item.display.toLowerCase().trim();
-    const input = userAnswer.toLowerCase().trim();
+    const correct = normalizeForCompare(item.display);
+    const input = normalizeForCompare(userAnswer);
     const isCorrect = input === correct || fuzzyMatch(input, correct);
 
     setResult(isCorrect ? 'correct' : 'wrong');
@@ -191,7 +191,17 @@ function QuizPage() {
               {quizMode === 'hint' ? '根據提示輸入完整英文：' : '請輸入這個中文意思對應的英文：'}
             </p>
             <h3 className="quiz-hint">{item.hint}</h3>
-            {item.context && <p className="quiz-context"><span className="context-label">語境：</span>{item.context.replaceAll(item.display, '___')}</p>}
+            {item.context && (
+              <div className="quiz-context-hint">
+                <span className="context-icon">💡</span>
+                {item.context.split(/\s+/).map((word, i) => {
+                  const cleanWord = word.replace(/[.,!?;:()]/g, '').toLowerCase();
+                  const targetWord = item.display.toLowerCase();
+                  const isMatch = cleanWord === targetWord || (targetWord.length > 3 && cleanWord.includes(targetWord));
+                  return isMatch ? ' ____ ' : word + ' ';
+                })}
+              </div>
+            )}
             {item.part_of_speech && <span className="quiz-pos">{item.part_of_speech}</span>}
             {quizMode === 'hint' && item.hintDisplay && (
               <div className="quiz-hint-letters">{item.hintDisplay}</div>
@@ -230,6 +240,15 @@ function QuizPage() {
 
 // Fuzzy matching:
 // - Single word: allows 1 typo (levenshtein ≤ 1)
+// Normalize input/answer for comparison:
+// - Lowercase, trim
+// - Strip common punctuation (? ! . , ; :) so user doesn't need to type "?" in "what's wrong?"
+// - Keep apostrophes and hyphens (they distinguish words, e.g. "deal-breaker", "what's")
+function normalizeForCompare(str) {
+  if (!str) return '';
+  return str.toLowerCase().trim().replace(/[?!.,;:]/g, '').replace(/\s+/g, ' ').trim();
+}
+
 // - Phrase: accepts if all correct words appear in order in input
 //   (allows extra words like "so", "really", e.g. "I'm so stressed out" matches "I'm stressed out")
 function fuzzyMatch(input, correct) {

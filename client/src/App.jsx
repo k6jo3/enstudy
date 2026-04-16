@@ -9,11 +9,13 @@ import StatsPage from './pages/StatsPage';
 import ReadingPage from './pages/ReadingPage';
 import PlaybackPage from './pages/PlaybackPage';
 import GamesPage from './pages/GamesPage';
+import GradedReadingPage from './pages/GradedReadingPage';
 
 const NAV_ITEMS = [
   { path: '/', label: '首頁' },
   { path: '/learn', label: '學習' },
   { path: '/reading', label: '閱讀' },
+  { path: '/graded-reading', label: '分級閱讀' },
   { path: '/quiz', label: '測驗' },
   { path: '/grammar', label: '文法' },
   { path: '/listen', label: '聽寫' },
@@ -46,6 +48,7 @@ function App() {
           <Route path="/" element={<Dashboard />} />
           <Route path="/learn" element={<LearnPage />} />
           <Route path="/reading" element={<ReadingPage />} />
+          <Route path="/graded-reading" element={<GradedReadingPage />} />
           <Route path="/quiz" element={<QuizPage />} />
           <Route path="/grammar" element={<GrammarPage />} />
           <Route path="/listen" element={<ListenPage />} />

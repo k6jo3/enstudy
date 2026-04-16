@@ -1,312 +1,2708 @@
-// words14.js — Daily Life, Gossip & Casual Conversation (300 words)
 module.exports = [
-  // ===== 1. Emotions & Personality (1-60) =====
-  { word: "awkward", phonetic: "/ˈɔːkwərd/", meaning: "尷尬的；笨拙的", pos: "adj", difficulty: 2, example: "There was an awkward silence after he told that joke.", exampleZh: "他講笑話後出現了尷尬的沉默。" },
-  { word: "embarrassed", phonetic: "/ɪmˈbærəst/", meaning: "難為情的；丟臉的", pos: "adj", difficulty: 2, example: "She felt so embarrassed when she tripped in front of everyone.", exampleZh: "她在眾人面前絆倒時感到非常難為情。" },
-  { word: "jealous", phonetic: "/ˈdʒɛləs/", meaning: "嫉妒的；吃醋的", pos: "adj", difficulty: 2, example: "He gets jealous whenever she talks to other guys at parties.", exampleZh: "每當她在派對上與其他男人談話時，他就會吃醋。" },
-  { word: "stubborn", phonetic: "/ˈstʌbərn/", meaning: "固執的；頑固的", pos: "adj", difficulty: 2, example: "My dad is so stubborn that he never asks for directions.", exampleZh: "我爸爸非常固執，從不問路。" },
-  { word: "outgoing", phonetic: "/ˈaʊtˌɡoʊɪŋ/", meaning: "外向的；愛交際的", pos: "adj", difficulty: 2, example: "She is very outgoing and makes friends wherever she goes.", exampleZh: "她非常外向，走到哪裡都能交到朋友。" },
-  { word: "introverted", phonetic: "/ˈɪntrəˌvɜːrtɪd/", meaning: "內向的；不善社交的", pos: "adj", difficulty: 3, example: "Being introverted does not mean you dislike people at all.", exampleZh: "性格內向並不意味著你完全不喜歡人。" },
-  { word: "moody", phonetic: "/ˈmuːdi/", meaning: "情緒化的；喜怒無常的", pos: "adj", difficulty: 2, example: "He has been really moody lately and nobody knows why.", exampleZh: "他最近情緒很不穩定，沒人知道為什麼。" },
-  { word: "grateful", phonetic: "/ˈɡreɪtfəl/", meaning: "感激的；感恩的", pos: "adj", difficulty: 2, example: "I am so grateful that you helped me move last weekend.", exampleZh: "我非常感謝你上周末幫我搬家。" },
-  { word: "anxious", phonetic: "/ˈæŋkʃəs/", meaning: "焦慮的；不安的", pos: "adj", difficulty: 2, example: "She always feels anxious before giving a presentation at school.", exampleZh: "她在學校做簡報前總是感到焦慮。" },
-  { word: "thrilled", phonetic: "/θrɪld/", meaning: "超興奮的；欣喜若狂的", pos: "adj", difficulty: 2, example: "We were absolutely thrilled when we heard the good news.", exampleZh: "我們聽到好消息時興高采烈。" },
-  { word: "devastated", phonetic: "/ˈdɛvəˌsteɪtɪd/", meaning: "崩潰的；極度傷心的", pos: "adj", difficulty: 3, example: "She was devastated after finding out her dog ran away.", exampleZh: "發現她的狗跑掉後，她崩潰了。" },
-  { word: "furious", phonetic: "/ˈfjʊriəs/", meaning: "暴怒的；狂怒的", pos: "adj", difficulty: 2, example: "Mom was furious when she saw the mess in the kitchen.", exampleZh: "媽媽看到廚房的亂七八糟時怒火沖天。" },
-  { word: "overwhelmed", phonetic: "/ˌoʊvərˈwɛlmd/", meaning: "不知所措的；壓力山大的", pos: "adj", difficulty: 3, example: "I feel completely overwhelmed with all these deadlines coming up.", exampleZh: "我對即將到來的所有截止日期感到不知所措。" },
-  { word: "nostalgic", phonetic: "/nɒˈstældʒɪk/", meaning: "懷舊的；思鄉的", pos: "adj", difficulty: 3, example: "This old song makes me feel so nostalgic about high school.", exampleZh: "這首老歌讓我感到非常懷念高中時光。" },
-  { word: "suspicious", phonetic: "/səˈspɪʃəs/", meaning: "懷疑的；起疑心的", pos: "adj", difficulty: 2, example: "I got suspicious when he started hiding his phone from me.", exampleZh: "當他開始對我隱瞞手機時，我起了疑心。" },
-  { word: "confident", phonetic: "/ˈkɑːnfɪdənt/", meaning: "有自信的；有把握的", pos: "adj", difficulty: 2, example: "She looked confident walking into the interview room this morning.", exampleZh: "她今早走進面試室時看起來很有自信。" },
-  { word: "humble", phonetic: "/ˈhʌmbl/", meaning: "謙虛的；謙遜的", pos: "adj", difficulty: 2, example: "Despite his success he remains very humble and down to earth.", exampleZh: "儘管成功，他仍然非常謙虛且腳踏實地。" },
-  { word: "arrogant", phonetic: "/ˈærəɡənt/", meaning: "傲慢的；自大的", pos: "adj", difficulty: 3, example: "Nobody likes working with him because he is so arrogant.", exampleZh: "沒人喜歡和他一起工作，因為他太傲慢了。" },
-  { word: "sensitive", phonetic: "/ˈsɛnsɪtɪv/", meaning: "敏感的；易受傷的", pos: "adj", difficulty: 2, example: "Be careful what you say because she is quite sensitive.", exampleZh: "要小心你說的話，因為她相當敏感。" },
-  { word: "generous", phonetic: "/ˈdʒɛnərəs/", meaning: "慷慨的；大方的", pos: "adj", difficulty: 2, example: "My grandmother is very generous and always gives us gifts.", exampleZh: "我的祖母非常慷慨，總是送我們禮物。" },
-  { word: "selfish", phonetic: "/ˈsɛlfɪʃ/", meaning: "自私的；只顧自己的", pos: "adj", difficulty: 2, example: "It was selfish of him to eat the last piece of cake.", exampleZh: "他吃掉最後一塊蛋糕是很自私的。" },
-  { word: "loyal", phonetic: "/ˈlɔɪəl/", meaning: "忠誠的；忠實的", pos: "adj", difficulty: 2, example: "A loyal friend will always stand by you during tough times.", exampleZh: "忠實的朋友在困難時期會一直支持你。" },
-  { word: "clingy", phonetic: "/ˈklɪŋi/", meaning: "黏人的；過度依賴的", pos: "adj", difficulty: 3, example: "Her boyfriend is so clingy that he texts her every five minutes.", exampleZh: "她的男友太黏人了，每五分鐘就發訊息給她。" },
-  { word: "charismatic", phonetic: "/ˌkærɪzˈmætɪk/", meaning: "有魅力的；有領袖氣質的", pos: "adj", difficulty: 3, example: "The new teacher is so charismatic that every student loves her class.", exampleZh: "新老師太有魅力了，每個學生都喜歡她的課。" },
-  { word: "sarcastic", phonetic: "/sɑːrˈkæstɪk/", meaning: "諷刺的；挖苦的", pos: "adj", difficulty: 3, example: "His sarcastic comments sometimes hurt people without him realizing it.", exampleZh: "他嘲諷的評論有時會傷害人，但他沒有意識到。" },
-  { word: "witty", phonetic: "/ˈwɪti/", meaning: "機智的；妙語如珠的", pos: "adj", difficulty: 2, example: "Everyone loves her witty remarks during our group conversations.", exampleZh: "每個人都喜歡她在小組對話中的妙語如珠。" },
-  { word: "grumpy", phonetic: "/ˈɡrʌmpi/", meaning: "脾氣暴躁的；愛抱怨的", pos: "adj", difficulty: 2, example: "Grandpa gets grumpy if he does not have his morning coffee.", exampleZh: "如果爺爺沒有晨間咖啡，他就會脾氣暴躁。" },
-  { word: "cheerful", phonetic: "/ˈtʃɪrfəl/", meaning: "開朗的；愉快的", pos: "adj", difficulty: 2, example: "She has such a cheerful personality that she brightens every room.", exampleZh: "她有著如此開朗的個性，使每個房間都明亮起來。", context: "描述天生開朗活潑的個性或令人愉快的氛圍；比較 happy（因某事快樂的狀態）、glad（因特定事情高興）" },
-  { word: "insecure", phonetic: "/ˌɪnsɪˈkjʊr/", meaning: "沒安全感的；不自信的", pos: "adj", difficulty: 2, example: "He feels insecure about his appearance and avoids taking photos.", exampleZh: "他對自己的外表沒有安全感，避免拍照。" },
-  { word: "envious", phonetic: "/ˈɛnviəs/", meaning: "羨慕的；眼紅的", pos: "adj", difficulty: 2, example: "I am a little envious of her amazing vacation photos online.", exampleZh: "我有點羨慕她在線上分享的驚人度假照片。" },
-  { word: "cranky", phonetic: "/ˈkræŋki/", meaning: "暴躁的；易怒的", pos: "adj", difficulty: 2, example: "The baby gets cranky when she misses her afternoon nap.", exampleZh: "寶寶錯過下午小睡時會變得暴躁。" },
-  { word: "gloomy", phonetic: "/ˈɡluːmi/", meaning: "陰鬱的；悲觀的", pos: "adj", difficulty: 2, example: "The rainy weather made everyone feel gloomy the entire week.", exampleZh: "下雨天讓整個星期的人都感到沮喪。" },
-  { word: "enthusiastic", phonetic: "/ɪnˌθjuːziˈæstɪk/", meaning: "熱情的；熱衷的", pos: "adj", difficulty: 3, example: "She is so enthusiastic about cooking that she tries new recipes daily.", exampleZh: "她對烹飪非常熱情，每天都嘗試新食譜。" },
-  { word: "pessimistic", phonetic: "/ˌpɛsɪˈmɪstɪk/", meaning: "悲觀的；消極的", pos: "adj", difficulty: 3, example: "Try not to be so pessimistic because things might work out fine.", exampleZh: "盡量不要這麼悲觀，事情可能會順利解決。" },
-  { word: "optimistic", phonetic: "/ˌɑːptɪˈmɪstɪk/", meaning: "樂觀的；正面的", pos: "adj", difficulty: 3, example: "She remains optimistic even when everything seems to be going wrong.", exampleZh: "即使一切似乎都出錯，她仍然保持樂觀。" },
-  { word: "impulsive", phonetic: "/ɪmˈpʌlsɪv/", meaning: "衝動的；不經思考的", pos: "adj", difficulty: 3, example: "He made an impulsive decision to book a flight to Tokyo.", exampleZh: "他衝動地決定訂一班飛往東京的航班。" },
-  { word: "passive", phonetic: "/ˈpæsɪv/", meaning: "被動的；消極的", pos: "adj", difficulty: 2, example: "She is too passive and never speaks up for herself.", exampleZh: "她太被動了，從不為自己辯護。" },
-  { word: "assertive", phonetic: "/əˈsɜːrtɪv/", meaning: "堅定自信的；有主見的", pos: "adj", difficulty: 3, example: "You need to be more assertive when dealing with difficult customers.", exampleZh: "在處理難纏客戶時，你需要更有主見。" },
-  { word: "dramatic", phonetic: "/drəˈmætɪk/", meaning: "戲劇化的；誇張的", pos: "adj", difficulty: 2, example: "She is so dramatic that a small cut feels like the end.", exampleZh: "她太戲劇化了，一點小割傷都感覺像世界末日。" },
-  { word: "laid-back", phonetic: "/ˌleɪdˈbæk/", meaning: "隨性的；悠閒的", pos: "adj", difficulty: 2, example: "He has a very laid-back attitude and never stresses about anything.", exampleZh: "他的態度非常隨性，從不為任何事情擔心。" },
-  { word: "uptight", phonetic: "/ˌʌpˈtaɪt/", meaning: "緊繃的；過度拘謹的", pos: "adj", difficulty: 2, example: "Do not be so uptight and just enjoy the party tonight.", exampleZh: "不要這麼緊繃，今晚就享受派對吧。" },
-  { word: "easygoing", phonetic: "/ˌiːziˈɡoʊɪŋ/", meaning: "隨和的；好相處的", pos: "adj", difficulty: 2, example: "My new roommate is very easygoing and never complains about anything.", exampleZh: "我的新室友非常隨和，從不抱怨任何事。" },
-  { word: "rebellious", phonetic: "/rɪˈbɛliəs/", meaning: "叛逆的；反抗的", pos: "adj", difficulty: 3, example: "She went through a rebellious phase during her teenage years.", exampleZh: "她在青少年時期經歷了叛逆期。" },
-  { word: "timid", phonetic: "/ˈtɪmɪd/", meaning: "膽小的；害羞的", pos: "adj", difficulty: 2, example: "The timid boy finally gathered the courage to talk to her.", exampleZh: "膽小的男孩終於鼓起勇氣和她交談。" },
-  { word: "bold", phonetic: "/boʊld/", meaning: "大膽的；有勇氣的", pos: "adj", difficulty: 2, example: "That was a bold move to quit your job without a backup plan.", exampleZh: "沒有備用計畫就辭職是個大膽的舉動。" },
-  { word: "blunt", phonetic: "/blʌnt/", meaning: "直言不諱的；說話很直的", pos: "adj", difficulty: 2, example: "She is very blunt and will tell you exactly what she thinks.", exampleZh: "她非常直率，會直言告訴你她的想法。" },
-  { word: "tactful", phonetic: "/ˈtæktfəl/", meaning: "圓融的；有分寸的", pos: "adj", difficulty: 3, example: "A tactful person knows how to deliver bad news gently.", exampleZh: "一個圓融的人知道如何委婉地傳達壞消息。" },
-  { word: "manipulative", phonetic: "/məˈnɪpjəˌleɪtɪv/", meaning: "有心機的；善於操控的", pos: "adj", difficulty: 3, example: "She finally realized her friend was being manipulative the whole time.", exampleZh: "她終於意識到她的朋友一直都在操控她。" },
-  { word: "genuine", phonetic: "/ˈdʒɛnjuɪn/", meaning: "真誠的；真心的", pos: "adj", difficulty: 2, example: "It is hard to find genuine people in this superficial world.", exampleZh: "在這個膚淺的世界裡很難找到真誠的人。" },
-  { word: "phony", phonetic: "/ˈfoʊni/", meaning: "虛假的；假裝的", pos: "adj", difficulty: 2, example: "I can tell his smile is phony because it never reaches his eyes.", exampleZh: "我能看出他的笑容是假的，因為它從不到達他的眼睛。" },
-  { word: "petty", phonetic: "/ˈpɛti/", meaning: "小心眼的；斤斤計較的", pos: "adj", difficulty: 2, example: "It is petty to argue over who should pay one extra dollar.", exampleZh: "為多付一美元而爭吵是很小心眼的。" },
-  { word: "bitter", phonetic: "/ˈbɪtər/", meaning: "心懷怨恨的；忿忿不平的", pos: "adj", difficulty: 2, example: "He is still bitter about not getting the promotion last year.", exampleZh: "他仍然對去年沒有升職感到怨恨。" },
-  { word: "resentful", phonetic: "/rɪˈzɛntfəl/", meaning: "憤恨的；心有不甘的", pos: "adj", difficulty: 3, example: "She felt resentful toward her sister for getting all the attention.", exampleZh: "她對妹妹獲得所有關注感到憤恨。" },
-  { word: "compassionate", phonetic: "/kəmˈpæʃənət/", meaning: "有同情心的；慈悲的", pos: "adj", difficulty: 3, example: "A compassionate person always tries to understand how others feel.", exampleZh: "有同情心的人總是試圖理解他人的感受。" },
-  { word: "empathetic", phonetic: "/ˌɛmpəˈθɛtɪk/", meaning: "善解人意的；有同理心的", pos: "adj", difficulty: 3, example: "She is very empathetic and always knows the right thing to say.", exampleZh: "她非常善解人意，總是知道該說什麼。" },
-  { word: "apathetic", phonetic: "/ˌæpəˈθɛtɪk/", meaning: "冷漠的；無所謂的", pos: "adj", difficulty: 3, example: "He seemed apathetic about everything and did not care about results.", exampleZh: "他對一切似乎都很冷漠，不在乎結果。" },
-  { word: "obsessive", phonetic: "/əbˈsɛsɪv/", meaning: "偏執的；著迷的", pos: "adj", difficulty: 3, example: "She has an obsessive need to keep everything perfectly organized.", exampleZh: "她有著迷於完美整理一切的強迫性需求。" },
-  { word: "paranoid", phonetic: "/ˈpærəˌnɔɪd/", meaning: "多疑的；疑神疑鬼的", pos: "adj", difficulty: 3, example: "Stop being so paranoid; nobody is talking about you behind your back.", exampleZh: "別這麼疑神疑鬼；沒人在背後談論你。" },
-  { word: "temperamental", phonetic: "/ˌtɛmprəˈmɛntl/", meaning: "喜怒無常的；性情多變的", pos: "adj", difficulty: 3, example: "The chef is temperamental and yells when things go wrong in the kitchen.", exampleZh: "廚師喜怒無常，廚房出錯時會大聲吼叫。" },
-  { word: "eccentric", phonetic: "/ɪkˈsɛntrɪk/", meaning: "古怪的；特立獨行的", pos: "adj", difficulty: 3, example: "My eccentric uncle collects vintage typewriters and talks to his plants.", exampleZh: "我古怪的叔叔收集老式打字機並與他的植物說話。" },
-
-  // ===== 2. Relationships & Social Life (61-120) =====
-  { word: "crush", phonetic: "/krʌʃ/", meaning: "暗戀對象；迷戀", pos: "n", difficulty: 2, example: "I had a huge crush on my neighbor when I was in high school.", exampleZh: "我在高中時對我的鄰居有很大的暗戀。" },
-  { word: "breakup", phonetic: "/ˈbreɪkˌʌp/", meaning: "分手", pos: "n", difficulty: 2, example: "The breakup was hard but she is doing much better now.", exampleZh: "分手很艱難，但她現在好多了。" },
-  { word: "flirt", phonetic: "/flɜːrt/", meaning: "調情；搭訕", pos: "v", difficulty: 2, example: "He was trying to flirt with the barista at the coffee shop.", exampleZh: "他在咖啡店試圖調情咖啡師。" },
-  { word: "ghosting", phonetic: "/ˈɡoʊstɪŋ/", meaning: "突然不讀不回；人間蒸發", pos: "n", difficulty: 3, example: "Ghosting someone instead of being honest is really immature.", exampleZh: "對某人人間蒸發而不是誠實相待真的很不成熟。" },
-  { word: "bestie", phonetic: "/ˈbɛsti/", meaning: "閨蜜；麻吉", pos: "n", difficulty: 2, example: "My bestie and I have been inseparable since elementary school.", exampleZh: "我和我的閨蜜自小學以來就形影不離。" },
-  { word: "roommate", phonetic: "/ˈruːmˌmeɪt/", meaning: "室友", pos: "n", difficulty: 2, example: "My roommate always leaves dirty dishes in the sink overnight.", exampleZh: "我的室友總是把髒盤子放在水槽裡過夜。" },
-  { word: "acquaintance", phonetic: "/əˈkweɪntəns/", meaning: "點頭之交；認識的人", pos: "n", difficulty: 3, example: "He is just an acquaintance; we are not that close.", exampleZh: "他只是一個點頭之交；我們不太親密。" },
-  { word: "rival", phonetic: "/ˈraɪvəl/", meaning: "對手；競爭者", pos: "n", difficulty: 2, example: "Those two have been rivals since they joined the same dance team.", exampleZh: "自從他們加入同一舞蹈隊以來，這兩人一直是對手。" },
-  { word: "engaged", phonetic: "/ɪnˈɡeɪdʒd/", meaning: "已訂婚的", pos: "adj", difficulty: 2, example: "They just got engaged after dating for three years.", exampleZh: "他們在交往三年後剛訂婚。" },
-  { word: "newlywed", phonetic: "/ˈnjuːliˌwɛd/", meaning: "新婚的人", pos: "n", difficulty: 2, example: "The newlyweds looked so happy at their wedding reception last night.", exampleZh: "新婚夫婦在昨晚的婚禮招待會上看起來非常幸福。" },
-  { word: "divorced", phonetic: "/dɪˈvɔːrst/", meaning: "離婚的", pos: "adj", difficulty: 2, example: "She has been divorced for two years and is dating again.", exampleZh: "她離婚兩年了，現在又在約會。" },
-  { word: "affair", phonetic: "/əˈfɛr/", meaning: "外遇；婚外情", pos: "n", difficulty: 2, example: "The scandal started when everyone found out about his secret affair.", exampleZh: "當每個人發現他的秘密外遇時，醜聞開始了。" },
-  { word: "blind date", phonetic: "/ˌblaɪnd ˈdeɪt/", meaning: "相親；盲目約會", pos: "n", difficulty: 2, example: "My mom set me up on a blind date with her coworker's son.", exampleZh: "我媽媽為我安排了一場與她同事兒子的相親。" },
-  { word: "matchmaker", phonetic: "/ˈmætʃˌmeɪkər/", meaning: "媒人；牽紅線的人", pos: "n", difficulty: 2, example: "She loves being a matchmaker and has set up three couples.", exampleZh: "她喜歡當媒人，已經牽紅線了三對情侶。" },
-  { word: "bridesmaid", phonetic: "/ˈbraɪdzˌmeɪd/", meaning: "伴娘", pos: "n", difficulty: 2, example: "She asked her two best friends to be her bridesmaids.", exampleZh: "她要求她的兩位好朋友做伴娘。" },
-  { word: "groomsman", phonetic: "/ˈɡruːmzmən/", meaning: "伴郎", pos: "n", difficulty: 2, example: "His brother will be the groomsman at the wedding next month.", exampleZh: "他的兄弟將是下個月婚禮的伴郎。" },
-  { word: "reunion", phonetic: "/riˈjuːnjən/", meaning: "重聚；同學會", pos: "n", difficulty: 2, example: "I am nervous about attending my high school reunion this weekend.", exampleZh: "我對本周末參加高中同學會感到緊張。" },
-  { word: "gossip", phonetic: "/ˈɡɑːsɪp/", meaning: "八卦；說閒話", pos: "n", difficulty: 2, example: "The office is full of gossip about who is getting promoted.", exampleZh: "辦公室裡全是關於誰會升職的八卦。" },
-  { word: "rumor", phonetic: "/ˈruːmər/", meaning: "謠言；傳聞", pos: "n", difficulty: 2, example: "There is a rumor going around that the store is closing down.", exampleZh: "有謠言說那家商店正在關閉。" },
-  { word: "drama", phonetic: "/ˈdrɑːmə/", meaning: "是非；鬧劇", pos: "n", difficulty: 2, example: "I am so tired of all the drama in our friend group.", exampleZh: "我厭倦了我們朋友群組中的所有是非。" },
-  { word: "feud", phonetic: "/fjuːd/", meaning: "不和；長期爭執", pos: "n", difficulty: 3, example: "The feud between those two families has lasted for years.", exampleZh: "那兩個家族之間的不和已經持續了多年。" },
-  { word: "reconcile", phonetic: "/ˈrɛkənˌsaɪl/", meaning: "和好；修復關係", pos: "v", difficulty: 3, example: "They finally decided to reconcile after months of not speaking.", exampleZh: "他們在數月不交談後終於決定和好。" },
-  { word: "clique", phonetic: "/kliːk/", meaning: "小圈圈；小團體", pos: "n", difficulty: 3, example: "The popular clique at school always sits at the same table.", exampleZh: "學校的受歡迎小圈子總是坐在同一張桌子。" },
-  { word: "soulmate", phonetic: "/ˈsoʊlˌmeɪt/", meaning: "靈魂伴侶", pos: "n", difficulty: 2, example: "She believes her husband is her soulmate and true best friend.", exampleZh: "她相信她的丈夫是她的靈魂伴侶和真正的好朋友。" },
-  { word: "fling", phonetic: "/flɪŋ/", meaning: "短暫的戀情", pos: "n", difficulty: 2, example: "It was just a summer fling; neither of them wanted anything serious.", exampleZh: "這只是一段夏日戀情；他們都不想要認真的關係。" },
-  { word: "rebound", phonetic: "/rɪˈbaʊnd/", meaning: "反彈戀情；分手後馬上交的對象", pos: "n", difficulty: 3, example: "She started a rebound relationship right after breaking up with her ex.", exampleZh: "她在和前男友分手後馬上開始了反彈戀情。" },
-  { word: "proposal", phonetic: "/prəˈpoʊzəl/", meaning: "求婚", pos: "n", difficulty: 2, example: "He planned the perfect proposal on the beach at sunset.", exampleZh: "他計劃了在日落時分的海灘上的完美求婚。" },
-  { word: "anniversary", phonetic: "/ˌænɪˈvɜːrsəri/", meaning: "週年紀念日", pos: "n", difficulty: 2, example: "They celebrated their tenth wedding anniversary with a trip to Paris.", exampleZh: "他們以巴黎之旅慶祝了他們的第十個婚禮週年。" },
-  { word: "bachelor", phonetic: "/ˈbætʃələr/", meaning: "單身漢", pos: "n", difficulty: 2, example: "He has been a bachelor for so long that he forgot how to cook.", exampleZh: "他單身這麼久，都忘記怎麼煮飯了。" },
-  { word: "bachelorette", phonetic: "/ˌbætʃələˈrɛt/", meaning: "單身女子", pos: "n", difficulty: 3, example: "We threw a bachelorette party for her the weekend before the wedding.", exampleZh: "我們在婚禮前的週末為她舉辦了單身派對。" },
-  { word: "hangout", phonetic: "/ˈhæŋˌaʊt/", meaning: "聚會場所；常去的地方", pos: "n", difficulty: 2, example: "That cafe is our favorite hangout spot after work on Fridays.", exampleZh: "那家咖啡館是我們星期五下班後最喜歡的聚集地。" },
-  { word: "potluck", phonetic: "/ˈpɑːtˌlʌk/", meaning: "每人帶一道菜的聚餐", pos: "n", difficulty: 2, example: "We are having a potluck this Saturday so bring your best dish.", exampleZh: "我們本周六有聚餐，所以帶上你最好的菜。" },
-  { word: "housewarming", phonetic: "/ˈhaʊsˌwɔːrmɪŋ/", meaning: "喬遷派對", pos: "n", difficulty: 2, example: "We are throwing a housewarming party at our new apartment this weekend.", exampleZh: "我們本周末在新公寓舉辦喬遷派對。" },
-  { word: "farewell", phonetic: "/ˌfɛrˈwɛl/", meaning: "送別；告別", pos: "n", difficulty: 2, example: "The team organized a farewell party for the colleague who is leaving.", exampleZh: "團隊為即將離開的同事組織了一場送別派對。" },
-  { word: "confession", phonetic: "/kənˈfɛʃən/", meaning: "告白；坦白", pos: "n", difficulty: 2, example: "His confession of love totally caught her off guard after class.", exampleZh: "他在課後的愛情告白完全出其不意。" },
-  { word: "rejection", phonetic: "/rɪˈdʒɛkʃən/", meaning: "被拒絕；回絕", pos: "n", difficulty: 2, example: "Dealing with rejection is never easy but it makes you stronger.", exampleZh: "處理被拒絕的感受從來不容易，但它會讓你更堅強。" },
-  { word: "commitment", phonetic: "/kəˈmɪtmənt/", meaning: "承諾；認真交往", pos: "n", difficulty: 2, example: "He is afraid of commitment and avoids serious relationships.", exampleZh: "他害怕承諾，總是迴避認真的感情關係。" },
-  { word: "compromise", phonetic: "/ˈkɑːmprəˌmaɪz/", meaning: "妥協；折衷", pos: "n", difficulty: 2, example: "A good relationship requires compromise from both sides.", exampleZh: "良好的關係需要雙方都願意妥協。" },
-  { word: "boundary", phonetic: "/ˈbaʊndəri/", meaning: "界線；底線", pos: "n", difficulty: 2, example: "You need to set clear boundaries with people who take advantage of you.", exampleZh: "你需要對那些佔你便宜的人設立清楚的界線。" },
-  { word: "situationship", phonetic: "/ˌsɪtʃuˈeɪʃənˌʃɪp/", meaning: "曖昧關係；不明確的關係", pos: "n", difficulty: 3, example: "They have been in a situationship for months without defining anything.", exampleZh: "他們維持曖昧關係好幾個月了，始終沒有給彼此一個定位。" },
-  { word: "third wheel", phonetic: "/ˌθɜːrd ˈwiːl/", meaning: "電燈泡", pos: "n", difficulty: 2, example: "I always feel like a third wheel when I hang out with couples.", exampleZh: "每次和情侶朋友出去，我都覺得自己像個電燈泡。" },
-  { word: "wingman", phonetic: "/ˈwɪŋˌmæn/", meaning: "僚機；幫朋友搭訕的人", pos: "n", difficulty: 2, example: "He asked his best friend to be his wingman at the party.", exampleZh: "他請他最好的朋友在派對上幫他當僚機。" },
-  { word: "bromance", phonetic: "/ˈbroʊˌmæns/", meaning: "兄弟情；好哥們的友情", pos: "n", difficulty: 3, example: "Their bromance is so strong that they go everywhere together.", exampleZh: "他們的兄弟情深厚無比，走到哪裡都黏在一起。" },
-  { word: "frenemy", phonetic: "/ˈfrɛnəmi/", meaning: "亦敵亦友；面和心不和的朋友", pos: "n", difficulty: 3, example: "She is my frenemy; we smile at each other but secretly compete.", exampleZh: "她是我的亦敵亦友；我們表面上笑臉相迎，私底下卻暗中較勁。" },
-  { word: "platonic", phonetic: "/pləˈtɑːnɪk/", meaning: "純友誼的；柏拉圖式的", pos: "adj", difficulty: 3, example: "Our relationship is strictly platonic; we are just very close friends.", exampleZh: "我們的關係純粹是友誼，只是非常親密的朋友。" },
-  { word: "intimate", phonetic: "/ˈɪntɪmət/", meaning: "親密的；親近的", pos: "adj", difficulty: 2, example: "They shared an intimate dinner at a quiet little restaurant.", exampleZh: "他們在一家安靜的小餐廳共進了一頓親密的晚餐。" },
-  { word: "icebreaker", phonetic: "/ˈaɪsˌbreɪkər/", meaning: "破冰活動；打破僵局的話", pos: "n", difficulty: 2, example: "The teacher used a fun icebreaker game on the first day of class.", exampleZh: "老師在第一堂課用了一個有趣的破冰遊戲。" },
-  { word: "small talk", phonetic: "/ˈsmɔːl tɔːk/", meaning: "閒聊；寒暄", pos: "n", difficulty: 2, example: "I am terrible at small talk and never know what to say.", exampleZh: "我非常不擅長閒聊，總是不知道該說什麼。" },
-  { word: "compliment", phonetic: "/ˈkɑːmplɪmənt/", meaning: "讚美；稱讚", pos: "n", difficulty: 2, example: "She gave me a sweet compliment about my new haircut today.", exampleZh: "她今天對我的新髮型給了我一個甜蜜的稱讚。" },
-  { word: "confrontation", phonetic: "/ˌkɑːnfrʌnˈteɪʃən/", meaning: "對質；正面衝突", pos: "n", difficulty: 3, example: "I hate confrontation so I try to avoid arguments whenever possible.", exampleZh: "我很不喜歡正面衝突，所以盡量避免爭吵。" },
-  { word: "backstab", phonetic: "/ˈbækˌstæb/", meaning: "背後捅刀；暗算", pos: "v", difficulty: 2, example: "I cannot believe she would backstab me after all these years.", exampleZh: "我不敢相信她在這麼多年後居然會背後捅我一刀。" },
-  { word: "betray", phonetic: "/bɪˈtreɪ/", meaning: "背叛；出賣", pos: "v", difficulty: 2, example: "He felt deeply hurt when his best friend decided to betray him.", exampleZh: "當他最好的朋友決定背叛他時，他感到深深的傷痛。" },
-  { word: "cheat", phonetic: "/tʃiːt/", meaning: "劈腿；欺騙", pos: "v", difficulty: 2, example: "She dumped him immediately after she found out he was cheating.", exampleZh: "她一發現他在劈腿就立刻甩了他。" },
-  { word: "date", phonetic: "/deɪt/", meaning: "約會；約會對象", pos: "n", difficulty: 2, example: "We are going on our third date to that Italian place downtown.", exampleZh: "我們要去市區那家義大利餐廳約會，這是我們第三次約會了。" },
-  { word: "honeymoon", phonetic: "/ˈhʌniˌmuːn/", meaning: "蜜月", pos: "n", difficulty: 2, example: "They went to the Maldives for their honeymoon after the wedding.", exampleZh: "他們婚後到馬爾地夫度蜜月。" },
-  { word: "elope", phonetic: "/ɪˈloʊp/", meaning: "私奔；秘密結婚", pos: "v", difficulty: 3, example: "They decided to elope because they wanted a simple private ceremony.", exampleZh: "他們決定私奔，因為想要一個簡單私密的婚禮儀式。" },
-  { word: "mingle", phonetic: "/ˈmɪŋɡəl/", meaning: "社交；交際", pos: "v", difficulty: 2, example: "Try to mingle with other guests instead of staying in the corner.", exampleZh: "試著和其他賓客交際，不要一直待在角落。" },
-  { word: "bond", phonetic: "/bɑːnd/", meaning: "建立感情；情感連結", pos: "v", difficulty: 2, example: "We really bonded during the road trip and became close friends.", exampleZh: "我們在公路旅行中真的建立了深厚的感情，成為了好朋友。" },
-  { word: "get-together", phonetic: "/ˈɡɛtˌtəɡɛðər/", meaning: "小型聚會", pos: "n", difficulty: 2, example: "We are having a casual get-together at my place this Friday night.", exampleZh: "這個星期五晚上我們要在我家辦一個輕鬆的小型聚會。" },
-  { word: "neighbor", phonetic: "/ˈneɪbər/", meaning: "鄰居", pos: "n", difficulty: 2, example: "Our neighbor always plays loud music late at night and it drives me crazy.", exampleZh: "我們的鄰居總是在深夜大聲放音樂，讓我抓狂。" },
-
-  // ===== 3. Daily Routines & Lifestyle (121-180) =====
-  { word: "commute", phonetic: "/kəˈmjuːt/", meaning: "通勤", pos: "v", difficulty: 2, example: "I commute forty minutes each way to work every single day.", exampleZh: "我每天上下班各通勤四十分鐘。" },
-  { word: "errand", phonetic: "/ˈɛrənd/", meaning: "跑腿；差事", pos: "n", difficulty: 2, example: "I need to run a few errands before the stores close today.", exampleZh: "我今天在商店打烊前需要跑幾件差事。" },
-  { word: "chore", phonetic: "/tʃɔːr/", meaning: "家事；雜務", pos: "n", difficulty: 2, example: "Nobody likes doing chores but the house will not clean itself.", exampleZh: "沒有人喜歡做家事，但房子不會自己清潔。" },
-  { word: "grocery", phonetic: "/ˈɡroʊsəri/", meaning: "雜貨；食品雜貨", pos: "n", difficulty: 2, example: "I need to pick up some groceries on the way home tonight.", exampleZh: "我今晚需要在回家的路上買一些食品雜貨。" },
-  { word: "laundry", phonetic: "/ˈlɔːndri/", meaning: "待洗衣物；洗衣服", pos: "n", difficulty: 2, example: "I have been putting off doing the laundry for three days now.", exampleZh: "我已經拖了三天還沒去洗衣服了。" },
-  { word: "vacuum", phonetic: "/ˈvækjuːm/", meaning: "用吸塵器打掃", pos: "v", difficulty: 2, example: "Can you vacuum the living room before our guests arrive tonight?", exampleZh: "你能在今晚客人到來前用吸塵器打掃客廳嗎？" },
-  { word: "microwave", phonetic: "/ˈmaɪkroʊˌweɪv/", meaning: "微波爐；用微波爐加熱", pos: "n", difficulty: 2, example: "Just microwave the leftovers for two minutes and they will be ready.", exampleZh: "把剩菜放微波爐加熱兩分鐘就可以吃了。" },
-  { word: "dishwasher", phonetic: "/ˈdɪʃˌwɑːʃər/", meaning: "洗碗機", pos: "n", difficulty: 2, example: "Load the dishwasher after dinner so the kitchen stays clean.", exampleZh: "晚餐後把碗盤放進洗碗機，讓廚房保持整潔。" },
-  { word: "wardrobe", phonetic: "/ˈwɔːrdˌroʊb/", meaning: "衣櫥；全部衣物", pos: "n", difficulty: 2, example: "She spent the whole weekend reorganizing her wardrobe for the new season.", exampleZh: "她花了整個週末重新整理衣櫥，為新的季節做準備。" },
-  { word: "closet", phonetic: "/ˈklɑːzɪt/", meaning: "衣櫃；壁櫥", pos: "n", difficulty: 2, example: "My closet is so full that I cannot fit anything else in there.", exampleZh: "我的衣櫃已經塞滿了，什麼都放不進去了。" },
-  { word: "pantry", phonetic: "/ˈpæntri/", meaning: "食物儲藏室", pos: "n", difficulty: 2, example: "Check the pantry to see if we still have pasta and canned tomatoes.", exampleZh: "查一下食物儲藏室，看看我們是否還有義大利麵和番茄罐頭。" },
-  { word: "brunch", phonetic: "/brʌntʃ/", meaning: "早午餐", pos: "n", difficulty: 2, example: "We always go out for brunch on Sunday mornings with our friends.", exampleZh: "我們每個星期天早上都會和朋友出去吃早午餐。" },
-  { word: "takeout", phonetic: "/ˈteɪkaʊt/", meaning: "外帶餐點", pos: "n", difficulty: 2, example: "I am too tired to cook so let us just order takeout tonight.", exampleZh: "我太累了不想煮飯，今晚我們就叫外帶吧。" },
-  { word: "leftovers", phonetic: "/ˈlɛftˌoʊvərz/", meaning: "剩菜；吃剩的食物", pos: "n", difficulty: 2, example: "We can have the leftovers from last night for lunch today.", exampleZh: "我們今天午餐可以吃昨晚的剩菜。" },
-  { word: "recipe", phonetic: "/ˈrɛsɪpi/", meaning: "食譜；做法", pos: "n", difficulty: 2, example: "She found an amazing recipe for chocolate cake on that food blog.", exampleZh: "她在那個美食部落格上找到了一個超棒的巧克力蛋糕食譜。" },
-  { word: "ingredient", phonetic: "/ɪnˈɡriːdiənt/", meaning: "食材；原料", pos: "n", difficulty: 2, example: "Make sure you have all the ingredients before you start cooking.", exampleZh: "開始烹飪前，確保你備齊了所有食材。" },
-  { word: "seasoning", phonetic: "/ˈsiːzənɪŋ/", meaning: "調味料", pos: "n", difficulty: 2, example: "This dish needs more seasoning because it tastes a little bland.", exampleZh: "這道菜需要多加一點調味料，因為味道有點淡。" },
-  { word: "organic", phonetic: "/ɔːrˈɡænɪk/", meaning: "有機的", pos: "adj", difficulty: 2, example: "She only buys organic vegetables even though they cost a lot more.", exampleZh: "她只買有機蔬菜，儘管價格貴很多。" },
-  { word: "vegan", phonetic: "/ˈviːɡən/", meaning: "純素的；素食主義者", pos: "adj", difficulty: 2, example: "He went vegan last year and says he has never felt better.", exampleZh: "他去年開始吃純素，說自己從未感覺這麼好過。" },
-  { word: "workout", phonetic: "/ˈwɜːrkaʊt/", meaning: "健身；運動", pos: "n", difficulty: 2, example: "I try to fit in a quick workout before work every morning.", exampleZh: "我每天早上盡量在上班前擠出時間做一下快速健身。" },
-  { word: "jogging", phonetic: "/ˈdʒɑːɡɪŋ/", meaning: "慢跑", pos: "n", difficulty: 2, example: "She goes jogging in the park every evening to clear her head.", exampleZh: "她每天傍晚都去公園慢跑，讓腦袋清醒一下。" },
-  { word: "yoga", phonetic: "/ˈjoʊɡə/", meaning: "瑜伽", pos: "n", difficulty: 2, example: "Yoga has really helped me become more flexible and less stressed.", exampleZh: "瑜伽真的幫助我變得更柔軟，壓力也減少了很多。" },
-  { word: "meditation", phonetic: "/ˌmɛdɪˈteɪʃən/", meaning: "冥想；靜坐", pos: "n", difficulty: 2, example: "She practices meditation every morning to start the day with calm.", exampleZh: "她每天早上練習冥想，讓這一天從平靜中開始。" },
-  { word: "skincare", phonetic: "/ˈskɪnˌkɛr/", meaning: "護膚；保養", pos: "n", difficulty: 2, example: "She has a ten-step skincare routine that she does every night.", exampleZh: "她每晚都有一套十個步驟的護膚程序。" },
-  { word: "moisturizer", phonetic: "/ˈmɔɪstʃəˌraɪzər/", meaning: "保濕乳液", pos: "n", difficulty: 3, example: "Apply moisturizer right after washing your face for best results.", exampleZh: "洗臉後立刻塗抹保濕乳液效果最好。" },
-  { word: "sunscreen", phonetic: "/ˈsʌnˌskriːn/", meaning: "防曬乳", pos: "n", difficulty: 2, example: "Do not forget to put on sunscreen before going to the beach.", exampleZh: "去海灘前別忘了塗防曬乳。" },
-  { word: "haircut", phonetic: "/ˈhɛrˌkʌt/", meaning: "剪髮；髮型", pos: "n", difficulty: 2, example: "I need to get a haircut soon because my hair is getting too long.", exampleZh: "我需要趕快去剪頭髮，因為頭髮已經太長了。" },
-  { word: "manicure", phonetic: "/ˈmænɪˌkjʊr/", meaning: "修指甲；美甲", pos: "n", difficulty: 2, example: "She treats herself to a manicure every other week at the salon.", exampleZh: "她每隔一週就去美甲沙龍犒賞自己做一次美甲。" },
-  { word: "detox", phonetic: "/ˈdiːtɑːks/", meaning: "排毒；淨化", pos: "n", difficulty: 2, example: "She is doing a three-day juice detox to reset her body.", exampleZh: "她正在進行三天的果汁排毒，讓身體重新調整。" },
-  { word: "allergy", phonetic: "/ˈælɜːrdʒi/", meaning: "過敏", pos: "n", difficulty: 2, example: "My allergy to pollen makes spring the worst season for me.", exampleZh: "我對花粉過敏，讓春天成了我最難熬的季節。" },
-  { word: "insomnia", phonetic: "/ɪnˈsɑːmniə/", meaning: "失眠", pos: "n", difficulty: 3, example: "She has been suffering from insomnia and barely sleeps at night.", exampleZh: "她一直被失眠所苦，晚上幾乎睡不著。" },
-  { word: "hangover", phonetic: "/ˈhæŋˌoʊvər/", meaning: "宿醉", pos: "n", difficulty: 2, example: "He had a terrible hangover after drinking too much at the party.", exampleZh: "他在派對上喝太多，隔天宿醉得很嚴重。" },
-  { word: "caffeine", phonetic: "/kæˈfiːn/", meaning: "咖啡因", pos: "n", difficulty: 2, example: "I try to avoid caffeine after three in the afternoon.", exampleZh: "我盡量在下午三點後不攝取咖啡因。" },
-  { word: "oversleep", phonetic: "/ˌoʊvərˈsliːp/", meaning: "睡過頭", pos: "v", difficulty: 2, example: "I overslept this morning and almost missed my first class.", exampleZh: "我今早睡過頭，差點錯過第一堂課。" },
-  { word: "multitask", phonetic: "/ˌmʌltiˈtæsk/", meaning: "同時處理多件事", pos: "v", difficulty: 2, example: "She can multitask like a pro while managing the kids and cooking.", exampleZh: "她能像專業人士一樣同時照顧孩子又做飯。" },
-  { word: "declutter", phonetic: "/diːˈklʌtər/", meaning: "整理；斷捨離", pos: "v", difficulty: 3, example: "I spent the entire weekend trying to declutter my apartment.", exampleZh: "我花了整個週末試著整理我的公寓。" },
-  { word: "renovate", phonetic: "/ˈrɛnəˌveɪt/", meaning: "翻新；裝修", pos: "v", difficulty: 3, example: "They plan to renovate the kitchen before moving into the house.", exampleZh: "他們計劃在搬進那棟房子之前先翻新廚房。" },
-  { word: "appliance", phonetic: "/əˈplaɪəns/", meaning: "家電", pos: "n", difficulty: 2, example: "The kitchen is fully equipped with all modern appliances.", exampleZh: "廚房配備了所有現代化的家電設備。" },
-  { word: "subscription", phonetic: "/səbˈskrɪpʃən/", meaning: "訂閱", pos: "n", difficulty: 2, example: "I canceled my gym subscription because I never actually went there.", exampleZh: "我取消了健身房的訂閱，因為我根本沒有去過。" },
-  { word: "coupon", phonetic: "/ˈkuːpɑːn/", meaning: "優惠券；折價券", pos: "n", difficulty: 2, example: "She always checks for coupons before buying anything online.", exampleZh: "她在網路購物前總是先查一下有沒有優惠券。" },
-  { word: "bargain", phonetic: "/ˈbɑːrɡən/", meaning: "便宜貨；討價還價", pos: "n", difficulty: 2, example: "This jacket was a real bargain at only fifteen dollars.", exampleZh: "這件外套只要十五美元，真的超划算。" },
-  { word: "refund", phonetic: "/ˈriːfʌnd/", meaning: "退款", pos: "n", difficulty: 2, example: "I asked for a refund because the product arrived broken.", exampleZh: "我要求退款，因為商品寄到時已經破損。" },
-  { word: "receipt", phonetic: "/rɪˈsiːt/", meaning: "收據；發票", pos: "n", difficulty: 2, example: "Keep your receipt in case you need to return the item later.", exampleZh: "保留你的收據，以免之後需要退換貨。" },
-  { word: "craving", phonetic: "/ˈkreɪvɪŋ/", meaning: "渴望；嘴饞", pos: "n", difficulty: 2, example: "I have been having a craving for chocolate cake all day.", exampleZh: "我今天一整天都超想吃巧克力蛋糕。" },
-  { word: "calorie", phonetic: "/ˈkæləri/", meaning: "卡路里；熱量", pos: "n", difficulty: 2, example: "She started counting calories to maintain a healthier diet.", exampleZh: "她開始計算卡路里，以維持更健康的飲食習慣。" },
-  { word: "smoothie", phonetic: "/ˈsmuːði/", meaning: "果昔；冰沙", pos: "n", difficulty: 2, example: "I make a banana and berry smoothie for breakfast every morning.", exampleZh: "我每天早上都會做一杯香蕉莓果果昔當早餐。" },
-  { word: "espresso", phonetic: "/ɛˈsprɛsoʊ/", meaning: "義式濃縮咖啡", pos: "n", difficulty: 2, example: "I need a double espresso to survive this Monday morning meeting.", exampleZh: "我需要一杯雙份濃縮咖啡才能撐過這個星期一早上的會議。" },
-  { word: "gadget", phonetic: "/ˈɡædʒɪt/", meaning: "小工具；電子產品", pos: "n", difficulty: 2, example: "He always buys the latest gadgets even when he does not need them.", exampleZh: "他總是買最新的電子產品，即使根本用不到。" },
-  { word: "unwind", phonetic: "/ˌʌnˈwaɪnd/", meaning: "放鬆；解壓", pos: "v", difficulty: 2, example: "After a long day I like to unwind by watching my favorite show.", exampleZh: "漫長的一天結束後，我喜歡看我最愛的節目來放鬆。" },
-  { word: "hydrate", phonetic: "/ˈhaɪdreɪt/", meaning: "補充水分", pos: "v", difficulty: 2, example: "Remember to hydrate throughout the day especially in hot weather.", exampleZh: "記得一整天都要補充水分，尤其是在炎熱的天氣裡。" },
-  { word: "pamper", phonetic: "/ˈpæmpər/", meaning: "寵愛自己；好好享受", pos: "v", difficulty: 2, example: "She likes to pamper herself with a long bath on Friday nights.", exampleZh: "她喜歡在星期五晚上泡個長澡好好寵愛自己。" },
-  { word: "latte", phonetic: "/ˈlɑːteɪ/", meaning: "拿鐵咖啡", pos: "n", difficulty: 2, example: "I ordered an iced oat milk latte from the new coffee shop.", exampleZh: "我在那家新咖啡館點了一杯冰燕麥奶拿鐵。" },
-  { word: "gluten-free", phonetic: "/ˈɡluːtən friː/", meaning: "無麩質的", pos: "adj", difficulty: 2, example: "This bakery offers gluten-free options for people with sensitivities.", exampleZh: "這家烘焙坊為對麩質敏感的人提供無麩質選項。" },
-  { word: "aisle", phonetic: "/aɪl/", meaning: "走道；通道", pos: "n", difficulty: 2, example: "You can find the snacks in aisle five next to the beverages.", exampleZh: "你可以在第五走道的飲料區旁找到零食。" },
-  { word: "checkout", phonetic: "/ˈtʃɛkaʊt/", meaning: "結帳", pos: "n", difficulty: 2, example: "The checkout line was so long that I waited for twenty minutes.", exampleZh: "結帳隊伍很長，我等了二十分鐘。" },
-  { word: "meal prep", phonetic: "/ˈmiːl prɛp/", meaning: "備餐；提前準備餐點", pos: "n", difficulty: 2, example: "I do meal prep on Sundays so I have lunch ready all week.", exampleZh: "我在星期天備餐，這樣一整週的午餐都準備好了。" },
-  { word: "charger", phonetic: "/ˈtʃɑːrdʒər/", meaning: "充電器", pos: "n", difficulty: 2, example: "I forgot my phone charger at home and my battery is almost dead.", exampleZh: "我把手機充電器忘在家裡，現在電池快沒電了。" },
-  { word: "portion", phonetic: "/ˈpɔːrʃən/", meaning: "份量", pos: "n", difficulty: 2, example: "The portions at that restaurant are huge so we always share.", exampleZh: "那家餐廳的份量很大，所以我們總是共享。" },
-  { word: "pedicure", phonetic: "/ˈpɛdɪˌkjʊr/", meaning: "修腳指甲；足部保養", pos: "n", difficulty: 2, example: "She booked a pedicure appointment before wearing sandals this summer.", exampleZh: "她在今年夏天穿涼鞋之前預約了足部保養。" },
-  { word: "decaf", phonetic: "/ˈdiːkæf/", meaning: "低咖啡因的", pos: "adj", difficulty: 2, example: "I switched to decaf coffee because regular coffee gave me the jitters.", exampleZh: "我改喝低咖啡因咖啡，因為普通咖啡讓我感到緊張不安。" },
-
-  // ===== 4. Entertainment & Pop Culture (181-240) =====
-  { word: "binge-watch", phonetic: "/ˈbɪndʒ wɑːtʃ/", meaning: "一口氣追劇", pos: "v", difficulty: 2, example: "We spent the whole weekend binge-watching that new Korean drama.", exampleZh: "我們整個週末都在一口氣追那部新的韓劇。" },
-  { word: "spoiler", phonetic: "/ˈspɔɪlər/", meaning: "劇透", pos: "n", difficulty: 2, example: "Do not tell me any spoilers because I have not seen it yet.", exampleZh: "不要劇透給我，因為我還沒看。" },
-  { word: "sequel", phonetic: "/ˈsiːkwəl/", meaning: "續集", pos: "n", difficulty: 2, example: "The sequel was disappointing because it could not match the original.", exampleZh: "這部續集讓人失望，因為它無法超越原作。" },
-  { word: "prequel", phonetic: "/ˈpriːkwəl/", meaning: "前傳", pos: "n", difficulty: 2, example: "The prequel explains how the main character became a hero.", exampleZh: "這部前傳解釋了主角是如何成為英雄的。" },
-  { word: "trailer", phonetic: "/ˈtreɪlər/", meaning: "預告片", pos: "n", difficulty: 2, example: "The trailer for the new Marvel movie already has millions of views.", exampleZh: "新漫威電影的預告片已經有數百萬次觀看了。" },
-  { word: "premiere", phonetic: "/prɪˈmɪr/", meaning: "首映；首播", pos: "n", difficulty: 2, example: "We are going to the movie premiere on opening night.", exampleZh: "我們要去參加首映夜的電影首映。" },
-  { word: "soundtrack", phonetic: "/ˈsaʊndˌtræk/", meaning: "電影配樂；原聲帶", pos: "n", difficulty: 2, example: "The soundtrack of that movie is so good that I listen to it daily.", exampleZh: "那部電影的原聲帶太好聽了，我每天都在聽。" },
-  { word: "celebrity", phonetic: "/sɪˈlɛbrɪti/", meaning: "名人；明星", pos: "n", difficulty: 2, example: "She bumped into a celebrity at the airport and got a photo.", exampleZh: "她在機場巧遇一位明星，還一起拍了照。" },
-  { word: "influencer", phonetic: "/ˈɪnfluənsər/", meaning: "網紅；意見領袖", pos: "n", difficulty: 2, example: "That influencer has over two million followers on social media.", exampleZh: "那位網紅在社群媒體上有超過兩百萬名追蹤者。" },
-  { word: "follower", phonetic: "/ˈfɑːloʊər/", meaning: "追蹤者；粉絲", pos: "n", difficulty: 2, example: "She gained a thousand new followers after her video went viral.", exampleZh: "她的影片爆紅後，新增了一千名追蹤者。" },
-  { word: "viral", phonetic: "/ˈvaɪrəl/", meaning: "爆紅的；瘋傳的", pos: "adj", difficulty: 2, example: "Her dance video went viral overnight and everyone was sharing it.", exampleZh: "她的舞蹈影片一夜之間爆紅，大家都在分享。" },
-  { word: "trending", phonetic: "/ˈtrɛndɪŋ/", meaning: "熱門的；正在流行的", pos: "adj", difficulty: 2, example: "That topic has been trending on social media for three days.", exampleZh: "那個話題在社群媒體上已經熱門了三天了。" },
-  { word: "meme", phonetic: "/miːm/", meaning: "迷因；網路梗圖", pos: "n", difficulty: 2, example: "He sent me a hilarious meme that perfectly described our Monday mood.", exampleZh: "他傳給我一個超爆笑的迷因，完美呈現了我們星期一的心情。" },
-  { word: "podcast", phonetic: "/ˈpɑːdˌkæst/", meaning: "播客；Podcast節目", pos: "n", difficulty: 2, example: "I listen to a true crime podcast during my commute every morning.", exampleZh: "我每天早上通勤時都會聽真實犯罪類的Podcast。" },
-  { word: "livestream", phonetic: "/ˈlaɪvˌstriːm/", meaning: "直播", pos: "n", difficulty: 2, example: "She does a livestream every Friday night to chat with her fans.", exampleZh: "她每個星期五晚上都會開直播和粉絲聊天。" },
-  { word: "cosplay", phonetic: "/ˈkɑːzˌpleɪ/", meaning: "角色扮演", pos: "n", difficulty: 2, example: "Her cosplay outfit at the convention looked exactly like the character.", exampleZh: "她在漫展上的角色扮演服裝和角色一模一樣。" },
-  { word: "fandom", phonetic: "/ˈfændəm/", meaning: "粉絲圈；迷群", pos: "n", difficulty: 3, example: "The fandom went crazy when the band announced a reunion tour.", exampleZh: "當那個樂團宣布重聚巡演時，整個粉絲圈都瘋了。" },
-  { word: "subplot", phonetic: "/ˈsʌbˌplɑːt/", meaning: "支線劇情", pos: "n", difficulty: 3, example: "The romantic subplot was more interesting than the main story.", exampleZh: "愛情支線劇情比主線故事更吸引人。" },
-  { word: "cliffhanger", phonetic: "/ˈklɪfˌhæŋər/", meaning: "懸念結尾；吊人胃口的結局", pos: "n", difficulty: 3, example: "The season ended on a cliffhanger and I cannot wait for next year.", exampleZh: "這一季以懸念結尾收場，我迫不及待等到明年。" },
-  { word: "genre", phonetic: "/ˈʒɑːnrə/", meaning: "類型；風格", pos: "n", difficulty: 2, example: "Horror is my least favorite genre because I scare easily.", exampleZh: "恐怖片是我最不喜歡的類型，因為我很容易被嚇到。" },
-  { word: "sitcom", phonetic: "/ˈsɪtˌkɑːm/", meaning: "情境喜劇", pos: "n", difficulty: 2, example: "That sitcom has been on the air for over ten seasons now.", exampleZh: "那部情境喜劇已經播出超過十季了。" },
-  { word: "documentary", phonetic: "/ˌdɑːkjʊˈmɛntəri/", meaning: "紀錄片", pos: "n", difficulty: 2, example: "We watched an amazing documentary about ocean life last night.", exampleZh: "我們昨晚看了一部關於海洋生態的精彩紀錄片。" },
-  { word: "animation", phonetic: "/ˌænɪˈmeɪʃən/", meaning: "動畫", pos: "n", difficulty: 2, example: "Japanese animation has gained a massive global following in recent years.", exampleZh: "日本動畫近年來在全球獲得了大批忠實觀眾。" },
-  { word: "blockbuster", phonetic: "/ˈblɑːkˌbʌstər/", meaning: "大片；賣座電影", pos: "n", difficulty: 2, example: "That summer blockbuster made over a billion dollars at the box office.", exampleZh: "那部暑期大片在票房上創下超過十億美元的佳績。" },
-  { word: "cameo", phonetic: "/ˈkæmioʊ/", meaning: "客串", pos: "n", difficulty: 3, example: "The director made a surprise cameo in the last scene of the film.", exampleZh: "導演在影片最後一幕意外客串現身。" },
-  { word: "remake", phonetic: "/ˈriːˌmeɪk/", meaning: "翻拍版", pos: "n", difficulty: 2, example: "The remake was decent but fans still prefer the original version.", exampleZh: "翻拍版還不錯，但粉絲們仍然更喜歡原版。" },
-  { word: "reboot", phonetic: "/riːˈbuːt/", meaning: "重啟版", pos: "n", difficulty: 2, example: "The studio announced a reboot of the classic superhero franchise.", exampleZh: "電影公司宣布將重啟這個經典超級英雄系列。" },
-  { word: "spin-off", phonetic: "/ˈspɪnˌɔːf/", meaning: "衍生作品", pos: "n", difficulty: 2, example: "The spin-off series focuses on the villain's backstory and origin.", exampleZh: "這部衍生劇聚焦於反派角色的身世背景與起源。" },
-  { word: "streaming", phonetic: "/ˈstriːmɪŋ/", meaning: "串流；線上播放", pos: "n", difficulty: 2, example: "Most people prefer streaming services over traditional cable television now.", exampleZh: "現在大多數人更喜歡串流服務，而非傳統有線電視。" },
-  { word: "playlist", phonetic: "/ˈpleɪˌlɪst/", meaning: "播放清單", pos: "n", difficulty: 2, example: "She made a chill playlist for studying that lasts over three hours.", exampleZh: "她製作了一個超過三小時的輕鬆讀書播放清單。" },
-  { word: "karaoke", phonetic: "/ˌkæriˈoʊki/", meaning: "卡拉OK", pos: "n", difficulty: 2, example: "We go to karaoke every Friday night and sing until midnight.", exampleZh: "我們每個星期五晚上都去唱卡拉OK，一路唱到午夜。" },
-  { word: "stand-up", phonetic: "/ˈstændˌʌp/", meaning: "脫口秀", pos: "n", difficulty: 2, example: "His stand-up special on streaming had everyone laughing nonstop.", exampleZh: "他在串流平台上的脫口秀特輯讓大家笑個不停。" },
-  { word: "reality show", phonetic: "/riˈælɪti ʃoʊ/", meaning: "實境節目", pos: "n", difficulty: 2, example: "She is obsessed with that dating reality show and watches every episode.", exampleZh: "她超迷那個戀愛實境節目，每集都不錯過。" },
-  { word: "ratings", phonetic: "/ˈreɪtɪŋz/", meaning: "收視率；評分", pos: "n", difficulty: 2, example: "The show was canceled because of low ratings after the second season.", exampleZh: "那個節目在第二季後因收視率太低而被取消。" },
-  { word: "audition", phonetic: "/ɔːˈdɪʃən/", meaning: "試鏡；面試演出", pos: "n", difficulty: 2, example: "She nailed the audition and got the lead role in the musical.", exampleZh: "她在試鏡中表現出色，獲得了音樂劇的主角。" },
-  { word: "debut", phonetic: "/deɪˈbjuː/", meaning: "出道；首次亮相", pos: "n", difficulty: 2, example: "The band made their debut with a sold-out concert in Seoul.", exampleZh: "這個樂團在首爾以一場售罄的演唱會正式出道。" },
-  { word: "encore", phonetic: "/ˈɑːnkɔːr/", meaning: "安可；再來一首", pos: "n", difficulty: 2, example: "The crowd kept screaming for an encore after the final song.", exampleZh: "最後一首歌結束後，觀眾不停吶喊要安可。" },
-  { word: "mainstream", phonetic: "/ˈmeɪnˌstriːm/", meaning: "主流的", pos: "adj", difficulty: 2, example: "That indie band has finally broken into mainstream music this year.", exampleZh: "那個獨立樂團今年終於打入主流音樂圈。" },
-  { word: "indie", phonetic: "/ˈɪndi/", meaning: "獨立製作的；小眾的", pos: "adj", difficulty: 2, example: "She prefers indie films over big Hollywood productions.", exampleZh: "她比較喜歡獨立電影，而不是好萊塢大製作。" },
-  { word: "comeback", phonetic: "/ˈkʌmˌbæk/", meaning: "復出；回歸", pos: "n", difficulty: 2, example: "The singer made an incredible comeback after five years of silence.", exampleZh: "那位歌手在沉寂五年後以驚人之姿復出。" },
-  { word: "hiatus", phonetic: "/haɪˈeɪtəs/", meaning: "暫停；中斷期", pos: "n", difficulty: 3, example: "The band announced a hiatus so members could work on solo projects.", exampleZh: "樂團宣布暫停活動，讓成員們可以各自發展個人計畫。" },
-  { word: "canceled", phonetic: "/ˈkænsəld/", meaning: "被取消的；被抵制的", pos: "adj", difficulty: 2, example: "The show got canceled after fans discovered the host's old tweets.", exampleZh: "粉絲挖出主持人的舊推文後，節目遭到取消。" },
-  { word: "fanfiction", phonetic: "/ˈfænˌfɪkʃən/", meaning: "同人小說", pos: "n", difficulty: 3, example: "She writes fanfiction about her favorite characters in her spare time.", exampleZh: "她在閒暇時間會寫關於她最愛角色的同人小說。" },
-  { word: "merchandise", phonetic: "/ˈmɜːrtʃənˌdaɪz/", meaning: "周邊商品", pos: "n", difficulty: 2, example: "The band sells tons of merchandise including shirts hats and posters.", exampleZh: "那個樂團賣了大量周邊商品，包含T恤、帽子和海報。" },
-  { word: "paparazzi", phonetic: "/ˌpɑːpəˈrɑːtsi/", meaning: "狗仔隊", pos: "n", difficulty: 3, example: "The paparazzi followed the actress everywhere she went this week.", exampleZh: "狗仔隊這週跟拍那位女演員去的每一個地方。" },
-  { word: "tabloid", phonetic: "/ˈtæblɔɪd/", meaning: "八卦小報", pos: "n", difficulty: 3, example: "Do not believe everything you read in the tabloids about celebrities.", exampleZh: "不要相信八卦小報上寫的所有名人消息。" },
-  { word: "scandal", phonetic: "/ˈskændl/", meaning: "醜聞", pos: "n", difficulty: 2, example: "The scandal ruined his career and he disappeared from the public eye.", exampleZh: "這場醜聞毀了他的事業，他從此從公眾視野中消失。" },
-  { word: "nominee", phonetic: "/ˌnɑːmɪˈniː/", meaning: "被提名者", pos: "n", difficulty: 2, example: "She was a nominee for best actress at the awards ceremony.", exampleZh: "她在頒獎典禮上獲得最佳女主角提名。" },
-  { word: "choreography", phonetic: "/ˌkɔːriˈɑːɡrəfi/", meaning: "編舞", pos: "n", difficulty: 3, example: "The choreography in that music video is absolutely incredible.", exampleZh: "那支MV裡的編舞真的令人嘆為觀止。" },
-  { word: "stunt", phonetic: "/stʌnt/", meaning: "特技動作", pos: "n", difficulty: 2, example: "He performed all his own stunts without using a body double.", exampleZh: "他沒有使用替身，所有特技動作都親自上陣。" },
-  { word: "marathon", phonetic: "/ˈmærəˌθɑːn/", meaning: "馬拉松式觀看", pos: "n", difficulty: 2, example: "We had a movie marathon and watched all six films in one day.", exampleZh: "我們來了一場電影馬拉松，一天之內看完了全部六部電影。" },
-  { word: "recap", phonetic: "/ˈriːˌkæp/", meaning: "重點回顧；摘要", pos: "n", difficulty: 2, example: "Let me give you a quick recap of last week's episode.", exampleZh: "讓我快速幫你回顧一下上週集的劇情重點。" },
-  { word: "teaser", phonetic: "/ˈtiːzər/", meaning: "前導預告", pos: "n", difficulty: 2, example: "The teaser only showed ten seconds but it already looks amazing.", exampleZh: "前導預告只有十秒，但已經看起來超精彩。" },
-  { word: "blooper", phonetic: "/ˈbluːpər/", meaning: "NG片段；搞笑失誤", pos: "n", difficulty: 2, example: "The blooper reel at the end of the movie was the best part.", exampleZh: "電影結尾的NG片段集錦是最精彩的部分。" },
-  { word: "talk show", phonetic: "/ˈtɔːk ʃoʊ/", meaning: "脫口秀節目；談話節目", pos: "n", difficulty: 2, example: "She appeared on a late night talk show to promote her new book.", exampleZh: "她上了一個深夜談話節目宣傳她的新書。" },
-  { word: "renewal", phonetic: "/rɪˈnjuːəl/", meaning: "續訂；續約", pos: "n", difficulty: 2, example: "Fans celebrated when the network announced the show's renewal.", exampleZh: "電視台宣布節目續訂消息時，粉絲們紛紛慶賀。" },
-  { word: "autograph", phonetic: "/ˈɔːtəˌɡræf/", meaning: "親筆簽名", pos: "n", difficulty: 2, example: "She waited two hours in line just to get his autograph.", exampleZh: "她在隊伍裡等了兩小時，只為了拿到他的親筆簽名。" },
-  { word: "red carpet", phonetic: "/ˈrɛd ˌkɑːrpɪt/", meaning: "紅毯", pos: "n", difficulty: 2, example: "All the stars looked stunning walking down the red carpet last night.", exampleZh: "昨晚所有明星走在紅毯上都光彩奪目。" },
-  { word: "box office", phonetic: "/ˈbɑːks ˌɔːfɪs/", meaning: "票房", pos: "n", difficulty: 2, example: "The film broke box office records on its opening weekend.", exampleZh: "這部電影在首映週末打破了票房紀錄。" },
-  { word: "underground", phonetic: "/ˌʌndərˈɡraʊnd/", meaning: "地下的；非主流的", pos: "adj", difficulty: 2, example: "She discovered that underground band years before they became famous.", exampleZh: "她在那個地下樂團成名之前好幾年就發現了他們。" },
-
-  // ===== 5. Slang & Modern Expressions (241-300) =====
-  { word: "literally", phonetic: "/ˈlɪtərəli/", meaning: "真的；不誇張地", pos: "adv", difficulty: 2, example: "I am literally dying of laughter right now watching this video.", exampleZh: "我現在看這支影片真的笑死了，不誇張。" },
-  { word: "basically", phonetic: "/ˈbeɪsɪkli/", meaning: "基本上；簡單來說", pos: "adv", difficulty: 2, example: "She basically told me she does not want to be friends anymore.", exampleZh: "她基本上告訴我她不想再做朋友了。" },
-  { word: "honestly", phonetic: "/ˈɑːnɪstli/", meaning: "老實說；說真的", pos: "adv", difficulty: 2, example: "Honestly I do not care what other people think about my choices.", exampleZh: "老實說，我不在乎別人怎麼看我的選擇。" },
-  { word: "apparently", phonetic: "/əˈpærəntli/", meaning: "聽說；顯然", pos: "adv", difficulty: 2, example: "Apparently they broke up last week but nobody told me.", exampleZh: "聽說他們上週分手了，但沒人告訴我。" },
-  { word: "toxic", phonetic: "/ˈtɑːksɪk/", meaning: "有毒的；（關係）不健康的", pos: "adj", difficulty: 2, example: "She finally left that toxic relationship and feels so much better.", exampleZh: "她終於離開了那段有毒的關係，現在感覺好多了。" },
-  { word: "vibe", phonetic: "/vaɪb/", meaning: "氛圍；感覺", pos: "n", difficulty: 2, example: "This cafe has such a cozy vibe with the warm lights and music.", exampleZh: "這家咖啡館有著溫暖的燈光和音樂，氛圍超舒適。" },
-  { word: "chill", phonetic: "/tʃɪl/", meaning: "放鬆；淡定的", pos: "adj", difficulty: 2, example: "Let us just chill at home tonight and watch a movie.", exampleZh: "我們今晚就待在家放鬆看部電影吧。" },
-  { word: "cringe", phonetic: "/krɪndʒ/", meaning: "令人尷尬的；超丟臉的", pos: "adj", difficulty: 2, example: "That old video of me singing at the party is so cringe.", exampleZh: "那支我在派對上唱歌的舊影片超尷尬的。" },
-  { word: "savage", phonetic: "/ˈsævɪdʒ/", meaning: "嗆辣的；毫不留情的", pos: "adj", difficulty: 2, example: "Her comeback was absolutely savage and left everyone speechless.", exampleZh: "她的反擊超級嗆辣，讓所有人都說不出話來。" },
-  { word: "flex", phonetic: "/flɛks/", meaning: "炫耀；秀出來", pos: "v", difficulty: 2, example: "He is always flexing his new sneakers on social media.", exampleZh: "他總是在社群媒體上炫耀他的新球鞋。" },
-  { word: "lowkey", phonetic: "/ˈloʊˌkiː/", meaning: "低調地；偷偷地", pos: "adv", difficulty: 2, example: "I lowkey want to skip the party and stay in bed.", exampleZh: "我其實很想偷偷不去那個派對，就待在床上。" },
-  { word: "highkey", phonetic: "/ˈhaɪˌkiː/", meaning: "超級；毫不掩飾地", pos: "adv", difficulty: 2, example: "I am highkey obsessed with that new restaurant on Main Street.", exampleZh: "我超級迷那家大街上的新餐廳，完全不掩飾。" },
-  { word: "FOMO", phonetic: "/ˈfoʊmoʊ/", meaning: "錯過恐懼症", pos: "n", difficulty: 3, example: "Seeing everyone at the concert gave me serious FOMO.", exampleZh: "看到大家都去演唱會，讓我嚴重發作錯過恐懼症。" },
-  { word: "YOLO", phonetic: "/ˈjoʊloʊ/", meaning: "人生只有一次", pos: "phr", difficulty: 2, example: "She booked a spontaneous trip to Japan because YOLO right?", exampleZh: "她臨時訂了去日本的行程，因為人生只有一次，對吧？" },
-  { word: "hype", phonetic: "/haɪp/", meaning: "炒作；大肆宣傳", pos: "n", difficulty: 2, example: "The hype around that movie was huge but it turned out average.", exampleZh: "那部電影的宣傳炒作非常大，但成片卻平淡無奇。" },
-  { word: "catfish", phonetic: "/ˈkætˌfɪʃ/", meaning: "用假身份騙人的人", pos: "n", difficulty: 3, example: "She found out her online boyfriend was a catfish using fake photos.", exampleZh: "她發現她的網戀男友是用假照片騙人的網路詐欺者。" },
-  { word: "troll", phonetic: "/troʊl/", meaning: "網路酸民；故意搗亂的人", pos: "n", difficulty: 2, example: "Just ignore the trolls in the comments section and move on.", exampleZh: "忽略留言區的網路酸民，繼續往前走就好。" },
-  { word: "spam", phonetic: "/spæm/", meaning: "垃圾訊息；洗版", pos: "n", difficulty: 2, example: "My inbox is full of spam emails trying to sell me random stuff.", exampleZh: "我的收件匣塞滿了試圖向我推銷亂七八糟東西的垃圾郵件。" },
-  { word: "clickbait", phonetic: "/ˈklɪkˌbeɪt/", meaning: "標題黨；釣魚標題", pos: "n", difficulty: 2, example: "That article was total clickbait and had nothing useful inside.", exampleZh: "那篇文章完全是標題黨，裡面沒有任何有用的內容。" },
-  { word: "hashtag", phonetic: "/ˈhæʃˌtæɡ/", meaning: "主題標籤", pos: "n", difficulty: 2, example: "She added ten hashtags to her post hoping to get more likes.", exampleZh: "她在貼文上加了十個主題標籤，希望獲得更多按讚。" },
-  { word: "selfie", phonetic: "/ˈsɛlfi/", meaning: "自拍", pos: "n", difficulty: 2, example: "We took a selfie together in front of the Eiffel Tower.", exampleZh: "我們在艾菲爾鐵塔前一起自拍了一張照片。" },
-  { word: "photobomb", phonetic: "/ˈfoʊtoʊˌbɑːm/", meaning: "亂入照片；搶鏡", pos: "v", difficulty: 2, example: "A random stranger photobombed our group picture at the park.", exampleZh: "一個陌生人亂入了我們在公園拍的大合照。" },
-  { word: "foodie", phonetic: "/ˈfuːdi/", meaning: "美食愛好者；吃貨", pos: "n", difficulty: 2, example: "She is such a foodie that she photographs every meal she eats.", exampleZh: "她是個超級吃貨，每一餐都要拍照記錄。" },
-  { word: "workaholic", phonetic: "/ˌwɜːrkəˈhɑːlɪk/", meaning: "工作狂", pos: "n", difficulty: 2, example: "My boss is a total workaholic who never takes a day off.", exampleZh: "我的老闆是個十足的工作狂，從來不請假。" },
-  { word: "shopaholic", phonetic: "/ˌʃɑːpəˈhɑːlɪk/", meaning: "購物狂", pos: "n", difficulty: 2, example: "She admits she is a shopaholic and her closet proves it.", exampleZh: "她承認自己是購物狂，她的衣櫃就是最好的證明。" },
-  { word: "procrastinate", phonetic: "/proʊˈkræstɪˌneɪt/", meaning: "拖延；拖拖拉拉", pos: "v", difficulty: 3, example: "I always procrastinate on big projects until the very last minute.", exampleZh: "我總是把大型專案拖到最後一刻才開始動手。" },
-  { word: "bummer", phonetic: "/ˈbʌmər/", meaning: "掃興的事；令人失望的事", pos: "n", difficulty: 2, example: "It was a real bummer that the concert got canceled last minute.", exampleZh: "演唱會在最後一刻取消真是太掃興了。" },
-  { word: "sketchy", phonetic: "/ˈskɛtʃi/", meaning: "可疑的；不太對勁的", pos: "adj", difficulty: 2, example: "That alley looks really sketchy so let us take another route.", exampleZh: "那條巷子看起來很可疑，我們走另一條路吧。" },
-  { word: "shady", phonetic: "/ˈʃeɪdi/", meaning: "可疑的；不正當的", pos: "adj", difficulty: 2, example: "That deal sounds pretty shady; I would not trust that website.", exampleZh: "那筆交易聽起來很不正當，我不會相信那個網站。" },
-  { word: "legit", phonetic: "/ləˈdʒɪt/", meaning: "合法的；正牌的；真的", pos: "adj", difficulty: 2, example: "Is this website legit or is it going to steal my credit card info?", exampleZh: "這個網站是正規的嗎，還是會盜取我的信用卡資料？" },
-  { word: "salty", phonetic: "/ˈsɔːlti/", meaning: "氣噗噗的；不爽的", pos: "adj", difficulty: 2, example: "He is still salty about losing that basketball game last week.", exampleZh: "他對上週輸掉那場籃球賽還是氣噗噗的。" },
-  { word: "slay", phonetic: "/sleɪ/", meaning: "超讚；帥翻了", pos: "v", difficulty: 2, example: "She absolutely slayed in that red dress at the party last night.", exampleZh: "她昨晚穿著那件紅色洋裝出席派對，完全帥翻了。" },
-  { word: "aesthetic", phonetic: "/ɛsˈθɛtɪk/", meaning: "美感；風格", pos: "n", difficulty: 2, example: "Her Instagram feed has a very clean and minimalist aesthetic.", exampleZh: "她的Instagram頁面有著非常乾淨的極簡美感風格。" },
-  { word: "stan", phonetic: "/stæn/", meaning: "超級粉絲；狂熱追星", pos: "n", difficulty: 3, example: "She is a total stan and has been to every single concert.", exampleZh: "她是個超級粉絲，每一場演唱會都去了。" },
-  { word: "sus", phonetic: "/sʌs/", meaning: "可疑的；有鬼的", pos: "adj", difficulty: 2, example: "The way he avoided the question was really sus if you ask me.", exampleZh: "他迴避那個問題的方式在我看來真的很有鬼。" },
-  { word: "simp", phonetic: "/sɪmp/", meaning: "舔狗；無底線討好的人", pos: "n", difficulty: 3, example: "His friends called him a simp for buying her flowers every day.", exampleZh: "他的朋友叫他舔狗，因為他每天都送她花。" },
-  { word: "clout", phonetic: "/klaʊt/", meaning: "影響力；名氣", pos: "n", difficulty: 3, example: "Some people do crazy things on the internet just for clout.", exampleZh: "有些人在網路上做出瘋狂的事只是為了博取名氣。" },
-  { word: "glow-up", phonetic: "/ˈɡloʊ ʌp/", meaning: "大變身；逆襲變美", pos: "n", difficulty: 2, example: "She had the biggest glow-up after high school and looks amazing now.", exampleZh: "她高中畢業後蛻變得最厲害，現在看起來超美。" },
-  { word: "facepalm", phonetic: "/ˈfeɪsˌpɑːm/", meaning: "摀臉；無言以對", pos: "n", difficulty: 2, example: "That was such a facepalm moment when he called her the wrong name.", exampleZh: "他叫錯她名字的那一刻真是讓人無言，只想摀臉。" },
-  { word: "rant", phonetic: "/rænt/", meaning: "抱怨；碎碎念", pos: "v", difficulty: 2, example: "She went on a rant about how terrible the customer service was.", exampleZh: "她滔滔不絕地抱怨那裡的客服有多糟糕。" },
-  { word: "roast", phonetic: "/roʊst/", meaning: "吐槽；狠狠嘲笑", pos: "v", difficulty: 2, example: "My friends love to roast me about my terrible cooking skills.", exampleZh: "我的朋友們超愛吐槽我糟糕的廚藝。" },
-  { word: "throwback", phonetic: "/ˈθroʊˌbæk/", meaning: "回顧；懷舊的東西", pos: "n", difficulty: 2, example: "She posted a throwback photo from her college days on Instagram.", exampleZh: "她在Instagram上貼出一張大學時代的懷舊老照片。" },
-  { word: "unfollow", phonetic: "/ˌʌnˈfɑːloʊ/", meaning: "取消追蹤", pos: "v", difficulty: 2, example: "I had to unfollow him because his posts were super annoying.", exampleZh: "我不得不取消追蹤他，因為他的貼文超煩人。" },
-  { word: "DM", phonetic: "/ˌdiːˈɛm/", meaning: "私訊", pos: "n", difficulty: 2, example: "She slid into his DMs and they have been talking ever since.", exampleZh: "她悄悄傳私訊給他，從那之後他們就一直保持聯繫。" },
-  { word: "swipe", phonetic: "/swaɪp/", meaning: "滑動；刷（交友軟體）", pos: "v", difficulty: 2, example: "I spent an hour swiping on dating apps without finding anyone interesting.", exampleZh: "我在交友軟體上滑了一個小時，卻沒找到任何有趣的人。" },
-  { word: "notification", phonetic: "/ˌnoʊtɪfɪˈkeɪʃən/", meaning: "通知；推播", pos: "n", difficulty: 2, example: "I turned off all notifications so I could focus on studying.", exampleZh: "我關掉了所有通知，這樣才能專心讀書。" },
-  { word: "filter", phonetic: "/ˈfɪltər/", meaning: "濾鏡", pos: "n", difficulty: 2, example: "She uses so many filters that she looks completely different in person.", exampleZh: "她用了太多濾鏡，本人看起來和照片完全不同。" },
-  { word: "screenshot", phonetic: "/ˈskriːnˌʃɑːt/", meaning: "截圖", pos: "n", difficulty: 2, example: "I took a screenshot of the message and sent it to my best friend.", exampleZh: "我把那則訊息截圖，傳給我最好的朋友看。" },
-  { word: "scroll", phonetic: "/skroʊl/", meaning: "滑手機；捲動瀏覽", pos: "v", difficulty: 2, example: "I wasted two hours scrolling through social media before bed again.", exampleZh: "我睡前又浪費了兩個小時滑社群媒體。" },
-  { word: "subscribe", phonetic: "/səbˈskraɪb/", meaning: "訂閱（頻道）", pos: "v", difficulty: 2, example: "Do not forget to like and subscribe if you enjoyed this video.", exampleZh: "如果你喜歡這支影片，別忘了按讚並訂閱頻道。" },
-  { word: "relatable", phonetic: "/rɪˈleɪtəbl/", meaning: "有共鳴的；感同身受的", pos: "adj", difficulty: 2, example: "That tweet about hating Monday mornings is so relatable to everyone.", exampleZh: "那則關於討厭星期一早上的推文，讓每個人都深有共鳴。" },
-  { word: "wholesome", phonetic: "/ˈhoʊlsəm/", meaning: "暖心的；正能量的", pos: "adj", difficulty: 2, example: "That video of the grandpa learning to dance is so wholesome.", exampleZh: "那支阿公學跳舞的影片真的超暖心。" },
-  { word: "iconic", phonetic: "/aɪˈkɑːnɪk/", meaning: "經典的；指標性的", pos: "adj", difficulty: 2, example: "That scene from the movie has become truly iconic in pop culture.", exampleZh: "電影中的那個場景已經成為流行文化中真正的經典。" },
-  { word: "extra", phonetic: "/ˈɛkstrə/", meaning: "浮誇的；太超過的", pos: "adj", difficulty: 2, example: "She is so extra that she wore a ball gown to a casual dinner.", exampleZh: "她真的太誇張了，去一般的晚餐聚會居然穿了禮服。" },
-  { word: "mood", phonetic: "/muːd/", meaning: "超有感；完全就是我的心情", pos: "n", difficulty: 2, example: "That cat sleeping on the keyboard is such a mood on Mondays.", exampleZh: "那隻睡在鍵盤上的貓完全就是我星期一的心情寫照。" },
-  { word: "no-brainer", phonetic: "/ˈnoʊ ˌbreɪnər/", meaning: "不用想也知道的事", pos: "n", difficulty: 2, example: "Taking the free upgrade was a no-brainer for all of us.", exampleZh: "接受免費升級是我們所有人都不用想就知道的選擇。" },
-  { word: "deal-breaker", phonetic: "/ˈdiːl ˌbreɪkər/", meaning: "無法接受的條件；底線", pos: "n", difficulty: 2, example: "Being rude to waiters is an absolute deal-breaker for me.", exampleZh: "對服務生無禮是我的絕對底線，完全無法接受。" },
-  { word: "side hustle", phonetic: "/ˈsaɪd ˌhʌsəl/", meaning: "副業；兼差", pos: "n", difficulty: 2, example: "She started a side hustle selling handmade candles on the weekends.", exampleZh: "她在週末開始了一份副業，販賣手工製作的蠟燭。" },
-  { word: "GOAT", phonetic: "/ɡoʊt/", meaning: "史上最強；最佳（Greatest Of All Time）", pos: "n", difficulty: 2, example: "Many fans consider him the GOAT of basketball with six championships.", exampleZh: "許多球迷認為他以六座冠軍獎盃成為籃球史上最強球員。" },
-  { word: "ghosted", phonetic: "/ˈɡoʊstɪd/", meaning: "被已讀不回；被消失", pos: "v", difficulty: 2, example: "He ghosted me after three great dates and I never heard from him.", exampleZh: "三次美好的約會之後他就消失不見了，我再也沒收到他的消息。" },
+  {
+    "word": "volume",
+    "phonetic": "/ˈvɑːljuːm/",
+    "meaning": "容積；體積；音量",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "Calculate the volume of the box by multiplying its length width and height.",
+    "exampleZh": "透過長乘以寬再乘以高來計算箱子的體積。"
+  },
+  {
+    "word": "anniversary",
+    "phonetic": "/ˌænɪˈvɜːrsəri/",
+    "meaning": "週年紀念日",
+    "pos": "n",
+    "difficulty": 3,
+    "example": "The company celebrated its twentieth anniversary last month.",
+    "exampleZh": "公司上月慶祝了第二十週年。"
+  },
+  {
+    "word": "interval",
+    "phonetic": "/ˈɪntərvəl/",
+    "meaning": "間隔；間距",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "The buses run at fifteen-minute intervals during rush hour.",
+    "exampleZh": "尖峰時段公車每十五分鐘行駛一次。"
+  },
+  {
+    "word": "annual",
+    "phonetic": "/ˈænjuəl/",
+    "meaning": "每年的；年度的",
+    "pos": "adj",
+    "difficulty": 2,
+    "example": "The annual budget review takes place in December.",
+    "exampleZh": "年度預算檢討在十二月進行。"
+  },
+  {
+    "word": "temporary",
+    "phonetic": "/ˈtɛmpərɛri/",
+    "meaning": "暫時的；臨時的",
+    "pos": "adj",
+    "difficulty": 3,
+    "example": "The company hired temporary staff for the holiday season.",
+    "exampleZh": "公司在假期季節聘請了臨時員工。"
+  },
+  {
+    "word": "permanent",
+    "phonetic": "/ˈpɜːrmənənt/",
+    "meaning": "永久的；長期的",
+    "pos": "adj",
+    "difficulty": 3,
+    "example": "After six months, the temporary position became permanent.",
+    "exampleZh": "六個月後，臨時職位變成了永久職位。"
+  },
+  {
+    "word": "subtract",
+    "phonetic": "/səbˈtrækt/",
+    "meaning": "減去；扣除",
+    "pos": "v",
+    "difficulty": 2,
+    "example": "Subtract the discount from the original price.",
+    "exampleZh": "從原始價格減去折扣。"
+  },
+  {
+    "word": "maximum",
+    "phonetic": "/ˈmæksɪməm/",
+    "meaning": "最大值；最大的",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "The maximum capacity of this room is two hundred people.",
+    "exampleZh": "該房間的最大容納人數是兩百人。"
+  },
+  {
+    "word": "minimum",
+    "phonetic": "/ˈmɪnɪməm/",
+    "meaning": "最小值；最低的",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "A minimum deposit of five hundred dollars is required.",
+    "exampleZh": "需要最少五百美元的存款。"
+  },
+  {
+    "word": "sum",
+    "phonetic": "/sʌm/",
+    "meaning": "總和；金額",
+    "pos": "n",
+    "difficulty": 1,
+    "example": "The sum of all expenses should not exceed the budget.",
+    "exampleZh": "所有費用的總和不應超過預算。"
+  },
+  {
+    "word": "triple",
+    "phonetic": "/ˈtrɪpəl/",
+    "meaning": "三倍的；增至三倍",
+    "pos": "adj",
+    "difficulty": 2,
+    "example": "The company's revenue tripled in the last five years.",
+    "exampleZh": "公司在過去五年的收入增加了三倍。"
+  },
+  {
+    "word": "formula",
+    "phonetic": "/ˈfɔːrmjələ/",
+    "meaning": "公式；配方",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "Use this formula to calculate the monthly interest.",
+    "exampleZh": "使用此公式計算月利息。"
+  },
+  {
+    "word": "statistics",
+    "phonetic": "/stəˈtɪstɪks/",
+    "meaning": "統計數據；統計學",
+    "pos": "n",
+    "difficulty": 3,
+    "example": "The statistics show a significant decline in sales.",
+    "exampleZh": "統計數據顯示銷售大幅下降。"
+  },
+  {
+    "word": "graph",
+    "phonetic": "/ɡræf/",
+    "meaning": "圖表；曲線圖",
+    "pos": "n",
+    "difficulty": 1,
+    "example": "The graph clearly shows the upward trend in revenue.",
+    "exampleZh": "圖表清楚地顯示了收入的上升趨勢。"
+  },
+  {
+    "word": "quantity",
+    "phonetic": "/ˈkwɑːntəti/",
+    "meaning": "數量",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "Please confirm the quantity before placing the order.",
+    "exampleZh": "下單前請確認數量。"
+  },
+  {
+    "word": "numerous",
+    "phonetic": "/ˈnuːmərəs/",
+    "meaning": "許多的；大量的",
+    "pos": "adj",
+    "difficulty": 2,
+    "example": "The company has received numerous complaints about the product.",
+    "exampleZh": "公司收到了關於該產品的許多投訴。"
+  },
+  {
+    "word": "vast",
+    "phonetic": "/væst/",
+    "meaning": "大量的；廣闘的",
+    "pos": "adj",
+    "difficulty": 1,
+    "example": "A vast amount of money was invested in the new factory.",
+    "exampleZh": "大量資金被投入到新工廠。",
+    "context": "強調範圍廣闊或數量龐大，常形容土地、海洋、數量；比較 big（日常通用）、enormous（體積巨大）"
+  },
+  {
+    "word": "precise",
+    "phonetic": "/prɪˈsaɪs/",
+    "meaning": "精確的；準確的",
+    "pos": "adj",
+    "difficulty": 2,
+    "example": "Please give me the precise figures for this month's sales.",
+    "exampleZh": "請給我本月銷售的精確數字。"
+  },
+  {
+    "word": "significant",
+    "phonetic": "/sɪɡˈnɪfɪkənt/",
+    "meaning": "重大的；顯著的",
+    "pos": "adj",
+    "difficulty": 3,
+    "example": "There was a significant increase in online orders this quarter.",
+    "exampleZh": "本季度線上訂單大幅增加。",
+    "context": "強調有深遠影響或統計上顯著；較正式學術；比較 important（通用）、crucial/essential（不可或缺）"
+  },
+  {
+    "word": "stream",
+    "phonetic": "/striːm/",
+    "meaning": "串流；直播",
+    "pos": "v",
+    "difficulty": 2,
+    "example": "You can stream movies directly from the app on your phone.",
+    "exampleZh": "你可以直接從手機應用程式串流電影。"
+  },
+  {
+    "word": "selfie",
+    "phonetic": "/ˈsɛlfi/",
+    "meaning": "自拍",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "They took a selfie in front of the famous landmark.",
+    "exampleZh": "他們在著名地標前拍了一張自拍。"
+  },
+  {
+    "word": "meme",
+    "phonetic": "/miːm/",
+    "meaning": "迷因；網路梗",
+    "pos": "n",
+    "difficulty": 1,
+    "example": "The funny meme about office life was shared thousands of times.",
+    "exampleZh": "有趣的辦公室生活迷因被分享了數千次。"
+  },
+  {
+    "word": "restore",
+    "phonetic": "/rɪˈstɔːr/",
+    "meaning": "還原；恢復",
+    "pos": "v",
+    "difficulty": 2,
+    "example": "You can restore deleted files from the backup within thirty days.",
+    "exampleZh": "你可以在三十天內從備份還原已刪除的檔案。"
+  },
+  {
+    "word": "antivirus",
+    "phonetic": "/ˌæntiˈvaɪrəs/",
+    "meaning": "防毒軟體",
+    "pos": "n",
+    "difficulty": 3,
+    "example": "Install antivirus software to protect your computer from threats.",
+    "exampleZh": "安裝防毒軟體以保護你的電腦免受威脅。"
+  },
+  {
+    "word": "hosting",
+    "phonetic": "/ˈhoʊstɪŋ/",
+    "meaning": "主機代管",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "We chose a reliable hosting provider for our company website.",
+    "exampleZh": "我們為公司網站選擇了一個可靠的主機代管提供商。"
+  },
+  {
+    "word": "cookie",
+    "phonetic": "/ˈkʊki/",
+    "meaning": "網路 Cookie",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "The website asks you to accept cookies for a better experience.",
+    "exampleZh": "網站要求你接受Cookie以獲得更好的體驗。"
+  },
+  {
+    "word": "plugin",
+    "phonetic": "/ˈplʌɡɪn/",
+    "meaning": "外掛程式",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "The plugin adds extra features to the content management system.",
+    "exampleZh": "外掛程式為內容管理系統添加了額外功能。"
+  },
+  {
+    "word": "widget",
+    "phonetic": "/ˈwɪdʒɪt/",
+    "meaning": "小工具；元件",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "Add a weather widget to your home screen for quick updates.",
+    "exampleZh": "在主畫面添加天氣小工具以快速更新。"
+  },
+  {
+    "word": "VPN",
+    "phonetic": "/ˌviːˌpiːˈɛn/",
+    "meaning": "虛擬私人網路",
+    "pos": "n",
+    "difficulty": 1,
+    "example": "Use a VPN to protect your privacy when using public Wi-Fi.",
+    "exampleZh": "使用虛擬私人網路在使用公共Wi-Fi時保護你的隱私。"
+  },
+  {
+    "word": "awkward",
+    "phonetic": "/ˈɔːkwərd/",
+    "meaning": "尷尬的；笨拙的",
+    "pos": "adj",
+    "difficulty": 2,
+    "example": "There was an awkward silence after he told that joke.",
+    "exampleZh": "他講笑話後出現了尷尬的沉默。"
+  },
+  {
+    "word": "embarrassed",
+    "phonetic": "/ɪmˈbærəst/",
+    "meaning": "難為情的；丟臉的",
+    "pos": "adj",
+    "difficulty": 3,
+    "example": "She felt so embarrassed when she tripped in front of everyone.",
+    "exampleZh": "她在眾人面前絆倒時感到非常難為情。"
+  },
+  {
+    "word": "outgoing",
+    "phonetic": "/ˈaʊtˌɡoʊɪŋ/",
+    "meaning": "外向的；愛交際的",
+    "pos": "adj",
+    "difficulty": 2,
+    "example": "She is very outgoing and makes friends wherever she goes.",
+    "exampleZh": "她非常外向，走到哪裡都能交到朋友。"
+  },
+  {
+    "word": "grateful",
+    "phonetic": "/ˈɡreɪtfəl/",
+    "meaning": "感激的；感恩的",
+    "pos": "adj",
+    "difficulty": 2,
+    "example": "I am so grateful that you helped me move last weekend.",
+    "exampleZh": "我非常感謝你上周末幫我搬家。"
+  },
+  {
+    "word": "thrilled",
+    "phonetic": "/θrɪld/",
+    "meaning": "超興奮的；欣喜若狂的",
+    "pos": "adj",
+    "difficulty": 2,
+    "example": "We were absolutely thrilled when we heard the good news.",
+    "exampleZh": "我們聽到好消息時興高采烈。"
+  },
+  {
+    "word": "suspicious",
+    "phonetic": "/səˈspɪʃəs/",
+    "meaning": "令人懷疑的",
+    "pos": "adj",
+    "difficulty": 3,
+    "example": "I got suspicious when he started hiding his phone from me.",
+    "exampleZh": "當他開始對我隱瞞手機時，我起了疑心。"
+  },
+  {
+    "word": "confident",
+    "phonetic": "/ˈkɑːnfɪdənt/",
+    "meaning": "有自信的；有把握的",
+    "pos": "adj",
+    "difficulty": 3,
+    "example": "She looked confident walking into the interview room this morning.",
+    "exampleZh": "她今早走進面試室時看起來很有自信。"
+  },
+  {
+    "word": "sensitive",
+    "phonetic": "/ˈsɛnsɪtɪv/",
+    "meaning": "敏感的；易受傷的",
+    "pos": "adj",
+    "difficulty": 3,
+    "example": "Be careful what you say because she is quite sensitive.",
+    "exampleZh": "要小心你說的話，因為她相當敏感。"
+  },
+  {
+    "word": "generous",
+    "phonetic": "/ˈdʒɛnərəs/",
+    "meaning": "慷慨的；大方的",
+    "pos": "adj",
+    "difficulty": 2,
+    "example": "My grandmother is very generous and always gives us gifts.",
+    "exampleZh": "我的祖母非常慷慨，總是送我們禮物。"
+  },
+  {
+    "word": "selfish",
+    "phonetic": "/ˈsɛlfɪʃ/",
+    "meaning": "自私的；只顧自己的",
+    "pos": "adj",
+    "difficulty": 2,
+    "example": "It was selfish of him to eat the last piece of cake.",
+    "exampleZh": "他吃掉最後一塊蛋糕是很自私的。"
+  },
+  {
+    "word": "loyal",
+    "phonetic": "/ˈlɔɪəl/",
+    "meaning": "忠心的",
+    "pos": "adj",
+    "difficulty": 1,
+    "example": "He is a loyal employee who has been with us for twenty years.",
+    "exampleZh": "他是我們公司工作了二十年的忠心員工。",
+    "context": "指對某人、團體或組織保持忠誠的。"
+  },
+  {
+    "word": "grumpy",
+    "phonetic": "/ˈɡrʌmpi/",
+    "meaning": "脾氣暴躁的；愛抱怨的",
+    "pos": "adj",
+    "difficulty": 2,
+    "example": "Grandpa gets grumpy if he does not have his morning coffee.",
+    "exampleZh": "如果爺爺沒有晨間咖啡，他就會脾氣暴躁。"
+  },
+  {
+    "word": "cheerful",
+    "phonetic": "/ˈtʃɪrfəl/",
+    "meaning": "開朗的；愉快的",
+    "pos": "adj",
+    "difficulty": 2,
+    "example": "She has such a cheerful personality that she brightens every room.",
+    "exampleZh": "她有著如此開朗的個性，使每個房間都明亮起來。",
+    "context": "描述天生開朗活潑的個性或令人愉快的氛圍；比較 happy（因某事快樂的狀態）、glad（因特定事情高興）"
+  },
+  {
+    "word": "cranky",
+    "phonetic": "/ˈkræŋki/",
+    "meaning": "暴躁的；易怒的",
+    "pos": "adj",
+    "difficulty": 2,
+    "example": "The baby gets cranky when she misses her afternoon nap.",
+    "exampleZh": "寶寶錯過下午小睡時會變得暴躁。"
+  },
+  {
+    "word": "gloomy",
+    "phonetic": "/ˈɡluːmi/",
+    "meaning": "陰鬱的；悲觀的",
+    "pos": "adj",
+    "difficulty": 2,
+    "example": "The rainy weather made everyone feel gloomy the entire week.",
+    "exampleZh": "下雨天讓整個星期的人都感到沮喪。"
+  },
+  {
+    "word": "passive",
+    "phonetic": "/ˈpæsɪv/",
+    "meaning": "消極的；被動的",
+    "pos": "adj",
+    "difficulty": 2,
+    "example": "She is too passive and never speaks up for herself.",
+    "exampleZh": "她太被動了，從不為自己辯護。"
+  },
+  {
+    "word": "dramatic",
+    "phonetic": "/drəˈmætɪk/",
+    "meaning": "戲劇化的；誇張的",
+    "pos": "adj",
+    "difficulty": 2,
+    "example": "She is so dramatic that a small cut feels like the end.",
+    "exampleZh": "她太戲劇化了，一點小割傷都感覺像世界末日。"
+  },
+  {
+    "word": "uptight",
+    "phonetic": "/ˌʌpˈtaɪt/",
+    "meaning": "緊繃的；過度拘謹的",
+    "pos": "adj",
+    "difficulty": 2,
+    "example": "Do not be so uptight and just enjoy the party tonight.",
+    "exampleZh": "不要這麼緊繃，今晚就享受派對吧。"
+  },
+  {
+    "word": "easygoing",
+    "phonetic": "/ˌiːziˈɡoʊɪŋ/",
+    "meaning": "隨和的；好相處的",
+    "pos": "adj",
+    "difficulty": 3,
+    "example": "My new roommate is very easygoing and never complains about anything.",
+    "exampleZh": "我的新室友非常隨和，從不抱怨任何事。"
+  },
+  {
+    "word": "bold",
+    "phonetic": "/boʊld/",
+    "meaning": "英勇的；粗體字的",
+    "pos": "adj",
+    "difficulty": 1,
+    "example": "That was a bold move to quit your job without a backup plan.",
+    "exampleZh": "沒有備用計畫就辭職是個大膽的舉動。"
+  },
+  {
+    "word": "blunt",
+    "phonetic": "/blʌnt/",
+    "meaning": "鈍的；直言不諱的（近乎無禮）",
+    "pos": "adj",
+    "difficulty": 4,
+    "example": "To be blunt, I don't think you're ready for this job.",
+    "exampleZh": "坦白說，我認為你還沒準備好勝任這份工作。",
+    "context": "指說話過於直接以至於可能顯得不禮貌。"
+  },
+  {
+    "word": "phony",
+    "phonetic": "/ˈfoʊni/",
+    "meaning": "虛假的；假裝的",
+    "pos": "adj",
+    "difficulty": 1,
+    "example": "I can tell his smile is phony because it never reaches his eyes.",
+    "exampleZh": "我能看出他的笑容是假的，因為它從不到達他的眼睛。"
+  },
+  {
+    "word": "petty",
+    "phonetic": "/ˈpɛti/",
+    "meaning": "小心眼的；斤斤計較的",
+    "pos": "adj",
+    "difficulty": 1,
+    "example": "It is petty to argue over who should pay one extra dollar.",
+    "exampleZh": "為多付一美元而爭吵是很小心眼的。"
+  },
+  {
+    "word": "bitter",
+    "phonetic": "/ˈbɪtər/",
+    "meaning": "心懷怨恨的；忿忿不平的",
+    "pos": "adj",
+    "difficulty": 2,
+    "example": "He is still bitter about not getting the promotion last year.",
+    "exampleZh": "他仍然對去年沒有升職感到怨恨。"
+  },
+  {
+    "word": "crush",
+    "phonetic": "/krʌʃ/",
+    "meaning": "暗戀對象；迷戀",
+    "pos": "n",
+    "difficulty": 1,
+    "example": "I had a huge crush on my neighbor when I was in high school.",
+    "exampleZh": "我在高中時對我的鄰居有很大的暗戀。"
+  },
+  {
+    "word": "breakup",
+    "phonetic": "/ˈbreɪkˌʌp/",
+    "meaning": "分手",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "The breakup was hard but she is doing much better now.",
+    "exampleZh": "分手很艱難，但她現在好多了。"
+  },
+  {
+    "word": "flirt",
+    "phonetic": "/flɜːrt/",
+    "meaning": "調情；搭訕",
+    "pos": "v",
+    "difficulty": 1,
+    "example": "He was trying to flirt with the barista at the coffee shop.",
+    "exampleZh": "他在咖啡店試圖調情咖啡師。"
+  },
+  {
+    "word": "bestie",
+    "phonetic": "/ˈbɛsti/",
+    "meaning": "閨蜜；麻吉",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "My bestie and I have been inseparable since elementary school.",
+    "exampleZh": "我和我的閨蜜自小學以來就形影不離。"
+  },
+  {
+    "word": "roommate",
+    "phonetic": "/ˈruːmˌmeɪt/",
+    "meaning": "室友",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "My roommate always leaves dirty dishes in the sink overnight.",
+    "exampleZh": "我的室友總是把髒盤子放在水槽裡過夜。"
+  },
+  {
+    "word": "rival",
+    "phonetic": "/ˈraɪvəl/",
+    "meaning": "競爭對手；匹敵者",
+    "pos": "n",
+    "difficulty": 1,
+    "example": "Those two have been rivals since they joined the same dance team.",
+    "exampleZh": "自從他們加入同一舞蹈隊以來，這兩人一直是對手。"
+  },
+  {
+    "word": "engaged",
+    "phonetic": "/ɪnˈɡeɪdʒd/",
+    "meaning": "已訂婚的",
+    "pos": "adj",
+    "difficulty": 2,
+    "example": "They just got engaged after dating for three years.",
+    "exampleZh": "他們在交往三年後剛訂婚。"
+  },
+  {
+    "word": "newlywed",
+    "phonetic": "/ˈnjuːliˌwɛd/",
+    "meaning": "新婚的人",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "The newlyweds looked so happy at their wedding reception last night.",
+    "exampleZh": "新婚夫婦在昨晚的婚禮招待會上看起來非常幸福。"
+  },
+  {
+    "word": "divorced",
+    "phonetic": "/dɪˈvɔːrst/",
+    "meaning": "離婚的",
+    "pos": "adj",
+    "difficulty": 2,
+    "example": "She has been divorced for two years and is dating again.",
+    "exampleZh": "她離婚兩年了，現在又在約會。"
+  },
+  {
+    "word": "affair",
+    "phonetic": "/əˈfɛr/",
+    "meaning": "外遇；婚外情",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "The scandal started when everyone found out about his secret affair.",
+    "exampleZh": "當每個人發現他的秘密外遇時，醜聞開始了。"
+  },
+  {
+    "word": "matchmaker",
+    "phonetic": "/ˈmætʃˌmeɪkər/",
+    "meaning": "媒人；牽紅線的人",
+    "pos": "n",
+    "difficulty": 3,
+    "example": "She loves being a matchmaker and has set up three couples.",
+    "exampleZh": "她喜歡當媒人，已經牽紅線了三對情侶。"
+  },
+  {
+    "word": "bridesmaid",
+    "phonetic": "/ˈbraɪdzˌmeɪd/",
+    "meaning": "伴娘",
+    "pos": "n",
+    "difficulty": 3,
+    "example": "She asked her two best friends to be her bridesmaids.",
+    "exampleZh": "她要求她的兩位好朋友做伴娘。"
+  },
+  {
+    "word": "groomsman",
+    "phonetic": "/ˈɡruːmzmən/",
+    "meaning": "伴郎",
+    "pos": "n",
+    "difficulty": 3,
+    "example": "His brother will be the groomsman at the wedding next month.",
+    "exampleZh": "他的兄弟將是下個月婚禮的伴郎。"
+  },
+  {
+    "word": "reunion",
+    "phonetic": "/riˈjuːnjən/",
+    "meaning": "重聚；同學會",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "I am nervous about attending my high school reunion this weekend.",
+    "exampleZh": "我對本周末參加高中同學會感到緊張。"
+  },
+  {
+    "word": "gossip",
+    "phonetic": "/ˈɡɑːsɪp/",
+    "meaning": "八卦；說閒話",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "The office is full of gossip about who is getting promoted.",
+    "exampleZh": "辦公室裡全是關於誰會升職的八卦。"
+  },
+  {
+    "word": "rumor",
+    "phonetic": "/ˈruːmər/",
+    "meaning": "謠言；傳聞",
+    "pos": "n",
+    "difficulty": 1,
+    "example": "There is a rumor going around that the store is closing down.",
+    "exampleZh": "有謠言說那家商店正在關閉。"
+  },
+  {
+    "word": "drama",
+    "phonetic": "/ˈdrɑːmə/",
+    "meaning": "是非；鬧劇",
+    "pos": "n",
+    "difficulty": 1,
+    "example": "I am so tired of all the drama in our friend group.",
+    "exampleZh": "我厭倦了我們朋友群組中的所有是非。"
+  },
+  {
+    "word": "soulmate",
+    "phonetic": "/ˈsoʊlˌmeɪt/",
+    "meaning": "靈魂伴侶",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "She believes her husband is her soulmate and true best friend.",
+    "exampleZh": "她相信她的丈夫是她的靈魂伴侶和真正的好朋友。"
+  },
+  {
+    "word": "fling",
+    "phonetic": "/flɪŋ/",
+    "meaning": "短暫的戀情",
+    "pos": "n",
+    "difficulty": 1,
+    "example": "It was just a summer fling; neither of them wanted anything serious.",
+    "exampleZh": "這只是一段夏日戀情；他們都不想要認真的關係。"
+  },
+  {
+    "word": "bachelor",
+    "phonetic": "/ˈbætʃələr/",
+    "meaning": "單身漢",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "He has been a bachelor for so long that he forgot how to cook.",
+    "exampleZh": "他單身這麼久，都忘記怎麼煮飯了。"
+  },
+  {
+    "word": "hangout",
+    "phonetic": "/ˈhæŋˌaʊt/",
+    "meaning": "聚會場所；常去的地方",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "That cafe is our favorite hangout spot after work on Fridays.",
+    "exampleZh": "那家咖啡館是我們星期五下班後最喜歡的聚集地。"
+  },
+  {
+    "word": "housewarming",
+    "phonetic": "/ˈhaʊsˌwɔːrmɪŋ/",
+    "meaning": "喬遷派對",
+    "pos": "n",
+    "difficulty": 4,
+    "example": "We are throwing a housewarming party at our new apartment this weekend.",
+    "exampleZh": "我們本周末在新公寓舉辦喬遷派對。"
+  },
+  {
+    "word": "farewell",
+    "phonetic": "/ˌfɛrˈwɛl/",
+    "meaning": "送別；告別",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "The team organized a farewell party for the colleague who is leaving.",
+    "exampleZh": "團隊為即將離開的同事組織了一場送別派對。"
+  },
+  {
+    "word": "confession",
+    "phonetic": "/kənˈfɛʃən/",
+    "meaning": "告白；坦白",
+    "pos": "n",
+    "difficulty": 3,
+    "example": "His confession of love totally caught her off guard after class.",
+    "exampleZh": "他在課後的愛情告白完全出其不意。"
+  },
+  {
+    "word": "rejection",
+    "phonetic": "/rɪˈdʒɛkʃən/",
+    "meaning": "被拒絕；回絕",
+    "pos": "n",
+    "difficulty": 3,
+    "example": "Dealing with rejection is never easy but it makes you stronger.",
+    "exampleZh": "處理被拒絕的感受從來不容易，但它會讓你更堅強。"
+  },
+  {
+    "word": "commitment",
+    "phonetic": "/kəˈmɪtmənt/",
+    "meaning": "承諾；認真交往",
+    "pos": "n",
+    "difficulty": 3,
+    "example": "He is afraid of commitment and avoids serious relationships.",
+    "exampleZh": "他害怕承諾，總是迴避認真的感情關係。"
+  },
+  {
+    "word": "boundary",
+    "phonetic": "/ˈbaʊndəri/",
+    "meaning": "界線；底線",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "You need to set clear boundaries with people who take advantage of you.",
+    "exampleZh": "你需要對那些佔你便宜的人設立清楚的界線。"
+  },
+  {
+    "word": "wingman",
+    "phonetic": "/ˈwɪŋˌmæn/",
+    "meaning": "僚機；幫朋友搭訕的人",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "He asked his best friend to be his wingman at the party.",
+    "exampleZh": "他請他最好的朋友在派對上幫他當僚機。"
+  },
+  {
+    "word": "intimate",
+    "phonetic": "/ˈɪntɪmət/",
+    "meaning": "親密的；親近的",
+    "pos": "adj",
+    "difficulty": 2,
+    "example": "They shared an intimate dinner at a quiet little restaurant.",
+    "exampleZh": "他們在一家安靜的小餐廳共進了一頓親密的晚餐。"
+  },
+  {
+    "word": "icebreaker",
+    "phonetic": "/ˈaɪsˌbreɪkər/",
+    "meaning": "破冰活動；打破僵局的話",
+    "pos": "n",
+    "difficulty": 3,
+    "example": "The teacher used a fun icebreaker game on the first day of class.",
+    "exampleZh": "老師在第一堂課用了一個有趣的破冰遊戲。"
+  },
+  {
+    "word": "compliment",
+    "phonetic": "/ˈkɑːmplɪmənt/",
+    "meaning": "讚美；稱讚",
+    "pos": "n",
+    "difficulty": 3,
+    "example": "She gave me a sweet compliment about my new haircut today.",
+    "exampleZh": "她今天對我的新髮型給了我一個甜蜜的稱讚。"
+  },
+  {
+    "word": "backstab",
+    "phonetic": "/ˈbækˌstæb/",
+    "meaning": "背後捅刀；暗算",
+    "pos": "v",
+    "difficulty": 2,
+    "example": "I cannot believe she would backstab me after all these years.",
+    "exampleZh": "我不敢相信她在這麼多年後居然會背後捅我一刀。"
+  },
+  {
+    "word": "betray",
+    "phonetic": "/bɪˈtreɪ/",
+    "meaning": "背叛；出賣",
+    "pos": "v",
+    "difficulty": 2,
+    "example": "He felt deeply hurt when his best friend decided to betray him.",
+    "exampleZh": "當他最好的朋友決定背叛他時，他感到深深的傷痛。"
+  },
+  {
+    "word": "cheat",
+    "phonetic": "/tʃiːt/",
+    "meaning": "劈腿；欺騙",
+    "pos": "v",
+    "difficulty": 1,
+    "example": "She dumped him immediately after she found out he was cheating.",
+    "exampleZh": "她一發現他在劈腿就立刻甩了他。"
+  },
+  {
+    "word": "date",
+    "phonetic": "/deɪt/",
+    "meaning": "約會；約會對象",
+    "pos": "n",
+    "difficulty": 1,
+    "example": "We are going on our third date to that Italian place downtown.",
+    "exampleZh": "我們要去市區那家義大利餐廳約會，這是我們第三次約會了。"
+  },
+  {
+    "word": "honeymoon",
+    "phonetic": "/ˈhʌniˌmuːn/",
+    "meaning": "蜜月",
+    "pos": "n",
+    "difficulty": 3,
+    "example": "They went to the Maldives for their honeymoon after the wedding.",
+    "exampleZh": "他們婚後到馬爾地夫度蜜月。"
+  },
+  {
+    "word": "mingle",
+    "phonetic": "/ˈmɪŋɡəl/",
+    "meaning": "社交；交際",
+    "pos": "v",
+    "difficulty": 2,
+    "example": "Try to mingle with other guests instead of staying in the corner.",
+    "exampleZh": "試著和其他賓客交際，不要一直待在角落。"
+  },
+  {
+    "word": "neighbor",
+    "phonetic": "/ˈneɪbər/",
+    "meaning": "鄰居",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "Our neighbor always plays loud music late at night and it drives me crazy.",
+    "exampleZh": "我們的鄰居總是在深夜大聲放音樂，讓我抓狂。"
+  },
+  {
+    "word": "closet",
+    "phonetic": "/ˈklɑːzɪt/",
+    "meaning": "衣櫃；壁櫥",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "My closet is so full that I cannot fit anything else in there.",
+    "exampleZh": "我的衣櫃已經塞滿了，什麼都放不進去了。"
+  },
+  {
+    "word": "vegan",
+    "phonetic": "/ˈviːɡən/",
+    "meaning": "純素的；素食主義者",
+    "pos": "adj",
+    "difficulty": 1,
+    "example": "He went vegan last year and says he has never felt better.",
+    "exampleZh": "他去年開始吃純素，說自己從未感覺這麼好過。"
+  },
+  {
+    "word": "workout",
+    "phonetic": "/ˈwɜːrkaʊt/",
+    "meaning": "健身；運動",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "I try to fit in a quick workout before work every morning.",
+    "exampleZh": "我每天早上盡量在上班前擠出時間做一下快速健身。"
+  },
+  {
+    "word": "jogging",
+    "phonetic": "/ˈdʒɑːɡɪŋ/",
+    "meaning": "慢跑",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "She goes jogging in the park every evening to clear her head.",
+    "exampleZh": "她每天傍晚都去公園慢跑，讓腦袋清醒一下。"
+  },
+  {
+    "word": "yoga",
+    "phonetic": "/ˈjoʊɡə/",
+    "meaning": "瑜伽",
+    "pos": "n",
+    "difficulty": 1,
+    "example": "Yoga has really helped me become more flexible and less stressed.",
+    "exampleZh": "瑜伽真的幫助我變得更柔軟，壓力也減少了很多。"
+  },
+  {
+    "word": "skincare",
+    "phonetic": "/ˈskɪnˌkɛr/",
+    "meaning": "護膚；保養",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "She has a ten-step skincare routine that she does every night.",
+    "exampleZh": "她每晚都有一套十個步驟的護膚程序。"
+  },
+  {
+    "word": "sunscreen",
+    "phonetic": "/ˈsʌnˌskriːn/",
+    "meaning": "防曬乳",
+    "pos": "n",
+    "difficulty": 3,
+    "example": "Do not forget to put on sunscreen before going to the beach.",
+    "exampleZh": "去海灘前別忘了塗防曬乳。"
+  },
+  {
+    "word": "haircut",
+    "phonetic": "/ˈhɛrˌkʌt/",
+    "meaning": "剪髮；髮型",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "I need to get a haircut soon because my hair is getting too long.",
+    "exampleZh": "我需要趕快去剪頭髮，因為頭髮已經太長了。"
+  },
+  {
+    "word": "manicure",
+    "phonetic": "/ˈmænɪˌkjʊr/",
+    "meaning": "修指甲；美甲",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "She treats herself to a manicure every other week at the salon.",
+    "exampleZh": "她每隔一週就去美甲沙龍犒賞自己做一次美甲。"
+  },
+  {
+    "word": "detox",
+    "phonetic": "/ˈdiːtɑːks/",
+    "meaning": "排毒；淨化",
+    "pos": "n",
+    "difficulty": 1,
+    "example": "She is doing a three-day juice detox to reset her body.",
+    "exampleZh": "她正在進行三天的果汁排毒，讓身體重新調整。"
+  },
+  {
+    "word": "hangover",
+    "phonetic": "/ˈhæŋˌoʊvər/",
+    "meaning": "宿醉",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "He had a terrible hangover after drinking too much at the party.",
+    "exampleZh": "他在派對上喝太多，隔天宿醉得很嚴重。"
+  },
+  {
+    "word": "caffeine",
+    "phonetic": "/kæˈfiːn/",
+    "meaning": "咖啡因",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "I try to avoid caffeine after three in the afternoon.",
+    "exampleZh": "我盡量在下午三點後不攝取咖啡因。"
+  },
+  {
+    "word": "oversleep",
+    "phonetic": "/ˌoʊvərˈsliːp/",
+    "meaning": "睡過頭",
+    "pos": "v",
+    "difficulty": 3,
+    "example": "I overslept this morning and almost missed my first class.",
+    "exampleZh": "我今早睡過頭，差點錯過第一堂課。"
+  },
+  {
+    "word": "craving",
+    "phonetic": "/ˈkreɪvɪŋ/",
+    "meaning": "渴望；嘴饞",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "I have been having a craving for chocolate cake all day.",
+    "exampleZh": "我今天一整天都超想吃巧克力蛋糕。"
+  },
+  {
+    "word": "smoothie",
+    "phonetic": "/ˈsmuːði/",
+    "meaning": "果昔；冰沙",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "I make a banana and berry smoothie for breakfast every morning.",
+    "exampleZh": "我每天早上都會做一杯香蕉莓果果昔當早餐。"
+  },
+  {
+    "word": "espresso",
+    "phonetic": "/ɛˈsprɛsoʊ/",
+    "meaning": "義式濃縮咖啡",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "I need a double espresso to survive this Monday morning meeting.",
+    "exampleZh": "我需要一杯雙份濃縮咖啡才能撐過這個星期一早上的會議。"
+  },
+  {
+    "word": "unwind",
+    "phonetic": "/ˌʌnˈwaɪnd/",
+    "meaning": "放鬆；解壓",
+    "pos": "v",
+    "difficulty": 2,
+    "example": "After a long day I like to unwind by watching my favorite show.",
+    "exampleZh": "漫長的一天結束後，我喜歡看我最愛的節目來放鬆。"
+  },
+  {
+    "word": "hydrate",
+    "phonetic": "/ˈhaɪdreɪt/",
+    "meaning": "補充水分",
+    "pos": "v",
+    "difficulty": 2,
+    "example": "Remember to hydrate throughout the day especially in hot weather.",
+    "exampleZh": "記得一整天都要補充水分，尤其是在炎熱的天氣裡。"
+  },
+  {
+    "word": "pamper",
+    "phonetic": "/ˈpæmpər/",
+    "meaning": "寵愛自己；好好享受",
+    "pos": "v",
+    "difficulty": 2,
+    "example": "She likes to pamper herself with a long bath on Friday nights.",
+    "exampleZh": "她喜歡在星期五晚上泡個長澡好好寵愛自己。"
+  },
+  {
+    "word": "latte",
+    "phonetic": "/ˈlɑːteɪ/",
+    "meaning": "拿鐵咖啡",
+    "pos": "n",
+    "difficulty": 1,
+    "example": "I ordered an iced oat milk latte from the new coffee shop.",
+    "exampleZh": "我在那家新咖啡館點了一杯冰燕麥奶拿鐵。"
+  },
+  {
+    "word": "charger",
+    "phonetic": "/ˈtʃɑːrdʒər/",
+    "meaning": "充電器",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "I forgot my phone charger at home and my battery is almost dead.",
+    "exampleZh": "我把手機充電器忘在家裡，現在電池快沒電了。"
+  },
+  {
+    "word": "pedicure",
+    "phonetic": "/ˈpɛdɪˌkjʊr/",
+    "meaning": "修腳指甲；足部保養",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "She booked a pedicure appointment before wearing sandals this summer.",
+    "exampleZh": "她在今年夏天穿涼鞋之前預約了足部保養。"
+  },
+  {
+    "word": "decaf",
+    "phonetic": "/ˈdiːkæf/",
+    "meaning": "低咖啡因的",
+    "pos": "adj",
+    "difficulty": 1,
+    "example": "I switched to decaf coffee because regular coffee gave me the jitters.",
+    "exampleZh": "我改喝低咖啡因咖啡，因為普通咖啡讓我感到緊張不安。"
+  },
+  {
+    "word": "spoiler",
+    "phonetic": "/ˈspɔɪlər/",
+    "meaning": "劇透",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "Do not tell me any spoilers because I have not seen it yet.",
+    "exampleZh": "不要劇透給我，因為我還沒看。"
+  },
+  {
+    "word": "sequel",
+    "phonetic": "/ˈsiːkwəl/",
+    "meaning": "續集",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "The sequel was disappointing because it could not match the original.",
+    "exampleZh": "這部續集讓人失望，因為它無法超越原作。"
+  },
+  {
+    "word": "prequel",
+    "phonetic": "/ˈpriːkwəl/",
+    "meaning": "前傳",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "The prequel explains how the main character became a hero.",
+    "exampleZh": "這部前傳解釋了主角是如何成為英雄的。"
+  },
+  {
+    "word": "trailer",
+    "phonetic": "/ˈtreɪlər/",
+    "meaning": "預告片",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "The trailer for the new Marvel movie already has millions of views.",
+    "exampleZh": "新漫威電影的預告片已經有數百萬次觀看了。"
+  },
+  {
+    "word": "soundtrack",
+    "phonetic": "/ˈsaʊndˌtræk/",
+    "meaning": "電影配樂；原聲帶",
+    "pos": "n",
+    "difficulty": 3,
+    "example": "The soundtrack of that movie is so good that I listen to it daily.",
+    "exampleZh": "那部電影的原聲帶太好聽了，我每天都在聽。"
+  },
+  {
+    "word": "celebrity",
+    "phonetic": "/sɪˈlɛbrɪti/",
+    "meaning": "名人；明星",
+    "pos": "n",
+    "difficulty": 3,
+    "example": "She bumped into a celebrity at the airport and got a photo.",
+    "exampleZh": "她在機場巧遇一位明星，還一起拍了照。"
+  },
+  {
+    "word": "livestream",
+    "phonetic": "/ˈlaɪvˌstriːm/",
+    "meaning": "直播",
+    "pos": "n",
+    "difficulty": 3,
+    "example": "She does a livestream every Friday night to chat with her fans.",
+    "exampleZh": "她每個星期五晚上都會開直播和粉絲聊天。"
+  },
+  {
+    "word": "cosplay",
+    "phonetic": "/ˈkɑːzˌpleɪ/",
+    "meaning": "角色扮演",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "Her cosplay outfit at the convention looked exactly like the character.",
+    "exampleZh": "她在漫展上的角色扮演服裝和角色一模一樣。"
+  },
+  {
+    "word": "sitcom",
+    "phonetic": "/ˈsɪtˌkɑːm/",
+    "meaning": "情境喜劇",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "That sitcom has been on the air for over ten seasons now.",
+    "exampleZh": "那部情境喜劇已經播出超過十季了。"
+  },
+  {
+    "word": "animation",
+    "phonetic": "/ˌænɪˈmeɪʃən/",
+    "meaning": "動畫",
+    "pos": "n",
+    "difficulty": 3,
+    "example": "Japanese animation has gained a massive global following in recent years.",
+    "exampleZh": "日本動畫近年來在全球獲得了大批忠實觀眾。"
+  },
+  {
+    "word": "blockbuster",
+    "phonetic": "/ˈblɑːkˌbʌstər/",
+    "meaning": "大片；賣座電影",
+    "pos": "n",
+    "difficulty": 3,
+    "example": "That summer blockbuster made over a billion dollars at the box office.",
+    "exampleZh": "那部暑期大片在票房上創下超過十億美元的佳績。"
+  },
+  {
+    "word": "remake",
+    "phonetic": "/ˈriːˌmeɪk/",
+    "meaning": "翻拍版",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "The remake was decent but fans still prefer the original version.",
+    "exampleZh": "翻拍版還不錯，但粉絲們仍然更喜歡原版。"
+  },
+  {
+    "word": "playlist",
+    "phonetic": "/ˈpleɪˌlɪst/",
+    "meaning": "播放清單",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "She made a chill playlist for studying that lasts over three hours.",
+    "exampleZh": "她製作了一個超過三小時的輕鬆讀書播放清單。"
+  },
+  {
+    "word": "karaoke",
+    "phonetic": "/ˌkæriˈoʊki/",
+    "meaning": "卡拉OK",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "We go to karaoke every Friday night and sing until midnight.",
+    "exampleZh": "我們每個星期五晚上都去唱卡拉OK，一路唱到午夜。"
+  },
+  {
+    "word": "audition",
+    "phonetic": "/ɔːˈdɪʃən/",
+    "meaning": "試鏡；面試演出",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "She nailed the audition and got the lead role in the musical.",
+    "exampleZh": "她在試鏡中表現出色，獲得了音樂劇的主角。"
+  },
+  {
+    "word": "debut",
+    "phonetic": "/deɪˈbjuː/",
+    "meaning": "出道；首次亮相",
+    "pos": "n",
+    "difficulty": 1,
+    "example": "The band made their debut with a sold-out concert in Seoul.",
+    "exampleZh": "這個樂團在首爾以一場售罄的演唱會正式出道。"
+  },
+  {
+    "word": "encore",
+    "phonetic": "/ˈɑːnkɔːr/",
+    "meaning": "安可；再來一首",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "The crowd kept screaming for an encore after the final song.",
+    "exampleZh": "最後一首歌結束後，觀眾不停吶喊要安可。"
+  },
+  {
+    "word": "mainstream",
+    "phonetic": "/ˈmeɪnˌstriːm/",
+    "meaning": "主流的",
+    "pos": "adj",
+    "difficulty": 3,
+    "example": "That indie band has finally broken into mainstream music this year.",
+    "exampleZh": "那個獨立樂團今年終於打入主流音樂圈。"
+  },
+  {
+    "word": "indie",
+    "phonetic": "/ˈɪndi/",
+    "meaning": "獨立製作的；小眾的",
+    "pos": "adj",
+    "difficulty": 1,
+    "example": "She prefers indie films over big Hollywood productions.",
+    "exampleZh": "她比較喜歡獨立電影，而不是好萊塢大製作。"
+  },
+  {
+    "word": "comeback",
+    "phonetic": "/ˈkʌmˌbæk/",
+    "meaning": "復出；回歸",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "The singer made an incredible comeback after five years of silence.",
+    "exampleZh": "那位歌手在沉寂五年後以驚人之姿復出。"
+  },
+  {
+    "word": "canceled",
+    "phonetic": "/ˈkænsəld/",
+    "meaning": "被取消的；被抵制的",
+    "pos": "adj",
+    "difficulty": 2,
+    "example": "The show got canceled after fans discovered the host's old tweets.",
+    "exampleZh": "粉絲挖出主持人的舊推文後，節目遭到取消。"
+  },
+  {
+    "word": "scandal",
+    "phonetic": "/ˈskændl/",
+    "meaning": "醜聞",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "The scandal ruined his career and he disappeared from the public eye.",
+    "exampleZh": "這場醜聞毀了他的事業，他從此從公眾視野中消失。"
+  },
+  {
+    "word": "nominee",
+    "phonetic": "/ˌnɑːmɪˈniː/",
+    "meaning": "被提名者",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "She was a nominee for best actress at the awards ceremony.",
+    "exampleZh": "她在頒獎典禮上獲得最佳女主角提名。"
+  },
+  {
+    "word": "stunt",
+    "phonetic": "/stʌnt/",
+    "meaning": "特技動作",
+    "pos": "n",
+    "difficulty": 1,
+    "example": "He performed all his own stunts without using a body double.",
+    "exampleZh": "他沒有使用替身，所有特技動作都親自上陣。"
+  },
+  {
+    "word": "teaser",
+    "phonetic": "/ˈtiːzər/",
+    "meaning": "前導預告",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "The teaser only showed ten seconds but it already looks amazing.",
+    "exampleZh": "前導預告只有十秒，但已經看起來超精彩。"
+  },
+  {
+    "word": "blooper",
+    "phonetic": "/ˈbluːpər/",
+    "meaning": "NG片段；搞笑失誤",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "The blooper reel at the end of the movie was the best part.",
+    "exampleZh": "電影結尾的NG片段集錦是最精彩的部分。"
+  },
+  {
+    "word": "autograph",
+    "phonetic": "/ˈɔːtəˌɡræf/",
+    "meaning": "親筆簽名",
+    "pos": "n",
+    "difficulty": 3,
+    "example": "She waited two hours in line just to get his autograph.",
+    "exampleZh": "她在隊伍裡等了兩小時，只為了拿到他的親筆簽名。"
+  },
+  {
+    "word": "underground",
+    "phonetic": "/ˌʌndərˈɡraʊnd/",
+    "meaning": "地下的；非主流的",
+    "pos": "adj",
+    "difficulty": 3,
+    "example": "She discovered that underground band years before they became famous.",
+    "exampleZh": "她在那個地下樂團成名之前好幾年就發現了他們。"
+  },
+  {
+    "word": "literally",
+    "phonetic": "/ˈlɪtərəli/",
+    "meaning": "真的；不誇張地",
+    "pos": "adv",
+    "difficulty": 3,
+    "example": "I am literally dying of laughter right now watching this video.",
+    "exampleZh": "我現在看這支影片真的笑死了，不誇張。"
+  },
+  {
+    "word": "basically",
+    "phonetic": "/ˈbeɪsɪkli/",
+    "meaning": "基本上；簡單來說",
+    "pos": "adv",
+    "difficulty": 3,
+    "example": "She basically told me she does not want to be friends anymore.",
+    "exampleZh": "她基本上告訴我她不想再做朋友了。"
+  },
+  {
+    "word": "honestly",
+    "phonetic": "/ˈɑːnɪstli/",
+    "meaning": "老實說；說真的",
+    "pos": "adv",
+    "difficulty": 2,
+    "example": "Honestly I do not care what other people think about my choices.",
+    "exampleZh": "老實說，我不在乎別人怎麼看我的選擇。"
+  },
+  {
+    "word": "apparently",
+    "phonetic": "/əˈpærəntli/",
+    "meaning": "聽說；顯然",
+    "pos": "adv",
+    "difficulty": 3,
+    "example": "Apparently they broke up last week but nobody told me.",
+    "exampleZh": "聽說他們上週分手了，但沒人告訴我。"
+  },
+  {
+    "word": "vibe",
+    "phonetic": "/vaɪb/",
+    "meaning": "氛圍；感覺",
+    "pos": "n",
+    "difficulty": 1,
+    "example": "This cafe has such a cozy vibe with the warm lights and music.",
+    "exampleZh": "這家咖啡館有著溫暖的燈光和音樂，氛圍超舒適。"
+  },
+  {
+    "word": "chill",
+    "phonetic": "/tʃɪl/",
+    "meaning": "放鬆；淡定的",
+    "pos": "adj",
+    "difficulty": 1,
+    "example": "Let us just chill at home tonight and watch a movie.",
+    "exampleZh": "我們今晚就待在家放鬆看部電影吧。"
+  },
+  {
+    "word": "cringe",
+    "phonetic": "/krɪndʒ/",
+    "meaning": "令人尷尬的；超丟臉的",
+    "pos": "adj",
+    "difficulty": 2,
+    "example": "That old video of me singing at the party is so cringe.",
+    "exampleZh": "那支我在派對上唱歌的舊影片超尷尬的。"
+  },
+  {
+    "word": "savage",
+    "phonetic": "/ˈsævɪdʒ/",
+    "meaning": "嗆辣的；毫不留情的",
+    "pos": "adj",
+    "difficulty": 2,
+    "example": "Her comeback was absolutely savage and left everyone speechless.",
+    "exampleZh": "她的反擊超級嗆辣，讓所有人都說不出話來。"
+  },
+  {
+    "word": "flex",
+    "phonetic": "/flɛks/",
+    "meaning": "炫耀；秀出來",
+    "pos": "v",
+    "difficulty": 1,
+    "example": "He is always flexing his new sneakers on social media.",
+    "exampleZh": "他總是在社群媒體上炫耀他的新球鞋。"
+  },
+  {
+    "word": "lowkey",
+    "phonetic": "/ˈloʊˌkiː/",
+    "meaning": "低調地；偷偷地",
+    "pos": "adv",
+    "difficulty": 2,
+    "example": "I lowkey want to skip the party and stay in bed.",
+    "exampleZh": "我其實很想偷偷不去那個派對，就待在床上。"
+  },
+  {
+    "word": "highkey",
+    "phonetic": "/ˈhaɪˌkiː/",
+    "meaning": "超級；毫不掩飾地",
+    "pos": "adv",
+    "difficulty": 2,
+    "example": "I am highkey obsessed with that new restaurant on Main Street.",
+    "exampleZh": "我超級迷那家大街上的新餐廳，完全不掩飾。"
+  },
+  {
+    "word": "YOLO",
+    "phonetic": "/ˈjoʊloʊ/",
+    "meaning": "人生只有一次",
+    "pos": "phr",
+    "difficulty": 1,
+    "example": "She booked a spontaneous trip to Japan because YOLO right?",
+    "exampleZh": "她臨時訂了去日本的行程，因為人生只有一次，對吧？"
+  },
+  {
+    "word": "hype",
+    "phonetic": "/haɪp/",
+    "meaning": "炒作；大肆宣傳",
+    "pos": "n",
+    "difficulty": 1,
+    "example": "The hype around that movie was huge but it turned out average.",
+    "exampleZh": "那部電影的宣傳炒作非常大，但成片卻平淡無奇。"
+  },
+  {
+    "word": "troll",
+    "phonetic": "/troʊl/",
+    "meaning": "網路酸民；故意搗亂的人",
+    "pos": "n",
+    "difficulty": 1,
+    "example": "Just ignore the trolls in the comments section and move on.",
+    "exampleZh": "忽略留言區的網路酸民，繼續往前走就好。"
+  },
+  {
+    "word": "photobomb",
+    "phonetic": "/ˈfoʊtoʊˌbɑːm/",
+    "meaning": "亂入照片；搶鏡",
+    "pos": "v",
+    "difficulty": 3,
+    "example": "A random stranger photobombed our group picture at the park.",
+    "exampleZh": "一個陌生人亂入了我們在公園拍的大合照。"
+  },
+  {
+    "word": "foodie",
+    "phonetic": "/ˈfuːdi/",
+    "meaning": "美食愛好者；吃貨",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "She is such a foodie that she photographs every meal she eats.",
+    "exampleZh": "她是個超級吃貨，每一餐都要拍照記錄。"
+  },
+  {
+    "word": "workaholic",
+    "phonetic": "/ˌwɜːrkəˈhɑːlɪk/",
+    "meaning": "工作狂",
+    "pos": "n",
+    "difficulty": 3,
+    "example": "My boss is a total workaholic who never takes a day off.",
+    "exampleZh": "我的老闆是個十足的工作狂，從來不請假。"
+  },
+  {
+    "word": "shopaholic",
+    "phonetic": "/ˌʃɑːpəˈhɑːlɪk/",
+    "meaning": "購物狂",
+    "pos": "n",
+    "difficulty": 3,
+    "example": "She admits she is a shopaholic and her closet proves it.",
+    "exampleZh": "她承認自己是購物狂，她的衣櫃就是最好的證明。"
+  },
+  {
+    "word": "bummer",
+    "phonetic": "/ˈbʌmər/",
+    "meaning": "掃興的事；令人失望的事",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "It was a real bummer that the concert got canceled last minute.",
+    "exampleZh": "演唱會在最後一刻取消真是太掃興了。"
+  },
+  {
+    "word": "sketchy",
+    "phonetic": "/ˈskɛtʃi/",
+    "meaning": "粗略的；令人懷疑的",
+    "pos": "adj",
+    "difficulty": 2,
+    "example": "That alley looks really sketchy so let us take another route.",
+    "exampleZh": "那條巷子看起來很可疑，我們走另一條路吧。"
+  },
+  {
+    "word": "shady",
+    "phonetic": "/ˈʃeɪdi/",
+    "meaning": "可疑的；陰暗的",
+    "pos": "adj",
+    "difficulty": 1,
+    "example": "That deal sounds pretty shady; I would not trust that website.",
+    "exampleZh": "那筆交易聽起來很不正當，我不會相信那個網站。"
+  },
+  {
+    "word": "legit",
+    "phonetic": "/ləˈdʒɪt/",
+    "meaning": "正當的；真的 (口語)",
+    "pos": "adj",
+    "difficulty": 1,
+    "example": "Is this website legit or is it going to steal my credit card info?",
+    "exampleZh": "這個網站是正規的嗎，還是會盜取我的信用卡資料？"
+  },
+  {
+    "word": "salty",
+    "phonetic": "/ˈsɔːlti/",
+    "meaning": "氣噗噗的；不爽的",
+    "pos": "adj",
+    "difficulty": 1,
+    "example": "He is still salty about losing that basketball game last week.",
+    "exampleZh": "他對上週輸掉那場籃球賽還是氣噗噗的。"
+  },
+  {
+    "word": "slay",
+    "phonetic": "/sleɪ/",
+    "meaning": "超讚；帥翻了",
+    "pos": "v",
+    "difficulty": 1,
+    "example": "She absolutely slayed in that red dress at the party last night.",
+    "exampleZh": "她昨晚穿著那件紅色洋裝出席派對，完全帥翻了。"
+  },
+  {
+    "word": "sus",
+    "phonetic": "/sʌs/",
+    "meaning": "可疑的 (流行語)",
+    "pos": "adj",
+    "difficulty": 1,
+    "example": "The way he avoided the question was really sus if you ask me.",
+    "exampleZh": "他迴避那個問題的方式在我看來真的很有鬼。"
+  },
+  {
+    "word": "facepalm",
+    "phonetic": "/ˈfeɪsˌpɑːm/",
+    "meaning": "摀臉；無言以對",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "That was such a facepalm moment when he called her the wrong name.",
+    "exampleZh": "他叫錯她名字的那一刻真是讓人無言，只想摀臉。"
+  },
+  {
+    "word": "rant",
+    "phonetic": "/rænt/",
+    "meaning": "抱怨；碎碎念",
+    "pos": "v",
+    "difficulty": 1,
+    "example": "She went on a rant about how terrible the customer service was.",
+    "exampleZh": "她滔滔不絕地抱怨那裡的客服有多糟糕。"
+  },
+  {
+    "word": "roast",
+    "phonetic": "/roʊst/",
+    "meaning": "吐槽；狠狠嘲笑",
+    "pos": "v",
+    "difficulty": 1,
+    "example": "My friends love to roast me about my terrible cooking skills.",
+    "exampleZh": "我的朋友們超愛吐槽我糟糕的廚藝。"
+  },
+  {
+    "word": "throwback",
+    "phonetic": "/ˈθroʊˌbæk/",
+    "meaning": "回顧；懷舊的東西",
+    "pos": "n",
+    "difficulty": 3,
+    "example": "She posted a throwback photo from her college days on Instagram.",
+    "exampleZh": "她在Instagram上貼出一張大學時代的懷舊老照片。"
+  },
+  {
+    "word": "unfollow",
+    "phonetic": "/ˌʌnˈfɑːloʊ/",
+    "meaning": "取消追蹤",
+    "pos": "v",
+    "difficulty": 2,
+    "example": "I had to unfollow him because his posts were super annoying.",
+    "exampleZh": "我不得不取消追蹤他，因為他的貼文超煩人。"
+  },
+  {
+    "word": "DM",
+    "phonetic": "/ˌdiːˈɛm/",
+    "meaning": "私訊",
+    "pos": "n",
+    "difficulty": 1,
+    "example": "She slid into his DMs and they have been talking ever since.",
+    "exampleZh": "她悄悄傳私訊給他，從那之後他們就一直保持聯繫。"
+  },
+  {
+    "word": "filter",
+    "phonetic": "/ˈfɪltər/",
+    "meaning": "濾鏡",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "She uses so many filters that she looks completely different in person.",
+    "exampleZh": "她用了太多濾鏡，本人看起來和照片完全不同。"
+  },
+  {
+    "word": "scroll",
+    "phonetic": "/skroʊl/",
+    "meaning": "滑手機；捲動瀏覽",
+    "pos": "v",
+    "difficulty": 2,
+    "example": "I wasted two hours scrolling through social media before bed again.",
+    "exampleZh": "我睡前又浪費了兩個小時滑社群媒體。"
+  },
+  {
+    "word": "relatable",
+    "phonetic": "/rɪˈleɪtəbl/",
+    "meaning": "有共鳴的；感同身受的",
+    "pos": "adj",
+    "difficulty": 3,
+    "example": "That tweet about hating Monday mornings is so relatable to everyone.",
+    "exampleZh": "那則關於討厭星期一早上的推文，讓每個人都深有共鳴。"
+  },
+  {
+    "word": "wholesome",
+    "phonetic": "/ˈhoʊlsəm/",
+    "meaning": "暖心的；正能量的",
+    "pos": "adj",
+    "difficulty": 3,
+    "example": "That video of the grandpa learning to dance is so wholesome.",
+    "exampleZh": "那支阿公學跳舞的影片真的超暖心。"
+  },
+  {
+    "word": "iconic",
+    "phonetic": "/aɪˈkɑːnɪk/",
+    "meaning": "經典的；指標性的",
+    "pos": "adj",
+    "difficulty": 2,
+    "example": "That scene from the movie has become truly iconic in pop culture.",
+    "exampleZh": "電影中的那個場景已經成為流行文化中真正的經典。"
+  },
+  {
+    "word": "extra",
+    "phonetic": "/ˈɛkstrə/",
+    "meaning": "浮誇的；太超過的",
+    "pos": "adj",
+    "difficulty": 1,
+    "example": "She is so extra that she wore a ball gown to a casual dinner.",
+    "exampleZh": "她真的太誇張了，去一般的晚餐聚會居然穿了禮服。"
+  },
+  {
+    "word": "mood",
+    "phonetic": "/muːd/",
+    "meaning": "超有感；完全就是我的心情",
+    "pos": "n",
+    "difficulty": 1,
+    "example": "That cat sleeping on the keyboard is such a mood on Mondays.",
+    "exampleZh": "那隻睡在鍵盤上的貓完全就是我星期一的心情寫照。"
+  },
+  {
+    "word": "GOAT",
+    "phonetic": "/ɡoʊt/",
+    "meaning": "史上最強；最佳（Greatest Of All Time）",
+    "pos": "n",
+    "difficulty": 1,
+    "example": "Many fans consider him the GOAT of basketball with six championships.",
+    "exampleZh": "許多球迷認為他以六座冠軍獎盃成為籃球史上最強球員。"
+  },
+  {
+    "word": "ghosted",
+    "phonetic": "/ˈɡoʊstɪd/",
+    "meaning": "被已讀不回；被消失",
+    "pos": "v",
+    "difficulty": 2,
+    "example": "He ghosted me after three great dates and I never heard from him.",
+    "exampleZh": "三次美好的約會之後他就消失不見了，我再也沒收到他的消息。"
+  },
+  {
+    "word": "cockpit",
+    "phonetic": "/ˈkɒkpɪt/",
+    "meaning": "駕駛艙",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "The pilot invited the children to see the cockpit after landing.",
+    "exampleZh": "飛行員邀請孩子們在降落後參觀駕駛艙。"
+  },
+  {
+    "word": "pilgrim",
+    "phonetic": "/ˈpɪlɡrɪm/",
+    "meaning": "朝聖者",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "Thousands of pilgrims travel to Mecca every year.",
+    "exampleZh": "每年有數千名朝聖者前往麥加。"
+  },
+  {
+    "word": "roam",
+    "phonetic": "/roʊm/",
+    "meaning": "漫遊",
+    "pos": "v",
+    "difficulty": 1,
+    "example": "They roamed the countryside on their bicycles.",
+    "exampleZh": "他們騎著腳踏車在鄉間漫遊。"
+  },
+  {
+    "word": "interpreter",
+    "phonetic": "/ɪnˈtɜːrprɪtər/",
+    "meaning": "口譯員",
+    "pos": "n",
+    "difficulty": 3,
+    "example": "We hired an interpreter to help us communicate with the locals.",
+    "exampleZh": "我們雇了一位口譯員來幫助我們與當地人溝通。"
+  },
+  {
+    "word": "exclaim",
+    "phonetic": "/ɪkˈskleɪm/",
+    "meaning": "驚呼",
+    "pos": "v",
+    "difficulty": 2,
+    "example": "She exclaimed with delight when she saw the ocean view from the room.",
+    "exampleZh": "當她看到房間的海景時，她驚喜地驚呼。"
+  },
+  {
+    "word": "stranded",
+    "phonetic": "/ˈstrændɪd/",
+    "meaning": "受困的",
+    "pos": "adj",
+    "difficulty": 2,
+    "example": "We were stranded at the airport when our flight was canceled.",
+    "exampleZh": "我們的航班被取消後，我們受困在機場。"
+  },
+  {
+    "word": "aboard",
+    "phonetic": "/əˈbɔːrd/",
+    "meaning": "在船（飛機）上",
+    "pos": "adv",
+    "difficulty": 2,
+    "example": "Welcome aboard flight 302 to London.",
+    "exampleZh": "歡迎登上飛往倫敦的三零二號航班。"
+  },
+  {
+    "word": "seasick",
+    "phonetic": "/ˈsiːsɪk/",
+    "meaning": "暈船的",
+    "pos": "adj",
+    "difficulty": 2,
+    "example": "Many passengers felt seasick during the rough crossing.",
+    "exampleZh": "許多乘客在顛簸的航程中感到暈船。"
+  },
+  {
+    "word": "lifeboat",
+    "phonetic": "/ˈlaɪfboʊt/",
+    "meaning": "救生艇",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "The crew demonstrated how to use the lifeboats in an emergency.",
+    "exampleZh": "船員示範了緊急情況下如何使用救生艇。"
+  },
+  {
+    "word": "steward",
+    "phonetic": "/ˈstuːərd/",
+    "meaning": "服務員；空服員",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "The steward served drinks during the flight.",
+    "exampleZh": "空服員在飛行途中提供飲料。"
+  },
+  {
+    "word": "compass",
+    "phonetic": "/ˈkʌmpəs/",
+    "meaning": "指南針",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "He used a compass to find the right direction in the forest.",
+    "exampleZh": "他在森林裡用指南針找到正確的方向。"
+  },
+  {
+    "word": "lodging",
+    "phonetic": "/ˈlɒdʒɪŋ/",
+    "meaning": "住宿",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "We found affordable lodging near the train station.",
+    "exampleZh": "我們在火車站附近找到了平價的住宿。"
+  },
+  {
+    "word": "surpass",
+    "phonetic": "/sərˈpæs/",
+    "meaning": "勝過；超過",
+    "pos": "v",
+    "difficulty": 2,
+    "example": "The beauty of the landscape surpassed our expectations.",
+    "exampleZh": "風景之美超越了我們的期望。"
+  },
+  {
+    "word": "futon",
+    "phonetic": "/ˈfjuːtɒn/",
+    "meaning": "日式床墊",
+    "pos": "n",
+    "difficulty": 1,
+    "example": "The hostel provided a futon for each guest.",
+    "exampleZh": "青年旅舍為每位客人提供一張日式床墊。"
+  },
+  {
+    "word": "curbside",
+    "phonetic": "/ˈkɜːrbsaɪd/",
+    "meaning": "路邊取貨的",
+    "pos": "adj",
+    "difficulty": 2,
+    "example": "The restaurant offers curbside pickup for online orders.",
+    "exampleZh": "這家餐廳提供線上訂單路邊取餐服務。"
+  },
+  {
+    "word": "sleeper",
+    "phonetic": "/ˈsliːpər/",
+    "meaning": "臥鋪車廂",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "We booked a sleeper car for the overnight train journey.",
+    "exampleZh": "我們預訂了臥鋪車廂來搭乘夜間火車。"
+  },
+  {
+    "word": "propeller",
+    "phonetic": "/prəˈpɛlər/",
+    "meaning": "螺旋槳",
+    "pos": "n",
+    "difficulty": 3,
+    "example": "The small aircraft had a single propeller on its nose.",
+    "exampleZh": "這架小飛機的機頭有一個螺旋槳。"
+  },
+  {
+    "word": "canteen",
+    "phonetic": "/kænˈtiːn/",
+    "meaning": "水壺；餐廳",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "He filled his canteen with water before the hike.",
+    "exampleZh": "他在健行前把水壺裝滿水。"
+  },
+  {
+    "word": "hammock",
+    "phonetic": "/ˈhæmək/",
+    "meaning": "吊床",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "She relaxed in a hammock between two palm trees at the resort.",
+    "exampleZh": "她在度假村兩棵棕櫚樹之間的吊床上放鬆。"
+  },
+  {
+    "word": "hem",
+    "phonetic": "/hɛm/",
+    "meaning": "褲腳；衣邊",
+    "pos": "n",
+    "difficulty": 1,
+    "example": "The tailor shortened the hem of my trousers.",
+    "exampleZh": "裁縫師把我的褲腳改短了。"
+  },
+  {
+    "word": "stitch",
+    "phonetic": "/stɪtʃ/",
+    "meaning": "針腳；縫紉",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "The dress had beautiful hand-sewn stitches along the collar.",
+    "exampleZh": "這件洋裝的領子上有漂亮的手工針腳。"
+  },
+  {
+    "word": "tailor",
+    "phonetic": "/ˈteɪlər/",
+    "meaning": "裁縫師",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "I had the suit adjusted by a professional tailor.",
+    "exampleZh": "我請專業裁縫師調整了這套西裝。"
+  },
+  {
+    "word": "refurbished",
+    "phonetic": "/riːˈfɜːrbɪʃt/",
+    "meaning": "翻新的",
+    "pos": "adj",
+    "difficulty": 3,
+    "example": "I bought a refurbished laptop at half the original price.",
+    "exampleZh": "我用原價的一半買了一台翻新的筆電。"
+  },
+  {
+    "word": "adapter",
+    "phonetic": "/əˈdæptər/",
+    "meaning": "轉接器",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "You need a power adapter when traveling to Europe.",
+    "exampleZh": "去歐洲旅行時需要一個電源轉接器。"
+  },
+  {
+    "word": "expiry",
+    "phonetic": "/ɪkˈspaɪəri/",
+    "meaning": "到期日",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "Check the expiry date on the milk before buying it.",
+    "exampleZh": "購買牛奶前先檢查到期日。"
+  },
+  {
+    "word": "flagship",
+    "phonetic": "/ˈflæɡʃɪp/",
+    "meaning": "旗艦店；旗艦產品",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "They opened their flagship store in the city center.",
+    "exampleZh": "他們在市中心開設了旗艦店。"
+  },
+  {
+    "word": "showroom",
+    "phonetic": "/ˈʃoʊruːm/",
+    "meaning": "展示間",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "We visited the car showroom to test drive the new model.",
+    "exampleZh": "我們去了汽車展示間試駕新車型。"
+  },
+  {
+    "word": "overstock",
+    "phonetic": "/ˈoʊvərstɒk/",
+    "meaning": "庫存過剩",
+    "pos": "n",
+    "difficulty": 3,
+    "example": "The overstock items were sold at deep discounts.",
+    "exampleZh": "庫存過剩的商品以大折扣出售。"
+  },
+  {
+    "word": "scalper",
+    "phonetic": "/ˈskælpər/",
+    "meaning": "黃牛",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "Scalpers sold concert tickets at three times the original price.",
+    "exampleZh": "黃牛以原價三倍的價格販售演唱會門票。"
+  },
+  {
+    "word": "resale",
+    "phonetic": "/ˈriːseɪl/",
+    "meaning": "轉賣",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "The resale value of this car is still quite high.",
+    "exampleZh": "這輛車的轉賣價值仍然相當高。"
+  },
+  {
+    "word": "trinket",
+    "phonetic": "/ˈtrɪŋkɪt/",
+    "meaning": "小飾品；小玩意",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "She bought a few trinkets at the souvenir shop.",
+    "exampleZh": "她在紀念品店買了幾個小飾品。"
+  },
+  {
+    "word": "denim",
+    "phonetic": "/ˈdɛnɪm/",
+    "meaning": "牛仔布",
+    "pos": "n",
+    "difficulty": 1,
+    "example": "The jacket is made of high-quality denim.",
+    "exampleZh": "這件外套是用高品質的牛仔布製成的。"
+  },
+  {
+    "word": "polyester",
+    "phonetic": "/ˌpɒliˈɛstər/",
+    "meaning": "聚酯纖維",
+    "pos": "n",
+    "difficulty": 3,
+    "example": "This shirt is made of a cotton and polyester blend.",
+    "exampleZh": "這件襯衫是棉和聚酯纖維混紡的。"
+  },
+  {
+    "word": "velvet",
+    "phonetic": "/ˈvɛlvɪt/",
+    "meaning": "天鵝絨",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "The curtains were made of deep red velvet.",
+    "exampleZh": "窗簾是用深紅色天鵝絨做的。"
+  },
+  {
+    "word": "tuxedo",
+    "phonetic": "/tʌkˈsiːdoʊ/",
+    "meaning": "男士禮服",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "He rented a tuxedo for the formal event.",
+    "exampleZh": "他為正式場合租了一套男士禮服。"
+  },
+  {
+    "word": "lace",
+    "phonetic": "/leɪs/",
+    "meaning": "蕾絲",
+    "pos": "n",
+    "difficulty": 1,
+    "example": "The wedding dress was decorated with delicate lace.",
+    "exampleZh": "婚紗上裝飾著精緻的蕾絲。"
+  },
+  {
+    "word": "hailstorm",
+    "phonetic": "/ˈheɪlstɔːrm/",
+    "meaning": "冰雹",
+    "pos": "n",
+    "difficulty": 3,
+    "example": "The hailstorm damaged crops across the region.",
+    "exampleZh": "冰雹損壞了整個地區的農作物。"
+  },
+  {
+    "word": "eruption",
+    "phonetic": "/ɪˈrʌpʃən/",
+    "meaning": "火山爆發",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "The volcanic eruption forced thousands of people to evacuate.",
+    "exampleZh": "火山爆發迫使數千人撤離。"
+  },
+  {
+    "word": "lush",
+    "phonetic": "/lʌʃ/",
+    "meaning": "茂盛的",
+    "pos": "adj",
+    "difficulty": 1,
+    "example": "The lush green forest was full of exotic birds.",
+    "exampleZh": "茂盛的綠色森林裡滿是珍奇的鳥類。"
+  },
+  {
+    "word": "reservoir",
+    "phonetic": "/ˈrɛzərvwɑːr/",
+    "meaning": "水庫",
+    "pos": "n",
+    "difficulty": 3,
+    "example": "The reservoir supplies water to the entire city.",
+    "exampleZh": "水庫為整座城市供水。"
+  },
+  {
+    "word": "adolescent",
+    "phonetic": "/ˌædəˈlɛsənt/",
+    "meaning": "青少年",
+    "pos": "n",
+    "difficulty": 3,
+    "example": "Adolescents often struggle with peer pressure.",
+    "exampleZh": "青少年經常面對同儕壓力的困擾。"
+  },
+  {
+    "word": "punctuality",
+    "phonetic": "/ˌpʌŋktʃuˈæləti/",
+    "meaning": "守時",
+    "pos": "n",
+    "difficulty": 3,
+    "example": "Punctuality is considered important in Japanese culture.",
+    "exampleZh": "在日本文化中，守時被認為是很重要的。"
+  },
+  {
+    "word": "prolong",
+    "phonetic": "/prəˈlɔːŋ/",
+    "meaning": "延長",
+    "pos": "v",
+    "difficulty": 2,
+    "example": "They decided to prolong their vacation by two more days.",
+    "exampleZh": "他們決定把假期延長兩天。"
+  },
+  {
+    "word": "precede",
+    "phonetic": "/prɪˈsiːd/",
+    "meaning": "先於",
+    "pos": "v",
+    "difficulty": 2,
+    "example": "Thunder is usually preceded by a flash of lightning.",
+    "exampleZh": "雷聲之前通常會先出現閃電。"
+  },
+  {
+    "word": "insure",
+    "phonetic": "/ɪnˈʃʊr/",
+    "meaning": "投保",
+    "pos": "v",
+    "difficulty": 2,
+    "example": "You should insure your belongings before traveling.",
+    "exampleZh": "旅行前你應該為你的財物投保。"
+  },
+  {
+    "word": "perimeter",
+    "phonetic": "/pəˈrɪmɪtər/",
+    "meaning": "周長；邊界",
+    "pos": "n",
+    "difficulty": 3,
+    "example": "We measured the perimeter of the garden to order fencing.",
+    "exampleZh": "我們測量了花園的周長以訂購圍欄。"
+  },
+  {
+    "word": "carat",
+    "phonetic": "/ˈkærət/",
+    "meaning": "克拉",
+    "pos": "n",
+    "difficulty": 1,
+    "example": "She received a one-carat diamond engagement ring.",
+    "exampleZh": "她收到了一枚一克拉的鑽石訂婚戒指。"
+  },
+  {
+    "word": "tonne",
+    "phonetic": "/tʌn/",
+    "meaning": "公噸",
+    "pos": "n",
+    "difficulty": 1,
+    "example": "The ship can carry up to fifty thousand tonnes of cargo.",
+    "exampleZh": "這艘船可以運載多達五萬公噸的貨物。"
+  },
+  {
+    "word": "knot",
+    "phonetic": "/nɒt/",
+    "meaning": "節（速度單位）",
+    "pos": "n",
+    "difficulty": 1,
+    "example": "The ship was traveling at fifteen knots.",
+    "exampleZh": "這艘船以十五節的速度航行。"
+  },
+  {
+    "word": "bookkeeping",
+    "phonetic": "/ˈbʊkkiːpɪŋ/",
+    "meaning": "簿記",
+    "pos": "n",
+    "difficulty": 3,
+    "example": "Accurate bookkeeping is essential for any small business.",
+    "exampleZh": "準確的簿記對任何小型企業都很重要。"
+  },
+  {
+    "word": "backend",
+    "phonetic": "/ˈbækɛnd/",
+    "meaning": "後端",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "The backend handles data processing and storage.",
+    "exampleZh": "後端負責資料處理和儲存。"
+  },
+  {
+    "word": "frontend",
+    "phonetic": "/ˈfrʌntɛnd/",
+    "meaning": "前端",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "The frontend developer designed the user interface.",
+    "exampleZh": "前端開發人員設計了使用者介面。"
+  },
+  {
+    "word": "fullstack",
+    "phonetic": "/ˈfʊlstæk/",
+    "meaning": "全端",
+    "pos": "adj",
+    "difficulty": 3,
+    "example": "A fullstack developer can work on both frontend and backend.",
+    "exampleZh": "全端開發人員可以同時負責前端和後端的工作。"
+  },
+  {
+    "word": "syntax",
+    "phonetic": "/ˈsɪntæks/",
+    "meaning": "語法",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "The program crashed because of a syntax error.",
+    "exampleZh": "程式因為語法錯誤而當機了。"
+  },
+  {
+    "word": "boolean",
+    "phonetic": "/ˈbuːliən/",
+    "meaning": "布林值",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "A boolean variable can only be true or false.",
+    "exampleZh": "布林變數只能是真或假。"
+  },
+  {
+    "word": "array",
+    "phonetic": "/əˈreɪ/",
+    "meaning": "陣列",
+    "pos": "n",
+    "difficulty": 1,
+    "example": "The data is stored in an array of integers.",
+    "exampleZh": "資料儲存在一個整數陣列中。"
+  },
+  {
+    "word": "debugging",
+    "phonetic": "/diːˈbʌɡɪŋ/",
+    "meaning": "除錯程序 (名詞)",
+    "pos": "n",
+    "difficulty": 3,
+    "example": "Debugging took several hours because the bug was hard to find.",
+    "exampleZh": "除錯花了好幾個小時，因為這個錯誤很難找到。"
+  },
+  {
+    "word": "framework",
+    "phonetic": "/ˈfreɪmwɜːrk/",
+    "meaning": "框架",
+    "pos": "n",
+    "difficulty": 3,
+    "example": "React is a popular JavaScript framework for building web apps.",
+    "exampleZh": "React 是一個流行的 JavaScript 框架，用於建構網頁應用程式。"
+  },
+  {
+    "word": "stylesheet",
+    "phonetic": "/ˈstaɪlʃiːt/",
+    "meaning": "樣式表",
+    "pos": "n",
+    "difficulty": 3,
+    "example": "The stylesheet controls the colors and fonts of the website.",
+    "exampleZh": "樣式表控制網站的顏色和字型。"
+  },
+  {
+    "word": "tooltip",
+    "phonetic": "/ˈtuːltɪp/",
+    "meaning": "提示框",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "Hover over the icon to see the tooltip with more information.",
+    "exampleZh": "將游標移到圖示上方就能看到更多資訊的提示框。"
+  },
+  {
+    "word": "modal",
+    "phonetic": "/ˈmoʊdəl/",
+    "meaning": "互動視窗；語氣助詞",
+    "pos": "n",
+    "difficulty": 1,
+    "example": "A modal window appeared asking for confirmation before deleting.",
+    "exampleZh": "刪除前會跳出一個彈出視窗要求確認。"
+  },
+  {
+    "word": "navbar",
+    "phonetic": "/ˈnævbɑːr/",
+    "meaning": "導覽列",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "The navbar at the top contains links to all main pages.",
+    "exampleZh": "頂部的導覽列包含所有主要頁面的連結。"
+  },
+  {
+    "word": "endpoint",
+    "phonetic": "/ˈɛndpɔɪnt/",
+    "meaning": "端點",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "The API has several endpoints for different data types.",
+    "exampleZh": "這個 API 有好幾個端點，分別對應不同的資料類型。"
+  },
+  {
+    "word": "authentication",
+    "phonetic": "/ɔːˌθɛntɪˈkeɪʃən/",
+    "meaning": "身份驗證",
+    "pos": "n",
+    "difficulty": 4,
+    "example": "Two-factor authentication adds an extra layer of security.",
+    "exampleZh": "雙重身份驗證增加了額外的安全層。"
+  },
+  {
+    "word": "authorization",
+    "phonetic": "/ˌɔːθərɪˈzeɪʃən/",
+    "meaning": "授權書 (名詞)",
+    "pos": "n",
+    "difficulty": 4,
+    "example": "Only users with proper authorization can access this page.",
+    "exampleZh": "只有經過適當授權的使用者才能存取此頁面。"
+  },
+  {
+    "word": "inheritance",
+    "phonetic": "/ɪnˈhɛrɪtəns/",
+    "meaning": "繼承",
+    "pos": "n",
+    "difficulty": 3,
+    "example": "In object-oriented programming, inheritance lets child classes reuse parent code.",
+    "exampleZh": "在物件導向程式設計中，繼承讓子類別可以重複使用父類別的程式碼。"
+  },
+  {
+    "word": "responsive",
+    "phonetic": "/rɪˈspɒnsɪv/",
+    "meaning": "響應式的",
+    "pos": "adj",
+    "difficulty": 3,
+    "example": "A responsive website adjusts its layout to fit different screen sizes.",
+    "exampleZh": "響應式網站會調整版面以適應不同的螢幕尺寸。"
+  },
+  {
+    "word": "motherboard",
+    "phonetic": "/ˈmʌðərbɔːrd/",
+    "meaning": "主機板",
+    "pos": "n",
+    "difficulty": 3,
+    "example": "The motherboard connects all the components inside a computer.",
+    "exampleZh": "主機板連接電腦內部的所有元件。"
+  },
+  {
+    "word": "dataset",
+    "phonetic": "/ˈdeɪtəsɛt/",
+    "meaning": "資料集",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "The research team analyzed a large dataset of customer records.",
+    "exampleZh": "研究團隊分析了一大筆客戶記錄的資料集。"
+  },
+  {
+    "word": "hardcode",
+    "phonetic": "/ˈhɑːrdkoʊd/",
+    "meaning": "寫死（程式碼）",
+    "pos": "v",
+    "difficulty": 2,
+    "example": "Do not hardcode the password directly in the source code.",
+    "exampleZh": "不要把密碼直接寫死在原始碼中。"
+  },
+  {
+    "word": "changelog",
+    "phonetic": "/ˈtʃeɪndʒlɒɡ/",
+    "meaning": "更新日誌",
+    "pos": "n",
+    "difficulty": 3,
+    "example": "Check the changelog to see what features were added in this release.",
+    "exampleZh": "查看更新日誌來了解這個版本新增了哪些功能。"
+  },
+  {
+    "word": "tailwind",
+    "phonetic": "/ˈteɪlwɪnd/",
+    "meaning": "順風",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "The tailwind helped the plane arrive ahead of schedule.",
+    "exampleZh": "順風讓飛機提前抵達。"
+  },
+  {
+    "word": "headwind",
+    "phonetic": "/ˈhɛdwɪnd/",
+    "meaning": "逆風",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "A strong headwind slowed the ship down considerably.",
+    "exampleZh": "強烈的逆風使船速大幅降低。"
+  },
+  {
+    "word": "rucksack",
+    "phonetic": "/ˈrʌksæk/",
+    "meaning": "背包",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "He packed his rucksack with camping gear for the weekend.",
+    "exampleZh": "他把露營裝備塞進背包，準備度過週末。"
+  },
+  {
+    "word": "knapsack",
+    "phonetic": "/ˈnæpsæk/",
+    "meaning": "背包",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "She carried a small knapsack with snacks and a water bottle.",
+    "exampleZh": "她背著一個小背包，裡面裝了零食和水壺。"
+  },
+  {
+    "word": "duffel",
+    "phonetic": "/ˈdʌfəl/",
+    "meaning": "行李袋",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "He packed a duffel bag with clothes for the weekend trip.",
+    "exampleZh": "他把衣服裝進行李袋準備週末旅行。"
+  },
+  {
+    "word": "divider",
+    "phonetic": "/dɪˈvaɪdər/",
+    "meaning": "中央分隔帶",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "A concrete divider separates the two sides of the highway.",
+    "exampleZh": "一道水泥中央分隔帶將高速公路的兩側分開。"
+  },
+  {
+    "word": "flyover",
+    "phonetic": "/ˈflaɪoʊvər/",
+    "meaning": "天橋；高架橋",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "A new flyover was built to reduce traffic at the intersection.",
+    "exampleZh": "新建了一座天橋來減輕十字路口的交通。"
+  },
+  {
+    "word": "jaywalking",
+    "phonetic": "/ˈdʒeɪwɔːkɪŋ/",
+    "meaning": "不守交通規則過馬路",
+    "pos": "n",
+    "difficulty": 3,
+    "example": "Jaywalking is illegal in some cities and can result in a fine.",
+    "exampleZh": "在某些城市，不遵守交通規則過馬路是違法的，可能會被罰款。"
+  },
+  {
+    "word": "clerical",
+    "phonetic": "/ˈklɛrɪkəl/",
+    "meaning": "文書的；辦公室的",
+    "pos": "adj",
+    "difficulty": 2,
+    "example": "He handles all the clerical tasks like filing and data entry.",
+    "exampleZh": "他負責所有文書工作，如歸檔和資料輸入。"
+  },
+  {
+    "word": "cubbyhole",
+    "phonetic": "/ˈkʌbihoʊl/",
+    "meaning": "小置物格",
+    "pos": "n",
+    "difficulty": 3,
+    "example": "She keeps her personal items in a cubbyhole near her desk.",
+    "exampleZh": "她把個人物品放在辦公桌旁的小隔間裡。"
+  },
+  {
+    "word": "accountancy",
+    "phonetic": "/əˈkaʊntənsi/",
+    "meaning": "會計學；會計業",
+    "pos": "n",
+    "difficulty": 3,
+    "example": "She studied accountancy at university before joining the firm.",
+    "exampleZh": "她在加入公司之前在大學學習會計學。"
+  },
+  {
+    "word": "mediator",
+    "phonetic": "/ˈmiːdiˌeɪtər/",
+    "meaning": "調解人",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "The mediator helped the two departments reach an agreement.",
+    "exampleZh": "調解人幫助兩個部門達成協議。"
+  },
+  {
+    "word": "treasurer",
+    "phonetic": "/ˈtrɛʒərər/",
+    "meaning": "財務主管；出納員",
+    "pos": "n",
+    "difficulty": 3,
+    "example": "The treasurer presented the annual financial report to the board.",
+    "exampleZh": "財務主管向董事會報告年度財務報告。"
+  },
+  {
+    "word": "underperform",
+    "phonetic": "/ˌʌndərpərˈfɔːrm/",
+    "meaning": "表現不佳",
+    "pos": "v",
+    "difficulty": 4,
+    "example": "The sales team underperformed this quarter compared to last year.",
+    "exampleZh": "業務團隊本季度的表現不如去年。"
+  },
+  {
+    "word": "headhunter",
+    "phonetic": "/ˈhɛdˌhʌntər/",
+    "meaning": "獵才顧問",
+    "pos": "n",
+    "difficulty": 3,
+    "example": "A headhunter contacted her about a senior position at a rival company.",
+    "exampleZh": "一位獵才顧問聯繫她，告知對手公司有一個高階職位。"
+  },
+  {
+    "word": "taskmaster",
+    "phonetic": "/ˈtæskˌmæstər/",
+    "meaning": "嚴厲的監督者",
+    "pos": "n",
+    "difficulty": 3,
+    "example": "Our new manager is a real taskmaster who demands perfection.",
+    "exampleZh": "我們的新經理是個嚴厲的監督者，要求完美。"
+  },
+  {
+    "word": "micromanage",
+    "phonetic": "/ˈmaɪkroʊˌmænɪdʒ/",
+    "meaning": "事必躬親地管理",
+    "pos": "v",
+    "difficulty": 3,
+    "example": "Good leaders delegate instead of trying to micromanage every detail.",
+    "exampleZh": "好的領導者會授權而不是事必躬親地管理每個細節。"
+  },
+  {
+    "word": "telecommuter",
+    "phonetic": "/ˈtɛlɪkəˌmjuːtər/",
+    "meaning": "遠距工作者",
+    "pos": "n",
+    "difficulty": 4,
+    "example": "As a telecommuter, she rarely visits the office in person.",
+    "exampleZh": "作為遠距工作者，她很少親自到辦公室。"
+  },
+  {
+    "word": "paralegal",
+    "phonetic": "/ˌpærəˈliːɡəl/",
+    "meaning": "法律助理",
+    "pos": "n",
+    "difficulty": 3,
+    "example": "The paralegal prepared all the documents for the court case.",
+    "exampleZh": "法律助理準備了訴訟案件的所有文件。"
+  },
+  {
+    "word": "burnout",
+    "phonetic": "/ˈbɜːrnaʊt/",
+    "meaning": "職業倦怠",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "Working eighty hours a week eventually led to severe burnout.",
+    "exampleZh": "每週工作八十小時最終導致了嚴重的職業倦怠。"
+  },
+  {
+    "word": "apprentice",
+    "phonetic": "/əˈprentɪs/",
+    "meaning": "學徒；見習生",
+    "pos": "n",
+    "difficulty": 3,
+    "example": "The young carpenter started as an apprentice.",
+    "exampleZh": "年輕的木匠是從學徒開始的。",
+    "context": "指為學習技能而跟隨專家工作的人。"
+  },
+  {
+    "word": "probationary",
+    "phonetic": "/proʊˈbeɪʃəˌnɛri/",
+    "meaning": "試用期的",
+    "pos": "adj",
+    "difficulty": 4,
+    "example": "New employees must complete a probationary period of ninety days.",
+    "exampleZh": "新員工必須完成九十天的試用期。"
+  },
+  {
+    "word": "custodial",
+    "phonetic": "/kʌˈstoʊdiəl/",
+    "meaning": "保管的；清潔維護的",
+    "pos": "adj",
+    "difficulty": 3,
+    "example": "The custodial staff ensures the building is clean and safe.",
+    "exampleZh": "清潔維護人員確保大樓乾淨安全。"
+  },
+  {
+    "word": "mentorship",
+    "phonetic": "/ˈmɛntərˌʃɪp/",
+    "meaning": "師徒制度",
+    "pos": "n",
+    "difficulty": 3,
+    "example": "The mentorship program pairs new hires with experienced staff.",
+    "exampleZh": "師徒制度將新進員工與資深員工配對。"
+  },
+  {
+    "word": "commendation",
+    "phonetic": "/ˌkɑːmənˈdeɪʃən/",
+    "meaning": "嘉獎；表揚",
+    "pos": "n",
+    "difficulty": 4,
+    "example": "She received a commendation for her outstanding customer service.",
+    "exampleZh": "她因出色的客戶服務而獲得嘉獎。"
+  },
+  {
+    "word": "receptacle",
+    "phonetic": "/rɪˈsɛptəkəl/",
+    "meaning": "容器；插座",
+    "pos": "n",
+    "difficulty": 3,
+    "example": "Please place recyclable items in the designated receptacle.",
+    "exampleZh": "請將可回收物品放入指定的容器中。"
+  },
+  {
+    "word": "auditor",
+    "phonetic": "/ˈɔːdɪtər/",
+    "meaning": "審計員；稽核員",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "The external auditor found several discrepancies in the financial records.",
+    "exampleZh": "外部審計員在財務記錄中發現了幾處差異。"
+  },
+  {
+    "word": "cofounder",
+    "phonetic": "/koʊˈfaʊndər/",
+    "meaning": "共同創辦人",
+    "pos": "n",
+    "difficulty": 3,
+    "example": "The two cofounders started the company in a small garage.",
+    "exampleZh": "兩位共同創辦人在一個小車庫裡創辦了公司。"
+  },
+  {
+    "word": "absentee",
+    "phonetic": "/ˌæbsənˈtiː/",
+    "meaning": "缺席者",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "The absentee rate was high due to the flu season.",
+    "exampleZh": "由於流感季節，缺勤率很高。"
+  },
+  {
+    "word": "collarbone",
+    "phonetic": "/ˈkɑːlərˌboʊn/",
+    "meaning": "鎖骨",
+    "pos": "n",
+    "difficulty": 3,
+    "example": "The cyclist broke his collarbone in the crash.",
+    "exampleZh": "自行車手在車禍中摔斷了鎖骨。"
+  },
+  {
+    "word": "shin",
+    "phonetic": "/ʃɪn/",
+    "meaning": "脛骨；小腿前部",
+    "pos": "n",
+    "difficulty": 1,
+    "example": "She kicked the ball and got a bruise on her shin.",
+    "exampleZh": "她踢球後小腿前部瘀青了。"
+  },
+  {
+    "word": "tendon",
+    "phonetic": "/ˈtɛndən/",
+    "meaning": "肌腱",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "A torn tendon can take several months to fully heal.",
+    "exampleZh": "肌腱撕裂可能需要幾個月才能完全癒合。"
+  },
+  {
+    "word": "ligament",
+    "phonetic": "/ˈlɪɡəmənt/",
+    "meaning": "韌帶",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "He tore a ligament in his knee during the football match.",
+    "exampleZh": "他在足球比賽中撕裂了膝蓋的韌帶。"
+  },
+  {
+    "word": "physiotherapy",
+    "phonetic": "/ˌfɪzioʊˈθɛrəpi/",
+    "meaning": "物理治療",
+    "pos": "n",
+    "difficulty": 4,
+    "example": "After the surgery, he attended physiotherapy sessions twice a week.",
+    "exampleZh": "手術後，他每週參加兩次物理治療。"
+  },
+  {
+    "word": "dehydrate",
+    "phonetic": "/diːˈhaɪdreɪt/",
+    "meaning": "脫水",
+    "pos": "v",
+    "difficulty": 3,
+    "example": "You can dehydrate quickly if you exercise in hot weather without drinking water.",
+    "exampleZh": "如果在炎熱天氣下運動又不喝水，你會很快脫水。"
+  },
+  {
+    "word": "crutch",
+    "phonetic": "/krʌtʃ/",
+    "meaning": "拐杖",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "He walked on crutches for six weeks after breaking his leg.",
+    "exampleZh": "他摔斷腿後拄著拐杖走了六週。"
+  },
+  {
+    "word": "sling",
+    "phonetic": "/slɪŋ/",
+    "meaning": "吊帶；三角巾",
+    "pos": "n",
+    "difficulty": 1,
+    "example": "She wore a sling to support her injured arm.",
+    "exampleZh": "她戴著吊帶支撐受傷的手臂。"
+  },
+  {
+    "word": "sedative",
+    "phonetic": "/ˈsɛdətɪv/",
+    "meaning": "鎮靜劑",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "The doctor prescribed a mild sedative to help her sleep.",
+    "exampleZh": "醫生開了溫和的鎮靜劑幫助她入睡。"
+  },
+  {
+    "word": "pediatrician",
+    "phonetic": "/ˌpiːdiəˈtrɪʃən/",
+    "meaning": "小兒科醫師",
+    "pos": "n",
+    "difficulty": 4,
+    "example": "The pediatrician recommended the child get vaccinated before school starts.",
+    "exampleZh": "小兒科醫師建議孩子在開學前接種疫苗。"
+  },
+  {
+    "word": "dermatologist",
+    "phonetic": "/ˌdɜːrməˈtɑːlədʒɪst/",
+    "meaning": "皮膚科醫師",
+    "pos": "n",
+    "difficulty": 4,
+    "example": "She consulted a dermatologist about the spots on her skin.",
+    "exampleZh": "她就皮膚上的斑點諮詢了皮膚科醫師。"
+  },
+  {
+    "word": "cardiologist",
+    "phonetic": "/ˌkɑːrdiˈɑːlədʒɪst/",
+    "meaning": "心臟科醫師",
+    "pos": "n",
+    "difficulty": 4,
+    "example": "The cardiologist advised him to reduce his salt intake.",
+    "exampleZh": "心臟科醫師建議他減少鹽分攝取。"
+  },
+  {
+    "word": "abdomen",
+    "phonetic": "/ˈæbdəmən/",
+    "meaning": "腹部",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "The patient complained of sharp pain in the lower abdomen.",
+    "exampleZh": "病患抱怨下腹部有劇烈疼痛。"
+  },
+  {
+    "word": "adrenaline",
+    "phonetic": "/əˈdrɛnəlɪn/",
+    "meaning": "腎上腺素",
+    "pos": "n",
+    "difficulty": 3,
+    "example": "The rush of adrenaline made his heart beat faster.",
+    "exampleZh": "腎上腺素的衝擊讓他的心跳加速。"
+  },
+  {
+    "word": "antioxidant",
+    "phonetic": "/ˌæntiˈɑːksɪdənt/",
+    "meaning": "抗氧化劑",
+    "pos": "n",
+    "difficulty": 3,
+    "example": "Blueberries are rich in antioxidants that protect your cells.",
+    "exampleZh": "藍莓富含保護細胞的抗氧化劑。"
+  },
+  {
+    "word": "melatonin",
+    "phonetic": "/ˌmɛləˈtoʊnɪn/",
+    "meaning": "褪黑激素",
+    "pos": "n",
+    "difficulty": 3,
+    "example": "Melatonin supplements can help reset your sleep cycle.",
+    "exampleZh": "褪黑激素補充劑可以幫助重設你的睡眠週期。"
+  },
+  {
+    "word": "ibuprofen",
+    "phonetic": "/ˌaɪbjuːˈproʊfən/",
+    "meaning": "布洛芬（止痛藥）",
+    "pos": "n",
+    "difficulty": 3,
+    "example": "She took ibuprofen to relieve the headache.",
+    "exampleZh": "她吃了布洛芬來緩解頭痛。"
+  },
+  {
+    "word": "probiotic",
+    "phonetic": "/ˌproʊbaɪˈɒtɪk/",
+    "meaning": "益生菌",
+    "pos": "n",
+    "difficulty": 3,
+    "example": "Eating yogurt with probiotics supports gut health.",
+    "exampleZh": "吃含有益生菌的優格有助於腸道健康。"
+  }
 ];

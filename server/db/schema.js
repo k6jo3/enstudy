@@ -207,7 +207,47 @@ async function initSchema() {
     )
   `);
 
+  // One-time fix (2026-04-16): unpause any paused item with error records, reset score to 5.5
+  db.run(`
+    UPDATE word_mastery SET paused = 0, score = 5.5
+    WHERE paused = 1 AND EXISTS (
+      SELECT 1 FROM errors e
+      WHERE e.item_type = word_mastery.item_type AND e.item_id = word_mastery.item_id
+    )
+  `);
+
+  // Graded reading tables
+  db.run(`
+    CREATE TABLE IF NOT EXISTS graded_articles (
+      id INTEGER PRIMARY KEY AUTOINCREMENT,
+      grade INTEGER NOT NULL,
+      article_order INTEGER NOT NULL,
+      title TEXT NOT NULL,
+      topic TEXT NOT NULL,
+      content TEXT NOT NULL,
+      content_zh TEXT,
+      vocabulary TEXT,
+      phrases TEXT,
+      grammar TEXT,
+      questions TEXT,
+      UNIQUE(grade, article_order)
+    )
+  `);
+
+  db.run(`
+    CREATE TABLE IF NOT EXISTS graded_reading_log (
+      id INTEGER PRIMARY KEY AUTOINCREMENT,
+      article_id INTEGER NOT NULL UNIQUE,
+      completed_date TEXT,
+      completed INTEGER DEFAULT 0,
+      quiz_score INTEGER DEFAULT 0,
+      exercises_done TEXT
+    )
+  `);
+
   // Indexes
+  db.run('CREATE INDEX IF NOT EXISTS idx_graded_articles_grade ON graded_articles(grade, article_order)');
+  db.run('CREATE INDEX IF NOT EXISTS idx_graded_reading_log_article ON graded_reading_log(article_id)');
   db.run('CREATE INDEX IF NOT EXISTS idx_learning_log_date ON learning_log(learn_date)');
   db.run('CREATE INDEX IF NOT EXISTS idx_learning_log_item ON learning_log(item_type, item_id)');
   db.run('CREATE INDEX IF NOT EXISTS idx_errors_item ON errors(item_type, item_id)');

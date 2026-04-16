@@ -1,366 +1,2723 @@
-// words16.js — Lifestyle, Career, Health & Entertainment (350 words)
 module.exports = [
-  // ===== Workplace & Career (1-60) =====
-  { word: "intern", phonetic: "/ˈɪntɜːrn/", meaning: "實習生", pos: "n", difficulty: 1, example: "She started as an intern at the marketing firm last summer.", exampleZh: "她去年夏天在行銷公司開始擔任實習生。" },
-  { word: "clerical", phonetic: "/ˈklɛrɪkəl/", meaning: "文書的；辦公室的", pos: "adj", difficulty: 2, example: "He handles all the clerical tasks like filing and data entry.", exampleZh: "他負責所有文書工作，如歸檔和資料輸入。" },
-  { word: "cubbyhole", phonetic: "/ˈkʌbihoʊl/", meaning: "小隔間；小空間", pos: "n", difficulty: 2, example: "She keeps her personal items in a cubbyhole near her desk.", exampleZh: "她把個人物品放在辦公桌旁的小隔間裡。" },
-  { word: "photocopier", phonetic: "/ˈfoʊtoʊˌkɑːpiər/", meaning: "影印機", pos: "n", difficulty: 1, example: "The photocopier on the third floor is out of paper.", exampleZh: "三樓的影印機沒紙了。" },
-  { word: "swivel chair", phonetic: "/ˈswɪvəl tʃɛr/", meaning: "旋轉椅", pos: "n", difficulty: 1, example: "He leaned back in his swivel chair during the meeting.", exampleZh: "他在開會時靠在旋轉椅上。" },
-  { word: "accountancy", phonetic: "/əˈkaʊntənsi/", meaning: "會計學；會計業", pos: "n", difficulty: 2, example: "She studied accountancy at university before joining the firm.", exampleZh: "她在加入公司之前在大學學習會計學。" },
-  { word: "mediator", phonetic: "/ˈmiːdiˌeɪtər/", meaning: "調解人", pos: "n", difficulty: 2, example: "The mediator helped the two departments reach an agreement.", exampleZh: "調解人幫助兩個部門達成協議。" },
-  { word: "workmate", phonetic: "/ˈwɜːrkmeɪt/", meaning: "同事；工作夥伴", pos: "n", difficulty: 1, example: "My workmate and I always eat lunch together.", exampleZh: "我和同事總是一起吃午餐。" },
-  { word: "treasurer", phonetic: "/ˈtrɛʒərər/", meaning: "財務主管；出納員", pos: "n", difficulty: 2, example: "The treasurer presented the annual financial report to the board.", exampleZh: "財務主管向董事會報告年度財務報告。" },
-  { word: "stenographer", phonetic: "/stəˈnɑːɡrəfər/", meaning: "速記員", pos: "n", difficulty: 3, example: "A stenographer recorded every word spoken during the trial.", exampleZh: "速記員記錄了審判中說的每一個字。" },
-  { word: "cubicle partition", phonetic: "/ˈkjuːbɪkəl pɑːrˈtɪʃən/", meaning: "隔板", pos: "n", difficulty: 2, example: "They installed new cubicle partitions to give employees more privacy.", exampleZh: "他們安裝了新的隔板，讓員工有更多隱私。" },
-  { word: "memoranda", phonetic: "/ˌmɛməˈrændə/", meaning: "備忘錄（複數）", pos: "n", difficulty: 3, example: "Several memoranda were circulated before the policy change.", exampleZh: "在政策變更之前，已發送了幾份備忘錄。" },
-  { word: "underperform", phonetic: "/ˌʌndərpərˈfɔːrm/", meaning: "表現不佳", pos: "v", difficulty: 2, example: "The sales team underperformed this quarter compared to last year.", exampleZh: "業務團隊本季度的表現不如去年。" },
-  { word: "furlough", phonetic: "/ˈfɜːrloʊ/", meaning: "暫時休假；停薪留職", pos: "n", difficulty: 3, example: "Many employees were placed on furlough during the economic downturn.", exampleZh: "許多員工在經濟衰退期間被停薪留職。" },
-  { word: "headhunter", phonetic: "/ˈhɛdˌhʌntər/", meaning: "獵才顧問", pos: "n", difficulty: 2, example: "A headhunter contacted her about a senior position at a rival company.", exampleZh: "一位獵才顧問聯繫她，告知對手公司有一個高階職位。" },
-  { word: "logistics coordinator", phonetic: "/ləˈdʒɪstɪks koʊˈɔːrdɪneɪtər/", meaning: "物流協調員", pos: "n", difficulty: 2, example: "The logistics coordinator arranged all the shipments for the week.", exampleZh: "物流協調員安排了本週所有的出貨。" },
-  { word: "sabbatical", phonetic: "/səˈbætɪkəl/", meaning: "學術休假；長假", pos: "n", difficulty: 3, example: "The professor took a sabbatical to write her new book.", exampleZh: "教授休了學術假去寫她的新書。" },
-  { word: "taskmaster", phonetic: "/ˈtæskˌmæstər/", meaning: "嚴厲的監督者", pos: "n", difficulty: 2, example: "Our new manager is a real taskmaster who demands perfection.", exampleZh: "我們的新經理是個嚴厲的監督者，要求完美。" },
-  { word: "micromanage", phonetic: "/ˈmaɪkroʊˌmænɪdʒ/", meaning: "事必躬親地管理", pos: "v", difficulty: 2, example: "Good leaders delegate instead of trying to micromanage every detail.", exampleZh: "好的領導者會授權而不是事必躬親地管理每個細節。" },
-  { word: "telecommuter", phonetic: "/ˈtɛlɪkəˌmjuːtər/", meaning: "遠距工作者", pos: "n", difficulty: 2, example: "As a telecommuter, she rarely visits the office in person.", exampleZh: "作為遠距工作者，她很少親自到辦公室。" },
-  { word: "maternity leave", phonetic: "/məˈtɜːrnɪti liːv/", meaning: "產假", pos: "n", difficulty: 1, example: "She will be on maternity leave for the next three months.", exampleZh: "她接下來三個月將休產假。" },
-  { word: "paternity leave", phonetic: "/pəˈtɜːrnɪti liːv/", meaning: "陪產假", pos: "n", difficulty: 1, example: "The company now offers two weeks of paternity leave.", exampleZh: "公司現在提供兩週的陪產假。" },
-  { word: "ergonomics", phonetic: "/ˌɜːrɡəˈnɑːmɪks/", meaning: "人體工學", pos: "n", difficulty: 3, example: "The office redesign focused on ergonomics to reduce back pain.", exampleZh: "辦公室重新設計注重人體工學以減少背痛。" },
-  { word: "paralegal", phonetic: "/ˌpærəˈliːɡəl/", meaning: "法律助理", pos: "n", difficulty: 2, example: "The paralegal prepared all the documents for the court case.", exampleZh: "法律助理準備了訴訟案件的所有文件。" },
-  { word: "punctuality", phonetic: "/ˌpʌŋktʃuˈælɪti/", meaning: "守時", pos: "n", difficulty: 2, example: "Punctuality is highly valued in Japanese business culture.", exampleZh: "在日本的商業文化中，守時受到高度重視。" },
-  { word: "burnout", phonetic: "/ˈbɜːrnaʊt/", meaning: "職業倦怠", pos: "n", difficulty: 2, example: "Working eighty hours a week eventually led to severe burnout.", exampleZh: "每週工作八十小時最終導致了嚴重的職業倦怠。" },
-  { word: "apprentice", phonetic: "/əˈprɛntɪs/", meaning: "學徒", pos: "n", difficulty: 2, example: "He worked as an apprentice at the carpentry shop for two years.", exampleZh: "他在木工店當了兩年學徒。" },
-  { word: "probationary", phonetic: "/proʊˈbeɪʃəˌnɛri/", meaning: "試用期的", pos: "adj", difficulty: 2, example: "New employees must complete a probationary period of ninety days.", exampleZh: "新員工必須完成九十天的試用期。" },
-  { word: "janitor", phonetic: "/ˈdʒænɪtər/", meaning: "清潔工；管理員", pos: "n", difficulty: 1, example: "The janitor cleans the offices every evening after work hours.", exampleZh: "清潔工每天下班後清掃辦公室。" },
-  { word: "nepotism", phonetic: "/ˈnɛpəˌtɪzəm/", meaning: "裙帶關係；任人唯親", pos: "n", difficulty: 3, example: "The company was criticized for nepotism after hiring the CEO's nephew.", exampleZh: "公司在雇用執行長的姪子後被批評為裙帶關係。" },
-  { word: "pigeonhole", phonetic: "/ˈpɪdʒɪnˌhoʊl/", meaning: "把⋯歸類；信件格", pos: "v", difficulty: 3, example: "Don't pigeonhole her as just an assistant—she has many talents.", exampleZh: "不要只把她歸類為助理——她有很多才能。" },
-  { word: "repertoire", phonetic: "/ˈrɛpərˌtwɑːr/", meaning: "全部技能；節目單", pos: "n", difficulty: 3, example: "A good manager should have a wide repertoire of leadership skills.", exampleZh: "一個好的管理者應該具備廣泛的領導技能。" },
-  { word: "secretary", phonetic: "/ˈsɛkrəˌtɛri/", meaning: "秘書", pos: "n", difficulty: 1, example: "The secretary scheduled all the appointments for the director.", exampleZh: "秘書為主管安排了所有的約會。" },
-  { word: "custodial", phonetic: "/kʌˈstoʊdiəl/", meaning: "保管的；清潔維護的", pos: "adj", difficulty: 2, example: "The custodial staff ensures the building is clean and safe.", exampleZh: "清潔維護人員確保大樓乾淨安全。" },
-  { word: "overtime pay", phonetic: "/ˈoʊvərtaɪm peɪ/", meaning: "加班費", pos: "n", difficulty: 1, example: "Workers earn overtime pay for any hours beyond forty per week.", exampleZh: "員工每週超過四十小時的工作可獲得加班費。" },
-  { word: "embezzlement", phonetic: "/ɪmˈbɛzəlmənt/", meaning: "侵吞公款；挪用", pos: "n", difficulty: 3, example: "The accountant was arrested for embezzlement of company funds.", exampleZh: "會計師因侵吞公司資金而被逮捕。" },
-  { word: "multitasking", phonetic: "/ˌmʌltiˈtæskɪŋ/", meaning: "同時處理多項工作", pos: "n", difficulty: 1, example: "Multitasking can actually reduce your overall productivity.", exampleZh: "同時處理多項工作實際上可能降低你的整體生產力。" },
-  { word: "interviewee", phonetic: "/ˌɪntərvjuːˈiː/", meaning: "面試者；受訪者", pos: "n", difficulty: 1, example: "Each interviewee was given thirty minutes to present their ideas.", exampleZh: "每位面試者有三十分鐘來展示他們的想法。" },
-  { word: "attrition rate", phonetic: "/əˈtrɪʃən reɪt/", meaning: "流失率", pos: "n", difficulty: 3, example: "The high attrition rate suggests employees are unhappy with management.", exampleZh: "高流失率顯示員工對管理層不滿。" },
-  { word: "mentorship", phonetic: "/ˈmɛntərˌʃɪp/", meaning: "師徒制度", pos: "n", difficulty: 2, example: "The mentorship program pairs new hires with experienced staff.", exampleZh: "師徒制度將新進員工與資深員工配對。" },
-  { word: "carpooling", phonetic: "/ˈkɑːrˌpuːlɪŋ/", meaning: "共乘；拼車", pos: "n", difficulty: 1, example: "Carpooling to work saves money and reduces traffic congestion.", exampleZh: "共乘上班可以省錢並減少交通壅塞。" },
-  { word: "commendation", phonetic: "/ˌkɑːmənˈdeɪʃən/", meaning: "嘉獎；表揚", pos: "n", difficulty: 2, example: "She received a commendation for her outstanding customer service.", exampleZh: "她因出色的客戶服務而獲得嘉獎。" },
-  { word: "notary public", phonetic: "/ˈnoʊtəri ˈpʌblɪk/", meaning: "公證人", pos: "n", difficulty: 2, example: "You need a notary public to certify these legal documents.", exampleZh: "你需要一位公證人來認證這些法律文件。" },
-  { word: "receptacle", phonetic: "/rɪˈsɛptəkəl/", meaning: "容器；插座", pos: "n", difficulty: 2, example: "Please place recyclable items in the designated receptacle.", exampleZh: "請將可回收物品放入指定的容器中。" },
-  { word: "filing cabinet", phonetic: "/ˈfaɪlɪŋ ˈkæbɪnɪt/", meaning: "檔案櫃", pos: "n", difficulty: 1, example: "All employee records are stored in the filing cabinet.", exampleZh: "所有員工記錄都存放在檔案櫃中。" },
-  { word: "retainer fee", phonetic: "/rɪˈteɪnər fiː/", meaning: "聘用預付金", pos: "n", difficulty: 3, example: "The law firm charges a retainer fee before taking on new clients.", exampleZh: "律師事務所在接受新客戶前會收取聘用預付金。" },
-  { word: "comptroller", phonetic: "/kənˈtroʊlər/", meaning: "主計長；審計長", pos: "n", difficulty: 3, example: "The comptroller oversees all financial operations of the government agency.", exampleZh: "主計長監督政府機關的所有財務運作。" },
-  { word: "convocation", phonetic: "/ˌkɑːnvəˈkeɪʃən/", meaning: "召集大會；畢業典禮", pos: "n", difficulty: 3, example: "The annual convocation brings together members from all regional offices.", exampleZh: "年度召集大會集合了所有地區辦公室的成員。" },
-  { word: "adjunct", phonetic: "/ˈædʒʌŋkt/", meaning: "附屬的；兼任的", pos: "adj", difficulty: 3, example: "She works as an adjunct professor at the local university.", exampleZh: "她在當地大學擔任兼任教授。" },
-  { word: "auditor", phonetic: "/ˈɔːdɪtər/", meaning: "審計員；稽核員", pos: "n", difficulty: 2, example: "The external auditor found several discrepancies in the financial records.", exampleZh: "外部審計員在財務記錄中發現了幾處差異。" },
-  { word: "notarization", phonetic: "/ˌnoʊtərɪˈzeɪʃən/", meaning: "公證", pos: "n", difficulty: 3, example: "The contract requires notarization before it becomes legally binding.", exampleZh: "合約需要公證才具有法律效力。" },
-  { word: "watercooler", phonetic: "/ˈwɔːtərˌkuːlər/", meaning: "飲水機；閒聊場所", pos: "n", difficulty: 1, example: "Watercooler conversations often spark creative ideas at work.", exampleZh: "飲水機旁的閒聊經常在工作中激發創意。" },
-  { word: "cofounder", phonetic: "/koʊˈfaʊndər/", meaning: "共同創辦人", pos: "n", difficulty: 2, example: "The two cofounders started the company in a small garage.", exampleZh: "兩位共同創辦人在一個小車庫裡創辦了公司。" },
-  { word: "secondment", phonetic: "/sɪˈkɒndmənt/", meaning: "借調；臨時調派", pos: "n", difficulty: 3, example: "He was on secondment to the London office for six months.", exampleZh: "他被借調到倫敦辦公室六個月。" },
-  { word: "absentee", phonetic: "/ˌæbsənˈtiː/", meaning: "缺席者", pos: "n", difficulty: 2, example: "The absentee rate was high due to the flu season.", exampleZh: "由於流感季節，缺勤率很高。" },
-  { word: "grievance procedure", phonetic: "/ˈɡriːvəns prəˈsiːdʒər/", meaning: "申訴程序", pos: "n", difficulty: 2, example: "Employees can use the grievance procedure to report unfair treatment.", exampleZh: "員工可以使用申訴程序來舉報不公平待遇。" },
-  { word: "remunerate", phonetic: "/rɪˈmjuːnəˌreɪt/", meaning: "給予報酬", pos: "v", difficulty: 3, example: "Freelancers should be fairly remunerated for their specialized skills.", exampleZh: "自由工作者的專業技能應該得到合理的報酬。" },
-  { word: "blue-collar", phonetic: "/ˈbluːˌkɒlər/", meaning: "藍領的；勞動階級的", pos: "adj", difficulty: 1, example: "Many blue-collar workers earn a decent wage in the manufacturing sector.", exampleZh: "許多藍領工人在製造業賺取體面的薪資。" },
-  { word: "white-collar", phonetic: "/ˈwaɪtˌkɒlər/", meaning: "白領的；辦公室的", pos: "adj", difficulty: 1, example: "White-collar jobs typically involve working in an office environment.", exampleZh: "白領工作通常在辦公室環境中進行。" },
-  { word: "pink slip", phonetic: "/pɪŋk slɪp/", meaning: "解雇通知", pos: "n", difficulty: 2, example: "He received a pink slip after the company downsized.", exampleZh: "公司裁員後，他收到了解雇通知。" },
-
-  // ===== Health & Body (61-110) =====
-  { word: "elbow", phonetic: "/ˈɛlboʊ/", meaning: "手肘", pos: "n", difficulty: 1, example: "She bumped her elbow on the edge of the table.", exampleZh: "她的手肘撞到了桌子邊緣。" },
-  { word: "ankle", phonetic: "/ˈæŋkəl/", meaning: "腳踝", pos: "n", difficulty: 1, example: "He twisted his ankle while playing basketball.", exampleZh: "他打籃球時扭傷了腳踝。" },
-  { word: "wrist", phonetic: "/rɪst/", meaning: "手腕", pos: "n", difficulty: 1, example: "She wears a fitness tracker on her left wrist.", exampleZh: "她在左手腕上戴著健身追蹤器。" },
-  { word: "collarbone", phonetic: "/ˈkɑːlərˌboʊn/", meaning: "鎖骨", pos: "n", difficulty: 2, example: "The cyclist broke his collarbone in the crash.", exampleZh: "自行車手在車禍中摔斷了鎖骨。" },
-  { word: "shin", phonetic: "/ʃɪn/", meaning: "脛骨；小腿前部", pos: "n", difficulty: 2, example: "She kicked the ball and got a bruise on her shin.", exampleZh: "她踢球後小腿前部瘀青了。" },
-  { word: "tendon", phonetic: "/ˈtɛndən/", meaning: "肌腱", pos: "n", difficulty: 2, example: "A torn tendon can take several months to fully heal.", exampleZh: "肌腱撕裂可能需要幾個月才能完全癒合。" },
-  { word: "ligament", phonetic: "/ˈlɪɡəmənt/", meaning: "韌帶", pos: "n", difficulty: 2, example: "He tore a ligament in his knee during the football match.", exampleZh: "他在足球比賽中撕裂了膝蓋的韌帶。" },
-  { word: "cartilage", phonetic: "/ˈkɑːrtɪlɪdʒ/", meaning: "軟骨", pos: "n", difficulty: 3, example: "Years of running wore down the cartilage in her knees.", exampleZh: "多年的跑步磨損了她膝蓋的軟骨。" },
-  { word: "vertebra", phonetic: "/ˈvɜːrtɪbrə/", meaning: "脊椎骨", pos: "n", difficulty: 3, example: "The X-ray showed a fracture in the lower vertebra.", exampleZh: "X光顯示下方脊椎骨有骨折。" },
-  { word: "treadmill", phonetic: "/ˈtrɛdˌmɪl/", meaning: "跑步機", pos: "n", difficulty: 1, example: "He runs on the treadmill for thirty minutes every morning.", exampleZh: "他每天早上在跑步機上跑三十分鐘。" },
-  { word: "dumbbell", phonetic: "/ˈdʌmˌbɛl/", meaning: "啞鈴", pos: "n", difficulty: 1, example: "She uses five-kilogram dumbbells for her arm exercises.", exampleZh: "她用五公斤的啞鈴做手臂運動。" },
-  { word: "physiotherapy", phonetic: "/ˌfɪzioʊˈθɛrəpi/", meaning: "物理治療", pos: "n", difficulty: 2, example: "After the surgery, he attended physiotherapy sessions twice a week.", exampleZh: "手術後，他每週參加兩次物理治療。" },
-  { word: "chiropractor", phonetic: "/ˈkaɪroʊˌpræktər/", meaning: "脊椎治療師", pos: "n", difficulty: 3, example: "She visits a chiropractor regularly for her back pain.", exampleZh: "她定期看脊椎治療師治療背痛。" },
-  { word: "dehydrate", phonetic: "/diːˈhaɪdreɪt/", meaning: "脫水", pos: "v", difficulty: 2, example: "You can dehydrate quickly if you exercise in hot weather without drinking water.", exampleZh: "如果在炎熱天氣下運動又不喝水，你會很快脫水。" },
-  { word: "hemorrhage", phonetic: "/ˈhɛmərɪdʒ/", meaning: "大出血", pos: "n", difficulty: 3, example: "The doctors acted quickly to stop the internal hemorrhage.", exampleZh: "醫生迅速行動以止住內部大出血。" },
-  { word: "blister", phonetic: "/ˈblɪstər/", meaning: "水泡", pos: "n", difficulty: 1, example: "New shoes gave her a painful blister on her heel.", exampleZh: "新鞋讓她的腳後跟起了痛苦的水泡。" },
-  { word: "rash", phonetic: "/ræʃ/", meaning: "皮疹", pos: "n", difficulty: 1, example: "The baby developed a rash after eating strawberries.", exampleZh: "寶寶吃了草莓後起了皮疹。" },
-  { word: "stitches", phonetic: "/ˈstɪtʃɪz/", meaning: "縫針；縫合", pos: "n", difficulty: 1, example: "The cut was deep enough to need twelve stitches.", exampleZh: "傷口深到需要縫十二針。" },
-  { word: "crutch", phonetic: "/krʌtʃ/", meaning: "拐杖", pos: "n", difficulty: 2, example: "He walked on crutches for six weeks after breaking his leg.", exampleZh: "他摔斷腿後拄著拐杖走了六週。" },
-  { word: "sling", phonetic: "/slɪŋ/", meaning: "吊帶；三角巾", pos: "n", difficulty: 2, example: "She wore a sling to support her injured arm.", exampleZh: "她戴著吊帶支撐受傷的手臂。" },
-  { word: "sedative", phonetic: "/ˈsɛdətɪv/", meaning: "鎮靜劑", pos: "n", difficulty: 2, example: "The doctor prescribed a mild sedative to help her sleep.", exampleZh: "醫生開了溫和的鎮靜劑幫助她入睡。" },
-  { word: "tourniquet", phonetic: "/ˈtɜːrnɪkɪt/", meaning: "止血帶", pos: "n", difficulty: 3, example: "Apply a tourniquet above the wound to stop the bleeding.", exampleZh: "在傷口上方綁止血帶以止血。" },
-  { word: "pediatrician", phonetic: "/ˌpiːdiəˈtrɪʃən/", meaning: "小兒科醫師", pos: "n", difficulty: 2, example: "The pediatrician recommended the child get vaccinated before school starts.", exampleZh: "小兒科醫師建議孩子在開學前接種疫苗。" },
-  { word: "dermatologist", phonetic: "/ˌdɜːrməˈtɑːlədʒɪst/", meaning: "皮膚科醫師", pos: "n", difficulty: 2, example: "She consulted a dermatologist about the spots on her skin.", exampleZh: "她就皮膚上的斑點諮詢了皮膚科醫師。" },
-  { word: "cardiologist", phonetic: "/ˌkɑːrdiˈɑːlədʒɪst/", meaning: "心臟科醫師", pos: "n", difficulty: 2, example: "The cardiologist advised him to reduce his salt intake.", exampleZh: "心臟科醫師建議他減少鹽分攝取。" },
-  { word: "ophthalmologist", phonetic: "/ˌɑːfθælˈmɑːlədʒɪst/", meaning: "眼科醫師", pos: "n", difficulty: 3, example: "She sees an ophthalmologist once a year for an eye exam.", exampleZh: "她每年看一次眼科醫師做眼睛檢查。" },
-  { word: "orthopedist", phonetic: "/ˌɔːrθəˈpiːdɪst/", meaning: "骨科醫師", pos: "n", difficulty: 3, example: "The orthopedist recommended surgery to fix the torn ligament.", exampleZh: "骨科醫師建議手術來修復撕裂的韌帶。" },
-  { word: "posture", phonetic: "/ˈpɑːstʃər/", meaning: "姿勢", pos: "n", difficulty: 1, example: "Good posture helps prevent back and neck pain.", exampleZh: "良好的姿勢有助於預防背部和頸部疼痛。" },
-  { word: "abdomen", phonetic: "/ˈæbdəmən/", meaning: "腹部", pos: "n", difficulty: 2, example: "The patient complained of sharp pain in the lower abdomen.", exampleZh: "病患抱怨下腹部有劇烈疼痛。" },
-  { word: "adrenaline", phonetic: "/əˈdrɛnəlɪn/", meaning: "腎上腺素", pos: "n", difficulty: 2, example: "The rush of adrenaline made his heart beat faster.", exampleZh: "腎上腺素的衝擊讓他的心跳加速。" },
-  { word: "antioxidant", phonetic: "/ˌæntiˈɑːksɪdənt/", meaning: "抗氧化劑", pos: "n", difficulty: 2, example: "Blueberries are rich in antioxidants that protect your cells.", exampleZh: "藍莓富含保護細胞的抗氧化劑。" },
-  { word: "cortisol", phonetic: "/ˈkɔːrtɪsɒl/", meaning: "皮質醇（壓力荷爾蒙）", pos: "n", difficulty: 3, example: "Chronic stress causes elevated cortisol levels in the body.", exampleZh: "長期壓力會導致體內皮質醇濃度升高。" },
-  { word: "melatonin", phonetic: "/ˌmɛləˈtoʊnɪn/", meaning: "褪黑激素", pos: "n", difficulty: 2, example: "Melatonin supplements can help reset your sleep cycle.", exampleZh: "褪黑激素補充劑可以幫助重設你的睡眠週期。" },
-  { word: "malignant", phonetic: "/məˈlɪɡnənt/", meaning: "惡性的", pos: "adj", difficulty: 3, example: "Early detection of malignant tumors greatly improves survival rates.", exampleZh: "惡性腫瘤的早期發現能大幅提高存活率。" },
-  { word: "remission", phonetic: "/rɪˈmɪʃən/", meaning: "緩解期；病情好轉", pos: "n", difficulty: 3, example: "After months of treatment, the cancer went into remission.", exampleZh: "經過數月的治療，癌症進入了緩解期。" },
-  { word: "ibuprofen", phonetic: "/ˌaɪbjuːˈproʊfən/", meaning: "布洛芬（止痛藥）", pos: "n", difficulty: 2, example: "She took ibuprofen to relieve the headache.", exampleZh: "她吃了布洛芬來緩解頭痛。" },
-  { word: "probiotic", phonetic: "/ˌproʊbaɪˈɒtɪk/", meaning: "益生菌", pos: "n", difficulty: 2, example: "Eating yogurt with probiotics supports gut health.", exampleZh: "吃含有益生菌的優格有助於腸道健康。" },
-  { word: "gluten", phonetic: "/ˈɡluːtən/", meaning: "麩質", pos: "n", difficulty: 1, example: "Some people have a sensitivity to gluten found in wheat.", exampleZh: "有些人對小麥中的麩質過敏。" },
-  { word: "scalpel", phonetic: "/ˈskælpəl/", meaning: "手術刀", pos: "n", difficulty: 3, example: "The surgeon made a precise incision with the scalpel.", exampleZh: "外科醫師用手術刀做了精確的切口。" },
-  { word: "triage", phonetic: "/triˈɑːʒ/", meaning: "檢傷分類", pos: "n", difficulty: 3, example: "In the emergency room, triage determines which patients are treated first.", exampleZh: "在急診室，檢傷分類決定哪些病患優先治療。" },
-  { word: "saline", phonetic: "/ˈseɪliːn/", meaning: "生理食鹽水", pos: "n", difficulty: 2, example: "The nurse administered a saline drip to rehydrate the patient.", exampleZh: "護理師給病患施打生理食鹽水點滴以補充水分。" },
-  { word: "anesthetic", phonetic: "/ˌænəsˈθɛtɪk/", meaning: "麻醉劑", pos: "n", difficulty: 3, example: "The dentist applied a local anesthetic before pulling the tooth.", exampleZh: "牙醫在拔牙前施打了局部麻醉劑。" },
-  { word: "dislocate", phonetic: "/ˈdɪsloʊˌkeɪt/", meaning: "脫臼", pos: "v", difficulty: 2, example: "He managed to dislocate his shoulder while lifting heavy boxes.", exampleZh: "他在搬重箱子時不小心肩膀脫臼了。" },
-  { word: "femur", phonetic: "/ˈfiːmər/", meaning: "股骨；大腿骨", pos: "n", difficulty: 3, example: "The femur is the longest and strongest bone in the human body.", exampleZh: "股骨是人體最長也最強壯的骨頭。" },
-  { word: "pelvis", phonetic: "/ˈpɛlvɪs/", meaning: "骨盆", pos: "n", difficulty: 2, example: "The X-ray revealed a hairline fracture in her pelvis.", exampleZh: "X光顯示她的骨盆有一條細微的骨裂。" },
-  { word: "sternum", phonetic: "/ˈstɜːrnəm/", meaning: "胸骨", pos: "n", difficulty: 3, example: "During CPR, compress the center of the sternum firmly.", exampleZh: "做心肺復甦術時，要用力按壓胸骨中央。" },
-  { word: "capillary", phonetic: "/ˈkæpɪˌlɛri/", meaning: "微血管", pos: "n", difficulty: 3, example: "Oxygen passes from the capillaries into the surrounding tissue.", exampleZh: "氧氣從微血管進入周圍的組織。" },
-  { word: "ligature", phonetic: "/ˈlɪɡətʃər/", meaning: "結紮線；縫合線", pos: "n", difficulty: 3, example: "The surgeon used a ligature to tie off the blood vessel.", exampleZh: "外科醫師用結紮線綁住血管。" },
-  { word: "contusion", phonetic: "/kənˈtuːʒən/", meaning: "挫傷；瘀傷", pos: "n", difficulty: 3, example: "The athlete suffered a contusion on his thigh after the collision.", exampleZh: "這位運動員在碰撞後大腿受到挫傷。" },
-  { word: "laceration", phonetic: "/ˌlæsəˈreɪʃən/", meaning: "撕裂傷", pos: "n", difficulty: 3, example: "The deep laceration on her arm required immediate medical attention.", exampleZh: "她手臂上的深度撕裂傷需要立即就醫。" },
-
-  // ===== Food & Cooking (111-160) =====
-  { word: "blanch", phonetic: "/blæntʃ/", meaning: "汆燙", pos: "v", difficulty: 2, example: "Blanch the vegetables in boiling water for two minutes, then cool them in ice water.", exampleZh: "將蔬菜在沸水中汆燙兩分鐘，然後放入冰水中冷卻。" },
-  { word: "julienne", phonetic: "/ˌdʒuːliˈɛn/", meaning: "切絲", pos: "v", difficulty: 3, example: "Julienne the carrots into thin strips for the salad.", exampleZh: "把紅蘿蔔切成細絲做沙拉用。" },
-  { word: "caramelize", phonetic: "/ˈkærəməˌlaɪz/", meaning: "焦糖化", pos: "v", difficulty: 2, example: "Caramelize the onions slowly over low heat until they turn golden brown.", exampleZh: "用小火慢慢將洋蔥焦糖化，直到變成金黃色。" },
-  { word: "baste", phonetic: "/beɪst/", meaning: "（烹調時）淋油", pos: "v", difficulty: 2, example: "Baste the turkey every thirty minutes to keep it moist.", exampleZh: "每三十分鐘淋一次油以保持火雞的濕潤。" },
-  { word: "deglaze", phonetic: "/diːˈɡleɪz/", meaning: "用液體溶解鍋底精華", pos: "v", difficulty: 3, example: "Deglaze the pan with white wine to create a flavorful sauce.", exampleZh: "用白酒溶解鍋底精華來製作美味的醬汁。" },
-  { word: "colander", phonetic: "/ˈkɑːləndər/", meaning: "濾盆；漏勺", pos: "n", difficulty: 2, example: "Drain the pasta in a colander before adding the sauce.", exampleZh: "在加醬汁之前，先用濾盆把義大利麵瀝乾。" },
-  { word: "spatula", phonetic: "/ˈspætʃələ/", meaning: "鍋鏟", pos: "n", difficulty: 1, example: "Use a spatula to flip the pancakes carefully.", exampleZh: "用鍋鏟小心地翻鬆餅。" },
-  { word: "ladle", phonetic: "/ˈleɪdəl/", meaning: "湯勺；長柄勺", pos: "n", difficulty: 1, example: "She used a ladle to serve the hot soup into bowls.", exampleZh: "她用湯勺把熱湯盛入碗中。" },
-  { word: "tongs", phonetic: "/tɒŋz/", meaning: "夾子；食物夾", pos: "n", difficulty: 1, example: "Use tongs to turn the meat on the grill.", exampleZh: "用夾子翻轉烤架上的肉。" },
-  { word: "grater", phonetic: "/ˈɡreɪtər/", meaning: "刨絲器", pos: "n", difficulty: 1, example: "Grate the cheese using a fine grater.", exampleZh: "用細刨絲器把起司刨成絲。" },
-  { word: "skewer", phonetic: "/ˈskjuːər/", meaning: "烤肉串；竹籤", pos: "n", difficulty: 2, example: "Thread the vegetables and chicken onto the skewer before grilling.", exampleZh: "烤之前先把蔬菜和雞肉串在烤肉串上。" },
-  { word: "marinade", phonetic: "/ˌmærɪˈneɪd/", meaning: "醃料", pos: "n", difficulty: 2, example: "The marinade consists of soy sauce, garlic, and ginger.", exampleZh: "醃料由醬油、大蒜和薑組成。" },
-  { word: "puree", phonetic: "/pjʊˈreɪ/", meaning: "泥狀食物；打成泥", pos: "n", difficulty: 2, example: "Blend the cooked pumpkin into a smooth puree for the soup.", exampleZh: "把煮熟的南瓜打成滑順的泥狀做湯。" },
-  { word: "mince", phonetic: "/mɪns/", meaning: "切碎", pos: "v", difficulty: 2, example: "Mince the garlic finely before adding it to the hot oil.", exampleZh: "把大蒜切碎後再加入熱油中。" },
-  { word: "ferment", phonetic: "/fərˈmɛnt/", meaning: "發酵", pos: "v", difficulty: 2, example: "Let the dough ferment overnight for a richer flavor.", exampleZh: "讓麵團發酵一整夜以獲得更濃郁的風味。" },
-  { word: "tartness", phonetic: "/ˈtɑːrtnəs/", meaning: "酸味", pos: "n", difficulty: 2, example: "The tartness of the lemon balances the sweetness of the dessert.", exampleZh: "檸檬的酸味平衡了甜點的甜度。" },
-  { word: "umami", phonetic: "/uːˈmɑːmi/", meaning: "鮮味", pos: "n", difficulty: 2, example: "Soy sauce adds a deep umami flavor to stir-fried dishes.", exampleZh: "醬油為炒菜增添了濃郁的鮮味。" },
-  { word: "pungent", phonetic: "/ˈpʌndʒənt/", meaning: "辛辣刺鼻的", pos: "adj", difficulty: 2, example: "The cheese has a strong, pungent smell but a delicious taste.", exampleZh: "這塊起司有強烈刺鼻的味道，但味道很美味。" },
-  { word: "succulent", phonetic: "/ˈsʌkjʊlənt/", meaning: "多汁美味的", pos: "adj", difficulty: 2, example: "The steak was succulent and cooked to perfection.", exampleZh: "這塊牛排多汁美味，火候恰到好處。" },
-  { word: "rancid", phonetic: "/ˈrænsɪd/", meaning: "腐臭的（油脂類）", pos: "adj", difficulty: 2, example: "Throw away the butter if it smells rancid.", exampleZh: "如果奶油聞起來有腐臭味就丟掉。" },
-  { word: "parboil", phonetic: "/ˈpɑːrˌbɔɪl/", meaning: "半煮；預煮", pos: "v", difficulty: 3, example: "Parboil the potatoes before roasting them in the oven.", exampleZh: "先把馬鈴薯預煮一下，再放進烤箱烤。" },
-  { word: "fillet", phonetic: "/fɪˈleɪ/", meaning: "去骨肉片；切片", pos: "n", difficulty: 2, example: "She ordered a salmon fillet with steamed vegetables.", exampleZh: "她點了鮭魚排搭配清蒸蔬菜。" },
-  { word: "morsel", phonetic: "/ˈmɔːrsəl/", meaning: "一小口食物", pos: "n", difficulty: 2, example: "He savored every morsel of the chocolate cake.", exampleZh: "他細細品嚐了巧克力蛋糕的每一口。" },
-  { word: "wok", phonetic: "/wɑːk/", meaning: "炒鍋", pos: "n", difficulty: 1, example: "Heat the wok until it is very hot before adding the oil.", exampleZh: "在加油之前先把炒鍋加熱到非常燙。" },
-  { word: "sieve", phonetic: "/sɪv/", meaning: "篩子", pos: "n", difficulty: 2, example: "Pass the flour through a sieve to remove any lumps.", exampleZh: "把麵粉過篩以去除結塊。" },
-  { word: "rind", phonetic: "/raɪnd/", meaning: "（水果、起司的）外皮", pos: "n", difficulty: 2, example: "The rind of this cheese is edible and quite tasty.", exampleZh: "這種起司的外皮可以吃而且很美味。" },
-  { word: "crouton", phonetic: "/ˈkruːtɒn/", meaning: "麵包丁", pos: "n", difficulty: 1, example: "She sprinkled croutons on top of the Caesar salad.", exampleZh: "她在凱撒沙拉上撒了麵包丁。" },
-  { word: "vinaigrette", phonetic: "/ˌvɪnɪˈɡrɛt/", meaning: "油醋醬", pos: "n", difficulty: 2, example: "Toss the salad with a light lemon vinaigrette.", exampleZh: "用清爽的檸檬油醋醬拌沙拉。" },
-  { word: "infuse", phonetic: "/ɪnˈfjuːz/", meaning: "浸泡；注入風味", pos: "v", difficulty: 2, example: "Infuse the tea leaves in hot water for five minutes.", exampleZh: "將茶葉在熱水中浸泡五分鐘。" },
-  { word: "custard", phonetic: "/ˈkʌstərd/", meaning: "卡士達醬", pos: "n", difficulty: 2, example: "The pastry was filled with a rich vanilla custard.", exampleZh: "這個糕點裡填滿了濃郁的香草卡士達醬。" },
-  { word: "tandoori", phonetic: "/tænˈdʊri/", meaning: "坦都里烤（印度料理）", pos: "adj", difficulty: 2, example: "We ordered tandoori chicken at the Indian restaurant.", exampleZh: "我們在印度餐廳點了坦都里烤雞。" },
-  { word: "tempura", phonetic: "/tɛmˈpʊrə/", meaning: "天婦羅", pos: "n", difficulty: 1, example: "The shrimp tempura was light and perfectly crispy.", exampleZh: "這道炸蝦天婦羅輕盈酥脆，完美極了。" },
-  { word: "roux", phonetic: "/ruː/", meaning: "奶油麵糊（醬汁基底）", pos: "n", difficulty: 3, example: "Make a roux with butter and flour to thicken the gravy.", exampleZh: "用奶油和麵粉做奶油麵糊來讓肉汁變濃稠。" },
-  { word: "granola", phonetic: "/ɡrəˈnoʊlə/", meaning: "燕麥脆片", pos: "n", difficulty: 1, example: "She eats granola with yogurt and fresh fruit for breakfast.", exampleZh: "她早餐吃燕麥脆片搭配優格和新鮮水果。" },
-  { word: "saffron", phonetic: "/ˈsæfrən/", meaning: "番紅花", pos: "n", difficulty: 2, example: "Saffron is one of the most expensive spices in the world.", exampleZh: "番紅花是世界上最昂貴的香料之一。" },
-  { word: "turmeric", phonetic: "/ˈtɜːrmərɪk/", meaning: "薑黃", pos: "n", difficulty: 2, example: "Turmeric gives curry its distinctive yellow color.", exampleZh: "薑黃賦予咖哩獨特的黃色。" },
-  { word: "cilantro", phonetic: "/sɪˈlæntroʊ/", meaning: "香菜", pos: "n", difficulty: 1, example: "Some people love cilantro while others think it tastes like soap.", exampleZh: "有些人喜歡香菜，而其他人覺得它嚐起來像肥皂。" },
-  { word: "basil", phonetic: "/ˈbæzəl/", meaning: "羅勒", pos: "n", difficulty: 1, example: "Fresh basil leaves are essential for making pesto sauce.", exampleZh: "新鮮的羅勒葉是製作青醬的必要食材。" },
-  { word: "oregano", phonetic: "/ɔːˈrɛɡənoʊ/", meaning: "奧勒岡（香料）", pos: "n", difficulty: 2, example: "Sprinkle dried oregano on the pizza before baking.", exampleZh: "烤之前在披薩上撒一些乾燥的奧勒岡。" },
-  { word: "risotto", phonetic: "/rɪˈzɒtoʊ/", meaning: "義式燉飯", pos: "n", difficulty: 2, example: "The mushroom risotto at this Italian restaurant is outstanding.", exampleZh: "這家義大利餐廳的蘑菇燉飯非常出色。" },
-  { word: "sourdough", phonetic: "/ˈsaʊərdoʊ/", meaning: "酸麵團麵包", pos: "n", difficulty: 2, example: "She bakes fresh sourdough bread every weekend.", exampleZh: "她每個週末都烘烤新鮮的酸麵團麵包。" },
-  { word: "brioche", phonetic: "/briˈoʊʃ/", meaning: "布里歐麵包", pos: "n", difficulty: 3, example: "The bakery's brioche is rich and buttery.", exampleZh: "這家烘焙坊的布里歐麵包濃郁又充滿奶油香。" },
-  { word: "gazpacho", phonetic: "/ɡəzˈpɑːtʃoʊ/", meaning: "西班牙冷湯", pos: "n", difficulty: 3, example: "Gazpacho is a refreshing cold tomato soup perfect for hot summer days.", exampleZh: "西班牙冷湯是清爽的冷番茄湯，非常適合炎熱的夏天。" },
-  { word: "prosciutto", phonetic: "/proʊˈʃuːtoʊ/", meaning: "義式生火腿", pos: "n", difficulty: 3, example: "Thin slices of prosciutto pair perfectly with melon.", exampleZh: "薄片義式生火腿和哈密瓜是完美搭配。" },
-  { word: "chutney", phonetic: "/ˈtʃʌtni/", meaning: "印度酸甜醬", pos: "n", difficulty: 2, example: "Mango chutney is a popular accompaniment to Indian curries.", exampleZh: "芒果酸甜醬是搭配印度咖哩的熱門配料。" },
-  { word: "aioli", phonetic: "/aɪˈoʊli/", meaning: "蒜味蛋黃醬", pos: "n", difficulty: 2, example: "The grilled fish was served with a side of garlic aioli.", exampleZh: "烤魚搭配一份蒜味蛋黃醬上桌。" },
-  { word: "compote", phonetic: "/ˈkɒmpɒt/", meaning: "糖煮水果", pos: "n", difficulty: 3, example: "She served a warm berry compote over vanilla ice cream.", exampleZh: "她在香草冰淇淋上淋了溫熱的莓果糖煮水果。" },
-  { word: "ceviche", phonetic: "/səˈviːtʃeɪ/", meaning: "檸汁醃生魚", pos: "n", difficulty: 3, example: "The ceviche was made with fresh shrimp and lime juice.", exampleZh: "這道檸汁醃生魚用新鮮蝦子和萊姆汁製成。" },
-  { word: "béchamel", phonetic: "/ˈbɛʃəˌmɛl/", meaning: "白醬", pos: "n", difficulty: 3, example: "Lasagna is layered with pasta, meat sauce, and creamy béchamel.", exampleZh: "千層麵層層疊加了義大利麵皮、肉醬和奶油白醬。" },
-  { word: "tahini", phonetic: "/təˈhiːni/", meaning: "芝麻醬", pos: "n", difficulty: 2, example: "Tahini is a key ingredient in hummus and many Middle Eastern dishes.", exampleZh: "芝麻醬是鷹嘴豆泥和許多中東料理的關鍵食材。" },
-
-  // ===== Entertainment & Leisure (161-210) =====
-  { word: "matinee", phonetic: "/ˌmætɪˈneɪ/", meaning: "日場演出；午後場", pos: "n", difficulty: 2, example: "Matinee tickets are cheaper than evening showings.", exampleZh: "日場票比晚場便宜。" },
-  { word: "intermission", phonetic: "/ˌɪntərˈmɪʃən/", meaning: "中場休息", pos: "n", difficulty: 2, example: "During intermission, the audience went to the lobby for refreshments.", exampleZh: "中場休息時，觀眾到大廳去享用茶點。" },
-  { word: "soloist", phonetic: "/ˈsoʊloʊɪst/", meaning: "獨奏者；獨唱者", pos: "n", difficulty: 2, example: "The violin soloist received a standing ovation after the concert.", exampleZh: "小提琴獨奏者在音樂會後獲得全場起立鼓掌。" },
-  { word: "percussion", phonetic: "/pərˈkʌʃən/", meaning: "打擊樂器", pos: "n", difficulty: 2, example: "She plays percussion instruments like drums and cymbals.", exampleZh: "她演奏打擊樂器，如鼓和鈸。" },
-  { word: "acapella", phonetic: "/ˌɑːkəˈpɛlə/", meaning: "無伴奏合唱", pos: "adj", difficulty: 2, example: "The group performed a beautiful acapella arrangement of the song.", exampleZh: "這個團體演唱了一首優美的無伴奏合唱編曲。" },
-  { word: "choreographer", phonetic: "/ˌkɔːriˈɑːɡrəfər/", meaning: "編舞者", pos: "n", difficulty: 3, example: "The choreographer created a stunning dance routine for the show.", exampleZh: "編舞者為演出創作了一段令人驚豔的舞蹈。" },
-  { word: "dub", phonetic: "/dʌb/", meaning: "配音", pos: "v", difficulty: 2, example: "The Japanese anime was dubbed into English for the international audience.", exampleZh: "這部日本動畫被配音成英語供國際觀眾觀看。" },
-  { word: "troupe", phonetic: "/truːp/", meaning: "劇團；表演團", pos: "n", difficulty: 2, example: "The dance troupe has been touring Asia for three months.", exampleZh: "這個舞蹈團已經在亞洲巡迴演出三個月了。" },
-  { word: "billiards", phonetic: "/ˈbɪljərdz/", meaning: "撞球", pos: "n", difficulty: 2, example: "We played billiards at the club after dinner.", exampleZh: "晚餐後我們在俱樂部打了撞球。" },
-  { word: "badminton", phonetic: "/ˈbædmɪntən/", meaning: "羽毛球", pos: "n", difficulty: 1, example: "Badminton is one of the most popular sports in Taiwan.", exampleZh: "羽毛球是台灣最受歡迎的運動之一。" },
-  { word: "discography", phonetic: "/dɪˈskɒɡrəfi/", meaning: "唱片目錄", pos: "n", difficulty: 3, example: "The band's discography includes twelve studio albums.", exampleZh: "這個樂團的唱片目錄包括十二張錄音室專輯。" },
-  { word: "maestro", phonetic: "/ˈmaɪstroʊ/", meaning: "指揮大師", pos: "n", difficulty: 2, example: "The maestro raised his baton and the orchestra began to play.", exampleZh: "指揮大師舉起指揮棒，管弦樂團開始演奏。" },
-  { word: "crescendo", phonetic: "/krəˈʃɛndoʊ/", meaning: "漸強；高潮", pos: "n", difficulty: 3, example: "The music built to a powerful crescendo at the end of the piece.", exampleZh: "音樂在曲末逐漸增強到強力的高潮。" },
-  { word: "tableau", phonetic: "/tæˈbloʊ/", meaning: "活人造型畫面", pos: "n", difficulty: 3, example: "The actors froze in a dramatic tableau at the end of the scene.", exampleZh: "演員們在場景結尾凝固成一幅戲劇性的畫面。" },
-  { word: "rendition", phonetic: "/rɛnˈdɪʃən/", meaning: "演繹；表演版本", pos: "n", difficulty: 2, example: "Her rendition of the classic song moved the audience to tears.", exampleZh: "她對經典歌曲的演繹讓觀眾感動落淚。" },
-  { word: "jukebox", phonetic: "/ˈdʒuːkbɒks/", meaning: "點唱機", pos: "n", difficulty: 1, example: "The retro diner had a jukebox playing oldies all evening.", exampleZh: "這家復古餐廳的點唱機整晚都在播放老歌。" },
-  { word: "binge-watching", phonetic: "/ˈbɪndʒ ˌwɒtʃɪŋ/", meaning: "追劇", pos: "n", difficulty: 1, example: "Binge-watching TV shows on weekends has become a common habit.", exampleZh: "週末追劇已經成為一種常見的習慣。" },
-  { word: "memorabilia", phonetic: "/ˌmɛmərəˈbɪliə/", meaning: "紀念品；收藏品", pos: "n", difficulty: 3, example: "She collects rock and roll memorabilia from the 1960s.", exampleZh: "她收集一九六零年代的搖滾紀念品。" },
-  { word: "busker", phonetic: "/ˈbʌskər/", meaning: "街頭藝人", pos: "n", difficulty: 2, example: "A talented busker was playing guitar outside the subway station.", exampleZh: "一位才華洋溢的街頭藝人在地鐵站外彈吉他。" },
-  { word: "cello", phonetic: "/ˈtʃɛloʊ/", meaning: "大提琴", pos: "n", difficulty: 1, example: "She started learning the cello when she was seven years old.", exampleZh: "她七歲時開始學大提琴。" },
-  { word: "oboe", phonetic: "/ˈoʊboʊ/", meaning: "雙簧管", pos: "n", difficulty: 2, example: "The oboe has a distinctive, reedy sound in the orchestra.", exampleZh: "雙簧管在管弦樂團中有獨特的簧片音色。" },
-  { word: "tambourine", phonetic: "/ˌtæmbəˈriːn/", meaning: "鈴鼓", pos: "n", difficulty: 2, example: "She shook the tambourine in time with the music.", exampleZh: "她隨著音樂的節拍搖著鈴鼓。" },
-  { word: "harmonica", phonetic: "/hɑːrˈmɒnɪkə/", meaning: "口琴", pos: "n", difficulty: 1, example: "He played a blues tune on his harmonica.", exampleZh: "他用口琴吹了一首藍調曲子。" },
-  { word: "juggling", phonetic: "/ˈdʒʌɡlɪŋ/", meaning: "雜耍拋接", pos: "n", difficulty: 1, example: "The street performer amazed the crowd with his juggling skills.", exampleZh: "街頭表演者的雜耍技巧讓群眾驚嘆不已。" },
-  { word: "origami", phonetic: "/ˌɔːrɪˈɡɑːmi/", meaning: "摺紙藝術", pos: "n", difficulty: 1, example: "She taught the children how to make origami cranes.", exampleZh: "她教孩子們如何摺紙鶴。" },
-  { word: "embroidery", phonetic: "/ɪmˈbrɔɪdəri/", meaning: "刺繡", pos: "n", difficulty: 2, example: "The intricate embroidery on the dress took weeks to complete.", exampleZh: "洋裝上精緻的刺繡花了好幾週才完成。" },
-  { word: "aquarist", phonetic: "/ˈækwərɪst/", meaning: "水族愛好者", pos: "n", difficulty: 3, example: "As an aquarist, he maintains several tropical fish tanks at home.", exampleZh: "作為一名水族愛好者，他在家裡養了好幾個熱帶魚缸。" },
-  { word: "matador", phonetic: "/ˈmætədɔːr/", meaning: "鬥牛士", pos: "n", difficulty: 2, example: "The matador skillfully dodged the charging bull in the arena.", exampleZh: "鬥牛士在競技場上巧妙地閃避衝來的公牛。" },
-  { word: "concerto", phonetic: "/kənˈtʃɛrtoʊ/", meaning: "協奏曲", pos: "n", difficulty: 2, example: "She performed a piano concerto by Mozart at the concert hall.", exampleZh: "她在音樂廳演奏了一首莫札特的鋼琴協奏曲。" },
-  { word: "sonata", phonetic: "/səˈnɑːtə/", meaning: "奏鳴曲", pos: "n", difficulty: 2, example: "Beethoven's Moonlight Sonata is one of the most famous piano pieces.", exampleZh: "貝多芬的月光奏鳴曲是最著名的鋼琴曲之一。" },
-  { word: "fugue", phonetic: "/fjuːɡ/", meaning: "賦格曲", pos: "n", difficulty: 3, example: "Bach composed many complex fugues for organ and keyboard.", exampleZh: "巴赫為管風琴和鍵盤創作了許多複雜的賦格曲。" },
-  { word: "prelude", phonetic: "/ˈprɛljuːd/", meaning: "前奏曲", pos: "n", difficulty: 2, example: "Chopin composed many beautiful piano preludes.", exampleZh: "蕭邦創作了許多優美的鋼琴前奏曲。" },
-  { word: "vaudeville", phonetic: "/ˈvɔːdvɪl/", meaning: "綜藝歌舞表演", pos: "n", difficulty: 3, example: "Vaudeville shows were a popular form of entertainment in the early 1900s.", exampleZh: "綜藝歌舞表演在一九零零年代初期是一種流行的娛樂形式。" },
-  { word: "pantomime", phonetic: "/ˈpæntəˌmaɪm/", meaning: "默劇", pos: "n", difficulty: 2, example: "The children loved the pantomime performance at the theater.", exampleZh: "孩子們喜歡劇院裡的默劇表演。" },
-  { word: "ventriloquist", phonetic: "/vɛnˈtrɪləkwɪst/", meaning: "腹語師", pos: "n", difficulty: 3, example: "The ventriloquist made it seem like the puppet was really talking.", exampleZh: "腹語師讓人覺得木偶真的在說話。" },
-  { word: "acrobat", phonetic: "/ˈækrəˌbæt/", meaning: "雜技演員", pos: "n", difficulty: 1, example: "The acrobat amazed the audience with her aerial flips.", exampleZh: "雜技演員的空中翻轉讓觀眾驚嘆。" },
-  { word: "trapeze", phonetic: "/træˈpiːz/", meaning: "高空鞦韆", pos: "n", difficulty: 2, example: "The trapeze artists flew through the air with amazing grace.", exampleZh: "高空鞦韆藝術家以驚人的優雅飛越空中。" },
-  { word: "curtain call", phonetic: "/ˈkɜːrtən kɔːl/", meaning: "謝幕", pos: "n", difficulty: 1, example: "The cast returned to the stage for a final curtain call.", exampleZh: "演員們回到舞台上進行最後的謝幕。" },
-  { word: "foosball", phonetic: "/ˈfuːzˌbɔːl/", meaning: "桌上足球", pos: "n", difficulty: 1, example: "We play foosball in the break room during lunch.", exampleZh: "我們午餐時間在休息室玩桌上足球。" },
-  { word: "croquet", phonetic: "/kroʊˈkeɪ/", meaning: "槌球", pos: "n", difficulty: 2, example: "They played a relaxing game of croquet on the lawn.", exampleZh: "他們在草坪上悠閒地打了一場槌球。" },
-  { word: "decoupage", phonetic: "/ˌdeɪkuːˈpɑːʒ/", meaning: "剪貼裝飾藝術", pos: "n", difficulty: 3, example: "She decorated the box using the decoupage technique with old maps.", exampleZh: "她用舊地圖以剪貼裝飾藝術的技法裝飾了箱子。" },
-  { word: "macramé", phonetic: "/ˌmækrəˈmeɪ/", meaning: "編結藝術", pos: "n", difficulty: 3, example: "She made a beautiful macramé wall hanging for the living room.", exampleZh: "她為客廳做了一個漂亮的編結壁掛。" },
-  { word: "terrarium", phonetic: "/təˈrɛriəm/", meaning: "生態缸；小型溫室", pos: "n", difficulty: 2, example: "She built a tiny terrarium with moss and miniature plants inside a glass jar.", exampleZh: "她在玻璃罐裡用苔蘚和迷你植物做了一個小生態缸。" },
-
-  // ===== Home & Living (211-260) =====
-  { word: "nightstand", phonetic: "/ˈnaɪtˌstænd/", meaning: "床頭櫃", pos: "n", difficulty: 1, example: "She keeps a lamp and a book on her nightstand.", exampleZh: "她在床頭櫃上放了一盞燈和一本書。" },
-  { word: "bookshelf", phonetic: "/ˈbʊkˌʃɛlf/", meaning: "書架", pos: "n", difficulty: 1, example: "The bookshelf in the living room is full of novels.", exampleZh: "客廳的書架上擺滿了小說。" },
-  { word: "recliner", phonetic: "/rɪˈklaɪnər/", meaning: "躺椅", pos: "n", difficulty: 2, example: "He fell asleep in the recliner while watching television.", exampleZh: "他看電視時在躺椅上睡著了。" },
-  { word: "ottoman", phonetic: "/ˈɑːtəmən/", meaning: "腳凳；矮凳", pos: "n", difficulty: 2, example: "She put her feet up on the ottoman after a long day.", exampleZh: "忙碌一天後，她把腳放在腳凳上。" },
-  { word: "mantelpiece", phonetic: "/ˈmæntəlˌpiːs/", meaning: "壁爐架", pos: "n", difficulty: 2, example: "Family photos are displayed on the mantelpiece above the fireplace.", exampleZh: "家庭照片展示在壁爐上方的壁爐架上。" },
-  { word: "chandelier", phonetic: "/ˌʃændəˈlɪr/", meaning: "吊燈；水晶燈", pos: "n", difficulty: 2, example: "A grand chandelier hangs in the center of the ballroom.", exampleZh: "一盞華麗的吊燈懸掛在舞廳中央。" },
-  { word: "baseboard", phonetic: "/ˈbeɪsˌbɔːrd/", meaning: "踢腳板", pos: "n", difficulty: 2, example: "We painted the baseboards white to match the walls.", exampleZh: "我們把踢腳板漆成白色來配合牆壁。" },
-  { word: "countertop", phonetic: "/ˈkaʊntərˌtɒp/", meaning: "檯面；流理台面", pos: "n", difficulty: 1, example: "Wipe down the kitchen countertop after preparing food.", exampleZh: "準備食物後要擦拭廚房檯面。" },
-  { word: "pantry shelf", phonetic: "/ˈpæntri ʃɛlf/", meaning: "食品儲藏架", pos: "n", difficulty: 1, example: "Canned goods are organized on the pantry shelf by type.", exampleZh: "罐頭食品按種類排列在食品儲藏架上。" },
-  { word: "eaves", phonetic: "/iːvz/", meaning: "屋簷", pos: "n", difficulty: 2, example: "Birds built a nest under the eaves of the house.", exampleZh: "鳥兒在房子的屋簷下築了巢。" },
-  { word: "gutter", phonetic: "/ˈɡʌtər/", meaning: "排水溝；屋簷溝", pos: "n", difficulty: 2, example: "Clean the gutters regularly to prevent water damage to the roof.", exampleZh: "定期清理排水溝以防止屋頂受到水損害。" },
-  { word: "shutter", phonetic: "/ˈʃʌtər/", meaning: "百葉窗", pos: "n", difficulty: 1, example: "Close the shutters to block out the afternoon sun.", exampleZh: "關上百葉窗擋住下午的陽光。" },
-  { word: "pergola", phonetic: "/ˈpɜːrɡələ/", meaning: "涼棚；藤架", pos: "n", difficulty: 2, example: "They had lunch under the pergola covered with climbing roses.", exampleZh: "他們在攀爬玫瑰覆蓋的涼棚下吃午餐。" },
-  { word: "trellis", phonetic: "/ˈtrɛlɪs/", meaning: "格子架（植物攀爬用）", pos: "n", difficulty: 2, example: "The ivy climbed up the wooden trellis on the garden wall.", exampleZh: "常春藤沿著花園牆上的木格子架攀爬。" },
-  { word: "mulch", phonetic: "/mʌltʃ/", meaning: "覆蓋物；護根層", pos: "n", difficulty: 2, example: "Spread mulch around the plants to retain moisture in the soil.", exampleZh: "在植物周圍鋪上覆蓋物以保持土壤水分。" },
-  { word: "pruning", phonetic: "/ˈpruːnɪŋ/", meaning: "修剪（植物）", pos: "n", difficulty: 2, example: "Regular pruning helps the rose bushes produce more flowers.", exampleZh: "定期修剪有助於玫瑰叢開出更多花朵。" },
-  { word: "hedgerow", phonetic: "/ˈhɛdʒˌroʊ/", meaning: "樹籬", pos: "n", difficulty: 2, example: "A thick hedgerow separates our garden from the neighbor's yard.", exampleZh: "一排茂密的樹籬把我們的花園和鄰居的院子隔開。" },
-  { word: "linoleum", phonetic: "/lɪˈnoʊliəm/", meaning: "油氈地板", pos: "n", difficulty: 2, example: "The kitchen floor is covered with easy-to-clean linoleum.", exampleZh: "廚房地板鋪了容易清潔的油氈地板。" },
-  { word: "venetian blind", phonetic: "/vəˈniːʃən blaɪnd/", meaning: "百葉簾", pos: "n", difficulty: 2, example: "Adjust the venetian blinds to let in more light.", exampleZh: "調整百葉簾讓更多光線進來。" },
-  { word: "doormat", phonetic: "/ˈdɔːrˌmæt/", meaning: "門口腳踏墊", pos: "n", difficulty: 1, example: "Please wipe your shoes on the doormat before coming inside.", exampleZh: "進門前請在門口腳踏墊上擦擦鞋。" },
-  { word: "banister", phonetic: "/ˈbænɪstər/", meaning: "樓梯扶手", pos: "n", difficulty: 2, example: "Hold onto the banister when going down the stairs.", exampleZh: "下樓梯時要抓住扶手。" },
-  { word: "cellar", phonetic: "/ˈsɛlər/", meaning: "地窖", pos: "n", difficulty: 1, example: "They store wine in the cellar beneath the house.", exampleZh: "他們把酒存放在房子下方的地窖裡。" },
-  { word: "dormer", phonetic: "/ˈdɔːrmər/", meaning: "老虎窗；屋頂窗", pos: "n", difficulty: 3, example: "The attic bedroom has a charming dormer window overlooking the garden.", exampleZh: "閣樓臥室有一扇迷人的老虎窗，可以俯瞰花園。" },
-  { word: "vestibule", phonetic: "/ˈvɛstɪˌbjuːl/", meaning: "前廳；玄關", pos: "n", difficulty: 3, example: "Leave your umbrella in the vestibule so you don't drip water inside.", exampleZh: "把雨傘留在玄關，這樣你就不會把水滴到屋內。" },
-  { word: "drainpipe", phonetic: "/ˈdreɪnpaɪp/", meaning: "排水管", pos: "n", difficulty: 2, example: "The drainpipe was blocked, causing water to overflow during the storm.", exampleZh: "排水管堵塞了，導致暴風雨期間積水溢出。" },
-  { word: "caulk", phonetic: "/kɔːk/", meaning: "填縫劑", pos: "n", difficulty: 2, example: "Apply caulk around the bathtub to prevent water leaks.", exampleZh: "在浴缸周圍塗上填縫劑以防止漏水。" },
-  { word: "deadbolt", phonetic: "/ˈdɛdˌboʊlt/", meaning: "防盜鎖", pos: "n", difficulty: 2, example: "Always lock the deadbolt when you leave the house.", exampleZh: "離開家時一定要鎖上防盜鎖。" },
-  { word: "spackle", phonetic: "/ˈspækəl/", meaning: "補牆膏", pos: "n", difficulty: 2, example: "Use spackle to fill the nail holes in the wall before painting.", exampleZh: "粉刷前用補牆膏填補牆上的釘孔。" },
-  { word: "trowel", phonetic: "/ˈtraʊəl/", meaning: "泥刀；小鏟", pos: "n", difficulty: 2, example: "She used a trowel to plant the seedlings in the garden bed.", exampleZh: "她用小鏟子在花圃中種植幼苗。" },
-  { word: "comforter", phonetic: "/ˈkʌmfərtər/", meaning: "厚棉被", pos: "n", difficulty: 1, example: "She pulled the comforter up to her chin on the cold night.", exampleZh: "在寒冷的夜晚，她把厚棉被拉到下巴。" },
-  { word: "valance", phonetic: "/ˈvæləns/", meaning: "窗帷；短窗簾", pos: "n", difficulty: 3, example: "A decorative valance hangs above the kitchen window.", exampleZh: "一條裝飾性的短窗簾掛在廚房窗戶上方。" },
-  { word: "wainscoting", phonetic: "/ˈweɪnskətɪŋ/", meaning: "牆壁護板", pos: "n", difficulty: 3, example: "The dining room features elegant wooden wainscoting on the lower walls.", exampleZh: "餐廳的下半牆有優雅的木質護板。" },
-  { word: "dado", phonetic: "/ˈdeɪdoʊ/", meaning: "牆裙；下半牆裝飾", pos: "n", difficulty: 3, example: "The dado rail separates the painted upper wall from the wallpapered lower section.", exampleZh: "牆裙線條將上方的油漆牆面和下方的壁紙部分分隔開來。" },
-  { word: "finial", phonetic: "/ˈfɪniəl/", meaning: "尖頂裝飾", pos: "n", difficulty: 3, example: "The curtain rod has ornate brass finials at each end.", exampleZh: "窗簾桿兩端有華麗的黃銅尖頂裝飾。" },
-  { word: "spigot", phonetic: "/ˈspɪɡət/", meaning: "水龍頭（室外）", pos: "n", difficulty: 2, example: "Connect the garden hose to the spigot on the side of the house.", exampleZh: "把花園水管接到房子側面的室外水龍頭上。" },
-  { word: "squeegee", phonetic: "/ˈskwiːdʒiː/", meaning: "橡膠刮水器", pos: "n", difficulty: 2, example: "Use a squeegee to clean the shower glass after each use.", exampleZh: "每次使用後用橡膠刮水器清潔淋浴玻璃。" },
-  { word: "pelmet", phonetic: "/ˈpɛlmɪt/", meaning: "窗簾盒", pos: "n", difficulty: 3, example: "The pelmet hides the curtain rod and gives the window a neat finish.", exampleZh: "窗簾盒隱藏了窗簾桿，讓窗戶看起來整潔。" },
-  { word: "casserole", phonetic: "/ˈkæsəˌroʊl/", meaning: "砂鍋；焗烤鍋", pos: "n", difficulty: 1, example: "She made a hearty chicken casserole for the family dinner.", exampleZh: "她為家庭晚餐做了一道豐盛的雞肉砂鍋。" },
-  { word: "wicker", phonetic: "/ˈwɪkər/", meaning: "柳條編織的", pos: "adj", difficulty: 2, example: "The patio set includes wicker chairs and a matching table.", exampleZh: "露台家具組包括柳條編織椅和配套的桌子。" },
-  { word: "gazebo", phonetic: "/ɡəˈziːboʊ/", meaning: "涼亭", pos: "n", difficulty: 2, example: "The garden gazebo is a lovely spot for afternoon tea.", exampleZh: "花園涼亭是喝下午茶的好地方。" },
-  { word: "parquet", phonetic: "/pɑːrˈkeɪ/", meaning: "拼花木地板", pos: "n", difficulty: 2, example: "The old apartment has beautiful original parquet flooring.", exampleZh: "這間老公寓有漂亮的原始拼花木地板。" },
-  { word: "credenza", phonetic: "/krɪˈdɛnzə/", meaning: "餐具櫃；矮櫃", pos: "n", difficulty: 3, example: "The mahogany credenza in the dining room holds fine china.", exampleZh: "餐廳裡的桃花心木矮櫃放著精美的瓷器。" },
-  { word: "transom", phonetic: "/ˈtrænsəm/", meaning: "氣窗；門上橫窗", pos: "n", difficulty: 3, example: "The transom above the door lets natural light into the hallway.", exampleZh: "門上方的氣窗讓自然光線進入走廊。" },
-  { word: "planter", phonetic: "/ˈplæntər/", meaning: "花盆；種植箱", pos: "n", difficulty: 1, example: "She placed ceramic planters filled with herbs on the windowsill.", exampleZh: "她在窗台上放了裝滿香草的陶瓷花盆。" },
-  { word: "molding", phonetic: "/ˈmoʊldɪŋ/", meaning: "裝飾線板", pos: "n", difficulty: 2, example: "Crown molding adds an elegant touch to the ceiling edges.", exampleZh: "頂部裝飾線板為天花板邊緣增添了優雅的氣息。" },
-  { word: "damask", phonetic: "/ˈdæməsk/", meaning: "錦緞；提花織物", pos: "n", difficulty: 3, example: "The dining room curtains are made of luxurious damask fabric.", exampleZh: "餐廳的窗簾是用華麗的錦緞製成的。" },
-  { word: "hassock", phonetic: "/ˈhæsək/", meaning: "軟墊凳；跪墊", pos: "n", difficulty: 3, example: "She sat on a hassock by the fireplace while reading.", exampleZh: "她坐在壁爐旁的軟墊凳上看書。" },
-  { word: "duvet", phonetic: "/duːˈveɪ/", meaning: "羽絨被", pos: "n", difficulty: 1, example: "In winter, she sleeps under a thick goose-down duvet.", exampleZh: "冬天，她蓋著厚厚的鵝絨羽絨被睡覺。" },
-  { word: "sconce", phonetic: "/skɒns/", meaning: "壁燈", pos: "n", difficulty: 3, example: "Decorative sconces on either side of the mirror provide soft lighting.", exampleZh: "鏡子兩側的裝飾壁燈提供柔和的照明。" },
-  { word: "armoire", phonetic: "/ɑːrmˈwɑːr/", meaning: "衣櫥", pos: "n", difficulty: 2, example: "The antique armoire is perfect for storing extra linens and blankets.", exampleZh: "這個古董衣櫥非常適合存放多餘的床單和毯子。" },
-
-  // ===== Nature & Animals (261-300) =====
-  { word: "cockatoo", phonetic: "/ˌkɑːkəˈtuː/", meaning: "鳳頭鸚鵡", pos: "n", difficulty: 2, example: "The white cockatoo spread its crest feathers when excited.", exampleZh: "白色鳳頭鸚鵡興奮時會張開冠羽。" },
-  { word: "pelican", phonetic: "/ˈpɛlɪkən/", meaning: "鵜鶘", pos: "n", difficulty: 2, example: "A pelican scooped fish from the water with its large beak.", exampleZh: "鵜鶘用大嘴從水中撈起魚。" },
-  { word: "hedgehog", phonetic: "/ˈhɛdʒhɒɡ/", meaning: "刺蝟", pos: "n", difficulty: 1, example: "A small hedgehog was curled up under the garden bush.", exampleZh: "一隻小刺蝟蜷縮在花園灌木叢下。" },
-  { word: "chameleon", phonetic: "/kəˈmiːliən/", meaning: "變色龍", pos: "n", difficulty: 2, example: "The chameleon changed its color to match the green leaf.", exampleZh: "變色龍改變了顏色以配合綠色的葉子。" },
-  { word: "salamander", phonetic: "/ˈsæləˌmændər/", meaning: "蠑螈", pos: "n", difficulty: 2, example: "We spotted a bright orange salamander near the creek.", exampleZh: "我們在小溪附近發現了一隻鮮橘色的蠑螈。" },
-  { word: "starling", phonetic: "/ˈstɑːrlɪŋ/", meaning: "椋鳥", pos: "n", difficulty: 2, example: "A flock of starlings created swirling patterns in the evening sky.", exampleZh: "一群椋鳥在傍晚的天空中形成旋轉的圖案。" },
-  { word: "osprey", phonetic: "/ˈɒspreɪ/", meaning: "魚鷹", pos: "n", difficulty: 3, example: "The osprey dove into the lake and emerged with a fish in its talons.", exampleZh: "魚鷹俯衝入湖中，爪子抓著一條魚浮出水面。" },
-  { word: "marigold", phonetic: "/ˈmærɪˌɡoʊld/", meaning: "萬壽菊", pos: "n", difficulty: 1, example: "She planted marigolds along the border of the vegetable garden.", exampleZh: "她在菜園的邊緣種了萬壽菊。" },
-  { word: "chrysanthemum", phonetic: "/krɪˈsænθəməm/", meaning: "菊花", pos: "n", difficulty: 2, example: "Chrysanthemums bloom beautifully in the autumn season.", exampleZh: "菊花在秋季盛開得非常美麗。" },
-  { word: "fern", phonetic: "/fɜːrn/", meaning: "蕨類植物", pos: "n", difficulty: 1, example: "The shady corner of the garden is perfect for growing ferns.", exampleZh: "花園陰涼的角落非常適合種植蕨類植物。" },
-  { word: "lichen", phonetic: "/ˈlaɪkən/", meaning: "地衣", pos: "n", difficulty: 3, example: "Grey-green lichen covered the surface of the old stone wall.", exampleZh: "灰綠色的地衣覆蓋了老石牆的表面。" },
-  { word: "pollen", phonetic: "/ˈpɒlən/", meaning: "花粉", pos: "n", difficulty: 1, example: "Bees collect pollen from flowers to bring back to the hive.", exampleZh: "蜜蜂從花朵中採集花粉帶回蜂巢。" },
-  { word: "sepal", phonetic: "/ˈsiːpəl/", meaning: "萼片", pos: "n", difficulty: 3, example: "The green sepals protect the flower bud before it opens.", exampleZh: "綠色的萼片在花苞開放前保護它。" },
-  { word: "rhizome", phonetic: "/ˈraɪzoʊm/", meaning: "根莖", pos: "n", difficulty: 3, example: "Ginger grows from an underground rhizome.", exampleZh: "薑從地下的根莖生長出來。" },
-  { word: "undergrowth", phonetic: "/ˈʌndərˌɡroʊθ/", meaning: "灌木叢；下層植被", pos: "n", difficulty: 2, example: "The hikers pushed through thick undergrowth to reach the river.", exampleZh: "健行者穿過茂密的灌木叢到達了河邊。" },
-  { word: "stalactite", phonetic: "/stəˈlæktaɪt/", meaning: "鐘乳石", pos: "n", difficulty: 3, example: "The cave was filled with stunning stalactites hanging from the ceiling.", exampleZh: "洞穴裡布滿了從天花板懸垂下來的壯觀鐘乳石。" },
-  { word: "stalagmite", phonetic: "/stəˈlæɡmaɪt/", meaning: "石筍", pos: "n", difficulty: 3, example: "Over thousands of years, a stalagmite grows upward from the cave floor.", exampleZh: "經過數千年，石筍從洞穴地面向上生長。" },
-  { word: "topsoil", phonetic: "/ˈtɒpˌsɔɪl/", meaning: "表土", pos: "n", difficulty: 2, example: "Healthy topsoil is essential for growing vegetables.", exampleZh: "健康的表土對種植蔬菜至關重要。" },
-  { word: "predatory", phonetic: "/ˈprɛdəˌtɔːri/", meaning: "掠食性的", pos: "adj", difficulty: 2, example: "Eagles are predatory birds that hunt small animals.", exampleZh: "老鷹是捕獵小型動物的掠食性鳥類。" },
-  { word: "migratory", phonetic: "/ˈmaɪɡrəˌtɔːri/", meaning: "遷徙的", pos: "adj", difficulty: 2, example: "Migratory birds fly south every winter to escape the cold.", exampleZh: "候鳥每年冬天飛往南方以躲避寒冷。" },
-  { word: "herbivore", phonetic: "/ˈhɜːrbɪvɔːr/", meaning: "草食動物", pos: "n", difficulty: 2, example: "Cows are herbivores that feed mainly on grass.", exampleZh: "牛是主要以草為食的草食動物。" },
-  { word: "carnivore", phonetic: "/ˈkɑːrnɪvɔːr/", meaning: "肉食動物", pos: "n", difficulty: 2, example: "Lions are carnivores at the top of the food chain.", exampleZh: "獅子是食物鏈頂端的肉食動物。" },
-  { word: "omnivore", phonetic: "/ˈɒmnɪvɔːr/", meaning: "雜食動物", pos: "n", difficulty: 2, example: "Bears are omnivores that eat both plants and meat.", exampleZh: "熊是吃植物和肉類的雜食動物。" },
-  { word: "plumage", phonetic: "/ˈpluːmɪdʒ/", meaning: "羽毛（總稱）", pos: "n", difficulty: 2, example: "The peacock displayed its magnificent plumage to attract a mate.", exampleZh: "孔雀展示牠華麗的羽毛來吸引配偶。" },
-  { word: "burrow", phonetic: "/ˈbʌroʊ/", meaning: "地洞；挖洞", pos: "n", difficulty: 2, example: "Rabbits live in underground burrows to stay safe from predators.", exampleZh: "兔子住在地洞中以躲避掠食者。" },
-  { word: "foliage", phonetic: "/ˈfoʊliɪdʒ/", meaning: "樹葉；植物的葉子", pos: "n", difficulty: 2, example: "The autumn foliage in the mountains is spectacular with reds and golds.", exampleZh: "山中秋天的樹葉紅黃交織，景色壯觀。" },
-  { word: "pollination", phonetic: "/ˌpɒlɪˈneɪʃən/", meaning: "授粉", pos: "n", difficulty: 2, example: "Bees play a crucial role in the pollination of many crops.", exampleZh: "蜜蜂在許多農作物的授粉中扮演關鍵角色。" },
-  { word: "phototropism", phonetic: "/foʊˈtɒtrəˌpɪzəm/", meaning: "向光性", pos: "n", difficulty: 3, example: "Phototropism causes sunflowers to turn and face the sun.", exampleZh: "向光性使向日葵轉向面對太陽。" },
-  { word: "brackish", phonetic: "/ˈbrækɪʃ/", meaning: "半鹹水的", pos: "adj", difficulty: 3, example: "Mangroves thrive in brackish water where rivers meet the sea.", exampleZh: "紅樹林在河流與大海交匯的半鹹水中茁壯成長。" },
-  { word: "arable", phonetic: "/ˈærəbəl/", meaning: "可耕種的", pos: "adj", difficulty: 2, example: "Only a small percentage of the island's land is arable.", exampleZh: "這座島嶼只有一小部分土地可以耕種。" },
-  { word: "deciduous", phonetic: "/dɪˈsɪdʒuəs/", meaning: "落葉的", pos: "adj", difficulty: 3, example: "Deciduous trees lose their leaves in autumn and grow new ones in spring.", exampleZh: "落葉樹在秋天落葉，在春天長出新葉。" },
-  { word: "coniferous", phonetic: "/kəˈnɪfərəs/", meaning: "針葉的", pos: "adj", difficulty: 3, example: "Pine and spruce are common coniferous trees found in cold climates.", exampleZh: "松樹和雲杉是寒冷氣候中常見的針葉樹。" },
-  { word: "marsupial", phonetic: "/mɑːrˈsuːpiəl/", meaning: "有袋動物", pos: "n", difficulty: 3, example: "Kangaroos are marsupials that carry their young in a pouch.", exampleZh: "袋鼠是有袋動物，會把幼崽放在育兒袋裡。" },
-  { word: "amphibian", phonetic: "/æmˈfɪbiən/", meaning: "兩棲動物", pos: "n", difficulty: 2, example: "Frogs are amphibians that live both on land and in water.", exampleZh: "青蛙是兩棲動物，既生活在陸地上也生活在水中。" },
-  { word: "talon", phonetic: "/ˈtælən/", meaning: "（猛禽的）爪", pos: "n", difficulty: 2, example: "The eagle gripped its prey tightly with its sharp talons.", exampleZh: "老鷹用牠銳利的爪子緊緊抓住獵物。" },
-  { word: "antler", phonetic: "/ˈæntlər/", meaning: "鹿角", pos: "n", difficulty: 2, example: "Male deer shed and regrow their antlers every year.", exampleZh: "公鹿每年會脫落並重新長出鹿角。" },
-  { word: "chrysalis", phonetic: "/ˈkrɪsəlɪs/", meaning: "蛹", pos: "n", difficulty: 3, example: "The caterpillar formed a chrysalis before emerging as a butterfly.", exampleZh: "毛毛蟲在變成蝴蝶之前會形成蛹。" },
-  { word: "molting", phonetic: "/ˈmoʊltɪŋ/", meaning: "脫毛；換羽", pos: "n", difficulty: 2, example: "During molting season, snakes shed their old skin.", exampleZh: "在脫皮季節，蛇會褪去舊皮。" },
-  { word: "symbiosis", phonetic: "/ˌsɪmbaɪˈoʊsɪs/", meaning: "共生", pos: "n", difficulty: 3, example: "The relationship between clownfish and sea anemones is a classic example of symbiosis.", exampleZh: "小丑魚和海葵之間的關係是共生的經典例子。" },
-  { word: "evergreen", phonetic: "/ˈɛvərˌɡriːn/", meaning: "常綠的", pos: "adj", difficulty: 1, example: "Evergreen trees keep their leaves throughout the winter.", exampleZh: "常綠樹整個冬天都保持著葉子。" },
-
-  // ===== Communication & Relationships (301-350) =====
-  { word: "sibling", phonetic: "/ˈsɪblɪŋ/", meaning: "兄弟姊妹", pos: "n", difficulty: 1, example: "She has three siblings—two brothers and one sister." , exampleZh: "她有三個兄弟姊妹——兩個哥哥和一個妹妹。"},
-  { word: "stepparent", phonetic: "/ˈstɛpˌpɛrənt/", meaning: "繼父母", pos: "n", difficulty: 1, example: "Her stepparent has been a loving and supportive figure in her life." , exampleZh: "她的繼父母一直是她生活中充滿愛心和支持的人。"},
-  { word: "guardian", phonetic: "/ˈɡɑːrdiən/", meaning: "監護人", pos: "n", difficulty: 1, example: "After the parents passed away, the uncle became the children's legal guardian." , exampleZh: "父母去世後，叔叔成為孩子們的法定監護人。"},
-  { word: "empathize", phonetic: "/ˈɛmpəˌθaɪz/", meaning: "感同身受；同理", pos: "v", difficulty: 2, example: "Good leaders empathize with their team members' challenges." , exampleZh: "好的領導者與團隊成員的困難感同身受。"},
-  { word: "consolation", phonetic: "/ˌkɑːnsəˈleɪʃən/", meaning: "安慰", pos: "n", difficulty: 2, example: "Words of consolation helped her through the difficult time." , exampleZh: "安慰的言語幫助她度過了難關。"},
-  { word: "reconciliation", phonetic: "/ˌrɛkənsɪliˈeɪʃən/", meaning: "和解", pos: "n", difficulty: 2, example: "The two friends achieved reconciliation after years of not speaking." , exampleZh: "這兩個朋友在多年沒有交談後達成了和解。"},
-  { word: "estranged", phonetic: "/ɪˈstreɪndʒd/", meaning: "疏遠的", pos: "adj", difficulty: 2, example: "She became estranged from her family after moving overseas." , exampleZh: "她移居海外後與家人疏遠了。"},
-  { word: "confide", phonetic: "/kənˈfaɪd/", meaning: "吐露；傾訴", pos: "v", difficulty: 2, example: "She confided her worries to her closest friend." , exampleZh: "她向最親密的朋友傾訴了她的擔憂。"},
-  { word: "candor", phonetic: "/ˈkændər/", meaning: "坦率；真誠", pos: "n", difficulty: 2, example: "His candor during the meeting surprised everyone." , exampleZh: "他在會議中的坦率令所有人驚訝。"},
-  { word: "eloquence", phonetic: "/ˈɛləkwəns/", meaning: "口才；雄辯", pos: "n", difficulty: 3, example: "The speaker's eloquence captivated the entire audience." , exampleZh: "演講者的口才迷住了整個觀眾。"},
-  { word: "aloof", phonetic: "/əˈluːf/", meaning: "冷漠的；疏遠的", pos: "adj", difficulty: 2, example: "He seemed aloof at first but warmed up once you got to know him." , exampleZh: "他起初似乎冷漠，但一旦你認識他就會熱情起來。"},
-  { word: "amiable", phonetic: "/ˈeɪmiəbəl/", meaning: "和藹可親的", pos: "adj", difficulty: 2, example: "The amiable shopkeeper greeted every customer with a smile." , exampleZh: "這位親切的店主用微笑迎接每位顧客。"},
-  { word: "condescending", phonetic: "/ˌkɑːndɪˈsɛndɪŋ/", meaning: "居高臨下的", pos: "adj", difficulty: 3, example: "His condescending tone annoyed everyone in the room." , exampleZh: "他居高臨下的語氣惹惱了房間裡的每個人。"},
-  { word: "gregarious", phonetic: "/ɡrɪˈɡɛriəs/", meaning: "愛社交的", pos: "adj", difficulty: 3, example: "She is gregarious by nature and loves meeting new people at parties." , exampleZh: "她天性好交際，喜歡在派對上認識新的人。"},
-  { word: "vindictive", phonetic: "/vɪnˈdɪktɪv/", meaning: "報復心強的", pos: "adj", difficulty: 3, example: "His vindictive behavior after the breakup hurt many people." , exampleZh: "他分手後的報復性行為傷害了許多人。"},
-  { word: "gesture", phonetic: "/ˈdʒɛstʃər/", meaning: "手勢；姿態", pos: "n", difficulty: 1, example: "Sending flowers was a thoughtful gesture that brightened her day." , exampleZh: "送花是一個貼心的舉動，讓她的日子更明亮。"},
-  { word: "misunderstanding", phonetic: "/ˌmɪsʌndərˈstændɪŋ/", meaning: "誤會", pos: "n", difficulty: 1, example: "The argument was caused by a simple misunderstanding." , exampleZh: "這場爭論是由一個簡單的誤會引起的。"},
-  { word: "quarrel", phonetic: "/ˈkwɔːrəl/", meaning: "爭吵", pos: "n", difficulty: 1, example: "The couple had a quarrel about money but made up quickly." , exampleZh: "這對夫婦為了錢爭吵，但很快就和好了。"},
-  { word: "rift", phonetic: "/rɪft/", meaning: "裂痕；不和", pos: "n", difficulty: 2, example: "A serious rift developed between the two business partners." , exampleZh: "兩個商業夥伴之間產生了嚴重的裂痕。"},
-  { word: "truce", phonetic: "/truːs/", meaning: "休戰；停戰協議", pos: "n", difficulty: 2, example: "The siblings called a truce and stopped arguing over the remote." , exampleZh: "兄弟姊妹達成停戰協議，停止為遙控器爭吵。"},
-  { word: "platitude", phonetic: "/ˈplætɪˌtuːd/", meaning: "陳腔濫調", pos: "n", difficulty: 3, example: "Instead of offering platitudes, she gave practical advice." , exampleZh: "她沒有提供陳詞濫調，而是給出了實際的建議。"},
-  { word: "innuendo", phonetic: "/ˌɪnjuˈɛndoʊ/", meaning: "暗示；影射", pos: "n", difficulty: 3, example: "His speech was full of innuendo about the rival company's problems." , exampleZh: "他的演講充滿了對對手公司問題的暗示。"},
-  { word: "sarcasm", phonetic: "/ˈsɑːrkæzəm/", meaning: "諷刺", pos: "n", difficulty: 2, example: "His sarcasm made it hard to tell if he was being serious or joking." , exampleZh: "他的諷刺讓人很難判斷他是認真還是在開玩笑。"},
-  { word: "camaraderie", phonetic: "/ˌkɑːməˈrɑːdəri/", meaning: "同袍之誼；友情", pos: "n", difficulty: 3, example: "The team built strong camaraderie through years of working together." , exampleZh: "團隊通過多年的合作建立了強烈的同志情誼。"},
-  { word: "affectionate", phonetic: "/əˈfɛkʃənɪt/", meaning: "深情的；充滿愛的", pos: "adj", difficulty: 1, example: "She gave her grandmother an affectionate hug." , exampleZh: "她給奶奶一個充滿深情的擁抱。"},
-  { word: "belligerent", phonetic: "/bəˈlɪdʒərənt/", meaning: "好鬥的；挑釁的", pos: "adj", difficulty: 3, example: "The belligerent customer shouted at the cashier over a small mistake." , exampleZh: "這位好戰的顧客因為一個小錯誤對收銀員大喊大叫。"},
-  { word: "commiserate", phonetic: "/kəˈmɪzəˌreɪt/", meaning: "同情；表示慰問", pos: "v", difficulty: 3, example: "Friends gathered to commiserate with him after he lost his job." , exampleZh: "朋友們聚集在一起與他同情他失業的遭遇。"},
-  { word: "exasperate", phonetic: "/ɪɡˈzæspəˌreɪt/", meaning: "使惱怒；激怒", pos: "v", difficulty: 2, example: "His constant lateness exasperated his manager." , exampleZh: "他經常遲到使他的經理感到惱怒。"},
-  { word: "condolence", phonetic: "/kənˈdoʊləns/", meaning: "哀悼；弔唁", pos: "n", difficulty: 2, example: "We sent a card to express our condolences to the family." , exampleZh: "我們寄了一張卡片向家人表示慰問。"},
-  { word: "nonchalant", phonetic: "/ˌnɒnʃəˈlɑːnt/", meaning: "漫不經心的", pos: "adj", difficulty: 2, example: "He gave a nonchalant shrug when asked about his exam results." , exampleZh: "當被問到考試成績時，他不在乎地聳了聳肩。"},
-  { word: "reticent", phonetic: "/ˈrɛtɪsənt/", meaning: "沉默寡言的", pos: "adj", difficulty: 3, example: "She is reticent about sharing personal details with strangers." , exampleZh: "她不願意與陌生人分享個人細節。"},
-  { word: "amicable", phonetic: "/ˈæmɪkəbəl/", meaning: "友善的；和睦的", pos: "adj", difficulty: 2, example: "Despite the divorce, they maintained an amicable relationship." , exampleZh: "儘管離婚，他們仍然保持著友好的關係。"},
-  { word: "affable", phonetic: "/ˈæfəbəl/", meaning: "和藹的；易親近的", pos: "adj", difficulty: 3, example: "The new neighbor is affable and always waves hello." , exampleZh: "新鄰居很友善，總是揮手打招呼。"},
-  { word: "remonstrate", phonetic: "/rɪˈmɒnstreɪt/", meaning: "抗議；規勸", pos: "v", difficulty: 3, example: "She remonstrated with the children about leaving their toys everywhere." , exampleZh: "她就孩子們到處留下玩具的事向他們抱怨。"},
-  { word: "banter", phonetic: "/ˈbæntər/", meaning: "打趣；玩笑話", pos: "n", difficulty: 2, example: "The friendly banter between the coworkers made the office a fun place." , exampleZh: "同事之間友善的玩笑使辦公室成為一個有趣的地方。"},
-  { word: "rebuff", phonetic: "/rɪˈbʌf/", meaning: "斷然拒絕", pos: "v", difficulty: 3, example: "She rebuffed his invitation to dinner without hesitation." , exampleZh: "她毫不猶豫地拒絕了他的晚餐邀請。"},
-  { word: "placate", phonetic: "/ˈpleɪkeɪt/", meaning: "安撫；平息", pos: "v", difficulty: 3, example: "He tried to placate his angry wife with flowers and an apology." , exampleZh: "他試圖用花和道歉來安撫他生氣的妻子。"},
-  { word: "relent", phonetic: "/rɪˈlɛnt/", meaning: "心軟；讓步", pos: "v", difficulty: 2, example: "After a long debate, she finally relented and accepted the group's decision." , exampleZh: "經過長期辯論後，她最終讓步並接受了小組的決定。"},
-  { word: "endearment", phonetic: "/ɪnˈdɪrmənt/", meaning: "愛稱；親暱的話", pos: "n", difficulty: 2, example: "He often uses terms of endearment like 'sweetheart' when speaking to his wife." , exampleZh: "他經常在與妻子說話時使用'親愛的'等昵稱。"},
-  { word: "tactless", phonetic: "/ˈtæktləs/", meaning: "不得體的；不圓滑的", pos: "adj", difficulty: 2, example: "His tactless comment about her weight ruined the evening." , exampleZh: "他對她體重的不聰明評論毀了整個晚上。"},
-  { word: "chaperoning", phonetic: "/ˈʃæpəˌroʊnɪŋ/", meaning: "陪伴監護", pos: "n", difficulty: 2, example: "She volunteered for chaperoning duties on the school field trip." , exampleZh: "她自願為學校實地考察陪同。"},
-  { word: "altercation", phonetic: "/ˌɔːltərˈkeɪʃən/", meaning: "激烈爭吵", pos: "n", difficulty: 3, example: "An altercation broke out between two drivers at the intersection." , exampleZh: "兩個司機在十字路口發生了爭執。"},
-  { word: "cordiality", phonetic: "/ˌkɔːrdiˈælɪti/", meaning: "熱情；誠摯", pos: "n", difficulty: 3, example: "The host greeted every guest with genuine cordiality." , exampleZh: "主人以真誠的熱情迎接每位客人。"},
-  { word: "deferential", phonetic: "/ˌdɛfəˈrɛnʃəl/", meaning: "恭敬的", pos: "adj", difficulty: 3, example: "He spoke in a deferential tone when addressing the judge." , exampleZh: "他在對法官說話時用恭敬的語氣。"},
-  { word: "convivial", phonetic: "/kənˈvɪviəl/", meaning: "歡樂的；好交際的", pos: "adj", difficulty: 3, example: "The convivial atmosphere at the dinner party made everyone feel welcome." , exampleZh: "晚宴上歡樂的氣氛讓每個人都感到受歡迎。"},
-  { word: "wistful", phonetic: "/ˈwɪstfəl/", meaning: "惆悵的；渴望的", pos: "adj", difficulty: 2, example: "She gave a wistful smile when looking at old childhood photos." , exampleZh: "看著童年的舊照片時，她懷念地微笑著。"},
-  { word: "magnanimous", phonetic: "/mæɡˈnænɪməs/", meaning: "寬宏大量的", pos: "adj", difficulty: 3, example: "It was magnanimous of her to forgive him after such a serious mistake." , exampleZh: "在他犯了這麼嚴重的錯誤後，她寬宏大量地原諒了他。"},
-  { word: "petulant", phonetic: "/ˈpɛtʃələnt/", meaning: "任性的；易怒的", pos: "adj", difficulty: 3, example: "The petulant child threw a tantrum when told he couldn't have ice cream." , exampleZh: "當被告知不能吃冰淇淋時，這個脾氣暴躁的孩子大發脾氣。"},
-  { word: "genial", phonetic: "/ˈdʒiːniəl/", meaning: "親切和善的", pos: "adj", difficulty: 2, example: "The genial host made sure every guest felt comfortable." , exampleZh: "這位親切的主人確保每位客人都感到舒適。"},
-  { word: "cantankerous", phonetic: "/kænˈtæŋkərəs/", meaning: "脾氣壞的；愛爭吵的", pos: "adj", difficulty: 3, example: "The cantankerous old man complained about everything the neighbors did." , exampleZh: "這個脾氣暴躁的老人對鄰居做的一切都抱怨。"},
-  { word: "churlish", phonetic: "/ˈtʃɜːrlɪʃ/", meaning: "粗魯的；無禮的", pos: "adj", difficulty: 3, example: "It would be churlish to refuse such a generous offer." , exampleZh: "拒絕這樣慷慨的提議將是無禮的。"},
-  { word: "rueful", phonetic: "/ˈruːfəl/", meaning: "懊悔的；悲傷的", pos: "adj", difficulty: 3, example: "He gave a rueful smile after admitting his mistake." , exampleZh: "承認錯誤後，他帶著悔恨的微笑。"},
-  { word: "disgruntled", phonetic: "/dɪsˈɡrʌntəld/", meaning: "不滿的；不高興的", pos: "adj", difficulty: 2, example: "The disgruntled employees demanded better working conditions." , exampleZh: "不滿的員工要求更好的工作條件。"},
-  { word: "solace", phonetic: "/ˈsɒləs/", meaning: "安慰；慰藉", pos: "n", difficulty: 2, example: "She found solace in music during the difficult period." , exampleZh: "在困難時期，她在音樂中找到了安慰。"},
-  { word: "begrudge", phonetic: "/bɪˈɡrʌdʒ/", meaning: "嫉妒；不情願給予", pos: "v", difficulty: 3, example: "I don't begrudge him his success—he worked hard for it." , exampleZh: "我不嫉妒他的成功——他為此努力工作。"},
-  { word: "congenial", phonetic: "/kənˈdʒiːniəl/", meaning: "合得來的；令人愉快的", pos: "adj", difficulty: 2, example: "The congenial atmosphere of the café made it a great place to study." , exampleZh: "咖啡館的友善氣氛使其成為一個很好的學習地點。"},
-  { word: "obsequious", phonetic: "/əbˈsiːkwiəs/", meaning: "諂媚的；奉承的", pos: "adj", difficulty: 3, example: "His obsequious behavior toward the boss annoyed his coworkers." , exampleZh: "他對老闆的諂媚行為惹惱了他的同事。"},
+  {
+    "word": "difficulty",
+    "phonetic": "/ˈdɪfɪˌkʌlti/",
+    "meaning": "困難",
+    "pos": "n",
+    "difficulty": 3,
+    "example": "She had difficulty understanding the instructions.",
+    "exampleZh": "她在理解說明書方面有困難。"
+  },
+  {
+    "word": "discovery",
+    "phonetic": "/dɪˈskʌvəri/",
+    "meaning": "發現",
+    "pos": "n",
+    "difficulty": 3,
+    "example": "The discovery of penicillin changed medicine.",
+    "exampleZh": "青黴素的發現改變了醫學。"
+  },
+  {
+    "word": "discussion",
+    "phonetic": "/dɪˈskʌʃən/",
+    "meaning": "討論",
+    "pos": "n",
+    "difficulty": 3,
+    "example": "We had a long discussion about the budget.",
+    "exampleZh": "我們就預算問題進行了很長的討論。"
+  },
+  {
+    "word": "disease",
+    "phonetic": "/dɪˈziːz/",
+    "meaning": "疾病",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "Heart disease is a leading cause of death.",
+    "exampleZh": "心臟疾病是主要的死亡原因。"
+  },
+  {
+    "word": "duty",
+    "phonetic": "/ˈduːti/",
+    "meaning": "責任；義務",
+    "pos": "n",
+    "difficulty": 1,
+    "example": "It is your duty to report any problems.",
+    "exampleZh": "回報任何問題是你的責任。"
+  },
+  {
+    "word": "effort",
+    "phonetic": "/ˈɛfərt/",
+    "meaning": "努力",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "With a little more effort, you can pass the test.",
+    "exampleZh": "再多努力一點，你就能通過考試。"
+  },
+  {
+    "word": "element",
+    "phonetic": "/ˈɛlɪmənt/",
+    "meaning": "元素；要素",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "Trust is an important element of any relationship.",
+    "exampleZh": "信任是任何關係中重要的要素。"
+  },
+  {
+    "word": "emotion",
+    "phonetic": "/ɪˈmoʊʃən/",
+    "meaning": "情緒；情感",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "She tried to hide her emotions during the speech.",
+    "exampleZh": "她在演講時試圖隱藏自己的情緒。"
+  },
+  {
+    "word": "engine",
+    "phonetic": "/ˈɛndʒɪn/",
+    "meaning": "引擎；發動機",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "The mechanic checked the car engine.",
+    "exampleZh": "技師檢查了汽車引擎。"
+  },
+  {
+    "word": "environment",
+    "phonetic": "/ɪnˈvaɪrənmənt/",
+    "meaning": "環境",
+    "pos": "n",
+    "difficulty": 3,
+    "example": "We should protect the environment for future generations.",
+    "exampleZh": "我們應該為了後代保護環境。"
+  },
+  {
+    "word": "evidence",
+    "phonetic": "/ˈɛvɪdəns/",
+    "meaning": "證據",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "There is no evidence to support his claim.",
+    "exampleZh": "沒有證據支持他的說法。"
+  },
+  {
+    "word": "exception",
+    "phonetic": "/ɪkˈsɛpʃən/",
+    "meaning": "例外",
+    "pos": "n",
+    "difficulty": 3,
+    "example": "Everyone must follow the rules without exception.",
+    "exampleZh": "每個人都必須遵守規則，沒有例外。"
+  },
+  {
+    "word": "existence",
+    "phonetic": "/ɪɡˈzɪstəns/",
+    "meaning": "存在",
+    "pos": "n",
+    "difficulty": 3,
+    "example": "No one can prove the existence of ghosts.",
+    "exampleZh": "沒有人能證明鬼魂的存在。"
+  },
+  {
+    "word": "explanation",
+    "phonetic": "/ˌɛkspləˈneɪʃən/",
+    "meaning": "解釋",
+    "pos": "n",
+    "difficulty": 3,
+    "example": "He gave a simple explanation of the problem.",
+    "exampleZh": "他對這個問題做了簡單的解釋。"
+  },
+  {
+    "word": "expression",
+    "phonetic": "/ɪkˈsprɛʃən/",
+    "meaning": "表情；表達",
+    "pos": "n",
+    "difficulty": 3,
+    "example": "She had a surprised expression on her face.",
+    "exampleZh": "她臉上露出了驚訝的表情。"
+  },
+  {
+    "word": "factor",
+    "phonetic": "/ˈfæktər/",
+    "meaning": "因素",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "Price is an important factor for most customers.",
+    "exampleZh": "價格對大多數顧客來說是重要的因素。"
+  },
+  {
+    "word": "failure",
+    "phonetic": "/ˈfeɪljər/",
+    "meaning": "失敗",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "Don't be afraid of failure; learn from it.",
+    "exampleZh": "不要害怕失敗，要從中學習。"
+  },
+  {
+    "word": "faith",
+    "phonetic": "/feɪθ/",
+    "meaning": "信念；信仰",
+    "pos": "n",
+    "difficulty": 1,
+    "example": "I have faith that everything will work out.",
+    "exampleZh": "我相信一切都會順利的。"
+  },
+  {
+    "word": "fault",
+    "phonetic": "/fɔːlt/",
+    "meaning": "過失；缺點",
+    "pos": "n",
+    "difficulty": 1,
+    "example": "The accident was not my fault.",
+    "exampleZh": "那場意外不是我的錯。"
+  },
+  {
+    "word": "flesh",
+    "phonetic": "/flɛʃ/",
+    "meaning": "肉體；肌膚",
+    "pos": "n",
+    "difficulty": 1,
+    "example": "The fruit has sweet, soft flesh inside.",
+    "exampleZh": "這個水果裡面有甜軟的果肉。"
+  },
+  {
+    "word": "folk",
+    "phonetic": "/foʊk/",
+    "meaning": "人們；民間的",
+    "pos": "n",
+    "difficulty": 1,
+    "example": "The local folk were very friendly and welcoming.",
+    "exampleZh": "當地居民非常友善且熱情。"
+  },
+  {
+    "word": "freedom",
+    "phonetic": "/ˈfriːdəm/",
+    "meaning": "自由",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "Everyone deserves the freedom to express their opinions.",
+    "exampleZh": "每個人都應享有表達意見的自由。"
+  },
+  {
+    "word": "fuel",
+    "phonetic": "/fjuːəl/",
+    "meaning": "燃料",
+    "pos": "n",
+    "difficulty": 1,
+    "example": "The car is running low on fuel.",
+    "exampleZh": "這輛車的燃料快用完了。"
+  },
+  {
+    "word": "gap",
+    "phonetic": "/ɡæp/",
+    "meaning": "缺口；差距",
+    "pos": "n",
+    "difficulty": 1,
+    "example": "There is a gap between theory and practice.",
+    "exampleZh": "理論和實務之間存在差距。"
+  },
+  {
+    "word": "generation",
+    "phonetic": "/ˌdʒɛnəˈreɪʃən/",
+    "meaning": "世代",
+    "pos": "n",
+    "difficulty": 3,
+    "example": "The younger generation uses technology every day.",
+    "exampleZh": "年輕世代每天都在使用科技。"
+  },
+  {
+    "word": "grain",
+    "phonetic": "/ɡreɪn/",
+    "meaning": "穀物；顆粒",
+    "pos": "n",
+    "difficulty": 1,
+    "example": "Rice is the main grain in many Asian countries.",
+    "exampleZh": "稻米是許多亞洲國家的主要穀物。"
+  },
+  {
+    "word": "growth",
+    "phonetic": "/ɡroʊθ/",
+    "meaning": "成長；增長",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "The company saw strong growth last year.",
+    "exampleZh": "公司去年有強勁的成長。"
+  },
+  {
+    "word": "guidance",
+    "phonetic": "/ˈɡaɪdəns/",
+    "meaning": "指導；引導",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "She provided guidance to the new employees.",
+    "exampleZh": "她為新進員工提供了指導。"
+  },
+  {
+    "word": "honor",
+    "phonetic": "/ˈɑːnər/",
+    "meaning": "榮譽",
+    "pos": "n",
+    "difficulty": 1,
+    "example": "It was an honor to receive the award.",
+    "exampleZh": "能獲得這個獎項是一種榮譽。"
+  },
+  {
+    "word": "horizon",
+    "phonetic": "/həˈraɪzən/",
+    "meaning": "地平線",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "The sun slowly sank below the horizon.",
+    "exampleZh": "太陽慢慢地沉入地平線下。"
+  },
+  {
+    "word": "humor",
+    "phonetic": "/ˈhjuːmər/",
+    "meaning": "幽默",
+    "pos": "n",
+    "difficulty": 1,
+    "example": "He has a great sense of humor.",
+    "exampleZh": "他很有幽默感。"
+  },
+  {
+    "word": "identity",
+    "phonetic": "/aɪˈdɛntɪti/",
+    "meaning": "身分",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "You need to show your identity card at the gate.",
+    "exampleZh": "你在門口需要出示身分證。"
+  },
+  {
+    "word": "illness",
+    "phonetic": "/ˈɪlnɪs/",
+    "meaning": "疾病",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "She took a week off because of illness.",
+    "exampleZh": "她因為生病請了一個星期的假。"
+  },
+  {
+    "word": "imagination",
+    "phonetic": "/ɪˌmædʒɪˈneɪʃən/",
+    "meaning": "想像力",
+    "pos": "n",
+    "difficulty": 3,
+    "example": "Children have a wonderful imagination.",
+    "exampleZh": "孩子們有著豐富的想像力。"
+  },
+  {
+    "word": "impact",
+    "phonetic": "/ˈɪmpækt/",
+    "meaning": "影響；衝擊",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "Technology has a huge impact on our daily lives.",
+    "exampleZh": "科技對我們的日常生活有巨大的影響。"
+  },
+  {
+    "word": "importance",
+    "phonetic": "/ɪmˈpɔːrtəns/",
+    "meaning": "重要性",
+    "pos": "n",
+    "difficulty": 3,
+    "example": "He stressed the importance of safety at work.",
+    "exampleZh": "他強調了工作安全的重要性。"
+  },
+  {
+    "word": "impression",
+    "phonetic": "/ɪmˈprɛʃən/",
+    "meaning": "印象",
+    "pos": "n",
+    "difficulty": 3,
+    "example": "She made a good impression at the interview.",
+    "exampleZh": "她在面試中留下了好印象。"
+  },
+  {
+    "word": "improvement",
+    "phonetic": "/ɪmˈpruːvmənt/",
+    "meaning": "改善；進步",
+    "pos": "n",
+    "difficulty": 3,
+    "example": "There has been a great improvement in her grades.",
+    "exampleZh": "她的成績有了很大的進步。"
+  },
+  {
+    "word": "incident",
+    "phonetic": "/ˈɪnsɪdənt/",
+    "meaning": "事件",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "The police are investigating the incident.",
+    "exampleZh": "警方正在調查這起事件。"
+  },
+  {
+    "word": "industry",
+    "phonetic": "/ˈɪndəstri/",
+    "meaning": "產業；工業",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "The tourism industry is growing rapidly.",
+    "exampleZh": "觀光產業正在快速成長。"
+  },
+  {
+    "word": "instruction",
+    "phonetic": "/ɪnˈstrʌkʃən/",
+    "meaning": "說明；指示",
+    "pos": "n",
+    "difficulty": 3,
+    "example": "Follow the instructions carefully before assembling the furniture.",
+    "exampleZh": "組裝傢俱前請仔細閱讀說明書。"
+  },
+  {
+    "word": "intelligence",
+    "phonetic": "/ɪnˈtɛlɪdʒəns/",
+    "meaning": "智力；情報",
+    "pos": "n",
+    "difficulty": 4,
+    "example": "Emotional intelligence is just as important as IQ.",
+    "exampleZh": "情緒智商和智商一樣重要。"
+  },
+  {
+    "word": "intention",
+    "phonetic": "/ɪnˈtɛnʃən/",
+    "meaning": "意圖；目的",
+    "pos": "n",
+    "difficulty": 3,
+    "example": "I had no intention of hurting your feelings.",
+    "exampleZh": "我無意傷害你的感情。"
+  },
+  {
+    "word": "issue",
+    "phonetic": "/ˈɪʃuː/",
+    "meaning": "問題；議題",
+    "pos": "n",
+    "difficulty": 1,
+    "example": "We need to address this issue immediately.",
+    "exampleZh": "我們需要立刻處理這個問題。"
+  },
+  {
+    "word": "journey",
+    "phonetic": "/ˈdʒɜːrni/",
+    "meaning": "旅程",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "The journey from Taipei to Kaohsiung takes about two hours by train.",
+    "exampleZh": "從台北到高雄搭火車大約需要兩個小時。",
+    "context": "強調從 A 到 B 的旅途過程，常指陸路或比喻人生歷程；比較 trip（短途往返）、voyage（海上/太空長途旅行）"
+  },
+  {
+    "word": "judgment",
+    "phonetic": "/ˈdʒʌdʒmənt/",
+    "meaning": "判斷",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "Use your own judgment to make the decision.",
+    "exampleZh": "用你自己的判斷來做決定。"
+  },
+  {
+    "word": "justice",
+    "phonetic": "/ˈdʒʌstɪs/",
+    "meaning": "正義；公正",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "Everyone deserves justice.",
+    "exampleZh": "每個人都值得獲得公正的對待。"
+  },
+  {
+    "word": "knowledge",
+    "phonetic": "/ˈnɑːlɪdʒ/",
+    "meaning": "知識",
+    "pos": "n",
+    "difficulty": 3,
+    "example": "He has a good knowledge of computer science.",
+    "exampleZh": "他在電腦科學方面有豐富的知識。"
+  },
+  {
+    "word": "landscape",
+    "phonetic": "/ˈlændskeɪp/",
+    "meaning": "風景；景色",
+    "pos": "n",
+    "difficulty": 3,
+    "example": "The mountain landscape was absolutely beautiful.",
+    "exampleZh": "山上的景色美極了。"
+  },
+  {
+    "word": "layer",
+    "phonetic": "/ˈleɪər/",
+    "meaning": "層",
+    "pos": "n",
+    "difficulty": 1,
+    "example": "She wore several layers of clothing in winter.",
+    "exampleZh": "她冬天穿了好幾層衣服。"
+  },
+  {
+    "word": "load",
+    "phonetic": "/loʊd/",
+    "meaning": "負荷；貨物",
+    "pos": "n",
+    "difficulty": 1,
+    "example": "The truck carried a heavy load of bricks.",
+    "exampleZh": "卡車載了一大堆沉重的磚頭。"
+  },
+  {
+    "word": "location",
+    "phonetic": "/loʊˈkeɪʃən/",
+    "meaning": "位置；地點",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "The location of the new office is very convenient.",
+    "exampleZh": "新辦公室的地點非常方便。"
+  },
+  {
+    "word": "loss",
+    "phonetic": "/lɑːs/",
+    "meaning": "損失",
+    "pos": "n",
+    "difficulty": 1,
+    "example": "The company reported a loss of two million dollars.",
+    "exampleZh": "公司報告虧損了兩百萬美元。"
+  },
+  {
+    "word": "manner",
+    "phonetic": "/ˈmænər/",
+    "meaning": "方式；態度",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "She spoke in a polite manner.",
+    "exampleZh": "她以禮貌的方式說話。"
+  },
+  {
+    "word": "mass",
+    "phonetic": "/mæs/",
+    "meaning": "大量；質量",
+    "pos": "n",
+    "difficulty": 1,
+    "example": "A mass of people waited outside the stadium.",
+    "exampleZh": "一大群人在體育場外等候。"
+  },
+  {
+    "word": "material",
+    "phonetic": "/məˈtɪriəl/",
+    "meaning": "材料；素材",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "The bag is made of recycled materials.",
+    "exampleZh": "這個袋子是用回收材料製成的。"
+  },
+  {
+    "word": "matter",
+    "phonetic": "/ˈmætər/",
+    "meaning": "事情；問題；要緊",
+    "pos": "n/v",
+    "difficulty": 2,
+    "example": "This is a serious matter. It doesn't matter.",
+    "exampleZh": "這是一件嚴肅的事情。這不要緊（沒關係）。",
+    "context": "當名詞時指「事情、物質」；當動詞時指「要緊、有關係」，常用於否定句 It doesn't matter。"
+  },
+  {
+    "word": "method",
+    "phonetic": "/ˈmɛθəd/",
+    "meaning": "方法",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "This is the most effective method of learning.",
+    "exampleZh": "這是最有效的學習方法。"
+  },
+  {
+    "word": "mission",
+    "phonetic": "/ˈmɪʃən/",
+    "meaning": "任務；使命",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "Our mission is to provide excellent customer service.",
+    "exampleZh": "我們的使命是提供優質的客戶服務。"
+  },
+  {
+    "word": "mixture",
+    "phonetic": "/ˈmɪkstʃər/",
+    "meaning": "混合物",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "The cake is made from a mixture of flour, eggs, and sugar.",
+    "exampleZh": "蛋糕是由麵粉、雞蛋和糖的混合物製成的。"
+  },
+  {
+    "word": "mystery",
+    "phonetic": "/ˈmɪstəri/",
+    "meaning": "神秘；謎",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "The cause of the fire remains a mystery.",
+    "exampleZh": "火災的原因至今仍是個謎。"
+  },
+  {
+    "word": "nerve",
+    "phonetic": "/nɜːrv/",
+    "meaning": "神經；勇氣",
+    "pos": "n",
+    "difficulty": 1,
+    "example": "She didn't have the nerve to ask her boss for a raise.",
+    "exampleZh": "她沒有勇氣向老闆要求加薪。"
+  },
+  {
+    "word": "object",
+    "phonetic": "/ˈɑːbdʒɪkt/",
+    "meaning": "物體；目標；反對",
+    "pos": "n/v",
+    "difficulty": 2,
+    "example": "A strange object was found. I object to the plan.",
+    "exampleZh": "發現了一個奇怪的物體。我反對這個計畫。",
+    "context": "當名詞時讀 /ˈɑːbdʒɪkt/（物體）；當動詞時讀 /əbˈdʒekt/（反對），常搭配 to。"
+  },
+  {
+    "word": "occasion",
+    "phonetic": "/əˈkeɪʒən/",
+    "meaning": "場合；時機",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "Birthdays are happy occasions for celebration.",
+    "exampleZh": "生日是值得慶祝的快樂場合。"
+  },
+  {
+    "word": "opinion",
+    "phonetic": "/əˈpɪnjən/",
+    "meaning": "意見；看法",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "In my opinion, we should postpone the event.",
+    "exampleZh": "依我的看法，我們應該延後這個活動。"
+  },
+  {
+    "word": "opportunity",
+    "phonetic": "/ˌɑːpərˈtuːnɪti/",
+    "meaning": "機會",
+    "pos": "n",
+    "difficulty": 3,
+    "example": "This is a great opportunity for career growth.",
+    "exampleZh": "這是一個職涯成長的好機會。"
+  },
+  {
+    "word": "origin",
+    "phonetic": "/ˈɔːrɪdʒɪn/",
+    "meaning": "來源；血統",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "Scientists study the origin of the universe.",
+    "exampleZh": "科學家研究宇宙的起源。"
+  },
+  {
+    "word": "passage",
+    "phonetic": "/ˈpæsɪdʒ/",
+    "meaning": "通道；段落",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "Read the passage and answer the questions.",
+    "exampleZh": "閱讀這段文章並回答問題。"
+  },
+  {
+    "word": "patience",
+    "phonetic": "/ˈpeɪʃəns/",
+    "meaning": "耐心",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "Learning a language requires a lot of patience.",
+    "exampleZh": "學習語言需要很多耐心。"
+  },
+  {
+    "word": "pattern",
+    "phonetic": "/ˈpætərn/",
+    "meaning": "模式；圖案",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "I noticed a pattern in the data.",
+    "exampleZh": "我在資料中發現了一個規律。"
+  },
+  {
+    "word": "period",
+    "phonetic": "/ˈpɪriəd/",
+    "meaning": "期間；時期",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "The project will be completed within a six-month period.",
+    "exampleZh": "這個專案將在六個月內完成。"
+  },
+  {
+    "word": "pleasure",
+    "phonetic": "/ˈplɛʒər/",
+    "meaning": "快樂；樂趣",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "It was a pleasure meeting you.",
+    "exampleZh": "很高興認識你。"
+  },
+  {
+    "word": "poison",
+    "phonetic": "/ˈpɔɪzən/",
+    "meaning": "毒藥",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "Some mushrooms contain poison.",
+    "exampleZh": "有些蘑菇含有毒素。"
+  },
+  {
+    "word": "presence",
+    "phonetic": "/ˈprɛzəns/",
+    "meaning": "存在；出席",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "Your presence at the meeting is required.",
+    "exampleZh": "你必須出席這場會議。"
+  },
+  {
+    "word": "pressure",
+    "phonetic": "/ˈprɛʃər/",
+    "meaning": "壓力",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "She works well under pressure.",
+    "exampleZh": "她在壓力下工作表現很好。"
+  },
+  {
+    "word": "pride",
+    "phonetic": "/praɪd/",
+    "meaning": "驕傲；自尊",
+    "pos": "n",
+    "difficulty": 1,
+    "example": "He takes great pride in his work.",
+    "exampleZh": "他對自己的工作感到非常自豪。"
+  },
+  {
+    "word": "progress",
+    "phonetic": "/ˈprɑːɡrɛs/",
+    "meaning": "進展；進步",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "We are making good progress on the project.",
+    "exampleZh": "我們在這個專案上取得了良好的進展。"
+  },
+  {
+    "word": "protection",
+    "phonetic": "/prəˈtɛkʃən/",
+    "meaning": "保護",
+    "pos": "n",
+    "difficulty": 3,
+    "example": "Sunscreen provides protection against UV rays.",
+    "exampleZh": "防曬乳提供了抵禦紫外線的保護。"
+  },
+  {
+    "word": "purpose",
+    "phonetic": "/ˈpɜːrpəs/",
+    "meaning": "目的",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "What is the purpose of this meeting?",
+    "exampleZh": "這場會議的目的是什麼？"
+  },
+  {
+    "word": "reality",
+    "phonetic": "/riˈælɪti/",
+    "meaning": "現實",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "You need to face reality and make a plan.",
+    "exampleZh": "你需要面對現實並制定計劃。"
+  },
+  {
+    "word": "region",
+    "phonetic": "/ˈriːdʒən/",
+    "meaning": "地區；區域",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "This region is famous for its tea production.",
+    "exampleZh": "這個地區以產茶聞名。"
+  },
+  {
+    "word": "relation",
+    "phonetic": "/rɪˈleɪʃən/",
+    "meaning": "關係",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "Good relations between countries promote peace.",
+    "exampleZh": "國家之間的良好關係能促進和平。"
+  },
+  {
+    "word": "relief",
+    "phonetic": "/rɪˈliːf/",
+    "meaning": "緩解；解脫",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "It was a relief to hear that everyone was safe.",
+    "exampleZh": "聽到大家都安全，真是鬆了一口氣。"
+  },
+  {
+    "word": "reputation",
+    "phonetic": "/ˌrɛpjʊˈteɪʃən/",
+    "meaning": "名聲；聲譽",
+    "pos": "n",
+    "difficulty": 3,
+    "example": "The restaurant has an excellent reputation.",
+    "exampleZh": "這家餐廳有很好的聲譽。"
+  },
+  {
+    "word": "resource",
+    "phonetic": "/ˈriːsɔːrs/",
+    "meaning": "資源",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "Water is our most precious natural resource.",
+    "exampleZh": "水是我們最珍貴的自然資源。"
+  },
+  {
+    "word": "respect",
+    "phonetic": "/rɪˈspɛkt/",
+    "meaning": "尊重",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "We should show respect for older people.",
+    "exampleZh": "我們應該尊敬長輩。"
+  },
+  {
+    "word": "result",
+    "phonetic": "/rɪˈzʌlt/",
+    "meaning": "結果",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "The test results will be announced next week.",
+    "exampleZh": "考試結果將在下週公布。"
+  },
+  {
+    "word": "reward",
+    "phonetic": "/rɪˈwɔːrd/",
+    "meaning": "獎勵",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "Hard work often brings great rewards.",
+    "exampleZh": "努力工作往往會帶來豐厚的回報。"
+  },
+  {
+    "word": "risk",
+    "phonetic": "/rɪsk/",
+    "meaning": "風險",
+    "pos": "n",
+    "difficulty": 1,
+    "example": "There is a risk of rain this afternoon.",
+    "exampleZh": "今天下午有下雨的風險。"
+  },
+  {
+    "word": "role",
+    "phonetic": "/roʊl/",
+    "meaning": "角色；作用",
+    "pos": "n",
+    "difficulty": 1,
+    "example": "She plays an important role in the company.",
+    "exampleZh": "她在公司中扮演著重要的角色。"
+  },
+  {
+    "word": "root",
+    "phonetic": "/ruːt/",
+    "meaning": "根；根源",
+    "pos": "n",
+    "difficulty": 1,
+    "example": "Money is often said to be the root of many problems.",
+    "exampleZh": "金錢常被說是許多問題的根源。"
+  },
+  {
+    "word": "selection",
+    "phonetic": "/sɪˈlɛkʃən/",
+    "meaning": "篩選出的物件 (名詞)",
+    "pos": "n",
+    "difficulty": 3,
+    "example": "The store offers a wide selection of products.",
+    "exampleZh": "這家商店提供多種產品選擇。"
+  },
+  {
+    "word": "shelter",
+    "phonetic": "/ˈʃɛltər/",
+    "meaning": "庇護所；遮蔽",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "They found shelter from the rain under a big tree.",
+    "exampleZh": "他們在一棵大樹下躲雨。"
+  },
+  {
+    "word": "signal",
+    "phonetic": "/ˈsɪɡnəl/",
+    "meaning": "信號",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "The traffic signal turned green.",
+    "exampleZh": "交通號誌燈轉為綠燈。"
+  },
+  {
+    "word": "silence",
+    "phonetic": "/ˈsaɪləns/",
+    "meaning": "沉默；安靜",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "There was complete silence in the room.",
+    "exampleZh": "房間裡一片寂靜。"
+  },
+  {
+    "word": "situation",
+    "phonetic": "/ˌsɪtʃuˈeɪʃən/",
+    "meaning": "情況；處境",
+    "pos": "n",
+    "difficulty": 3,
+    "example": "The situation is getting worse every day.",
+    "exampleZh": "情況每天都在惡化。"
+  },
+  {
+    "word": "solution",
+    "phonetic": "/səˈluːʃən/",
+    "meaning": "解決方案",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "We need to find a solution to this problem.",
+    "exampleZh": "我們需要找到解決這個問題的方法。"
+  },
+  {
+    "word": "soul",
+    "phonetic": "/soʊl/",
+    "meaning": "靈魂",
+    "pos": "n",
+    "difficulty": 1,
+    "example": "Music speaks to the soul.",
+    "exampleZh": "音樂能觸動靈魂。"
+  },
+  {
+    "word": "species",
+    "phonetic": "/ˈspiːʃiːz/",
+    "meaning": "物種",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "Many species of birds live in this forest.",
+    "exampleZh": "許多種類的鳥類棲息在這片森林裡。"
+  },
+  {
+    "word": "spirit",
+    "phonetic": "/ˈspɪrɪt/",
+    "meaning": "精神；靈魂",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "The team spirit was very strong during the game.",
+    "exampleZh": "比賽期間團隊精神非常強烈。"
+  },
+  {
+    "word": "strength",
+    "phonetic": "/strɛŋθ/",
+    "meaning": "力量；優勢",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "One of her strengths is her attention to detail.",
+    "exampleZh": "她的優勢之一是注重細節。"
+  },
+  {
+    "word": "struggle",
+    "phonetic": "/ˈstrʌɡəl/",
+    "meaning": "掙扎；奮鬥",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "It was a struggle to finish the work on time.",
+    "exampleZh": "要按時完成工作是一場奮鬥。"
+  },
+  {
+    "word": "success",
+    "phonetic": "/səkˈsɛs/",
+    "meaning": "成功",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "Hard work is the key to success.",
+    "exampleZh": "努力是成功的關鍵。"
+  },
+  {
+    "word": "supply",
+    "phonetic": "/səˈplaɪ/",
+    "meaning": "供應",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "The supply of fresh water is limited.",
+    "exampleZh": "淡水的供應是有限的。"
+  },
+  {
+    "word": "surface",
+    "phonetic": "/ˈsɜːrfɪs/",
+    "meaning": "表面",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "The surface of the lake was perfectly calm.",
+    "exampleZh": "湖面非常平靜。"
+  },
+  {
+    "word": "tale",
+    "phonetic": "/teɪl/",
+    "meaning": "故事；傳說",
+    "pos": "n",
+    "difficulty": 1,
+    "example": "Grandma told us a tale about a brave knight.",
+    "exampleZh": "奶奶跟我們講了一個關於勇敢騎士的故事。"
+  },
+  {
+    "word": "talent",
+    "phonetic": "/ˈtælənt/",
+    "meaning": "天賦；才能",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "She has a natural talent for singing.",
+    "exampleZh": "她天生就有唱歌的才華。"
+  },
+  {
+    "word": "technique",
+    "phonetic": "/tɛkˈniːk/",
+    "meaning": "技術；技巧",
+    "pos": "n",
+    "difficulty": 3,
+    "example": "She learned a new painting technique.",
+    "exampleZh": "她學了一種新的繪畫技巧。"
+  },
+  {
+    "word": "temperature",
+    "phonetic": "/ˈtɛmpərɪtʃər/",
+    "meaning": "溫度",
+    "pos": "n",
+    "difficulty": 3,
+    "example": "The temperature dropped below zero last night.",
+    "exampleZh": "昨晚溫度降到零度以下。"
+  },
+  {
+    "word": "threat",
+    "phonetic": "/θrɛt/",
+    "meaning": "威脅",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "Climate change is a serious threat to the planet.",
+    "exampleZh": "氣候變遷是對地球的嚴重威脅。"
+  },
+  {
+    "word": "tradition",
+    "phonetic": "/trəˈdɪʃən/",
+    "meaning": "傳統",
+    "pos": "n",
+    "difficulty": 3,
+    "example": "Eating dumplings is a tradition in many Asian cultures.",
+    "exampleZh": "吃水餃是許多亞洲文化的傳統。"
+  },
+  {
+    "word": "treasure",
+    "phonetic": "/ˈtrɛʒər/",
+    "meaning": "寶藏；珍品",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "The museum is full of historical treasures.",
+    "exampleZh": "博物館裡滿是歷史珍品。"
+  },
+  {
+    "word": "union",
+    "phonetic": "/ˈjuːnjən/",
+    "meaning": "工會；聯盟",
+    "pos": "n",
+    "difficulty": 1,
+    "example": "The labor union is negotiating for better wages.",
+    "exampleZh": "工會正在協商更好的薪資。"
+  },
+  {
+    "word": "variety",
+    "phonetic": "/vəˈraɪəti/",
+    "meaning": "多樣性；種類",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "The restaurant offers a variety of dishes.",
+    "exampleZh": "這家餐廳提供各式各樣的菜餚。"
+  },
+  {
+    "word": "victim",
+    "phonetic": "/ˈvɪktɪm/",
+    "meaning": "受害者",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "The victims of the earthquake received aid quickly.",
+    "exampleZh": "地震的受災者很快就收到了援助。"
+  },
+  {
+    "word": "violence",
+    "phonetic": "/ˈvaɪələns/",
+    "meaning": "暴力",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "The government is trying to reduce violence in cities.",
+    "exampleZh": "政府正在努力減少城市中的暴力事件。"
+  },
+  {
+    "word": "vision",
+    "phonetic": "/ˈvɪʒən/",
+    "meaning": "視野；願景",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "The CEO shared her vision for the company's future.",
+    "exampleZh": "執行長分享了她對公司未來的願景。"
+  },
+  {
+    "word": "wealth",
+    "phonetic": "/wɛlθ/",
+    "meaning": "財富",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "Health is more important than wealth.",
+    "exampleZh": "健康比財富更重要。"
+  },
+  {
+    "word": "weapon",
+    "phonetic": "/ˈwɛpən/",
+    "meaning": "武器",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "Knowledge is the most powerful weapon.",
+    "exampleZh": "知識是最強大的武器。"
+  },
+  {
+    "word": "wisdom",
+    "phonetic": "/ˈwɪzdəm/",
+    "meaning": "智慧",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "We can learn wisdom from older generations.",
+    "exampleZh": "我們可以從長輩那裡學到智慧。"
+  },
+  {
+    "word": "acceptable",
+    "phonetic": "/əkˈsɛptəbəl/",
+    "meaning": "可接受的",
+    "pos": "adj",
+    "difficulty": 3,
+    "example": "The quality of the work is acceptable.",
+    "exampleZh": "這份工作的品質是可以接受的。"
+  },
+  {
+    "word": "accurate",
+    "phonetic": "/ˈækjərɪt/",
+    "meaning": "準確的",
+    "pos": "adj",
+    "difficulty": 2,
+    "example": "Make sure the information is accurate before publishing.",
+    "exampleZh": "發布前請確認資訊是否準確。"
+  },
+  {
+    "word": "actual",
+    "phonetic": "/ˈæktʃuəl/",
+    "meaning": "實際的",
+    "pos": "adj",
+    "difficulty": 2,
+    "example": "The actual cost was higher than the estimate.",
+    "exampleZh": "實際費用比預估的還要高。"
+  },
+  {
+    "word": "ancient",
+    "phonetic": "/ˈeɪnʃənt/",
+    "meaning": "古老的",
+    "pos": "adj",
+    "difficulty": 2,
+    "example": "They visited an ancient temple in the mountains.",
+    "exampleZh": "他們參觀了山中一座古老的寺廟。"
+  },
+  {
+    "word": "apparent",
+    "phonetic": "/əˈpærənt/",
+    "meaning": "明顯的；表面上的",
+    "pos": "adj",
+    "difficulty": 2,
+    "example": "It was apparent that she was not feeling well.",
+    "exampleZh": "很明顯她身體不舒服。"
+  },
+  {
+    "word": "aware",
+    "phonetic": "/əˈwɛr/",
+    "meaning": "意識到的；知道的",
+    "pos": "adj",
+    "difficulty": 1,
+    "example": "Are you aware of the new company policy?",
+    "exampleZh": "你知道公司的新政策嗎？"
+  },
+  {
+    "word": "bare",
+    "phonetic": "/bɛr/",
+    "meaning": "赤裸的；光禿的",
+    "pos": "adj",
+    "difficulty": 1,
+    "example": "The walls were bare with no decorations.",
+    "exampleZh": "牆壁光禿禿的，沒有任何裝飾。"
+  },
+  {
+    "word": "broad",
+    "phonetic": "/brɔːd/",
+    "meaning": "寬廣的",
+    "pos": "adj",
+    "difficulty": 1,
+    "example": "The river is very broad at this point.",
+    "exampleZh": "河流在這裡非常寬闊。"
+  },
+  {
+    "word": "capable",
+    "phonetic": "/ˈkeɪpəbəl/",
+    "meaning": "有能力的",
+    "pos": "adj",
+    "difficulty": 2,
+    "example": "She is capable of managing the entire team.",
+    "exampleZh": "她有能力管理整個團隊。"
+  },
+  {
+    "word": "creative",
+    "phonetic": "/kriˈeɪtɪv/",
+    "meaning": "有創意的",
+    "pos": "adj",
+    "difficulty": 2,
+    "example": "She found a creative solution to the problem.",
+    "exampleZh": "她為這個問題找到了一個有創意的解決方案。"
+  },
+  {
+    "word": "crucial",
+    "phonetic": "/ˈkruːʃəl/",
+    "meaning": "關鍵的；至關重要的",
+    "pos": "adj",
+    "difficulty": 2,
+    "example": "Timing is crucial for the success of this project.",
+    "exampleZh": "時機對這個專案的成功至關重要。",
+    "context": "強調決定成敗的關鍵因素；比較 important（通用的重要）、essential（不可或缺的基本要素）、vital（攸關生死/存亡）"
+  },
+  {
+    "word": "curious",
+    "phonetic": "/ˈkjʊriəs/",
+    "meaning": "好奇的",
+    "pos": "adj",
+    "difficulty": 2,
+    "example": "The curious child asked many questions.",
+    "exampleZh": "那個好奇的孩子問了很多問題。"
+  },
+  {
+    "word": "decent",
+    "phonetic": "/ˈdiːsənt/",
+    "meaning": "像樣的；體面的",
+    "pos": "adj",
+    "difficulty": 2,
+    "example": "He found a decent apartment near the office.",
+    "exampleZh": "他在辦公室附近找到了一間還不錯的公寓。"
+  },
+  {
+    "word": "delicate",
+    "phonetic": "/ˈdɛlɪkɪt/",
+    "meaning": "精緻的；脆弱的",
+    "pos": "adj",
+    "difficulty": 2,
+    "example": "Be careful with that vase; it is very delicate.",
+    "exampleZh": "小心那個花瓶，它非常脆弱。"
+  },
+  {
+    "word": "desperate",
+    "phonetic": "/ˈdɛspərɪt/",
+    "meaning": "絕望的；拚命的",
+    "pos": "adj",
+    "difficulty": 3,
+    "example": "He was desperate to find a job.",
+    "exampleZh": "他拚命地想找到一份工作。"
+  },
+  {
+    "word": "eager",
+    "phonetic": "/ˈiːɡər/",
+    "meaning": "渴望的",
+    "pos": "adj",
+    "difficulty": 1,
+    "example": "He was eager to start his new job.",
+    "exampleZh": "他渴望開始新工作。",
+    "context": "指非常想要做某事或對某事發生感到興奮的。"
+  },
+  {
+    "word": "elegant",
+    "phonetic": "/ˈɛlɪɡənt/",
+    "meaning": "優雅的",
+    "pos": "adj",
+    "difficulty": 2,
+    "example": "She wore an elegant dress to the party.",
+    "exampleZh": "她穿了一件優雅的洋裝去派對。"
+  },
+  {
+    "word": "enormous",
+    "phonetic": "/ɪˈnɔːrməs/",
+    "meaning": "巨大的",
+    "pos": "adj",
+    "difficulty": 2,
+    "example": "They built an enormous shopping mall in the city center.",
+    "exampleZh": "他們在市中心建了一座巨大的購物中心。",
+    "context": "體積或數量極其龐大，程度比 big/large 強很多；比較 vast（範圍廣闊）、massive（又大又重）"
+  },
+  {
+    "word": "essential",
+    "phonetic": "/ɪˈsɛnʃəl/",
+    "meaning": "本質的；不可或缺的",
+    "pos": "adj",
+    "difficulty": 3,
+    "example": "Water is essential for survival.",
+    "exampleZh": "水是生存不可或缺的。",
+    "context": "不可或缺的基本要素，沒有它就無法運作；比較 important（通用的重要）、crucial（決定��敗的關鍵）"
+  },
+  {
+    "word": "evil",
+    "phonetic": "/ˈiːvəl/",
+    "meaning": "邪惡的",
+    "pos": "adj",
+    "difficulty": 1,
+    "example": "The villain in the movie was truly evil.",
+    "exampleZh": "電影裡的反派真的很邪惡。"
+  },
+  {
+    "word": "exact",
+    "phonetic": "/ɪɡˈzækt/",
+    "meaning": "精確的；確切的",
+    "pos": "adj",
+    "difficulty": 1,
+    "example": "I don't remember the exact date.",
+    "exampleZh": "我不記得確切的日期了。"
+  },
+  {
+    "word": "familiar",
+    "phonetic": "/fəˈmɪliər/",
+    "meaning": "熟悉的",
+    "pos": "adj",
+    "difficulty": 2,
+    "example": "This song sounds very familiar.",
+    "exampleZh": "這首歌聽起來很熟悉。"
+  },
+  {
+    "word": "fierce",
+    "phonetic": "/fɪrs/",
+    "meaning": "兇猛的；激烈的",
+    "pos": "adj",
+    "difficulty": 2,
+    "example": "There was fierce competition for the position.",
+    "exampleZh": "這個職位的競爭非常激烈。"
+  },
+  {
+    "word": "firm",
+    "phonetic": "/fɜːrm/",
+    "meaning": "堅定的；結實的",
+    "pos": "adj",
+    "difficulty": 1,
+    "example": "He gave a firm handshake.",
+    "exampleZh": "他給了一個有力的握手。"
+  },
+  {
+    "word": "formal",
+    "phonetic": "/ˈfɔːrməl/",
+    "meaning": "正式的",
+    "pos": "adj",
+    "difficulty": 2,
+    "example": "The dinner is a formal event, so please wear a suit.",
+    "exampleZh": "晚宴是正式場合，請穿西裝。"
+  },
+  {
+    "word": "former",
+    "phonetic": "/ˈfɔːrmər/",
+    "meaning": "以前的",
+    "pos": "adj",
+    "difficulty": 2,
+    "example": "The former president gave a speech yesterday.",
+    "exampleZh": "前任總統昨天發表了一場演講。"
+  },
+  {
+    "word": "frequent",
+    "phonetic": "/ˈfriːkwənt/",
+    "meaning": "頻繁的",
+    "pos": "adj",
+    "difficulty": 2,
+    "example": "He is a frequent visitor to this restaurant.",
+    "exampleZh": "他是這家餐廳的常客。"
+  },
+  {
+    "word": "global",
+    "phonetic": "/ˈɡloʊbəl/",
+    "meaning": "全球的",
+    "pos": "adj",
+    "difficulty": 2,
+    "example": "Climate change is a global problem.",
+    "exampleZh": "氣候變遷是一個全球性的問題。"
+  },
+  {
+    "word": "guilty",
+    "phonetic": "/ˈɡɪlti/",
+    "meaning": "有罪的；內疚的",
+    "pos": "adj",
+    "difficulty": 2,
+    "example": "He felt guilty about lying to his friend.",
+    "exampleZh": "他對朋友說謊感到內疚。"
+  },
+  {
+    "word": "harsh",
+    "phonetic": "/hɑːrʃ/",
+    "meaning": "嚴酷的；刺耳的",
+    "pos": "adj",
+    "difficulty": 1,
+    "example": "The winter weather here can be very harsh.",
+    "exampleZh": "這裡的冬天氣候可能非常嚴酷。"
+  },
+  {
+    "word": "historic",
+    "phonetic": "/hɪˈstɔːrɪk/",
+    "meaning": "歷史性的",
+    "pos": "adj",
+    "difficulty": 2,
+    "example": "The signing of the treaty was a historic event.",
+    "exampleZh": "條約的簽署是一個歷史性的事件。"
+  },
+  {
+    "word": "hollow",
+    "phonetic": "/ˈhɑːloʊ/",
+    "meaning": "空心的",
+    "pos": "adj",
+    "difficulty": 2,
+    "example": "The old tree had a hollow trunk.",
+    "exampleZh": "那棵老樹的樹幹是空心的。"
+  },
+  {
+    "word": "ideal",
+    "phonetic": "/aɪˈdiːəl/",
+    "meaning": "理想的",
+    "pos": "adj",
+    "difficulty": 1,
+    "example": "This location is ideal for a new office.",
+    "exampleZh": "這個地點很適合設立新辦公室。"
+  },
+  {
+    "word": "immediate",
+    "phonetic": "/ɪˈmiːdiɪt/",
+    "meaning": "立即的",
+    "pos": "adj",
+    "difficulty": 3,
+    "example": "The problem requires immediate attention.",
+    "exampleZh": "這個問題需要立即處理。"
+  },
+  {
+    "word": "incredible",
+    "phonetic": "/ɪnˈkrɛdɪbəl/",
+    "meaning": "難以置信的",
+    "pos": "adj",
+    "difficulty": 3,
+    "example": "The view from the mountain top was incredible.",
+    "exampleZh": "從山頂看到的風景令人難以置信。"
+  },
+  {
+    "word": "inner",
+    "phonetic": "/ˈɪnər/",
+    "meaning": "內部的",
+    "pos": "adj",
+    "difficulty": 1,
+    "example": "She listened to her inner voice.",
+    "exampleZh": "她傾聽了自己內心的聲音。"
+  },
+  {
+    "word": "intense",
+    "phonetic": "/ɪnˈtɛns/",
+    "meaning": "強烈的；激烈的",
+    "pos": "adj",
+    "difficulty": 2,
+    "example": "The heat was intense during the summer.",
+    "exampleZh": "夏天的暑熱非常強烈。"
+  },
+  {
+    "word": "loose",
+    "phonetic": "/luːs/",
+    "meaning": "鬆的",
+    "pos": "adj",
+    "difficulty": 1,
+    "example": "The screw is loose; can you tighten it?",
+    "exampleZh": "螺絲鬆了，你能把它鎖緊嗎？"
+  },
+  {
+    "word": "massive",
+    "phonetic": "/ˈmæsɪv/",
+    "meaning": "巨大的；大量的",
+    "pos": "adj",
+    "difficulty": 2,
+    "example": "The project requires a massive investment.",
+    "exampleZh": "這個專案需要大量的投資。"
+  },
+  {
+    "word": "mature",
+    "phonetic": "/məˈtʃʊr/",
+    "meaning": "成熟的",
+    "pos": "adj",
+    "difficulty": 2,
+    "example": "He is very mature for his age.",
+    "exampleZh": "以他的年紀來說，他非常成熟。"
+  },
+  {
+    "word": "minor",
+    "phonetic": "/ˈmaɪnər/",
+    "meaning": "較小的；次要的",
+    "pos": "adj",
+    "difficulty": 1,
+    "example": "There were only minor problems with the plan.",
+    "exampleZh": "這個計劃只有一些小問題。",
+    "context": "強調不嚴重、次要的；也指未成年人（名詞）；比較 small（物理上的小）、tiny（極小）"
+  },
+  {
+    "word": "modest",
+    "phonetic": "/ˈmɑːdɪst/",
+    "meaning": "謙虛的；適度的",
+    "pos": "adj",
+    "difficulty": 2,
+    "example": "Despite his success, he remained modest.",
+    "exampleZh": "儘管很成功，他仍然保持謙虛。"
+  },
+  {
+    "word": "native",
+    "phonetic": "/ˈneɪtɪv/",
+    "meaning": "本地的；母語的",
+    "pos": "adj",
+    "difficulty": 2,
+    "example": "She is a native speaker of Japanese.",
+    "exampleZh": "她的母語是日語。"
+  },
+  {
+    "word": "noble",
+    "phonetic": "/ˈnoʊbəl/",
+    "meaning": "高貴的；崇高的",
+    "pos": "adj",
+    "difficulty": 1,
+    "example": "Teaching is a noble profession.",
+    "exampleZh": "教書是一個崇高的職業。"
+  },
+  {
+    "word": "obvious",
+    "phonetic": "/ˈɑːbviəs/",
+    "meaning": "明顯的",
+    "pos": "adj",
+    "difficulty": 2,
+    "example": "The answer is obvious if you think about it.",
+    "exampleZh": "如果你想一想，答案是很明顯的。"
+  },
+  {
+    "word": "official",
+    "phonetic": "/əˈfɪʃəl/",
+    "meaning": "官方的；正式的",
+    "pos": "adj",
+    "difficulty": 2,
+    "example": "English is the official language of the meeting.",
+    "exampleZh": "英語是這場會議的官方語言。"
+  },
+  {
+    "word": "ordinary",
+    "phonetic": "/ˈɔːrdɪˌnɛri/",
+    "meaning": "普通的",
+    "pos": "adj",
+    "difficulty": 2,
+    "example": "It looked like an ordinary day, but then something amazing happened.",
+    "exampleZh": "看起來像是平凡的一天，但後來發生了驚人的事。"
+  },
+  {
+    "word": "original",
+    "phonetic": "/əˈrɪdʒɪnəl/",
+    "meaning": "原始的；獨創的",
+    "pos": "adj",
+    "difficulty": 2,
+    "example": "Is this the original painting or a copy?",
+    "exampleZh": "這是原作還是複製品？"
+  },
+  {
+    "word": "pale",
+    "phonetic": "/peɪl/",
+    "meaning": "蒼白的；淡色的",
+    "pos": "adj",
+    "difficulty": 1,
+    "example": "She looked pale after the long illness.",
+    "exampleZh": "長期生病後她看起來臉色蒼白。"
+  },
+  {
+    "word": "pleasant",
+    "phonetic": "/ˈplɛzənt/",
+    "meaning": "愉快的；宜人的",
+    "pos": "adj",
+    "difficulty": 2,
+    "example": "The weather was very pleasant today.",
+    "exampleZh": "今天天氣非常宜人。"
+  },
+  {
+    "word": "precious",
+    "phonetic": "/ˈprɛʃəs/",
+    "meaning": "珍貴的",
+    "pos": "adj",
+    "difficulty": 2,
+    "example": "Time is precious; don't waste it.",
+    "exampleZh": "時間是珍貴的，不要浪費它。"
+  },
+  {
+    "word": "previous",
+    "phonetic": "/ˈpriːviəs/",
+    "meaning": "先前的",
+    "pos": "adj",
+    "difficulty": 2,
+    "example": "She left her previous job to start a business.",
+    "exampleZh": "她離開了之前的工作去創業。"
+  },
+  {
+    "word": "primary",
+    "phonetic": "/ˈpraɪˌmɛri/",
+    "meaning": "首要的；初級的",
+    "pos": "adj",
+    "difficulty": 2,
+    "example": "The primary goal is to increase sales.",
+    "exampleZh": "主要目標是提高銷售額。"
+  },
+  {
+    "word": "proper",
+    "phonetic": "/ˈprɑːpər/",
+    "meaning": "適當的；正確的",
+    "pos": "adj",
+    "difficulty": 2,
+    "example": "Make sure you use the proper tools for the job.",
+    "exampleZh": "確保你使用適當的工具來做這件事。"
+  },
+  {
+    "word": "pure",
+    "phonetic": "/pjʊr/",
+    "meaning": "純的；純淨的",
+    "pos": "adj",
+    "difficulty": 1,
+    "example": "This is made from pure cotton.",
+    "exampleZh": "這是用純棉製成的。"
+  },
+  {
+    "word": "rapid",
+    "phonetic": "/ˈræpɪd/",
+    "meaning": "快速的",
+    "pos": "adj",
+    "difficulty": 1,
+    "example": "Technology is changing at a rapid pace.",
+    "exampleZh": "科技正在以快速的步伐改變。",
+    "context": "較正式，常用於變化、成長、發展的速度；比較 fast（日常用語，強調移動速度）、quick（強調反應快、時間短）"
+  },
+  {
+    "word": "rare",
+    "phonetic": "/rɛr/",
+    "meaning": "稀有的；罕見的",
+    "pos": "adj",
+    "difficulty": 1,
+    "example": "This is a rare species of butterfly.",
+    "exampleZh": "這是一種稀有的蝴蝶品種。"
+  },
+  {
+    "word": "reasonable",
+    "phonetic": "/ˈriːzənəbəl/",
+    "meaning": "合理的",
+    "pos": "adj",
+    "difficulty": 3,
+    "example": "The price is very reasonable for the quality.",
+    "exampleZh": "以這個品質來說，價格非常合理。"
+  },
+  {
+    "word": "remarkable",
+    "phonetic": "/rɪˈmɑːrkəbəl/",
+    "meaning": "非凡的；值得注意的",
+    "pos": "adj",
+    "difficulty": 3,
+    "example": "She made a remarkable recovery after surgery.",
+    "exampleZh": "她在手術後恢復得非常好。"
+  },
+  {
+    "word": "remote",
+    "phonetic": "/rɪˈmoʊt/",
+    "meaning": "遙遠的；偏僻的",
+    "pos": "adj",
+    "difficulty": 2,
+    "example": "The village is in a remote area of the country.",
+    "exampleZh": "這個村莊位於國家偏遠的地區。"
+  },
+  {
+    "word": "rough",
+    "phonetic": "/rʌf/",
+    "meaning": "粗糙的；大概的",
+    "pos": "adj",
+    "difficulty": 1,
+    "example": "The surface of the road was very rough.",
+    "exampleZh": "路面非常粗糙。"
+  },
+  {
+    "word": "senior",
+    "phonetic": "/ˈsiːniər/",
+    "meaning": "資深的；年長的",
+    "pos": "adj",
+    "difficulty": 2,
+    "example": "He is the senior manager of the department.",
+    "exampleZh": "他是部門的資深經理。"
+  },
+  {
+    "word": "severe",
+    "phonetic": "/sɪˈvɪr/",
+    "meaning": "嚴重的；嚴厲的",
+    "pos": "adj",
+    "difficulty": 2,
+    "example": "The storm caused severe damage to the area.",
+    "exampleZh": "暴風雨對該地區造成了嚴重的損害。"
+  },
+  {
+    "word": "slight",
+    "phonetic": "/slaɪt/",
+    "meaning": "輕微的",
+    "pos": "adj",
+    "difficulty": 2,
+    "example": "There was a slight delay in the schedule.",
+    "exampleZh": "時間表有輕微的延誤。"
+  },
+  {
+    "word": "solid",
+    "phonetic": "/ˈsɑːlɪd/",
+    "meaning": "堅固的；實心的",
+    "pos": "adj",
+    "difficulty": 1,
+    "example": "The table is made of solid wood.",
+    "exampleZh": "這張桌子是實木做的。"
+  },
+  {
+    "word": "steady",
+    "phonetic": "/ˈstɛdi/",
+    "meaning": "穩定的",
+    "pos": "adj",
+    "difficulty": 2,
+    "example": "The patient is making steady progress.",
+    "exampleZh": "病患正在穩定地康復中。"
+  },
+  {
+    "word": "shallow",
+    "phonetic": "/ˈʃæloʊ/",
+    "meaning": "淺的",
+    "pos": "adj",
+    "difficulty": 2,
+    "example": "The swimming pool has a shallow end for children.",
+    "exampleZh": "游泳池有一個給小朋友的淺水區。"
+  },
+  {
+    "word": "strict",
+    "phonetic": "/strɪkt/",
+    "meaning": "嚴格的；精確的",
+    "pos": "adj",
+    "difficulty": 2,
+    "example": "The school has strict rules about uniforms.",
+    "exampleZh": "這所學校對制服有嚴格的規定。"
+  },
+  {
+    "word": "suitable",
+    "phonetic": "/ˈsuːtəbəl/",
+    "meaning": "合適的",
+    "pos": "adj",
+    "difficulty": 2,
+    "example": "This movie is not suitable for children.",
+    "exampleZh": "這部電影不適合兒童觀看。"
+  },
+  {
+    "word": "tough",
+    "phonetic": "/tʌf/",
+    "meaning": "堅韌的；困難的",
+    "pos": "adj",
+    "difficulty": 1,
+    "example": "It was a tough decision to make.",
+    "exampleZh": "那是一個很艱難的決定。",
+    "context": "困難且需要堅強毅力面對��也��人堅韌強硬；比較 hard（通用的困難/硬）、difficult（較正式的困難）"
+  },
+  {
+    "word": "typical",
+    "phonetic": "/ˈtɪpɪkəl/",
+    "meaning": "典型的",
+    "pos": "adj",
+    "difficulty": 2,
+    "example": "This is a typical example of modern architecture.",
+    "exampleZh": "這是現代建築的一個典型範例。"
+  },
+  {
+    "word": "plain",
+    "phonetic": "/pleɪn/",
+    "meaning": "平易的；純色的",
+    "pos": "adj",
+    "difficulty": 1,
+    "example": "She wore a plain white dress to the meeting.",
+    "exampleZh": "她穿了一件素白的洋裝去開會。"
+  },
+  {
+    "word": "unique",
+    "phonetic": "/juˈniːk/",
+    "meaning": "獨特的",
+    "pos": "adj",
+    "difficulty": 2,
+    "example": "Everyone has a unique fingerprint.",
+    "exampleZh": "每個人都有獨一無二的指紋。"
+  },
+  {
+    "word": "unusual",
+    "phonetic": "/ʌnˈjuːʒuəl/",
+    "meaning": "不尋常的",
+    "pos": "adj",
+    "difficulty": 2,
+    "example": "It is unusual to see snow in this region.",
+    "exampleZh": "在這個地區看到雪是不尋常的。"
+  },
+  {
+    "word": "valuable",
+    "phonetic": "/ˈvæljuəbəl/",
+    "meaning": "有價值的；貴重的",
+    "pos": "adj",
+    "difficulty": 2,
+    "example": "Time is the most valuable resource we have.",
+    "exampleZh": "時間是我們擁有的最寶貴的資源。"
+  },
+  {
+    "word": "visible",
+    "phonetic": "/ˈvɪzɪbəl/",
+    "meaning": "可見的",
+    "pos": "adj",
+    "difficulty": 2,
+    "example": "The mountains were visible from the hotel window.",
+    "exampleZh": "從飯店的窗戶可以看到那些山。"
+  },
+  {
+    "word": "vital",
+    "phonetic": "/ˈvaɪtəl/",
+    "meaning": "極其重要的",
+    "pos": "adj",
+    "difficulty": 1,
+    "example": "Exercise is vital for maintaining good health.",
+    "exampleZh": "運動對維持健康極為重要。",
+    "context": "攸關生死存亡的重要，程度最強；比較 important（通用）、crucial（決定成敗）、essential（不可或缺）"
+  },
+  {
+    "word": "wise",
+    "phonetic": "/waɪz/",
+    "meaning": "明智的",
+    "pos": "adj",
+    "difficulty": 1,
+    "example": "It is wise to save money for the future.",
+    "exampleZh": "為將來存錢是明智的。",
+    "context": "有智慧的、經驗豐富後做出好判斷；比較 smart（聰明機靈、學習能力強）、clever（機巧、靈活應變）"
+  },
+  {
+    "word": "worthy",
+    "phonetic": "/ˈwɜːrði/",
+    "meaning": "值得的",
+    "pos": "adj",
+    "difficulty": 2,
+    "example": "The charity is worthy of our support.",
+    "exampleZh": "這個慈善機構值得我們支持。"
+  },
+  {
+    "word": "aftermath",
+    "phonetic": "/ˈæftərmæθ/",
+    "meaning": "後果；餘波",
+    "pos": "n",
+    "difficulty": 3,
+    "example": "The city was rebuilding in the aftermath of the earthquake.",
+    "exampleZh": "這座城市在地震的餘波中進行重建。"
+  },
+  {
+    "word": "backbone",
+    "phonetic": "/ˈbækboʊn/",
+    "meaning": "脊樑；支柱",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "Small businesses are the backbone of the economy.",
+    "exampleZh": "中小企業是經濟的支柱。"
+  },
+  {
+    "word": "breakdown",
+    "phonetic": "/ˈbreɪkdaʊn/",
+    "meaning": "故障；崩潰",
+    "pos": "n",
+    "difficulty": 3,
+    "example": "The car had a breakdown on the highway.",
+    "exampleZh": "那輛車在高速公路上拋錨了。"
+  },
+  {
+    "word": "breakthrough",
+    "phonetic": "/ˈbreɪkθruː/",
+    "meaning": "突破",
+    "pos": "n",
+    "difficulty": 4,
+    "example": "Scientists made a major breakthrough in cancer research.",
+    "exampleZh": "科學家在癌症研究方面取得了重大突破。"
+  },
+  {
+    "word": "downfall",
+    "phonetic": "/ˈdaʊnfɔːl/",
+    "meaning": "垮台；衰敗",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "Pride was his downfall.",
+    "exampleZh": "驕傲是他垮台的原因。"
+  },
+  {
+    "word": "downside",
+    "phonetic": "/ˈdaʊnsaɪd/",
+    "meaning": "缺點；不利面",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "The downside of living in the city is the noise.",
+    "exampleZh": "住在城市的缺點就是噪音。"
+  },
+  {
+    "word": "drawback",
+    "phonetic": "/ˈdrɔːbæk/",
+    "meaning": "缺點",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "The only drawback is the high price.",
+    "exampleZh": "唯一的缺點就是價格太高。"
+  },
+  {
+    "word": "flashback",
+    "phonetic": "/ˈflæʃbæk/",
+    "meaning": "倒敘；閃回",
+    "pos": "n",
+    "difficulty": 3,
+    "example": "The movie uses flashbacks to tell the story.",
+    "exampleZh": "這部電影運用倒敘手法來講述故事。"
+  },
+  {
+    "word": "hardship",
+    "phonetic": "/ˈhɑːrdʃɪp/",
+    "meaning": "困苦；艱難",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "Many families face financial hardship.",
+    "exampleZh": "許多家庭面臨經濟困難。"
+  },
+  {
+    "word": "income",
+    "phonetic": "/ˈɪnkʌm/",
+    "meaning": "收入",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "His monthly income is enough to cover all expenses.",
+    "exampleZh": "他的月收入足以支付所有開支。"
+  },
+  {
+    "word": "insight",
+    "phonetic": "/ˈɪnsaɪt/",
+    "meaning": "洞察力；見解",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "The report provides valuable insights into consumer behavior.",
+    "exampleZh": "這份報告提供了對消費者行為的寶貴見解。"
+  },
+  {
+    "word": "layout",
+    "phonetic": "/ˈleɪaʊt/",
+    "meaning": "布局；排版",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "The layout of the office is very efficient.",
+    "exampleZh": "辦公室的格局非常有效率。"
+  },
+  {
+    "word": "lifestyle",
+    "phonetic": "/ˈlaɪfstaɪl/",
+    "meaning": "生活方式",
+    "pos": "n",
+    "difficulty": 3,
+    "example": "A healthy lifestyle includes exercise and good nutrition.",
+    "exampleZh": "健康的生活方式包括運動和良好的營養。"
+  },
+  {
+    "word": "newcomer",
+    "phonetic": "/ˈnjuːˌkʌmər/",
+    "meaning": "新來者",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "The newcomer quickly adapted to the work environment.",
+    "exampleZh": "新來的人很快就適應了工作環境。"
+  },
+  {
+    "word": "offspring",
+    "phonetic": "/ˈɔːfsprɪŋ/",
+    "meaning": "後代；子女",
+    "pos": "n",
+    "difficulty": 3,
+    "example": "The bird feeds its offspring several times a day.",
+    "exampleZh": "那隻鳥每天餵食牠的幼鳥好幾次。"
+  },
+  {
+    "word": "outbreak",
+    "phonetic": "/ˈaʊtbreɪk/",
+    "meaning": "爆發",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "There was an outbreak of the flu at the school.",
+    "exampleZh": "學校爆發了流感。"
+  },
+  {
+    "word": "pitfall",
+    "phonetic": "/ˈpɪtfɔːl/",
+    "meaning": "陷阱；隱患",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "Be aware of the common pitfalls when starting a business.",
+    "exampleZh": "創業時要留意常見的陷阱。"
+  },
+  {
+    "word": "shortcut",
+    "phonetic": "/ˈʃɔːrtkʌt/",
+    "meaning": "捷徑",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "I know a shortcut to the station.",
+    "exampleZh": "我知道一條去車站的捷徑。"
+  },
+  {
+    "word": "showdown",
+    "phonetic": "/ˈʃoʊdaʊn/",
+    "meaning": "攤牌；最終對決",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "The final match was a showdown between the two best teams.",
+    "exampleZh": "決賽是兩支最強隊伍之間的最終對決。"
+  },
+  {
+    "word": "standpoint",
+    "phonetic": "/ˈstændpɔɪnt/",
+    "meaning": "觀點；立場",
+    "pos": "n",
+    "difficulty": 3,
+    "example": "From a financial standpoint, the project is not profitable.",
+    "exampleZh": "從財務的角度來看，這個專案是不賺錢的。"
+  },
+  {
+    "word": "stepchild",
+    "phonetic": "/ˈstɛptʃaɪld/",
+    "meaning": "繼子女",
+    "pos": "n",
+    "difficulty": 3,
+    "example": "She treats her stepchild like her own.",
+    "exampleZh": "她對待繼子女就像對待自己的孩子一樣。"
+  },
+  {
+    "word": "turnout",
+    "phonetic": "/ˈtɜːrnaʊt/",
+    "meaning": "出席人數",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "The turnout for the event was better than expected.",
+    "exampleZh": "活動的出席人數比預期的還要多。"
+  },
+  {
+    "word": "undertake",
+    "phonetic": "/ˌʌndərˈteɪk/",
+    "meaning": "承擔；從事",
+    "pos": "v",
+    "difficulty": 3,
+    "example": "She undertook the responsibility of managing the project.",
+    "exampleZh": "她承擔了管理這個專案的責任。"
+  },
+  {
+    "word": "upbringing",
+    "phonetic": "/ˈʌpˌbrɪŋɪŋ/",
+    "meaning": "教養；成長環境",
+    "pos": "n",
+    "difficulty": 3,
+    "example": "His upbringing taught him the value of hard work.",
+    "exampleZh": "他的成長環境教會了他努力工作的價值。"
+  },
+  {
+    "word": "uproar",
+    "phonetic": "/ˈʌprɔːr/",
+    "meaning": "喧鬧；騷動",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "The announcement caused an uproar among employees.",
+    "exampleZh": "這項公告在員工之間引起了騷動。"
+  },
+  {
+    "word": "milestone",
+    "phonetic": "/ˈmaɪlstoʊn/",
+    "meaning": "里程碑",
+    "pos": "n",
+    "difficulty": 3,
+    "example": "Graduating from college was an important milestone in her life.",
+    "exampleZh": "大學畢業是她人生中重要的里程碑。"
+  },
+  {
+    "word": "wellbeing",
+    "phonetic": "/ˌwɛlˈbiːɪŋ/",
+    "meaning": "幸福；健康",
+    "pos": "n",
+    "difficulty": 3,
+    "example": "The company cares about the wellbeing of its employees.",
+    "exampleZh": "公司關心員工的身心健康。"
+  },
+  {
+    "word": "sideline",
+    "phonetic": "/ˈsaɪdlaɪn/",
+    "meaning": "副業；場邊",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "She started a small business as a sideline.",
+    "exampleZh": "她開了一間小店作為副業。"
+  },
+  {
+    "word": "frontline",
+    "phonetic": "/ˈfrʌntlaɪn/",
+    "meaning": "前線",
+    "pos": "n",
+    "difficulty": 3,
+    "example": "Nurses are on the frontline of healthcare.",
+    "exampleZh": "護理師是醫療的前線人員。"
+  },
+  {
+    "word": "headcount",
+    "phonetic": "/ˈhɛdkaʊnt/",
+    "meaning": "人數統計",
+    "pos": "n",
+    "difficulty": 3,
+    "example": "The manager did a headcount before the trip.",
+    "exampleZh": "出發前經理做了人數統計。"
+  },
+  {
+    "word": "groundwork",
+    "phonetic": "/ˈɡraʊndwɜːrk/",
+    "meaning": "基礎工作",
+    "pos": "n",
+    "difficulty": 3,
+    "example": "We need to lay the groundwork for the new project.",
+    "exampleZh": "我們需要為新專案打好基礎。"
+  },
+  {
+    "word": "outweigh",
+    "phonetic": "/ˌaʊtˈweɪ/",
+    "meaning": "超過；重於",
+    "pos": "v",
+    "difficulty": 2,
+    "example": "The benefits outweigh the risks.",
+    "exampleZh": "好處大於風險。"
+  },
+  {
+    "word": "widespread",
+    "phonetic": "/ˈwaɪdsprɛd/",
+    "meaning": "廣泛的",
+    "pos": "adj",
+    "difficulty": 3,
+    "example": "The use of smartphones is now widespread.",
+    "exampleZh": "智慧型手機的使用現在已經非常普及。"
+  },
+  {
+    "word": "outlook",
+    "phonetic": "/ˈaʊtlʊk/",
+    "meaning": "前景；觀點",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "The economic outlook for next year is positive.",
+    "exampleZh": "明年的經濟前景是樂觀的。"
+  },
+  {
+    "word": "upside",
+    "phonetic": "/ˈʌpsaɪd/",
+    "meaning": "好的一面；上方",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "The upside of working from home is saving commute time.",
+    "exampleZh": "在家工作的好處是可以省下通勤時間。"
+  },
+  {
+    "word": "ongoing",
+    "phonetic": "/ˈɑːnˌɡoʊɪŋ/",
+    "meaning": "進行中的",
+    "pos": "adj",
+    "difficulty": 2,
+    "example": "The investigation is still ongoing.",
+    "exampleZh": "調查仍在進行中。"
+  },
+  {
+    "word": "worthwhile",
+    "phonetic": "/ˌwɜːrθˈwaɪl/",
+    "meaning": "值得的",
+    "pos": "adj",
+    "difficulty": 3,
+    "example": "Volunteering is a worthwhile activity.",
+    "exampleZh": "做志工是一項值得的活動。"
+  },
+  {
+    "word": "furthermore",
+    "phonetic": "/ˌfɜːrðərˈmɔːr/",
+    "meaning": "此外；而且",
+    "pos": "adv",
+    "difficulty": 3,
+    "example": "The plan is too expensive; furthermore, it will take too long.",
+    "exampleZh": "這個計劃太貴了；此外，它也會花太長的時間。",
+    "context": "正式的「此外」，用於書面或論述中追加論點；比較 also（通用的「也」）、besides（此外，也有「除了」的意思）"
+  },
+  {
+    "word": "straightforward",
+    "phonetic": "/ˌstreɪtˈfɔːrwərd/",
+    "meaning": "簡單明瞭的",
+    "pos": "adj",
+    "difficulty": 4,
+    "example": "The instructions are quite straightforward.",
+    "exampleZh": "這些說明相當簡單明瞭。",
+    "context": "強調不複雜、容易理解或執行；也指人坦率直接；比較 easy（通用的容易）、simple（結構簡單）"
+  },
+  {
+    "word": "undergo",
+    "phonetic": "/ˌʌndərˈɡoʊ/",
+    "meaning": "經歷；接受",
+    "pos": "v",
+    "difficulty": 2,
+    "example": "The building will undergo major renovation next year.",
+    "exampleZh": "這棟建築明年將進行大規模翻修。"
+  },
+  {
+    "word": "thorough",
+    "phonetic": "/ˈθɜːroʊ/",
+    "meaning": "徹底的；仔細的",
+    "pos": "adj",
+    "difficulty": 2,
+    "example": "The police conducted a thorough investigation.",
+    "exampleZh": "警方進行了徹底的調查。"
+  },
+  {
+    "word": "accordingly",
+    "phonetic": "/əˈkɔːrdɪŋli/",
+    "meaning": "因此；相應地",
+    "pos": "adv",
+    "difficulty": 3,
+    "example": "The budget was reduced, and plans were adjusted accordingly.",
+    "exampleZh": "預算被削減了，計劃也相應地做了調整。"
+  },
+  {
+    "word": "anticipate",
+    "phonetic": "/ænˈtɪsɪˌpeɪt/",
+    "meaning": "預期；期待",
+    "pos": "v",
+    "difficulty": 3,
+    "example": "We anticipate a busy season this summer.",
+    "exampleZh": "我們預期今年夏天會是旺季。"
+  },
+  {
+    "word": "appeal",
+    "phonetic": "/əˈpiːl/",
+    "meaning": "吸引；呼籲",
+    "pos": "v",
+    "difficulty": 2,
+    "example": "The new design appeals to younger customers.",
+    "exampleZh": "新設計吸引了年輕的客群。"
+  },
+  {
+    "word": "applicable",
+    "phonetic": "/ˈæplɪkəbəl/",
+    "meaning": "適用的",
+    "pos": "adj",
+    "difficulty": 3,
+    "example": "This rule is applicable to all employees.",
+    "exampleZh": "這條規則適用於所有員工。"
+  },
+  {
+    "word": "approximate",
+    "phonetic": "/əˈprɑːksɪmɪt/",
+    "meaning": "大約的",
+    "pos": "adj",
+    "difficulty": 3,
+    "example": "The approximate cost of the project is fifty thousand dollars.",
+    "exampleZh": "這個專案的大約費用是五萬美元。"
+  },
+  {
+    "word": "aspire",
+    "phonetic": "/əˈspaɪər/",
+    "meaning": "渴望；嚮往",
+    "pos": "v",
+    "difficulty": 2,
+    "example": "She aspires to become a doctor someday.",
+    "exampleZh": "她渴望有朝一日成為一名醫生。"
+  },
+  {
+    "word": "attribute",
+    "phonetic": "/əˈtrɪbjuːt/",
+    "meaning": "歸因於",
+    "pos": "v",
+    "difficulty": 3,
+    "example": "The success was attributed to good teamwork.",
+    "exampleZh": "這次的成功被歸功於良好的團隊合作。"
+  },
+  {
+    "word": "beneficial",
+    "phonetic": "/ˌbenɪˈfɪʃl/",
+    "meaning": "有益的",
+    "pos": "adj",
+    "difficulty": 3,
+    "example": "Regular exercise is beneficial to your health.",
+    "exampleZh": "規律運動對你的健康有益。",
+    "context": "指能產生正面影響或幫助的。"
+  },
+  {
+    "word": "cease",
+    "phonetic": "/siːs/",
+    "meaning": "停止；中斷 (書面)",
+    "pos": "v",
+    "difficulty": 1,
+    "example": "The factory will cease operations at the end of the month.",
+    "exampleZh": "工廠將在月底停止營運。"
+  },
+  {
+    "word": "applaud",
+    "phonetic": "/əˈplɔːd/",
+    "meaning": "鼓掌；讚賞",
+    "pos": "v",
+    "difficulty": 2,
+    "example": "The audience applauded loudly after the performance.",
+    "exampleZh": "表演結束後觀眾熱烈鼓掌。"
+  },
+  {
+    "word": "alter",
+    "phonetic": "/ˈɔːltər/",
+    "meaning": "改變；修改",
+    "pos": "v",
+    "difficulty": 1,
+    "example": "We need to alter the plan due to budget cuts.",
+    "exampleZh": "由於預算削減，我們需要修改計劃。"
+  },
+  {
+    "word": "compose",
+    "phonetic": "/kəmˈpoʊz/",
+    "meaning": "組成；撰寫",
+    "pos": "v",
+    "difficulty": 2,
+    "example": "He composed a formal letter to the client.",
+    "exampleZh": "他撰寫了一封正式的信給客戶。"
+  },
+  {
+    "word": "confine",
+    "phonetic": "/kənˈfaɪn/",
+    "meaning": "監禁；侷限於",
+    "pos": "v",
+    "difficulty": 2,
+    "example": "Please confine your comments to the topic at hand.",
+    "exampleZh": "請將你的發言限制在目前的主題上。"
+  },
+  {
+    "word": "conform",
+    "phonetic": "/kənˈfɔːrm/",
+    "meaning": "符合；遵守規則",
+    "pos": "v",
+    "difficulty": 2,
+    "example": "All products must conform to safety standards.",
+    "exampleZh": "所有產品必須符合安全標準。"
+  },
+  {
+    "word": "consent",
+    "phonetic": "/kənˈsɛnt/",
+    "meaning": "許可；贊同 (名詞/動詞)",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "You need written consent before making any changes.",
+    "exampleZh": "在做任何變更之前，你需要取得書面同意。"
+  },
+  {
+    "word": "considerable",
+    "phonetic": "/kənˈsɪdərəbl/",
+    "meaning": "相當大的；值得考慮的",
+    "pos": "adj",
+    "difficulty": 4,
+    "example": "She has considerable influence in the industry.",
+    "exampleZh": "她在該行業有著相當大的影響力。",
+    "context": "指大到足以引起注意或產生影響的。"
+  },
+  {
+    "word": "consult",
+    "phonetic": "/kənˈsʌlt/",
+    "meaning": "諮詢專家 (動詞)",
+    "pos": "v",
+    "difficulty": 2,
+    "example": "You should consult a doctor about your symptoms.",
+    "exampleZh": "你應該就你的症狀諮詢醫生。"
+  },
+  {
+    "word": "convert",
+    "phonetic": "/kənˈvɜːrt/",
+    "meaning": "轉換；轉變",
+    "pos": "v",
+    "difficulty": 2,
+    "example": "They plan to convert the old warehouse into apartments.",
+    "exampleZh": "他們計劃將舊倉庫改建成公寓。"
+  },
+  {
+    "word": "devote",
+    "phonetic": "/dɪˈvoʊt/",
+    "meaning": "致力於；奉獻",
+    "pos": "v",
+    "difficulty": 2,
+    "example": "He devoted his life to helping others.",
+    "exampleZh": "他一生致力於幫助他人。"
+  },
+  {
+    "word": "discard",
+    "phonetic": "/dɪˈskɑːrd/",
+    "meaning": "丟棄",
+    "pos": "v",
+    "difficulty": 2,
+    "example": "Please discard any expired products.",
+    "exampleZh": "請丟棄任何過期的產品。"
+  },
+  {
+    "word": "dismiss",
+    "phonetic": "/dɪˈsmɪs/",
+    "meaning": "解散；駁回",
+    "pos": "v",
+    "difficulty": 2,
+    "example": "The judge dismissed the case due to lack of evidence.",
+    "exampleZh": "法官因為證據不足而駁回了這個案件。"
+  },
+  {
+    "word": "distinguish",
+    "phonetic": "/dɪˈstɪŋɡwɪʃ/",
+    "meaning": "區分；辨別",
+    "pos": "v",
+    "difficulty": 3,
+    "example": "It is hard to distinguish between the two products.",
+    "exampleZh": "很難區分這兩種產品。"
+  },
+  {
+    "word": "embrace",
+    "phonetic": "/ɪmˈbreɪs/",
+    "meaning": "擁抱；接受",
+    "pos": "v",
+    "difficulty": 2,
+    "example": "The company embraced new technology to stay competitive.",
+    "exampleZh": "公司擁抱新科技以保持競爭力。"
+  },
+  {
+    "word": "enforce",
+    "phonetic": "/ɪnˈfɔːrs/",
+    "meaning": "強制執行",
+    "pos": "v",
+    "difficulty": 3,
+    "example": "The police are here to enforce the law.",
+    "exampleZh": "警察在這裡是為了執行法律。",
+    "context": "指確保法律或規則被遵守。"
+  },
+  {
+    "word": "enhance",
+    "phonetic": "/ɪnˈhæns/",
+    "meaning": "增強；提升",
+    "pos": "v",
+    "difficulty": 2,
+    "example": "The new lighting enhances the atmosphere of the restaurant.",
+    "exampleZh": "新的燈光提升了餐廳的氣氛。"
+  },
+  {
+    "word": "enrich",
+    "phonetic": "/ɪnˈrɪtʃ/",
+    "meaning": "充實；豐富",
+    "pos": "v",
+    "difficulty": 2,
+    "example": "Travel can enrich your understanding of different cultures.",
+    "exampleZh": "旅行可以豐富你對不同文化的理解。"
+  },
+  {
+    "word": "equip",
+    "phonetic": "/ɪˈkwɪp/",
+    "meaning": "裝備；配備",
+    "pos": "v",
+    "difficulty": 1,
+    "example": "The gym is equipped with modern exercise machines.",
+    "exampleZh": "健身房配備了現代化的運動器材。"
+  },
+  {
+    "word": "evident",
+    "phonetic": "/ˈɛvɪdənt/",
+    "meaning": "明顯的",
+    "pos": "adj",
+    "difficulty": 2,
+    "example": "It was evident that the plan was not working.",
+    "exampleZh": "很明顯這個計劃行不通。"
+  },
+  {
+    "word": "evolve",
+    "phonetic": "/ɪˈvɑːlv/",
+    "meaning": "演變；進化",
+    "pos": "v",
+    "difficulty": 2,
+    "example": "Technology continues to evolve rapidly.",
+    "exampleZh": "科技持續快速地演進。"
+  },
+  {
+    "word": "portray",
+    "phonetic": "/pɔːrˈtreɪ/",
+    "meaning": "描繪人物；飾演角色",
+    "pos": "v",
+    "difficulty": 2,
+    "example": "The movie portrays life in a small village.",
+    "exampleZh": "這部電影描繪了小村莊的生活。"
+  },
+  {
+    "word": "extensive",
+    "phonetic": "/ɪkˈstɛnsɪv/",
+    "meaning": "廣泛的；大規模的",
+    "pos": "adj",
+    "difficulty": 3,
+    "example": "The hotel underwent extensive renovation last year.",
+    "exampleZh": "這家飯店去年經歷了大規模的翻新。"
+  },
+  {
+    "word": "extract",
+    "phonetic": "/ɪkˈstrækt/",
+    "meaning": "提取；摘錄",
+    "pos": "v",
+    "difficulty": 2,
+    "example": "They extract oil from the ground.",
+    "exampleZh": "他們從地下開採石油。"
+  },
+  {
+    "word": "fulfill",
+    "phonetic": "/fʊlˈfɪl/",
+    "meaning": "實現；履行",
+    "pos": "v",
+    "difficulty": 2,
+    "example": "He fulfilled his promise to finish the project on time.",
+    "exampleZh": "他履行了按時完成專案的承諾。"
+  },
+  {
+    "word": "grant",
+    "phonetic": "/ɡrænt/",
+    "meaning": "授予；同意",
+    "pos": "v",
+    "difficulty": 1,
+    "example": "The university granted her a scholarship.",
+    "exampleZh": "大學授予她一筆獎學金。"
+  },
+  {
+    "word": "grasp",
+    "phonetic": "/ɡræsp/",
+    "meaning": "抓緊；理解",
+    "pos": "v",
+    "difficulty": 1,
+    "example": "It took me a while to grasp the concept.",
+    "exampleZh": "我花了一些時間才理解這個概念。"
+  },
+  {
+    "word": "incline",
+    "phonetic": "/ɪnˈklaɪn/",
+    "meaning": "傾向於；傾斜 (動詞)",
+    "pos": "v",
+    "difficulty": 2,
+    "example": "I am inclined to agree with your suggestion.",
+    "exampleZh": "我傾向同意你的建議。"
+  },
+  {
+    "word": "inevitable",
+    "phonetic": "/ɪnˈɛvɪtəbəl/",
+    "meaning": "不可避免的",
+    "pos": "adj",
+    "difficulty": 3,
+    "example": "Change is inevitable in any growing company.",
+    "exampleZh": "改變在任何成長中的公司都是不可避免的。"
+  },
+  {
+    "word": "initiate",
+    "phonetic": "/ɪˈnɪʃiˌeɪt/",
+    "meaning": "發起；開始",
+    "pos": "v",
+    "difficulty": 2,
+    "example": "The manager initiated a review of the company policy.",
+    "exampleZh": "經理發起了一項公司政策的審查。"
+  },
+  {
+    "word": "inspect",
+    "phonetic": "/ɪnˈspɛkt/",
+    "meaning": "檢查；視察",
+    "pos": "v",
+    "difficulty": 2,
+    "example": "Officers will inspect the factory next week.",
+    "exampleZh": "官員下週將視察工廠。"
+  },
+  {
+    "word": "intact",
+    "phonetic": "/ɪnˈtækt/",
+    "meaning": "完好無損的",
+    "pos": "adj",
+    "difficulty": 2,
+    "example": "The package arrived intact despite the long journey.",
+    "exampleZh": "儘管路途遙遠，包裹還是完好無損地到達了。"
+  },
+  {
+    "word": "integrate",
+    "phonetic": "/ˈɪntɪˌɡreɪt/",
+    "meaning": "整合",
+    "pos": "v",
+    "difficulty": 3,
+    "example": "The company aims to integrate all systems into one platform.",
+    "exampleZh": "公司的目標是將所有系統整合到一個平台上。",
+    "context": "結合為一個整體。"
+  },
+  {
+    "word": "minimal",
+    "phonetic": "/ˈmɪnɪməl/",
+    "meaning": "最小的；極少的",
+    "pos": "adj",
+    "difficulty": 2,
+    "example": "The damage to the car was minimal.",
+    "exampleZh": "車子的損壞非常輕微。",
+    "context": "指盡可能小或最低限度的。"
+  },
+  {
+    "word": "notable",
+    "phonetic": "/ˈnoʊtəbəl/",
+    "meaning": "值得注意的；顯著的",
+    "pos": "adj",
+    "difficulty": 2,
+    "example": "There was a notable improvement in sales.",
+    "exampleZh": "銷售有了顯著的提升。"
+  },
+  {
+    "word": "omit",
+    "phonetic": "/oʊˈmɪt/",
+    "meaning": "省略；遺漏",
+    "pos": "v",
+    "difficulty": 1,
+    "example": "He omitted several important details from the report.",
+    "exampleZh": "他在報告中遺漏了幾個重要的細節。",
+    "context": "故意或疏忽沒有包含。"
+  },
+  {
+    "word": "outline",
+    "phonetic": "/ˈaʊtlaɪn/",
+    "meaning": "大綱；輪廓",
+    "pos": "v",
+    "difficulty": 2,
+    "example": "The speaker outlined the main goals for the year.",
+    "exampleZh": "講者概述了今年的主要目標。"
+  },
+  {
+    "word": "participate",
+    "phonetic": "/pɑːrˈtɪsɪˌpeɪt/",
+    "meaning": "參加",
+    "pos": "v",
+    "difficulty": 3,
+    "example": "All employees are encouraged to participate in the survey.",
+    "exampleZh": "鼓勵所有員工參加這項調查。"
+  },
+  {
+    "word": "persist",
+    "phonetic": "/pərˈsɪst/",
+    "meaning": "堅持；持續",
+    "pos": "v",
+    "difficulty": 2,
+    "example": "The problem persisted despite our efforts to fix it.",
+    "exampleZh": "儘管我們努力修復，問題仍然持續存在。"
+  },
+  {
+    "word": "pledge",
+    "phonetic": "/plɛdʒ/",
+    "meaning": "承諾；保證",
+    "pos": "v",
+    "difficulty": 2,
+    "example": "The company pledged to reduce carbon emissions.",
+    "exampleZh": "公司承諾減少碳排放。"
+  },
+  {
+    "word": "accompany",
+    "phonetic": "/əˈkʌmpəni/",
+    "meaning": "陪伴；伴隨",
+    "pos": "v",
+    "difficulty": 3,
+    "example": "She accompanied her friend to the airport.",
+    "exampleZh": "她陪朋友去了機場。"
+  },
+  {
+    "word": "prescribe",
+    "phonetic": "/prɪˈskraɪb/",
+    "meaning": "開處方；規定",
+    "pos": "v",
+    "difficulty": 3,
+    "example": "The doctor prescribed medicine for the cough.",
+    "exampleZh": "醫生開了治咳嗽的藥。"
+  },
+  {
+    "word": "proceed",
+    "phonetic": "/prəˈsiːd/",
+    "meaning": "繼續；前進",
+    "pos": "v",
+    "difficulty": 2,
+    "example": "Please proceed to the next item on the agenda.",
+    "exampleZh": "請繼續進行議程上的下一個項目。"
+  },
+  {
+    "word": "prominent",
+    "phonetic": "/ˈprɒmɪnənt/",
+    "meaning": "傑出的；突出的",
+    "pos": "adj",
+    "difficulty": 3,
+    "example": "He is a prominent figure in the local community.",
+    "exampleZh": "他是當地社區的傑出人物。",
+    "context": "指重要且廣為人知的。"
+  },
+  {
+    "word": "prone",
+    "phonetic": "/proʊn/",
+    "meaning": "容易⋯的；傾向的",
+    "pos": "adj",
+    "difficulty": 1,
+    "example": "This area is prone to flooding during the rainy season.",
+    "exampleZh": "這個地區在雨季容易發生水災。"
+  },
+  {
+    "word": "radical",
+    "phonetic": "/ˈrædɪkəl/",
+    "meaning": "激進的；徹底的",
+    "pos": "adj",
+    "difficulty": 2,
+    "example": "The company needs radical changes to survive.",
+    "exampleZh": "公司需要根本性的改變才能存活。"
+  },
+  {
+    "word": "refrain",
+    "phonetic": "/rɪˈfreɪn/",
+    "meaning": "克制；避免",
+    "pos": "v",
+    "difficulty": 2,
+    "example": "Please refrain from using your phone during the meeting.",
+    "exampleZh": "開會期間請避免使用手機。"
+  },
+  {
+    "word": "endure",
+    "phonetic": "/ɪnˈdjʊr/",
+    "meaning": "忍受；持續",
+    "pos": "v",
+    "difficulty": 2,
+    "example": "She endured the pain without complaining.",
+    "exampleZh": "她忍受著疼痛，沒有抱怨。"
+  },
+  {
+    "word": "respectively",
+    "phonetic": "/rɪˈspɛktɪvli/",
+    "meaning": "分別地",
+    "pos": "adv",
+    "difficulty": 4,
+    "example": "The two buildings are five and eight stories tall, respectively.",
+    "exampleZh": "這兩棟建築分別有五層和八層樓高。"
+  },
+  {
+    "word": "retrieve",
+    "phonetic": "/rɪˈtriːv/",
+    "meaning": "取回；檢索",
+    "pos": "v",
+    "difficulty": 2,
+    "example": "I need to retrieve my files from the old computer.",
+    "exampleZh": "我需要從舊電腦中取回我的檔案。"
+  },
+  {
+    "word": "rigid",
+    "phonetic": "/ˈrɪdʒɪd/",
+    "meaning": "僵硬的；嚴格的",
+    "pos": "adj",
+    "difficulty": 1,
+    "example": "The company has rigid rules about working hours.",
+    "exampleZh": "公司對工作時間有嚴格的規定。"
+  },
+  {
+    "word": "solely",
+    "phonetic": "/ˈsoʊlli/",
+    "meaning": "僅僅；單獨地",
+    "pos": "adv",
+    "difficulty": 2,
+    "example": "The decision was solely based on merit.",
+    "exampleZh": "這個決定完全是根據能力做出的。"
+  }
 ];

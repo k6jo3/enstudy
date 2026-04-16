@@ -1,2146 +1,1420 @@
 module.exports = [
-  // ===== 1. GOSSIP & RUMORS (1-30) =====
-  // Phrases for talking about others, sharing secrets, spreading news
-
   {
-    phrase: "spill the tea",
-    meaning: "爆料；說八卦",
-    example: "Come on, spill the tea! What happened at the party last night?",
-    exampleZh: "快說啊，有什麼料？昨晚的派對發生什麼事了？",
-    difficulty: 2
+    "phrase": "gain momentum",
+    "meaning": "獲得動力；加速進展",
+    "example": "The marketing campaign is gaining momentum and traffic has doubled.",
+    "exampleZh": "行銷活動正在加速推進，網站流量已翻倍。",
+    "difficulty": 4
   },
   {
-    phrase: "talk behind someone's back",
-    meaning: "在背後說人閒話",
-    example: "I can't believe she's been talking behind my back this whole time.",
-    exampleZh: "我真不敢相信她一直在背後說我的閒話。",
-    difficulty: 1
+    "phrase": "a dry run",
+    "meaning": "預演；試跑",
+    "example": "Let's do a dry run of the presentation before the actual event.",
+    "exampleZh": "在正式活動之前，我們先做一次簡報的預演。",
+    "difficulty": 2
   },
   {
-    phrase: "the word on the street",
-    meaning: "外面的傳聞；大家都在說",
-    example: "The word on the street is that they're getting engaged next month.",
-    exampleZh: "外面都在傳他們下個月要訂婚了。",
-    difficulty: 2
+    "phrase": "back to the drawing board",
+    "meaning": "重頭開始",
+    "example": "The plan failed, so it's back to the drawing board.",
+    "exampleZh": "計畫失敗了，所以得重頭開始。",
+    "difficulty": 4,
+    "context": "指計畫失敗後重新設計。"
   },
   {
-    phrase: "between you and me",
-    meaning: "我們之間說說就好；私底下講",
-    context: "專門對一個人說的悄悄話，語氣較正式謹慎，像在鄭重交代「別跟別人說」；比較 just between us（較隨口輕鬆，對象可一人或小群）",
-    example: "Between you and me, I think she's planning to quit her job.",
-    exampleZh: "我們私底下說說，我覺得她在計劃辭職。",
-    difficulty: 1
+    "phrase": "cut costs",
+    "meaning": "削減成本",
+    "example": "The company is looking for ways to cut costs without affecting quality.",
+    "exampleZh": "公司正在尋找在不影響品質的情況下削減成本的方法。",
+    "difficulty": 2
   },
   {
-    phrase: "keep it on the down low",
-    meaning: "低調一點；別張揚",
-    example: "I'm seeing someone new, but keep it on the down low for now.",
-    exampleZh: "我在跟一個新對象交往，但目前先低調一點。",
-    difficulty: 2
+    "phrase": "quality assurance",
+    "meaning": "品質保證（QA）",
+    "example": "Every product must pass quality assurance testing before it ships.",
+    "exampleZh": "每件產品在出貨前都必須通過品質保證測試。",
+    "difficulty": 4
   },
   {
-    phrase: "did you hear about",
-    meaning: "你有聽說嗎",
-    example: "Did you hear about Lisa and Tom? They broke up last week!",
-    exampleZh: "你有聽說麗莎和湯姆的事嗎？他們上週分手了！",
-    difficulty: 1
+    "phrase": "a roadmap",
+    "meaning": "路線圖；發展藍圖",
+    "example": "The product team presented a roadmap for the next 12 months.",
+    "exampleZh": "產品團隊提出了未來十二個月的發展路線圖。",
+    "difficulty": 2
   },
   {
-    phrase: "rumor has it",
-    meaning: "聽說；據傳",
-    example: "Rumor has it that our boss is getting transferred to another branch.",
-    exampleZh: "聽說我們老闆要被調到另一個分部去了。",
-    difficulty: 2
+    "phrase": "dress code",
+    "meaning": "服裝規定",
+    "example": "Our office has a business casual dress code from Monday to Thursday.",
+    "exampleZh": "我們辦公室從週一到週四採用商務休閒的服裝規定。",
+    "difficulty": 3
   },
   {
-    phrase: "you didn't hear this from me",
-    meaning: "這不是我說的喔（暗示八卦）",
-    example: "You didn't hear this from me, but Mark got fired for stealing.",
-    exampleZh: "這話不是我說的喔，但馬克因為偷竊被開除了。",
-    difficulty: 2
+    "phrase": "business casual",
+    "meaning": "商務休閒（穿著風格）",
+    "example": "The company recently switched to a business casual dress code.",
+    "exampleZh": "公司最近改採商務休閒的服裝規定。",
+    "difficulty": 4
   },
   {
-    phrase: "a little birdie told me",
-    meaning: "有人偷偷跟我說；小道消息",
-    example: "A little birdie told me you have a crush on someone in our class.",
-    exampleZh: "有個小鳥跟我說，你喜歡我們班上的某個人。",
-    difficulty: 2
+    "phrase": "common courtesy",
+    "meaning": "基本禮貌",
+    "example": "It's common courtesy to reply to emails within one business day.",
+    "exampleZh": "在一個工作天內回覆電子郵件是基本的禮貌。",
+    "difficulty": 4
   },
   {
-    phrase: "spread like wildfire",
-    meaning: "消息像野火一樣迅速傳開",
-    example: "The news about their breakup spread like wildfire across the school.",
-    exampleZh: "他們分手的消息在學校裡像野火一樣迅速傳開。",
-    difficulty: 2
+    "phrase": "maintain professionalism",
+    "meaning": "保持專業態度",
+    "example": "Even in stressful situations, it's important to maintain professionalism.",
+    "exampleZh": "即使在壓力很大的情況下，保持專業態度也是很重要的。",
+    "difficulty": 4
   },
   {
-    phrase: "the gossip mill",
-    meaning: "八卦工廠；謠言滿天飛的地方",
-    example: "Once it hits the gossip mill, everyone in the office will know.",
-    exampleZh: "一旦進了八卦圈，辦公室每個人都會知道。",
-    difficulty: 3
+    "phrase": "work-life balance",
+    "meaning": "工作與生活的平衡",
+    "example": "The company promotes work-life balance by offering flexible working hours.",
+    "exampleZh": "公司透過提供彈性工作時間來促進員工的工作與生活平衡。",
+    "difficulty": 4
   },
   {
-    phrase: "dish the dirt",
-    meaning: "爆料壞事；說人壞話",
-    example: "She loves to dish the dirt on her ex-boyfriends.",
-    exampleZh: "她超愛爆料前男友的醜事。",
-    difficulty: 3
+    "phrase": "code of conduct",
+    "meaning": "行為準則",
+    "example": "Every employee is expected to follow the company's code of conduct.",
+    "exampleZh": "所有員工都被期待遵守公司的行為準則。",
+    "difficulty": 4
   },
   {
-    phrase: "kiss and tell",
-    meaning: "把私密的事到處講",
-    example: "He's the type to kiss and tell, so be careful what you share.",
-    exampleZh: "他就是那種愛到處說私事的人，所以說話要小心。",
-    difficulty: 2
+    "phrase": "zero tolerance policy",
+    "meaning": "零容忍政策",
+    "example": "We have a zero tolerance policy for workplace harassment.",
+    "exampleZh": "我們對職場騷擾採取零容忍政策。",
+    "difficulty": 4
   },
   {
-    phrase: "have the scoop",
-    meaning: "掌握內幕消息；有第一手情報",
-    example: "Do you have the scoop on why Jenny left the company?",
-    exampleZh: "你知道珍妮為什麼離職的內幕嗎？",
-    difficulty: 2
+    "phrase": "clock in and clock out",
+    "meaning": "打卡上班和打卡下班",
+    "example": "All hourly employees must clock in and clock out using the time tracking system.",
+    "exampleZh": "所有計時員工都必須使用工時追蹤系統打卡上下班。",
+    "difficulty": 4
   },
   {
-    phrase: "what's the deal with",
-    meaning: "...是怎麼回事？到底怎樣？",
-    example: "What's the deal with Kevin? He's been acting super weird lately.",
-    exampleZh: "凱文到底怎麼了？他最近表現得超怪的。",
-    difficulty: 1
+    "phrase": "take a personal day",
+    "meaning": "請一天私人假",
+    "example": "She decided to take a personal day to handle some family matters.",
+    "exampleZh": "她決定請一天私人假，處理一些家庭事務。",
+    "difficulty": 4
   },
   {
-    phrase: "don't tell a soul",
-    meaning: "不要跟任何人說",
-    example: "I'm pregnant, but don't tell a soul until I'm ready to announce it.",
-    exampleZh: "我懷孕了，但在我準備好宣布之前，不要跟任何人說。",
-    difficulty: 1
+    "phrase": "water cooler talk",
+    "meaning": "茶水間閒聊",
+    "example": "A lot of useful information is exchanged during water cooler talk.",
+    "exampleZh": "很多有用的資訊都是在茶水間閒聊時交流的。",
+    "difficulty": 4
   },
   {
-    phrase: "it's all over the place",
-    meaning: "到處都在傳；滿城風雨",
-    example: "Their drama is all over the place. Even my mom heard about it.",
-    exampleZh: "他們的狗血劇情到處都在傳，連我媽都聽說了。",
-    difficulty: 1
+    "phrase": "cc etiquette",
+    "meaning": "副本寄送的禮儀",
+    "example": "Good cc etiquette means only copying people who truly need the information.",
+    "exampleZh": "良好的副本寄送禮儀是指只將郵件副本發給真正需要該資訊的人。",
+    "difficulty": 3
   },
   {
-    phrase: "stir the pot",
-    meaning: "搧風點火；製造事端",
-    example: "She just loves to stir the pot and watch people argue.",
-    exampleZh: "她就愛搧風點火，然後看著大家吵架。",
-    difficulty: 2
+    "phrase": "professional development",
+    "meaning": "專業發展",
+    "example": "The company invests heavily in professional development for its employees.",
+    "exampleZh": "公司大力投資於員工的專業發展。",
+    "difficulty": 4
   },
   {
-    phrase: "two-faced",
-    meaning: "兩面人；表裡不一",
-    example: "I don't trust her. She's totally two-faced.",
-    exampleZh: "我不信任她，她完全是個兩面人。",
-    difficulty: 2
+    "phrase": "workplace diversity",
+    "meaning": "職場多元化",
+    "example": "Workplace diversity brings fresh perspectives and drives innovation.",
+    "exampleZh": "職場多元化帶來了新鮮的視角，並推動了創新。",
+    "difficulty": 4
   },
   {
-    phrase: "talk trash about",
-    meaning: "講某人壞話；嘴砲",
-    example: "He's always talking trash about his coworkers when they're not around.",
-    exampleZh: "他總是在同事不在的時候說他們的壞話。",
-    difficulty: 2
+    "phrase": "a written warning",
+    "meaning": "書面警告",
+    "example": "After repeated tardiness, he received a written warning from HR.",
+    "exampleZh": "在多次遲到之後，他收到了人資部門發出的書面警告。",
+    "difficulty": 4
   },
   {
-    phrase: "that's none of your business",
-    meaning: "這不關你的事",
-    example: "How much I make? That's none of your business!",
-    exampleZh: "我賺多少錢？這不關你的事！",
-    difficulty: 1
+    "phrase": "follow proper channels",
+    "meaning": "按照正規管道處理",
+    "example": "If you have a grievance, please follow proper channels and speak with HR first.",
+    "exampleZh": "如果您有申訴，請按照正規管道處理，先與人資部門溝通。",
+    "difficulty": 4
   },
   {
-    phrase: "mind your own business",
-    meaning: "管好你自己的事",
-    example: "Stop asking about my love life and mind your own business.",
-    exampleZh: "別再問我的感情生活了，管好你自己的事吧。",
-    difficulty: 1
+    "phrase": "employee handbook",
+    "meaning": "員工手冊",
+    "example": "Please refer to the employee handbook for information on leave policies.",
+    "exampleZh": "請參閱員工手冊，了解請假政策的相關資訊。",
+    "difficulty": 4
   },
   {
-    phrase: "word gets around",
-    meaning: "消息會傳開的",
-    example: "Be careful what you say. Word gets around fast in this town.",
-    exampleZh: "說話要小心，這個小鎮消息傳得很快。",
-    difficulty: 2
+    "phrase": "business ethics",
+    "meaning": "商業道德",
+    "example": "Training on business ethics is mandatory for all employees annually.",
+    "exampleZh": "商業道德培訓是所有員工每年必須參加的課程。",
+    "difficulty": 4
   },
   {
-    phrase: "fill me in",
-    meaning: "跟我說一下狀況；讓我了解一下",
-    example: "I missed the meeting. Can you fill me in on what happened?",
-    exampleZh: "我沒去開會，你能跟我說說發生什麼事嗎？",
-    difficulty: 1
+    "phrase": "a game changer",
+    "meaning": "改變遊戲規則的事物",
+    "example": "AI technology has been a game changer for the customer service industry.",
+    "exampleZh": "人工智慧技術已成為客服行業的一項顛覆性改變。",
+    "difficulty": 4
   },
   {
-    phrase: "what's the latest",
-    meaning: "最新消息是什麼",
-    example: "What's the latest on Sarah and her boyfriend? Are they still together?",
-    exampleZh: "莎拉和她男友最新狀況是什麼？他們還在一起嗎？",
-    difficulty: 1
+    "phrase": "a steep learning curve",
+    "meaning": "需要學習很多東西；學習曲線陡峭",
+    "example": "The new software has a steep learning curve, so plan extra training time.",
+    "exampleZh": "這款新軟體的學習曲線很陡峭，因此要規劃額外的培訓時間。",
+    "difficulty": 4
   },
   {
-    phrase: "I'm all about the drama",
-    meaning: "我就愛看戲；我就愛八卦",
-    example: "Give me all the details. I'm all about the drama!",
-    exampleZh: "把所有細節都說給我聽，我就愛看戲！",
-    difficulty: 2
+    "phrase": "bread and butter",
+    "meaning": "主要收入來源；謀生之道",
+    "example": "Consulting services are the bread and butter of our business.",
+    "exampleZh": "顧問服務是我們公司的主要收入來源。",
+    "difficulty": 4
   },
   {
-    phrase: "hot gossip",
-    meaning: "超辣的八卦",
-    example: "I've got some hot gossip. You're not gonna believe this.",
-    exampleZh: "我有爆炸性的八卦，你一定不會相信的。",
-    difficulty: 1
+    "phrase": "have a lot at stake",
+    "meaning": "有很多利害關係；關係重大",
+    "example": "We have a lot at stake with this contract, so let's prepare thoroughly.",
+    "exampleZh": "這份合約對我們關係重大，所以我們要做好充分準備。",
+    "difficulty": 4
   },
   {
-    phrase: "keep it between us",
-    meaning: "我們之間的秘密就好",
-    context: "明確要求對方保密，語氣認真像在交代「不要跟別人說」；比較 between you and me / just between us（開場白，用在分享秘密之前）",
-    example: "This is serious, so please keep it between us, okay?",
-    exampleZh: "這是很重要的事，所以請保密，好嗎？",
-    difficulty: 1
+    "phrase": "turn things around",
+    "meaning": "扭轉局面",
+    "example": "The new CEO was brought in to turn things around after years of declining sales.",
+    "exampleZh": "在銷售業績連年下滑之後，新的執行長被引進來扭轉局面。",
+    "difficulty": 4
   },
   {
-    phrase: "spill it",
-    meaning: "快說！快講！",
-    example: "I can tell something happened. Come on, spill it!",
-    exampleZh: "我看得出來發生了什麼事，快說啊！",
-    difficulty: 1
+    "phrase": "cash flow",
+    "meaning": "現金流",
+    "example": "Managing cash flow effectively is critical for small businesses.",
+    "exampleZh": "有效管理現金流對小型企業至關重要。",
+    "difficulty": 2
   },
   {
-    phrase: "loose lips sink ships",
-    meaning: "嘴巴不牢靠會壞事；禍從口出",
-    example: "Don't tell Amy. You know what they say — loose lips sink ships.",
-    exampleZh: "別告訴艾咪，你知道有句話說——嘴巴不牢靠會壞事的。",
-    difficulty: 3
+    "phrase": "return on investment",
+    "meaning": "投資報酬率（ROI）",
+    "example": "The return on investment for the training program exceeded our expectations.",
+    "exampleZh": "這項培訓計畫的投資報酬率超出了我們的預期。",
+    "difficulty": 4
   },
-
-  // ===== 2. REACTIONS & SURPRISE (31-55) =====
-  // Expressing shock, disbelief, amazement
-
   {
-    phrase: "you're kidding me",
-    meaning: "你在開玩笑吧",
-    example: "You're kidding me! She actually said that to his face?",
-    exampleZh: "你在開玩笑吧！她真的當著他的面說那種話？",
-    difficulty: 1
+    "phrase": "break even",
+    "meaning": "收支平衡；不賺不賠",
+    "example": "The company hopes to break even by the end of the second year.",
+    "exampleZh": "公司希望在第二年年底前達到收支平衡。",
+    "difficulty": 3,
+    "context": "商業術語，指總收入等於總成本的狀態。"
   },
   {
-    phrase: "are you serious",
-    meaning: "你認真的嗎",
-    example: "Are you serious? He proposed after only two weeks of dating?",
-    exampleZh: "你認真的嗎？他們才交往兩週就求婚了？",
-    difficulty: 1
+    "phrase": "make yourself at home",
+    "meaning": "請不要客氣；當自己家",
+    "example": "Come in and make yourself at home. Can I get you something to drink?",
+    "exampleZh": "請進，不要客氣。我能幫你拿點喝的嗎？",
+    "difficulty": 4
   },
   {
-    phrase: "that's insane",
-    meaning: "太扯了；太瘋了",
-    context: "語氣最強烈，表達極度震驚或難以置信；可正面可負面；比較 that's wild（較輕鬆好奇）、that's nuts（口語俏皮）",
-    example: "You ran a marathon with no training? That's insane!",
-    exampleZh: "你完全沒訓練就去跑馬拉松？太瘋了吧！",
-    difficulty: 1
+    "phrase": "sleep in",
+    "meaning": "睡過頭；睡到很晚才起床",
+    "example": "I don't have work tomorrow, so I'm going to sleep in.",
+    "exampleZh": "我明天不用上班，所以我要睡個懶覺。",
+    "difficulty": 2
   },
   {
-    phrase: "I'm shook",
-    meaning: "我被嚇到了；我震驚了",
-    example: "I just found out my quiet neighbor is actually a famous DJ. I'm shook.",
-    exampleZh: "我剛發現我那個安靜的鄰居其實是個知名DJ，我整個震驚了。",
-    difficulty: 2
+    "phrase": "help someone out",
+    "meaning": "幫某人的忙",
+    "example": "My neighbor helped me out when my car wouldn't start this morning.",
+    "exampleZh": "今天早上我的車發不動，鄰居幫了我的忙。",
+    "difficulty": 4
   },
   {
-    phrase: "shut up",
-    meaning: "不會吧！（表示驚訝，非叫人閉嘴）",
-    example: "Shut up! You got free tickets to the concert? Lucky!",
-    exampleZh: "不會吧！你拿到演唱會免費票了？好幸運！",
-    difficulty: 1
+    "phrase": "What's the matter?",
+    "meaning": "怎麼了？（語氣較關切）",
+    "example": "You look upset. What's the matter?",
+    "exampleZh": "你看起來很沮喪。怎麼了？",
+    "difficulty": 4,
+    "context": "語氣較關切、帶擔心，用於對方明顯不對勁時的關心詢問，常見於長輩對晚輩或親近關係；比較 What's wrong?（較直接直白，暗示「察覺到你不對勁」）、What's up?（隨意招呼語「最近怎樣」，不是在關心狀況）"
   },
   {
-    phrase: "you won't believe this",
-    meaning: "你一定不會相信",
-    context: "較簡短直接，語氣可驚訝可戲劇化，隨口就能用；比較 you're not going to believe this（較完整鄭重，像在鋪陳一個故事）",
-    example: "You won't believe this — I just ran into my ex at the dentist.",
-    exampleZh: "你一定不會相信，我剛在牙醫診所碰到我前任了。",
-    difficulty: 1
+    "phrase": "take your time",
+    "meaning": "慢慢來；不急",
+    "example": "Take your time choosing. There's no rush at all.",
+    "exampleZh": "慢慢選，完全不用急。",
+    "difficulty": 4
   },
   {
-    phrase: "I did a double take",
-    meaning: "我嚇了一跳；看了兩眼才確認",
-    example: "I did a double take when I saw her new haircut. She looks so different!",
-    exampleZh: "看到她的新髮型我看了兩眼才確認，她看起來完全不一樣了！",
-    difficulty: 2
+    "phrase": "Don't bother",
+    "meaning": "不用麻煩了；不必費心",
+    "example": "Don't bother cooking dinner for me. I'll eat out tonight.",
+    "exampleZh": "不用幫我煮晚餐了。我今晚要在外面吃。",
+    "difficulty": 3
   },
   {
-    phrase: "my jaw dropped",
-    meaning: "我下巴都掉了；超震驚",
-    example: "My jaw dropped when I saw the price of that bag. Five thousand dollars!",
-    exampleZh: "看到那個包包的價格我下巴都掉了，五千美金！",
-    difficulty: 2
+    "phrase": "It's been ages",
+    "meaning": "好久了；很長一段時間了",
+    "example": "It's been ages since we last went to the beach together.",
+    "exampleZh": "我們上次一起去海邊已經是很久以前的事了。",
+    "difficulty": 4
   },
   {
-    phrase: "I'm speechless",
-    meaning: "我無言了；我說不出話來",
-    example: "They threw me a surprise party. I'm completely speechless.",
-    exampleZh: "他們幫我辦了驚喜派對，我完全說不出話來。",
-    difficulty: 1
+    "phrase": "I'm broke",
+    "meaning": "我沒錢了；我身無分文",
+    "example": "I can't go shopping this weekend. I'm totally broke.",
+    "exampleZh": "我這個週末不能去購物了。我完全身無分文。",
+    "difficulty": 2
   },
   {
-    phrase: "that's wild",
-    meaning: "太扯了；太誇張了",
-    context: "語氣帶驚訝和好奇，覺得有趣或不可思議；偏正面或中性；比較 that's insane（震驚程度更強）、that's nuts（更俏皮）",
-    example: "He quit his job to become a street artist? That's wild!",
-    exampleZh: "他辭掉工作去當街頭藝人？太誇張了吧！",
-    difficulty: 1
+    "phrase": "No wonder",
+    "meaning": "難怪；怪不得",
+    "example": "She studied abroad for three years. No wonder her English is so good.",
+    "exampleZh": "她在國外讀了三年書。難怪她的英文這麼好。",
+    "difficulty": 2
   },
   {
-    phrase: "you've got to be kidding",
-    meaning: "你一定在開玩笑",
-    example: "You've got to be kidding! The flight got cancelled again?",
-    exampleZh: "你一定在開玩笑！班機又被取消了？",
-    difficulty: 1
+    "phrase": "in no time",
+    "meaning": "很快地（短時間內就完成）",
+    "example": "Don't worry. The doctor will see you in no time.",
+    "exampleZh": "別擔心。醫生很快就會來看你了。",
+    "difficulty": 2,
+    "context": "強調「過程很短」、很快就能達成。比較 right now（強調「當下、立即」的時間點，著重「現在」而非「快」）。"
   },
   {
-    phrase: "I'm blown away",
-    meaning: "我被震撼到了；太讚了",
-    example: "I'm blown away by how good this restaurant is. We have to come back.",
-    exampleZh: "這家餐廳好到讓我驚豔，我們一定要再來。",
-    difficulty: 2
+    "phrase": "I'm starving",
+    "meaning": "我餓死了",
+    "example": "I skipped lunch today. I'm absolutely starving.",
+    "exampleZh": "我今天沒吃午餐。我真的餓死了。",
+    "difficulty": 3
   },
   {
-    phrase: "what in the world",
-    meaning: "到底是怎樣；搞什麼",
-    example: "What in the world is going on in there? I can hear yelling!",
-    exampleZh: "裡面到底在搞什麼？我聽到有人在大叫！",
-    difficulty: 1
+    "phrase": "That's a good point",
+    "meaning": "這個觀點不錯（中性讚賞）",
+    "example": "That's a good point. I hadn't thought about it that way.",
+    "exampleZh": "你說的有道理。我之前沒有從這個角度想過。",
+    "difficulty": 4,
+    "context": "中性讚賞對方提出了一個好觀點，常見於開會或討論；比較 you've got a point there（帶讓步感，承認對方有理，通常是原本不同意但被說服）"
   },
   {
-    phrase: "that caught me off guard",
-    meaning: "那讓我措手不及",
-    example: "Her question totally caught me off guard. I didn't know what to say.",
-    exampleZh: "她的問題讓我完全措手不及，我不知道該說什麼。",
-    difficulty: 2
+    "phrase": "go for a walk",
+    "meaning": "去散步",
+    "example": "The weather is so nice today. Let's go for a walk in the park.",
+    "exampleZh": "今天天氣真好。我們去公園散步吧。",
+    "difficulty": 3
   },
   {
-    phrase: "I nearly died",
-    meaning: "我差點嚇死；笑死我了",
-    example: "When he tripped on stage, I nearly died laughing.",
-    exampleZh: "看到他在舞台上絆倒，我笑到差點死掉。",
-    difficulty: 1
+    "phrase": "around the corner",
+    "meaning": "即將到來；就在附近",
+    "example": "Christmas is just around the corner. Have you bought gifts yet?",
+    "exampleZh": "聖誕節就快到了。你買好禮物了嗎？",
+    "difficulty": 4
   },
   {
-    phrase: "that's unbelievable",
-    meaning: "太不可思議了",
-    example: "She ate the entire cake by herself? That's unbelievable.",
-    exampleZh: "她一個人把整個蛋糕都吃掉了？太不可思議了。",
-    difficulty: 1
+    "phrase": "check in",
+    "meaning": "辦理入住/報到（動詞片語）",
+    "example": "We need to check in at the hotel before 3 PM.",
+    "exampleZh": "我們需要在下午三點之前辦理飯店入住手續。",
+    "difficulty": 2,
+    "context": "動詞片語，指「辦理」入住或報到的動作（飯店、機場、醫院等）；比較 check-in（加連字號，當名詞或形容詞用，指「入住/報到的這件事或櫃台」，如 check-in time、check-in counter）"
   },
   {
-    phrase: "plot twist",
-    meaning: "劇情大反轉",
-    example: "Plot twist — the person she was complaining about was standing right behind her.",
-    exampleZh: "大反轉——她抱怨的那個人就站在她正後面。",
-    difficulty: 2
+    "phrase": "check out",
+    "meaning": "辦理退房；結帳離開",
+    "example": "What time do we have to check out of the hotel tomorrow?",
+    "exampleZh": "我們明天要幾點之前辦理飯店退房？",
+    "difficulty": 2
   },
   {
-    phrase: "I never saw that coming",
-    meaning: "我完全沒料到",
-    example: "They've been secretly dating for a year? I never saw that coming.",
-    exampleZh: "他們偷偷交往了一年？我完全沒料到。",
-    difficulty: 1
+    "phrase": "window seat",
+    "meaning": "靠窗座位",
+    "example": "I'd like a window seat, please. I enjoy looking at the clouds.",
+    "exampleZh": "我想要靠窗的座位，謝謝。我喜歡看雲。",
+    "difficulty": 3
   },
   {
-    phrase: "that's a shocker",
-    meaning: "真是令人震驚",
-    example: "He's moving to Japan next week? That's a shocker!",
-    exampleZh: "他下週要搬去日本？真是太令人震驚了！",
-    difficulty: 2
+    "phrase": "aisle seat",
+    "meaning": "靠走道座位",
+    "example": "Can I have an aisle seat? I need to stretch my legs during the flight.",
+    "exampleZh": "我可以坐靠走道的座位嗎？我飛行時需要伸展一下腿。",
+    "difficulty": 3
   },
   {
-    phrase: "what on earth",
-    meaning: "到底怎麼回事",
-    example: "What on earth were you thinking when you dyed your hair green?",
-    exampleZh: "你把頭髮染成綠色的時候到底在想什麼？",
-    difficulty: 1
+    "phrase": "carry-on luggage",
+    "meaning": "隨身行李（完整名稱）",
+    "example": "Each passenger is allowed one piece of carry-on luggage.",
+    "exampleZh": "每位旅客只允許攜帶一件隨身行李。",
+    "difficulty": 4,
+    "context": "完整名稱，正式或書面場合使用（告示、規定）；比較 carry-on（簡稱，口語中直接當名詞用，更簡潔，如 pack a carry-on）"
   },
   {
-    phrase: "that's nuts",
-    meaning: "太瘋了；太扯了",
-    context: "口語俏皮的「太瘋了」，語氣比 insane 輕，帶點幽默感；比較 that's insane（更震驚）、that's wild（更好奇）",
-    example: "You stayed up for 48 hours straight? That's nuts!",
-    exampleZh: "你連續熬夜四十八小時？太瘋了吧！",
-    difficulty: 1
+    "phrase": "board the plane",
+    "meaning": "登機",
+    "example": "We'll begin boarding the plane in about twenty minutes.",
+    "exampleZh": "我們大約二十分鐘後開始登機。",
+    "difficulty": 4
   },
   {
-    phrase: "out of the blue",
-    meaning: "突然之間；毫無預警",
-    example: "He texted me out of the blue after two years of no contact.",
-    exampleZh: "兩年沒聯絡，他突然毫無預警地傳訊息給我。",
-    difficulty: 2
+    "phrase": "one-way ticket",
+    "meaning": "單程票",
+    "example": "I only need a one-way ticket because I'm not coming back.",
+    "exampleZh": "我只需要一張單程票，因為我不會回來了。",
+    "difficulty": 4
   },
   {
-    phrase: "that blew my mind",
-    meaning: "那讓我大開眼界；太驚人了",
-    example: "The magic trick totally blew my mind. How did he do that?",
-    exampleZh: "那個魔術讓我大開眼界，他到底是怎麼辦到的？",
-    difficulty: 2
+    "phrase": "final destination",
+    "meaning": "最終目的地",
+    "example": "Our final destination is Paris, but we'll stop in Amsterdam first.",
+    "exampleZh": "我們的最終目的地是巴黎，但我們會先在阿姆斯特丹停留。",
+    "difficulty": 4
   },
   {
-    phrase: "holy cow",
-    meaning: "天啊；我的媽呀",
-    example: "Holy cow, did you see that car accident? That was terrifying!",
-    exampleZh: "天啊，你有看到那起車禍嗎？好可怕！",
-    difficulty: 1
+    "phrase": "get lost",
+    "meaning": "迷路",
+    "example": "We got lost in the old town because the streets all looked the same.",
+    "exampleZh": "我們在舊城區迷路了，因為所有的街道看起來都一樣。",
+    "difficulty": 2
   },
   {
-    phrase: "I can't even",
-    meaning: "我已經不行了（太誇張受不了）",
-    example: "She wore pajamas to the interview. I can't even.",
-    exampleZh: "她穿著睡衣去面試，我真的無話可說了。",
-    difficulty: 2
+    "phrase": "change money",
+    "meaning": "換錢；兌換外幣",
+    "example": "Where can I change money around here? I need some local currency.",
+    "exampleZh": "附近哪裡可以換錢？我需要一些當地貨幣。",
+    "difficulty": 3
   },
-
-  // ===== 3. COMPLAINING & VENTING (56-85) =====
-  // Expressing frustration, annoyance, complaining about things
-
   {
-    phrase: "I'm so done with",
-    meaning: "我受夠了...",
-    example: "I'm so done with this weather. It's been raining for two weeks straight.",
-    exampleZh: "我真的受夠這個天氣了，連續下了兩週的雨。",
-    difficulty: 1
+    "phrase": "fasten your seatbelt",
+    "meaning": "繫好安全帶",
+    "example": "Please fasten your seatbelt. We're about to experience some turbulence.",
+    "exampleZh": "請繫好您的安全帶。我們即將進入一段亂流。",
+    "difficulty": 4
   },
   {
-    phrase: "that's so annoying",
-    meaning: "真的好煩",
-    example: "My neighbor plays loud music every night. That's so annoying.",
-    exampleZh: "我鄰居每天晚上都大聲放音樂，真的好煩。",
-    difficulty: 1
+    "phrase": "duty-free shop",
+    "meaning": "免稅商店",
+    "example": "Let's browse the duty-free shop while we wait for our flight.",
+    "exampleZh": "我們等飛機的時候去免稅商店逛逛吧。",
+    "difficulty": 4
   },
   {
-    phrase: "give me a break",
-    meaning: "饒了我吧；別鬧了",
-    example: "Another meeting at 5 PM on a Friday? Give me a break!",
-    exampleZh: "星期五下午五點又要開會？饒了我吧！",
-    difficulty: 1
+    "phrase": "pack your bags",
+    "meaning": "收拾行李",
+    "example": "The trip is tomorrow. Have you packed your bags yet?",
+    "exampleZh": "明天就要出發了。你收拾好行李了嗎？",
+    "difficulty": 4
   },
   {
-    phrase: "I can't stand it",
-    meaning: "我受不了",
-    example: "I can't stand it when people chew with their mouths open.",
-    exampleZh: "我受不了別人張著嘴嚼東西。",
-    difficulty: 1
+    "phrase": "flight delay",
+    "meaning": "班機延誤",
+    "example": "There's a two-hour flight delay because of the snowstorm.",
+    "exampleZh": "因為暴風雪，班機延誤了兩個小時。",
+    "difficulty": 3
   },
   {
-    phrase: "what a pain",
-    meaning: "真麻煩；好煩",
-    example: "The elevator is broken again? What a pain — we're on the 12th floor.",
-    exampleZh: "電梯又壞了？真麻煩，我們在十二樓耶。",
-    difficulty: 1
+    "phrase": "How do I get to...?",
+    "meaning": "我要怎麼去……？",
+    "example": "Excuse me, how do I get to the nearest train station?",
+    "exampleZh": "不好意思，請問我要怎麼去最近的火車站？",
+    "difficulty": 4
   },
   {
-    phrase: "don't get me started",
-    meaning: "別讓我開始講（一講就停不下來）",
-    example: "Don't get me started on the traffic this morning. It was a nightmare.",
-    exampleZh: "別讓我開始說今天早上的交通，真的是一場惡夢。",
-    difficulty: 2
+    "phrase": "Is it within walking distance?",
+    "meaning": "走路可以到嗎？",
+    "example": "Is the restaurant within walking distance, or should we take a taxi?",
+    "exampleZh": "那間餐廳走路可以到嗎，還是我們應該搭計程車？",
+    "difficulty": 4
   },
   {
-    phrase: "that's messed up",
-    meaning: "太過分了；太扯了",
-    example: "They fired her on her birthday? That's messed up.",
-    exampleZh: "他們在她生日那天開除她？太過分了。",
-    difficulty: 2
+    "phrase": "You can't miss it",
+    "meaning": "你不會錯過的（很明顯、很好找）",
+    "example": "The museum is right across from the park. You can't miss it.",
+    "exampleZh": "博物館就在公園的正對面。你一定找得到的。",
+    "difficulty": 4
   },
   {
-    phrase: "are you for real",
-    meaning: "你是認真的嗎；搞什麼",
-    example: "Are you for real? You forgot our anniversary again?",
-    exampleZh: "你認真的嗎？你又忘了我們的週年紀念日？",
-    difficulty: 1
+    "phrase": "make a reservation",
+    "meaning": "訂位/訂房（保留座位/空間）",
+    "example": "I'd like to make a reservation for two at 7 PM tonight.",
+    "exampleZh": "我想預約今晚七點兩人的座位。",
+    "difficulty": 4,
+    "context": "預訂「座位、房間、班機」等實體空間或座位；比較 make an appointment（預約「會面時間」，如看醫生、見律師、面試等，對象是人而非空間）"
   },
   {
-    phrase: "this is ridiculous",
-    meaning: "太荒謬了；太扯了",
-    example: "We've been waiting for an hour. This is ridiculous!",
-    exampleZh: "我們已經等了一個小時了，太荒謬了！",
-    difficulty: 1
+    "phrase": "table for two",
+    "meaning": "兩個人的座位",
+    "example": "Good evening. Table for two, please.",
+    "exampleZh": "晚安。請給我們兩個人的座位，謝謝。",
+    "difficulty": 3
   },
   {
-    phrase: "I've had it up to here",
-    meaning: "我已經忍到極限了",
-    example: "I've had it up to here with his excuses. He needs to grow up.",
-    exampleZh: "我已經忍他的藉口忍到極限了，他需要成熟一點。",
-    difficulty: 2
+    "phrase": "Are you ready to order?",
+    "meaning": "您準備好點餐了嗎？",
+    "example": "Are you ready to order, or do you need a few more minutes?",
+    "exampleZh": "您準備好點餐了嗎，還是需要再考慮幾分鐘？",
+    "difficulty": 4
   },
   {
-    phrase: "that drives me crazy",
-    meaning: "那讓我快抓狂了",
-    example: "That tapping noise drives me crazy. Can you please stop?",
-    exampleZh: "那個敲擊聲讓我快抓狂了，可以請你停下來嗎？",
-    difficulty: 1
+    "phrase": "I'll have the...",
+    "meaning": "我要點……",
+    "example": "I'll have the grilled salmon with a side salad, please.",
+    "exampleZh": "我要點烤鮭魚搭配一份沙拉，謝謝。",
+    "difficulty": 4
   },
   {
-    phrase: "for crying out loud",
-    meaning: "拜託耶；搞什麼啊",
-    example: "For crying out loud, can you just answer your phone?",
-    exampleZh: "拜託耶，你能不能接一下電話？",
-    difficulty: 2
+    "phrase": "Could I see the menu?",
+    "meaning": "我可以看看菜單嗎？",
+    "example": "Excuse me, could I see the menu? We just sat down.",
+    "exampleZh": "不好意思，我可以看一下菜單嗎？我們剛剛坐下。",
+    "difficulty": 4
   },
   {
-    phrase: "not again",
-    meaning: "不要又來了",
-    example: "The internet is down? Not again! I have a deadline today.",
-    exampleZh: "網路又斷了？不要又來了！我今天有截止日期耶。",
-    difficulty: 1
+    "phrase": "What do you recommend?",
+    "meaning": "你推薦什麼？",
+    "example": "This is my first time here. What do you recommend?",
+    "exampleZh": "這是我第一次來這裡。你推薦什麼？",
+    "difficulty": 4
   },
   {
-    phrase: "what a nightmare",
-    meaning: "真是一場惡夢",
-    example: "My flight got cancelled and I lost my luggage. What a nightmare.",
-    exampleZh: "我的班機被取消，行李又弄丟了，真是一場惡夢。",
-    difficulty: 1
+    "phrase": "to go",
+    "meaning": "外帶",
+    "example": "Can I order a large coffee and a muffin to go?",
+    "exampleZh": "我可以外帶一杯大杯咖啡和一個馬芬嗎？",
+    "difficulty": 1
   },
   {
-    phrase: "I'm at my wit's end",
-    meaning: "我已經走投無路了；想不出辦法了",
-    example: "The baby won't stop crying. I'm at my wit's end.",
-    exampleZh: "寶寶一直哭個不停，我已經不知道該怎麼辦了。",
-    difficulty: 3
+    "phrase": "house special",
+    "meaning": "本店特餐（餐廳特別推薦）",
+    "example": "You should try the house special. It's what they're known for.",
+    "exampleZh": "你應該試試他們的招牌菜。那是他們的招牌。",
+    "difficulty": 4,
+    "context": "餐廳當日或該店「特別推薦」的餐點（可能是限定、有特價、套餐等），常見於菜單；比較 signature dish（招牌菜，指廚師的代表作，是店家「一直以來的招牌」，不限當日）"
   },
   {
-    phrase: "that gets on my nerves",
-    meaning: "那讓我很煩躁",
-    example: "His constant humming really gets on my nerves.",
-    exampleZh: "他不停地哼歌真的讓我很煩躁。",
-    difficulty: 2
+    "phrase": "dig in",
+    "meaning": "開動吧；開始吃",
+    "example": "The food is on the table. Let's dig in!",
+    "exampleZh": "食物都上桌了。我們開動吧！",
+    "difficulty": 1
   },
   {
-    phrase: "I could scream",
-    meaning: "我快氣炸了",
-    example: "They lost my package for the third time. I could scream!",
-    exampleZh: "他們第三次弄丟我的包裹了，我快氣炸了！",
-    difficulty: 2
+    "phrase": "Could we have the check?",
+    "meaning": "可以結帳嗎？",
+    "example": "We're finished eating. Could we have the check, please?",
+    "exampleZh": "我們吃完了。可以幫我們結帳嗎？",
+    "difficulty": 4
   },
   {
-    phrase: "what a waste of time",
-    meaning: "真是浪費時間",
-    example: "That movie was terrible. What a waste of time.",
-    exampleZh: "那部電影太爛了，真是浪費時間。",
-    difficulty: 1
+    "phrase": "grab a coffee",
+    "meaning": "去喝杯咖啡",
+    "example": "Hey, want to grab a coffee after class?",
+    "exampleZh": "嘿，下課後想去喝杯咖啡嗎？",
+    "difficulty": 3
   },
   {
-    phrase: "that's the last straw",
-    meaning: "這是最後一根稻草；我忍無可忍了",
-    example: "He showed up late again. That's the last straw — I'm telling the boss.",
-    exampleZh: "他又遲到了，這是最後一根稻草——我要去跟老闆說了。",
-    difficulty: 2
+    "phrase": "Can I get a refill?",
+    "meaning": "可以再續杯嗎？",
+    "example": "This iced tea is great. Can I get a refill?",
+    "exampleZh": "這杯冰茶很好喝。可以再續一杯嗎？",
+    "difficulty": 4
   },
   {
-    phrase: "you're getting on my last nerve",
-    meaning: "你快把我逼瘋了",
-    example: "Stop poking me! You're getting on my last nerve!",
-    exampleZh: "不要再戳我了！你快把我逼瘋了！",
-    difficulty: 2
+    "phrase": "vegetarian option",
+    "meaning": "素食選項",
+    "example": "Do you have a vegetarian option? I don't eat meat.",
+    "exampleZh": "你們有素食選項嗎？我不吃肉。",
+    "difficulty": 4
   },
   {
-    phrase: "I'm over it",
-    meaning: "我已經不在乎了；我放下了",
-    example: "He didn't apologize, but whatever. I'm over it.",
-    exampleZh: "他沒有道歉，但算了，我已經放下了。",
-    difficulty: 1
+    "phrase": "serve a meal",
+    "meaning": "上菜；供餐",
+    "example": "The restaurant starts serving meals at 11 AM for lunch.",
+    "exampleZh": "這家餐廳上午十一點開始供應午餐。",
+    "difficulty": 3
   },
   {
-    phrase: "enough is enough",
-    meaning: "夠了就是夠了；適可而止",
-    example: "You've been partying every night. Enough is enough!",
-    exampleZh: "你已經連續每晚去派對了，夠了就是夠了！",
-    difficulty: 1
+    "phrase": "take-out menu",
+    "meaning": "外帶菜單",
+    "example": "Do you have a take-out menu? I'd like to order from home.",
+    "exampleZh": "你們有外帶菜單嗎？我想在家訂餐。",
+    "difficulty": 4
   },
   {
-    phrase: "what a rip-off",
-    meaning: "好坑；太貴了吧",
-    example: "Fifty dollars for a sandwich? What a rip-off!",
-    exampleZh: "一個三明治要五十美金？也太坑了吧！",
-    difficulty: 2
+    "phrase": "midnight snack",
+    "meaning": "宵夜",
+    "example": "I always feel guilty after having a midnight snack.",
+    "exampleZh": "我每次吃宵夜後都會感到愧疚。",
+    "difficulty": 4
   },
   {
-    phrase: "that sucks",
-    meaning: "真爛；真糟糕",
-    example: "You have to work on Christmas? That sucks, man.",
-    exampleZh: "你聖誕節要上班？真的很慘耶，兄弟。",
-    difficulty: 1
+    "phrase": "window shopping",
+    "meaning": "只逛不買；純看看",
+    "example": "We went window shopping at the mall but didn't buy anything.",
+    "exampleZh": "我們在購物中心逛了逛，但什麼都沒買。",
+    "difficulty": 4
   },
   {
-    phrase: "can you believe this",
-    meaning: "你敢相信嗎",
-    example: "Can you believe this? They charged me twice for the same meal!",
-    exampleZh: "你敢相信嗎？他們對同一頓飯收了我兩次錢！",
-    difficulty: 1
+    "phrase": "on sale",
+    "meaning": "特價中；打折",
+    "example": "These shoes are on sale for half the original price.",
+    "exampleZh": "這雙鞋正在特價，只要原價的一半。",
+    "difficulty": 2
   },
   {
-    phrase: "ugh, seriously",
-    meaning: "噁，認真假的（表示厭煩）",
-    example: "Ugh, seriously? Another pop quiz? I didn't study at all.",
-    exampleZh: "噁，認真假的？又有隨堂考？我完全沒讀書耶。",
-    difficulty: 1
+    "phrase": "try it on",
+    "meaning": "試穿",
+    "example": "This dress looks nice. Can I try it on?",
+    "exampleZh": "這件洋裝看起來很好看。我可以試穿嗎？",
+    "difficulty": 2
   },
   {
-    phrase: "I'm so frustrated",
-    meaning: "我好挫折；我好火大",
-    example: "I'm so frustrated. I've been trying to fix this bug for hours.",
-    exampleZh: "我好挫折，我已經試著修這個錯誤好幾個小時了。",
-    difficulty: 1
+    "phrase": "a good deal",
+    "meaning": "划算；好買賣",
+    "example": "I got a really good deal on this laptop. It was 40% off!",
+    "exampleZh": "我買這台筆電買得很划算。打了六折！",
+    "difficulty": 3
   },
   {
-    phrase: "what a hassle",
-    meaning: "真是麻煩死了",
-    example: "Returning this product has been such a hassle. Their system is awful.",
-    exampleZh: "退這個商品真是麻煩死了，他們的系統超爛。",
-    difficulty: 2
+    "phrase": "out of stock",
+    "meaning": "缺貨；沒有庫存",
+    "example": "I'm sorry, that item is out of stock right now. It should be back next week.",
+    "exampleZh": "很抱歉，那個商品目前缺貨。應該下週會補貨。",
+    "difficulty": 3
   },
   {
-    phrase: "it's not fair",
-    meaning: "不公平",
-    example: "She gets to leave early every day. It's not fair!",
-    exampleZh: "她每天都可以提早離開，這不公平！",
-    difficulty: 1
+    "phrase": "in stock",
+    "meaning": "有現貨",
+    "example": "Is the new iPhone in stock, or do I need to pre-order?",
+    "exampleZh": "新款 iPhone 有現貨嗎，還是我需要預購？",
+    "difficulty": 2
   },
   {
-    phrase: "I'm losing my mind",
-    meaning: "我快瘋了",
-    example: "I can't find my keys anywhere. I'm losing my mind!",
-    exampleZh: "我找不到鑰匙，到處都找不到，我快瘋了！",
-    difficulty: 1
+    "phrase": "Can I get a discount?",
+    "meaning": "可以打折嗎？",
+    "example": "I'm buying three of these. Can I get a discount?",
+    "exampleZh": "我要買三個這個。可以打折嗎？",
+    "difficulty": 4
   },
-
-  // ===== 4. AGREEING & DISAGREEING (86-115) =====
-  // Casual ways to agree or disagree
-
   {
-    phrase: "totally",
-    meaning: "完全同意；對啊",
-    example: "\"That pizza place is amazing.\" \"Totally! We should go again this weekend.\"",
-    exampleZh: "「那家披薩店超棒的。」「對啊！我們這週末應該再去。」",
-    difficulty: 1
+    "phrase": "sold out",
+    "meaning": "售完；賣光了",
+    "example": "The concert tickets were sold out within minutes.",
+    "exampleZh": "演唱會門票幾分鐘內就售完了。",
+    "difficulty": 2
   },
   {
-    phrase: "same here",
-    meaning: "我也是；一樣",
-    example: "\"I'm exhausted from all the studying.\" \"Same here. Let's take a break.\"",
-    exampleZh: "「讀這麼多書讓我累壞了。」「我也是，我們休息一下吧。」",
-    difficulty: 1
+    "phrase": "add to cart",
+    "meaning": "加入購物車",
+    "example": "I keep adding things to my cart but never actually buying them.",
+    "exampleZh": "我一直把東西加入購物車，但從來不真的買。",
+    "difficulty": 3
   },
   {
-    phrase: "you can say that again",
-    meaning: "你說得太對了；完全同意",
-    example: "\"This summer is way too hot.\" \"You can say that again!\"",
-    exampleZh: "「今年夏天真的太熱了。」「你說得太對了！」",
-    difficulty: 2
+    "phrase": "buy one get one free",
+    "meaning": "買一送一",
+    "example": "The supermarket has a buy one get one free offer on shampoo.",
+    "exampleZh": "超市的洗髮精有買一送一的優惠。",
+    "difficulty": 4
   },
   {
-    phrase: "no doubt about it",
-    meaning: "毫無疑問",
-    example: "\"Is she the best singer in the group?\" \"No doubt about it.\"",
-    exampleZh: "「她是團裡唱得最好的嗎？」「毫無疑問。」",
-    difficulty: 1
+    "phrase": "Do you take credit cards?",
+    "meaning": "你們接受信用卡嗎？",
+    "example": "Do you take credit cards, or is it cash only?",
+    "exampleZh": "你們接受信用卡嗎，還是只收現金？",
+    "difficulty": 4
   },
   {
-    phrase: "not really",
-    meaning: "不太算；並不是",
-    example: "\"Do you like horror movies?\" \"Not really. They give me nightmares.\"",
-    exampleZh: "「你喜歡恐怖電影嗎？」「不太喜歡，它們會讓我做惡夢。」",
-    difficulty: 1
+    "phrase": "return policy",
+    "meaning": "退貨政策",
+    "example": "What's your return policy? I might need to bring this back.",
+    "exampleZh": "你們的退貨政策是什麼？我可能需要把這個退回來。",
+    "difficulty": 4
   },
   {
-    phrase: "that's debatable",
-    meaning: "那還有得商榷；不一定",
-    example: "\"He's the greatest basketball player ever.\" \"That's debatable.\"",
-    exampleZh: "「他是史上最偉大的籃球員。」「這還有得商榷。」",
-    difficulty: 2
+    "phrase": "keep the receipt",
+    "meaning": "留好收據",
+    "example": "Make sure to keep the receipt in case you want to return it.",
+    "exampleZh": "一定要留好收據，以防你想退貨。",
+    "difficulty": 4
   },
   {
-    phrase: "you've got a point there",
-    meaning: "你說的有道理",
-    example: "\"Maybe we should save money instead of traveling.\" \"You've got a point there.\"",
-    exampleZh: "「也許我們應該存錢，而不是去旅行。」「你說的有道理。」",
-    difficulty: 1
+    "phrase": "make an appointment",
+    "meaning": "預約會面時間（對象是人）",
+    "example": "I need to make an appointment with the dentist for next week.",
+    "exampleZh": "我需要預約下週的牙醫診療。",
+    "difficulty": 4,
+    "context": "預約「與某人會面的時間」（醫生、律師、面試、業務拜訪等），對象是人；比較 make a reservation（訂位/訂房，對象是座位或空間）"
   },
   {
-    phrase: "I see where you're coming from",
-    meaning: "我理解你的想法",
-    example: "I see where you're coming from, but I still think we should try it.",
-    exampleZh: "我理解你的想法，但我還是覺得我們應該試試看。",
-    difficulty: 2
+    "phrase": "get a check-up",
+    "meaning": "做健康檢查",
+    "example": "You should get a check-up at least once a year.",
+    "exampleZh": "你應該至少一年做一次健康檢查。",
+    "difficulty": 4
   },
   {
-    phrase: "no kidding",
-    meaning: "不是開玩笑的；真的",
-    example: "\"That test was brutal.\" \"No kidding. I think I failed.\"",
-    exampleZh: "「那次考試超難的。」「真的，我覺得我沒過。」",
-    difficulty: 1
+    "phrase": "catch a cold",
+    "meaning": "感冒了",
+    "example": "I caught a cold from my coworker who kept sneezing at the office.",
+    "exampleZh": "我被一直在辦公室打噴嚏的同事傳染感冒了。",
+    "difficulty": 3
   },
   {
-    phrase: "you're telling me",
-    meaning: "你還用說嗎；我比誰都清楚",
-    example: "\"Traffic is terrible today.\" \"You're telling me! I was stuck for an hour.\"",
-    exampleZh: "「今天交通真的很糟。」「你還用說嗎！我塞了一個小時。」",
-    difficulty: 2
+    "phrase": "take medicine",
+    "meaning": "吃藥",
+    "example": "Don't forget to take your medicine after breakfast.",
+    "exampleZh": "別忘了吃早餐後要吃藥。",
+    "difficulty": 4
   },
   {
-    phrase: "that's not how I see it",
-    meaning: "我不是這樣看的",
-    example: "You think he's being lazy, but that's not how I see it at all.",
-    exampleZh: "你覺得他在偷懶，但我完全不是這樣看的。",
-    difficulty: 2
+    "phrase": "running a fever",
+    "meaning": "在發燒",
+    "example": "My daughter is running a fever. I need to take her to the doctor.",
+    "exampleZh": "我女兒在發燒。我需要帶她去看醫生。",
+    "difficulty": 4
   },
   {
-    phrase: "preach",
-    meaning: "說得好！太認同了",
-    example: "\"We deserve more vacation days.\" \"Preach! I'm so tired.\"",
-    exampleZh: "「我們應該有更多假期。」「說得太好了！我累死了。」",
-    difficulty: 2
+    "phrase": "flu season",
+    "meaning": "流感季節",
+    "example": "It's flu season, so remember to wash your hands frequently.",
+    "exampleZh": "現在是流感季節，所以記得要經常洗手。",
+    "difficulty": 3
   },
   {
-    phrase: "I'm with you on that",
-    meaning: "這點我跟你想的一樣",
-    example: "\"We need a longer lunch break.\" \"I'm with you on that.\"",
-    exampleZh: "「我們需要更長的午休時間。」「這點我跟你想的一樣。」",
-    difficulty: 1
+    "phrase": "sore throat",
+    "meaning": "喉嚨痛",
+    "example": "I've had a sore throat for two days. I think I'm getting sick.",
+    "exampleZh": "我喉嚨痛了兩天了。我想我要生病了。",
+    "difficulty": 3
   },
   {
-    phrase: "I hear you",
-    meaning: "我懂你的意思；我理解",
-    example: "I hear you, but there's nothing we can do about it right now.",
-    exampleZh: "我理解你的意思，但我們現在沒有辦法改變這件事。",
-    difficulty: 1
+    "phrase": "get some rest",
+    "meaning": "好好休息",
+    "example": "You look exhausted. Go home and get some rest.",
+    "exampleZh": "你看起來很疲憊。回家好好休息吧。",
+    "difficulty": 3
   },
   {
-    phrase: "agree to disagree",
-    meaning: "各自保留意見；求同存異",
-    example: "We've been arguing for an hour. Let's just agree to disagree.",
-    exampleZh: "我們已經爭論了一個小時了，就各自保留意見吧。",
-    difficulty: 2
+    "phrase": "go to the emergency room",
+    "meaning": "去急診室",
+    "example": "His chest pain was so bad that we had to go to the emergency room.",
+    "exampleZh": "他的胸痛非常嚴重，我們不得不去急診室。",
+    "difficulty": 4
   },
   {
-    phrase: "that's a stretch",
-    meaning: "有點牽強",
-    example: "Saying he's the smartest person alive? That's a stretch.",
-    exampleZh: "說他是世界上最聰明的人？這有點太牽強了。",
-    difficulty: 2
+    "phrase": "blood pressure",
+    "meaning": "血壓",
+    "example": "The nurse checked my blood pressure and said it was a little high.",
+    "exampleZh": "護士量了我的血壓，說稍微偏高。",
+    "difficulty": 4
   },
   {
-    phrase: "exactly",
-    meaning: "正是如此；就是這樣",
-    example: "\"So basically they lied to us.\" \"Exactly! That's what I've been saying.\"",
-    exampleZh: "「所以基本上他們欺騙了我們。」「正是！這就是我一直說的。」",
-    difficulty: 1
+    "phrase": "take someone's temperature",
+    "meaning": "量體溫",
+    "example": "Let me take your temperature first to see if you have a fever.",
+    "exampleZh": "讓我先幫你量體溫，看看你有沒有發燒。",
+    "difficulty": 4
   },
   {
-    phrase: "I'm not so sure about that",
-    meaning: "那我不太確定耶",
-    example: "\"This diet will make you lose 10 pounds in a week.\" \"I'm not so sure about that.\"",
-    exampleZh: "「這個飲食法能讓你一週瘦十磅。」「我不太確定是這樣耶。」",
-    difficulty: 1
+    "phrase": "stuffy nose",
+    "meaning": "鼻塞",
+    "example": "I can't breathe properly because I have a stuffy nose.",
+    "exampleZh": "我因為鼻塞而無法正常呼吸。",
+    "difficulty": 3
   },
   {
-    phrase: "absolutely",
-    meaning: "絕對是；當然",
-    example: "\"Should we order dessert?\" \"Absolutely! You only live once.\"",
-    exampleZh: "「我們要點甜點嗎？」「當然！人生只有一次。」",
-    difficulty: 1
+    "phrase": "take a sick day",
+    "meaning": "請病假一天",
+    "example": "I'm taking a sick day tomorrow to recover from this flu.",
+    "exampleZh": "我明天要請一天病假，好好從流感中恢復。",
+    "difficulty": 4
   },
   {
-    phrase: "for sure",
-    meaning: "當然；確定",
-    context: "口語化的「當然」，語氣熱情輕鬆，朋友間常用；比較 Of course（更正式，有時暗示理所當然）",
-    example: "\"Want to hang out this Saturday?\" \"For sure! What do you want to do?\"",
-    exampleZh: "「這週六要出來玩嗎？」「當然！你想做什麼？」",
-    difficulty: 1
+    "phrase": "waiting room",
+    "meaning": "候診室；等候區",
+    "example": "The waiting room was packed. I had to wait over an hour to see the doctor.",
+    "exampleZh": "候診室擠滿了人。我等了超過一個小時才看到醫生。",
+    "difficulty": 3
   },
   {
-    phrase: "couldn't agree more",
-    meaning: "再同意不過了",
-    example: "\"That was the best movie this year.\" \"Couldn't agree more.\"",
-    exampleZh: "「那是今年最好看的電影。」「再同意不過了。」",
-    difficulty: 1
+    "phrase": "Call an ambulance!",
+    "meaning": "叫救護車！",
+    "example": "He's not breathing! Someone call an ambulance!",
+    "exampleZh": "他沒有呼吸了！有人快叫救護車！",
+    "difficulty": 4
   },
   {
-    phrase: "I don't buy it",
-    meaning: "我不相信；我不買帳",
-    example: "He said he was sick, but I don't buy it. I saw him at the mall.",
-    exampleZh: "他說他生病了，但我不買帳，我在商場看到他了。",
-    difficulty: 2
+    "phrase": "Is there a doctor around?",
+    "meaning": "附近有醫生嗎？",
+    "example": "This woman just fainted. Is there a doctor around?",
+    "exampleZh": "這位女士剛剛昏倒了。附近有醫生嗎？",
+    "difficulty": 4
   },
   {
-    phrase: "no way, that's wrong",
-    meaning: "不對吧，那是錯的",
-    example: "\"Tomatoes are vegetables.\" \"No way, that's wrong. They're technically fruits.\"",
-    exampleZh: "「番茄是蔬菜。」「不對吧，那是錯的，嚴格來說它們是水果。」",
-    difficulty: 1
+    "phrase": "I need help!",
+    "meaning": "我需要幫助！",
+    "example": "I need help! My car broke down on the highway.",
+    "exampleZh": "我需要幫助！我的車在高速公路上拋錨了。",
+    "difficulty": 3
   },
   {
-    phrase: "I suppose so",
-    meaning: "我想是吧",
-    context: "語氣猶豫、勉強同意，帶有不太情願的意味；比較 I think so（中性推測）、I guess（口語化、帶無奈）",
-    example: "\"Should we invite them?\" \"I suppose so, even though they're always late.\"",
-    exampleZh: "「我們應該邀請他們嗎？」「我想是吧，雖然他們總是遲到。」",
-    difficulty: 1
+    "phrase": "fire escape",
+    "meaning": "火災逃生梯（建築外側鐵梯）",
+    "example": "In case of fire, use the fire escape instead of the elevator.",
+    "exampleZh": "發生火災時，請使用逃生梯，不要搭電梯。",
+    "difficulty": 3,
+    "context": "專指建築物「外側的鐵製逃生階梯」（舊式公寓常見），僅用於火災逃生；比較 emergency exit（泛指一般緊急出口門，建築內部皆可，不限火災）"
   },
   {
-    phrase: "that makes two of us",
-    meaning: "彼此彼此；我也是",
-    example: "\"I have no idea what's going on.\" \"That makes two of us.\"",
-    exampleZh: "「我完全不知道發生什麼事。」「我也是。」",
-    difficulty: 2
+    "phrase": "in case of emergency",
+    "meaning": "萬一有緊急情況",
+    "example": "In case of emergency, please call this number.",
+    "exampleZh": "萬一有緊急情況，請撥打這個號碼。",
+    "difficulty": 4
   },
   {
-    phrase: "you hit the nail on the head",
-    meaning: "你說到重點了；一針見血",
-    example: "\"I think the problem is poor communication.\" \"You hit the nail on the head.\"",
-    exampleZh: "「我覺得問題在於溝通不良。」「你說到重點了。」",
-    difficulty: 2
+    "phrase": "report a crime",
+    "meaning": "報案（舉報犯罪行為）",
+    "example": "I want to report a crime. Someone stole my wallet at the market.",
+    "exampleZh": "我要報案。有人在市場偷了我的錢包。",
+    "difficulty": 4,
+    "context": "專指向警方舉報「犯罪事件」（偷竊、搶劫、傷害等）；比較 file a report（泛指「提交書面報告」，可以是警方、保險、公司內部等，不限犯罪）"
   },
   {
-    phrase: "yeah right",
-    meaning: "才怪；少來了（諷刺語氣）",
-    example: "\"I can eat 20 burgers in one sitting.\" \"Yeah right.\"",
-    exampleZh: "「我可以一次吃二十個漢堡。」「才怪。」",
-    difficulty: 1
+    "phrase": "first aid kit",
+    "meaning": "急救箱",
+    "example": "Do you have a first aid kit? I cut my finger pretty badly.",
+    "exampleZh": "你有急救箱嗎？我的手指割傷得很嚴重。",
+    "difficulty": 3
   },
   {
-    phrase: "if you say so",
-    meaning: "你說了算；隨便你",
-    example: "\"This is going to be fun, trust me.\" \"If you say so.\"",
-    exampleZh: "「相信我，這會很好玩的。」「你說了算吧。」",
-    difficulty: 1
+    "phrase": "stay calm",
+    "meaning": "保持冷靜",
+    "example": "Try to stay calm. The rescue team is on their way.",
+    "exampleZh": "試著保持冷靜。救援隊正在趕來的路上。",
+    "difficulty": 2
   },
   {
-    phrase: "hard to argue with that",
-    meaning: "那真的很難反駁",
-    example: "\"Sleep is more important than partying.\" \"Hard to argue with that.\"",
-    exampleZh: "「睡眠比去派對重要。」「那真的很難反駁。」",
-    difficulty: 2
+    "phrase": "emergency exit",
+    "meaning": "緊急出口（一般逃生門）",
+    "example": "The emergency exit is located at the back of the plane.",
+    "exampleZh": "緊急出口位於飛機的後方。",
+    "difficulty": 4,
+    "context": "泛指任何緊急狀況使用的「逃生出口」，建築內部、飛機、戲院、商場都可用；比較 fire escape（專指建築物外側的火災逃生鐵梯）"
   },
   {
-    phrase: "you took the words right out of my mouth",
-    meaning: "你說了我想說的話",
-    example: "\"This place needs better WiFi.\" \"You took the words right out of my mouth!\"",
-    exampleZh: "「這個地方需要更好的WiFi。」「你說了我想說的話！」",
-    difficulty: 2
+    "phrase": "dial 911",
+    "meaning": "打緊急求助電話",
+    "example": "If you see something suspicious, don't hesitate to dial 911.",
+    "exampleZh": "如果你看到可疑的事情，請毫不猶豫地撥打911。",
+    "difficulty": 2
   },
-
-  // ===== 5. FEELINGS & EMOTIONS (116-145) =====
-  // Expressing how you feel in casual conversation
-
   {
-    phrase: "I'm on top of the world",
-    meaning: "我超級開心；我感覺超棒",
-    example: "I just got promoted! I'm on top of the world right now.",
-    exampleZh: "我剛升職了！我現在感覺棒透了。",
-    difficulty: 2
+    "phrase": "turn left at the corner",
+    "meaning": "在轉角左轉",
+    "example": "Turn left at the corner and the bank is on your right.",
+    "exampleZh": "在轉角左轉，銀行就在你的右手邊。",
+    "difficulty": 4
   },
   {
-    phrase: "I'm stressed out",
-    meaning: "我壓力好大",
-    context: "口語中常加 so/really 加強語氣（I'm so stressed out），stressed out 也可獨立當形容詞用",
-    example: "I'm so stressed out. I have three exams next week.",
-    exampleZh: "我壓力好大，下週有三場考試。",
-    difficulty: 1
+    "phrase": "go straight ahead",
+    "meaning": "直走",
+    "example": "Go straight ahead for two blocks and you'll see the station.",
+    "exampleZh": "直走兩個街區，你就會看到車站了。",
+    "difficulty": 4
   },
   {
-    phrase: "I'm burnt out",
-    meaning: "我已經累到不行了；身心俱疲",
-    example: "I've been working 60-hour weeks. I'm completely burnt out.",
-    exampleZh: "我每週工作六十小時，我已經完全身心俱疲了。",
-    difficulty: 2
+    "phrase": "across the street from",
+    "meaning": "在……的對面",
+    "example": "The pharmacy is across the street from the post office.",
+    "exampleZh": "藥局在郵局的對面。",
+    "difficulty": 4
   },
   {
-    phrase: "my heart sank",
-    meaning: "我的心沉了下去；心涼了一半",
-    example: "My heart sank when I saw the rejection email.",
-    exampleZh: "看到拒絕信的那一刻，我的心沉了下去。",
-    difficulty: 2
+    "phrase": "around here",
+    "meaning": "在附近",
+    "example": "Is there a convenience store around here?",
+    "exampleZh": "附近有便利商店嗎？",
+    "difficulty": 3
   },
   {
-    phrase: "I'm pumped",
-    meaning: "我超興奮的；超期待",
-    example: "The concert is tomorrow. I'm so pumped!",
-    exampleZh: "演唱會明天就到了，我超興奮的！",
-    difficulty: 2
+    "phrase": "take the second right",
+    "meaning": "在第二個路口右轉",
+    "example": "Take the second right and the library will be on your left.",
+    "exampleZh": "在第二個路口右轉，圖書館就在你的左手邊。",
+    "difficulty": 4
   },
   {
-    phrase: "it breaks my heart",
-    meaning: "讓我很心痛",
-    example: "It breaks my heart to see her struggling like this.",
-    exampleZh: "看到她這樣掙扎，讓我很心痛。",
-    difficulty: 1
+    "phrase": "just down the road",
+    "meaning": "沿這條路走一小段",
+    "example": "The gas station is just down the road, about five minutes from here.",
+    "exampleZh": "加油站就在這條路再走一小段，距離這裡大約五分鐘。",
+    "difficulty": 4
   },
   {
-    phrase: "I'm feeling down",
-    meaning: "我心情低落",
-    example: "I've been feeling down lately. Nothing seems to go right.",
-    exampleZh: "我最近一直心情低落，什麼事情都不順。",
-    difficulty: 1
+    "phrase": "Which way is...?",
+    "meaning": "……往哪個方向走？",
+    "example": "Excuse me, which way is the nearest subway station?",
+    "exampleZh": "不好意思，請問最近的地鐵站往哪個方向走？",
+    "difficulty": 4
   },
   {
-    phrase: "I'm freaking out",
-    meaning: "我快崩潰了；我嚇壞了",
-    example: "My presentation is in ten minutes and I'm freaking out!",
-    exampleZh: "還有十分鐘就要上台報告了，我快崩潰了！",
-    difficulty: 1
+    "phrase": "I'm not from around here",
+    "meaning": "我不是本地人",
+    "example": "Sorry, I can't help you. I'm not from around here either.",
+    "exampleZh": "抱歉，我幫不了你。我也不是本地人。",
+    "difficulty": 4
   },
   {
-    phrase: "I'm in a good mood",
-    meaning: "我心情很好",
-    example: "The sun is shining and I got great news. I'm in a good mood today.",
-    exampleZh: "陽光普照，又收到好消息，我今天心情很好。",
-    difficulty: 1
+    "phrase": "rush hour",
+    "meaning": "尖峰時段；上下班高峰期",
+    "example": "Avoid driving during rush hour or you'll be stuck in traffic for hours.",
+    "exampleZh": "上下班尖峰時段避免開車，否則你會塞車好幾個小時。",
+    "difficulty": 2
   },
   {
-    phrase: "I'm not in the mood",
-    meaning: "我沒那個心情",
-    example: "I'm not in the mood to go out tonight. Can we just stay home?",
-    exampleZh: "我今晚沒心情出門，我們可以就待在家嗎？",
-    difficulty: 1
+    "phrase": "speed limit",
+    "meaning": "速限",
+    "example": "The speed limit in this area is 60 kilometers per hour.",
+    "exampleZh": "這個地區的速限是每小時六十公里。",
+    "difficulty": 3
   },
   {
-    phrase: "I'm on edge",
-    meaning: "我很緊張不安",
-    example: "I've been on edge all day waiting for the test results.",
-    exampleZh: "我整天都在緊張等待考試結果。",
-    difficulty: 2
+    "phrase": "right around the corner",
+    "meaning": "就在轉角處",
+    "example": "The coffee shop is right around the corner. You'll see it immediately.",
+    "exampleZh": "咖啡廳就在轉角處。你馬上就會看到了。",
+    "difficulty": 4
   },
   {
-    phrase: "I feel like crap",
-    meaning: "我感覺糟透了",
-    example: "I only slept two hours. I feel like crap right now.",
-    exampleZh: "我只睡了兩小時，我現在感覺糟透了。",
-    difficulty: 1
+    "phrase": "cross the bridge",
+    "meaning": "過橋",
+    "example": "Cross the bridge and the museum will be on your left.",
+    "exampleZh": "過橋之後，博物館就在你的左手邊。",
+    "difficulty": 4
   },
   {
-    phrase: "I'm thrilled",
-    meaning: "我超開心的；樂翻了",
-    example: "I'm thrilled that you're coming to visit next month!",
-    exampleZh: "你下個月要來拜訪，我超開心的！",
-    difficulty: 1
+    "phrase": "one-way street",
+    "meaning": "單行道",
+    "example": "Be careful. That's a one-way street and you're going the wrong way.",
+    "exampleZh": "小心。那是一條單行道，你走錯方向了。",
+    "difficulty": 4
   },
   {
-    phrase: "I'm dreading it",
-    meaning: "我超不想面對的",
-    example: "I have a dentist appointment tomorrow. I'm dreading it.",
-    exampleZh: "我明天要去看牙醫，我超不想面對的。",
-    difficulty: 2
+    "phrase": "traffic jam",
+    "meaning": "塞車；交通堵塞",
+    "example": "We were stuck in a traffic jam for an hour on the way to work.",
+    "exampleZh": "我們上班途中被塞在車陣裡整整一個小時。",
+    "difficulty": 3
   },
   {
-    phrase: "that makes me sick",
-    meaning: "那讓我反感；我覺得噁心",
-    example: "The way he treats his dog makes me sick.",
-    exampleZh: "他對待他的狗的方式讓我覺得很反感。",
-    difficulty: 1
+    "phrase": "Nice weather we're having",
+    "meaning": "天氣真好（用來開啟閒聊）",
+    "example": "Nice weather we're having, isn't it? Perfect for a picnic.",
+    "exampleZh": "天氣真不錯，對吧？非常適合野餐。",
+    "difficulty": 4
   },
   {
-    phrase: "I'm so relieved",
-    meaning: "我鬆了好大一口氣",
-    example: "The surgery went well. I'm so relieved.",
-    exampleZh: "手術很順利，我鬆了好大一口氣。",
-    difficulty: 1
+    "phrase": "What do you do for a living?",
+    "meaning": "你的職業是什麼？",
+    "example": "So, what do you do for a living? Are you in tech?",
+    "exampleZh": "那你是做什麼工作的？你在科技業嗎？",
+    "difficulty": 4
   },
   {
-    phrase: "my blood is boiling",
-    meaning: "我氣到血液沸騰",
-    example: "Someone keyed my car. My blood is boiling right now.",
-    exampleZh: "有人刮花了我的車，我現在氣到血液沸騰。",
-    difficulty: 2
+    "phrase": "How was your weekend?",
+    "meaning": "你週末過得怎樣？",
+    "example": "Hey, how was your weekend? Did you do anything fun?",
+    "exampleZh": "嘿，你週末過得怎樣？有做什麼有趣的事嗎？",
+    "difficulty": 4
   },
   {
-    phrase: "I'm dying of boredom",
-    meaning: "我無聊到快死了",
-    example: "This lecture is endless. I'm dying of boredom.",
-    exampleZh: "這堂課沒完沒了，我無聊到快死了。",
-    difficulty: 1
+    "phrase": "I'm into",
+    "meaning": "我喜歡；我對……有興趣",
+    "example": "I'm really into photography lately. I just bought a new camera.",
+    "exampleZh": "我最近很迷攝影。我剛買了一台新相機。",
+    "difficulty": 2
   },
   {
-    phrase: "I'm torn",
-    meaning: "我很糾結；左右為難",
-    example: "I'm torn between taking the new job and staying where I am.",
-    exampleZh: "我在接受新工作和留在原地之間非常糾結。",
-    difficulty: 2
+    "phrase": "in my opinion",
+    "meaning": "在我看來；我認為",
+    "example": "In my opinion, this restaurant has the best pasta in town.",
+    "exampleZh": "在我看來，這家餐廳有全城最好吃的義大利麵。",
+    "difficulty": 3
   },
   {
-    phrase: "I feel left out",
-    meaning: "我覺得被排擠了",
-    example: "Everyone got invited to the party except me. I feel left out.",
-    exampleZh: "大家都被邀請去派對，就只有我沒有，我覺得被排擠了。",
-    difficulty: 1
+    "phrase": "Have you heard?",
+    "meaning": "你有聽說嗎？",
+    "example": "Have you heard? They're opening a new shopping center next month.",
+    "exampleZh": "你有聽說嗎？他們下個月要開一個新的購物中心。",
+    "difficulty": 4
   },
   {
-    phrase: "I'm so embarrassed",
-    meaning: "我好丟臉",
-    example: "I called my teacher 'Mom' in front of the whole class. I'm so embarrassed.",
-    exampleZh: "我在全班面前叫老師「媽媽」，我好丟臉。",
-    difficulty: 1
+    "phrase": "I see what you mean",
+    "meaning": "我懂你的意思（理解對方的論點）",
+    "example": "I see what you mean. The color does look better in natural light.",
+    "exampleZh": "我懂你的意思。在自然光下這個顏色確實看起來更好看。",
+    "difficulty": 4,
+    "context": "偏重理解對方的「想法、論點、觀察」，較理性。比較 I hear you（對對方「感受/立場」的同理，帶情感共鳴）。"
   },
   {
-    phrase: "I'm living my best life",
-    meaning: "我正在過我最棒的生活",
-    example: "Working remotely from the beach — I'm living my best life!",
-    exampleZh: "在海灘遠端工作——我正在過我最棒的生活！",
-    difficulty: 2
+    "phrase": "Can you believe it?",
+    "meaning": "你能相信嗎？",
+    "example": "She won the lottery twice! Can you believe it?",
+    "exampleZh": "她中了兩次彩券！你能相信嗎？",
+    "difficulty": 4
   },
   {
-    phrase: "I'm feeling nostalgic",
-    meaning: "我覺得很懷念",
-    example: "Looking at old photos makes me so nostalgic for college days.",
-    exampleZh: "看著舊照片讓我非常懷念大學時光。",
-    difficulty: 2
+    "phrase": "small world",
+    "meaning": "世界真小",
+    "example": "You know my cousin too? Wow, small world!",
+    "exampleZh": "你也認識我表弟嗎？哇，世界真小！",
+    "difficulty": 3
   },
   {
-    phrase: "it warms my heart",
-    meaning: "好溫暖；好感動",
-    example: "Seeing the kids help each other really warms my heart.",
-    exampleZh: "看到孩子們互相幫助，真的讓我好感動。",
-    difficulty: 1
+    "phrase": "when all is said and done",
+    "meaning": "到頭來；歸根究底（總結）",
+    "example": "When all is said and done, family is what matters most in life.",
+    "exampleZh": "到頭來，家人才是人生中最重要的事。",
+    "difficulty": 4,
+    "context": "書面感較強，綜合各方面後的最終結論；比較 at the end of the day（口語版的「歸根究底」，更常用）、in the end（時間順序上的最終結果，不是觀點總結）、as a result（因果關係，不是總結）"
   },
   {
-    phrase: "I'm sick and tired of this",
-    meaning: "我真的煩透了",
-    example: "I'm sick and tired of this commute. Two hours every day is insane.",
-    exampleZh: "我真的煩透了這段通勤，每天兩小時太誇張了。",
-    difficulty: 1
+    "phrase": "change the subject",
+    "meaning": "轉移話題",
+    "example": "I noticed you changed the subject when I asked about your ex.",
+    "exampleZh": "我注意到當我問起你的前任時，你轉移了話題。",
+    "difficulty": 4
   },
   {
-    phrase: "I'm low-key excited",
-    meaning: "我默默有點興奮",
-    example: "I'm low-key excited about the blind date tomorrow.",
-    exampleZh: "我對明天的相親默默有點興奮。",
-    difficulty: 2
+    "phrase": "on the bright side",
+    "meaning": "從好的一面來看",
+    "example": "We missed the bus, but on the bright side, we got to see a beautiful sunset.",
+    "exampleZh": "我們錯過了公車，但從好的一面來看，我們看到了美麗的日落。",
+    "difficulty": 4
   },
   {
-    phrase: "I feel like a million bucks",
-    meaning: "我感覺超好；精神百倍",
-    example: "After that spa day, I feel like a million bucks.",
-    exampleZh: "做完SPA之後，我感覺精神百倍。",
-    difficulty: 2
+    "phrase": "You've got a point",
+    "meaning": "你說得有道理",
+    "example": "You've got a point. Maybe we should leave earlier to avoid the crowds.",
+    "exampleZh": "你說得有道理。也許我們應該早點出發以避開人群。",
+    "difficulty": 4
   },
   {
-    phrase: "I'm heartbroken",
-    meaning: "我心碎了",
-    example: "I'm heartbroken that my favorite show got cancelled.",
-    exampleZh: "我最喜歡的節目被停播了，我心都碎了。",
-    difficulty: 1
+    "phrase": "drive someone crazy",
+    "meaning": "把某人逼瘋；令人抓狂",
+    "example": "The neighbors' loud music is driving me crazy every weekend.",
+    "exampleZh": "鄰居每個週末的大聲音樂快把我逼瘋了。",
+    "difficulty": 4
   },
   {
-    phrase: "I'm over the moon",
-    meaning: "我開心到飛上天",
-    example: "I got accepted into my dream school. I'm over the moon!",
-    exampleZh: "我被夢想中的學校錄取了，我開心到飛上天！",
-    difficulty: 2
+    "phrase": "scared to death",
+    "meaning": "嚇得半死",
+    "example": "I was scared to death when I heard a strange noise at 3 AM.",
+    "exampleZh": "凌晨三點聽到一個奇怪的聲音，我嚇得半死。",
+    "difficulty": 4
   },
   {
-    phrase: "I'm anxious about",
-    meaning: "我對...很焦慮",
-    example: "I'm anxious about the job interview. What if I mess up?",
-    exampleZh: "我對這次工作面試很焦慮，如果我搞砸了怎麼辦？",
-    difficulty: 1
+    "phrase": "break someone's heart",
+    "meaning": "令某人心碎",
+    "example": "It broke my heart to see the old dog left alone in the rain.",
+    "exampleZh": "看到那隻老狗獨自被留在雨中，讓我非常心碎。",
+    "difficulty": 4
   },
-
-  // ===== 6. RELATIONSHIPS & DATING (146-180) =====
-  // Love, dating, breakups, friendship gossip
-
   {
-    phrase: "love at first sight",
-    meaning: "一見鍾情",
-    example: "He said it was love at first sight when he saw her across the room.",
-    exampleZh: "他說當他在房間另一頭看到她時，那就是一見鍾情。",
-    difficulty: 1
+    "phrase": "jump for joy",
+    "meaning": "高興得跳起來",
+    "example": "The children jumped for joy when they heard school was cancelled.",
+    "exampleZh": "孩子們聽說學校停課後高興得跳了起來。",
+    "difficulty": 3
   },
   {
-    phrase: "it's complicated",
-    meaning: "很複雜（形容感情狀態）",
-    example: "\"Are you two together?\" \"It's complicated. We're figuring things out.\"",
-    exampleZh: "「你們兩個在一起嗎？」「很複雜，我們還在釐清中。」",
-    difficulty: 1
+    "phrase": "cheer someone up",
+    "meaning": "讓某人振作；讓某人開心",
+    "example": "I bought her flowers to cheer her up after her bad day.",
+    "exampleZh": "她今天過得很不好，所以我買了花送給她讓她開心一點。",
+    "difficulty": 4
   },
   {
-    phrase: "they're on a break",
-    meaning: "他們在冷靜期；暫時分開",
-    example: "They're on a break right now. Nobody knows if they'll get back together.",
-    exampleZh: "他們現在在冷靜期，沒有人知道他們是否會復合。",
-    difficulty: 1
+    "phrase": "get over it",
+    "meaning": "放下；釋懷",
+    "example": "I know the breakup was hard, but you need to get over it and move on.",
+    "exampleZh": "我知道分手很難熬，但你需要放下並繼續往前走。",
+    "difficulty": 3
   },
   {
-    phrase: "get friendzoned",
-    meaning: "被發好人卡",
-    example: "He confessed his feelings and got friendzoned. She said they're better as friends.",
-    exampleZh: "他告白了卻被發好人卡，她說他們當朋友比較好。",
-    difficulty: 2
+    "phrase": "What are you up to this weekend?",
+    "meaning": "你這個週末有什麼計畫？",
+    "example": "Hey, what are you up to this weekend? Want to grab brunch?",
+    "exampleZh": "嘿，你這個週末有什麼計畫？想去吃早午餐嗎？",
+    "difficulty": 4
   },
   {
-    phrase: "out of someone's league",
-    meaning: "配不上；跟某人不是同一個等級",
-    example: "She's way out of his league. I'm surprised she agreed to the date.",
-    exampleZh: "她遠超過他的等級，我很驚訝她答應約會了。",
-    difficulty: 2
+    "phrase": "count me in",
+    "meaning": "算我一份",
+    "example": "A hiking trip on Saturday? Count me in!",
+    "exampleZh": "週六去健行？算我一份！",
+    "difficulty": 3
   },
   {
-    phrase: "playing hard to get",
-    meaning: "故意裝高冷；欲擒故縱",
-    example: "She likes him but she's playing hard to get by not texting back right away.",
-    exampleZh: "她喜歡他，但她用不馬上回訊息的方式欲擒故縱。",
-    difficulty: 2
+    "phrase": "count me out",
+    "meaning": "不算我；我不參加",
+    "example": "If you're going bungee jumping, count me out. I'm afraid of heights.",
+    "exampleZh": "如果你們要去高空彈跳，不算我。我有懼高症。",
+    "difficulty": 3
   },
   {
-    phrase: "seeing someone",
-    meaning: "在跟某人交往中",
-    example: "\"Are you single?\" \"No, I'm actually seeing someone.\"",
-    exampleZh: "「你單身嗎？」「不，我其實在跟人交往。」",
-    difficulty: 1
+    "phrase": "set a date",
+    "meaning": "定日期",
+    "example": "We should set a date for the housewarming party soon.",
+    "exampleZh": "我們應該盡快定一個喬遷派對的日期。",
+    "difficulty": 2
   },
   {
-    phrase: "they have chemistry",
-    meaning: "他們很來電；有火花",
-    example: "You can tell they have chemistry just by the way they look at each other.",
-    exampleZh: "光從他們看對方的眼神就能看出他們之間有火花。",
-    difficulty: 2
+    "phrase": "Something came up",
+    "meaning": "臨時有事",
+    "example": "I'm so sorry, but something came up and I can't make it tonight.",
+    "exampleZh": "非常抱歉，臨時有事，我今晚去不了了。",
+    "difficulty": 4
   },
   {
-    phrase: "move on from someone",
-    meaning: "放下某人；走出情傷",
-    example: "It took me a year to move on from my ex. But I'm finally happy now.",
-    exampleZh: "我花了一年時間才走出和前任的情傷，但我現在終於快樂了。",
-    difficulty: 1
+    "phrase": "I'm sorry for the inconvenience",
+    "meaning": "很抱歉造成不便",
+    "example": "I'm sorry for the inconvenience. We'll resolve the issue right away.",
+    "exampleZh": "很抱歉造成您的不便。我們會立刻解決這個問題。",
+    "difficulty": 4
   },
   {
-    phrase: "the spark is gone",
-    meaning: "沒感覺了；火花消失了",
-    example: "We've been together five years and honestly, the spark is gone.",
-    exampleZh: "我們在一起五年了，老實說，感覺已經沒了。",
-    difficulty: 2
+    "phrase": "My apologies",
+    "meaning": "我很抱歉（較正式）",
+    "example": "My apologies for arriving late. There was an accident on the highway.",
+    "exampleZh": "非常抱歉我遲到了。高速公路上發生了一起事故。",
+    "difficulty": 3,
+    "context": "正式場合的道歉用語，書面或商務常用；比較 I'm sorry（日常通用）、Excuse me（輕微打擾）"
   },
   {
-    phrase: "rebound relationship",
-    meaning: "反彈式戀情（分手後馬上交新對象）",
-    example: "He started dating someone two days after the breakup. That's clearly a rebound relationship.",
-    exampleZh: "他分手後兩天就開始約會新對象，那明顯是反彈式戀情。",
-    difficulty: 2
+    "phrase": "I didn't mean to",
+    "meaning": "我不是故意的",
+    "example": "I didn't mean to hurt your feelings. I was just being honest.",
+    "exampleZh": "我不是故意傷害你的感情的。我只是說了實話。",
+    "difficulty": 4
   },
   {
-    phrase: "get back together",
-    meaning: "復合",
-    example: "They broke up twice already. I doubt they'll get back together again.",
-    exampleZh: "他們已經分手兩次了，我不覺得他們會再復合。",
-    difficulty: 1
+    "phrase": "Please forgive me",
+    "meaning": "請原諒我",
+    "example": "I know I was wrong. Please forgive me. It won't happen again.",
+    "exampleZh": "我知道我錯了。請原諒我。這種事不會再發生了。",
+    "difficulty": 4
   },
   {
-    phrase: "have a thing for someone",
-    meaning: "對某人有意思",
-    example: "I think she has a thing for you. She's always staring at you.",
-    exampleZh: "我覺得她對你有意思，她一直盯著你看。",
-    difficulty: 2
+    "phrase": "How does that sound?",
+    "meaning": "你覺得怎麼樣？",
+    "example": "We could meet at the café at noon. How does that sound?",
+    "exampleZh": "我們可以中午在咖啡廳見面。你覺得怎麼樣？",
+    "difficulty": 4
   },
   {
-    phrase: "catch feelings",
-    meaning: "動了真感情",
-    example: "We were supposed to be casual, but I caught feelings.",
-    exampleZh: "我們本來說好只是輕鬆交往，但我動了真感情。",
-    difficulty: 2
+    "phrase": "I'll get back to you",
+    "meaning": "我再回覆你",
+    "example": "I need to check my calendar first. I'll get back to you tonight.",
+    "exampleZh": "我需要先查一下我的行事曆。我今晚再回覆你。",
+    "difficulty": 4
   },
   {
-    phrase: "ghosted",
-    meaning: "被已讀不回然後人間蒸發",
-    example: "We went on three dates and then he ghosted me. No explanation.",
-    exampleZh: "我們約會了三次，然後他就人間蒸發了，什麼解釋都沒有。",
-    difficulty: 2
+    "phrase": "mark your calendar",
+    "meaning": "記在行事曆上",
+    "example": "The wedding is on June 15th. Mark your calendar!",
+    "exampleZh": "婚禮是六月十五日。記在你的行事曆上！",
+    "difficulty": 4
   },
   {
-    phrase: "it's a match",
-    meaning: "配對成功（交友軟體用語）",
-    example: "I swiped right and it's a match! She liked me back.",
-    exampleZh: "我右滑了，配對成功！她也喜歡我。",
-    difficulty: 1
+    "phrase": "Sorry to bother you",
+    "meaning": "抱歉打擾你",
+    "example": "Sorry to bother you, but could you help me with this form?",
+    "exampleZh": "抱歉打擾你，但你可以幫我填這份表格嗎？",
+    "difficulty": 4
   },
   {
-    phrase: "the one that got away",
-    meaning: "錯過的那個人",
-    example: "Sometimes I still think about her. She was the one that got away.",
-    exampleZh: "有時候我還是會想到她，她是那個我錯過的人。",
-    difficulty: 2
+    "phrase": "It won't happen again",
+    "meaning": "不會再發生了",
+    "example": "I'm truly sorry about the mistake. It won't happen again, I promise.",
+    "exampleZh": "我對這個錯誤深感抱歉。我保證不會再發生了。",
+    "difficulty": 4
   },
   {
-    phrase: "couple goals",
-    meaning: "模範情侶；令人羨慕的一對",
-    example: "They cook together every night. Total couple goals.",
-    exampleZh: "他們每晚一起做飯，完全是模範情侶。",
-    difficulty: 1
+    "phrase": "I hope you understand",
+    "meaning": "希望你能理解",
+    "example": "I can't attend the party this time. I hope you understand.",
+    "exampleZh": "我這次沒辦法參加派對。希望你能理解。",
+    "difficulty": 4
   },
   {
-    phrase: "tie the knot",
-    meaning: "結婚；步入禮堂",
-    example: "After dating for five years, they're finally tying the knot this summer.",
-    exampleZh: "交往五年後，他們今年夏天終於要步入禮堂了。",
-    difficulty: 2
+    "phrase": "Can you hear me?",
+    "meaning": "你聽得到嗎？",
+    "example": "Hello? Can you hear me? I think the signal is bad here.",
+    "exampleZh": "喂？你聽得到我嗎？我覺得這裡的訊號很差。",
+    "difficulty": 4
   },
   {
-    phrase: "on again off again",
-    meaning: "分分合合",
-    example: "Their relationship has been on again off again for years. So messy.",
-    exampleZh: "他們的感情多年來一直分分合合，真是混亂。",
-    difficulty: 2
+    "phrase": "leave a message",
+    "meaning": "留言",
+    "example": "She's not available right now. Would you like to leave a message?",
+    "exampleZh": "她現在無法接聽。您要留言嗎？",
+    "difficulty": 4
   },
   {
-    phrase: "love is blind",
-    meaning: "愛情是盲目的",
-    example: "She can't see any of his flaws. Love is truly blind.",
-    exampleZh: "她看不到他任何的缺點，愛情真的是盲目的。",
-    difficulty: 1
+    "phrase": "scroll through",
+    "meaning": "滑手機瀏覽",
+    "example": "I spent an hour just scrolling through my social media feed.",
+    "exampleZh": "我花了一個小時就只是在滑社群媒體的動態牆。",
+    "difficulty": 4
   },
   {
-    phrase: "third wheel",
-    meaning: "電燈泡",
-    example: "I hate being the third wheel when I go out with them.",
-    exampleZh: "我討厭跟他們出去的時候當電燈泡。",
-    difficulty: 2
+    "phrase": "low battery",
+    "meaning": "電量低；快沒電了",
+    "example": "My phone is on low battery. I need to find a charger soon.",
+    "exampleZh": "我的手機快沒電了。我需要盡快找個充電器。",
+    "difficulty": 3
   },
   {
-    phrase: "she's a keeper",
-    meaning: "她是值得珍惜的人",
-    example: "She made you soup when you were sick? She's definitely a keeper.",
-    exampleZh: "你生病的時候她幫你煮湯？她絕對是值得珍惜的人。",
-    difficulty: 2
+    "phrase": "spill the tea",
+    "meaning": "爆料；說八卦",
+    "example": "Come on, spill the tea! What happened at the party last night?",
+    "exampleZh": "快說啊，有什麼料？昨晚的派對發生什麼事了？",
+    "difficulty": 3
   },
   {
-    phrase: "deal breaker in a relationship",
-    meaning: "感情中無法接受的事",
-    example: "Lying is a deal breaker in a relationship for me. I can't tolerate it.",
-    exampleZh: "說謊對我來說是感情中無法接受的事，我沒辦法容忍。",
-    difficulty: 2
+    "phrase": "the word on the street",
+    "meaning": "外面的傳聞；大家都在說",
+    "example": "The word on the street is that they're getting engaged next month.",
+    "exampleZh": "外面都在傳他們下個月要訂婚了。",
+    "difficulty": 4
   },
   {
-    phrase: "make the first move",
-    meaning: "主動出擊；先告白",
-    example: "I'm too shy. I wish she would make the first move.",
-    exampleZh: "我太害羞了，我希望她能先主動出擊。",
-    difficulty: 1
+    "phrase": "keep it on the down low",
+    "meaning": "低調一點；別張揚",
+    "example": "I'm seeing someone new, but keep it on the down low for now.",
+    "exampleZh": "我在跟一個新對象交往，但目前先低調一點。",
+    "difficulty": 4
   },
   {
-    phrase: "head over heels",
-    meaning: "深深愛上；神魂顛倒",
-    example: "He's head over heels for her. He talks about her nonstop.",
-    exampleZh: "他完全愛上她了，一直不停地說她的事。",
-    difficulty: 2
+    "phrase": "rumor has it",
+    "meaning": "聽說；據傳",
+    "example": "Rumor has it that our boss is getting transferred to another branch.",
+    "exampleZh": "聽說我們老闆要被調到另一個分部去了。",
+    "difficulty": 3
   },
   {
-    phrase: "get stood up",
-    meaning: "被放鴿子（約會對象沒出現）",
-    example: "I waited for an hour at the restaurant and got stood up.",
-    exampleZh: "我在餐廳等了一個小時，結果被放鴿子了。",
-    difficulty: 2
+    "phrase": "you didn't hear this from me",
+    "meaning": "這不是我說的喔（暗示八卦）",
+    "example": "You didn't hear this from me, but Mark got fired for stealing.",
+    "exampleZh": "這話不是我說的喔，但馬克因為偷竊被開除了。",
+    "difficulty": 4
   },
   {
-    phrase: "a toxic relationship",
-    meaning: "有毒的感情關係",
-    example: "She's in a toxic relationship but she won't listen to anyone.",
-    exampleZh: "她陷在一段有毒的感情裡，但她不聽任何人的勸。",
-    difficulty: 2
+    "phrase": "a little birdie told me",
+    "meaning": "有人偷偷跟我說；小道消息",
+    "example": "A little birdie told me you have a crush on someone in our class.",
+    "exampleZh": "有個小鳥跟我說，你喜歡我們班上的某個人。",
+    "difficulty": 4
   },
   {
-    phrase: "the honeymoon phase",
-    meaning: "熱戀期",
-    example: "They're still in the honeymoon phase. Wait until they start arguing.",
-    exampleZh: "他們還在熱戀期，等他們開始吵架就知道了。",
-    difficulty: 2
+    "phrase": "spread like wildfire",
+    "meaning": "消息像野火一樣迅速傳開",
+    "example": "The news about their breakup spread like wildfire across the school.",
+    "exampleZh": "他們分手的消息在學校裡像野火一樣迅速傳開。",
+    "difficulty": 4
   },
   {
-    phrase: "have a type",
-    meaning: "有固定喜歡的類型",
-    example: "She always dates tall guys. She definitely has a type.",
-    exampleZh: "她總是跟高個子的男生交往，她顯然有固定的類型。",
-    difficulty: 1
+    "phrase": "kiss and tell",
+    "meaning": "把私密的事到處講",
+    "example": "He's the type to kiss and tell, so be careful what you share.",
+    "exampleZh": "他就是那種愛到處說私事的人，所以說話要小心。",
+    "difficulty": 3
   },
   {
-    phrase: "put a label on it",
-    meaning: "確認關係；給一個名分",
-    example: "We've been dating for months but he refuses to put a label on it.",
-    exampleZh: "我們交往好幾個月了，但他拒絕給這段關係一個名分。",
-    difficulty: 2
+    "phrase": "have the scoop",
+    "meaning": "掌握內幕消息；有第一手情報",
+    "example": "Do you have the scoop on why Jenny left the company?",
+    "exampleZh": "你知道珍妮為什麼離職的內幕嗎？",
+    "difficulty": 4
   },
   {
-    phrase: "swipe right",
-    meaning: "右滑表示喜歡（交友軟體）",
-    example: "I'd swipe right on him in a heartbeat. He's so cute.",
-    exampleZh: "我會毫不猶豫地右滑他，他好可愛。",
-    difficulty: 1
+    "phrase": "stir the pot",
+    "meaning": "搧風點火；製造事端",
+    "example": "She just loves to stir the pot and watch people argue.",
+    "exampleZh": "她就愛搧風點火，然後看著大家吵架。",
+    "difficulty": 3
   },
   {
-    phrase: "get over someone",
-    meaning: "忘掉某人；走出來",
-    example: "The best way to get over someone is to focus on yourself.",
-    exampleZh: "走出一段感情的最好方法就是專注在自己身上。",
-    difficulty: 1
+    "phrase": "talk trash about",
+    "meaning": "講某人壞話；嘴砲",
+    "example": "He's always talking trash about his coworkers when they're not around.",
+    "exampleZh": "他總是在同事不在的時候說他們的壞話。",
+    "difficulty": 4
   },
   {
-    phrase: "significant other",
-    meaning: "另一半；伴侶",
-    example: "Are you bringing your significant other to the company dinner?",
-    exampleZh: "你要帶另一半來公司晚宴嗎？",
-    difficulty: 1
+    "phrase": "word gets around",
+    "meaning": "消息會傳開的",
+    "example": "Be careful what you say. Word gets around fast in this town.",
+    "exampleZh": "說話要小心，這個小鎮消息傳得很快。",
+    "difficulty": 4
   },
   {
-    phrase: "weak in the knees",
-    meaning: "腿軟；看到喜歡的人心跳加速",
-    example: "Every time he smiles at me, I go weak in the knees.",
-    exampleZh: "每次他對我微笑，我的腿就軟了。",
-    difficulty: 2
+    "phrase": "I'm all about the drama",
+    "meaning": "我就愛看戲；我就愛八卦",
+    "example": "Give me all the details. I'm all about the drama!",
+    "exampleZh": "把所有細節都說給我聽，我就愛看戲！",
+    "difficulty": 4
   },
-
-  // ===== 7. SOCIAL MEDIA & INTERNET SLANG (181-210) =====
-  // Modern digital communication phrases
-
   {
-    phrase: "slide into DMs",
-    meaning: "私訊搭訕",
-    example: "He slid into her DMs with a cheesy pickup line.",
-    exampleZh: "他用一句俗氣的搭訕話私訊了她。",
-    difficulty: 2
+    "phrase": "I'm shook",
+    "meaning": "我被嚇到了；我震驚了",
+    "example": "I just found out my quiet neighbor is actually a famous DJ. I'm shook.",
+    "exampleZh": "我剛發現我那個安靜的鄰居其實是個知名DJ，我整個震驚了。",
+    "difficulty": 2
   },
   {
-    phrase: "leave someone on read",
-    meaning: "已讀不回",
-    example: "I texted her three hours ago and she left me on read. Ouch.",
-    exampleZh: "我三小時前傳訊息給她，她已讀不回，好傷心。",
-    difficulty: 2
+    "phrase": "I did a double take",
+    "meaning": "我嚇了一跳；看了兩眼才確認",
+    "example": "I did a double take when I saw her new haircut. She looks so different!",
+    "exampleZh": "看到她的新髮型我看了兩眼才確認，她看起來完全不一樣了！",
+    "difficulty": 4
   },
   {
-    phrase: "doom scrolling",
-    meaning: "一直滑手機看負面新聞停不下來",
-    example: "I was doom scrolling until 3 AM last night. I need to stop.",
-    exampleZh: "昨晚我一直滑手機看負面新聞直到凌晨三點，我需要停止了。",
-    difficulty: 2
+    "phrase": "my jaw dropped",
+    "meaning": "我下巴都掉了；超震驚",
+    "example": "My jaw dropped when I saw the price of that bag. Five thousand dollars!",
+    "exampleZh": "看到那個包包的價格我下巴都掉了，五千美金！",
+    "difficulty": 4
   },
   {
-    phrase: "cancel culture",
-    meaning: "取消文化；集體抵制",
-    example: "Cancel culture is huge these days. One wrong tweet and you're done.",
-    exampleZh: "取消文化現在很盛行，發一則錯誤的推文就完蛋了。",
-    difficulty: 2
+    "phrase": "I'm blown away",
+    "meaning": "我被震撼到了；太讚了",
+    "example": "I'm blown away by how good this restaurant is. We have to come back.",
+    "exampleZh": "這家餐廳好到讓我驚豔，我們一定要再來。",
+    "difficulty": 4
   },
   {
-    phrase: "it's giving",
-    meaning: "感覺像是...；給人一種...的氛圍",
-    example: "That outfit is giving main character energy. You look amazing!",
-    exampleZh: "那套服裝充滿主角的氣場，你看起來超棒的！",
-    difficulty: 3
+    "phrase": "that caught me off guard",
+    "meaning": "那讓我措手不及",
+    "example": "Her question totally caught me off guard. I didn't know what to say.",
+    "exampleZh": "她的問題讓我完全措手不及，我不知道該說什麼。",
+    "difficulty": 4
   },
   {
-    phrase: "that's cap",
-    meaning: "那是在唬爛；不是真的",
-    example: "He said he can bench press 300 pounds. That's cap.",
-    exampleZh: "他說他可以臥推三百磅，那根本是在唬爛。",
-    difficulty: 3
+    "phrase": "plot twist",
+    "meaning": "劇情大反轉",
+    "example": "Plot twist — the person she was complaining about was standing right behind her.",
+    "exampleZh": "大反轉——她抱怨的那個人就站在她正後面。",
+    "difficulty": 3
   },
   {
-    phrase: "main character energy",
-    meaning: "主角光環；活得像主角一樣自信",
-    example: "She walked into the room like she owned it. Total main character energy.",
-    exampleZh: "她走進房間的樣子就像房間屬於她一樣，完全是主角氣場。",
-    difficulty: 3
+    "phrase": "that's a shocker",
+    "meaning": "真是令人震驚",
+    "example": "He's moving to Japan next week? That's a shocker!",
+    "exampleZh": "他下週要搬去日本？真是太令人震驚了！",
+    "difficulty": 4
   },
   {
-    phrase: "throw shade",
-    meaning: "暗中嘲諷；酸人",
-    example: "Did she just throw shade at my cooking? That was rude.",
-    exampleZh: "她剛才是在酸我的廚藝嗎？真的很失禮。",
-    difficulty: 2
+    "phrase": "out of the blue",
+    "meaning": "出乎意料；突然地",
+    "example": "The job offer came out of the blue.",
+    "exampleZh": "這份工作邀約來得很突然。",
+    "difficulty": 4,
+    "context": "形容事情在完全沒有預兆的情況下發生。"
   },
   {
-    phrase: "flex on someone",
-    meaning: "跟人炫耀",
-    example: "He bought a Porsche just to flex on his coworkers.",
-    exampleZh: "他買了一輛保時捷就是為了在同事面前炫耀。",
-    difficulty: 2
+    "phrase": "that blew my mind",
+    "meaning": "那讓我大開眼界；太驚人了",
+    "example": "The magic trick totally blew my mind. How did he do that?",
+    "exampleZh": "那個魔術讓我大開眼界，他到底是怎麼辦到的？",
+    "difficulty": 4
   },
   {
-    phrase: "it's a vibe",
-    meaning: "氛圍很對；感覺對了",
-    example: "This coffee shop with the jazz music? It's a vibe.",
-    exampleZh: "這家咖啡店配上爵士樂？氛圍超對的。",
-    difficulty: 2
+    "phrase": "I can't even",
+    "meaning": "我已經不行了（太誇張受不了）",
+    "example": "She wore pajamas to the interview. I can't even.",
+    "exampleZh": "她穿著睡衣去面試，我真的無話可說了。",
+    "difficulty": 3
   },
   {
-    phrase: "go live",
-    meaning: "開直播",
-    example: "She goes live on Instagram every night to chat with her fans.",
-    exampleZh: "她每天晚上都在Instagram開直播和粉絲聊天。",
-    difficulty: 1
+    "phrase": "don't get me started",
+    "meaning": "別讓我開始講（一講就停不下來）",
+    "example": "Don't get me started on the traffic this morning. It was a nightmare.",
+    "exampleZh": "別讓我開始說今天早上的交通，真的是一場惡夢。",
+    "difficulty": 4
   },
   {
-    phrase: "clout chaser",
-    meaning: "蹭流量的人；為了出名什麼都做",
-    example: "He only hangs out with famous people. Such a clout chaser.",
-    exampleZh: "他只和名人交往，真是個到處蹭流量的人。",
-    difficulty: 3
+    "phrase": "that's messed up",
+    "meaning": "太過分了（帶道德批判）",
+    "example": "They fired her on her birthday? That's messed up.",
+    "exampleZh": "他們在她生日那天開除她？太過分了。",
+    "difficulty": 4,
+    "context": "帶負面道德批判，覺得事情「不對勁、不應該」；比較 that's insane（震驚不可置信）、that's wild（好奇中性）、that's nuts（俏皮）、this is ridiculous（覺得荒謬不滿）"
   },
   {
-    phrase: "catch someone in 4K",
-    meaning: "抓到證據了（像高清鏡頭拍到一樣）",
-    example: "She said she was busy, but we caught her in 4K at the club.",
-    exampleZh: "她說她很忙，但我們在夜店把她抓個正著。",
-    difficulty: 3
+    "phrase": "I've had it up to here",
+    "meaning": "我已經忍到極限了",
+    "example": "I've had it up to here with his excuses. He needs to grow up.",
+    "exampleZh": "我已經忍他的藉口忍到極限了，他需要成熟一點。",
+    "difficulty": 4
   },
   {
-    phrase: "ratio someone",
-    meaning: "回覆的讚比原文還多（代表被打臉）",
-    example: "His tweet was so bad that he got ratioed within minutes.",
-    exampleZh: "他的推文太爛了，幾分鐘內就被打臉了。",
-    difficulty: 3
+    "phrase": "for crying out loud",
+    "meaning": "拜託耶；搞什麼啊",
+    "example": "For crying out loud, can you just answer your phone?",
+    "exampleZh": "拜託耶，你能不能接一下電話？",
+    "difficulty": 4
   },
   {
-    phrase: "no filter",
-    meaning: "沒修圖；說話直接不修飾",
-    example: "This photo is no filter. The sunset really looked like that!",
-    exampleZh: "這張照片沒修圖，夕陽真的就是那個樣子！",
-    difficulty: 1
+    "phrase": "that gets on my nerves",
+    "meaning": "那讓我很煩躁",
+    "example": "His constant humming really gets on my nerves.",
+    "exampleZh": "他不停地哼歌真的讓我很煩躁。",
+    "difficulty": 4
   },
   {
-    phrase: "FOMO",
-    meaning: "害怕錯過（Fear of Missing Out）",
-    example: "Everyone's posting about the festival. I have major FOMO right now.",
-    exampleZh: "大家都在發音樂節的動態，我現在嚴重害怕錯過了。",
-    difficulty: 2
+    "phrase": "I could scream",
+    "meaning": "我快氣炸了",
+    "example": "They lost my package for the third time. I could scream!",
+    "exampleZh": "他們第三次弄丟我的包裹了，我快氣炸了！",
+    "difficulty": 4
   },
   {
-    phrase: "savage",
-    meaning: "狠角色；嗆到不行",
-    example: "She told him she'd rather be single forever. That was savage.",
-    exampleZh: "她說她寧可永遠單身，真的超狠的。",
-    difficulty: 2
+    "phrase": "that's the last straw",
+    "meaning": "這是最後一根稻草；我忍無可忍了",
+    "example": "He showed up late again. That's the last straw — I'm telling the boss.",
+    "exampleZh": "他又遲到了，這是最後一根稻草——我要去跟老闆說了。",
+    "difficulty": 4
   },
   {
-    phrase: "salty",
-    meaning: "不爽；心裡不平衡",
-    example: "He's still salty about losing the game last week.",
-    exampleZh: "他對上週輸掉比賽還是耿耿於懷。",
-    difficulty: 2
+    "phrase": "you're getting on my last nerve",
+    "meaning": "你快把我逼瘋了",
+    "example": "Stop poking me! You're getting on my last nerve!",
+    "exampleZh": "不要再戳我了！你快把我逼瘋了！",
+    "difficulty": 4
   },
   {
-    phrase: "lowkey and highkey",
-    meaning: "低調地（有一點點）和高調地（超級）",
-    example: "I lowkey want to skip the meeting, but I highkey need the paycheck.",
-    exampleZh: "我有點想翹掉會議，但我非常需要那份薪水。",
-    difficulty: 2
+    "phrase": "what a rip-off",
+    "meaning": "好坑；太貴了吧",
+    "example": "Fifty dollars for a sandwich? What a rip-off!",
+    "exampleZh": "一個三明治要五十美金？也太坑了吧！",
+    "difficulty": 4
   },
   {
-    phrase: "binge-watching",
-    meaning: "追劇追到停不下來",
-    example: "I spent the whole weekend binge-watching that new Korean drama.",
-    exampleZh: "我整個週末都在追那部新的韓劇，完全停不下來。",
-    difficulty: 1
-  },
-  {
-    phrase: "catfish someone",
-    meaning: "用假身分騙人（在網路上）",
-    example: "He used someone else's photos on his profile. He totally catfished her.",
-    exampleZh: "他在個人頁面用了別人的照片，完全在網路上用假身分騙她。",
-    difficulty: 2
-  },
-  {
-    phrase: "unfollow drama",
-    meaning: "取消追蹤引發的風波",
-    example: "She unfollowed him and now there's a whole unfollow drama online.",
-    exampleZh: "她取消追蹤他了，現在網路上引發了一場取消追蹤風波。",
-    difficulty: 2
-  },
-  {
-    phrase: "that's sus",
-    meaning: "很可疑；有鬼",
-    example: "He suddenly started being super nice to the boss. That's sus.",
-    exampleZh: "他突然開始對老闆超好，這很可疑。",
-    difficulty: 2
-  },
-  {
-    phrase: "stan someone",
-    meaning: "超級粉絲；瘋狂追某人",
-    example: "I stan that band so hard. I have all their albums and merch.",
-    exampleZh: "我超級支持那個樂團，我有他們所有的專輯和周邊商品。",
-    difficulty: 2
-  },
-  {
-    phrase: "hits different",
-    meaning: "感覺就是不一樣；特別有感觸",
-    example: "Listening to sad songs when you're actually sad hits different.",
-    exampleZh: "真正傷心的時候聽悲傷的歌，感覺就是不一樣。",
-    difficulty: 2
-  },
-  {
-    phrase: "cringe",
-    meaning: "好尷尬；讓人起雞皮疙瘩",
-    example: "His public proposal was so cringe. She looked so uncomfortable.",
-    exampleZh: "他公開求婚超尷尬的，她看起來非常不自在。",
-    difficulty: 1
-  },
-  {
-    phrase: "receipts",
-    meaning: "證據；截圖為證",
-    example: "She denied saying it, but I have the receipts. I screenshotted everything.",
-    exampleZh: "她否認說過那些話，但我有截圖為證，我把所有東西都截圖了。",
-    difficulty: 2
-  },
-  {
-    phrase: "went viral",
-    meaning: "爆紅了",
-    example: "Her dance video went viral overnight. She has a million followers now.",
-    exampleZh: "她的舞蹈影片一夜爆紅，她現在有一百萬粉絲了。",
-    difficulty: 1
-  },
-  {
-    phrase: "dead",
-    meaning: "笑死了；太好笑了",
-    example: "Did you see that meme? I'm dead. I can't stop laughing.",
-    exampleZh: "你看到那個表情包了嗎？我笑死了，停不下來。",
-    difficulty: 2
-  },
-  {
-    phrase: "rent-free in my head",
-    meaning: "一直在我腦海裡揮之不去",
-    example: "That embarrassing moment is living rent-free in my head.",
-    exampleZh: "那個尷尬的瞬間一直在我腦海裡揮之不去。",
-    difficulty: 2
-  },
-
-  // ===== 8. MAKING FUN & TEASING (211-235) =====
-  // Light-hearted teasing and humor
-
-  {
-    phrase: "I'm pulling your leg",
-    meaning: "我在跟你開玩笑",
-    example: "Relax, I'm just pulling your leg. Your car is totally fine.",
-    exampleZh: "放鬆，我只是跟你開玩笑，你的車完全沒問題。",
-    difficulty: 2
-  },
-  {
-    phrase: "don't take it personally",
-    meaning: "別放在心上",
-    example: "She's grumpy with everyone today. Don't take it personally.",
-    exampleZh: "她今天對每個人都很暴躁，別放在心上。",
-    difficulty: 1
-  },
-  {
-    phrase: "you crack me up",
-    meaning: "你笑死我了",
-    example: "The way you tell stories cracks me up every time.",
-    exampleZh: "你說故事的方式每次都讓我笑死。",
-    difficulty: 2
-  },
-  {
-    phrase: "that's hilarious",
-    meaning: "太好笑了",
-    example: "He walked into the glass door? That's hilarious!",
-    exampleZh: "他走進玻璃門了？太好笑了！",
-    difficulty: 1
-  },
-  {
-    phrase: "nice try",
-    meaning: "想得美；少來了",
-    example: "\"Can I copy your homework?\" \"Nice try, but no.\"",
-    exampleZh: "「我可以抄你的作業嗎？」「想得美，不行。」",
-    difficulty: 1
-  },
-  {
-    phrase: "in your dreams",
-    meaning: "你做夢吧；想得美",
-    example: "\"I bet I can beat you at chess.\" \"In your dreams!\"",
-    exampleZh: "「我敢說我能在西洋棋上打敗你。」「你做夢！」",
-    difficulty: 1
-  },
-  {
-    phrase: "you wish",
-    meaning: "你想得美；才沒那回事",
-    example: "\"I think she likes me.\" \"You wish, dude.\"",
-    exampleZh: "「我覺得她喜歡我。」「你想得美，兄弟。」",
-    difficulty: 1
-  },
-  {
-    phrase: "busted",
-    meaning: "被抓包了；被發現了",
-    example: "I caught him eating my leftovers. Busted!",
-    exampleZh: "我抓到他在吃我的剩菜，被逮個正著！",
-    difficulty: 1
-  },
-  {
-    phrase: "roast someone",
-    meaning: "吐槽某人；狂嘴某人",
-    example: "His friends roasted him for his terrible new haircut.",
-    exampleZh: "他的朋友們因為他那個糟糕的新髮型狂嘴他。",
-    difficulty: 2
-  },
-  {
-    phrase: "that's so you",
-    meaning: "那好像你會做的事；很符合你的風格",
-    example: "You tripped over nothing? That's so you!",
-    exampleZh: "你什麼都沒有就絆倒了？超符合你的風格！",
-    difficulty: 1
-  },
-  {
-    phrase: "classic move",
-    meaning: "經典操作（有點諷刺意味）",
-    example: "You forgot your wallet again? Classic move, man.",
-    exampleZh: "你又忘了帶錢包？經典操作，兄弟。",
-    difficulty: 2
-  },
-  {
-    phrase: "smooth move",
-    meaning: "好厲害的操作啊（反諷）",
-    example: "You spilled coffee on your crush? Smooth move.",
-    exampleZh: "你把咖啡灑在你喜歡的人身上了？好厲害的操作啊。",
-    difficulty: 2
-  },
-  {
-    phrase: "nailed it",
-    meaning: "完美達成（常反諷使用）",
-    example: "You tried to make a cake and it looks like a pancake? Nailed it.",
-    exampleZh: "你想做蛋糕結果做出來像煎餅？完美達成。",
-    difficulty: 1
-  },
-  {
-    phrase: "what were you thinking",
-    meaning: "你到底在想什麼",
-    example: "You wore sandals in a snowstorm? What were you thinking?",
-    exampleZh: "你在暴風雪中穿涼鞋？你到底在想什麼？",
-    difficulty: 1
-  },
-  {
-    phrase: "way to go",
-    meaning: "幹得好啊（可以是真心或諷刺）",
-    example: "You locked yourself out again? Way to go, genius.",
-    exampleZh: "你又把自己鎖在外面了？幹得好啊，天才。",
-    difficulty: 1
-  },
-  {
-    phrase: "no offense but",
-    meaning: "我沒有惡意，但是...",
-    example: "No offense, but that outfit really doesn't match.",
-    exampleZh: "我沒有惡意，但那套穿搭真的不搭。",
-    difficulty: 1
-  },
-  {
-    phrase: "I'm just messing with you",
-    meaning: "我只是跟你鬧著玩的",
-    example: "Don't be mad! I'm just messing with you. Of course I'll help.",
-    exampleZh: "別生氣！我只是跟你鬧著玩的，我當然會幫你。",
-    difficulty: 1
-  },
-  {
-    phrase: "you're something else",
-    meaning: "你真的很誇張；你真是個奇葩",
-    example: "You ate an entire pizza by yourself? You're something else.",
-    exampleZh: "你一個人把整個披薩吃完了？你真是個奇葩。",
-    difficulty: 2
-  },
-  {
-    phrase: "only you would do that",
-    meaning: "只有你才會這樣做",
-    example: "Only you would show up to a party on the wrong day.",
-    exampleZh: "只有你才會在錯誤的日子出現在派對上。",
-    difficulty: 1
-  },
-  {
-    phrase: "that's a good one",
-    meaning: "這個好笑；你講的不錯",
-    example: "\"I told my boss I need a raise for emotional damage.\" \"Ha, that's a good one.\"",
-    exampleZh: "「我跟老闆說我需要加薪來補償精神損失。」「哈，這個好笑。」",
-    difficulty: 1
-  },
-  {
-    phrase: "look who's talking",
-    meaning: "你還好意思說別人",
-    example: "\"You eat too much junk food.\" \"Look who's talking! You had chips for dinner.\"",
-    exampleZh: "「你吃太多垃圾食物了。」「你還好意思說別人！你晚餐就吃洋芋片。」",
-    difficulty: 2
-  },
-  {
-    phrase: "get a load of this",
-    meaning: "你看看這個；你聽聽看",
-    example: "Get a load of this — he told the teacher the dog ate his homework. In college.",
-    exampleZh: "你聽聽看這個——他告訴老師說狗吃了他的作業，而且是在大學。",
-    difficulty: 2
-  },
-  {
-    phrase: "the pot calling the kettle black",
-    meaning: "五十步笑百步",
-    example: "You're calling me messy? That's the pot calling the kettle black.",
-    exampleZh: "你說我邋遢？這真是五十步笑百步。",
-    difficulty: 3
-  },
-  {
-    phrase: "lighten up",
-    meaning: "放輕鬆啦；別那麼嚴肅",
-    example: "It was just a joke. Lighten up!",
-    exampleZh: "只是開個玩笑而已，放輕鬆啦！",
-    difficulty: 1
-  },
-  {
-    phrase: "keep dreaming",
-    meaning: "繼續做夢吧",
-    example: "\"I'm going to be a millionaire by 25.\" \"Keep dreaming, buddy.\"",
-    exampleZh: "「我要在二十五歲之前成為百萬富翁。」「繼續做夢吧，老兄。」",
-    difficulty: 1
-  },
-
-  // ===== 9. ADVICE & OPINIONS (236-265) =====
-  // Giving casual advice, sharing opinions
-
-  {
-    phrase: "if I were you",
-    meaning: "如果我是你的話",
-    example: "If I were you, I'd break up with him. He doesn't deserve you.",
-    exampleZh: "如果我是你，我會跟他分手，他不配擁有你。",
-    difficulty: 1
-  },
-  {
-    phrase: "you should totally",
-    meaning: "你一定要...；你真的應該...",
-    example: "You should totally apply for that job. You'd be perfect for it.",
-    exampleZh: "你一定要去申請那份工作，你非常適合。",
-    difficulty: 1
-  },
-  {
-    phrase: "honestly speaking",
-    meaning: "老實說",
-    example: "Honestly speaking, I don't think that dress looks good on her.",
-    exampleZh: "老實說，我覺得那件洋裝穿在她身上不好看。",
-    difficulty: 1
-  },
-  {
-    phrase: "take it or leave it",
-    meaning: "要就要，不要就算了",
-    example: "I can give you twenty bucks for it. Take it or leave it.",
-    exampleZh: "我可以給你二十塊，要就要，不要就算了。",
-    difficulty: 2
-  },
-  {
-    phrase: "think twice about it",
-    meaning: "三思而後行",
-    example: "Before you quit your job, think twice about it. You need the income.",
-    exampleZh: "在你辭職之前，三思而後行，你需要那份收入。",
-    difficulty: 1
-  },
-  {
-    phrase: "go for it",
-    meaning: "放手去做吧；衝吧",
-    example: "You want to start your own business? Go for it! Life is short.",
-    exampleZh: "你想自己創業？放手去做吧！人生苦短。",
-    difficulty: 1
-  },
-  {
-    phrase: "trust your gut",
-    meaning: "相信你的直覺",
-    example: "If something feels off about him, trust your gut.",
-    exampleZh: "如果你對他有什麼感覺不對，相信你的直覺。",
-    difficulty: 2
-  },
-  {
-    phrase: "don't overthink it",
-    meaning: "不要想太多",
-    example: "Just text her and ask her out. Don't overthink it.",
-    exampleZh: "就傳訊息給她邀她出來，不要想太多。",
-    difficulty: 1
-  },
-  {
-    phrase: "you do you",
-    meaning: "做你自己就好；你開心就好",
-    example: "You want to wear a costume to the grocery store? You do you.",
-    exampleZh: "你想穿戲服去超市？你開心就好。",
-    difficulty: 2
-  },
-  {
-    phrase: "just saying",
-    meaning: "只是說說而已（委婉表達意見）",
-    example: "He doesn't seem that into you. Just saying.",
-    exampleZh: "他好像對你沒那麼有興趣，只是說說而已。",
-    difficulty: 1
-  },
-  {
-    phrase: "hear me out",
-    meaning: "聽我說完",
-    example: "I know it sounds crazy, but hear me out. It might actually work.",
-    exampleZh: "我知道聽起來很瘋狂，但先聽我說完，這其實可能行得通。",
-    difficulty: 1
-  },
-  {
-    phrase: "take my word for it",
-    meaning: "相信我的話",
-    example: "That restaurant is amazing. Take my word for it.",
-    exampleZh: "那家餐廳超棒的，相信我。",
-    difficulty: 1
-  },
-  {
-    phrase: "no judgment",
-    meaning: "不批評；不帶偏見",
-    example: "Tell me what happened. No judgment, I promise.",
-    exampleZh: "告訴我發生了什麼，我保證不批評你。",
-    difficulty: 1
-  },
-  {
-    phrase: "it's not the end of the world",
-    meaning: "這又不是世界末日",
-    example: "You failed one test. It's not the end of the world. You'll do better next time.",
-    exampleZh: "你只是一次考試沒過，這又不是世界末日，下次你會更好。",
-    difficulty: 1
-  },
-  {
-    phrase: "learn from it and move on",
-    meaning: "從中學習然後往前看",
-    example: "Yeah, you messed up, but learn from it and move on.",
-    exampleZh: "是的，你搞砸了，但從中學習然後繼續往前吧。",
-    difficulty: 1
-  },
-  {
-    phrase: "that's a no-brainer",
-    meaning: "那根本不用想；很明顯的選擇",
-    example: "Free trip to Hawaii? That's a no-brainer! Of course I'm going.",
-    exampleZh: "免費去夏威夷旅行？根本不用想！我當然要去。",
-    difficulty: 2
-  },
-  {
-    phrase: "whatever floats your boat",
-    meaning: "隨你高興；你開心就好",
-    example: "You want pineapple on pizza? Whatever floats your boat.",
-    exampleZh: "你想在披薩上加鳳梨？隨你高興。",
-    difficulty: 2
-  },
-  {
-    phrase: "here's the thing",
-    meaning: "重點是這樣的；問題在於",
-    example: "Here's the thing — he never actually said he was sorry.",
-    exampleZh: "重點是這樣的——他從來沒有真正道過歉。",
-    difficulty: 1
-  },
-  {
-    phrase: "been there done that",
-    meaning: "我經歷過了；過來人",
-    example: "You're worried about your first day? Been there, done that. You'll be fine.",
-    exampleZh: "你在擔心第一天上班嗎？我也經歷過了，你會沒事的。",
-    difficulty: 2
-  },
-  {
-    phrase: "it wouldn't hurt to",
-    meaning: "...也沒什麼壞處",
-    example: "It wouldn't hurt to apologize, even if you think you're right.",
-    exampleZh: "即使你覺得自己是對的，道個歉也沒什麼壞處。",
-    difficulty: 2
-  },
-  {
-    phrase: "don't knock it till you try it",
-    meaning: "沒試過就別嫌",
-    example: "Sushi sounds weird to you? Don't knock it till you try it.",
-    exampleZh: "壽司聽起來很奇怪嗎？沒試過就別嫌。",
-    difficulty: 2
-  },
-  {
-    phrase: "my two cents",
-    meaning: "我的淺見；我的個人看法",
-    example: "My two cents? I think you should focus on saving money first.",
-    exampleZh: "我的淺見？我覺得你應該先專注於存錢。",
-    difficulty: 2
-  },
-  {
-    phrase: "look before you leap",
-    meaning: "三思而後行；想清楚再做",
-    example: "Moving across the country is a big deal. Look before you leap.",
-    exampleZh: "跨越整個國家搬家是件大事，想清楚再做。",
-    difficulty: 2
-  },
-  {
-    phrase: "let it go",
-    meaning: "放下吧；別再糾結了",
-    example: "That was years ago. You need to let it go.",
-    exampleZh: "那都是好幾年前的事了，你需要放下了。",
-    difficulty: 1
-  },
-  {
-    phrase: "follow your heart",
-    meaning: "跟隨你的心",
-    example: "I can't tell you what to do. You need to follow your heart.",
-    exampleZh: "我沒辦法告訴你該怎麼做，你需要跟隨自己的心。",
-    difficulty: 1
-  },
-  {
-    phrase: "mark my words",
-    meaning: "記住我說的話",
-    example: "Mark my words, they'll break up within a month.",
-    exampleZh: "記住我說的話，他們一個月內會分手的。",
-    difficulty: 2
-  },
-  {
-    phrase: "at the end of the day it's your call",
-    meaning: "說到底還是你決定",
-    example: "I can give you advice, but at the end of the day it's your call.",
-    exampleZh: "我可以給你建議，但說到底還是你自己做決定。",
-    difficulty: 2
-  },
-  {
-    phrase: "in all honesty",
-    meaning: "坦白講",
-    example: "In all honesty, I don't think long-distance relationships work.",
-    exampleZh: "坦白講，我不覺得遠距離戀愛行得通。",
-    difficulty: 1
-  },
-  {
-    phrase: "that's easier said than done",
-    meaning: "說比做容易",
-    example: "\"Just stop worrying.\" \"That's easier said than done.\"",
-    exampleZh: "「不要擔心就好了。」「說比做容易。」",
-    difficulty: 2
-  },
-  {
-    phrase: "I'm not gonna sugarcoat it",
-    meaning: "我直說了不修飾",
-    example: "I'm not gonna sugarcoat it — your resume needs a lot of work.",
-    exampleZh: "我直說了不修飾——你的履歷需要大幅改善。",
-    difficulty: 2
-  },
-
-  // ===== 10. CONVERSATION FILLERS & TRANSITIONS (266-300) =====
-  // Small talk, changing topics, wrapping up
-
-  {
-    phrase: "guess what",
-    meaning: "你猜怎樣",
-    example: "Guess what! I finally got my driver's license!",
-    exampleZh: "你猜怎樣！我終於拿到駕照了！",
-    difficulty: 1
-  },
-  {
-    phrase: "here's the deal",
-    meaning: "情況是這樣的",
-    context: "直接切入重點說明狀況；口語常在前面加 so（so here's the deal）讓語氣更輕鬆隨意",
-    example: "Here's the deal — I can't make it tonight because I have to babysit.",
-    exampleZh: "情況是這樣的——我今晚沒辦法去，因為我要照顧小孩。",
-    difficulty: 1
-  },
-  {
-    phrase: "on another note",
-    meaning: "換個話題",
-    example: "On another note, have you tried that new ramen place downtown?",
-    exampleZh: "換個話題，你有去試試市中心那家新的拉麵店嗎？",
-    difficulty: 1
-  },
-  {
-    phrase: "that reminds me",
-    meaning: "這讓我想起",
-    example: "Oh, that reminds me — I need to call my mom back.",
-    exampleZh: "喔，這讓我想起來——我需要回電話給我媽媽。",
-    difficulty: 1
-  },
-  {
-    phrase: "let's catch up",
-    meaning: "我們找時間聊聊近況",
-    example: "It's been forever! Let's catch up over coffee this weekend.",
-    exampleZh: "好久不見！我們這週末找個時間喝咖啡聊近況吧。",
-    difficulty: 1
-  },
-  {
-    phrase: "I gotta run",
-    meaning: "我得走了",
-    example: "Sorry, I gotta run. My bus is coming in two minutes!",
-    exampleZh: "抱歉，我得走了，我的公車兩分鐘後就來了！",
-    difficulty: 1
-  },
-  {
-    phrase: "long story short",
-    meaning: "長話短說",
-    example: "Long story short, I missed my flight and had to sleep at the airport.",
-    exampleZh: "長話短說，我錯過了班機，只好在機場睡一晚。",
-    difficulty: 1
-  },
-  {
-    phrase: "anyway moving on",
-    meaning: "好啦不說了，繼續",
-    example: "Anyway, moving on — did you finish that project?",
-    exampleZh: "好啦，繼續——你把那個專案做完了嗎？",
-    difficulty: 1
-  },
-  {
-    phrase: "so basically",
-    meaning: "所以基本上就是",
-    example: "So basically, she got mad because nobody told her about the plan.",
-    exampleZh: "所以基本上就是，她生氣是因為沒有人告訴她那個計劃。",
-    difficulty: 1
-  },
-  {
-    phrase: "you know what I mean",
-    meaning: "你知道我的意思吧",
-    example: "He's nice but he's kinda boring, you know what I mean?",
-    exampleZh: "他人不錯，但有點無聊，你知道我的意思吧？",
-    difficulty: 1
-  },
-  {
-    phrase: "not gonna lie",
-    meaning: "不騙你；說實話",
-    example: "Not gonna lie, I was scared when I heard that noise.",
-    exampleZh: "不騙你，聽到那個聲音時我真的嚇到了。",
-    difficulty: 1
-  },
-  {
-    phrase: "it is what it is",
-    meaning: "就是這樣了；沒辦法改變",
-    example: "The weather ruined our plans, but it is what it is.",
-    exampleZh: "天氣毀了我們的計劃，但就是這樣了，沒辦法改變。",
-    difficulty: 1
-  },
-  {
-    phrase: "where was I",
-    meaning: "我剛剛講到哪了",
-    example: "Sorry, I got distracted. Where was I? Oh right, so she called me and...",
-    exampleZh: "抱歉，我分心了。我剛剛講到哪了？喔對，她打電話給我然後……",
-    difficulty: 1
-  },
-  {
-    phrase: "don't even get me started on that",
-    meaning: "那個別讓我開始講（講不完）",
-    example: "The new policy? Don't even get me started on that. It's terrible.",
-    exampleZh: "新政策？那個別讓我開始講，真的很糟。",
-    difficulty: 2
-  },
-  {
-    phrase: "you know what's funny",
-    meaning: "你知道好笑的是什麼嗎",
-    example: "You know what's funny? He complained about being late, and then he was the last one to show up.",
-    exampleZh: "你知道好笑的是什麼嗎？他抱怨別人遲到，結果他自己是最後一個出現的。",
-    difficulty: 1
-  },
-  {
-    phrase: "before I forget",
-    meaning: "趁我還沒忘記",
-    example: "Oh, before I forget — can you bring snacks to the party?",
-    exampleZh: "喔，趁我還沒忘記——你可以帶點心去派對嗎？",
-    difficulty: 1
-  },
-  {
-    phrase: "I'll let you go",
-    meaning: "我不耽誤你了（結束對話）",
-    example: "Well, I'll let you go. It was great catching up!",
-    exampleZh: "好了，我不耽誤你了，和你聊近況真的很開心！",
-    difficulty: 1
-  },
-  {
-    phrase: "real talk",
-    meaning: "認真說；說正經的",
-    example: "Real talk, are you happy with your job?",
-    exampleZh: "說正經的，你對你的工作滿意嗎？",
-    difficulty: 2
-  },
-  {
-    phrase: "take it from me",
-    meaning: "相信過來人的話",
-    example: "Take it from me, don't lend money to friends. It never ends well.",
-    exampleZh: "相信過來人的話，不要借錢給朋友，從來不會有好結果的。",
-    difficulty: 2
-  },
-  {
-    phrase: "bottom line is",
-    meaning: "重點就是；歸根究柢",
-    example: "Bottom line is, if you're not happy, just leave.",
-    exampleZh: "重點就是，如果你不快樂，就離開吧。",
-    difficulty: 1
-  },
-  {
-    phrase: "just between us",
-    meaning: "我們私底下說",
-    context: "較輕鬆隨口的「別說出去喔」，us 可以是兩人或小群體；比較 between you and me（更正式、專門對一人說、語氣更慎重）",
-    example: "Just between us, I think the meeting was a total waste of time.",
-    exampleZh: "我們私底下說，我覺得那個會議完全是浪費時間。",
-    difficulty: 1
-  },
-  {
-    phrase: "talk about bad timing",
-    meaning: "說到時機真的很差",
-    example: "Talk about bad timing — I asked for a raise the same day they announced layoffs.",
-    exampleZh: "說到時機真的很差——我在他們宣布裁員的同一天要求加薪。",
-    difficulty: 2
-  },
-  {
-    phrase: "now that you mention it",
-    meaning: "你這麼一說我才想到",
-    example: "Now that you mention it, she has been acting strange lately.",
-    exampleZh: "你這麼一說我才想到，她最近行為確實很奇怪。",
-    difficulty: 2
-  },
-  {
-    phrase: "get this",
-    meaning: "你聽聽看這個",
-    example: "Get this — she showed up to the wedding in a white dress. Not even the bride!",
-    exampleZh: "你聽聽看這個——她穿著白色洋裝出現在婚禮上，她又不是新娘！",
-    difficulty: 2
-  },
-  {
-    phrase: "you're not going to believe this",
-    meaning: "你一定不會相信這件事",
-    context: "較完整的說法，語氣像在鄭重地鋪陳即將分享的大事；比較 you won't believe this（較短較隨口）",
-    example: "You're not going to believe this, but I just won free tickets!",
-    exampleZh: "你一定不會相信，但我剛剛贏得了免費的票！",
-    difficulty: 1
-  },
-  {
-    phrase: "I kid you not",
-    meaning: "我沒開玩笑；真的假不了",
-    example: "I kid you not, there was a raccoon in my kitchen this morning.",
-    exampleZh: "我沒開玩笑，今天早上我廚房裡有一隻浣熊。",
-    difficulty: 2
-  },
-  {
-    phrase: "we need to talk",
-    meaning: "我們需要談談（通常是嚴肅的事）",
-    example: "Hey, we need to talk. Can we meet up later?",
-    exampleZh: "嘿，我們需要談談，我們等一下可以見面嗎？",
-    difficulty: 1
-  },
-  {
-    phrase: "no but seriously",
-    meaning: "不是啦但說真的",
-    example: "No but seriously, we should start planning the trip now.",
-    exampleZh: "不是啦，但說真的，我們現在就應該開始計劃旅行了。",
-    difficulty: 1
-  },
-  {
-    phrase: "well that's a wrap",
-    meaning: "好了，就這樣了；結束了",
-    example: "Well, that's a wrap for tonight. See you all tomorrow!",
-    exampleZh: "好了，今晚就到這了，大家明天見！",
-    difficulty: 2
-  },
-  {
-    phrase: "with that said",
-    meaning: "話雖這麼說；那就這樣吧",
-    example: "With that said, I'm heading out. See you guys tomorrow!",
-    exampleZh: "話雖這麼說，我要出發了，明天見！",
-    difficulty: 2
-  },
-  {
-    phrase: "to be fair",
-    meaning: "公平來說；平心而論",
-    example: "To be fair, she did warn us that the food would be spicy.",
-    exampleZh: "公平來說，她確實有警告我們食物會很辣。",
-    difficulty: 1
-  },
-  {
-    phrase: "what I'm trying to say is",
-    meaning: "我想表達的是",
-    example: "What I'm trying to say is, I think we should take a break from each other.",
-    exampleZh: "我想表達的是，我覺得我們應該彼此冷靜一下。",
-    difficulty: 1
-  },
-  {
-    phrase: "while we're on the subject",
-    meaning: "既然說到這個",
-    example: "While we're on the subject, have you paid your share of the rent?",
-    exampleZh: "既然說到這個，你有付你那份房租嗎？",
-    difficulty: 2
-  },
-  {
-    phrase: "let's call it a night",
-    meaning: "今晚就到這吧",
-    example: "I'm exhausted. Let's call it a night and head home.",
-    exampleZh: "我累壞了，今晚就到這吧，我們回家。",
-    difficulty: 1
+    "phrase": "what a hassle",
+    "meaning": "真是麻煩死了",
+    "example": "Returning this product has been such a hassle. Their system is awful.",
+    "exampleZh": "退這個商品真是麻煩死了，他們的系統超爛。",
+    "difficulty": 3
   }
 ];

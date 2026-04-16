@@ -1,14 +1,10 @@
 const { getDb, saveDb } = require('./connection');
 const words = require('../data/words');
-const phrases = require('../data/phrases');
-const phrases2 = require('../data/phrases2');
-const phrases3 = require('../data/phrases3');
-const phrases4 = require('../data/phrases4');
+const allPhrases = require('../data/phrases_all');
 const grammarQuestions = require('../data/grammar');
 const stories = require('../data/stories');
 const storyTranslations = require('../data/stories-translations');
-
-const allPhrases = [...phrases, ...phrases2, ...phrases3, ...phrases4];
+const gradedArticles = require('../data/graded-reading');
 
 async function seedData() {
   const db = await getDb();
@@ -38,6 +34,24 @@ async function seedData() {
     }
     stmt.free();
     console.log(`Seeded ${count} new words (total now: ${wordCount + count}).`);
+  }
+
+  // --- NEW: Remove words that no longer exist in data files (Cleanup Obsolete) ---
+  const allWordKeys = new Set(words.map(w => w.word.toLowerCase()));
+  const dbWords = db.exec('SELECT id, word FROM words');
+  if (dbWords[0]) {
+    let removedCount = 0;
+    for (const row of dbWords[0].values) {
+      if (!allWordKeys.has(row[1].toLowerCase())) {
+        db.run('DELETE FROM words WHERE id = ?', [row[0]]);
+        db.run('DELETE FROM learning_log WHERE item_type = ? AND item_id = ?', ['word', row[0]]);
+        db.run('DELETE FROM word_mastery WHERE item_type = ? AND item_id = ?', ['word', row[0]]);
+        db.run('DELETE FROM errors WHERE item_type = ? AND item_id = ?', ['word', row[0]]);
+        db.run('DELETE FROM daily_sentences WHERE item_type = ? AND item_id = ?', ['word', row[0]]);
+        removedCount++;
+      }
+    }
+    if (removedCount > 0) console.log(`Removed ${removedCount} obsolete words from DB.`);
   }
 
   // Update words with example_zh translations
@@ -120,8 +134,20 @@ async function seedData() {
   stmtPZh.free();
   if (pzCount > 0) console.log(`Updated ${pzCount} phrases with example_zh.`);
 
-  // Update phrases with context (usage notes)
-  const stmtPCtx = db.prepare('UPDATE phrases SET context = ? WHERE phrase = ? AND (context IS NULL OR context = \'\')');
+  // Always sync phrase meaning from data file (data file is source of truth)
+  const stmtPMeaning = db.prepare('UPDATE phrases SET meaning = ? WHERE phrase = ? AND meaning != ?');
+  let pmCount = 0;
+  for (const p of allPhrases) {
+    if (p.meaning) {
+      stmtPMeaning.run([p.meaning, p.phrase, p.meaning]);
+      pmCount++;
+    }
+  }
+  stmtPMeaning.free();
+  if (pmCount > 0) console.log(`Synced ${pmCount} phrase meanings from data file.`);
+
+  // Update phrases with context (always sync from data file so edits take effect)
+  const stmtPCtx = db.prepare('UPDATE phrases SET context = ? WHERE phrase = ?');
   let pcCount = 0;
   for (const p of allPhrases) {
     if (p.context) {
@@ -184,6 +210,29 @@ async function seedData() {
   }
   stmtUpdate.free();
   if (tCount > 0) console.log(`Updated ${tCount} stories with translations.`);
+
+  // Graded reading articles
+  const gradedCount = db.exec('SELECT COUNT(*) as cnt FROM graded_articles')[0]?.values[0][0] || 0;
+  if (gradedCount < gradedArticles.length) {
+    console.log(`Seeding graded articles (${gradedCount} existing, ${gradedArticles.length} total)...`);
+    const stmtGA = db.prepare(
+      'INSERT OR IGNORE INTO graded_articles (grade, article_order, title, topic, content, content_zh, vocabulary, phrases, grammar, questions) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)'
+    );
+    let gaCount = 0;
+    for (const a of gradedArticles) {
+      stmtGA.run([
+        a.grade, a.order, a.title, a.topic, a.content,
+        a.content_zh || null,
+        JSON.stringify(a.vocabulary || []),
+        JSON.stringify(a.phrases || []),
+        JSON.stringify(a.grammar || []),
+        JSON.stringify(a.questions || [])
+      ]);
+      gaCount++;
+    }
+    stmtGA.free();
+    console.log(`Seeded ${gaCount} graded articles.`);
+  }
 
   saveDb();
 }

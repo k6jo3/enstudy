@@ -25,11 +25,10 @@ function WordCard({ word, showMeaning = true, hasError = false, onNext }) {
         <>
           <p className="word-meaning">{word.meaning}</p>
           {word.context && (
-            <p className="word-context">
+            <p className="word-context" style={{ whiteSpace: 'pre-wrap' }}>
               <span className="context-label">語境：</span>{word.context}
             </p>
-          )}
-          <p className="word-example">
+          )}          <p className="word-example">
             <span className="example-label">例句：</span>
             {word.example}
             <button className="speak-btn small" onClick={() => speak(word.example)} title="播放例句">

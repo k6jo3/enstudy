@@ -103,18 +103,24 @@
 
 .word-context {
   color: #fbbf24;
-  font-size: 0.9rem;
-  margin-top: 0.5rem;
-  padding: 0.4rem 0.75rem;
-  background: rgba(251, 191, 36, 0.08);
-  border-left: 3px solid #fbbf24;
-  border-radius: 0 0.25rem 0.25rem 0;
+  font-size: 0.95rem;
+  margin: 1rem 0;
+  padding: 0.75rem 1rem;
+  background: rgba(251, 191, 36, 0.12);
+  border: 1px dashed rgba(251, 191, 36, 0.3);
+  border-left: 4px solid #fbbf24;
+  border-radius: 0.5rem;
+  line-height: 1.5;
 }
 
 .context-label {
-  color: #d97706;
-  font-weight: 600;
-  margin-right: 0.25rem;
+  display: block;
+  color: #fbbf24;
+  font-weight: 700;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  margin-bottom: 0.25rem;
+  letter-spacing: 0.05em;
 }
 
 .word-example {
