@@ -328,7 +328,7 @@ module.exports = [
   {
     "word": "fire",
     "phonetic": "/faɪər/",
-    "meaning": "火",
+    "meaning": "火（泛指火災、火源）",
     "pos": "n",
     "difficulty": 1,
     "example": "The fire is hot.",
@@ -2215,7 +2215,7 @@ module.exports = [
   {
     "word": "flame",
     "phonetic": "/fleɪm/",
-    "meaning": "火焰",
+    "meaning": "火焰（可見的火舌）",
     "pos": "n",
     "difficulty": 1,
     "example": "The flame of the candle flickered in the wind.",

@@ -191,6 +191,7 @@ async function initSchema() {
   try { db.run('ALTER TABLE word_mastery ADD COLUMN paused INTEGER DEFAULT 0'); } catch (e) { /* already exists */ }
   try { db.run('ALTER TABLE word_mastery ADD COLUMN hint_count INTEGER DEFAULT 0'); } catch (e) { /* already exists */ }
   try { db.run('ALTER TABLE word_mastery ADD COLUMN wrong_streak INTEGER DEFAULT 0'); } catch (e) { /* already exists */ }
+  try { db.run('ALTER TABLE word_mastery ADD COLUMN just_unpaused INTEGER DEFAULT 0'); } catch (e) { /* already exists */ }
 
   // Backfill score from mastery_level for existing data (0→0, 1→2, 2→4, 3→6, 4→8, 5→10)
   db.run('UPDATE word_mastery SET score = mastery_level * 2 WHERE score = 0 AND mastery_level > 0');
@@ -207,9 +208,9 @@ async function initSchema() {
     )
   `);
 
-  // One-time fix (2026-04-16): unpause any paused item with error records, reset score to 5.5
+  // One-time fix (2026-04-16): unpause any paused item with error records, reset score to 6.0
   db.run(`
-    UPDATE word_mastery SET paused = 0, score = 5.5
+    UPDATE word_mastery SET paused = 0, score = 6.0, just_unpaused = 1
     WHERE paused = 1 AND EXISTS (
       SELECT 1 FROM errors e
       WHERE e.item_type = word_mastery.item_type AND e.item_id = word_mastery.item_id

@@ -73,7 +73,8 @@ async function updateMastery(itemType, itemId, isCorrect, date, questionMode) {
     `UPDATE word_mastery
      SET mastery_level = ?, review_count = review_count + 1, correct_streak = ?,
          wrong_streak = ?, next_review_date = ?, last_review_date = ?,
-         score = ?, paused = ?, hint_count = COALESCE(hint_count, 0) + ?
+         score = ?, paused = ?, hint_count = COALESCE(hint_count, 0) + ?,
+         just_unpaused = 0
      WHERE item_type = ? AND item_id = ?`,
     [newLevel, newStreak, newWrongStreak, nextReview, date, newScore, newPaused, hintInc, itemType, itemId]
   );
@@ -87,10 +88,10 @@ async function updateMastery(itemType, itemId, isCorrect, date, questionMode) {
 }
 
 // Called when daily learning is completed.
-// All paused items lose 0.5 points. If score drops below 6, unpause.
+// All paused items lose 0.7 points. If score drops below 6, unpause and mark just_unpaused.
 async function decayPausedItems() {
-  await run(`UPDATE word_mastery SET score = score - 0.5 WHERE paused = 1`);
-  await run(`UPDATE word_mastery SET paused = 0 WHERE paused = 1 AND score < 6`);
+  await run(`UPDATE word_mastery SET score = score - 0.7 WHERE paused = 1`);
+  await run(`UPDATE word_mastery SET paused = 0, just_unpaused = 1 WHERE paused = 1 AND score < 6`);
   saveDb();
 }
 

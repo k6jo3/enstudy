@@ -215,6 +215,7 @@ async function selectItemsByTier(quizCount, today) {
       CASE WHEN wm.item_type = 'word' THEN w.context ELSE p.context END as context,
       wm.score,
       COALESCE(wm.hint_count, 0) as hint_count,
+      COALESCE(wm.just_unpaused, 0) as just_unpaused,
       COALESCE(e.total_errors, 0) as error_count
     FROM word_mastery wm
     LEFT JOIN words w ON wm.item_type = 'word' AND wm.item_id = w.id
@@ -387,6 +388,8 @@ router.get('/items', async (req, res) => {
       const score = item.score != null && item.score >= 0 ? item.score : 0;
       if (forListen) {
         item.quizMode = 'typing';
+      } else if (item.just_unpaused) {
+        item.quizMode = 'choice';
       } else {
         item.quizMode = getQuizMode(score, item.hint_count);
       }
