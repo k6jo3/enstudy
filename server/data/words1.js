@@ -2449,7 +2449,7 @@ module.exports = [
     "difficulty": 1,
     "example": "The car is fast.",
     "exampleZh": "那輛車很快。",
-    "context": "強調移動速度快，日常最通用；比較 quick（強調反應快、時間短）、rapid（較正式，常用於變化/成長速度）"
+    "context": "形容詞，強調移動速度快，日常最通用；比較 quick（強調反應快、時間短）、rapid（較正式，常用於變化/成長速度）。注意：不能用 fast 來叫別人加快動作，要用動詞片語 hurry up 或 come on"
   },
   {
     "word": "slow",

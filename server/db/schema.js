@@ -175,13 +175,34 @@ async function initSchema() {
   db.run(`
     CREATE TABLE IF NOT EXISTS game_scores (
       id INTEGER PRIMARY KEY AUTOINCREMENT,
-      game_type TEXT NOT NULL CHECK(game_type IN ('match','spelling','timed','wordchain')),
+      game_type TEXT NOT NULL,
       score INTEGER DEFAULT 0,
       played_date TEXT NOT NULL,
       duration_seconds INTEGER DEFAULT 0,
       details_json TEXT
     )
   `);
+
+  // Migration: drop old CHECK(game_type IN (...)) constraint so new game types work
+  try {
+    const tbl = db.exec("SELECT sql FROM sqlite_master WHERE type='table' AND name='game_scores'");
+    const tblSql = tbl[0]?.values?.[0]?.[0] || '';
+    if (tblSql.includes('CHECK(game_type IN')) {
+      db.run(`
+        CREATE TABLE game_scores_new (
+          id INTEGER PRIMARY KEY AUTOINCREMENT,
+          game_type TEXT NOT NULL,
+          score INTEGER DEFAULT 0,
+          played_date TEXT NOT NULL,
+          duration_seconds INTEGER DEFAULT 0,
+          details_json TEXT
+        )
+      `);
+      db.run('INSERT INTO game_scores_new (id, game_type, score, played_date, duration_seconds, details_json) SELECT id, game_type, score, played_date, duration_seconds, details_json FROM game_scores');
+      db.run('DROP TABLE game_scores');
+      db.run('ALTER TABLE game_scores_new RENAME TO game_scores');
+    }
+  } catch (e) { console.warn('game_scores migration skipped:', e.message); }
 
   // Migration: add round_number to learning_log
   try { db.run('ALTER TABLE learning_log ADD COLUMN round_number INTEGER DEFAULT 1'); } catch (e) { /* already exists */ }

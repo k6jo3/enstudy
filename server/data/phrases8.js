@@ -622,5 +622,61 @@ module.exports = [
     "example": "I don't trust her. She's totally two-faced.",
     "exampleZh": "我不信任她，她完全是個兩面人。",
     "difficulty": 3
+  },
+  {
+    "phrase": "what for",
+    "meaning": "為了什麼？為什麼？",
+    "example": "You're taking notes on the menu — what for?",
+    "exampleZh": "你在菜單上做筆記，做什麼用的？",
+    "difficulty": 2,
+    "context": "口語問目的或原因，通常放句末（What did you do that for?）。焦點在「目的」，比 why 更偏向「為了什麼用」。比較 how come（只問原因，不問目的）、why（最中性，目的／原因皆可）"
+  },
+  {
+    "phrase": "how so",
+    "meaning": "怎麼說？何以見得？",
+    "example": "— I don't think that plan will work. — How so?",
+    "exampleZh": "—我覺得那個計畫行不通。—怎麼說？",
+    "difficulty": 3,
+    "context": "用來追問對方剛才的說法，請對方解釋理由，語氣中性、像「你根據什麼這樣說」。不是問事件原因，而是問論點來源。比較 how come（問事件原因）、what makes you say that（意思幾乎相同，但更長、更客氣）"
+  },
+  {
+    "phrase": "what gives",
+    "meaning": "怎麼回事？搞什麼？",
+    "example": "You've been ignoring my texts all day — what gives?",
+    "exampleZh": "你一整天都不回我訊息，到底是怎麼回事？",
+    "difficulty": 3,
+    "context": "非常口語，帶著疑惑、不滿或輕微生氣問「到底怎麼了」，常用在感覺對方行為異常時。比較 how come（純問原因、中性）、what on earth（情緒更強烈、範圍更廣）、what's up（問近況或打招呼，不同用途）"
+  },
+  {
+    "phrase": "how is it that",
+    "meaning": "怎麼會…？為何…？",
+    "example": "How is it that you always finish your homework so fast?",
+    "exampleZh": "你怎麼總是這麼快就把作業寫完？",
+    "difficulty": 4,
+    "context": "較書面或偏正式的「怎麼會…」，後接完整子句（直述語序）。表達驚訝或好奇某情況成立的原因。比較 how come（同義但極口語）、why（最簡潔中性）"
+  },
+  {
+    "phrase": "why on earth",
+    "meaning": "到底為什麼（加強語氣）",
+    "example": "Why on earth did you agree to help him move on a Sunday?",
+    "exampleZh": "你到底為什麼答應星期天幫他搬家？",
+    "difficulty": 3,
+    "context": "why 的加強版，加 on earth 表示強烈不解或不贊同，類似中文「到底為什麼」。比較 what on earth（問事件本身）、why the heck（更口語，稍微粗）、how come（語氣最輕）"
+  },
+  {
+    "phrase": "what makes you say that",
+    "meaning": "你為什麼這樣說？什麼讓你這麼覺得？",
+    "example": "— I think Mark's upset with me. — What makes you say that?",
+    "exampleZh": "—我覺得 Mark 在生我的氣。—你為什麼這樣覺得？",
+    "difficulty": 3,
+    "context": "禮貌地追問對方剛才那句話的依據，希望對方多說一點；語氣比 how so 更客氣完整。比較 how so（簡短、中性）、what gives（帶不滿）、why do you think so（幾乎同義，更直接）"
+  },
+  {
+    "phrase": "how did that happen",
+    "meaning": "怎麼會變這樣？",
+    "example": "Your bike is bent in half — how did that happen?",
+    "exampleZh": "你的腳踏車被折成兩半了，怎麼會變這樣？",
+    "difficulty": 2,
+    "context": "問某個結果是怎麼造成的，焦點在事件經過而不是抽象原因。比較 how come（只問「為什麼」，不在意過程）、what happened（只問「發生什麼事」，不強調驚訝）"
   }
 ];

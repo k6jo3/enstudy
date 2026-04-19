@@ -15,7 +15,7 @@ function WordCard({ word, showMeaning = true, hasError = false, onNext }) {
       )}
       <div className="word-main">
         <h2 className="word-text">{word.word}</h2>
-        <button className="speak-btn" onClick={() => speak(word.word)} title="播放發音">
+        <button className="speak-btn" onClick={() => speak(word.word)} title="播放發音（快捷鍵：` 或 Alt+S）">
           &#128264;
         </button>
       </div>

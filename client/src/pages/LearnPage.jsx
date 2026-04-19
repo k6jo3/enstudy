@@ -13,6 +13,7 @@ function LearnPage() {
   const [sessionCompleted, setSessionCompleted] = useState(false);
   const [loadingNext, setLoadingNext] = useState(false);
   const [scoreGateMsg, setScoreGateMsg] = useState(null);
+  const { speak } = useTTS();
 
   useEffect(() => {
     if (data?.session?.completed) {
@@ -33,6 +34,32 @@ function LearnPage() {
     else if (newPhrases.length > 0) setPhase('phrases');
     else setPhase('sentences');
   }, [data]);
+
+  useEffect(() => {
+    if (!data) return;
+    const activeText = (() => {
+      if (phase === 'review' && data.reviewItems?.[currentIndex]) {
+        const item = data.reviewItems[currentIndex];
+        return item.word || item.phrase;
+      }
+      if (phase === 'words' && data.newWords?.[currentIndex]) {
+        return data.newWords[currentIndex].word;
+      }
+      if (phase === 'phrases' && data.newPhrases?.[currentIndex]) {
+        return data.newPhrases[currentIndex].phrase;
+      }
+      return null;
+    })();
+    if (!activeText) return;
+    const handler = (e) => {
+      if (e.key === '`' || (e.altKey && (e.key === 's' || e.key === 'S'))) {
+        e.preventDefault();
+        speak(activeText);
+      }
+    };
+    window.addEventListener('keydown', handler);
+    return () => window.removeEventListener('keydown', handler);
+  }, [data, phase, currentIndex, speak]);
 
   if (loading) return <div className="loading">載入今日學習內容中...</div>;
   if (error) return <div className="error-msg">載入失敗：{error}</div>;

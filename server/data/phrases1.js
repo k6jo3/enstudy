@@ -495,7 +495,7 @@ module.exports = [
     "example": "Hurry up or we'll miss the bus!",
     "exampleZh": "快點，不然我們就趕不上公車了！",
     "difficulty": 2,
-    "context": "專門用於催促對方「加快動作」。比較 come on（除了催促外，還可表達「得了吧」「拜託」「加油」等情緒）。"
+    "context": "動詞片語，專門用於催促對方「加快動作」。比較 come on（除了催促外，還可表達「得了吧」「拜託」「加油」等情緒）。注意：不要和形容詞 fast（快的，只用來形容狀態）混用，催促動作不能說 Fast!"
   },
   {
     "phrase": "calm down",
@@ -614,7 +614,8 @@ module.exports = [
     "meaning": "怎麼會？為什麼？",
     "example": "You didn't go to the party? How come?",
     "exampleZh": "你沒去派對？為什麼呢？",
-    "difficulty": 2
+    "difficulty": 2,
+    "context": "口語問「為什麼」，帶點驚訝或不解，後接直述語序（How come you didn't go?）不像 why 要倒裝。語氣比 why 更隨意。比較：why（最中性）、what for（為了什麼目的，通常放句末：What did you do that for?）、how so（追問對方剛講的話背後的理由：「怎麼說？」）、what gives（超口語，「怎麼回事？」帶疑惑或不滿）、why on earth（加強版，帶不可置信情緒）"
   },
   {
     "phrase": "Good luck",
@@ -967,10 +968,11 @@ module.exports = [
   },
   {
     "phrase": "what on earth",
-    "meaning": "到底怎麼回事",
+    "meaning": "到底怎麼回事；究竟為什麼",
     "example": "What on earth were you thinking when you dyed your hair green?",
     "exampleZh": "你把頭髮染成綠色的時候到底在想什麼？",
-    "difficulty": 3
+    "difficulty": 3,
+    "context": "在疑問詞（what/why/how/where）後面加 on earth 來加強語氣，表示強烈不解、震驚或不滿，類似中文的「到底／究竟」。比較 what in the world（幾乎同義，語氣相當）、the heck/the hell（更口語、更粗，the hell 有粗魯感）。how come 則是純問原因、語氣比這組輕很多。"
   },
   {
     "phrase": "that's nuts",
@@ -1248,7 +1250,8 @@ module.exports = [
     "meaning": "我心情低落",
     "example": "I've been feeling down lately. Nothing seems to go right.",
     "exampleZh": "我最近一直心情低落，什麼事情都不順。",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "專指情緒層面的低落、沮喪，不用於身體不適。比較 I feel like crap（身體或整體糟，可因病/累/心情差）、feel under the weather（委婉說身體微恙）、I'm not in the mood（對某件事沒心情，不一定沮喪）"
   },
   {
     "phrase": "I'm freaking out",
@@ -1276,7 +1279,8 @@ module.exports = [
     "meaning": "我感覺糟透了",
     "example": "I only slept two hours. I feel like crap right now.",
     "exampleZh": "我只睡了兩小時，我現在感覺糟透了。",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "口語、稍粗的說法（crap 是 shit 的委婉版），指整體狀態糟——身體不適、很累、宿醉、心情爛都通用，場合比較隨意。比較 I'm feeling down（只講情緒低落）、feel under the weather（委婉說身體微恙，較禮貌）、I'm exhausted（單純講累，沒有「糟」的情緒）"
   },
   {
     "phrase": "I'm thrilled",

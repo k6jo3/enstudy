@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import MatchGame from '../components/MatchGame';
+import RDrill from '../components/RDrill';
 import SpellingGame from '../components/SpellingGame';
 import TimedChallenge from '../components/TimedChallenge';
 import WordChain from '../components/WordChain';
@@ -10,6 +11,7 @@ const GAMES = [
   { id: 'spelling', name: 'Spelling Bee', icon: '\u{1F4DD}', desc: 'See the meaning, spell the word', color: '#a78bfa' },
   { id: 'timed', name: 'Speed Quiz', icon: '\u{23F1}', desc: '60 seconds — how many can you answer?', color: '#f59e0b' },
   { id: 'wordchain', name: 'Word Chain', icon: '\u{1F517}', desc: 'Last letter starts the next word', color: '#34d399' },
+  { id: 'rdrill', name: 'R Position', icon: '\u{1F3AF}', desc: '聽發音判斷 r 在母音前還是後', color: '#38bdf8' },
 ];
 
 function GamesPage() {
@@ -19,6 +21,7 @@ function GamesPage() {
   if (activeGame === 'spelling') return <SpellingGame onExit={() => setActiveGame(null)} />;
   if (activeGame === 'timed') return <TimedChallenge onExit={() => setActiveGame(null)} />;
   if (activeGame === 'wordchain') return <WordChain onExit={() => setActiveGame(null)} />;
+  if (activeGame === 'rdrill') return <RDrill onExit={() => setActiveGame(null)} />;
 
   return (
     <div className="games-page">

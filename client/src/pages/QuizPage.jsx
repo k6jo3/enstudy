@@ -41,6 +41,12 @@ function QuizPage() {
 
   useEffect(() => {
     const handleKeyDown = (e) => {
+      // Speak shortcut: backtick or Alt+S
+      if ((e.key === '`' || (e.altKey && (e.key === 's' || e.key === 'S'))) && item?.display) {
+        e.preventDefault();
+        speak(item.display);
+        return;
+      }
       if (e.key === 'Enter' && result) {
         e.preventDefault();
         handleNext();
@@ -57,7 +63,7 @@ function QuizPage() {
     };
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [result, currentIndex, quizItems.length, quizMode, item]);
+  }, [result, currentIndex, quizItems.length, quizMode, item, speak]);
 
   const checkAnswer = (userAnswer, mode) => {
     const correct = normalizeForCompare(item.display);
@@ -227,7 +233,7 @@ function QuizPage() {
             <p>{result === 'correct' ? '正確！' : `錯誤！正確答案：${item.display}`}</p>
             {item.context && <p className="result-context"><span className="context-label">語境：</span>{item.context}</p>}
             {item.example && <p className="result-example">例句：{item.example}</p>}
-            <button className="speak-btn-inline" onClick={() => speak(item.display)}>&#128264; 聽發音</button>
+            <button className="speak-btn-inline" onClick={() => speak(item.display)} title="快捷鍵：` 或 Alt+S">&#128264; 聽發音</button>
             <button className="next-btn" onClick={handleNext}>
               {currentIndex < quizItems.length - 1 ? '下一題' : '查看結果'}
             </button>

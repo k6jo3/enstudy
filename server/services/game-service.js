@@ -3,6 +3,21 @@ const { saveDb } = require('../db/connection');
 const { getToday } = require('../utils/date');
 
 async function getGameItems(gameType, count = 20) {
+  if (gameType === 'rdrill') {
+    const learned = await queryAll(`
+      SELECT w.*, 'word' as item_type FROM words w
+      INNER JOIN learning_log ll ON ll.item_id = w.id AND ll.item_type = 'word' AND ll.is_review = 0
+      WHERE w.word LIKE '%r%'
+      ORDER BY RANDOM() LIMIT ?
+    `, [count * 2]);
+    if (learned.length >= count) return learned;
+    const learnedIds = new Set(learned.map(w => w.id));
+    const fallback = await queryAll(`
+      SELECT *, 'word' as item_type FROM words
+      WHERE word LIKE '%r%' ORDER BY RANDOM() LIMIT ?
+    `, [count * 3]);
+    return [...learned, ...fallback.filter(w => !learnedIds.has(w.id))].slice(0, count * 2);
+  }
   const words = await queryAll(`
     SELECT w.*, 'word' as item_type FROM words w
     INNER JOIN learning_log ll ON ll.item_id = w.id AND ll.item_type = 'word' AND ll.is_review = 0

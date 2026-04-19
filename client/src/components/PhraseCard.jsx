@@ -15,7 +15,7 @@ function PhraseCard({ phrase, showMeaning = true, hasError = false, onNext }) {
       )}
       <div className="phrase-main">
         <h2 className="phrase-text">{phrase.phrase}</h2>
-        <button className="speak-btn" onClick={() => speak(phrase.phrase)} title="播放發音">
+        <button className="speak-btn" onClick={() => speak(phrase.phrase)} title="播放發音（快捷鍵：` 或 Alt+S）">
           &#128264;
         </button>
       </div>

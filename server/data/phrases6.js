@@ -1067,7 +1067,8 @@ module.exports = [
     "meaning": "什麼風把你吹來了？；你來這裡做什麼？",
     "example": "Hey, what a surprise! What brings you here today?",
     "exampleZh": "嘿，真是驚喜！你今天怎麼來這裡了？",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "友善問對方「是什麼原因讓你來這」，焦點在來訪的動機，不像 why are you here 那樣容易顯得質問或不歡迎。只用在地點／場合，不能拿來問一般原因。比較 how come（可用在任何情境問原因）、what makes you say that（追問說話的理由，不是行動）"
   },
   {
     "phrase": "grab a bite",
