@@ -23,8 +23,8 @@ module.exports = [
   },
   {
     "phrase": "What's up?",
-    "meaning": "怎麼了？/ 最近怎樣？（非正式問候）",
-    "context": "很隨意的招呼語，朋友之間使用；回答常只是 Not much 或 Nothing much",
+    "meaning": "最近怎樣？在忙什麼？（非正式問候）",
+    "context": "很隨意的招呼語，朋友之間使用，不一定是在問你出了什麼事；回答常只是 Not much 或 Nothing much",
     "example": "Hey, what's up? Are you free this weekend?",
     "exampleZh": "嘿，最近怎樣？這個週末有空嗎？",
     "difficulty": 3
@@ -195,14 +195,16 @@ module.exports = [
     "meaning": "穿上；戴上",
     "example": "It's cold outside. Put on your jacket.",
     "exampleZh": "外面很冷。把外套穿上。",
-    "difficulty": 1
+    "difficulty": 1,
+    "context": "最常指把衣服、鞋子、帽子、眼鏡等「穿戴上去」；也可延伸為 put on makeup / put on a show。比較 take off（把穿戴在身上的東西脫下）"
   },
   {
     "phrase": "take off",
     "meaning": "脫下；起飛",
     "example": "Please take off your shoes before entering the house.",
     "exampleZh": "進屋前請脫下鞋子。",
-    "difficulty": 2
+    "difficulty": 2,
+    "context": "可指把衣服、鞋子等從身上「脫下來」；也常指飛機「起飛」。意思要靠受詞判斷：take off your coat 是脫外套，the plane took off 是起飛。比較 put on（穿上、戴上）"
   },
   {
     "phrase": "look for",
@@ -217,7 +219,8 @@ module.exports = [
     "meaning": "撿起；接某人",
     "example": "Can you pick up the kids from school today?",
     "exampleZh": "你今天能去學校接孩子嗎？",
-    "difficulty": 2
+    "difficulty": 2,
+    "context": "可指把東西從地上或桌上「撿起、拿起來」；也常指開車去「接人」或順路拿某物。看受詞判斷：pick up the phone 是拿起電話，pick up the kids 是接小孩"
   },
   {
     "phrase": "give up",
@@ -398,14 +401,16 @@ module.exports = [
     "meaning": "回來",
     "example": "When will you come back from your trip?",
     "exampleZh": "你什麼時候從旅途回來？",
-    "difficulty": 2
+    "difficulty": 2,
+    "context": "最常指人或事物回到原來的地方；也可延伸為記憶、流行、感覺「再度出現」。比較 go back（回到先前地方/狀態，較中性）"
   },
   {
     "phrase": "go out",
     "meaning": "出去",
     "example": "Let's go out for dinner tonight.",
     "exampleZh": "今晚我們出去吃晚餐吧。",
-    "difficulty": 1
+    "difficulty": 1,
+    "context": "最常指外出、離開室內去某處；也可延伸為 go out for dinner / go out with friends，甚至指燈熄掉。看語境判斷具體意思"
   },
   {
     "phrase": "find out",
@@ -475,7 +480,7 @@ module.exports = [
   },
   {
     "phrase": "What's wrong?",
-    "meaning": "怎麼了？出什麼事了？",
+    "meaning": "怎麼了？哪裡不對勁？（較直接）",
     "example": "You look upset. What's wrong?",
     "exampleZh": "你看起來很沮喪。怎麼了？",
     "difficulty": 4
@@ -558,7 +563,8 @@ module.exports = [
     "meaning": "怎麼會？為什麼？",
     "example": "You didn't go to the party? How come?",
     "exampleZh": "你沒去派對？為什麼呢？",
-    "difficulty": 2
+    "difficulty": 2,
+    "context": "很口語、很自然地問「怎麼會這樣」，常用來追問某個情況發生的原因；比較 why（最中性直接）、what gives（帶不滿或質問感）"
   },
   {
     "phrase": "Good luck",
@@ -635,7 +641,8 @@ module.exports = [
     "meaning": "偶爾；有時候",
     "example": "I eat fast food once in a while, but not often.",
     "exampleZh": "我偶爾會吃速食，但不常吃。",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "與 every now and then 幾乎同義，可互換使用；語氣較中性自然。比較 every now and then（更口語，稍帶隨興或懷舊感）"
   },
   {
     "phrase": "each other",
@@ -692,7 +699,8 @@ module.exports = [
     "meaning": "有道理；說得通",
     "example": "Oh, that makes sense. Now I understand why he left early.",
     "exampleZh": "哦，那就說得通了。現在我明白他為什麼早退了。",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "完整回應句，專門用來回應對方剛說的解釋，表示「這樣我就懂了」；比較 make sense（動詞片語，主詞可變，如 Your explanation makes sense）"
   },
   {
     "phrase": "I'm running late",
@@ -735,14 +743,16 @@ module.exports = [
     "meaning": "填寫",
     "example": "Please fill in this form with your personal details.",
     "exampleZh": "請在這張表格上填寫你的個人資料。",
-    "difficulty": 2
+    "difficulty": 2,
+    "context": "最常指在表格、空格中「填入資料」；也可指臨時代班、補位。看受詞判斷：fill in the form 是填表，fill in for me 是代替我一下"
   },
   {
     "phrase": "look up",
     "meaning": "查閱；向上看",
     "example": "If you don't know the word, look it up in the dictionary.",
     "exampleZh": "如果你不知道這個單字，就在字典裡查一下。",
-    "difficulty": 2
+    "difficulty": 2,
+    "context": "最常指在字典、網站、資料裡「查閱」資訊；也可字面指「抬頭往上看」。看語境判斷：look it up 是查資料，look up at the sky 是往上看天空"
   },
   {
     "phrase": "figure out",
@@ -764,7 +774,8 @@ module.exports = [
     "meaning": "提起（話題）；養育",
     "example": "I didn't want to bring up the subject at dinner.",
     "exampleZh": "我不想在晚餐時提起這個話題。",
-    "difficulty": 2
+    "difficulty": 2,
+    "context": "可指在談話中「提起某個話題」；也可指把孩子「養大、養育成人」。看受詞判斷：bring up the issue 是提起議題，bring up three children 是養三個小孩"
   },
   {
     "phrase": "come up with",
@@ -806,7 +817,8 @@ module.exports = [
     "meaning": "壞掉；崩潰",
     "example": "My car broke down on the highway this morning.",
     "exampleZh": "我的車今天早上在高速公路上拋錨了。",
-    "difficulty": 3
+    "difficulty": 3,
+    "context": "可指機器、車子等「故障壞掉」；也可指人情緒上「崩潰、撐不住」。看主詞判斷：the car broke down 是車壞了，she broke down in tears 是情緒崩潰哭出來"
   },
   {
     "phrase": "break the ice",
@@ -876,7 +888,8 @@ module.exports = [
     "meaning": "有道理；說得通",
     "example": "Your explanation makes sense. I understand now.",
     "exampleZh": "你的解釋很有道理。我現在明白了。",
-    "difficulty": 3
+    "difficulty": 3,
+    "context": "動詞片語，主詞可以是 plan、idea、explanation 等，泛指邏輯上說得通；比較 That makes sense（固定回應句，常用來回應別人的說明）"
   },
   {
     "phrase": "as a matter of fact",
@@ -965,21 +978,24 @@ module.exports = [
     "meaning": "指出",
     "example": "She pointed out several errors in my report.",
     "exampleZh": "她指出了我報告中的幾個錯誤。",
-    "difficulty": 2
+    "difficulty": 2,
+    "context": "表示把某個重點、錯誤或事實「明確指出來」，常用於說明、提醒、糾正；比較 show（展示給人看）、explain（進一步解釋原因或內容）"
   },
   {
     "phrase": "turn out",
     "meaning": "結果是；原來是",
     "example": "The party turned out to be a lot of fun.",
     "exampleZh": "那場派對結果非常有趣。",
-    "difficulty": 2
+    "difficulty": 2,
+    "context": "常用於事情最後「結果變成...」或「原來是...」，帶經過發展後得知真相的感覺；比較 end up（著重最後落到某狀態）、find out（得知資訊）"
   },
   {
     "phrase": "carry out",
     "meaning": "執行；實施",
     "example": "The team carried out the plan successfully.",
     "exampleZh": "團隊成功地執行了這個計畫。",
-    "difficulty": 2
+    "difficulty": 2,
+    "context": "較正式，常指把計畫、任務、命令、研究「確實執行完成」；比較 do（最一般的做）、implement（較偏正式政策或制度的推行）"
   },
   {
     "phrase": "look into",
@@ -1000,14 +1016,16 @@ module.exports = [
     "meaning": "出現；到場",
     "example": "He didn't show up for the meeting this morning.",
     "exampleZh": "他今天早上沒有出席會議。",
-    "difficulty": 2
+    "difficulty": 2,
+    "context": "很口語，常指人「有出現、有到場」；也可指問題、跡象突然顯現。比較 arrive（單純抵達）、appear（較書面，強調出現）"
   },
   {
     "phrase": "go through",
     "meaning": "經歷；仔細檢查",
     "example": "She's going through a difficult time right now.",
     "exampleZh": "她現在正在經歷一段艱難的時期。",
-    "difficulty": 3
+    "difficulty": 3,
+    "context": "可指親身「經歷」一段過程、困難或變化；也可指把文件、清單、細節「逐一檢查」。看受詞判斷：go through a hard time 是經歷難關，go through the report 是檢查報告"
   },
   {
     "phrase": "pass away",
@@ -1259,7 +1277,8 @@ module.exports = [
     "meaning": "長話短說",
     "example": "To make a long story short, we got lost and arrived three hours late.",
     "exampleZh": "長話短說，我們迷路了，晚了三個小時才到。",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "最完整的句首連接語，較正式、較像書面或敘事鋪陳；比較 long story short（最精簡口語）、make a long story short（中間版本，常接 let me）"
   },
   {
     "phrase": "the thing is",
@@ -1420,7 +1439,8 @@ module.exports = [
     "meaning": "有道理；說得也是",
     "example": "You don't want to go out in the rain? Fair enough.",
     "exampleZh": "你不想在雨中出門？說得也是。",
-    "difficulty": 3
+    "difficulty": 3,
+    "context": "回應對方說法時，表示「有道理，而且我接受你的理由」，帶同意或讓步感；比較 make sense / That makes sense（偏重邏輯說得通，不一定表示接受）"
   },
   {
     "phrase": "it goes without saying",
@@ -1679,7 +1699,8 @@ module.exports = [
     "meaning": "洩露秘密",
     "example": "It was supposed to be a surprise, but Tom let the cat out of the bag.",
     "exampleZh": "本來應該是個驚喜的，但湯姆把秘密洩露了。",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "偏像「不小心說溜嘴」，帶意外洩密的感覺；比較 spill the beans（更口語，常帶催對方直接把內情說出來的語氣）"
   },
   {
     "phrase": "pull someone's leg",
@@ -1707,7 +1728,8 @@ module.exports = [
     "meaning": "洩露秘密",
     "example": "Come on, spill the beans! What's the big news?",
     "exampleZh": "快說嘛，把秘密說出來！什麼大消息？",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "很口語，常用來催別人「快點招了、快把內情說出來」；比較 let the cat out of the bag（偏描述某人不小心洩密，而不是主動逼問）"
   },
   {
     "phrase": "sit on the fence",

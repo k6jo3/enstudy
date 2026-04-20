@@ -850,7 +850,8 @@ module.exports = [
     "pos": "v",
     "difficulty": 3,
     "example": "The team will implement the new strategy next week.",
-    "exampleZh": "團隊下週將實施新策略。"
+    "exampleZh": "團隊下週將實施新策略。",
+    "context": "動詞，指把計畫、制度、策略真正付諸實行；比較 implementation（名詞，指實施這件事或過程）"
   },
   {
     "word": "interview",
@@ -1801,7 +1802,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 2,
     "example": "We attended a seminar on leadership skills.",
-    "exampleZh": "我們參加了一場關於領導力的研討會。"
+    "exampleZh": "我們參加了一場關於領導力的研討會。",
+    "context": "較常指課程式、教學式或小型專題討論活動，常見於學校、培訓、商務分享；比較 symposium（較正式大型，偏學術或專業會議）"
   },
   {
     "word": "diploma",

@@ -1770,7 +1770,8 @@ module.exports = [
     "pos": "v",
     "difficulty": 2,
     "example": "We will notify you once the order has shipped.",
-    "exampleZh": "訂單出貨後我們會通知您。"
+    "exampleZh": "訂單出貨後我們會通知您。",
+    "context": "偏正式，常指依規定或程序正式通知某人，常見於系統、公司、官方訊息；比較 inform（也正式，但更廣泛，偏單純提供資訊）"
   },
   {
     "word": "regarding",
@@ -2655,7 +2656,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 1,
     "example": "She took out a loan to pay for her education.",
-    "exampleZh": "她辦了貸款來支付學費。"
+    "exampleZh": "她辦了貸款來支付學費。",
+    "context": "最常當名詞，指向銀行或機構取得的正式「貸款」；比較 borrow / lend（偏日常動作，指向他人借入或借出東西，不一定是金融情境）"
   },
   {
     "word": "balance",

@@ -2310,7 +2310,8 @@ module.exports = [
     "pos": "v",
     "difficulty": 3,
     "example": "Workers abroad remit money to their families back home.",
-    "exampleZh": "在海外工作的人匯錢回家給家人。"
+    "exampleZh": "在海外工作的人匯錢回家給家人。",
+    "context": "動詞，指把款項匯出、匯給某人；比較 remittance（名詞，指匯出的款項或匯款這件事）"
   },
   {
     "word": "refactor",

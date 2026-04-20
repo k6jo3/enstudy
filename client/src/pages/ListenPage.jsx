@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { postApi, useApi } from '../hooks/useApi';
 import { useTTS } from '../hooks/useTTS';
+import { normalizeForCompare } from '../utils/answerCompare';
 import './ListenPage.css';
 
 function ListenPage() {
@@ -44,8 +45,8 @@ function ListenPage() {
     if (!answer.trim() || result) return;
 
     const item = items[currentIndex];
-    const correct = item.text.toLowerCase().trim();
-    const input = answer.toLowerCase().trim();
+    const correct = normalizeForCompare(item.text);
+    const input = normalizeForCompare(answer);
     const isCorrect = input === correct;
 
     setResult(isCorrect ? 'correct' : 'wrong');

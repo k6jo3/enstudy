@@ -641,11 +641,11 @@ module.exports = [
   },
   {
     "phrase": "what gives",
-    "meaning": "怎麼回事？搞什麼？",
+    "meaning": "怎麼回事啊？搞什麼？（帶不滿）",
     "example": "You've been ignoring my texts all day — what gives?",
     "exampleZh": "你一整天都不回我訊息，到底是怎麼回事？",
     "difficulty": 3,
-    "context": "非常口語，帶著疑惑、不滿或輕微生氣問「到底怎麼了」，常用在感覺對方行為異常時。比較 how come（純問原因、中性）、what on earth（情緒更強烈、範圍更廣）、what's up（問近況或打招呼，不同用途）"
+    "context": "非常口語，帶著疑惑、不滿或輕微生氣問「你現在是在搞什麼」；常用在覺得對方行為反常、惹人火大時。比較 how come（純問原因、中性）、what on earth（情緒更強烈、範圍更廣）、what's up（問近況或打招呼，不同用途）"
   },
   {
     "phrase": "how is it that",

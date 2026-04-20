@@ -727,7 +727,8 @@ module.exports = [
     "pos": "adj",
     "difficulty": 3,
     "example": "She is reticent about sharing personal details with strangers.",
-    "exampleZh": "她不願意與陌生人分享個人細節。"
+    "exampleZh": "她不願意與陌生人分享個人細節。",
+    "context": "常帶「有所保留、不太願意開口或透露」的意味，不只是話少，也可能是刻意不多說；比較 taciturn（偏天性沉默寡言）"
   },
   {
     "word": "affable",
@@ -2652,7 +2653,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 4,
     "example": "The symposium brought together experts from around the world.",
-    "exampleZh": "這場研討會匯集了來自世界各地的專家。"
+    "exampleZh": "這場研討會匯集了來自世界各地的專家。",
+    "context": "較正式、較大型，偏學術或專業領域的會議，通常有多位專家發表；比較 seminar（較小型，偏教學、訓練或專題分享）"
   },
   {
     "word": "trajectory",

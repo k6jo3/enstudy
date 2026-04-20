@@ -1427,7 +1427,8 @@ module.exports = [
     "pos": "v",
     "difficulty": 4,
     "example": "The company was forced to liquidate its assets to pay off debts.",
-    "exampleZh": "該公司被迫清算資產以償還債務。"
+    "exampleZh": "該公司被迫清算資產以償還債務。",
+    "context": "動詞，指把資產變賣、清算掉，常見於公司、債務、破產語境；比較 liquidation（名詞，指清算程序或狀態）"
   },
   {
     "word": "inflationary",

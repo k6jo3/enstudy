@@ -72,11 +72,11 @@ module.exports = [
   },
   {
     "phrase": "What's up?",
-    "meaning": "怎麼了？/ 最近怎樣？（非正式問候）",
+    "meaning": "最近怎樣？在忙什麼？（非正式問候）",
     "example": "Hey, what's up? Are you free this weekend?",
     "exampleZh": "嘿，最近怎樣？這個週末有空嗎？",
     "difficulty": 3,
-    "context": "很隨意的招呼語，朋友之間使用，不是真的在問狀況（回答常只是 Not much 或 Nothing much）；比較 What's the matter?（真的在關切對方狀況）、What's wrong?（察覺對方不對勁時的直接問句）"
+    "context": "很隨意的招呼語，朋友之間使用，不一定是真的在問你出了什麼事（回答常只是 Not much 或 Nothing much）；比較 What's the matter?（真的在關切對方狀況）、What's wrong?（察覺對方不對勁時的直接問句）"
   },
   {
     "phrase": "Take care",
@@ -529,11 +529,11 @@ module.exports = [
   },
   {
     "phrase": "What's wrong?",
-    "meaning": "怎麼了？出什麼事了？（較直接）",
+    "meaning": "怎麼了？哪裡不對勁？（較直接）",
     "example": "You look upset. What's wrong?",
     "exampleZh": "你看起來很沮喪。怎麼了？",
     "difficulty": 4,
-    "context": "直接問「哪裡不對勁」，語氣較直白，暗示察覺到對方有問題；比較 What's the matter?（語氣較關切、正式一點，常見於長輩對晚輩或朋友間帶擔心的詢問）"
+    "context": "直接指出「你好像哪裡不對勁」，常用在已經察覺對方情緒、表情或狀態異常時；語氣比 What's the matter? 更直白，也比較像在問具體問題出在哪。"
   },
   {
     "phrase": "Help yourself",
@@ -809,10 +809,11 @@ module.exports = [
   },
   {
     "phrase": "what's the deal with",
-    "meaning": "...是怎麼回事？到底怎樣？",
+    "meaning": "...到底是什麼情況？為什麼會這樣？（帶困惑或吐槽）",
     "example": "What's the deal with Kevin? He's been acting super weird lately.",
-    "exampleZh": "凱文到底怎麼了？他最近表現得超怪的。",
-    "difficulty": 4
+    "exampleZh": "Kevin 到底是什麼情況？他最近表現得超怪的。",
+    "difficulty": 4,
+    "context": "用來抱怨、吐槽或困惑某個人／某件事為什麼變得很怪，焦點常放在整體情況而不是單純關心對方；語氣比 What's wrong? 更像在評論一個現象。"
   },
   {
     "phrase": "don't tell a soul",

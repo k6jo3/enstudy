@@ -1344,7 +1344,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 2,
     "example": "There is a baggage weight limit of twenty-three kilograms.",
-    "exampleZh": "行李重量限制為二十三公斤。"
+    "exampleZh": "行李重量限制為二十三公斤。",
+    "context": "較常見於航空、機場、托運等正式旅行情境；也可引申 emotional baggage（心理包袱）；比較 luggage（較中性通用，平常說旅行行李更常見）"
   },
   {
     "word": "escalator",
@@ -1992,7 +1993,8 @@ module.exports = [
     "pos": "v",
     "difficulty": 2,
     "example": "Can I borrow your pen for a minute?",
-    "exampleZh": "我可以借你的筆用一下嗎？"
+    "exampleZh": "我可以借你的筆用一下嗎？",
+    "context": "重點在「向別人拿來用」的方向，主詞是拿東西的人。句型常是 borrow A from B。比較 lend（把東西借給別人，方向相反）"
   },
   {
     "word": "celebrate",
@@ -2129,7 +2131,8 @@ module.exports = [
     "pos": "v",
     "difficulty": 1,
     "example": "Could you lend me your umbrella?",
-    "exampleZh": "你可以借我你的雨傘嗎？"
+    "exampleZh": "你可以借我你的雨傘嗎？",
+    "context": "重點在「把東西借給別人」的方向，主詞是提供東西的人。句型常是 lend A to B 或 lend B A。比較 borrow（向別人借來用，方向相反）"
   },
   {
     "word": "ceiling",
@@ -2381,7 +2384,8 @@ module.exports = [
     "pos": "adj",
     "difficulty": 1,
     "example": "The weather was awful all weekend.",
-    "exampleZh": "整個週末天氣都很糟糕。"
+    "exampleZh": "整個週末天氣都很糟糕。",
+    "context": "口語很常用，主觀情緒較強，常表達厭惡、難受或抱怨；比較 terrible（更通用，可用於較多客觀或中性的負面描述）"
   },
   {
     "word": "blind",

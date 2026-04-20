@@ -1893,7 +1893,8 @@ module.exports = [
     "pos": "adj",
     "difficulty": 2,
     "example": "The weather is terrible.",
-    "exampleZh": "天氣很糟糕。"
+    "exampleZh": "天氣很糟糕。",
+    "context": "最常見、範圍很廣的負面形容，可形容天氣、表現、經驗、心情等很多事；比較 awful（語氣常更主觀、更強烈，也常帶口語情緒）"
   },
   {
     "word": "pretty",
@@ -2011,7 +2012,8 @@ module.exports = [
     "pos": "adj",
     "difficulty": 2,
     "example": "He is very polite.",
-    "exampleZh": "他很有禮貌。"
+    "exampleZh": "他很有禮貌。",
+    "context": "最通用、中性的「有禮貌」，日常人際互動最常用；比較 courteous（較正式，強調待人周到得體，常見於服務或商務情境）"
   },
   {
     "word": "honest",

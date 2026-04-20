@@ -122,8 +122,8 @@ async function seedData() {
     if (removedCount > 0) console.log(`Removed ${removedCount} obsolete phrases from DB.`);
   }
 
-  // Update phrases with example_zh translations
-  const stmtPZh = db.prepare('UPDATE phrases SET example_zh = ? WHERE phrase = ? AND (example_zh IS NULL OR example_zh = \'\')');
+  // Always sync phrase example_zh from data file so translation edits take effect
+  const stmtPZh = db.prepare('UPDATE phrases SET example_zh = ? WHERE phrase = ?');
   let pzCount = 0;
   for (const p of allPhrases) {
     if (p.exampleZh) {

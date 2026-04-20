@@ -755,7 +755,8 @@ module.exports = [
     "pos": "adj",
     "difficulty": 3,
     "example": "Construction of the new office building is already well underway.",
-    "exampleZh": "新辦公大樓的建設已經順利進行中。"
+    "exampleZh": "新辦公大樓的建設已經順利進行中。",
+    "context": "偏正式，常用於計畫、工程、會議等已經啟動並正在推進中的事；比較 ongoing（更中性通用，強調持續進行而不特別突出「已展開」）"
   },
   {
     "word": "pending",
@@ -2190,7 +2191,8 @@ module.exports = [
     "pos": "adj",
     "difficulty": 3,
     "example": "The staff is always courteous and professional.",
-    "exampleZh": "員工始終有禮貌且專業。"
+    "exampleZh": "員工始終有禮貌且專業。",
+    "context": "較正式，帶得體、周到、服務場合常見的禮貌感；比較 polite（最通用中性，日常「有禮貌」即可用）"
   },
   {
     "word": "recommend",

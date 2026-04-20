@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { postApi, useApi } from '../hooks/useApi';
 import { useTTS } from '../hooks/useTTS';
+import { normalizeForCompare } from '../utils/answerCompare';
 import './QuizPage.css';
 
 function QuizPage() {
@@ -246,15 +247,6 @@ function QuizPage() {
 
 // Fuzzy matching:
 // - Single word: allows 1 typo (levenshtein ≤ 1)
-// Normalize input/answer for comparison:
-// - Lowercase, trim
-// - Strip common punctuation (? ! . , ; :) so user doesn't need to type "?" in "what's wrong?"
-// - Keep apostrophes and hyphens (they distinguish words, e.g. "deal-breaker", "what's")
-function normalizeForCompare(str) {
-  if (!str) return '';
-  return str.toLowerCase().trim().replace(/[?!.,;:]/g, '').replace(/\s+/g, ' ').trim();
-}
-
 // - Phrase: accepts if all correct words appear in order in input
 //   (allows extra words like "so", "really", e.g. "I'm so stressed out" matches "I'm stressed out")
 function fuzzyMatch(input, correct) {

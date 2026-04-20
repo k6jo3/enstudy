@@ -1295,7 +1295,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 3,
     "example": "Please collect your luggage at the baggage claim.",
-    "exampleZh": "請到行李提領處領取你的行李。"
+    "exampleZh": "請到行李提領處領取你的行李。",
+    "context": "最中性通用，日常旅行時說「行李」最常用；比較 baggage（較常見於航空、托運、機場廣播，也可引申心理包袱）"
   },
   {
     "word": "passport",

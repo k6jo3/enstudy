@@ -1321,7 +1321,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 2,
     "example": "People fought for their liberty and rights.",
-    "exampleZh": "人們為了自由和權利而奮鬥。"
+    "exampleZh": "人們為了自由和權利而奮鬥。",
+    "context": "較正式、抽象，常見於政治、法律、人權語境，如 civil liberties；比較 freedom（最通用，日常與抽象概念都能用）"
   },
   {
     "word": "patriot",
@@ -2243,7 +2244,8 @@ module.exports = [
     "pos": "v",
     "difficulty": 2,
     "example": "Please inform us if there are any changes.",
-    "exampleZh": "如果有任何變更，請通知我們。"
+    "exampleZh": "如果有任何變更，請通知我們。",
+    "context": "正式且通用，重點是把資訊告知對方，不一定帶程序要求；比較 notify（更像正式通知、告示、系統提醒或依規定通報）"
   },
   {
     "word": "insist",

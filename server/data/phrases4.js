@@ -241,11 +241,11 @@ module.exports = [
   },
   {
     "phrase": "What's the matter?",
-    "meaning": "怎麼了？（語氣較關切）",
+    "meaning": "怎麼了？出什麼事了？（語氣較關切）",
     "example": "You look upset. What's the matter?",
     "exampleZh": "你看起來很沮喪。怎麼了？",
     "difficulty": 4,
-    "context": "語氣較關切、帶擔心，用於對方明顯不對勁時的關心詢問，常見於長輩對晚輩或親近關係；比較 What's wrong?（較直接直白，暗示「察覺到你不對勁」）、What's up?（隨意招呼語「最近怎樣」，不是在關心狀況）"
+    "context": "語氣較關切、帶擔心，用於對方明顯不對勁時的關心詢問，常見於長輩對晚輩或親近關係；比較 What's wrong?（較直接，像在問哪裡出問題）、What's up?（隨意招呼語「最近怎樣」，通常不是在關心狀況）"
   },
   {
     "phrase": "take your time",

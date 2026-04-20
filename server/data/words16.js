@@ -24,7 +24,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 3,
     "example": "We had a long discussion about the budget.",
-    "exampleZh": "我們就預算問題進行了很長的討論。"
+    "exampleZh": "我們就預算問題進行了很長的討論。",
+    "context": "名詞，指一次討論、討論內容或討論過程；比較 discuss（動詞，指進行討論這個動作）"
   },
   {
     "word": "disease",
@@ -33,7 +34,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 2,
     "example": "Heart disease is a leading cause of death.",
-    "exampleZh": "心臟疾病是主要的死亡原因。"
+    "exampleZh": "心臟疾病是主要的死亡原因。",
+    "context": "較偏醫學、明確診斷出的疾病名稱，如 heart disease、infectious disease；比較 illness（較一般，指生病、不舒服的狀態或病情）"
   },
   {
     "word": "duty",
@@ -195,7 +197,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 2,
     "example": "Everyone deserves the freedom to express their opinions.",
-    "exampleZh": "每個人都應享有表達意見的自由。"
+    "exampleZh": "每個人都應享有表達意見的自由。",
+    "context": "最通用，可指行動自由、選擇自由、言論自由等各種一般概念；比較 liberty（較正式抽象，常見於政治、法律、人權語境）"
   },
   {
     "word": "fuel",
@@ -294,7 +297,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 2,
     "example": "She took a week off because of illness.",
-    "exampleZh": "她因為生病請了一個星期的假。"
+    "exampleZh": "她因為生病請了一個星期的假。",
+    "context": "較一般、日常，強調生病或身體不適的狀態，不一定是正式診斷名稱；比較 disease（較醫學、較正式，指明確疾病）"
   },
   {
     "word": "imagination",
@@ -1490,7 +1494,8 @@ module.exports = [
     "pos": "adj",
     "difficulty": 2,
     "example": "The answer is obvious if you think about it.",
-    "exampleZh": "如果你想一想，答案是很明顯的。"
+    "exampleZh": "如果你想一想，答案是很明顯的。",
+    "context": "最通用，表示「一看就知道」很清楚明白；比較 evident（較正式書面，常帶由跡象或證據可看出的意味）"
   },
   {
     "word": "official",
@@ -2124,7 +2129,8 @@ module.exports = [
     "pos": "adj",
     "difficulty": 2,
     "example": "The investigation is still ongoing.",
-    "exampleZh": "調查仍在進行中。"
+    "exampleZh": "調查仍在進行中。",
+    "context": "中性通用，強調事情持續發生或尚未結束；比較 underway（偏正式，常指計畫、工程、活動已經展開並在推進）"
   },
   {
     "word": "worthwhile",
@@ -2426,7 +2432,8 @@ module.exports = [
     "pos": "adj",
     "difficulty": 2,
     "example": "It was evident that the plan was not working.",
-    "exampleZh": "很明顯這個計劃行不通。"
+    "exampleZh": "很明顯這個計劃行不通。",
+    "context": "較正式，常指從跡象、表現或證據中可以明顯看出；比較 obvious（更口語直接，指一看就知道）"
   },
   {
     "word": "evolve",
