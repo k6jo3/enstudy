@@ -54,29 +54,28 @@ async function seedData() {
     if (removedCount > 0) console.log(`Removed ${removedCount} obsolete words from DB.`);
   }
 
-  // Update words with example_zh translations
-  const stmtWZh = db.prepare('UPDATE words SET example_zh = ? WHERE word = ? AND (example_zh IS NULL OR example_zh = \'\')');
-  let wzCount = 0;
+  // Always sync word fields from data file so translation/example edits take effect
+  const stmtWSync = db.prepare(`
+    UPDATE words
+    SET phonetic = ?, meaning = ?, part_of_speech = ?, difficulty = ?, example = ?, example_zh = ?, context = ?
+    WHERE word = ?
+  `);
+  let wsCount = 0;
   for (const w of words) {
-    if (w.exampleZh) {
-      stmtWZh.run([w.exampleZh, w.word]);
-      wzCount++;
-    }
+    stmtWSync.run([
+      w.phonetic || null,
+      w.meaning || null,
+      w.pos || null,
+      w.difficulty || 1,
+      w.example || null,
+      w.exampleZh || null,
+      w.context || null,
+      w.word,
+    ]);
+    wsCount++;
   }
-  stmtWZh.free();
-  if (wzCount > 0) console.log(`Updated ${wzCount} words with example_zh.`);
-
-  // Update words with context (usage notes)
-  const stmtWCtx = db.prepare('UPDATE words SET context = ? WHERE word = ? AND (context IS NULL OR context = \'\')');
-  let wcCount = 0;
-  for (const w of words) {
-    if (w.context) {
-      stmtWCtx.run([w.context, w.word]);
-      wcCount++;
-    }
-  }
-  stmtWCtx.free();
-  if (wcCount > 0) console.log(`Updated ${wcCount} words with context.`);
+  stmtWSync.free();
+  if (wsCount > 0) console.log(`Synced ${wsCount} words from data file.`);
 
   // Incremental phrase seeding
   const phraseCount = db.exec('SELECT COUNT(*) as cnt FROM phrases')[0]?.values[0][0] || 0;
@@ -122,41 +121,26 @@ async function seedData() {
     if (removedCount > 0) console.log(`Removed ${removedCount} obsolete phrases from DB.`);
   }
 
-  // Always sync phrase example_zh from data file so translation edits take effect
-  const stmtPZh = db.prepare('UPDATE phrases SET example_zh = ? WHERE phrase = ?');
-  let pzCount = 0;
+  // Always sync phrase fields from data file so translation/example edits take effect
+  const stmtPSync = db.prepare(`
+    UPDATE phrases
+    SET meaning = ?, example = ?, difficulty = ?, example_zh = ?, context = ?
+    WHERE phrase = ?
+  `);
+  let psCount = 0;
   for (const p of allPhrases) {
-    if (p.exampleZh) {
-      stmtPZh.run([p.exampleZh, p.phrase]);
-      pzCount++;
-    }
+    stmtPSync.run([
+      p.meaning || null,
+      p.example || null,
+      p.difficulty || 1,
+      p.exampleZh || null,
+      p.context || null,
+      p.phrase,
+    ]);
+    psCount++;
   }
-  stmtPZh.free();
-  if (pzCount > 0) console.log(`Updated ${pzCount} phrases with example_zh.`);
-
-  // Always sync phrase meaning from data file (data file is source of truth)
-  const stmtPMeaning = db.prepare('UPDATE phrases SET meaning = ? WHERE phrase = ? AND meaning != ?');
-  let pmCount = 0;
-  for (const p of allPhrases) {
-    if (p.meaning) {
-      stmtPMeaning.run([p.meaning, p.phrase, p.meaning]);
-      pmCount++;
-    }
-  }
-  stmtPMeaning.free();
-  if (pmCount > 0) console.log(`Synced ${pmCount} phrase meanings from data file.`);
-
-  // Update phrases with context (always sync from data file so edits take effect)
-  const stmtPCtx = db.prepare('UPDATE phrases SET context = ? WHERE phrase = ?');
-  let pcCount = 0;
-  for (const p of allPhrases) {
-    if (p.context) {
-      stmtPCtx.run([p.context, p.phrase]);
-      pcCount++;
-    }
-  }
-  stmtPCtx.free();
-  if (pcCount > 0) console.log(`Updated ${pcCount} phrases with context.`);
+  stmtPSync.free();
+  if (psCount > 0) console.log(`Synced ${psCount} phrases from data file.`);
 
   // Grammar questions
   const grammarCount = db.exec('SELECT COUNT(*) as cnt FROM grammar_questions')[0]?.values[0][0] || 0;

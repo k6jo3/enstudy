@@ -6,6 +6,7 @@ const wordService = require('../services/word-service');
 const phraseService = require('../services/phrase-service');
 const { queryAll, queryScalar } = require('../db/helpers');
 const { getToday } = require('../services/daily-session');
+const { areMeaningsSimilar, buildMeaningLabel } = require('../utils/meaning');
 const { badRequest, isOneOf, parsePositiveInt } = require('../utils/validation');
 
 // ---------- Tier distribution config ----------
@@ -94,18 +95,20 @@ function generateHintDisplay(text, difficulty = 1, wordDiffMap = null) {
 
 // Build choices for a choice-mode item
 function buildChoices(item, distractors) {
-  const correct = item.meaning;
+  const peers = [item, ...distractors];
+  const correct = buildMeaningLabel(item, peers, { includeUsageHint: true });
   if (!correct) return null;
-  const correctLower = correct.toLowerCase();
-  const seen = new Set([correctLower]);
+  const seen = new Set([correct.toLowerCase()]);
   const wrongs = [];
   for (const d of distractors) {
     if (!d.meaning) continue;
-    const dLower = d.meaning.toLowerCase();
-    if (seen.has(dLower)) continue;
-    if (dLower.includes(correctLower) || correctLower.includes(dLower)) continue;
-    seen.add(dLower);
-    wrongs.push({ text: d.meaning, correct: false });
+    const choiceText = buildMeaningLabel(d, peers, { includeUsageHint: true });
+    const similarMeaning = areMeaningsSimilar(item.meaning, d.meaning);
+    const normalizedText = choiceText.toLowerCase();
+    if (seen.has(normalizedText)) continue;
+    if (similarMeaning && normalizedText === correct.toLowerCase()) continue;
+    seen.add(normalizedText);
+    wrongs.push({ text: choiceText, correct: false });
     if (wrongs.length === 3) break;
   }
   if (wrongs.length < 2) return null;
@@ -120,13 +123,14 @@ function buildChoices(item, distractors) {
 async function fetchDistractors(item) {
   const excludeIds = [Number(item.id)];
   const diff = item.difficulty != null ? Number(item.difficulty) : null;
+  const desiredCount = 12;
   if (item.item_type === 'word') {
-    let d = await wordService.getLearnedRandomWords(5, excludeIds, diff);
-    if (d.length < 5) d = await wordService.getRandomWords(5, excludeIds);
+    let d = await wordService.getLearnedRandomWords(desiredCount, excludeIds, diff);
+    if (d.length < desiredCount) d = await wordService.getRandomWords(desiredCount, excludeIds);
     return d;
   }
-  let d = await phraseService.getLearnedRandomPhrases(5, excludeIds, diff);
-  if (d.length < 5) d = await phraseService.getRandomPhrases(5, excludeIds);
+  let d = await phraseService.getLearnedRandomPhrases(desiredCount, excludeIds, diff);
+  if (d.length < desiredCount) d = await phraseService.getRandomPhrases(desiredCount, excludeIds);
   return d;
 }
 
@@ -137,6 +141,44 @@ function shuffle(arr) {
     [arr[i], arr[j]] = [arr[j], arr[i]];
   }
   return arr;
+}
+
+function getDominantTier(pools) {
+  const scoredTierNames = ['score0', 'weak', 'medium', 'strong'];
+  let dominantTier = null;
+  let dominantSize = 0;
+  let totalSize = 0;
+
+  for (const tierName of scoredTierNames) {
+    const size = pools[tierName].length;
+    totalSize += size;
+    if (size > dominantSize) {
+      dominantSize = size;
+      dominantTier = tierName;
+    }
+  }
+
+  return { dominantTier, dominantSize, totalSize };
+}
+
+function getDynamicRatios(pools) {
+  const { dominantTier, dominantSize, totalSize } = getDominantTier(pools);
+  if (!dominantTier || totalSize === 0) {
+    return { dynamicRatios: TIER_CONFIG, dominantTier: null };
+  }
+
+  const dominance = dominantSize / totalSize;
+  const baseRatio = TIER_CONFIG.find((tier) => tier.name === dominantTier)?.ratio || 0;
+  const bonus = Math.min(0.3, 0.12 + dominance * 0.2);
+  const scale = (1 - baseRatio - bonus) / Math.max(0.0001, 1 - baseRatio);
+
+  return {
+    dominantTier,
+    dynamicRatios: TIER_CONFIG.map((tier) => ({
+      name: tier.name,
+      ratio: tier.name === dominantTier ? tier.ratio + bonus : tier.ratio * scale,
+    })),
+  };
 }
 
 // ---------- Core: select items by score tiers ----------
@@ -250,34 +292,7 @@ async function selectItemsByTier(quizCount, today) {
     strong,
   };
 
-  // Dynamic ratio: boost the tier with the most items by 5~10%
-  const poolSizes = {};
-  let totalPoolSize = 0;
-  let maxTier = null;
-  let maxSize = 0;
-  for (const tier of TIER_CONFIG) {
-    const size = pools[tier.name].length;
-    poolSizes[tier.name] = size;
-    totalPoolSize += size;
-    if (size > maxSize) { maxSize = size; maxTier = tier.name; }
-  }
-
-  // Calculate dynamic ratios
-  let dynamicRatios;
-  if (totalPoolSize > 0 && maxTier) {
-    // Dominant ratio: how much of the total pool is in the largest tier (0~1)
-    const dominance = maxSize / totalPoolSize;
-    // Bonus scales linearly: 5% at low dominance → 10% when one tier is very dominant
-    const bonus = 0.05 + 0.05 * Math.min(dominance * 2, 1);
-    const baseRatio = TIER_CONFIG.find(t => t.name === maxTier).ratio;
-    const scale = (1 - baseRatio - bonus) / (1 - baseRatio);
-    dynamicRatios = TIER_CONFIG.map(t => ({
-      name: t.name,
-      ratio: t.name === maxTier ? t.ratio + bonus : t.ratio * scale,
-    }));
-  } else {
-    dynamicRatios = TIER_CONFIG;
-  }
+  const { dynamicRatios, dominantTier } = getDynamicRatios(pools);
 
   // Sort each pool: high error_count items first, then random within same error level
   for (const name of Object.keys(pools)) {
@@ -304,7 +319,15 @@ async function selectItemsByTier(quizCount, today) {
 
   // Second pass: if under quizCount, fill from lowest tiers first (favour weak items)
   if (result.length < quizCount) {
-    const fillOrder = ['score0', 'weak', 'untested', 'today', 'medium', 'strong'];
+    const fillOrder = [...new Set([
+      dominantTier,
+      'score0',
+      'weak',
+      'medium',
+      'strong',
+      'untested',
+      'today',
+    ].filter(Boolean))];
     for (const tierName of fillOrder) {
       if (result.length >= quizCount) break;
       const pool = pools[tierName];
@@ -395,12 +418,14 @@ router.get('/items', async (req, res) => {
       }
 
       const display = item.word || item.phrase;
+      const promptPeers = items.filter((peer) => peer !== item && peer.item_type === item.item_type);
 
       if (item.quizMode === 'choice' && !forListen) {
         const distractors = await fetchDistractors(item);
         const choices = buildChoices(item, distractors);
         if (choices) {
           item.choices = choices;
+          item.promptMeaning = buildMeaningLabel(item, [item, ...distractors], { includeUsageHint: true });
         } else {
           // Not enough distractors → fall back to hint or typing
           item.quizMode = score >= 8 ? 'typing' : 'hint';
@@ -411,6 +436,12 @@ router.get('/items', async (req, res) => {
         // Only use per-token word lookup for phrases; words use their own difficulty
         const map = item.item_type === 'phrase' ? wordDiffMap : null;
         item.hintDisplay = generateHintDisplay(display, item.difficulty, map);
+      }
+
+      if (!item.promptMeaning) {
+        item.promptMeaning = buildMeaningLabel(item, promptPeers, {
+          includeUsageHint: item.quizMode !== 'choice' || !!item.context,
+        });
       }
     }
 

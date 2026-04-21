@@ -20,13 +20,13 @@ function QuizPage() {
   useEffect(() => {
     if (data?.items && !loadedRef.current) {
       loadedRef.current = true;
-      setQuizItems(data.items.map(item => ({
-        ...item,
-        item_type: item.item_type || (item.word ? 'word' : 'phrase'),
-        display: item.word || item.phrase,
-        hint: item.meaning,
-        hasError: (item.error_count || 0) > 0
-      })));
+        setQuizItems(data.items.map(item => ({
+          ...item,
+          item_type: item.item_type || (item.word ? 'word' : 'phrase'),
+          display: item.word || item.phrase,
+          hint: item.promptMeaning || item.meaning,
+          hasError: (item.error_count || 0) > 0
+        })));
     }
   }, [data]);
 

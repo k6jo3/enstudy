@@ -17,6 +17,39 @@ function getIntervalDays(level) {
   return INTERVALS[Math.min(level, 5)] || 1;
 }
 
+function hashString(value) {
+  let hash = 0;
+  for (let i = 0; i < value.length; i += 1) {
+    hash = (hash * 31 + value.charCodeAt(i)) >>> 0;
+  }
+  return hash;
+}
+
+function interleaveDueItems(rows, limit) {
+  const wordQueue = rows.filter((row) => row.item_type === 'word');
+  const phraseQueue = rows.filter((row) => row.item_type === 'phrase');
+  const result = [];
+  let preferWords = wordQueue.length >= phraseQueue.length;
+
+  while (result.length < limit && (wordQueue.length > 0 || phraseQueue.length > 0)) {
+    const primary = preferWords ? wordQueue : phraseQueue;
+    const secondary = preferWords ? phraseQueue : wordQueue;
+
+    if (primary.length > 0) {
+      result.push(primary.shift());
+    }
+    if (result.length >= limit) break;
+
+    if (secondary.length > 0) {
+      result.push(secondary.shift());
+    }
+
+    preferWords = !preferWords;
+  }
+
+  return result.slice(0, limit);
+}
+
 async function initMastery(itemType, itemId, date) {
   const nextReview = addDays(date, INTERVALS[0]);
   await run(
@@ -96,14 +129,51 @@ async function decayPausedItems() {
 }
 
 async function getDueReviews(date, limit = 40) {
-  return queryAll(`
+  const candidateLimit = Math.max(limit * 3, limit);
+  const rows = await queryAll(`
     SELECT wm.item_type, wm.item_id, wm.mastery_level, wm.review_count,
-           wm.correct_streak, wm.next_review_date
+           wm.correct_streak, COALESCE(wm.wrong_streak, 0) as wrong_streak,
+           COALESCE(wm.just_unpaused, 0) as just_unpaused,
+           wm.next_review_date, wm.last_review_date,
+           CAST(julianday(?) - julianday(wm.next_review_date) AS INTEGER) as overdue_days,
+           COALESCE(err.total_errors, 0) as total_errors
     FROM word_mastery wm
+    LEFT JOIN (
+      SELECT item_type, item_id, SUM(error_count) as total_errors
+      FROM errors
+      GROUP BY item_type, item_id
+    ) err ON err.item_type = wm.item_type AND err.item_id = wm.item_id
     WHERE wm.next_review_date <= ?
-    ORDER BY wm.mastery_level ASC, wm.next_review_date ASC
+    ORDER BY wm.just_unpaused DESC,
+             overdue_days DESC,
+             err.total_errors DESC,
+             COALESCE(wm.wrong_streak, 0) DESC,
+             wm.mastery_level ASC,
+             COALESCE(wm.last_review_date, '') ASC
     LIMIT ?
-  `, [date, limit]);
+  `, [date, date, candidateLimit]);
+
+  const seeded = rows
+    .slice()
+    .sort((left, right) => {
+      const priorityDelta =
+        (right.just_unpaused - left.just_unpaused) ||
+        (right.overdue_days - left.overdue_days) ||
+        (right.total_errors - left.total_errors) ||
+        (right.wrong_streak - left.wrong_streak) ||
+        (left.mastery_level - right.mastery_level) ||
+        String(left.last_review_date || '').localeCompare(String(right.last_review_date || ''));
+
+      if (priorityDelta !== 0) {
+        return priorityDelta;
+      }
+
+      const leftSeed = hashString(`${date}:${left.item_type}:${left.item_id}`);
+      const rightSeed = hashString(`${date}:${right.item_type}:${right.item_id}`);
+      return leftSeed - rightSeed;
+    });
+
+  return interleaveDueItems(seeded, limit);
 }
 
 async function getDueCount(date) {
