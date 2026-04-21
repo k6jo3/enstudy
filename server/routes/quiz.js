@@ -50,47 +50,74 @@ async function getWordDiffMap() {
   return m;
 }
 
-// Generate a hint display string with per-token difficulty.
-// For each token:
-//   base = ceil(length / 3)
-//   diffBonus = max(itemDifficulty, wordLookup) - 1, clamped 0..3
-//   longBonus = length >= 14 ? 2 : length >= 10 ? 1 : 0
-//   reveal = min( floor(length * 2/3),  base + diffBonus + longBonus )  // 67% cap
-// Examples:
-//   "adventure" (L1)                    -> 3 letters (33%)
-//   "adventure" (L4)                    -> 6 letters (67%, cap)
-//   "entrepreneurship" (L4, 16 chars)   -> 10 letters (62%, cap; was 56%)
-//   "ramp up" (phrase L2, ramp is L3)   -> ramp: 2 letters, up: 1 letter
-function generateHintDisplay(text, difficulty = 1, wordDiffMap = null) {
+// Generate a hint display string.
+// Rules:
+//   word base = round(totalLetters / 3)
+//   phrase base = round(totalLetters / 3) + 1
+//   diffBonus = effectiveDifficulty > 3 ? (effectiveDifficulty - 3) : 0
+//   errorBonus = +1 when error_count >= 2 and score < 12
+//   reveal = min(floor(totalLetters * 2/3), base + diffBonus + errorBonus)
+// For phrases, effectiveDifficulty = max(phraseDifficulty, hardestWordDifficultyInPhrase)
+function generateHintDisplay(text, {
+  itemType = 'word',
+  difficulty = 1,
+  wordDiffMap = null,
+  errorCount = 0,
+  score = 0,
+} = {}) {
   const tokens = text.split(' ');
-  return tokens.map(token => {
-    if (!token) return '';
-    const chars = token.split('');
-    const len = chars.length;
+  const tokenLetters = tokens.map((token) => ({
+    chars: token.split(''),
+    letterIndices: token
+      .split('')
+      .map((char, index) => (/[A-Za-z]/.test(char) ? index : -1))
+      .filter((index) => index >= 0),
+  }));
 
-    // Per-token effective difficulty: max of item difficulty and word lookup
-    let effectiveDiff = difficulty || 1;
-    if (wordDiffMap) {
+  const allLetterSlots = [];
+  tokenLetters.forEach((entry, tokenIndex) => {
+    entry.letterIndices.forEach((charIndex) => {
+      allLetterSlots.push({ tokenIndex, charIndex });
+    });
+  });
+
+  const totalLetters = allLetterSlots.length;
+  if (totalLetters === 0) {
+    return tokenLetters.map((entry) => entry.chars.join(' ')).join('   ');
+  }
+
+  let effectiveDiff = Math.max(1, Math.min(5, Number(difficulty) || 1));
+  if (itemType === 'phrase' && wordDiffMap) {
+    for (const token of tokens) {
       const clean = token.toLowerCase().replace(/[^a-z'-]/g, '');
       const wd = clean && wordDiffMap.get(clean);
       if (wd && wd > effectiveDiff) effectiveDiff = wd;
     }
+  }
 
-    const diffBonus = Math.max(0, Math.min(3, effectiveDiff - 1));
-    const longBonus = len >= 14 ? 2 : len >= 10 ? 1 : 0;
-    const revealTarget = Math.ceil(len / 3) + diffBonus + longBonus;
-    // Cap at 67% of length so the user still has something to recall
-    const revealCap = Math.max(1, Math.floor(len * 2 / 3));
-    const reveal = Math.max(1, Math.min(revealCap, revealTarget));
+  const baseReveal = Math.max(1, Math.round(totalLetters / 3) + (itemType === 'phrase' ? 1 : 0));
+  const diffBonus = effectiveDiff > 3 ? (effectiveDiff - 3) : 0;
+  const errorBonus = Number(errorCount) >= 2 && Number(score) < 12 ? 1 : 0;
+  const revealTarget = baseReveal + diffBonus + errorBonus;
+  const revealCap = Math.floor(totalLetters * 2 / 3);
+  const reveal = Math.max(0, Math.min(revealCap, revealTarget));
 
-    const indices = chars.map((_, i) => i);
-    for (let i = indices.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [indices[i], indices[j]] = [indices[j], indices[i]];
-    }
-    const revealSet = new Set(indices.slice(0, reveal));
-    return chars.map((c, i) => revealSet.has(i) ? c : '_').join(' ');
-  }).join('   ');
+  for (let i = allLetterSlots.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [allLetterSlots[i], allLetterSlots[j]] = [allLetterSlots[j], allLetterSlots[i]];
+  }
+  const revealSet = new Set(
+    allLetterSlots
+      .slice(0, reveal)
+      .map(({ tokenIndex, charIndex }) => `${tokenIndex}:${charIndex}`)
+  );
+
+  return tokenLetters.map((entry, tokenIndex) => (
+    entry.chars.map((char, charIndex) => {
+      if (!/[A-Za-z]/.test(char)) return char;
+      return revealSet.has(`${tokenIndex}:${charIndex}`) ? char : '_';
+    }).join(' ')
+  )).join('   ');
 }
 
 // Build choices for a choice-mode item
@@ -141,6 +168,71 @@ function shuffle(arr) {
     [arr[i], arr[j]] = [arr[j], arr[i]];
   }
   return arr;
+}
+
+function escapeRegExp(value) {
+  return String(value || '').replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+}
+
+function normalizeApostrophes(value) {
+  return String(value || '').replace(/[’‘`´]/g, '\'');
+}
+
+function buildLoosePattern(variant) {
+  const normalized = normalizeApostrophes(variant).trim();
+  if (!normalized) return null;
+
+  const fragment = normalized
+    .split(/\s+/)
+    .map((token) => token
+      .split('')
+      .map((char) => (char === '\'' ? '[\'’‘`´]?' : escapeRegExp(char)))
+      .join(''))
+    .join('\\s+');
+
+  if (!fragment) return null;
+  return new RegExp(`(^|[^A-Za-z0-9])(${fragment})(?=$|[^A-Za-z0-9])`, 'gi');
+}
+
+function maskAnswerInText(text, answer) {
+  const source = String(text || '').trim();
+  const normalizedAnswer = normalizeApostrophes(answer).replace(/\s+/g, ' ').trim();
+  if (!source || !normalizedAnswer) return source;
+
+  const variants = new Set([normalizedAnswer]);
+  const parts = normalizedAnswer.match(/[A-Za-z]+(?:['’‘`´][A-Za-z]+)?/g) || [];
+  const stopWords = new Set([
+    'a', 'an', 'the', 'and', 'or', 'to', 'of', 'in', 'on', 'at', 'for', 'with',
+    'is', 'are', 'am', 'be', 'been', 'being', 'i', 'you', 'he', 'she', 'it',
+    'we', 'they', 'my', 'your', 'his', 'her', 'our', 'their', 'me', 'him', 'us', 'them'
+  ]);
+
+  if (parts.length > 1) {
+    for (const part of parts) {
+      const lower = normalizeApostrophes(part).toLowerCase();
+      const stopKey = lower.replace(/'/g, '');
+      if (stopKey.length >= 3 && !stopWords.has(lower) && !stopWords.has(stopKey)) {
+        variants.add(part);
+      }
+    }
+  }
+
+  const ordered = [...variants].sort((a, b) => b.length - a.length);
+  let masked = source;
+  for (const variant of ordered) {
+    const pattern = buildLoosePattern(variant);
+    if (!pattern) continue;
+    masked = masked.replace(pattern, (_, prefix) => `${prefix}____`);
+  }
+  return masked;
+}
+
+function stripLatinParenthetical(text) {
+  return String(text || '')
+    .replace(/（[^）]*[A-Za-z][^）]*）/g, '')
+    .replace(/\([^)]*[A-Za-z][^)]*\)/g, '')
+    .replace(/\s{2,}/g, ' ')
+    .trim();
 }
 
 function getDominantTier(pools) {
@@ -419,6 +511,7 @@ router.get('/items', async (req, res) => {
 
       const display = item.word || item.phrase;
       const promptPeers = items.filter((peer) => peer !== item && peer.item_type === item.item_type);
+      item.quizContext = stripLatinParenthetical(maskAnswerInText(item.context, display));
 
       if (item.quizMode === 'choice' && !forListen) {
         const distractors = await fetchDistractors(item);
@@ -435,7 +528,13 @@ router.get('/items', async (req, res) => {
       if (item.quizMode === 'hint' && display) {
         // Only use per-token word lookup for phrases; words use their own difficulty
         const map = item.item_type === 'phrase' ? wordDiffMap : null;
-        item.hintDisplay = generateHintDisplay(display, item.difficulty, map);
+        item.hintDisplay = generateHintDisplay(display, {
+          itemType: item.item_type,
+          difficulty: item.difficulty,
+          wordDiffMap: map,
+          errorCount: item.error_count,
+          score,
+        });
       }
 
       if (!item.promptMeaning) {
@@ -443,6 +542,7 @@ router.get('/items', async (req, res) => {
           includeUsageHint: item.quizMode !== 'choice' || !!item.context,
         });
       }
+      item.promptMeaning = stripLatinParenthetical(maskAnswerInText(item.promptMeaning, display));
     }
 
     res.json({

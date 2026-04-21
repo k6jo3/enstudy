@@ -34,6 +34,11 @@ function PhraseCard({ phrase, showMeaning = true, hasError = false, onNext }) {
               &#128264;
             </button>
           </p>
+          {(phrase.exampleZh || phrase.example_zh) && (
+            <p className="phrase-example-zh">
+              {phrase.exampleZh || phrase.example_zh}
+            </p>
+          )}
         </>
       )}
       {onNext && (

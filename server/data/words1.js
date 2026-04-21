@@ -2539,20 +2539,56 @@ module.exports = [
   {
     "word": "light",
     "phonetic": "/laɪt/",
-    "meaning": "輕的；光",
-    "pos": "adj",
+    "meaning": "輕的；光；燈",
+    "pos": "adj / n",
     "difficulty": 1,
     "example": "The bag is very light.",
-    "exampleZh": "那個袋子很輕。"
+    "exampleZh": "那個袋子很輕。",
+    "context": "可表示重量輕，也可當名詞表示光線或燈。",
+    "examples": [
+      {
+        "labelZh": "形容重量輕",
+        "text": "The bag is very light.",
+        "zh": "那個袋子很輕。"
+      },
+      {
+        "labelZh": "名詞：燈",
+        "text": "Please turn on the light.",
+        "zh": "請把燈打開。"
+      },
+      {
+        "labelZh": "名詞：光線",
+        "text": "Morning light filled the room.",
+        "zh": "晨光灑滿了房間。"
+      }
+    ]
   },
   {
     "word": "strong",
     "phonetic": "/strɔːŋ/",
-    "meaning": "強壯的",
+    "meaning": "強壯的；強烈的",
     "pos": "adj",
     "difficulty": 2,
     "example": "He is very strong.",
-    "exampleZh": "他非常強壯。"
+    "exampleZh": "他非常強壯。",
+    "context": "可形容人很強壯，也可形容咖啡、味道、氣味、效果很強烈。",
+    "examples": [
+      {
+        "labelZh": "形容人強壯",
+        "text": "He is very strong.",
+        "zh": "他非常強壯。"
+      },
+      {
+        "labelZh": "形容味道濃",
+        "text": "This coffee is too strong for me.",
+        "zh": "這杯咖啡對我來說太濃了。"
+      },
+      {
+        "labelZh": "形容氣味強烈",
+        "text": "That perfume is strong, so use only a little.",
+        "zh": "那款香水味道很濃，所以擦一點就好。"
+      }
+    ]
   },
   {
     "word": "weak",
@@ -2693,10 +2729,28 @@ module.exports = [
     "word": "right",
     "phonetic": "/raɪt/",
     "meaning": "對的；權利；右邊",
-    "pos": "adj",
+    "pos": "adj / n / adv",
     "difficulty": 1,
     "example": "Your answer is right.",
-    "exampleZh": "你的答案是對的。"
+    "exampleZh": "你的答案是對的。",
+    "context": "可形容答案正確、當名詞表示權利，也可表示向右。",
+    "examples": [
+      {
+        "labelZh": "形容詞：正確",
+        "text": "Your answer is right.",
+        "zh": "你的答案是對的。"
+      },
+      {
+        "labelZh": "名詞：權利",
+        "text": "Everyone has the right to ask questions.",
+        "zh": "每個人都有提問的權利。"
+      },
+      {
+        "labelZh": "副詞：向右",
+        "text": "Turn right at the next corner.",
+        "zh": "下一個轉角向右轉。"
+      }
+    ]
   },
   {
     "word": "wrong",

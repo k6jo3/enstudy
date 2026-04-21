@@ -201,12 +201,7 @@ function QuizPage() {
             {item.context && (
               <div className="quiz-context-hint">
                 <span className="context-icon">💡</span>
-                {item.context.split(/\s+/).map((word, i) => {
-                  const cleanWord = word.replace(/[.,!?;:()]/g, '').toLowerCase();
-                  const targetWord = item.display.toLowerCase();
-                  const isMatch = cleanWord === targetWord || (targetWord.length > 3 && cleanWord.includes(targetWord));
-                  return isMatch ? ' ____ ' : word + ' ';
-                })}
+                {result ? item.context : (item.quizContext || item.context)}
               </div>
             )}
             {item.part_of_speech && <span className="quiz-pos">{item.part_of_speech}</span>}

@@ -1073,8 +1073,8 @@ module.exports = [
   {
     "phrase": "I'm over it",
     "meaning": "我已經不在乎了；我放下了",
-    "example": "He didn't apologize, but whatever. I'm over it.",
-    "exampleZh": "他沒有道歉，但算了，我已經放下了。",
+    "example": "He didn't apologize, but whatever. I don't care anymore.",
+    "exampleZh": "他沒有道歉，但算了，我已經不在乎了。", 
     "difficulty": 3
   },
   {
@@ -1108,8 +1108,8 @@ module.exports = [
   {
     "phrase": "I'm so frustrated",
     "meaning": "我好挫折；我好火大",
-    "example": "I'm so frustrated. I've been trying to fix this bug for hours.",
-    "exampleZh": "我好挫折，我已經試著修這個錯誤好幾個小時了。",
+    "example": "I've been trying to fix this bug for hours. It's driving me crazy.",
+    "exampleZh": "我已經試著修這個錯誤好幾個小時了，真的快瘋了。", 
     "difficulty": 4
   },
   {
@@ -1122,8 +1122,8 @@ module.exports = [
   {
     "phrase": "I'm losing my mind",
     "meaning": "我快瘋了",
-    "example": "I can't find my keys anywhere. I'm losing my mind!",
-    "exampleZh": "我找不到鑰匙，到處都找不到，我快瘋了！",
+    "example": "I can't find my keys anywhere. This is so stressful!",
+    "exampleZh": "我找不到鑰匙，到處都找不到，真的好崩潰！", 
     "difficulty": 4
   },
   {
@@ -1173,8 +1173,8 @@ module.exports = [
   {
     "phrase": "I hear you",
     "meaning": "我懂你的意思；我理解你的感受",
-    "example": "I hear you, but there's nothing we can do about it right now.",
-    "exampleZh": "我理解你的意思，但我們現在沒有辦法改變這件事。",
+    "example": "I understand how you feel, but there's nothing we can do about it right now.",
+    "exampleZh": "我理解你的感受，但我們現在沒有辦法改變這件事。", 
     "difficulty": 2,
     "context": "表達對對方的「感受或立場」的認同，帶有同理心，常用於對方抱怨或感嘆時。比較 I see what you mean（偏重理解對方的「論點或想法」，較理性）。"
   },
@@ -1257,37 +1257,37 @@ module.exports = [
   {
     "phrase": "I'm freaking out",
     "meaning": "我快崩潰了；我嚇壞了",
-    "example": "My presentation is in ten minutes and I'm freaking out!",
-    "exampleZh": "還有十分鐘就要上台報告了，我快崩潰了！",
+    "example": "My presentation is in ten minutes and I'm so nervous!",
+    "exampleZh": "還有十分鐘就要上台報告了，我超緊張的！", 
     "difficulty": 4
   },
   {
     "phrase": "I'm in a good mood",
     "meaning": "我心情很好",
-    "example": "The sun is shining and I got great news. I'm in a good mood today.",
-    "exampleZh": "陽光普照，又收到好消息，我今天心情很好。",
+    "example": "The sun is shining and I got great news. Today feels wonderful.",
+    "exampleZh": "陽光普照，又收到好消息，今天感覺真棒。", 
     "difficulty": 4
   },
   {
     "phrase": "I'm not in the mood",
     "meaning": "我沒那個心情",
-    "example": "I'm not in the mood to go out tonight. Can we just stay home?",
-    "exampleZh": "我今晚沒心情出門，我們可以就待在家嗎？",
+    "example": "I don't feel like going out tonight. Can we just stay home?",
+    "exampleZh": "我今晚不想出門，我們可以就待在家嗎？", 
     "difficulty": 4
   },
   {
     "phrase": "I feel like crap",
     "meaning": "我感覺糟透了",
-    "example": "I only slept two hours. I feel like crap right now.",
-    "exampleZh": "我只睡了兩小時，我現在感覺糟透了。",
+    "example": "I only slept two hours. I feel terrible right now.",
+    "exampleZh": "我只睡了兩小時，我現在感覺超糟。", 
     "difficulty": 4,
     "context": "口語、稍粗的說法（crap 是 shit 的委婉版），指整體狀態糟——身體不適、很累、宿醉、心情爛都通用，場合比較隨意。比較 I'm feeling down（只講情緒低落）、feel under the weather（委婉說身體微恙，較禮貌）、I'm exhausted（單純講累，沒有「糟」的情緒）"
   },
   {
     "phrase": "I'm thrilled",
     "meaning": "我超開心的；樂翻了",
-    "example": "I'm thrilled that you're coming to visit next month!",
-    "exampleZh": "你下個月要來拜訪，我超開心的！",
+    "example": "You're coming to visit next month! That's so exciting!",
+    "exampleZh": "你下個月要來拜訪，太令人興奮了！", 
     "difficulty": 3
   },
   {
@@ -1300,29 +1300,29 @@ module.exports = [
   {
     "phrase": "I'm so relieved",
     "meaning": "我鬆了好大一口氣",
-    "example": "The surgery went well. I'm so relieved.",
-    "exampleZh": "手術很順利，我鬆了好大一口氣。",
+    "example": "The surgery went well. What a relief!",
+    "exampleZh": "手術很順利，真是鬆了一口氣。", 
     "difficulty": 4
   },
   {
     "phrase": "I'm dying of boredom",
     "meaning": "我無聊到快死了",
-    "example": "This lecture is endless. I'm dying of boredom.",
-    "exampleZh": "這堂課沒完沒了，我無聊到快死了。",
+    "example": "This lecture is endless. I can't stand how boring it is.",
+    "exampleZh": "這堂課沒完沒了，真的無聊到不行。", 
     "difficulty": 4
   },
   {
     "phrase": "I feel left out",
     "meaning": "我覺得被排擠了",
-    "example": "Everyone got invited to the party except me. I feel left out.",
-    "exampleZh": "大家都被邀請去派對，就只有我沒有，我覺得被排擠了。",
+    "example": "Everyone got invited to the party except me. It's so lonely.",
+    "exampleZh": "大家都被邀請去派對，就只有我沒有，真的很孤單。", 
     "difficulty": 4
   },
   {
     "phrase": "I'm so embarrassed",
     "meaning": "我好丟臉",
-    "example": "I called my teacher 'Mom' in front of the whole class. I'm so embarrassed.",
-    "exampleZh": "我在全班面前叫老師「媽媽」，我好丟臉。",
+    "example": "I called my teacher 'Mom' in front of the whole class. That was so embarrassing.",
+    "exampleZh": "我在全班面前叫老師「媽媽」，真的超丟臉。", 
     "difficulty": 4
   },
   {
@@ -1335,29 +1335,29 @@ module.exports = [
   {
     "phrase": "I'm sick and tired of this",
     "meaning": "我真的煩透了",
-    "example": "I'm sick and tired of this commute. Two hours every day is insane.",
-    "exampleZh": "我真的煩透了這段通勤，每天兩小時太誇張了。",
+    "example": "This commute is exhausting. Two hours every day is insane.",
+    "exampleZh": "這段通勤真的讓人受不了，每天兩小時太誇張了。", 
     "difficulty": 4
   },
   {
     "phrase": "I'm heartbroken",
     "meaning": "我心碎了",
-    "example": "I'm heartbroken that my favorite show got cancelled.",
-    "exampleZh": "我最喜歡的節目被停播了，我心都碎了。",
+    "example": "My favorite show got cancelled. It really hurts.",
+    "exampleZh": "我最喜歡的節目被停播了，真的很難過。", 
     "difficulty": 4
   },
   {
     "phrase": "I'm anxious about",
     "meaning": "我對...很焦慮",
-    "example": "I'm anxious about the job interview. What if I mess up?",
-    "exampleZh": "我對這次工作面試很焦慮，如果我搞砸了怎麼辦？",
+    "example": "The job interview is tomorrow. I'm so nervous about it.",
+    "exampleZh": "明天就要面試了，我真的很緊張。", 
     "difficulty": 4
   },
   {
     "phrase": "love at first sight",
     "meaning": "一見鍾情",
-    "example": "He said it was love at first sight when he saw her across the room.",
-    "exampleZh": "他說當他在房間另一頭看到她時，那就是一見鍾情。",
+    "example": "He saw her across the room and instantly felt a strong connection.",
+    "exampleZh": "他在房間另一頭看到她時，馬上就有一種特別的感覺。", 
     "difficulty": 4
   },
   {
@@ -1370,8 +1370,8 @@ module.exports = [
   {
     "phrase": "they're on a break",
     "meaning": "他們在冷靜期；暫時分開",
-    "example": "They're on a break right now. Nobody knows if they'll get back together.",
-    "exampleZh": "他們現在在冷靜期，沒有人知道他們是否會復合。",
+    "example": "They're not together right now. Nobody knows if they'll get back together.",
+    "exampleZh": "他們現在暫時分開，沒有人知道他們是否會復合。", 
     "difficulty": 4
   },
   {

@@ -252,7 +252,7 @@ async function getOrCreateDialogues(date, words, phrases) {
   }
 
   // Generate new dialogues and save
-  const dialogues = generateDialogues(words, phrases, 10, date);
+  const dialogues = generateDialogues(words, phrases);
 
   for (let i = 0; i < dialogues.length; i++) {
     const d = dialogues[i];

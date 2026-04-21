@@ -4,6 +4,14 @@ import './WordCard.css';
 function WordCard({ word, showMeaning = true, hasError = false, onNext }) {
   const { speak } = useTTS();
   const masteryLevel = word.mastery_level;
+  const examples = Array.isArray(word.examples) && word.examples.length > 0
+    ? word.examples
+    : (word.example ? [{
+        text: word.example,
+        zh: word.exampleZh || word.example_zh || '',
+        label: '',
+        labelZh: '',
+      }] : []);
 
   return (
     <div className={`word-card ${hasError ? 'has-error' : ''}`}>
@@ -28,13 +36,30 @@ function WordCard({ word, showMeaning = true, hasError = false, onNext }) {
             <p className="word-context" style={{ whiteSpace: 'pre-wrap' }}>
               <span className="context-label">語境：</span>{word.context}
             </p>
-          )}          <p className="word-example">
-            <span className="example-label">例句：</span>
-            {word.example}
-            <button className="speak-btn small" onClick={() => speak(word.example)} title="播放例句">
-              &#128264;
-            </button>
-          </p>
+          )}
+          {examples.length > 0 && (
+            <div className="word-examples">
+              <span className="example-label">例句：</span>
+              {examples.map((example, index) => (
+                <div key={`${example.text}-${index}`} className="word-example-item">
+                  {(example.labelZh || example.label) && (
+                    <div className="word-example-usage">{example.labelZh || example.label}</div>
+                  )}
+                  <div className="word-example-line">
+                    <span>{example.text}</span>
+                    <button
+                      className="speak-btn small"
+                      onClick={() => speak(example.text)}
+                      title="播放例句"
+                    >
+                      &#128264;
+                    </button>
+                  </div>
+                  {example.zh && <div className="word-example-zh">{example.zh}</div>}
+                </div>
+              ))}
+            </div>
+          )}
         </>
       )}
       {onNext && (
