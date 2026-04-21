@@ -8,14 +8,6 @@ module.exports = [
     "context": "形容失去继续下去的能量或熱情。"
   },
   {
-    "phrase": "short cut",
-    "meaning": "捷徑",
-    "example": "There are no short cuts to success.",
-    "exampleZh": "成功沒有捷徑。",
-    "difficulty": 2,
-    "context": "指通往目標的更快路徑。"
-  },
-  {
     "phrase": "smooth sailing",
     "meaning": "一帆風順",
     "example": "Once we got the funding, it was smooth sailing.",
