@@ -8,6 +8,7 @@ const { queryAll, queryScalar } = require('../db/helpers');
 const { getToday } = require('../services/daily-session');
 const { areMeaningsSimilar, buildMeaningLabel } = require('../utils/meaning');
 const { badRequest, isOneOf, parsePositiveInt } = require('../utils/validation');
+const { cleanPrompt, maskAnswerInText, stripLatinParenthetical } = require('../utils/masking');
 
 // ---------- Tier distribution config ----------
 // Proportions for each score tier (must sum to 1.0)
@@ -35,9 +36,6 @@ function getQuizMode(score, hintCount) {
 }
 
 // Lazy word-difficulty map for per-token hint calculation.
-// Built once from the words table; phrases like "ramp up" can then look up
-// "ramp" individually and reveal more letters when a component word is harder
-// than the phrase itself.
 let _wordDiffMap = null;
 async function getWordDiffMap() {
   if (_wordDiffMap) return _wordDiffMap;
@@ -51,13 +49,6 @@ async function getWordDiffMap() {
 }
 
 // Generate a hint display string.
-// Rules:
-//   word base = round(totalLetters / 3)
-//   phrase base = round(totalLetters / 3) + 1
-//   diffBonus = effectiveDifficulty > 3 ? (effectiveDifficulty - 3) : 0
-//   errorBonus = +1 when error_count >= 2 and score < 12
-//   reveal = min(floor(totalLetters * 2/3), base + diffBonus + errorBonus)
-// For phrases, effectiveDifficulty = max(phraseDifficulty, hardestWordDifficultyInPhrase)
 function generateHintDisplay(text, {
   itemType = 'word',
   difficulty = 1,
@@ -170,71 +161,6 @@ function shuffle(arr) {
   return arr;
 }
 
-function escapeRegExp(value) {
-  return String(value || '').replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-}
-
-function normalizeApostrophes(value) {
-  return String(value || '').replace(/[’‘`´]/g, '\'');
-}
-
-function buildLoosePattern(variant) {
-  const normalized = normalizeApostrophes(variant).trim();
-  if (!normalized) return null;
-
-  const fragment = normalized
-    .split(/\s+/)
-    .map((token) => token
-      .split('')
-      .map((char) => (char === '\'' ? '[\'’‘`´]?' : escapeRegExp(char)))
-      .join(''))
-    .join('\\s+');
-
-  if (!fragment) return null;
-  return new RegExp(`(^|[^A-Za-z0-9])(${fragment})(?=$|[^A-Za-z0-9])`, 'gi');
-}
-
-function maskAnswerInText(text, answer) {
-  const source = String(text || '').trim();
-  const normalizedAnswer = normalizeApostrophes(answer).replace(/\s+/g, ' ').trim();
-  if (!source || !normalizedAnswer) return source;
-
-  const variants = new Set([normalizedAnswer]);
-  const parts = normalizedAnswer.match(/[A-Za-z]+(?:['’‘`´][A-Za-z]+)?/g) || [];
-  const stopWords = new Set([
-    'a', 'an', 'the', 'and', 'or', 'to', 'of', 'in', 'on', 'at', 'for', 'with',
-    'is', 'are', 'am', 'be', 'been', 'being', 'i', 'you', 'he', 'she', 'it',
-    'we', 'they', 'my', 'your', 'his', 'her', 'our', 'their', 'me', 'him', 'us', 'them'
-  ]);
-
-  if (parts.length > 1) {
-    for (const part of parts) {
-      const lower = normalizeApostrophes(part).toLowerCase();
-      const stopKey = lower.replace(/'/g, '');
-      if (stopKey.length >= 3 && !stopWords.has(lower) && !stopWords.has(stopKey)) {
-        variants.add(part);
-      }
-    }
-  }
-
-  const ordered = [...variants].sort((a, b) => b.length - a.length);
-  let masked = source;
-  for (const variant of ordered) {
-    const pattern = buildLoosePattern(variant);
-    if (!pattern) continue;
-    masked = masked.replace(pattern, (_, prefix) => `${prefix}____`);
-  }
-  return masked;
-}
-
-function stripLatinParenthetical(text) {
-  return String(text || '')
-    .replace(/（[^）]*[A-Za-z][^）]*）/g, '')
-    .replace(/\([^)]*[A-Za-z][^)]*\)/g, '')
-    .replace(/\s{2,}/g, ' ')
-    .trim();
-}
-
 function getDominantTier(pools) {
   const scoredTierNames = ['score0', 'weak', 'medium', 'strong'];
   let dominantTier = null;
@@ -275,7 +201,6 @@ function getDynamicRatios(pools) {
 
 // ---------- Core: select items by score tiers ----------
 async function selectItemsByTier(quizCount, today) {
-  // 1. Today's items (from learning_log, learn_date = today)
   const todayItems = await queryAll(`
     SELECT
       ll.item_type, ll.item_id as id,
@@ -303,7 +228,6 @@ async function selectItemsByTier(quizCount, today) {
     ORDER BY RANDOM()
   `, [today]);
 
-  // 2. Untested items (learned, no word_mastery record, excluding today)
   const untestedItems = await queryAll(`
     SELECT
       ll.item_type, ll.item_id as id,
@@ -335,7 +259,6 @@ async function selectItemsByTier(quizCount, today) {
     ORDER BY RANDOM()
   `, [today]);
 
-  // 3. Scored items from word_mastery (not paused)
   const scoredItems = await queryAll(`
     SELECT
       wm.item_type, wm.item_id as id,
@@ -362,11 +285,10 @@ async function selectItemsByTier(quizCount, today) {
     ORDER BY RANDOM()
   `);
 
-  // Bucket scored items by tier (aligned with quiz mode thresholds)
   const score0 = [];
-  const weak = [];   // 0 < score < 4 (choice only)
-  const medium = []; // 4 <= score < 8 (choice or hint)
-  const strong = []; // 8 <= score < 12 (typing only)
+  const weak = [];
+  const medium = [];
+  const strong = [];
   for (const item of scoredItems) {
     if (item.score === 0) { item.tier = 'score0'; score0.push(item); }
     else if (item.score < 4) { item.tier = 'weak'; weak.push(item); }
@@ -374,19 +296,9 @@ async function selectItemsByTier(quizCount, today) {
     else { item.tier = 'strong'; strong.push(item); }
   }
 
-  // Allocate per tier
-  const pools = {
-    today: todayItems,
-    untested: untestedItems,
-    score0,
-    weak,
-    medium,
-    strong,
-  };
-
+  const pools = { today: todayItems, untested: untestedItems, score0, weak, medium, strong };
   const { dynamicRatios, dominantTier } = getDynamicRatios(pools);
 
-  // Sort each pool: high error_count items first, then random within same error level
   for (const name of Object.keys(pools)) {
     pools[name].sort((a, b) => (b.error_count || 0) - (a.error_count || 0));
   }
@@ -394,7 +306,6 @@ async function selectItemsByTier(quizCount, today) {
   const usedKeys = new Set();
   const result = [];
 
-  // First pass: fill each tier up to its dynamic quota
   for (const tier of dynamicRatios) {
     const quota = Math.max(1, Math.round(quizCount * tier.ratio));
     const pool = pools[tier.name];
@@ -409,17 +320,8 @@ async function selectItemsByTier(quizCount, today) {
     }
   }
 
-  // Second pass: if under quizCount, fill from lowest tiers first (favour weak items)
   if (result.length < quizCount) {
-    const fillOrder = [...new Set([
-      dominantTier,
-      'score0',
-      'weak',
-      'medium',
-      'strong',
-      'untested',
-      'today',
-    ].filter(Boolean))];
+    const fillOrder = [...new Set([dominantTier, 'score0', 'weak', 'medium', 'strong', 'untested', 'today'].filter(Boolean))];
     for (const tierName of fillOrder) {
       if (result.length >= quizCount) break;
       const pool = pools[tierName];
@@ -438,46 +340,28 @@ async function selectItemsByTier(quizCount, today) {
 
 // ---------- Routes ----------
 
-// Submit a quiz answer
 router.post('/submit', async (req, res) => {
   try {
     const { itemType, itemId, isCorrect, questionMode } = req.body;
     const parsedItemId = parsePositiveInt(itemId);
-
-    if (!isOneOf(itemType, ['word', 'phrase'])) {
-      return badRequest(res, 'Invalid itemType');
-    }
-    if (parsedItemId === null) {
-      return badRequest(res, 'Invalid itemId');
-    }
-    if (typeof isCorrect !== 'boolean') {
-      return badRequest(res, 'isCorrect must be boolean');
-    }
-    if (questionMode !== undefined && !isOneOf(questionMode, ['typing', 'choice', 'hint', 'listen'])) {
-      return badRequest(res, 'Invalid questionMode');
-    }
+    if (!isOneOf(itemType, ['word', 'phrase'])) return badRequest(res, 'Invalid itemType');
+    if (parsedItemId === null) return badRequest(res, 'Invalid itemId');
+    if (typeof isCorrect !== 'boolean') return badRequest(res, 'isCorrect must be boolean');
+    if (questionMode !== undefined && !isOneOf(questionMode, ['typing', 'choice', 'hint', 'listen'])) return badRequest(res, 'Invalid questionMode');
 
     const date = getToday();
-
-    if (!isCorrect) {
-      await errorTracker.recordError(itemType, parsedItemId, date);
-    }
-
+    if (!isCorrect) await errorTracker.recordError(itemType, parsedItemId, date);
     await masteryService.updateMastery(itemType, parsedItemId, isCorrect, date, questionMode || 'typing');
-
     res.json({ success: true });
   } catch (err) {
     res.status(500).json({ error: err.message });
   }
 });
 
-// Get quiz items with score-tier distribution
 router.get('/items', async (req, res) => {
   try {
     const limit = parsePositiveInt(req.query.limit, { defaultValue: 85, max: 200 });
-    if (limit === null) {
-      return badRequest(res, 'Invalid limit');
-    }
+    if (limit === null) return badRequest(res, 'Invalid limit');
     const forListen = req.query.type === 'listen';
     const today = getToday();
 
@@ -488,50 +372,41 @@ router.get('/items', async (req, res) => {
       LEFT JOIN word_mastery wm ON wm.item_type = ll.item_type AND wm.item_id = ll.item_id
       WHERE ll.is_review = 0 AND (wm.paused IS NULL OR wm.paused = 0)
     `) || 0;
-    // Base 15, +5 per week, +1 per 10 learned items, capped by limit
     const quizCount = Math.min(15 + Math.floor(totalDays / 7) * 5 + Math.floor(totalLearned / 10), limit);
 
     const items = await selectItemsByTier(quizCount, today);
+    const wordDiffMap = items.some(it => it.item_type === 'phrase') ? await getWordDiffMap() : null;
 
-    // Load word-difficulty map once per request for per-token hint calculation
-    const wordDiffMap = items.some(it => it.item_type === 'phrase')
-      ? await getWordDiffMap()
-      : null;
-
-    // Set quizMode and generate choices / hints
     for (const item of items) {
       const score = item.score != null && item.score >= 0 ? item.score : 0;
-      if (forListen) {
-        item.quizMode = 'typing';
-      } else if (item.just_unpaused) {
-        item.quizMode = 'choice';
-      } else {
-        item.quizMode = getQuizMode(score, item.hint_count);
-      }
+      if (forListen) item.quizMode = 'typing';
+      else if (item.just_unpaused) item.quizMode = 'choice';
+      else item.quizMode = getQuizMode(score, item.hint_count);
 
       const display = item.word || item.phrase;
       const promptPeers = items.filter((peer) => peer !== item && peer.item_type === item.item_type);
-      item.quizContext = stripLatinParenthetical(maskAnswerInText(item.context, display));
+      item.quizContext = cleanPrompt(item.context, display);
 
       if (item.quizMode === 'choice' && !forListen) {
         const distractors = await fetchDistractors(item);
         const choices = buildChoices(item, distractors);
         if (choices) {
-          item.choices = choices;
+          // Clean each choice text individually to prevent leakage
+          item.choices = choices.map(c => ({
+            ...c,
+            text: cleanPrompt(c.text, display)
+          }));
           item.promptMeaning = buildMeaningLabel(item, [item, ...distractors], { includeUsageHint: true });
         } else {
-          // Not enough distractors → fall back to hint or typing
           item.quizMode = score >= 8 ? 'typing' : 'hint';
         }
       }
 
       if (item.quizMode === 'hint' && display) {
-        // Only use per-token word lookup for phrases; words use their own difficulty
-        const map = item.item_type === 'phrase' ? wordDiffMap : null;
         item.hintDisplay = generateHintDisplay(display, {
           itemType: item.item_type,
           difficulty: item.difficulty,
-          wordDiffMap: map,
+          wordDiffMap: item.item_type === 'phrase' ? wordDiffMap : null,
           errorCount: item.error_count,
           score,
         });
@@ -542,15 +417,10 @@ router.get('/items', async (req, res) => {
           includeUsageHint: item.quizMode !== 'choice' || !!item.context,
         });
       }
-      item.promptMeaning = stripLatinParenthetical(maskAnswerInText(item.promptMeaning, display));
+      item.promptMeaning = cleanPrompt(item.promptMeaning, display);
     }
 
-    res.json({
-      items,
-      quizCount,
-      totalDays,
-      totalLearned
-    });
+    res.json({ items, quizCount, totalDays, totalLearned });
   } catch (err) {
     console.error('Quiz items error:', err);
     res.status(500).json({ error: err.message });

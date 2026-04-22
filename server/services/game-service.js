@@ -1,8 +1,10 @@
 const { queryAll, queryOne, run, queryScalar } = require('../db/helpers');
 const { saveDb } = require('../db/connection');
 const { getToday } = require('../utils/date');
+const { cleanPrompt } = require('../utils/masking');
 
 async function getGameItems(gameType, count = 20) {
+  let items = [];
   if (gameType === 'rdrill') {
     const learned = await queryAll(`
       SELECT w.*, 'word' as item_type FROM words w
@@ -10,20 +12,34 @@ async function getGameItems(gameType, count = 20) {
       WHERE w.word LIKE '%r%'
       ORDER BY RANDOM() LIMIT ?
     `, [count * 2]);
-    if (learned.length >= count) return learned;
-    const learnedIds = new Set(learned.map(w => w.id));
-    const fallback = await queryAll(`
-      SELECT *, 'word' as item_type FROM words
-      WHERE word LIKE '%r%' ORDER BY RANDOM() LIMIT ?
-    `, [count * 3]);
-    return [...learned, ...fallback.filter(w => !learnedIds.has(w.id))].slice(0, count * 2);
+    if (learned.length >= count) {
+      items = learned;
+    } else {
+      const learnedIds = new Set(learned.map(w => w.id));
+      const fallback = await queryAll(`
+        SELECT *, 'word' as item_type FROM words
+        WHERE word LIKE '%r%' ORDER BY RANDOM() LIMIT ?
+      `, [count * 3]);
+      items = [...learned, ...fallback.filter(w => !learnedIds.has(w.id))].slice(0, count * 2);
+    }
+  } else {
+    items = await queryAll(`
+      SELECT w.*, 'word' as item_type FROM words w
+      INNER JOIN learning_log ll ON ll.item_id = w.id AND ll.item_type = 'word' AND ll.is_review = 0
+      ORDER BY RANDOM() LIMIT ?
+    `, [count]);
   }
-  const words = await queryAll(`
-    SELECT w.*, 'word' as item_type FROM words w
-    INNER JOIN learning_log ll ON ll.item_id = w.id AND ll.item_type = 'word' AND ll.is_review = 0
-    ORDER BY RANDOM() LIMIT ?
-  `, [count]);
-  return words;
+
+  // Clean meanings and contexts to prevent leaks
+  for (const item of items) {
+    const display = item.word || item.phrase;
+    if (display) {
+      item.meaning = cleanPrompt(item.meaning, display);
+      item.context = cleanPrompt(item.context, display);
+    }
+  }
+
+  return items;
 }
 
 async function getAllLearnedWords() {

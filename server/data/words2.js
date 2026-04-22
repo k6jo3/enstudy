@@ -51,7 +51,7 @@ module.exports = [
     "pos": "n",
     "difficulty": 3,
     "example": "Exercise can speed up your metabolism.",
-    "exampleZh": "運動可以加速你的新陳代謝。"
+    "exampleZh": "運動可以加速新陳代謝。"
   },
   {
     "word": "fatigue",
@@ -69,7 +69,7 @@ module.exports = [
     "pos": "n",
     "difficulty": 3,
     "example": "Do not exceed the recommended dosage.",
-    "exampleZh": "請勿超過建議的劑量。"
+    "exampleZh": "請勿超過建議劑量。"
   },
   {
     "word": "inflammation",
@@ -87,7 +87,7 @@ module.exports = [
     "pos": "adj",
     "difficulty": 3,
     "example": "The flu is highly contagious.",
-    "exampleZh": "流感有很高的傳染性。"
+    "exampleZh": "流感的傳染性很高。"
   },
   {
     "word": "epidemic",
@@ -96,7 +96,7 @@ module.exports = [
     "pos": "n",
     "difficulty": 3,
     "example": "The government took action to prevent an epidemic.",
-    "exampleZh": "政府採取行動防止疫情擴散。"
+    "exampleZh": "政府採取行動以防止疫情擴散。"
   },
   {
     "word": "ointment",
@@ -105,12 +105,12 @@ module.exports = [
     "pos": "n",
     "difficulty": 3,
     "example": "Apply the ointment to the affected area twice daily.",
-    "exampleZh": "每天在患處塗抹藥膏兩次。"
+    "exampleZh": "每天在患部塗抹兩次藥膏。"
   },
   {
     "word": "rehabilitation",
     "phonetic": "/ˌriːəˌbɪlɪˈteɪʃən/",
-    "meaning": "復健；康復 (名詞)",
+    "meaning": "復健；康復",
     "pos": "n",
     "difficulty": 4,
     "example": "He is undergoing rehabilitation after knee surgery.",
@@ -132,7 +132,7 @@ module.exports = [
     "pos": "n",
     "difficulty": 3,
     "example": "The lab needs a blood specimen for testing.",
-    "exampleZh": "實驗室需要一份血液樣本來進行檢測。"
+    "exampleZh": "實驗室需要血液樣本進行檢測。"
   },
   {
     "word": "obesity",
@@ -204,7 +204,7 @@ module.exports = [
     "pos": "v",
     "difficulty": 3,
     "example": "The app encrypts your messages for security.",
-    "exampleZh": "這個應用程式會加密你的訊息以確保安全。"
+    "exampleZh": "這個應用程式會加密訊息以確保安全。"
   },
   {
     "word": "malware",
@@ -213,7 +213,7 @@ module.exports = [
     "pos": "n",
     "difficulty": 3,
     "example": "Malware can damage your computer and steal your data.",
-    "exampleZh": "惡意軟體會損壞你的電腦並竊取你的資料。"
+    "exampleZh": "惡意軟體會損壞電腦並竊取資料。"
   },
   {
     "word": "upload",
@@ -227,16 +227,16 @@ module.exports = [
   {
     "word": "debug",
     "phonetic": "/diːˈbʌɡ/",
-    "meaning": "除錯 (動詞)",
+    "meaning": "除錯",
     "pos": "v",
     "difficulty": 3,
     "example": "The developer spent hours debugging the code.",
-    "exampleZh": "開發人員花了好幾個小時除錯程式碼。"
+    "exampleZh": "開發者花了數小時幫程式碼除錯。"
   },
   {
     "word": "optimize",
     "phonetic": "/ˈɑːptɪmaɪz/",
-    "meaning": "使最佳化 (動詞)",
+    "meaning": "優化",
     "pos": "v",
     "difficulty": 3,
     "example": "We need to optimize the website for mobile devices.",
@@ -249,21 +249,21 @@ module.exports = [
     "pos": "n",
     "difficulty": 3,
     "example": "The server went down for maintenance last night.",
-    "exampleZh": "伺服器昨晚因維護而關閉了。"
+    "exampleZh": "伺服器昨晚因維護而關機了。"
   },
   {
     "word": "synchronize",
     "phonetic": "/ˈsɪŋkrənaɪz/",
-    "meaning": "使同步 (動詞)",
+    "meaning": "同步",
     "pos": "v",
     "difficulty": 3,
     "example": "Your files will synchronize across all your devices.",
-    "exampleZh": "你的檔案會在所有裝置間同步。"
+    "exampleZh": "檔案會在所有裝置間同步。"
   },
   {
     "word": "upgrade",
     "phonetic": "/ʌpˈɡreɪd/",
-    "meaning": "升級；提升規格",
+    "meaning": "升級",
     "pos": "v",
     "difficulty": 3,
     "example": "I upgraded my phone to the latest model.",
@@ -276,7 +276,7 @@ module.exports = [
     "pos": "v",
     "difficulty": 4,
     "example": "The expert was called in to authenticate the painting.",
-    "exampleZh": "專家被請來鑑定這幅畫。",
+    "exampleZh": "專家被請來鑑定這幅畫的真偽。",
     "context": "指證明某事（如藝術品或文件）是真實的。"
   },
   {
@@ -295,12 +295,12 @@ module.exports = [
     "pos": "n",
     "difficulty": 3,
     "example": "The satellite provides GPS signals around the world.",
-    "exampleZh": "衛星在全球提供GPS訊號。"
+    "exampleZh": "衛星在全球提供 GPS 訊號。"
   },
   {
     "word": "simulate",
     "phonetic": "/ˈsɪmjəleɪt/",
-    "meaning": "模擬；模仿 (動詞)",
+    "meaning": "模擬；模仿",
     "pos": "v",
     "difficulty": 3,
     "example": "The software can simulate real-world conditions.",
@@ -331,21 +331,21 @@ module.exports = [
     "pos": "adj",
     "difficulty": 3,
     "example": "The company moved its servers to an offshore location.",
-    "exampleZh": "公司把伺服器搬到了海外的地點。"
+    "exampleZh": "公司把伺服器搬到了海外地點。"
   },
   {
     "word": "cache",
     "phonetic": "/kæʃ/",
-    "meaning": "快取記憶體 (名詞/動詞)",
+    "meaning": "快取",
     "pos": "n",
     "difficulty": 3,
     "example": "Clear the browser cache to fix loading issues.",
-    "exampleZh": "清除瀏覽器快取來解決載入問題。"
+    "exampleZh": "清除瀏覽器快取以解決載入問題。"
   },
   {
     "word": "curriculum",
     "phonetic": "/kəˈrɪkjələm/",
-    "meaning": "課程大綱 (總稱)",
+    "meaning": "課程；課綱",
     "pos": "n",
     "difficulty": 3,
     "example": "The school updated its curriculum this year.",
@@ -354,11 +354,11 @@ module.exports = [
   {
     "word": "faculty",
     "phonetic": "/ˈfækəlti/",
-    "meaning": "教職員；學院",
+    "meaning": "全體教職員",
     "pos": "n",
     "difficulty": 3,
     "example": "The faculty includes many renowned professors.",
-    "exampleZh": "教職員中有許多知名的教授。"
+    "exampleZh": "教職員中有許多知名教授。"
   },
   {
     "word": "literacy",
@@ -372,16 +372,16 @@ module.exports = [
   {
     "word": "methodology",
     "phonetic": "/ˌmɛθəˈdɑːlədʒi/",
-    "meaning": "方法學；方法論",
+    "meaning": "方法論",
     "pos": "n",
     "difficulty": 3,
     "example": "They used a new research methodology.",
-    "exampleZh": "他們使用了一種新的研究方法。"
+    "exampleZh": "他們採用了一種新的研究方法。"
   },
   {
     "word": "plagiarism",
     "phonetic": "/ˈpleɪdʒərɪzəm/",
-    "meaning": "剽竊行為 (名詞)",
+    "meaning": "抄襲；剽竊",
     "pos": "n",
     "difficulty": 3,
     "example": "Plagiarism is a serious academic offense.",
@@ -390,16 +390,16 @@ module.exports = [
   {
     "word": "thesis",
     "phonetic": "/ˈθiːsɪs/",
-    "meaning": "碩士論文；論點",
+    "meaning": "學位論文；論點",
     "pos": "n",
     "difficulty": 3,
     "example": "She defended her master's thesis last week.",
-    "exampleZh": "她上週進行了碩士論文口試答辯。"
+    "exampleZh": "她上週進行了碩士論文口試。"
   },
   {
     "word": "undergraduate",
     "phonetic": "/ˌʌndərˈɡrædʒuət/",
-    "meaning": "大學生；本科生",
+    "meaning": "大學生",
     "pos": "n",
     "difficulty": 4,
     "example": "She is an undergraduate studying biology.",
@@ -412,7 +412,7 @@ module.exports = [
     "pos": "n",
     "difficulty": 3,
     "example": "You need English proficiency to apply for this program.",
-    "exampleZh": "你需要具備英文能力才能申請這個課程。"
+    "exampleZh": "具備英文能力才能申請這個課程。"
   },
   {
     "word": "syllabus",
@@ -426,17 +426,17 @@ module.exports = [
   {
     "word": "hypothesis",
     "phonetic": "/haɪˈpɑːθəsɪs/",
-    "meaning": "科學假設 (名詞)",
+    "meaning": "假設",
     "pos": "n",
     "difficulty": 3,
     "example": "The scientist tested her hypothesis through experiments.",
-    "exampleZh": "科學家透過實驗來驗證她的假設。",
+    "exampleZh": "科學家透過實驗來驗證假設。",
     "context": "未經證實的推論。"
   },
   {
     "word": "prerequisite",
     "phonetic": "/priːˈrɛkwɪzɪt/",
-    "meaning": "先決條件；必修先修課",
+    "meaning": "先決條件；先修課程",
     "pos": "n",
     "difficulty": 4,
     "example": "Biology is a prerequisite for this advanced course.",
@@ -467,7 +467,7 @@ module.exports = [
     "pos": "n",
     "difficulty": 3,
     "example": "Write a brief abstract summarizing your research.",
-    "exampleZh": "請寫一段簡短的摘要來總結你的研究。"
+    "exampleZh": "請寫一段簡短的摘要來總結研究內容。"
   },
   {
     "word": "principal",
@@ -485,7 +485,7 @@ module.exports = [
     "pos": "n",
     "difficulty": 3,
     "example": "I requested a refund for the defective product.",
-    "exampleZh": "我要求為瑕疵商品退款。"
+    "exampleZh": "我要求針對瑕疵商品退款。"
   },
   {
     "word": "expenditure",
@@ -503,12 +503,12 @@ module.exports = [
     "pos": "n",
     "difficulty": 3,
     "example": "They took out a mortgage to buy their first house.",
-    "exampleZh": "他們貸了房貸來買第一間房子。"
+    "exampleZh": "他們申辦房貸來買第一間房子。"
   },
   {
     "word": "installment",
     "phonetic": "/ɪnˈstɔːlmənt/",
-    "meaning": "分期付款 (名詞)",
+    "meaning": "分期付款",
     "pos": "n",
     "difficulty": 3,
     "example": "You can pay in monthly installments.",
@@ -527,7 +527,7 @@ module.exports = [
   {
     "word": "commodity",
     "phonetic": "/kəˈmɒdəti/",
-    "meaning": "大宗商品；日用品",
+    "meaning": "商品；日用品",
     "pos": "n",
     "difficulty": 3,
     "example": "Oil is a major commodity traded on global markets.",
@@ -537,16 +537,16 @@ module.exports = [
   {
     "word": "liable",
     "phonetic": "/ˈlaɪəbəl/",
-    "meaning": "有責任的；應負責的",
+    "meaning": "負有法律責任的",
     "pos": "adj",
     "difficulty": 3,
     "example": "The manufacturer is liable for any defects.",
-    "exampleZh": "製造商對任何瑕疵負有責任。"
+    "exampleZh": "製造商對任何瑕疵負有法律責任。"
   },
   {
     "word": "premium",
     "phonetic": "/ˈpriːmiəm/",
-    "meaning": "保費；高級的",
+    "meaning": "保險費；高級的",
     "pos": "n",
     "difficulty": 3,
     "example": "Premium members get access to exclusive deals.",
@@ -559,17 +559,17 @@ module.exports = [
     "pos": "v",
     "difficulty": 4,
     "example": "The company will reimburse your travel expenses.",
-    "exampleZh": "公司將報銷你的差旅費。",
+    "exampleZh": "公司會報銷你的差旅費。",
     "context": "指退還某人已經支付出的款項。"
   },
   {
     "word": "depreciate",
     "phonetic": "/dɪˈpriːʃieɪt/",
-    "meaning": "貶值；輕視 (動詞)",
+    "meaning": "貶值",
     "pos": "v",
     "difficulty": 3,
     "example": "Cars depreciate in value over time.",
-    "exampleZh": "汽車的價值會隨著時間貶值。"
+    "exampleZh": "汽車的價值會隨時間貶值。"
   },
   {
     "word": "fiscal",
@@ -617,21 +617,21 @@ module.exports = [
     "pos": "adj",
     "difficulty": 3,
     "example": "She leads a frugal lifestyle to save money.",
-    "exampleZh": "她過著節儉的生活來存錢。"
+    "exampleZh": "她過著節儉的生活以存錢。"
   },
   {
     "word": "appraisal",
     "phonetic": "/əˈpreɪzəl/",
-    "meaning": "估價；考核 (名詞)",
+    "meaning": "估價；考核",
     "pos": "n",
     "difficulty": 3,
     "example": "We got an appraisal of the house before selling it.",
-    "exampleZh": "我們在賣房子前先做了估價。"
+    "exampleZh": "我們在賣房前先做了估價。"
   },
   {
     "word": "voucher",
     "phonetic": "/ˈvaʊtʃər/",
-    "meaning": "兌換券；代金券",
+    "meaning": "禮券；兌換券",
     "pos": "n",
     "difficulty": 3,
     "example": "I received a gift voucher for my birthday.",
@@ -659,16 +659,16 @@ module.exports = [
   {
     "word": "ingredient",
     "phonetic": "/ɪnˈɡriːdiənt/",
-    "meaning": "食材；原料",
+    "meaning": "食材；成分",
     "pos": "n",
     "difficulty": 3,
     "example": "Fresh ingredients make a big difference in cooking.",
-    "exampleZh": "新鮮的食材讓料理有很大的差別。"
+    "exampleZh": "新鮮食材對料理的影響很大。"
   },
   {
     "word": "cuisine",
     "phonetic": "/kwɪˈziːn/",
-    "meaning": "料理；菜系",
+    "meaning": "料理；烹飪",
     "pos": "n",
     "difficulty": 3,
     "example": "Italian cuisine is popular all over the world.",
@@ -699,21 +699,21 @@ module.exports = [
     "pos": "v",
     "difficulty": 3,
     "example": "Marinate the chicken for at least two hours.",
-    "exampleZh": "把雞肉醃漬至少兩個小時。"
+    "exampleZh": "雞肉至少要醃兩個小時。"
   },
   {
     "word": "utensil",
     "phonetic": "/juːˈtɛnsəl/",
-    "meaning": "餐具；廚具",
+    "meaning": "器皿；廚具",
     "pos": "n",
     "difficulty": 3,
     "example": "Keep all cooking utensils within easy reach.",
-    "exampleZh": "把所有廚具放在伸手可及的地方。"
+    "exampleZh": "把廚具放在隨手可拿的地方。"
   },
   {
     "word": "pastry",
     "phonetic": "/ˈpeɪstri/",
-    "meaning": "糕點；酥皮",
+    "meaning": "糕點；點心",
     "pos": "n",
     "difficulty": 3,
     "example": "The bakery sells delicious pastries every morning.",
@@ -726,12 +726,12 @@ module.exports = [
     "pos": "n",
     "difficulty": 3,
     "example": "The hotel offers a breakfast buffet.",
-    "exampleZh": "飯店提供早餐自助餐。"
+    "exampleZh": "飯店提供自助式早餐。"
   },
   {
     "word": "entrée",
     "phonetic": "/ˈɑːntreɪ/",
-    "meaning": "主菜 (法文拼法)",
+    "meaning": "主菜",
     "pos": "n",
     "difficulty": 3,
     "example": "For the entrée, I ordered grilled salmon.",
@@ -740,7 +740,7 @@ module.exports = [
   {
     "word": "dietary",
     "phonetic": "/ˈdaɪəteri/",
-    "meaning": "飲食的；食物的",
+    "meaning": "飲食的",
     "pos": "adj",
     "difficulty": 3,
     "example": "Please let us know about any dietary restrictions.",
@@ -789,7 +789,7 @@ module.exports = [
     "pos": "v",
     "difficulty": 3,
     "example": "The café caters to customers with food allergies.",
-    "exampleZh": "這家咖啡廳提供食物過敏顧客特別的餐點。"
+    "exampleZh": "這家咖啡廳有為食物過敏的顧客提供特別餐點。"
   },
   {
     "word": "terrain",

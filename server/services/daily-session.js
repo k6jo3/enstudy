@@ -4,7 +4,7 @@ const wordService = require('./word-service');
 const phraseService = require('./phrase-service');
 const masteryService = require('./mastery-service');
 const errorTracker = require('./error-tracker');
-const { generateDialogues, GENERATOR_VERSION } = require('./sentence-generator');
+const { generateDialogues, generateStaticDialogues, GENERATOR_VERSION } = require('./sentence-generator');
 const roundService = require('./round-service');
 const { addDays } = require('../utils/date');
 
@@ -233,6 +233,9 @@ async function getReviewContent(date, reviewCount) {
 }
 
 // Persist dialogues so they stay the same when revisiting the same day
+// 追蹤正在背景生成中的日期，避免重複啟動
+const generatingDates = new Set();
+
 async function getOrCreateDialogues(date, words, phrases) {
   // Check if dialogues already exist for this date
   const existing = await queryAll(
@@ -251,19 +254,46 @@ async function getOrCreateDialogues(date, words, phrases) {
     await run('DELETE FROM daily_sentences WHERE session_date = ?', [date]);
   }
 
-  // Generate new dialogues and save
-  const dialogues = generateDialogues(words, phrases);
+  // 先用靜態對話立即回傳（不讓使用者等待）
+  const staticDialogues = generateStaticDialogues(words, phrases);
 
-  for (let i = 0; i < dialogues.length; i++) {
-    const d = dialogues[i];
+  // 立即存靜態版本到 DB
+  for (let i = 0; i < staticDialogues.length; i++) {
+    const d = staticDialogues[i];
     await run(
       'INSERT OR IGNORE INTO daily_sentences (session_date, item_type, item_id, dialogue_json, sort_order) VALUES (?, ?, ?, ?, ?)',
       [date, d.itemType || 'word', d.itemId || 0, JSON.stringify(d), i]
     );
   }
-
   saveDb();
-  return dialogues;
+
+  // 背景非同步用 Gemini 重新生成並覆蓋
+  if (!generatingDates.has(date)) {
+    generatingDates.add(date);
+    setImmediate(async () => {
+      try {
+        console.log(`[daily-session] 背景啟動 Gemini 對話生成 (${date})...`);
+        const aiDialogues = await generateDialogues(words, phrases);
+        // 清除靜態版本，存入 AI 版本
+        await run('DELETE FROM daily_sentences WHERE session_date = ?', [date]);
+        for (let i = 0; i < aiDialogues.length; i++) {
+          const d = aiDialogues[i];
+          await run(
+            'INSERT OR IGNORE INTO daily_sentences (session_date, item_type, item_id, dialogue_json, sort_order) VALUES (?, ?, ?, ?, ?)',
+            [date, d.itemType || 'word', d.itemId || 0, JSON.stringify(d), i]
+          );
+        }
+        saveDb();
+        console.log(`[daily-session] Gemini 對話生成完成 (${date})`);
+      } catch (err) {
+        console.error(`[daily-session] Gemini 背景生成失敗:`, err.message);
+      } finally {
+        generatingDates.delete(date);
+      }
+    });
+  }
+
+  return staticDialogues;
 }
 
 // One-time cleanup: remove old-format dialogues so they regenerate with new example-based templates

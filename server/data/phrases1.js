@@ -103,7 +103,7 @@ module.exports = [
     "phrase": "Thank you so much",
     "meaning": "非常感謝",
     "example": "Thank you so much for helping me move last weekend.",
-    "exampleZh": "非常感謝你上週末幫我搬家。",
+    "exampleZh": "上週末幫我搬家，真的太謝謝你了。",
     "difficulty": 4,
     "context": "語氣溫暖真誠、帶感情，像發自內心的感動；口語常用；比較 Thank you very much（較正式禮貌、客氣）"
   },
@@ -111,7 +111,7 @@ module.exports = [
     "phrase": "Thank you very much",
     "meaning": "非常感謝",
     "example": "Thank you very much for your time today.",
-    "exampleZh": "非常感謝您今天撥出時間。",
+    "exampleZh": "非常感謝您今天撥冗參加。",
     "difficulty": 4,
     "context": "較正式有禮的感謝，適用商務或對長輩；語氣客氣但不如 so much 那麼有感情；比較 Thank you so much（更溫暖真誠、口語化）"
   },
@@ -157,9 +157,9 @@ module.exports = [
   },
   {
     "phrase": "I don't mind",
-    "meaning": "我不介意",
+    "meaning": "我不介意；我沒差",
     "example": "I don't mind waiting a few more minutes.",
-    "exampleZh": "我不介意再等幾分鐘。",
+    "exampleZh": "我不介意再多等幾分鐘。",
     "difficulty": 3
   },
   {
@@ -1327,9 +1327,9 @@ module.exports = [
   },
   {
     "phrase": "it warms my heart",
-    "meaning": "好溫暖；好感動",
+    "meaning": "心裡暖暖的；感到很窩心",
     "example": "Seeing the kids help each other really warms my heart.",
-    "exampleZh": "看到孩子們互相幫助，真的讓我好感動。",
+    "exampleZh": "看到孩子們互相幫助，真的讓人感到很窩心。",
     "difficulty": 4
   },
   {
@@ -1357,28 +1357,28 @@ module.exports = [
     "phrase": "love at first sight",
     "meaning": "一見鍾情",
     "example": "He saw her across the room and instantly felt a strong connection.",
-    "exampleZh": "他在房間另一頭看到她時，馬上就有一種特別的感覺。", 
+    "exampleZh": "他在房間另一頭看到她時，立刻就有觸電的感覺。", 
     "difficulty": 4
   },
   {
     "phrase": "it's complicated",
     "meaning": "很複雜（形容感情狀態）",
     "example": "\"Are you two together?\" \"It's complicated. We're figuring things out.\"",
-    "exampleZh": "「你們兩個在一起嗎？」「很複雜，我們還在釐清中。」",
+    "exampleZh": "「你們兩個在一起嗎？」「關係有點複雜，還說不準。」",
     "difficulty": 4
   },
   {
     "phrase": "they're on a break",
     "meaning": "他們在冷靜期；暫時分開",
     "example": "They're not together right now. Nobody knows if they'll get back together.",
-    "exampleZh": "他們現在暫時分開，沒有人知道他們是否會復合。", 
+    "exampleZh": "他們現在分開冷靜中，沒人知道會不會復合。", 
     "difficulty": 4
   },
   {
     "phrase": "seeing someone",
     "meaning": "在跟某人交往中",
     "example": "\"Are you single?\" \"No, I'm actually seeing someone.\"",
-    "exampleZh": "「你單身嗎？」「不，我其實在跟人交往。」",
+    "exampleZh": "「你單身嗎？」「不是耶，我有在交往的對象了。」",
     "difficulty": 4
   },
   {

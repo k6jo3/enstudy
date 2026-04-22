@@ -119,7 +119,7 @@ module.exports = [
   {
     "word": "first",
     "phonetic": "/fɜːrst/",
-    "meaning": "第一的",
+    "meaning": "第一",
     "pos": "adj",
     "difficulty": 1,
     "example": "She is the first student.",
@@ -128,7 +128,7 @@ module.exports = [
   {
     "word": "second",
     "phonetic": "/ˈsɛkənd/",
-    "meaning": "第二的",
+    "meaning": "第二",
     "pos": "adj",
     "difficulty": 2,
     "example": "He is the second child.",
@@ -137,7 +137,7 @@ module.exports = [
   {
     "word": "red",
     "phonetic": "/rɛd/",
-    "meaning": "紅色的",
+    "meaning": "紅色",
     "pos": "adj",
     "difficulty": 1,
     "example": "The apple is red.",
@@ -146,7 +146,7 @@ module.exports = [
   {
     "word": "blue",
     "phonetic": "/bluː/",
-    "meaning": "藍色的",
+    "meaning": "藍色",
     "pos": "adj",
     "difficulty": 1,
     "example": "The sky is blue.",
@@ -155,7 +155,7 @@ module.exports = [
   {
     "word": "green",
     "phonetic": "/ɡriːn/",
-    "meaning": "綠色的",
+    "meaning": "綠色",
     "pos": "adj",
     "difficulty": 1,
     "example": "The grass is green.",
@@ -164,7 +164,7 @@ module.exports = [
   {
     "word": "yellow",
     "phonetic": "/ˈjɛloʊ/",
-    "meaning": "黃色的",
+    "meaning": "黃色",
     "pos": "adj",
     "difficulty": 2,
     "example": "The banana is yellow.",
@@ -173,7 +173,7 @@ module.exports = [
   {
     "word": "black",
     "phonetic": "/blæk/",
-    "meaning": "黑色的",
+    "meaning": "黑色",
     "pos": "adj",
     "difficulty": 1,
     "example": "The cat is black.",
@@ -182,7 +182,7 @@ module.exports = [
   {
     "word": "white",
     "phonetic": "/waɪt/",
-    "meaning": "白色的",
+    "meaning": "白色",
     "pos": "adj",
     "difficulty": 1,
     "example": "The snow is white.",
@@ -191,7 +191,7 @@ module.exports = [
   {
     "word": "orange",
     "phonetic": "/ˈɔːrɪndʒ/",
-    "meaning": "橘色的",
+    "meaning": "橘色",
     "pos": "adj",
     "difficulty": 2,
     "example": "She likes the orange dress.",
@@ -200,7 +200,7 @@ module.exports = [
   {
     "word": "pink",
     "phonetic": "/pɪŋk/",
-    "meaning": "粉紅色的",
+    "meaning": "粉紅色",
     "pos": "adj",
     "difficulty": 1,
     "example": "The flowers are pink.",
@@ -209,7 +209,7 @@ module.exports = [
   {
     "word": "purple",
     "phonetic": "/ˈpɜːrpəl/",
-    "meaning": "紫色的",
+    "meaning": "紫色",
     "pos": "adj",
     "difficulty": 2,
     "example": "She has a purple bag.",
@@ -218,7 +218,7 @@ module.exports = [
   {
     "word": "brown",
     "phonetic": "/braʊn/",
-    "meaning": "棕色的",
+    "meaning": "棕色",
     "pos": "adj",
     "difficulty": 1,
     "example": "The dog is brown.",
@@ -227,7 +227,7 @@ module.exports = [
   {
     "word": "gray",
     "phonetic": "/ɡreɪ/",
-    "meaning": "灰色的",
+    "meaning": "灰色",
     "pos": "adj",
     "difficulty": 1,
     "example": "The sky is gray today.",
@@ -429,7 +429,7 @@ module.exports = [
     "pos": "n",
     "difficulty": 1,
     "example": "Open your mouth.",
-    "exampleZh": "張開你的嘴巴。"
+    "exampleZh": "嘴巴張開。"
   },
   {
     "word": "tooth",
@@ -447,7 +447,7 @@ module.exports = [
     "pos": "n",
     "difficulty": 1,
     "example": "Wash your face.",
-    "exampleZh": "洗你的臉。"
+    "exampleZh": "去洗臉。"
   },
   {
     "word": "hair",
@@ -456,7 +456,7 @@ module.exports = [
     "pos": "n",
     "difficulty": 1,
     "example": "She has long hair.",
-    "exampleZh": "她有長頭髮。"
+    "exampleZh": "她頭髮很長。"
   },
   {
     "word": "hand",
@@ -465,7 +465,7 @@ module.exports = [
     "pos": "n",
     "difficulty": 1,
     "example": "Wash your hands.",
-    "exampleZh": "洗你的手。"
+    "exampleZh": "去洗手。"
   },
   {
     "word": "finger",
@@ -1572,10 +1572,10 @@ module.exports = [
     "word": "say",
     "phonetic": "/seɪ/",
     "meaning": "說",
-    "pos": "v",
+    "pos": "/v",
     "difficulty": 1,
     "example": "She said hello to me.",
-    "exampleZh": "她跟我說了你好。",
+    "exampleZh": "她跟我打招呼。",
     "context": "強調說出的「內容」，後接說的話；比較 tell（對某人說）、speak（說話能力、較正式）、talk（雙向對話）"
   },
   {
@@ -1585,7 +1585,7 @@ module.exports = [
     "pos": "v",
     "difficulty": 1,
     "example": "He speaks English well.",
-    "exampleZh": "他英文說得很好。",
+    "exampleZh": "他英文講得很好。",
     "context": "強調說話能力，較正式；常用於語言（speak English）、演講；比較 talk（雙向對話、較口語）"
   },
   {
@@ -1605,7 +1605,7 @@ module.exports = [
     "pos": "v",
     "difficulty": 1,
     "example": "Tell me a story.",
-    "exampleZh": "跟我說一個故事。",
+    "exampleZh": "講故事給我聽。",
     "context": "強調傳達資訊給某人，後接人（tell someone something）；比較 say（後接說的內容）"
   },
   {
@@ -1800,7 +1800,7 @@ module.exports = [
     "pos": "v",
     "difficulty": 1,
     "example": "I do my homework at home.",
-    "exampleZh": "我在家做功課。",
+    "exampleZh": "我在家寫功課。",
     "context": "強調「執行」動作或任務；常搭配 homework/exercise/work；比較 make（強調創造出成品）"
   },
   {

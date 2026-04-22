@@ -1,7 +1,8 @@
 const authoredDialogues = require('../data/authored-dialogues');
 const staticDialogues = require('../data/static-dialogues');
+const geminiService = require('./gemini-service');
 
-const GENERATOR_VERSION = 16;
+const GENERATOR_VERSION = 18;
 
 function hashString(value) {
   let hash = 0;
@@ -72,7 +73,7 @@ function createFallbackDialogue(item, itemType) {
   };
 }
 
-function createDialogue(item, itemType) {
+async function createDialogue(item, itemType) {
   const label = itemType === 'word' ? item.word : item.phrase;
   const authoredLines = pickAuthoredDialogue(item, itemType);
   if (authoredLines) {
@@ -87,12 +88,41 @@ function createDialogue(item, itemType) {
     };
   }
 
-  const staticDialogue = getStaticDialogue(item, itemType) || createFallbackDialogue(item, itemType);
+  // 優先使用 Gemini CLI 生成自然對話
+  try {
+    const aiResult = await geminiService.generateDialogue(item, itemType);
+    return {
+      templateVersion: GENERATOR_VERSION,
+      templateFamily: 'gemini-generated',
+      lines: aiResult.lines,
+      highlightWords: [label],
+      type: itemType,
+      itemType,
+      itemId: item.id,
+    };
+  } catch (err) {
+    console.warn(`[sentence-generator] Gemini failed for "${label}", falling back to static:`, err.message);
+  }
 
+  // Gemini 失敗時才使用靜態模板
+  const staticDialogue = getStaticDialogue(item, itemType);
+  if (staticDialogue) {
+    return {
+      templateVersion: GENERATOR_VERSION,
+      templateFamily: staticDialogue.family,
+      lines: staticDialogue.lines,
+      highlightWords: [label],
+      type: itemType,
+      itemType,
+      itemId: item.id,
+    };
+  }
+
+  const fallback = createFallbackDialogue(item, itemType);
   return {
     templateVersion: GENERATOR_VERSION,
-    templateFamily: staticDialogue.family,
-    lines: staticDialogue.lines,
+    templateFamily: fallback.family,
+    lines: fallback.lines,
     highlightWords: [label],
     type: itemType,
     itemType,
@@ -100,14 +130,66 @@ function createDialogue(item, itemType) {
   };
 }
 
-function generateDialogues(words, phrases) {
+async function generateDialogues(words, phrases) {
+  const items = [
+    ...words.map((item) => ({ item, itemType: 'word' })),
+    ...phrases.map((item) => ({ item, itemType: 'phrase' })),
+  ];
+  const results = [];
+  for (const { item, itemType } of items) {
+    results.push(await createDialogue(item, itemType));
+  }
+  return results;
+}
+
+// 純靜態版本（authored → static → fallback），不呼叫 Gemini，立即回傳
+function createStaticDialogue(item, itemType) {
+  const label = itemType === 'word' ? item.word : item.phrase;
+  const authoredLines = pickAuthoredDialogue(item, itemType);
+  if (authoredLines) {
+    return {
+      templateVersion: GENERATOR_VERSION,
+      templateFamily: 'authored-static-dialogue',
+      lines: authoredLines,
+      highlightWords: [label],
+      type: itemType,
+      itemType,
+      itemId: item.id,
+    };
+  }
+  const staticDialogue = getStaticDialogue(item, itemType);
+  if (staticDialogue) {
+    return {
+      templateVersion: GENERATOR_VERSION,
+      templateFamily: staticDialogue.family,
+      lines: staticDialogue.lines,
+      highlightWords: [label],
+      type: itemType,
+      itemType,
+      itemId: item.id,
+    };
+  }
+  const fallback = createFallbackDialogue(item, itemType);
+  return {
+    templateVersion: GENERATOR_VERSION,
+    templateFamily: fallback.family,
+    lines: fallback.lines,
+    highlightWords: [label],
+    type: itemType,
+    itemType,
+    itemId: item.id,
+  };
+}
+
+function generateStaticDialogues(words, phrases) {
   return [
-    ...words.map((item) => createDialogue(item, 'word')),
-    ...phrases.map((item) => createDialogue(item, 'phrase')),
+    ...words.map((item) => createStaticDialogue(item, 'word')),
+    ...phrases.map((item) => createStaticDialogue(item, 'phrase')),
   ];
 }
 
 module.exports = {
   GENERATOR_VERSION,
   generateDialogues,
+  generateStaticDialogues,
 };

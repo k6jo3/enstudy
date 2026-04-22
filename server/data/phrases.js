@@ -76,10 +76,10 @@ module.exports = [
   },
   {
     "phrase": "Excuse me",
-    "meaning": "打擾一下；對不起（用於引起注意或道歉）",
+    "meaning": "不好意思；打擾一下",
     "context": "用於引起注意、借過、或輕微打擾，不是真正的道歉；比較 I'm sorry（真正道歉）",
     "example": "Excuse me, could you tell me where the restroom is?",
-    "exampleZh": "打擾一下，請問洗手間在哪裡？",
+    "exampleZh": "不好意思，請問洗手間在哪裡？",
     "difficulty": 2
   },
   {
@@ -87,7 +87,7 @@ module.exports = [
     "meaning": "對不起；我很抱歉",
     "context": "日常最常見的道歉用語，也可表達同情（如 I'm sorry to hear that）；比較 Excuse me（輕微打擾）、My apologies（較正式）",
     "example": "I'm sorry for being late. The traffic was terrible.",
-    "exampleZh": "很抱歉我遲到了。交通狀況非常糟糕。",
+    "exampleZh": "抱歉我遲到了，交通狀況非常糟糕。",
     "difficulty": 2
   },
   {
@@ -95,7 +95,7 @@ module.exports = [
     "meaning": "不客氣；沒問題",
     "context": "1. 回應謝謝（不客氣）；2. 答應請求（沒問題）。強調「舉手之勞、不麻煩」；比較 it doesn't matter（用於對方道歉或表示不介意時）。",
     "example": "No problem, I can finish it by tomorrow.",
-    "exampleZh": "沒問題，我明天之前能完成。",
+    "exampleZh": "沒問題，我明天之前可以做完。",
     "difficulty": 3
   },
   {
@@ -171,7 +171,7 @@ module.exports = [
     "meaning": "起床；站起來",
     "context": "強調離開床鋪、站起來的動作；比較 wake up（強調意識清醒的那一刻）",
     "example": "I don't want to get up early on weekends.",
-    "exampleZh": "我不想在週末早起。",
+    "exampleZh": "我週末不想早起。",
     "difficulty": 1
   },
   {
