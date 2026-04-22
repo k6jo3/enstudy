@@ -22,8 +22,11 @@ function pickUSVoice(voices) {
   );
 }
 
+const DEFAULT_SERVER_VOICE = 'en-US-AriaNeural';
+
 export function useTTS() {
-  const utteranceRef = useRef(null);
+  const audioRef = useRef(null);
+  const sessionRef = useRef(0);
   const [voice, setVoice] = useState(null);
 
   useEffect(() => {
@@ -35,28 +38,58 @@ export function useTTS() {
     return () => synth.removeEventListener?.('voiceschanged', update);
   }, []);
 
-  const speak = useCallback((text, rate = 0.9) => {
+  const stop = useCallback(() => {
+    if (typeof window === 'undefined') return;
+    sessionRef.current += 1;
+    window.speechSynthesis?.cancel();
+    if (audioRef.current) {
+      audioRef.current.onerror = null;
+      audioRef.current.onplaying = null;
+      audioRef.current.onended = null;
+      audioRef.current.pause();
+      audioRef.current.src = '';
+      audioRef.current = null;
+    }
+  }, []);
+
+  const speakFallback = useCallback((text, rate, session) => {
     if (typeof window === 'undefined' || !window.speechSynthesis || !text) return;
+    if (session !== sessionRef.current) return;
     const synth = window.speechSynthesis;
     synth.cancel();
-
     const utterance = new SpeechSynthesisUtterance(text);
     utterance.lang = 'en-US';
     utterance.rate = rate;
     utterance.pitch = 1;
-
     const chosen = voice || pickUSVoice(synth.getVoices());
     if (chosen) utterance.voice = chosen;
-
-    utteranceRef.current = utterance;
     synth.speak(utterance);
   }, [voice]);
 
-  const stop = useCallback(() => {
-    if (typeof window !== 'undefined') {
-      window.speechSynthesis?.cancel();
-    }
-  }, []);
+  const speak = useCallback((text, rate = 0.9) => {
+    if (!text) return;
+    stop();
+    const session = sessionRef.current;
+
+    const serverRate = Math.round((rate - 1) * 100);
+    const url = `/api/tts?text=${encodeURIComponent(text)}&voice=${DEFAULT_SERVER_VOICE}&rate=${serverRate}`;
+    const audio = new Audio(url);
+    audioRef.current = audio;
+
+    let started = false;
+    let settled = false;
+    const fallbackOnce = () => {
+      if (settled) return;
+      settled = true;
+      if (session !== sessionRef.current) return;
+      if (audioRef.current === audio) audioRef.current = null;
+      speakFallback(text, rate, session);
+    };
+
+    audio.onplaying = () => { started = true; settled = true; };
+    audio.onerror = () => { if (!started) fallbackOnce(); };
+    audio.play().catch(() => { if (!started) fallbackOnce(); });
+  }, [speakFallback, stop]);
 
   return { speak, stop };
 }
