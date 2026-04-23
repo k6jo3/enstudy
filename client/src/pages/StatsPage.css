@@ -297,6 +297,17 @@
 .score-strong   { background: #1e40af; color: #93c5fd; }
 .score-paused   { background: #6b21a8; color: #d8b4fe; }
 
+.learned-error-rate {
+  font-size: 0.72rem;
+  min-width: 42px;
+  text-align: right;
+  flex-shrink: 0;
+}
+.err-rate-na   { color: #475569; }
+.err-rate-low  { color: #86efac; }
+.err-rate-mid  { color: #fcd34d; }
+.err-rate-high { color: #f87171; }
+
 .learned-date {
   color: #64748b;
   font-size: 0.75rem;

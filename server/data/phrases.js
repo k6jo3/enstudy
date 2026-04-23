@@ -92,8 +92,8 @@ module.exports = [
   },
   {
     "phrase": "No problem",
-    "meaning": "不客氣；沒問題",
-    "context": "1. 回應謝謝（不客氣）；2. 答應請求（沒問題）。強調「舉手之勞、不麻煩」；比較 it doesn't matter（用於對方道歉或表示不介意時）。",
+    "meaning": "沒問題；當然可以",
+    "context": "最主要用法：答應對方的請求或表示某事不麻煩（= 沒問題、舉手之勞）。口語中也可接在 Thank you 後（意思接近「哪裡」，比 You're welcome 更隨意）。不用於回應道歉 → 那種情境用 It doesn't matter / No worries。",
     "example": "No problem, I can finish it by tomorrow.",
     "exampleZh": "沒問題，我明天之前可以做完。",
     "difficulty": 3

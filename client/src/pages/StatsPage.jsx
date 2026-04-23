@@ -160,17 +160,29 @@ function LearnedWordsList({ words, phrases, filter, setFilter }) {
         <button className={filter === 'phrase' ? 'active' : ''} onClick={() => setFilter('phrase')}>片語 ({phrases.length})</button>
       </div>
       <div className="learned-table">
-        {items.map((item) => (
-          <div key={`${item.item_type}-${item.id}`} className="learned-row">
-            <button className="speak-btn-sm" onClick={() => speak(item.display)}>&#128264;</button>
-            <span className="learned-word">{item.display}</span>
-            <span className="learned-meaning">{item.meaning}</span>
-            <span className={`learned-mastery ${getScoreClass(item.score, item.paused)}`}>
-              {item.paused ? `暫停 ${item.score}分` : item.score < 0 ? '未計分' : `${item.score} 分`}
-            </span>
-            <span className="learned-date">{item.learn_date}</span>
-          </div>
-        ))}
+        {items.map((item) => {
+          const errorRate = item.review_count >= 4
+            ? (item.total_wrong / item.review_count) * 100
+            : null;
+          const errClass = errorRate === null ? 'err-rate-na'
+            : errorRate >= 30 ? 'err-rate-high'
+            : errorRate >= 15 ? 'err-rate-mid'
+            : 'err-rate-low';
+          return (
+            <div key={`${item.item_type}-${item.id}`} className="learned-row">
+              <button className="speak-btn-sm" onClick={() => speak(item.display)}>&#128264;</button>
+              <span className="learned-word">{item.display}</span>
+              <span className="learned-meaning">{item.meaning}</span>
+              <span className={`learned-mastery ${getScoreClass(item.score, item.paused)}`}>
+                {item.paused ? `暫停 ${item.score}分` : item.score < 0 ? '未計分' : `${item.score} 分`}
+              </span>
+              <span className={`learned-error-rate ${errClass}`}>
+                {errorRate === null ? '-' : `${errorRate.toFixed(1)}%`}
+              </span>
+              <span className="learned-date">{item.learn_date}</span>
+            </div>
+          );
+        })}
       </div>
     </div>
   );

@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 const errorTracker = require('../services/error-tracker');
 const masteryService = require('../services/mastery-service');
+const roundService = require('../services/round-service');
 const wordService = require('../services/word-service');
 const phraseService = require('../services/phrase-service');
 const { queryAll, queryScalar } = require('../db/helpers');
@@ -200,7 +201,7 @@ function getDynamicRatios(pools) {
 }
 
 // ---------- Core: select items by score tiers ----------
-async function selectItemsByTier(quizCount, today) {
+async function selectItemsByTier(quizCount, today, roundNumber = 1, avgReview = 0) {
   const todayItems = await queryAll(`
     SELECT
       ll.item_type, ll.item_id as id,
@@ -214,6 +215,8 @@ async function selectItemsByTier(quizCount, today) {
       CASE WHEN ll.item_type = 'word' THEN w.context ELSE p.context END as context,
       COALESCE(wm.score, -1) as score,
       COALESCE(wm.hint_count, 0) as hint_count,
+      COALESCE(wm.review_count, 0) as review_count,
+      COALESCE(wm.total_wrong, 0) as total_wrong,
       COALESCE(e.total_errors, 0) as error_count,
       'today' as tier
     FROM learning_log ll
@@ -240,6 +243,8 @@ async function selectItemsByTier(quizCount, today) {
       CASE WHEN ll.item_type = 'word' THEN w.difficulty ELSE p.difficulty END as difficulty,
       CASE WHEN ll.item_type = 'word' THEN w.context ELSE p.context END as context,
       -1 as score,
+      0 as review_count,
+      0 as total_wrong,
       COALESCE(e.total_errors, 0) as error_count,
       'untested' as tier
     FROM learning_log ll
@@ -273,6 +278,8 @@ async function selectItemsByTier(quizCount, today) {
       wm.score,
       COALESCE(wm.hint_count, 0) as hint_count,
       COALESCE(wm.just_unpaused, 0) as just_unpaused,
+      COALESCE(wm.review_count, 0) as review_count,
+      COALESCE(wm.total_wrong, 0) as total_wrong,
       COALESCE(e.total_errors, 0) as error_count
     FROM word_mastery wm
     LEFT JOIN words w ON wm.item_type = 'word' AND wm.item_id = w.id
@@ -299,8 +306,16 @@ async function selectItemsByTier(quizCount, today) {
   const pools = { today: todayItems, untested: untestedItems, score0, weak, medium, strong };
   const { dynamicRatios, dominantTier } = getDynamicRatios(pools);
 
+  // Sort each pool by error-rate priority (lifetime total_wrong / review_count),
+  // with a deficit bonus in round 2+ for under-practiced items. Falls back to dynamic
+  // error_count so today/untested items (no review_count yet) still have a sensible order.
   for (const name of Object.keys(pools)) {
-    pools[name].sort((a, b) => (b.error_count || 0) - (a.error_count || 0));
+    pools[name].sort((a, b) => {
+      const pa = masteryService.computePriorityScore(a, avgReview, roundNumber);
+      const pb = masteryService.computePriorityScore(b, avgReview, roundNumber);
+      if (pb !== pa) return pb - pa;
+      return (b.error_count || 0) - (a.error_count || 0);
+    });
   }
 
   const usedKeys = new Set();
@@ -374,7 +389,10 @@ router.get('/items', async (req, res) => {
     `) || 0;
     const quizCount = Math.min(15 + Math.floor(totalDays / 7) * 5 + Math.floor(totalLearned / 10), limit);
 
-    const items = await selectItemsByTier(quizCount, today);
+    const round = await roundService.getCurrentRound();
+    const roundNumber = round ? round.round_number : 1;
+    const avgReview = roundNumber >= 2 ? await masteryService.getAverageReviewCount() : 0;
+    const items = await selectItemsByTier(quizCount, today, roundNumber, avgReview);
     const wordDiffMap = items.some(it => it.item_type === 'phrase') ? await getWordDiffMap() : null;
 
     for (const item of items) {

@@ -59,10 +59,15 @@ function getMeaningQualifier(item) {
   return '';
 }
 
+function isPhraseLikeItem(item) {
+  return item?.item_type === 'phrase' || Boolean(item?.phrase);
+}
+
 function buildMeaningLabel(item, peers = [], { includeUsageHint = false } = {}) {
   const fullMeaning = String(item.meaning || '').trim();
-  const primaryMeaning = getPrimaryMeaning(fullMeaning);
-  const hasMultipleVariants = splitMeaningVariants(fullMeaning).length > 1;
+  const variants = splitMeaningVariants(fullMeaning);
+  const primaryMeaning = variants[0] || String(fullMeaning || '').trim();
+  const hasMultipleVariants = variants.length > 1;
   const hasSimilarPeer = peers.some((peer) => {
     if (!peer) return false;
     if (peer === item) return false;
@@ -72,13 +77,16 @@ function buildMeaningLabel(item, peers = [], { includeUsageHint = false } = {}) 
 
   const qualifier = getMeaningQualifier(item);
   const shouldQualify = qualifier && (includeUsageHint || hasMultipleVariants || hasSimilarPeer);
+  const preferredMeaning = isPhraseLikeItem(item) && hasMultipleVariants
+    ? variants.join(' / ')
+    : primaryMeaning;
 
   if (shouldQualify) {
-    return `${primaryMeaning}（${qualifier}）`;
+    return `${preferredMeaning}（${qualifier}）`;
   }
 
   if (hasMultipleVariants) {
-    return splitMeaningVariants(fullMeaning).join(' / ');
+    return variants.join(' / ');
   }
 
   return fullMeaning;

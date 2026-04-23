@@ -141,11 +141,11 @@ module.exports = [
   },
   {
     "phrase": "No problem",
-    "meaning": "不客氣（回謝謝）；沒問題（答應請求）",
+    "meaning": "沒問題；當然可以",
     "example": "No problem, I can finish it by tomorrow.",
     "exampleZh": "沒問題，我明天之前能完成。",
     "difficulty": 3,
-    "context": "只在兩種情境用：(1) 回應 Thank you（= 不客氣，較隨意，比較 You're welcome 標準正式）(2) 答應請求（= 沒問題、舉手之勞，比較 all right 較通用）。焦點在「我方不麻煩」。不用於回應道歉或小錯誤 → 那種情境用 It doesn't matter。"
+    "context": "最主要用法：答應對方的請求或表示某事不麻煩（= 沒問題、舉手之勞）。口語中也可接在 Thank you 後（意思接近「哪裡」，比 You're welcome 更隨意）。不用於回應道歉 → 那種情境用 It doesn't matter / No worries。"
   },
   {
     "phrase": "Of course",
@@ -396,9 +396,9 @@ module.exports = [
   },
   {
     "phrase": "Make sure",
-    "meaning": "確保；確認",
+    "meaning": "記得；務必確認",
     "example": "Make sure you lock the door before leaving.",
-    "exampleZh": "離開前確保把門鎖好。",
+    "exampleZh": "離開前記得把門鎖好。",
     "difficulty": 2
   },
   {
@@ -434,7 +434,7 @@ module.exports = [
     "phrase": "sit down",
     "meaning": "坐下",
     "example": "Please sit down and make yourself comfortable.",
-    "exampleZh": "請坐下，讓自己舒服一點。",
+    "exampleZh": "請坐，放輕鬆一點。",
     "difficulty": 2
   },
   {
@@ -449,7 +449,7 @@ module.exports = [
     "phrase": "come back",
     "meaning": "回來",
     "example": "When will you come back from your trip?",
-    "exampleZh": "你什麼時候從旅途回來？",
+    "exampleZh": "你旅行什麼時候回來？",
     "difficulty": 2
   },
   {
@@ -461,17 +461,17 @@ module.exports = [
   },
   {
     "phrase": "find out",
-    "meaning": "發現；查明",
+    "meaning": "弄清楚；查一下",
     "example": "I need to find out what time the store closes.",
-    "exampleZh": "我需要查明這家店幾點關門。",
+    "exampleZh": "我得查一下這家店幾點關門。",
     "difficulty": 2,
     "context": "透過查詢或偶然得知新資訊；比較 figure out（經過思考推理）、look for（主動尋找實體物品）"
   },
   {
     "phrase": "set up",
-    "meaning": "架設；創立 (片語)",
+    "meaning": "裝好；設置",
     "example": "Can you help me set up my new computer?",
-    "exampleZh": "你能幫我設置新電腦嗎？",
+    "exampleZh": "你能幫我把新電腦裝好嗎？",
     "difficulty": 1
   },
   {
@@ -531,15 +531,15 @@ module.exports = [
     "phrase": "What's wrong?",
     "meaning": "怎麼了？哪裡不對勁？（較直接）",
     "example": "You look upset. What's wrong?",
-    "exampleZh": "你看起來很沮喪。怎麼了？",
+    "exampleZh": "你看起來不太對勁，怎麼了？",
     "difficulty": 4,
     "context": "直接指出「你好像哪裡不對勁」，常用在已經察覺對方情緒、表情或狀態異常時；語氣比 What's the matter? 更直白，也比較像在問具體問題出在哪。"
   },
   {
     "phrase": "Help yourself",
-    "meaning": "請自便；請隨意",
+    "meaning": "請自便；自己拿吧",
     "example": "There's food on the table. Help yourself!",
-    "exampleZh": "桌上有食物。請隨意取用！",
+    "exampleZh": "桌上有食物，自己拿啊！",
     "difficulty": 4
   },
   {
@@ -948,10 +948,11 @@ module.exports = [
   },
   {
     "phrase": "I nearly died",
-    "meaning": "我差點嚇死；笑死我了",
+    "meaning": "我差點死掉了（誇飾）；我差點嚇死",
     "example": "When he tripped on stage, I nearly died laughing.",
-    "exampleZh": "看到他在舞台上絆倒，我笑到差點死掉。",
-    "difficulty": 3
+    "exampleZh": "看到他在舞台上絆倒，我快笑死了。",
+    "difficulty": 3,
+    "context": "本身是誇飾說法，字面不是「真的快死了」。接 laughing 時表示「快笑死了」；遇到驚嚇或尷尬語境時，也可表示「差點嚇死」。"
   },
   {
     "phrase": "that's unbelievable",

@@ -1,23 +1,23 @@
 module.exports = [
   {
     "phrase": "take the minutes",
-    "meaning": "做會議記錄",
+    "meaning": "記會議記錄",
     "example": "Could you take the minutes during today's team meeting?",
-    "exampleZh": "你能在今天的團隊會議中做會議記錄嗎？",
+    "exampleZh": "今天團隊會議你可以幫忙記一下會議記錄嗎？",
     "difficulty": 4
   },
   {
     "phrase": "set an agenda",
-    "meaning": "設定議程",
+    "meaning": "排議程；先列會議重點",
     "example": "We need to set an agenda before the quarterly review meeting.",
-    "exampleZh": "我們在季度審查會議之前需要設定議程。",
+    "exampleZh": "季度檢討會前，我們得先把議程排好。",
     "difficulty": 3
   },
   {
     "phrase": "go over the agenda",
-    "meaning": "檢視議程",
+    "meaning": "過一下議程；先看要談什麼",
     "example": "Before we begin, let's go over the agenda for today's meeting.",
-    "exampleZh": "在開始之前，我們先來檢視今天會議的議程。",
+    "exampleZh": "開始前，我們先過一下今天的議程。",
     "difficulty": 4
   },
   {
@@ -30,23 +30,23 @@ module.exports = [
   },
   {
     "phrase": "move on to the next item",
-    "meaning": "進入下一個議題",
+    "meaning": "進到下一個議題；看下一項",
     "example": "If there are no more questions, let's move on to the next item.",
-    "exampleZh": "如果沒有其他問題，我們就進入下一個議題。",
+    "exampleZh": "如果沒有其他問題，我們就進到下一個議題。",
     "difficulty": 4
   },
   {
     "phrase": "put it to a vote",
-    "meaning": "進行表決",
+    "meaning": "投票決定",
     "example": "Since we can't agree, let's put it to a vote.",
-    "exampleZh": "既然我們無法達成一致，就讓我們進行表決吧。",
+    "exampleZh": "既然我們無法達成一致，就投票決定吧。",
     "difficulty": 4
   },
   {
     "phrase": "bring to the table",
-    "meaning": "提供貢獻；提出籌碼",
+    "meaning": "能帶來什麼；能提供什麼",
     "example": "He brings years of experience to the table.",
-    "exampleZh": "他提供了多年的豐富經驗。",
+    "exampleZh": "他能帶來多年實務經驗。",
     "difficulty": 4,
     "context": "常指在談判或合作中能提供什麼價值。"
   },
@@ -74,79 +74,79 @@ module.exports = [
   },
   {
     "phrase": "run something by someone",
-    "meaning": "跟某人確認一下；先給某人看看",
+    "meaning": "先給某人過目；跟某人確認一下",
     "example": "Can I run this proposal by you before I submit it?",
-    "exampleZh": "在我提交這份提案之前，可以先給你看看嗎？",
+    "exampleZh": "我送出這份提案前，可以先給你看一下嗎？",
     "difficulty": 4
   },
   {
     "phrase": "brainstorm ideas",
-    "meaning": "腦力激盪；集思廣益",
+    "meaning": "一起想點子；腦力激盪",
     "example": "Let's schedule a session to brainstorm ideas for the product launch.",
-    "exampleZh": "我們來安排一個會議，為產品發布進行腦力激盪。",
+    "exampleZh": "我們安排個時間，一起想產品上市的點子吧。",
     "difficulty": 4
   },
   {
     "phrase": "on the agenda",
     "meaning": "在議程上；待討論的",
     "example": "The budget review is the first item on the agenda today.",
-    "exampleZh": "預算審查是今天議程上的第一個項目。",
+    "exampleZh": "預算審查是今天第一個要談的項目。",
     "difficulty": 3
   },
   {
     "phrase": "kick off a meeting",
     "meaning": "開始會議",
     "example": "Let's kick off the meeting with a quick status update from each team.",
-    "exampleZh": "我們先請各團隊快速更新現況，以此開始會議。",
+    "exampleZh": "我們先請各團隊快速更新一下現況，來開場吧。",
     "difficulty": 4
   },
   {
     "phrase": "bring someone up to speed",
-    "meaning": "讓某人了解最新情況",
+    "meaning": "讓某人快速掌握狀況",
     "example": "Can you bring the new team member up to speed on the project?",
-    "exampleZh": "你能讓新加入的團隊成員了解這個專案的最新進展嗎？",
+    "exampleZh": "你能讓新加入的團隊成員快速了解這個專案的進度嗎？",
     "difficulty": 4
   },
   {
     "phrase": "recap the main points",
-    "meaning": "摘要重點",
+    "meaning": "整理一下重點",
     "example": "Before we close, let me recap the main points we discussed today.",
-    "exampleZh": "在結束之前，讓我摘要一下我們今天討論的重點。",
+    "exampleZh": "結束前，我來整理一下今天討論的重點。",
     "difficulty": 4
   },
   {
     "phrase": "take it offline",
-    "meaning": "私下討論（不在會議中討論）",
+    "meaning": "會後再談；另外私下聊",
     "example": "This is a complex issue. Let's take it offline and discuss it after the meeting.",
-    "exampleZh": "這是個複雜的問題，我們私下討論，在會議結束後再談。",
+    "exampleZh": "這個問題比較複雜，我們會後再談。",
     "difficulty": 4
   },
   {
     "phrase": "action items",
-    "meaning": "待辦事項；行動項目",
+    "meaning": "待辦事項；接下來要做的事",
     "example": "Let me summarize the action items before we end the meeting.",
-    "exampleZh": "在結束會議之前，讓我總結一下各項待辦事項。",
+    "exampleZh": "結束會議前，我先整理一下接下來要做的事。",
     "difficulty": 3
   },
   {
     "phrase": "drop someone a line",
-    "meaning": "寫封簡短的信或訊息給某人",
+    "meaning": "傳個訊息給某人；簡單說一聲",
     "example": "Drop me a line when you have the final numbers ready.",
-    "exampleZh": "等你準備好最終數據後，給我發封短訊息。",
+    "exampleZh": "等你準備好最終數據後，傳個訊息給我。",
     "difficulty": 4
   },
   {
     "phrase": "please find attached",
-    "meaning": "請參閱附件",
+    "meaning": "附件請見；我附上了",
     "example": "Please find attached the Q3 financial report for your review.",
-    "exampleZh": "請參閱附件中的第三季財務報告，以供您審閱。",
+    "exampleZh": "我附上第三季財務報告，請你過目。",
     "difficulty": 4
   },
   {
     "phrase": "for your reference",
     "meaning": "供您參考",
     "example": "I've included the meeting notes for your reference.",
-    "exampleZh": "我已附上會議記錄，供您參考。",
+    "exampleZh": "我附上會議記錄給你參考。",
     "difficulty": 4
   },
   {
@@ -161,7 +161,7 @@ module.exports = [
     "phrase": "loop someone in",
     "meaning": "將某人加入討論或溝通中",
     "example": "Can you loop in the design team on this email thread?",
-    "exampleZh": "你能把設計團隊加入這個郵件討論串嗎？",
+    "exampleZh": "你能把設計團隊也拉進這串郵件討論嗎？",
     "difficulty": 4
   },
   {
@@ -180,16 +180,16 @@ module.exports = [
   },
   {
     "phrase": "looking forward to hearing from you",
-    "meaning": "期待您的回覆",
+    "meaning": "等你回覆；期待你的回覆",
     "example": "Thank you for your time. Looking forward to hearing from you soon.",
-    "exampleZh": "感謝您撥冗，期待您的早日回覆。",
+    "exampleZh": "謝謝你撥空，期待你盡快回覆。",
     "difficulty": 4
   },
   {
     "phrase": "in response to",
     "meaning": "回應；針對",
     "example": "In response to your request, we've prepared a detailed cost analysis.",
-    "exampleZh": "針對您的要求，我們已準備了一份詳細的成本分析。",
+    "exampleZh": "根據你的要求，我們準備了一份詳細的成本分析。",
     "difficulty": 4
   },
   {
@@ -1193,7 +1193,7 @@ module.exports = [
   },
   {
     "phrase": "speak up",
-    "meaning": "大聲點說；公開發表意見",
+    "meaning": "（請對方）把音量提高；公開發表意見",
     "example": "Could you speak up a bit? I'm having trouble hearing you.",
     "exampleZh": "你能說大聲一點嗎？我有點聽不清楚你說的話。",
     "difficulty": 2,

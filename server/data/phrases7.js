@@ -50,9 +50,9 @@ module.exports = [
   },
   {
     "phrase": "feel under the weather",
-    "meaning": "身體不舒服；有點生病",
+    "meaning": "不太舒服；有點不舒服",
     "example": "I'm feeling a bit under the weather today, so I'll stay home.",
-    "exampleZh": "我今天身體有點不舒服，所以我會待在家裡。",
+    "exampleZh": "我今天不太舒服，所以想待在家裡。",
     "difficulty": 4
   },
   {
@@ -71,16 +71,16 @@ module.exports = [
   },
   {
     "phrase": "stay hydrated",
-    "meaning": "保持水分補充；多喝水",
+    "meaning": "多補充水分；多喝水",
     "example": "It's very hot outside today. Make sure to stay hydrated.",
-    "exampleZh": "今天外面很熱。一定要多喝水補充水分。",
+    "exampleZh": "今天外面很熱，記得多喝水。",
     "difficulty": 4
   },
   {
     "phrase": "allergic reaction",
-    "meaning": "過敏反應",
+    "meaning": "過敏；出現過敏症狀",
     "example": "She had an allergic reaction to the peanuts and her face swelled up.",
-    "exampleZh": "她對花生產生了過敏反應，臉腫了起來。",
+    "exampleZh": "她對花生過敏，臉都腫起來了。",
     "difficulty": 4
   },
   {
@@ -155,9 +155,9 @@ module.exports = [
   },
   {
     "phrase": "file a report",
-    "meaning": "提交正式報告（書面）",
+    "meaning": "報案；提出正式報告",
     "example": "You should go to the police station and file a report about the theft.",
-    "exampleZh": "你應該去警察局就這起竊盜案提出報案。",
+    "exampleZh": "你應該去警察局報案，說明這起竊案。",
     "difficulty": 3,
     "context": "泛指「提交書面正式報告」，可以是警方、保險、公司內部等任何機構；比較 report a crime（專指向警方舉報「犯罪事件」，不一定有書面文件）"
   },
@@ -177,9 +177,9 @@ module.exports = [
   },
   {
     "phrase": "lock yourself out",
-    "meaning": "把自己鎖在外面",
+    "meaning": "把自己鎖在門外",
     "example": "I locked myself out of the apartment and had to call a locksmith.",
-    "exampleZh": "我把自己鎖在公寓外面，只好打電話叫鎖匠來。",
+    "exampleZh": "我把自己鎖在公寓門外，只好打電話叫鎖匠。",
     "difficulty": 4
   },
   {
@@ -191,9 +191,9 @@ module.exports = [
   },
   {
     "phrase": "at the intersection",
-    "meaning": "在十字路口",
+    "meaning": "在路口；在十字路口",
     "example": "Turn right at the intersection where you see the traffic light.",
-    "exampleZh": "在你看到紅綠燈的十字路口右轉。",
+    "exampleZh": "看到紅綠燈那個路口就右轉。",
     "difficulty": 4
   },
   {
@@ -213,9 +213,9 @@ module.exports = [
   },
   {
     "phrase": "I couldn't agree more",
-    "meaning": "我完全同意（完整句）",
+    "meaning": "我再同意不過了；完全同意",
     "example": "You think we need a vacation? I couldn't agree more!",
-    "exampleZh": "你覺得我們需要休假？我完全同意！",
+    "exampleZh": "你覺得我們需要休假？我再同意不過了！",
     "difficulty": 4,
     "context": "完整句，語氣稍正式鄭重，書面較常見，帶主詞 I；比較 couldn't agree more（口語省略主詞的簡短版，朋友間附和時常用）"
   },
@@ -228,16 +228,16 @@ module.exports = [
   },
   {
     "phrase": "to be frank",
-    "meaning": "坦白說",
+    "meaning": "說實話；坦白說",
     "example": "To be frank, I don't think this plan is going to work.",
-    "exampleZh": "坦白說，我不認為這個計畫行得通。",
+    "exampleZh": "說實話，我不覺得這個計畫行得通。",
     "difficulty": 3
   },
   {
     "phrase": "from my perspective",
-    "meaning": "從我的角度來看",
+    "meaning": "依我看；我覺得",
     "example": "From my perspective, the project went really well overall.",
-    "exampleZh": "從我的角度來看，這個專案整體進行得非常順利。",
+    "exampleZh": "依我看，這個專案整體進行得很順。",
     "difficulty": 4
   },
   {
@@ -257,16 +257,16 @@ module.exports = [
   },
   {
     "phrase": "Get out of here!",
-    "meaning": "不會吧！真的假的！（表示驚訝）",
+    "meaning": "真的假的！不會吧！（表示驚訝）",
     "example": "You met a famous actor on the street? Get out of here!",
-    "exampleZh": "你在街上遇到了一個著名演員？不會吧！",
+    "exampleZh": "你在街上遇到知名演員？真的假的！",
     "difficulty": 4
   },
   {
     "phrase": "Tell me about it",
-    "meaning": "就是說啊；我完全理解",
+    "meaning": "就是啊；可不是嗎",
     "example": "The traffic was horrible today. — Tell me about it. I was stuck for an hour.",
-    "exampleZh": "今天交通很糟糕。——就是說啊。我被困了一個小時。",
+    "exampleZh": "今天交通超糟。——可不是嗎，我塞了一個小時。",
     "difficulty": 4
   },
   {

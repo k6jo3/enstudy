@@ -214,6 +214,23 @@ async function initSchema() {
   try { db.run('ALTER TABLE word_mastery ADD COLUMN wrong_streak INTEGER DEFAULT 0'); } catch (e) { /* already exists */ }
   try { db.run('ALTER TABLE word_mastery ADD COLUMN just_unpaused INTEGER DEFAULT 0'); } catch (e) { /* already exists */ }
 
+  // total_wrong: lifetime wrong count (monotonic — never decreases). Used for error-rate-based
+  // review prioritization, distinct from the dynamic `errors` table which is reduced on correct answers.
+  let totalWrongAdded = false;
+  try {
+    db.run('ALTER TABLE word_mastery ADD COLUMN total_wrong INTEGER DEFAULT 0');
+    totalWrongAdded = true;
+  } catch (e) { /* already exists */ }
+  if (totalWrongAdded) {
+    db.run(`
+      UPDATE word_mastery SET total_wrong = COALESCE((
+        SELECT SUM(error_count) FROM errors
+        WHERE errors.item_type = word_mastery.item_type
+          AND errors.item_id = word_mastery.item_id
+      ), 0)
+    `);
+  }
+
   // Backfill score from mastery_level for existing data (0→0, 1→2, 2→4, 3→6, 4→8, 5→10)
   db.run('UPDATE word_mastery SET score = mastery_level * 2 WHERE score = 0 AND mastery_level > 0');
   db.run('UPDATE word_mastery SET paused = 1 WHERE score >= 12 AND paused = 0');

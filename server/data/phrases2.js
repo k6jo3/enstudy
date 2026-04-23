@@ -52,9 +52,9 @@ module.exports = [
   },
   {
     "phrase": "nailed it",
-    "meaning": "完美達成（常反諷使用）",
+    "meaning": "搞定了；完美示範（也常反諷）",
     "example": "You tried to make a cake and it looks like a pancake? Nailed it.",
-    "exampleZh": "你想做蛋糕結果做出來像煎餅？完美達成。",
+    "exampleZh": "你想做蛋糕結果做成煎餅？這下真是完美示範了。",
     "difficulty": 2
   },
   {
@@ -68,14 +68,14 @@ module.exports = [
     "phrase": "way to go",
     "meaning": "幹得好啊（可以是真心或諷刺）",
     "example": "You locked yourself out again? Way to go, genius.",
-    "exampleZh": "你又把自己鎖在外面了？幹得好啊，天才。",
+    "exampleZh": "你又把自己鎖在門外了？幹得好啊，天才。",
     "difficulty": 2
   },
   {
     "phrase": "no offense but",
-    "meaning": "我沒有惡意，但是...",
+    "meaning": "先說我沒惡意，不過...",
     "example": "No offense, but that outfit really doesn't match.",
-    "exampleZh": "我沒有惡意，但那套穿搭真的不搭。",
+    "exampleZh": "先說我不是故意要冒犯你，但那套穿搭真的不搭。",
     "difficulty": 4
   },
   {
@@ -89,14 +89,14 @@ module.exports = [
     "phrase": "only you would do that",
     "meaning": "只有你才會這樣做",
     "example": "Only you would show up to a party on the wrong day.",
-    "exampleZh": "只有你才會在錯誤的日子出現在派對上。",
+    "exampleZh": "也只有你會搞錯日期還跑去參加派對。",
     "difficulty": 4
   },
   {
     "phrase": "that's a good one",
-    "meaning": "這個好笑；你講的不錯",
+    "meaning": "這句有好笑；你這句不錯",
     "example": "\"I told my boss I need a raise for emotional damage.\" \"Ha, that's a good one.\"",
-    "exampleZh": "「我跟老闆說我需要加薪來補償精神損失。」「哈，這個好笑。」",
+    "exampleZh": "「我跟老闆說我需要加薪來補償精神損失。」「哈，這句有好笑。」",
     "difficulty": 4
   },
   {
@@ -117,7 +117,7 @@ module.exports = [
     "phrase": "if I were you",
     "meaning": "如果我是你的話",
     "example": "If I were you, I'd break up with him. He doesn't deserve you.",
-    "exampleZh": "如果我是你，我會跟他分手，他不配擁有你。",
+    "exampleZh": "如果我是你，我早就跟他分手了，他根本配不上你。",
     "difficulty": 3
   },
   {
@@ -129,25 +129,25 @@ module.exports = [
   },
   {
     "phrase": "honestly speaking",
-    "meaning": "老實說（較書面、正式）",
+    "meaning": "說實話（偏正式）",
     "example": "Honestly speaking, I don't think that dress looks good on her.",
-    "exampleZh": "老實說，我覺得那件洋裝穿在她身上不好看。",
+    "exampleZh": "說實話，我覺得那件洋裝穿在她身上不好看。",
     "difficulty": 4,
     "context": "與 to be honest 同義，但略偏書面正式。比較 to be honest（最常用、中性口語）、not gonna lie（最口語隨意，年輕人常用）、to tell you the truth（偏正式）。"
   },
   {
     "phrase": "think twice about it",
-    "meaning": "三思而後行（重新考慮這件事）",
+    "meaning": "再好好想想；再考慮一下",
     "example": "Before you quit your job, think twice about it. You need the income.",
-    "exampleZh": "在你辭職之前，三思而後行，你需要那份收入。",
+    "exampleZh": "你辭職前要再好好想想，你還需要那份收入。",
     "difficulty": 4,
     "context": "建議對方再仔細考慮某個特定的決定，日常口語常用。比較 look before you leap（諺語式表達，字面「跳之前先看」，較正式/格言感）。"
   },
   {
     "phrase": "go for it",
-    "meaning": "放手去做吧；衝吧",
+    "meaning": "放手去做；去試試看",
     "example": "You want to start your own business? Go for it! Life is short.",
-    "exampleZh": "你想自己創業？放手去做吧！人生苦短。",
+    "exampleZh": "你想自己創業？那就去做吧！人生苦短。",
     "difficulty": 2
   },
   {
@@ -159,9 +159,9 @@ module.exports = [
   },
   {
     "phrase": "just saying",
-    "meaning": "只是說說而已（委婉表達意見）",
+    "meaning": "我只是提一下（委婉表達意見）",
     "example": "He doesn't seem that into you. Just saying.",
-    "exampleZh": "他好像對你沒那麼有興趣，只是說說而已。",
+    "exampleZh": "他好像對你沒那麼有興趣，我只是提一下。",
     "difficulty": 3
   },
   {
@@ -201,23 +201,24 @@ module.exports = [
   },
   {
     "phrase": "here's the thing",
-    "meaning": "重點是這樣的；問題在於",
+    "meaning": "重點是；問題在於",
     "example": "Here's the thing — he never actually said he was sorry.",
-    "exampleZh": "重點是這樣的——他從來沒有真正道過歉。",
+    "exampleZh": "重點是，他從來沒有真正道過歉。",
     "difficulty": 4
   },
   {
     "phrase": "let it go",
-    "meaning": "放下吧；別再糾結了",
+    "meaning": "放下這件事；別再糾結了",
     "example": "That was years ago. You need to let it go.",
-    "exampleZh": "那都是好幾年前的事了，你需要放下了。",
-    "difficulty": 2
+    "exampleZh": "那都是好幾年前的事了，你該放下這件事了。",
+    "difficulty": 2,
+    "context": "指對過去的人事物不再執著、情緒上放下，不是字面把手上的東西放下。"
   },
   {
     "phrase": "follow your heart",
-    "meaning": "跟隨你的心",
+    "meaning": "聽從內心；照自己的想法",
     "example": "I can't tell you what to do. You need to follow your heart.",
-    "exampleZh": "我沒辦法告訴你該怎麼做，你需要跟隨自己的心。",
+    "exampleZh": "我沒辦法告訴你該怎麼做，你得聽從自己的內心。",
     "difficulty": 4
   },
   {
@@ -244,10 +245,11 @@ module.exports = [
   },
   {
     "phrase": "on another note",
-    "meaning": "換個話題",
+    "meaning": "換個話題；另外一提",
     "example": "On another note, have you tried that new ramen place downtown?",
-    "exampleZh": "換個話題，你有去試試市中心那家新的拉麵店嗎？",
-    "difficulty": 4
+    "exampleZh": "話說回來，你有去試市中心那家新拉麵店嗎？",
+    "difficulty": 4,
+    "context": "用來把話題轉到另一件事上，常見於談話中順勢帶到新話題。"
   },
   {
     "phrase": "that reminds me",
@@ -395,9 +397,9 @@ module.exports = [
   },
   {
     "phrase": "let's call it a night",
-    "meaning": "今晚就到這吧",
+    "meaning": "今晚先到這裡；收工吧",
     "example": "I'm exhausted. Let's call it a night and head home.",
-    "exampleZh": "我累壞了，今晚就到這吧，我們回家。",
+    "exampleZh": "我累壞了，今晚先到這裡吧，我們回家。",
     "difficulty": 4
   },
   {

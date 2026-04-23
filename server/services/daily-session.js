@@ -125,7 +125,7 @@ async function getDailyContent(date) {
     // Backfill: if no reviews were logged (bug: getDailyPace used wrong date),
     // check for due items now and add them
     if (reviewItems.length === 0 && pace.review > 0) {
-      reviewItems = await getReviewContent(date, pace.review);
+      reviewItems = await getReviewContent(date, pace.review, pace.roundNumber);
       for (const r of reviewItems) {
         await run(
           'INSERT OR IGNORE INTO learning_log (item_type, item_id, learn_date, is_review, round_number) VALUES (?, ?, ?, ?, ?)',
@@ -138,7 +138,7 @@ async function getDailyContent(date) {
     // First visit today — generate new content
     newWords = await wordService.getNewWords(date, pace.words, pace.roundNumber);
     newPhrases = await phraseService.getNewPhrases(date, pace.phrases, pace.roundNumber);
-    reviewItems = await getReviewContent(date, pace.review);
+    reviewItems = await getReviewContent(date, pace.review, pace.roundNumber);
 
     for (const w of newWords) {
       await run(
@@ -205,8 +205,8 @@ async function getDailyContent(date) {
 }
 
 // Mastery-based review selection
-async function getReviewContent(date, reviewCount) {
-  const dueItems = await masteryService.getDueReviews(date, reviewCount);
+async function getReviewContent(date, reviewCount, roundNumber = 1) {
+  const dueItems = await masteryService.getDueReviews(date, reviewCount, roundNumber);
   const result = [];
 
   for (const item of dueItems) {

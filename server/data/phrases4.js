@@ -60,7 +60,7 @@ module.exports = [
     "phrase": "common courtesy",
     "meaning": "基本禮貌",
     "example": "It's common courtesy to reply to emails within one business day.",
-    "exampleZh": "在一個工作天內回覆電子郵件是基本的禮貌。",
+    "exampleZh": "一個工作天內回覆電子郵件，算是基本禮貌。",
     "difficulty": 4
   },
   {
@@ -72,23 +72,23 @@ module.exports = [
   },
   {
     "phrase": "work-life balance",
-    "meaning": "工作與生活的平衡",
+    "meaning": "工作跟生活的平衡",
     "example": "The company promotes work-life balance by offering flexible working hours.",
-    "exampleZh": "公司透過提供彈性工作時間來促進員工的工作與生活平衡。",
+    "exampleZh": "公司提供彈性工時，幫助員工兼顧工作和生活。",
     "difficulty": 4
   },
   {
     "phrase": "code of conduct",
-    "meaning": "行為準則",
+    "meaning": "行為規範；公司規定",
     "example": "Every employee is expected to follow the company's code of conduct.",
-    "exampleZh": "所有員工都被期待遵守公司的行為準則。",
+    "exampleZh": "所有員工都應該遵守公司的行為規範。",
     "difficulty": 4
   },
   {
     "phrase": "zero tolerance policy",
-    "meaning": "零容忍政策",
+    "meaning": "絕不容忍；一律不接受",
     "example": "We have a zero tolerance policy for workplace harassment.",
-    "exampleZh": "我們對職場騷擾採取零容忍政策。",
+    "exampleZh": "我們對職場騷擾一律不容忍。",
     "difficulty": 4
   },
   {
@@ -220,9 +220,9 @@ module.exports = [
   },
   {
     "phrase": "make yourself at home",
-    "meaning": "請不要客氣；當自己家",
+    "meaning": "別客氣；當自己家一樣",
     "example": "Come in and make yourself at home. Can I get you something to drink?",
-    "exampleZh": "請進，不要客氣。我能幫你拿點喝的嗎？",
+    "exampleZh": "請進，當自己家就好。要不要喝點什麼？",
     "difficulty": 4
   },
   {
@@ -234,16 +234,16 @@ module.exports = [
   },
   {
     "phrase": "help someone out",
-    "meaning": "幫某人的忙",
+    "meaning": "幫某人一把",
     "example": "My neighbor helped me out when my car wouldn't start this morning.",
-    "exampleZh": "今天早上我的車發不動，鄰居幫了我的忙。",
+    "exampleZh": "今天早上我的車發不動，鄰居幫了我一把。",
     "difficulty": 4
   },
   {
     "phrase": "What's the matter?",
     "meaning": "怎麼了？出什麼事了？（語氣較關切）",
     "example": "You look upset. What's the matter?",
-    "exampleZh": "你看起來很沮喪。怎麼了？",
+    "exampleZh": "你看起來心情不太好，怎麼了？",
     "difficulty": 4,
     "context": "語氣較關切、帶擔心，用於對方明顯不對勁時的關心詢問，常見於長輩對晚輩或親近關係；比較 What's wrong?（較直接，像在問哪裡出問題）、What's up?（隨意招呼語「最近怎樣」，通常不是在關心狀況）"
   },
@@ -265,14 +265,14 @@ module.exports = [
     "phrase": "It's been ages",
     "meaning": "好久了；很長一段時間了",
     "example": "It's been ages since we last went to the beach together.",
-    "exampleZh": "我們上次一起去海邊已經是很久以前的事了。",
+    "exampleZh": "我們真的好久沒一起去海邊了。",
     "difficulty": 4
   },
   {
     "phrase": "I'm broke",
     "meaning": "我沒錢了；我身無分文",
     "example": "I can't go shopping this weekend. I'm totally broke.",
-    "exampleZh": "我這個週末不能去購物了。我完全身無分文。",
+    "exampleZh": "我這個週末不能去逛街了，我現在真的沒錢。",
     "difficulty": 2
   },
   {
@@ -321,9 +321,9 @@ module.exports = [
   },
   {
     "phrase": "check in",
-    "meaning": "辦理入住/報到（動詞片語）",
+    "meaning": "辦入住；辦理報到",
     "example": "We need to check in at the hotel before 3 PM.",
-    "exampleZh": "我們需要在下午三點之前辦理飯店入住手續。",
+    "exampleZh": "我們得在下午三點前到飯店辦好入住。",
     "difficulty": 2,
     "context": "動詞片語，指「辦理」入住或報到的動作（飯店、機場、醫院等）；比較 check-in（加連字號，當名詞或形容詞用，指「入住/報到的這件事或櫃台」，如 check-in time、check-in counter）"
   },
@@ -331,7 +331,7 @@ module.exports = [
     "phrase": "check out",
     "meaning": "辦理退房；結帳離開",
     "example": "What time do we have to check out of the hotel tomorrow?",
-    "exampleZh": "我們明天要幾點之前辦理飯店退房？",
+    "exampleZh": "我們明天最晚幾點前要退房？",
     "difficulty": 2
   },
   {
@@ -500,7 +500,7 @@ module.exports = [
   },
   {
     "phrase": "dig in",
-    "meaning": "開動吧；開始吃",
+    "meaning": "開動；開始吃",
     "example": "The food is on the table. Let's dig in!",
     "exampleZh": "食物都上桌了。我們開動吧！",
     "difficulty": 1
@@ -1405,7 +1405,7 @@ module.exports = [
   },
   {
     "phrase": "what a rip-off",
-    "meaning": "好坑；太貴了吧",
+    "meaning": "太坑人了；貴得離譜",
     "example": "Fifty dollars for a sandwich? What a rip-off!",
     "exampleZh": "一個三明治要五十美金？也太坑了吧！",
     "difficulty": 4

@@ -98,7 +98,9 @@ async function updateMastery(itemType, itemId, isCorrect, date, questionMode) {
     const extraPenalty = newWrongStreak > 2 ? (newWrongStreak - 2) * 0.1 : 0;
     scoreDelta = base - extraPenalty;
   }
-  const newScore = Math.max(0, Math.min(12, (row.score || 0) + scoreDelta));
+  // Round to 1 decimal place (half-up) to avoid float drift like 10.400000001
+  const rawScore = Math.max(0, Math.min(12, (row.score || 0) + scoreDelta));
+  const newScore = Math.round(rawScore * 10) / 10;
   const newPaused = newScore >= 12 ? 1 : (row.paused || 0);
   const hintInc = questionMode === 'hint' ? 1 : 0;
 
@@ -107,9 +109,10 @@ async function updateMastery(itemType, itemId, isCorrect, date, questionMode) {
      SET mastery_level = ?, review_count = review_count + 1, correct_streak = ?,
          wrong_streak = ?, next_review_date = ?, last_review_date = ?,
          score = ?, paused = ?, hint_count = COALESCE(hint_count, 0) + ?,
+         total_wrong = COALESCE(total_wrong, 0) + ?,
          just_unpaused = 0
      WHERE item_type = ? AND item_id = ?`,
-    [newLevel, newStreak, newWrongStreak, nextReview, date, newScore, newPaused, hintInc, itemType, itemId]
+    [newLevel, newStreak, newWrongStreak, nextReview, date, newScore, newPaused, hintInc, isCorrect ? 0 : 1, itemType, itemId]
   );
 
   // Every 2 consecutive correct answers, reduce 1 error count
@@ -120,18 +123,61 @@ async function updateMastery(itemType, itemId, isCorrect, date, questionMode) {
   saveDb();
 }
 
-// Called when daily learning is completed.
-// All paused items lose 0.7 points. If score drops below 6, unpause and mark just_unpaused.
+// Called when daily learning is completed. Paused items decay each day so mastery eventually
+// falls back below the pause threshold. Decay is tiered by practice volume + lifetime error rate:
+//   - ≥200 attempts & err ≥15% → -0.9  (volatile despite heavy practice)
+//   - ≥150 attempts & err ≤ 5% → -0.6  (well-mastered, decay slower)
+//   - ≥100 attempts & err ≥15% → -0.8
+//   - otherwise                 → -0.7
+// If score drops below 6, unpause and mark just_unpaused.
 async function decayPausedItems() {
-  await run(`UPDATE word_mastery SET score = score - 0.7 WHERE paused = 1`);
+  await run(`
+    UPDATE word_mastery SET score = ROUND(score - CASE
+      WHEN review_count >= 200
+           AND review_count > 0
+           AND (COALESCE(total_wrong, 0) * 1.0 / review_count) >= 0.15 THEN 0.9
+      WHEN review_count >= 150
+           AND review_count > 0
+           AND (COALESCE(total_wrong, 0) * 1.0 / review_count) <= 0.05 THEN 0.6
+      WHEN review_count >= 100
+           AND review_count > 0
+           AND (COALESCE(total_wrong, 0) * 1.0 / review_count) >= 0.15 THEN 0.8
+      ELSE 0.7
+    END, 1)
+    WHERE paused = 1
+  `);
   await run(`UPDATE word_mastery SET paused = 0, just_unpaused = 1 WHERE paused = 1 AND score < 6`);
   saveDb();
 }
 
-async function getDueReviews(date, limit = 40) {
+// Error-rate priority: lifetime total_wrong / review_count, ignored under MIN_ATTEMPTS.
+// Round-2+ bonus: under-practiced items (review_count < avg) get a deficit bonus so
+// less-practiced / error-prone items float to the top on the next round.
+const ERROR_RATE_MIN_ATTEMPTS = 4;
+const DEFICIT_WEIGHT = 0.5;
+
+function computePriorityScore(row, avgReview, roundNumber) {
+  const reviewCount = row.review_count || 0;
+  const totalWrong = row.total_wrong || 0;
+  const errorRate = reviewCount >= ERROR_RATE_MIN_ATTEMPTS ? totalWrong / reviewCount : 0;
+  let deficit = 0;
+  if (roundNumber >= 2 && avgReview > 0 && reviewCount < avgReview) {
+    deficit = (1 - reviewCount / avgReview) * DEFICIT_WEIGHT;
+  }
+  return errorRate + deficit;
+}
+
+async function getAverageReviewCount() {
+  return await queryScalar('SELECT AVG(review_count) FROM word_mastery WHERE review_count > 0') || 0;
+}
+
+async function getDueReviews(date, limit = 40, roundNumber = 1) {
   const candidateLimit = Math.max(limit * 3, limit);
+  const avgReview = roundNumber >= 2 ? await getAverageReviewCount() : 0;
+
   const rows = await queryAll(`
     SELECT wm.item_type, wm.item_id, wm.mastery_level, wm.review_count,
+           COALESCE(wm.total_wrong, 0) as total_wrong,
            wm.correct_streak, COALESCE(wm.wrong_streak, 0) as wrong_streak,
            COALESCE(wm.just_unpaused, 0) as just_unpaused,
            wm.next_review_date, wm.last_review_date,
@@ -144,21 +190,17 @@ async function getDueReviews(date, limit = 40) {
       GROUP BY item_type, item_id
     ) err ON err.item_type = wm.item_type AND err.item_id = wm.item_id
     WHERE wm.next_review_date <= ?
-    ORDER BY wm.just_unpaused DESC,
-             overdue_days DESC,
-             err.total_errors DESC,
-             COALESCE(wm.wrong_streak, 0) DESC,
-             wm.mastery_level ASC,
-             COALESCE(wm.last_review_date, '') ASC
     LIMIT ?
   `, [date, date, candidateLimit]);
 
   const seeded = rows
     .slice()
+    .map(row => ({ ...row, priority_score: computePriorityScore(row, avgReview, roundNumber) }))
     .sort((left, right) => {
       const priorityDelta =
         (right.just_unpaused - left.just_unpaused) ||
         (right.overdue_days - left.overdue_days) ||
+        (right.priority_score - left.priority_score) ||
         (right.total_errors - left.total_errors) ||
         (right.wrong_streak - left.wrong_streak) ||
         (left.mastery_level - right.mastery_level) ||
@@ -264,6 +306,9 @@ module.exports = {
   getMasteryStats,
   decayPausedItems,
   getAverageScore,
+  getAverageReviewCount,
+  computePriorityScore,
+  ERROR_RATE_MIN_ATTEMPTS,
   getIntervalDays,
   INTERVALS
 };

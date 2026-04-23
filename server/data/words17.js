@@ -1226,12 +1226,13 @@ module.exports = [
   },
   {
     "word": "dead",
-    "phonetic": "",
-    "meaning": "笑死了；太好笑了",
-    "pos": "phrase",
+    "phonetic": "/dɛd/",
+    "meaning": "死亡的；沒電的；完全的",
+    "pos": "adj",
     "difficulty": 1,
-    "example": "Did you see that meme? I'm dead. I can't stop laughing.",
-    "exampleZh": "你看到那個表情包了嗎？我笑死了，停不下來。"
+    "example": "The battery is dead.",
+    "exampleZh": "電池沒電了。",
+    "context": "主要意思：死亡的、沒電/沒用的、完全地（dead silent 死寂）。口語 'I'm dead' 是誇飾說法，表示某件事太好笑或太誇張，類似中文「我笑死了」，僅限非正式對話。"
   },
   {
     "word": "negotiate",

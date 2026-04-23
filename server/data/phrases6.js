@@ -44,9 +44,9 @@ module.exports = [
   },
   {
     "phrase": "read between the lines",
-    "meaning": "讀懂弦外之音；察言觀色",
+    "meaning": "聽出話裡有話；看出沒明說的意思",
     "example": "If you read between the lines, you'll see he's not happy.",
-    "exampleZh": "如果你讀懂他的弦外之音，你會發現他並不高興。",
+    "exampleZh": "如果你聽得出他話裡有話，就知道他其實不太開心。",
     "difficulty": 4,
     "context": "從言談或文字中體會「未明說的隱含意義」，對象是文本或個人對話；比較 read the room（察覺「現場群體」的氣氛，決定該不該說什麼）"
   },

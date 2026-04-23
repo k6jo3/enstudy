@@ -31,6 +31,8 @@ router.get('/learned', async (req, res) => {
              COALESCE(wm.mastery_level, 0) as mastery_level,
              COALESCE(wm.score, -1) as score,
              COALESCE(wm.paused, 0) as paused,
+             COALESCE(wm.review_count, 0) as review_count,
+             COALESCE(wm.total_wrong, 0) as total_wrong,
              wm.next_review_date,
              ll.learn_date
       FROM words w
@@ -44,6 +46,8 @@ router.get('/learned', async (req, res) => {
              COALESCE(wm.mastery_level, 0) as mastery_level,
              COALESCE(wm.score, -1) as score,
              COALESCE(wm.paused, 0) as paused,
+             COALESCE(wm.review_count, 0) as review_count,
+             COALESCE(wm.total_wrong, 0) as total_wrong,
              wm.next_review_date,
              ll.learn_date
       FROM phrases p
