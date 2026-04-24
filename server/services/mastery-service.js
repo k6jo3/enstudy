@@ -171,6 +171,16 @@ async function getAverageReviewCount() {
   return await queryScalar('SELECT AVG(review_count) FROM word_mastery WHERE review_count > 0') || 0;
 }
 
+// Returns a Set of "type:id" strings for items with error_rate > threshold (default 10%).
+// Only items with review_count >= ERROR_RATE_MIN_ATTEMPTS qualify.
+async function getHighErrorRateSet(threshold = 0.10) {
+  const rows = await queryAll(`
+    SELECT item_type, item_id FROM word_mastery
+    WHERE review_count >= ? AND total_wrong * 1.0 / review_count > ?
+  `, [ERROR_RATE_MIN_ATTEMPTS, threshold]);
+  return new Set(rows.map(r => `${r.item_type}:${r.item_id}`));
+}
+
 async function getDueReviews(date, limit = 40, roundNumber = 1) {
   const candidateLimit = Math.max(limit * 3, limit);
   const avgReview = roundNumber >= 2 ? await getAverageReviewCount() : 0;
@@ -307,6 +317,7 @@ module.exports = {
   decayPausedItems,
   getAverageScore,
   getAverageReviewCount,
+  getHighErrorRateSet,
   computePriorityScore,
   ERROR_RATE_MIN_ATTEMPTS,
   getIntervalDays,

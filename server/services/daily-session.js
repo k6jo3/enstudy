@@ -169,11 +169,11 @@ async function getDailyContent(date) {
     saveDb();
   }
 
-  const errorSet = await errorTracker.getErrorSet();
+  const highErrSet = await masteryService.getHighErrorRateSet(0.10);
 
   const markErrors = (items, type) => items.map(item => ({
     ...item,
-    hasError: errorSet.has(`${type}:${item.id}`)
+    hasError: highErrSet.has(`${type}:${item.id}`)
   }));
 
   newWords = markErrors(newWords, 'word');
@@ -189,7 +189,7 @@ async function getDailyContent(date) {
     newPhrases,
     reviewItems: reviewItems.map(r => ({
       ...r,
-      hasError: errorSet.has(`${r.item_type}:${r.id}`),
+      hasError: highErrSet.has(`${r.item_type}:${r.id}`),
       mastery_level: r.mastery_level ?? 0,
       review_count: r.review_count ?? 0
     })),

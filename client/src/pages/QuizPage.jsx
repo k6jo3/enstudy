@@ -25,7 +25,7 @@ function QuizPage() {
           item_type: item.item_type || (item.word ? 'word' : 'phrase'),
           display: item.word || item.phrase,
           hint: item.promptMeaning || item.meaning,
-          hasError: (item.error_count || 0) > 0
+          hasError: (item.review_count || 0) >= 4 && (item.total_wrong || 0) / item.review_count > 0.10
         })));
     }
   }, [data]);

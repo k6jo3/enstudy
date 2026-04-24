@@ -144,9 +144,9 @@ function LearnPage() {
     if (phase === 'review' && reviewItems.length > 0) {
       const item = reviewItems[currentIndex];
       if (item.item_type === 'word' || item.word) {
-        return <WordCard word={item} hasError onNext={handleNext} />;
+        return <WordCard word={item} hasError={!!item.hasError} onNext={handleNext} />;
       }
-      return <PhraseCard phrase={item} hasError onNext={handleNext} />;
+      return <PhraseCard phrase={item} hasError={!!item.hasError} onNext={handleNext} />;
     }
 
     if (phase === 'words' && newWords.length > 0) {
