@@ -553,9 +553,10 @@ module.exports = [
   },
   {
     "phrase": "stand-up",
-    "meaning": "脫口秀",
+    "meaning": "單口喜劇（站立喜劇）",
+    "context": "stand-up comedy 的縮寫，指一個人「站」在台上講笑話的單人喜劇表演（如 Dave Chappelle）；中文常與 talk show（主持人＋來賓的訪談節目）混用「脫口秀」一詞，但兩者是不同形式",
     "example": "His stand-up special on streaming had everyone laughing nonstop.",
-    "exampleZh": "他在串流平台上的脫口秀特輯讓大家笑個不停。",
+    "exampleZh": "他在串流平台上的單口喜劇特輯讓大家笑個不停。",
     "difficulty": 2
   },
   {

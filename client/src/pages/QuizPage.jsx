@@ -12,8 +12,18 @@ function QuizPage() {
   const [result, setResult] = useState(null);
   const [score, setScore] = useState({ correct: 0, wrong: 0 });
   const [finished, setFinished] = useState(false);
+  const [autoSpeak, setAutoSpeak] = useState(() => {
+    if (typeof window === 'undefined') return false;
+    return window.localStorage.getItem('quiz.autoSpeak') === '1';
+  });
   const inputRef = useRef(null);
   const { speak } = useTTS();
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      window.localStorage.setItem('quiz.autoSpeak', autoSpeak ? '1' : '0');
+    }
+  }, [autoSpeak]);
 
   // Lock quizItems on first successful load (StrictMode safety)
   const loadedRef = useRef(false);
@@ -39,6 +49,22 @@ function QuizPage() {
       inputRef.current.focus();
     }
   }, [quizMode, currentIndex]);
+
+  // Auto-play voice when entering a new question
+  useEffect(() => {
+    if (autoSpeak && item?.display && !result) {
+      speak(item.display);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [currentIndex, item?.display, autoSpeak]);
+
+  // Auto-play voice after answer is revealed
+  useEffect(() => {
+    if (autoSpeak && result && item?.display) {
+      speak(item.display);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [result]);
 
   useEffect(() => {
     const handleKeyDown = (e) => {
@@ -157,7 +183,17 @@ function QuizPage() {
     <div className="quiz-page">
       <div className="quiz-header">
         <h2>單字測驗</h2>
-        <span className="quiz-progress">{currentIndex + 1} / {quizItems.length}</span>
+        <div className="quiz-header-right">
+          <label className="auto-speak-toggle" title="開啟後：每題開始與答題後各自動播放一次發音">
+            <input
+              type="checkbox"
+              checked={autoSpeak}
+              onChange={e => setAutoSpeak(e.target.checked)}
+            />
+            <span>&#128264; 自動播放</span>
+          </label>
+          <span className="quiz-progress">{currentIndex + 1} / {quizItems.length}</span>
+        </div>
       </div>
 
       <div className="quiz-info-bar">
