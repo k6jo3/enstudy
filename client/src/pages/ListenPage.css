@@ -49,6 +49,20 @@
   margin-bottom: 2rem;
 }
 
+.listen-answer-shape {
+  font-family: 'Courier New', Consolas, monospace;
+  white-space: pre-wrap;
+  font-size: 1.2rem;
+  letter-spacing: 0.08em;
+  color: #fbbf24;
+  background: #0f172a;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  border: 1px dashed #475569;
+}
+
 .play-btn {
   padding: 1rem 2rem;
   background: #0f172a;

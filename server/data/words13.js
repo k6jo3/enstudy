@@ -1188,15 +1188,6 @@ module.exports = [
     "exampleZh": "屋主有責任維護房屋的外觀。"
   },
   {
-    "word": "jetlag",
-    "phonetic": "/ˈdʒɛtlæɡ/",
-    "meaning": "時差",
-    "pos": "n",
-    "difficulty": 2,
-    "example": "It took me three days to recover from jetlag after the long flight.",
-    "exampleZh": "坐了長途飛行後，我花了三天才從時差中恢復。"
-  },
-  {
     "word": "crosswalk",
     "phonetic": "/ˈkrɔːswɔːk/",
     "meaning": "行人穿越道；斑馬線",
@@ -1717,15 +1708,6 @@ module.exports = [
     "difficulty": 2,
     "example": "She found a vintage jacket at the thrift store for only five dollars.",
     "exampleZh": "她在二手商店只花了五美元就找到了一件復古夾克。"
-  },
-  {
-    "word": "secondhand",
-    "phonetic": "/ˌsɛkəndˈhænd/",
-    "meaning": "二手的",
-    "pos": "adj",
-    "difficulty": 3,
-    "example": "He bought a secondhand bicycle that was still in great condition.",
-    "exampleZh": "他買了一輛仍然狀況很好的二手腳踏車。"
   },
   {
     "word": "browse",

@@ -4,14 +4,16 @@ module.exports = [
     "meaning": "獲得動力；加速進展",
     "example": "The marketing campaign is gaining momentum and traffic has doubled.",
     "exampleZh": "行銷活動正在加速推進，網站流量已翻倍。",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "指事情原本開始得普通，但後來越來越順、越來越多人支持或成效越來越明顯。常用在專案、活動、改革或市場趨勢。"
   },
   {
     "phrase": "a dry run",
     "meaning": "預演；試跑",
     "example": "Let's do a dry run of the presentation before the actual event.",
     "exampleZh": "在正式活動之前，我們先做一次簡報的預演。",
-    "difficulty": 2
+    "difficulty": 2,
+    "context": "指正式上場前先完整演練一次，用來找問題、抓時間或熟悉流程。和 practice 類似，但更強調模擬正式情境。"
   },
   {
     "phrase": "back to the drawing board",
@@ -26,189 +28,216 @@ module.exports = [
     "meaning": "削減成本",
     "example": "The company is looking for ways to cut costs without affecting quality.",
     "exampleZh": "公司正在尋找在不影響品質的情況下削減成本的方法。",
-    "difficulty": 2
+    "difficulty": 2,
+    "context": "指降低營運或生產成本，通常用在公司經營、預算控管。比 save money 更偏組織層面的成本管理。"
   },
   {
     "phrase": "quality assurance",
     "meaning": "品質保證（QA）",
     "example": "Every product must pass quality assurance testing before it ships.",
     "exampleZh": "每件產品在出貨前都必須通過品質保證測試。",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "指確保產品或服務品質符合標準的一整套流程，常縮寫為 QA。不是單一測試，而是整體品質控管。"
   },
   {
     "phrase": "a roadmap",
     "meaning": "路線圖；發展藍圖",
     "example": "The product team presented a roadmap for the next 12 months.",
     "exampleZh": "產品團隊提出了未來十二個月的發展路線圖。",
-    "difficulty": 2
+    "difficulty": 2,
+    "context": "指未來一段時間的計畫藍圖，通常列出目標、時程和主要里程碑。常用在產品、專案或策略規劃。"
   },
   {
     "phrase": "dress code",
     "meaning": "服裝規定",
     "example": "Our office has a business casual dress code from Monday to Thursday.",
     "exampleZh": "我們辦公室從週一到週四採用商務休閒的服裝規定。",
-    "difficulty": 3
+    "difficulty": 3,
+    "context": "指某個場所或活動對穿著的正式規定，例如辦公室、學校或婚禮。重點是規範，不是穿衣風格本身。"
   },
   {
     "phrase": "business casual",
     "meaning": "商務休閒（穿著風格）",
     "example": "The company recently switched to a business casual dress code.",
     "exampleZh": "公司最近改採商務休閒的服裝規定。",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "指商務休閒穿著，比正式西裝輕鬆，但仍要看起來專業得體。常見於辦公室 dress code。"
   },
   {
     "phrase": "common courtesy",
     "meaning": "基本禮貌",
     "example": "It's common courtesy to reply to emails within one business day.",
     "exampleZh": "一個工作天內回覆電子郵件，算是基本禮貌。",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "指一般人都應該具備的基本禮貌，不需要特別提醒的社交常識。語氣常帶有這本來就是基本尊重的意味。"
   },
   {
     "phrase": "maintain professionalism",
     "meaning": "保持專業態度",
     "example": "Even in stressful situations, it's important to maintain professionalism.",
     "exampleZh": "即使在壓力很大的情況下，保持專業態度也是很重要的。",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "指在工作場合保持專業態度，包括說話方式、情緒管理與行為分寸。常用於客戶應對或壓力情境。"
   },
   {
     "phrase": "work-life balance",
     "meaning": "工作跟生活的平衡",
     "example": "The company promotes work-life balance by offering flexible working hours.",
     "exampleZh": "公司提供彈性工時，幫助員工兼顧工作和生活。",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "指工作和私人生活之間的平衡，不只是工時長短，也包括休息、家庭與身心壓力管理。"
   },
   {
     "phrase": "code of conduct",
     "meaning": "行為規範；公司規定",
     "example": "Every employee is expected to follow the company's code of conduct.",
     "exampleZh": "所有員工都應該遵守公司的行為規範。",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "指組織或場合要求成員遵守的行為準則，通常是正式文件。比 common courtesy 更制度化。"
   },
   {
     "phrase": "zero tolerance policy",
     "meaning": "絕不容忍；一律不接受",
     "example": "We have a zero tolerance policy for workplace harassment.",
     "exampleZh": "我們對職場騷擾一律不容忍。",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "指對某種行為完全不容忍，一旦違反就會立即處理。常見於騷擾、安全或違規政策。"
   },
   {
     "phrase": "clock in and clock out",
     "meaning": "打卡上班和打卡下班",
     "example": "All hourly employees must clock in and clock out using the time tracking system.",
     "exampleZh": "所有計時員工都必須使用工時追蹤系統打卡上下班。",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "指上下班打卡記錄工時，通常一起說來表示完整出勤流程。常用在人事、排班或工時制度。"
   },
   {
     "phrase": "take a personal day",
     "meaning": "請一天私人假",
     "example": "She decided to take a personal day to handle some family matters.",
     "exampleZh": "她決定請一天私人假，處理一些家庭事務。",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "指為了私人事務請一天假，不一定是生病。常見於需要處理家庭、身心或個人安排時。"
   },
   {
     "phrase": "water cooler talk",
     "meaning": "茶水間閒聊",
     "example": "A lot of useful information is exchanged during water cooler talk.",
     "exampleZh": "很多有用的資訊都是在茶水間閒聊時交流的。",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "指辦公室裡非正式的閒聊，像茶水間或走廊聊天。常帶有八卦、消息交換或輕鬆社交意味。"
   },
   {
     "phrase": "cc etiquette",
     "meaning": "副本寄送的禮儀",
     "example": "Good cc etiquette means only copying people who truly need the information.",
     "exampleZh": "良好的副本寄送禮儀是指只將郵件副本發給真正需要該資訊的人。",
-    "difficulty": 3
+    "difficulty": 3,
+    "context": "指寄 email 時副本抄送的基本規矩，例如不要亂抄、不該知道的人不要加。重點是郵件禮儀。"
   },
   {
     "phrase": "professional development",
     "meaning": "專業發展",
     "example": "The company invests heavily in professional development for its employees.",
     "exampleZh": "公司大力投資於員工的專業發展。",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "指提升工作能力與職涯成長的活動，例如培訓、證照、指導或進修。比一般學習更偏職場發展。"
   },
   {
     "phrase": "workplace diversity",
     "meaning": "職場多元化",
     "example": "Workplace diversity brings fresh perspectives and drives innovation.",
     "exampleZh": "職場多元化帶來了新鮮的視角，並推動了創新。",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "指職場成員在背景、性別、文化、經驗等方面的多元性。常用於人資、組織文化和招聘討論。"
   },
   {
     "phrase": "a written warning",
     "meaning": "書面警告",
     "example": "After repeated tardiness, he received a written warning from HR.",
     "exampleZh": "在多次遲到之後，他收到了人資部門發出的書面警告。",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "指正式書面警告，通常代表違規紀錄已被留下來。比口頭提醒更嚴重，常出現在人事管理流程中。"
   },
   {
     "phrase": "follow proper channels",
     "meaning": "按照正規管道處理",
     "example": "If you have a grievance, please follow proper channels and speak with HR first.",
     "exampleZh": "如果您有申訴，請按照正規管道處理，先與人資部門溝通。",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "指按照正式程序處理事情，不要私下越級或亂找人。常用於申訴、報告問題或行政流程。"
   },
   {
     "phrase": "employee handbook",
     "meaning": "員工手冊",
     "example": "Please refer to the employee handbook for information on leave policies.",
     "exampleZh": "請參閱員工手冊，了解請假政策的相關資訊。",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "指員工手冊，裡面整理公司制度、福利、假別和規範。通常是新進員工或查政策時會參考的文件。"
   },
   {
     "phrase": "business ethics",
     "meaning": "商業道德",
     "example": "Training on business ethics is mandatory for all employees annually.",
     "exampleZh": "商業道德培訓是所有員工每年必須參加的課程。",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "指商業活動中的道德標準，例如誠信、利益衝突或公平交易。常見於企業治理與合規課程。"
   },
   {
     "phrase": "a game changer",
     "meaning": "改變遊戲規則的事物",
     "example": "AI technology has been a game changer for the customer service industry.",
     "exampleZh": "人工智慧技術已成為客服行業的一項顛覆性改變。",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "指能徹底改變局勢、做法或競爭條件的事物，不只是有幫助，而是帶來明顯轉折。"
   },
   {
     "phrase": "a steep learning curve",
     "meaning": "需要學習很多東西；學習曲線陡峭",
     "example": "The new software has a steep learning curve, so plan extra training time.",
     "exampleZh": "這款新軟體的學習曲線很陡峭，因此要規劃額外的培訓時間。",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "指一開始學起來很難、需要投入很多時間適應。常用來形容新工具、系統或專業領域。"
   },
   {
     "phrase": "bread and butter",
     "meaning": "主要收入來源；謀生之道",
     "example": "Consulting services are the bread and butter of our business.",
     "exampleZh": "顧問服務是我們公司的主要收入來源。",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "指最核心、最穩定的收入來源或主力業務。不是字面上的食物，而是企業或個人的基本盤。"
   },
   {
     "phrase": "have a lot at stake",
     "meaning": "有很多利害關係；關係重大",
     "example": "We have a lot at stake with this contract, so let's prepare thoroughly.",
     "exampleZh": "這份合約對我們關係重大，所以我們要做好充分準備。",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "指某件事成敗影響很大，牽涉到很多利益、風險或後果。常用於商務、談判或重大決策。"
   },
   {
     "phrase": "turn things around",
     "meaning": "扭轉局面",
     "example": "The new CEO was brought in to turn things around after years of declining sales.",
     "exampleZh": "在銷售業績連年下滑之後，新的執行長被引進來扭轉局面。",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "指把原本不順、下滑或糟糕的情況扭轉回來。常用在公司表現、團隊士氣或個人狀態。"
   },
   {
     "phrase": "cash flow",
     "meaning": "現金流",
     "example": "Managing cash flow effectively is critical for small businesses.",
     "exampleZh": "有效管理現金流對小型企業至關重要。",
-    "difficulty": 2
+    "difficulty": 2,
+    "context": "指現金進出情況，重點是手上的錢是否周轉得過來。和 profit 不同，賺錢不代表現金流健康。"
   },
   {
     "phrase": "return on investment",
     "meaning": "投資報酬率（ROI）",
     "example": "The return on investment for the training program exceeded our expectations.",
     "exampleZh": "這項培訓計畫的投資報酬率超出了我們的預期。",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "指投入資金、時間或資源後得到的回報，常縮寫為 ROI。用來衡量投資值不值得。"
   },
   {
     "phrase": "break even",
@@ -223,21 +252,24 @@ module.exports = [
     "meaning": "別客氣；當自己家一樣",
     "example": "Come in and make yourself at home. Can I get you something to drink?",
     "exampleZh": "請進，當自己家就好。要不要喝點什麼？",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "用來請對方放輕鬆、不要拘束，像在自己家一樣自在。常見於招待客人時的禮貌說法。"
   },
   {
     "phrase": "sleep in",
     "meaning": "睡過頭；睡到很晚才起床",
     "example": "I don't have work tomorrow, so I'm going to sleep in.",
     "exampleZh": "我明天不用上班，所以我要睡個懶覺。",
-    "difficulty": 2
+    "difficulty": 2,
+    "context": "指比平常晚起床，通常因為不用趕時間。和 stay up late 不同，重點在隔天早上睡久一點。"
   },
   {
     "phrase": "help someone out",
     "meaning": "幫某人一把",
     "example": "My neighbor helped me out when my car wouldn't start this morning.",
     "exampleZh": "今天早上我的車發不動，鄰居幫了我一把。",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "指在對方有困難時伸手幫一把，語氣比 help 更口語，也常帶臨時支援的感覺。"
   },
   {
     "phrase": "What's the matter?",
@@ -252,35 +284,40 @@ module.exports = [
     "meaning": "慢慢來；不急",
     "example": "Take your time choosing. There's no rush at all.",
     "exampleZh": "慢慢選，完全不用急。",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "用來告訴對方不用急，可以慢慢來。常帶體貼或放鬆壓力的語氣。"
   },
   {
     "phrase": "Don't bother",
     "meaning": "不用麻煩了；不必費心",
     "example": "Don't bother cooking dinner for me. I'll eat out tonight.",
     "exampleZh": "不用幫我煮晚餐了。我今晚要在外面吃。",
-    "difficulty": 3
+    "difficulty": 3,
+    "context": "用來表示不用麻煩了、別特地做某件事。語氣可能是體貼，也可能帶不耐煩，要看情境。"
   },
   {
     "phrase": "It's been ages",
     "meaning": "好久了；很長一段時間了",
     "example": "It's been ages since we last went to the beach together.",
     "exampleZh": "我們真的好久沒一起去海邊了。",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "很口語地表示已經很久沒見面或沒聯絡了，常用在重逢開場。語氣比 a long time 更自然。"
   },
   {
     "phrase": "I'm broke",
     "meaning": "我沒錢了；我身無分文",
     "example": "I can't go shopping this weekend. I'm totally broke.",
     "exampleZh": "我這個週末不能去逛街了，我現在真的沒錢。",
-    "difficulty": 2
+    "difficulty": 2,
+    "context": "口語表示自己沒錢或手頭很緊，不一定是真的完全破產。常用來拒絕花費或自嘲。"
   },
   {
     "phrase": "No wonder",
     "meaning": "難怪；怪不得",
     "example": "She studied abroad for three years. No wonder her English is so good.",
     "exampleZh": "她在國外讀了三年書。難怪她的英文這麼好。",
-    "difficulty": 2
+    "difficulty": 2,
+    "context": "表示難怪如此，知道原因後覺得結果很合理。常用來回應剛得知的解釋。"
   },
   {
     "phrase": "in no time",
@@ -295,7 +332,8 @@ module.exports = [
     "meaning": "我餓死了",
     "example": "I skipped lunch today. I'm absolutely starving.",
     "exampleZh": "我今天沒吃午餐。我真的餓死了。",
-    "difficulty": 3
+    "difficulty": 3,
+    "context": "口語誇張地表示自己非常餓，不是真的快餓死。常用於日常對話。"
   },
   {
     "phrase": "That's a good point",
@@ -310,14 +348,16 @@ module.exports = [
     "meaning": "去散步",
     "example": "The weather is so nice today. Let's go for a walk in the park.",
     "exampleZh": "今天天氣真好。我們去公園散步吧。",
-    "difficulty": 3
+    "difficulty": 3,
+    "context": "指去散步，通常帶有放鬆、活動一下或透透氣的感覺，不是正式運動訓練。"
   },
   {
     "phrase": "around the corner",
     "meaning": "即將到來；就在附近",
     "example": "Christmas is just around the corner. Have you bought gifts yet?",
     "exampleZh": "聖誕節就快到了。你買好禮物了嗎？",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "可指地點就在轉角附近，也可比喻某事很快就要發生。要看前後文判斷是空間還是時間。"
   },
   {
     "phrase": "check in",
@@ -332,21 +372,24 @@ module.exports = [
     "meaning": "辦理退房；結帳離開",
     "example": "What time do we have to check out of the hotel tomorrow?",
     "exampleZh": "我們明天最晚幾點前要退房？",
-    "difficulty": 2
+    "difficulty": 2,
+    "context": "在旅行情境常指飯店退房，也可以口語表示去看看某事物。這裡若和 hotel 搭配，通常是退房。"
   },
   {
     "phrase": "window seat",
     "meaning": "靠窗座位",
     "example": "I'd like a window seat, please. I enjoy looking at the clouds.",
     "exampleZh": "我想要靠窗的座位，謝謝。我喜歡看雲。",
-    "difficulty": 3
+    "difficulty": 3,
+    "context": "指靠窗座位，常用在飛機、火車或餐廳座位偏好。和 aisle seat 相對。"
   },
   {
     "phrase": "aisle seat",
     "meaning": "靠走道座位",
     "example": "Can I have an aisle seat? I need to stretch my legs during the flight.",
     "exampleZh": "我可以坐靠走道的座位嗎？我飛行時需要伸展一下腿。",
-    "difficulty": 3
+    "difficulty": 3,
+    "context": "指靠走道的座位，方便起身走動。和 window seat 相對，常出現在搭機選位。"
   },
   {
     "phrase": "carry-on luggage",
@@ -361,84 +404,96 @@ module.exports = [
     "meaning": "登機",
     "example": "We'll begin boarding the plane in about twenty minutes.",
     "exampleZh": "我們大約二十分鐘後開始登機。",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "指開始登機、上飛機。比 get on the plane 更常見於機場廣播或旅行流程。"
   },
   {
     "phrase": "one-way ticket",
     "meaning": "單程票",
     "example": "I only need a one-way ticket because I'm not coming back.",
     "exampleZh": "我只需要一張單程票，因為我不會回來了。",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "指單程票，只包含去程沒有回程。和 round-trip ticket 相對。"
   },
   {
     "phrase": "final destination",
     "meaning": "最終目的地",
     "example": "Our final destination is Paris, but we'll stop in Amsterdam first.",
     "exampleZh": "我們的最終目的地是巴黎，但我們會先在阿姆斯特丹停留。",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "指旅程最終目的地，不是中途轉機點。常見於行李托運、航班資訊和機場說明。"
   },
   {
     "phrase": "get lost",
     "meaning": "迷路",
     "example": "We got lost in the old town because the streets all looked the same.",
     "exampleZh": "我們在舊城區迷路了，因為所有的街道看起來都一樣。",
-    "difficulty": 2
+    "difficulty": 2,
+    "context": "可指迷路，也可用來兇人叫對方滾開。旅行情境多半是迷路，語氣要靠上下文判斷。"
   },
   {
     "phrase": "change money",
     "meaning": "換錢；兌換外幣",
     "example": "Where can I change money around here? I need some local currency.",
     "exampleZh": "附近哪裡可以換錢？我需要一些當地貨幣。",
-    "difficulty": 3
+    "difficulty": 3,
+    "context": "指兌換外幣，常用在旅行、機場或銀行。不是單純找零，而是換不同貨幣。"
   },
   {
     "phrase": "fasten your seatbelt",
     "meaning": "繫好安全帶",
     "example": "Please fasten your seatbelt. We're about to experience some turbulence.",
     "exampleZh": "請繫好您的安全帶。我們即將進入一段亂流。",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "指繫好安全帶，常見於飛機起飛、降落或安全提醒。屬於固定搭機用語。"
   },
   {
     "phrase": "duty-free shop",
     "meaning": "免稅商店",
     "example": "Let's browse the duty-free shop while we wait for our flight.",
     "exampleZh": "我們等飛機的時候去免稅商店逛逛吧。",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "指免稅商店，常見於機場或國際港口。重點是特定商品可免部分稅費。"
   },
   {
     "phrase": "pack your bags",
     "meaning": "收拾行李",
     "example": "The trip is tomorrow. Have you packed your bags yet?",
     "exampleZh": "明天就要出發了。你收拾好行李了嗎？",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "字面可指收拾行李準備出發，也可比喻準備離開。旅行情境通常就是打包行李。"
   },
   {
     "phrase": "flight delay",
     "meaning": "班機延誤",
     "example": "There's a two-hour flight delay because of the snowstorm.",
     "exampleZh": "因為暴風雪，班機延誤了兩個小時。",
-    "difficulty": 3
+    "difficulty": 3,
+    "context": "指航班延誤，常用於機場資訊、客服或保險情境。和 canceled flight 不同，這裡不是取消。"
   },
   {
     "phrase": "How do I get to...?",
     "meaning": "我要怎麼去……？",
     "example": "Excuse me, how do I get to the nearest train station?",
     "exampleZh": "不好意思，請問我要怎麼去最近的火車站？",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "是旅行或問路時很基本的問法，用來詢問前往某地的方式。比 Where is...? 更重視路線。"
   },
   {
     "phrase": "Is it within walking distance?",
     "meaning": "走路可以到嗎？",
     "example": "Is the restaurant within walking distance, or should we take a taxi?",
     "exampleZh": "那間餐廳走路可以到嗎，還是我們應該搭計程車？",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "用來詢問某地是否近到可以步行抵達，常見於旅行、找餐廳或問路。"
   },
   {
     "phrase": "You can't miss it",
     "meaning": "你不會錯過的（很明顯、很好找）",
     "example": "The museum is right across from the park. You can't miss it.",
     "exampleZh": "博物館就在公園的正對面。你一定找得到的。",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "表示那地方很顯眼、很好找，不太可能錯過。常用於指路或推薦地標。"
   },
   {
     "phrase": "make a reservation",
@@ -453,42 +508,48 @@ module.exports = [
     "meaning": "兩個人的座位",
     "example": "Good evening. Table for two, please.",
     "exampleZh": "晚安。請給我們兩個人的座位，謝謝。",
-    "difficulty": 3
+    "difficulty": 3,
+    "context": "在餐廳表示兩位用餐、要一張兩人桌。是訂位或現場候位的固定說法。"
   },
   {
     "phrase": "Are you ready to order?",
     "meaning": "您準備好點餐了嗎？",
     "example": "Are you ready to order, or do you need a few more minutes?",
     "exampleZh": "您準備好點餐了嗎，還是需要再考慮幾分鐘？",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "餐廳服務生常用來詢問客人是否準備好點餐。屬於用餐情境的標準問句。"
   },
   {
     "phrase": "I'll have the...",
     "meaning": "我要點……",
     "example": "I'll have the grilled salmon with a side salad, please.",
     "exampleZh": "我要點烤鮭魚搭配一份沙拉，謝謝。",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "點餐時用來表示自己要某道餐點或飲料。語氣自然，比 I want 更禮貌。"
   },
   {
     "phrase": "Could I see the menu?",
     "meaning": "我可以看看菜單嗎？",
     "example": "Excuse me, could I see the menu? We just sat down.",
     "exampleZh": "不好意思，我可以看一下菜單嗎？我們剛剛坐下。",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "用來禮貌地請服務人員拿菜單。比 Give me the menu 更客氣。"
   },
   {
     "phrase": "What do you recommend?",
     "meaning": "你推薦什麼？",
     "example": "This is my first time here. What do you recommend?",
     "exampleZh": "這是我第一次來這裡。你推薦什麼？",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "詢問店員或服務生推薦什麼，常用在餐廳、咖啡店或商店。語氣自然又禮貌。"
   },
   {
     "phrase": "to go",
     "meaning": "外帶",
     "example": "Can I order a large coffee and a muffin to go?",
     "exampleZh": "我可以外帶一杯大杯咖啡和一個馬芬嗎？",
-    "difficulty": 1
+    "difficulty": 1,
+    "context": "在餐飲情境指外帶，不在店內吃。英式英文也常說 takeaway。"
   },
   {
     "phrase": "house special",
@@ -503,147 +564,168 @@ module.exports = [
     "meaning": "開動；開始吃",
     "example": "The food is on the table. Let's dig in!",
     "exampleZh": "食物都上桌了。我們開動吧！",
-    "difficulty": 1
+    "difficulty": 1,
+    "context": "吃飯前很口語地叫大家開動，也可指開始認真處理某件事。餐桌上多半就是開吃。"
   },
   {
     "phrase": "Could we have the check?",
     "meaning": "可以結帳嗎？",
     "example": "We're finished eating. Could we have the check, please?",
     "exampleZh": "我們吃完了。可以幫我們結帳嗎？",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "在美式餐廳用來禮貌地請服務生結帳。英式英文更常說 bill。"
   },
   {
     "phrase": "grab a coffee",
     "meaning": "去喝杯咖啡",
     "example": "Hey, want to grab a coffee after class?",
     "exampleZh": "嘿，下課後想去喝杯咖啡嗎？",
-    "difficulty": 3
+    "difficulty": 3,
+    "context": "可指快速去買杯咖啡，也常比喻輕鬆見面聊天。語氣很日常。"
   },
   {
     "phrase": "Can I get a refill?",
     "meaning": "可以再續杯嗎？",
     "example": "This iced tea is great. Can I get a refill?",
     "exampleZh": "這杯冰茶很好喝。可以再續一杯嗎？",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "用來問飲料能不能續杯或再加滿，常見於餐廳、咖啡店。"
   },
   {
     "phrase": "vegetarian option",
     "meaning": "素食選項",
     "example": "Do you have a vegetarian option? I don't eat meat.",
     "exampleZh": "你們有素食選項嗎？我不吃肉。",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "指素食可選項目，常見於菜單、會議餐點或活動報名。"
   },
   {
     "phrase": "serve a meal",
     "meaning": "上菜；供餐",
     "example": "The restaurant starts serving meals at 11 AM for lunch.",
     "exampleZh": "這家餐廳上午十一點開始供應午餐。",
-    "difficulty": 3
+    "difficulty": 3,
+    "context": "指供應餐點給客人或乘客，重點在提供食物，不是自己用餐。"
   },
   {
     "phrase": "take-out menu",
     "meaning": "外帶菜單",
     "example": "Do you have a take-out menu? I'd like to order from home.",
     "exampleZh": "你們有外帶菜單嗎？我想在家訂餐。",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "指外帶菜單，讓客人點餐帶走。和店內用餐情境不同。"
   },
   {
     "phrase": "midnight snack",
     "meaning": "宵夜",
     "example": "I always feel guilty after having a midnight snack.",
     "exampleZh": "我每次吃宵夜後都會感到愧疚。",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "指深夜吃的小點心或宵夜，通常不是正式一餐。"
   },
   {
     "phrase": "window shopping",
     "meaning": "只逛不買；純看看",
     "example": "We went window shopping at the mall but didn't buy anything.",
     "exampleZh": "我們在購物中心逛了逛，但什麼都沒買。",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "指逛街看東西但不一定買，重點是看看商品。常帶輕鬆消磨時間的感覺。"
   },
   {
     "phrase": "on sale",
     "meaning": "特價中；打折",
     "example": "These shoes are on sale for half the original price.",
     "exampleZh": "這雙鞋正在特價，只要原價的一半。",
-    "difficulty": 2
+    "difficulty": 2,
+    "context": "指商品正在特價、折扣中。不是指商品本身在出售，而是價格變便宜。"
   },
   {
     "phrase": "try it on",
     "meaning": "試穿",
     "example": "This dress looks nice. Can I try it on?",
     "exampleZh": "這件洋裝看起來很好看。我可以試穿嗎？",
-    "difficulty": 2
+    "difficulty": 2,
+    "context": "指把衣服或鞋子穿上試試看合不合適。購物情境很常見。"
   },
   {
     "phrase": "a good deal",
     "meaning": "划算；好買賣",
     "example": "I got a really good deal on this laptop. It was 40% off!",
     "exampleZh": "我買這台筆電買得很划算。打了六折！",
-    "difficulty": 3
+    "difficulty": 3,
+    "context": "指買到划算的價格或條件很好的交易。可用在購物，也可用在商務談判。"
   },
   {
     "phrase": "out of stock",
     "meaning": "缺貨；沒有庫存",
     "example": "I'm sorry, that item is out of stock right now. It should be back next week.",
     "exampleZh": "很抱歉，那個商品目前缺貨。應該下週會補貨。",
-    "difficulty": 3
+    "difficulty": 3,
+    "context": "指商品目前缺貨，暫時買不到。和 sold out 很接近，但較偏庫存狀態。"
   },
   {
     "phrase": "in stock",
     "meaning": "有現貨",
     "example": "Is the new iPhone in stock, or do I need to pre-order?",
     "exampleZh": "新款 iPhone 有現貨嗎，還是我需要預購？",
-    "difficulty": 2
+    "difficulty": 2,
+    "context": "指商品有現貨、有庫存可賣。常見於購物網站或店員回覆。"
   },
   {
     "phrase": "Can I get a discount?",
     "meaning": "可以打折嗎？",
     "example": "I'm buying three of these. Can I get a discount?",
     "exampleZh": "我要買三個這個。可以打折嗎？",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "用來詢問能不能便宜一點或有沒有折扣。語氣直接但仍算禮貌。"
   },
   {
     "phrase": "sold out",
     "meaning": "售完；賣光了",
     "example": "The concert tickets were sold out within minutes.",
     "exampleZh": "演唱會門票幾分鐘內就售完了。",
-    "difficulty": 2
+    "difficulty": 2,
+    "context": "指東西全部賣完了。比 out of stock 更強調整批已售罄。"
   },
   {
     "phrase": "add to cart",
     "meaning": "加入購物車",
     "example": "I keep adding things to my cart but never actually buying them.",
     "exampleZh": "我一直把東西加入購物車，但從來不真的買。",
-    "difficulty": 3
+    "difficulty": 3,
+    "context": "網購時把商品先加入購物車，還不代表已經下單付款。"
   },
   {
     "phrase": "buy one get one free",
     "meaning": "買一送一",
     "example": "The supermarket has a buy one get one free offer on shampoo.",
     "exampleZh": "超市的洗髮精有買一送一的優惠。",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "常見促銷用語，意思是買一送一。重點是優惠方案，不是單純降價。"
   },
   {
     "phrase": "Do you take credit cards?",
     "meaning": "你們接受信用卡嗎？",
     "example": "Do you take credit cards, or is it cash only?",
     "exampleZh": "你們接受信用卡嗎，還是只收現金？",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "用來詢問店家是否接受信用卡付款。旅行、餐廳和小店都很常用。"
   },
   {
     "phrase": "return policy",
     "meaning": "退貨政策",
     "example": "What's your return policy? I might need to bring this back.",
     "exampleZh": "你們的退貨政策是什麼？我可能需要把這個退回來。",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "指店家的退貨規則，例如期限、條件和是否可退款。購物前後都常會問。"
   },
   {
     "phrase": "keep the receipt",
     "meaning": "留好收據",
     "example": "Make sure to keep the receipt in case you want to return it.",
     "exampleZh": "一定要留好收據，以防你想退貨。",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "提醒對方保留收據，通常是為了退貨、換貨、報帳或保固。"
   },
   {
     "phrase": "make an appointment",
@@ -658,112 +740,128 @@ module.exports = [
     "meaning": "做健康檢查",
     "example": "You should get a check-up at least once a year.",
     "exampleZh": "你應該至少一年做一次健康檢查。",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "指去做一般健康檢查，不一定是生病。通常偏預防性或例行性的就醫。"
   },
   {
     "phrase": "catch a cold",
     "meaning": "感冒了",
     "example": "I caught a cold from my coworker who kept sneezing at the office.",
     "exampleZh": "我被一直在辦公室打噴嚏的同事傳染感冒了。",
-    "difficulty": 3
+    "difficulty": 3,
+    "context": "口語表示感冒了，重點是染上感冒，不是字面上的抓到冷。"
   },
   {
     "phrase": "take medicine",
     "meaning": "吃藥",
     "example": "Don't forget to take your medicine after breakfast.",
     "exampleZh": "別忘了吃早餐後要吃藥。",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "指吃藥或服藥，泛指按照需要服用藥物。英美口語都很常見。"
   },
   {
     "phrase": "running a fever",
     "meaning": "在發燒",
     "example": "My daughter is running a fever. I need to take her to the doctor.",
     "exampleZh": "我女兒在發燒。我需要帶她去看醫生。",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "指正在發燒，常用來描述目前身體狀況。比 have a fever 更有當下狀態感。"
   },
   {
     "phrase": "flu season",
     "meaning": "流感季節",
     "example": "It's flu season, so remember to wash your hands frequently.",
     "exampleZh": "現在是流感季節，所以記得要經常洗手。",
-    "difficulty": 3
+    "difficulty": 3,
+    "context": "指流感容易流行的季節，常見於醫療、新聞和健康提醒。"
   },
   {
     "phrase": "sore throat",
     "meaning": "喉嚨痛",
     "example": "I've had a sore throat for two days. I think I'm getting sick.",
     "exampleZh": "我喉嚨痛了兩天了。我想我要生病了。",
-    "difficulty": 3
+    "difficulty": 3,
+    "context": "指喉嚨痛，是描述症狀的固定說法。常和 cough、fever 一起出現。"
   },
   {
     "phrase": "get some rest",
     "meaning": "好好休息",
     "example": "You look exhausted. Go home and get some rest.",
     "exampleZh": "你看起來很疲憊。回家好好休息吧。",
-    "difficulty": 3
+    "difficulty": 3,
+    "context": "表示去休息一下，常用來勸對方不要再硬撐。語氣關心、日常。"
   },
   {
     "phrase": "go to the emergency room",
     "meaning": "去急診室",
     "example": "His chest pain was so bad that we had to go to the emergency room.",
     "exampleZh": "他的胸痛非常嚴重，我們不得不去急診室。",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "指去急診室，通常是情況比較急或嚴重，不是一般門診。"
   },
   {
     "phrase": "blood pressure",
     "meaning": "血壓",
     "example": "The nurse checked my blood pressure and said it was a little high.",
     "exampleZh": "護士量了我的血壓，說稍微偏高。",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "指血壓，常見於健康檢查、慢性病或醫師問診情境。"
   },
   {
     "phrase": "take someone's temperature",
     "meaning": "量體溫",
     "example": "Let me take your temperature first to see if you have a fever.",
     "exampleZh": "讓我先幫你量體溫，看看你有沒有發燒。",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "指幫某人量體溫，用來確認是否發燒。常見於照顧病人或校園健康檢查。"
   },
   {
     "phrase": "stuffy nose",
     "meaning": "鼻塞",
     "example": "I can't breathe properly because I have a stuffy nose.",
     "exampleZh": "我因為鼻塞而無法正常呼吸。",
-    "difficulty": 3
+    "difficulty": 3,
+    "context": "指鼻塞，是感冒或過敏常見症狀。和 runny nose 相對。"
   },
   {
     "phrase": "take a sick day",
     "meaning": "請病假一天",
     "example": "I'm taking a sick day tomorrow to recover from this flu.",
     "exampleZh": "我明天要請一天病假，好好從流感中恢復。",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "指因病請一天假，常用於上班族或學生。重點是請病假，不是單純休息。"
   },
   {
     "phrase": "waiting room",
     "meaning": "候診室；等候區",
     "example": "The waiting room was packed. I had to wait over an hour to see the doctor.",
     "exampleZh": "候診室擠滿了人。我等了超過一個小時才看到醫生。",
-    "difficulty": 3
+    "difficulty": 3,
+    "context": "指候診室或等待區，常見於醫院、診所或辦公場所。"
   },
   {
     "phrase": "Call an ambulance!",
     "meaning": "叫救護車！",
     "example": "He's not breathing! Someone call an ambulance!",
     "exampleZh": "他沒有呼吸了！有人快叫救護車！",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "緊急情況下要求叫救護車的直接說法，語氣急迫，通常用在意外或重症現場。"
   },
   {
     "phrase": "Is there a doctor around?",
     "meaning": "附近有醫生嗎？",
     "example": "This woman just fainted. Is there a doctor around?",
     "exampleZh": "這位女士剛剛昏倒了。附近有醫生嗎？",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "在現場有人不舒服或出事時，急著問附近有沒有醫生能幫忙。屬於求助句。"
   },
   {
     "phrase": "I need help!",
     "meaning": "我需要幫助！",
     "example": "I need help! My car broke down on the highway.",
     "exampleZh": "我需要幫助！我的車在高速公路上拋錨了。",
-    "difficulty": 3
+    "difficulty": 3,
+    "context": "很直接地表示自己需要幫助，可用於一般求助，也可用於緊急情況。語氣強弱看情境。"
   },
   {
     "phrase": "fire escape",
@@ -778,7 +876,8 @@ module.exports = [
     "meaning": "萬一有緊急情況",
     "example": "In case of emergency, please call this number.",
     "exampleZh": "萬一有緊急情況，請撥打這個號碼。",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "表示遇到緊急狀況時該怎麼做或該聯絡誰，常見於表單、說明和安全指示。"
   },
   {
     "phrase": "report a crime",
@@ -793,14 +892,16 @@ module.exports = [
     "meaning": "急救箱",
     "example": "Do you have a first aid kit? I cut my finger pretty badly.",
     "exampleZh": "你有急救箱嗎？我的手指割傷得很嚴重。",
-    "difficulty": 3
+    "difficulty": 3,
+    "context": "指急救箱，裡面裝簡單醫療用品。常見於車上、學校、辦公室或旅行。"
   },
   {
     "phrase": "stay calm",
     "meaning": "保持冷靜",
     "example": "Try to stay calm. The rescue team is on their way.",
     "exampleZh": "試著保持冷靜。救援隊正在趕來的路上。",
-    "difficulty": 2
+    "difficulty": 2,
+    "context": "用來叫人先冷靜下來，常見於緊急情況、爭執或壓力大時。"
   },
   {
     "phrase": "emergency exit",
@@ -815,7 +916,8 @@ module.exports = [
     "meaning": "打緊急求助電話",
     "example": "If you see something suspicious, don't hesitate to dial 911.",
     "exampleZh": "如果你看到可疑的事情，請毫不猶豫地撥打911。",
-    "difficulty": 2
+    "difficulty": 2,
+    "context": "在美國情境下指撥打緊急求助電話。和台灣的 119、110 類似，但國家不同。"
   },
   {
     "phrase": "turn left at the corner",
@@ -850,7 +952,8 @@ module.exports = [
     "meaning": "在第二個路口右轉",
     "example": "Take the second right and the library will be on your left.",
     "exampleZh": "在第二個路口右轉，圖書館就在你的左手邊。",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "????????????????????? turn right at the corner ????????????????"
   },
   {
     "phrase": "just down the road",
@@ -920,7 +1023,8 @@ module.exports = [
     "meaning": "天氣真好（用來開啟閒聊）",
     "example": "Nice weather we're having, isn't it? Perfect for a picnic.",
     "exampleZh": "天氣真不錯，對吧？非常適合野餐。",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "?? small talk ??????????????????????????????????????"
   },
   {
     "phrase": "What do you do for a living?",
@@ -955,7 +1059,8 @@ module.exports = [
     "meaning": "你有聽說嗎？",
     "example": "Have you heard? They're opening a new shopping center next month.",
     "exampleZh": "你有聽說嗎？他們下個月要開一個新的購物中心。",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "??????????????????????????????????????????"
   },
   {
     "phrase": "I see what you mean",
@@ -1034,7 +1139,8 @@ module.exports = [
     "meaning": "高興得跳起來",
     "example": "The children jumped for joy when they heard school was cancelled.",
     "exampleZh": "孩子們聽說學校停課後高興得跳了起來。",
-    "difficulty": 3
+    "difficulty": 3,
+    "context": "???????????????????? happy ???????????"
   },
   {
     "phrase": "cheer someone up",
@@ -1245,7 +1351,8 @@ module.exports = [
     "meaning": "掌握內幕消息；有第一手情報",
     "example": "Do you have the scoop on why Jenny left the company?",
     "exampleZh": "你知道珍妮為什麼離職的內幕嗎？",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "???????????????????????? just know ??????????"
   },
   {
     "phrase": "stir the pot",

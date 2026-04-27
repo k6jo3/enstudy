@@ -124,6 +124,12 @@ function ListenPage() {
           </button>
         </div>
 
+        {hasPlayed && item.answerShape && (
+          <div className="listen-answer-shape" title="保留空格與連字號結構，不透露字母">
+            {item.answerShape}
+          </div>
+        )}
+
         <form onSubmit={handleSubmit}>
           <input
             ref={inputRef}

@@ -75,7 +75,7 @@ function generateHintDisplay(text, {
 
   const totalLetters = allLetterSlots.length;
   if (totalLetters === 0) {
-    return tokenLetters.map((entry) => entry.chars.join(' ')).join('   ');
+    return text;
   }
 
   let effectiveDiff = Math.max(1, Math.min(5, Number(difficulty) || 1));
@@ -108,8 +108,13 @@ function generateHintDisplay(text, {
     entry.chars.map((char, charIndex) => {
       if (!/[A-Za-z]/.test(char)) return char;
       return revealSet.has(`${tokenIndex}:${charIndex}`) ? char : '_';
-    }).join(' ')
-  )).join('   ');
+    }).join('')
+  )).join(' ');
+}
+
+function generateStructureHint(text) {
+  if (!text) return '';
+  return text.replace(/[A-Za-z]/g, '_');
 }
 
 // Build choices for a choice-mode item
@@ -428,6 +433,10 @@ router.get('/items', async (req, res) => {
           errorCount: item.error_count,
           score,
         });
+      }
+
+      if (forListen && display) {
+        item.answerShape = generateStructureHint(display);
       }
 
       if (!item.promptMeaning) {

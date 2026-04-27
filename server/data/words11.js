@@ -568,7 +568,8 @@ module.exports = [
     "pos": "phrase",
     "difficulty": 2,
     "example": "Cheers! Here's to a wonderful new year!",
-    "exampleZh": "乾杯！祝新的一年美好順利！"
+    "exampleZh": "乾杯！祝新的一年美好順利！",
+    "context": "?????????????????????????????????????????????????????"
   },
   {
     "word": "totally",
@@ -1154,15 +1155,6 @@ module.exports = [
     "difficulty": 2,
     "example": "They backpacked through Southeast Asia last summer.",
     "exampleZh": "去年夏天他們背包旅行走遍了東南亞。"
-  },
-  {
-    "word": "roundtrip",
-    "phonetic": "/ˈraʊndtrɪp/",
-    "meaning": "來回的；往返的",
-    "pos": "adj",
-    "difficulty": 3,
-    "example": "A roundtrip ticket costs less than two one-way tickets.",
-    "exampleZh": "來回票比兩張單程票便宜。"
   },
   {
     "word": "symptom",

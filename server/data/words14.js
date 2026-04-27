@@ -844,11 +844,12 @@ module.exports = [
   {
     "word": "workout",
     "phonetic": "/ˈwɜːrkaʊt/",
-    "meaning": "健身；運動",
+    "meaning": "?????",
     "pos": "n",
     "difficulty": 2,
     "example": "I try to fit in a quick workout before work every morning.",
-    "exampleZh": "我每天早上盡量在上班前擠出時間做一下快速健身。"
+    "exampleZh": "我每天早上盡量在上班前擠出時間做一下快速健身。",
+    "context": "??????????????????work out ?????????????????????????"
   },
   {
     "word": "jogging",
@@ -1085,15 +1086,6 @@ module.exports = [
     "exampleZh": "她在機場巧遇一位明星，還一起拍了照。"
   },
   {
-    "word": "livestream",
-    "phonetic": "/ˈlaɪvˌstriːm/",
-    "meaning": "直播",
-    "pos": "n",
-    "difficulty": 3,
-    "example": "She does a livestream every Friday night to chat with her fans.",
-    "exampleZh": "她每個星期五晚上都會開直播和粉絲聊天。"
-  },
-  {
     "word": "cosplay",
     "phonetic": "/ˈkɑːzˌpleɪ/",
     "meaning": "角色扮演",
@@ -1204,11 +1196,12 @@ module.exports = [
   {
     "word": "comeback",
     "phonetic": "/ˈkʌmˌbæk/",
-    "meaning": "復出；回歸",
+    "meaning": "?????",
     "pos": "n",
     "difficulty": 2,
     "example": "The singer made an incredible comeback after five years of silence.",
-    "exampleZh": "那位歌手在沉寂五年後以驚人之姿復出。"
+    "exampleZh": "那位歌手在沉寂五年後以驚人之姿復出。",
+    "context": "???????????????????????????????come back ???????????"
   },
   {
     "word": "canceled",
@@ -2455,11 +2448,12 @@ module.exports = [
   {
     "word": "burnout",
     "phonetic": "/ˈbɜːrnaʊt/",
-    "meaning": "職業倦怠",
+    "meaning": "?????????",
     "pos": "n",
     "difficulty": 2,
     "example": "Working eighty hours a week eventually led to severe burnout.",
-    "exampleZh": "每週工作八十小時最終導致了嚴重的職業倦怠。"
+    "exampleZh": "每週工作八十小時最終導致了嚴重的職業倦怠。",
+    "context": "????????????????????????burn out ????????????????????????"
   },
   {
     "word": "apprentice",

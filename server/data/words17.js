@@ -1596,12 +1596,12 @@ module.exports = [
   {
     "word": "execution",
     "phonetic": "/ˌeksɪˈkjuːʃn/",
-    "meaning": "執行；實施",
+    "meaning": "?????",
     "pos": "n",
     "difficulty": 4,
     "example": "His execution of the strategy was flawless.",
     "exampleZh": "他對策略的執行完美無缺。",
-    "context": "指完成某項工作或計劃的具體行為。"
+    "context": "???????????????????carry out ??????????????????"
   },
   {
     "word": "tactical",

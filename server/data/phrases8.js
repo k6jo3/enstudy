@@ -348,21 +348,16 @@ module.exports = [
     "meaning": "承重的",
     "example": "That load-bearing wall cannot be removed during renovation.",
     "exampleZh": "那面承重牆在翻修時不能拆除。",
-    "difficulty": 4
-  },
-  {
-    "phrase": "round-trip",
-    "meaning": "來回的；往返的",
-    "example": "A round-trip ticket is cheaper than two one-way fares.",
-    "exampleZh": "來回票比兩張單程票便宜。",
-    "difficulty": 3
+    "difficulty": 4,
+    "context": "建築用語，指結構上負責支撐重量、不能隨便拆改的部分；比較 decorative（純裝飾、不承重）"
   },
   {
     "phrase": "one-way",
     "meaning": "單程的",
     "example": "I need a one-way ticket to Hong Kong.",
     "exampleZh": "我需要一張到香港的單程票。",
-    "difficulty": 3
+    "difficulty": 3,
+    "context": "旅行最常指只有去程沒有回程的票；也可指 one-way street（單行道）。比較 round-trip（來回）"
   },
   {
     "phrase": "duty-free",
@@ -385,7 +380,8 @@ module.exports = [
     "meaning": "無麩質的",
     "example": "Several gluten-free options are available.",
     "exampleZh": "有幾種無麩質的選擇可供選用。",
-    "difficulty": 3
+    "difficulty": 3,
+    "context": "食品標示用語，表示不含麩質，常見於餐廳菜單與包裝；比較 dairy-free（不含乳製品）"
   },
   {
     "phrase": "dine-in",
@@ -408,112 +404,128 @@ module.exports = [
     "meaning": "選擇加入",
     "example": "Users must give opt-in consent before receiving promotional emails.",
     "exampleZh": "使用者必須先同意加入才能收到促銷電子郵件。",
-    "difficulty": 3
+    "difficulty": 3,
+    "context": "表示使用者主動同意加入某服務、通知或行銷名單；比較 opt-out（預設加入，但可選擇退出）"
   },
   {
     "phrase": "cross-sell",
     "meaning": "交叉銷售",
     "example": "Banks often cross-sell insurance products to existing account holders.",
     "exampleZh": "銀行經常向現有帳戶持有人交叉銷售保險產品。",
-    "difficulty": 3
+    "difficulty": 3,
+    "context": "銷售既有客戶相關但不同類型的產品；比較 upsell（促使客戶升級到更高價版本）"
   },
   {
     "phrase": "binge-watch",
     "meaning": "一口氣追劇",
     "example": "We spent the whole weekend binge-watching that new Korean drama.",
     "exampleZh": "我們整個週末都在一口氣追那部新的韓劇。",
-    "difficulty": 3
+    "difficulty": 3,
+    "context": "動詞用法，指短時間內連續看很多集；比較 binge-watching（名詞或動名詞，指追劇這件事）"
   },
   {
     "phrase": "nit-pick",
     "meaning": "吹毛求疵；挑小毛病",
     "example": "I don't want to nit-pick, but there are a few typos in the final report.",
     "exampleZh": "我不想吹毛求疵，但最終報告中有幾個錯字。",
-    "difficulty": 3
+    "difficulty": 3,
+    "context": "偏負面，指抓小細節不放、過度挑剔；比較 constructive criticism（有幫助的建議性批評）"
   },
   {
     "phrase": "brown-nose",
     "meaning": "拍馬屁",
     "example": "Nobody respects him because he's always brown-nosing the boss.",
     "exampleZh": "沒有人尊重他，因為他總是在拍老闆馬屁。",
-    "difficulty": 3
+    "difficulty": 3,
+    "context": "口語偏貶義，指為了討好上司而過度奉承；比較 flatter（較中性的一般稱讚或奉承）"
   },
   {
     "phrase": "name-dropping",
     "meaning": "搬出名人來抬高自己",
     "example": "Constant name-dropping in meetings can make you seem insecure.",
     "exampleZh": "在會議中不斷地搬出名人來抬高自己，會讓你顯得缺乏自信。",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "偏負面，指刻意提名人脈或名人來提升自己身價；常給人炫耀感"
   },
   {
     "phrase": "post-mortem",
-    "meaning": "事後檢討",
+    "meaning": "??????????",
     "example": "After the product launch, we held a post-mortem to identify lessons learned.",
     "exampleZh": "產品發布後，我們舉行了事後檢討會議，以找出值得學習的經驗。",
-    "difficulty": 3
+    "difficulty": 3,
+    "context": "???????????????????????????????????????????? postmortem???????????? post-mortem meeting ??????"
   },
   {
     "phrase": "mission-critical",
     "meaning": "任務關鍵的；至關重要的",
     "example": "Email is a mission-critical system—any downtime needs to be fixed immediately.",
     "exampleZh": "電子郵件是至關重要的系統，任何停機情況都需要立即修復。",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "表示某系統或功能一旦出問題就會嚴重影響整體任務；比較 nice-to-have（有很好，但不是必要）"
   },
   {
     "phrase": "all-inclusive",
     "meaning": "全包式的（含住宿餐飲等）",
     "example": "We booked an all-inclusive resort so we don't have to worry about extra costs.",
     "exampleZh": "我們訂了一個全包式度假村，這樣就不必擔心額外費用了。",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "旅遊住宿用語，表示費用通常已包含住宿、餐飲和部分活動；比較 complimentary（免費附送，但不代表全包）"
   },
   {
     "phrase": "all-you-can-eat",
     "meaning": "吃到飽",
     "example": "There's an all-you-can-eat sushi place near my office. Want to try it?",
     "exampleZh": "我辦公室附近有一家吃到飽的壽司店。想去試試嗎？",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "餐廳用語，通常指固定價格內可不限次數取用；比較 buffet（自助餐形式，不一定強調吃到飽定價）"
   },
   {
     "phrase": "mouth-watering",
     "meaning": "令人垂涎的；令人流口水的",
     "example": "The photos of the desserts on the menu are absolutely mouth-watering.",
     "exampleZh": "菜單上甜點的照片真是令人垂涎欲滴。",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "常用來形容食物看起來或聞起來非常誘人；也可延伸形容誘人的機會或條件"
   },
   {
     "phrase": "tongue-tied",
     "meaning": "說不出話；結巴",
     "example": "I get tongue-tied whenever I have to speak in public.",
     "exampleZh": "每次我需要在公眾面前講話時，我就會說不出話來。",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "通常指緊張、尷尬或害羞到一時講不出話，不一定是永久性口吃；比較 speechless（偏情緒震驚到說不出話）"
   },
   {
     "phrase": "blue-collar",
     "meaning": "藍領的；勞動階級的",
     "example": "Many blue-collar workers earn a decent wage in the manufacturing sector.",
     "exampleZh": "許多藍領工人在製造業賺取體面的薪資。",
-    "difficulty": 3
+    "difficulty": 3,
+    "context": "指以體力勞動、技術工或現場作業為主的工作類型；比較 white-collar（辦公室、知識型工作）"
   },
   {
     "phrase": "white-collar",
     "meaning": "白領的；辦公室的",
     "example": "White-collar jobs typically involve working in an office environment.",
     "exampleZh": "白領工作通常在辦公室環境中進行。",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "指辦公室、管理、專業或知識型工作；比較 blue-collar（體力或技術現場工作）"
   },
   {
     "phrase": "binge-watching",
     "meaning": "追劇",
     "example": "Binge-watching TV shows on weekends has become a common habit.",
     "exampleZh": "週末追劇已經成為一種常見的習慣。",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "名詞或動名詞用法，指連續看很多集的行為；比較 binge-watch（動詞，用來描述去追劇這個動作）"
   },
   {
     "phrase": "stir-fry",
     "meaning": "熱炒",
     "example": "Stir-fry the vegetables on high heat.",
     "exampleZh": "用大火快炒蔬菜。",
-    "difficulty": 2
+    "difficulty": 2,
+    "context": "可當動詞也可當名詞；動詞是快炒，名詞是炒菜料理本身。看句型判斷詞性"
   },
   {
     "phrase": "tax-free",
@@ -528,28 +540,32 @@ module.exports = [
     "meaning": "電子商務",
     "example": "The growth of e-commerce has changed the way people shop.",
     "exampleZh": "電子商務的增長改變了人們的購物方式。",
-    "difficulty": 3
+    "difficulty": 3,
+    "context": "指透過網路進行的買賣與商業活動；比較 retail（零售，可含線上或線下）"
   },
   {
     "phrase": "laid-back",
     "meaning": "隨性的；悠閒的",
     "example": "He has a very laid-back attitude and never stresses about anything.",
     "exampleZh": "他的態度非常隨性，從不為任何事情擔心。",
-    "difficulty": 3
+    "difficulty": 3,
+    "context": "通常偏正面，指人輕鬆、從容、不太緊繃；比較 careless（負面，粗心不負責）"
   },
   {
     "phrase": "get-together",
     "meaning": "小型聚會",
     "example": "We are having a casual get-together at my place this Friday night.",
     "exampleZh": "這個星期五晚上我們要在我家辦一個輕鬆的小型聚會。",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "較輕鬆非正式的聚會，通常小規模、偏朋友同事間；比較 gathering（較中性泛稱）"
   },
   {
     "phrase": "spin-off",
     "meaning": "衍生作品",
     "example": "The spin-off series focuses on the villain's backstory and origin.",
     "exampleZh": "這部衍生劇聚焦於反派角色的身世背景與起源。",
-    "difficulty": 2
+    "difficulty": 2,
+    "context": "指從原本作品、品牌或專案延伸出來的獨立作品或新產品；常見於影視與商業"
   },
   {
     "phrase": "stand-up",
@@ -564,7 +580,8 @@ module.exports = [
     "meaning": "大變身；逆襲變美",
     "example": "She had the biggest glow-up after high school and looks amazing now.",
     "exampleZh": "她高中畢業後蛻變得最厲害，現在看起來超美。",
-    "difficulty": 2
+    "difficulty": 2,
+    "context": "網路口語，指外表、氣質或整體狀態明顯升級變好；不一定只限變美，也可指整體變得更有魅力"
   },
   {
     "phrase": "deal-breaker",
@@ -579,42 +596,48 @@ module.exports = [
     "meaning": "不可協商的；不容讓步的",
     "example": "The delivery date is non-negotiable—we must meet the launch deadline.",
     "exampleZh": "交貨日期不容商議，我們必須趕上發布截止日期。",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "表示某條件是底線，不能改、不能退讓；可用於商務，也可用於個人原則"
   },
   {
     "phrase": "fast-track",
     "meaning": "加速處理；快速推進",
     "example": "Management decided to fast-track the approval process for this project.",
     "exampleZh": "管理層決定對這個專案的審批流程進行加速處理。",
-    "difficulty": 3
+    "difficulty": 3,
+    "context": "指讓流程、決策或進度走特快通道；比較 speed up（一般加快，不一定有特別優先權）"
   },
   {
     "phrase": "time-sensitive",
     "meaning": "有時效性的；時間緊迫的",
     "example": "This is a time-sensitive matter—please respond within 24 hours.",
     "exampleZh": "這是一件有時效性的事，請在二十四小時內回覆。",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "表示某事必須在限定時間內處理，拖延會影響結果；常見於商務、法務、客服"
   },
   {
     "phrase": "end-to-end",
     "meaning": "端到端的；全程的",
     "example": "We provide end-to-end solutions from design to deployment.",
     "exampleZh": "我們提供從設計到部署的全程端到端解決方案。",
-    "difficulty": 3
+    "difficulty": 3,
+    "context": "表示涵蓋整個流程的起點到終點，而不是只負責其中一段；常見於技術、服務與專案管理"
   },
   {
     "phrase": "second-hand",
-    "meaning": "二手的",
+    "meaning": "???",
     "example": "I bought a second-hand bike for half the price of a new one.",
     "exampleZh": "我買了一輛二手腳踏車，只花了新車一半的價格。",
-    "difficulty": 3
+    "difficulty": 3,
+    "context": "?????????????????????? second-hand information?????????????????? secondhand??????????????"
   },
   {
     "phrase": "two-faced",
     "meaning": "兩面人；表裡不一",
     "example": "I don't trust her. She's totally two-faced.",
     "exampleZh": "我不信任她，她完全是個兩面人。",
-    "difficulty": 3
+    "difficulty": 3,
+    "context": "偏強烈負面，指對人前後不一、當面一套背後一套；比較 fake（泛指不真誠，但不一定到兩面人程度）"
   },
   {
     "phrase": "what for",

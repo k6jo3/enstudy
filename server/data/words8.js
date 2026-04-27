@@ -492,11 +492,12 @@ module.exports = [
   {
     "word": "breakeven",
     "phonetic": "/ˌbreɪkˈiːvən/",
-    "meaning": "損益兩平",
+    "meaning": "????",
     "pos": "n",
     "difficulty": 4,
     "example": "The new store is expected to reach breakeven within the first eighteen months.",
-    "exampleZh": "新店預計在前十八個月內達到損益兩平。"
+    "exampleZh": "新店預計在前十八個月內達到損益兩平。",
+    "context": "?????????????? breakeven point?break even ??????????????????"
   },
   {
     "word": "provisional",
@@ -654,15 +655,6 @@ module.exports = [
     "difficulty": 4,
     "example": "At the end of each sprint, the team holds a retrospective to discuss lessons learned.",
     "exampleZh": "每次衝刺結束時，團隊會舉行回顧會議來討論心得教訓。"
-  },
-  {
-    "word": "postmortem",
-    "phonetic": "/ˌpoʊstˈmɔːrtəm/",
-    "meaning": "事後檢討",
-    "pos": "n",
-    "difficulty": 4,
-    "example": "A postmortem analysis was conducted to understand why the product launch failed.",
-    "exampleZh": "進行了事後檢討分析，以了解產品上市失敗的原因。"
   },
   {
     "word": "procedural",
@@ -906,11 +898,12 @@ module.exports = [
   {
     "word": "notary",
     "phonetic": "/ˈnoʊtəri/",
-    "meaning": "公證人",
+    "meaning": "???????",
     "pos": "n",
     "difficulty": 4,
     "example": "The contract must be witnessed by a notary before it becomes valid.",
-    "exampleZh": "合約必須經公證人見證後才具效力。"
+    "exampleZh": "合約必須經公證人見證後才具效力。",
+    "context": "????????????????notary public ???????????????????????"
   },
   {
     "word": "plea",

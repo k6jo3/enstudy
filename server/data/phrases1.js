@@ -4,49 +4,56 @@ module.exports = [
     "meaning": "旋轉椅",
     "example": "He leaned back in his swivel chair during the meeting.",
     "exampleZh": "他在開會時靠在旋轉椅上。",
-    "difficulty": 3
+    "difficulty": 3,
+    "context": "辦公室常見家具，重點是椅子可旋轉，常見於辦公桌前；比 office chair 更具體。"
   },
   {
     "phrase": "maternity leave",
     "meaning": "產假",
     "example": "She will be on maternity leave for the next three months.",
     "exampleZh": "她接下來三個月將休產假。",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "指母親因生育而請的假，語境多在公司制度、人資、職場溝通；和 paternity leave 是不同對象。"
   },
   {
     "phrase": "paternity leave",
     "meaning": "陪產假",
     "example": "The company now offers two weeks of paternity leave.",
     "exampleZh": "公司現在提供兩週的陪產假。",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "指父親因配偶生產或迎接新生兒而請的假，常見於公司福利、人資制度。"
   },
   {
     "phrase": "overtime pay",
     "meaning": "加班費",
     "example": "Workers earn overtime pay for any hours beyond forty per week.",
     "exampleZh": "員工每週超過四十小時的工作可獲得加班費。",
-    "difficulty": 3
+    "difficulty": 3,
+    "context": "偏勞動法、薪資制度語境，指超出正常工時後的額外報酬；和 salary、bonus 不同。"
   },
   {
     "phrase": "filing cabinet",
     "meaning": "檔案櫃",
     "example": "All employee records are stored in the filing cabinet.",
     "exampleZh": "所有員工記錄都存放在檔案櫃中。",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "辦公室用來收納紙本文件的櫃子，語境多和檔案、行政、文書管理有關。"
   },
   {
     "phrase": "curtain call",
     "meaning": "謝幕",
     "example": "The cast returned to the stage for a final curtain call.",
     "exampleZh": "演員們回到舞台上進行最後的謝幕。",
-    "difficulty": 3
+    "difficulty": 3,
+    "context": "表演結束後演員再次上台接受掌聲的環節，常見於戲劇、音樂劇、舞台表演。"
   },
   {
     "phrase": "pantry shelf",
     "meaning": "食品儲藏架",
     "example": "Canned goods are organized on the pantry shelf by type.",
     "exampleZh": "罐頭食品按種類排列在食品儲藏架上。",
-    "difficulty": 3
+    "difficulty": 3,
+    "context": "多用在家庭或辦公室茶水間，指放乾糧、罐頭或備品的架子。"
   },
   {
     "phrase": "How are you?",
@@ -61,14 +68,16 @@ module.exports = [
     "meaning": "很高興認識你",
     "example": "Nice to meet you, I'm Sarah from the marketing department.",
     "exampleZh": "很高興認識你，我是行銷部的莎拉。",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "用於第一次見面時的客氣招呼；如果之前已見過，通常改說 Nice to see you again。"
   },
   {
     "phrase": "Long time no see",
     "meaning": "好久不見",
     "example": "Hey, long time no see! How have you been?",
     "exampleZh": "嘿，好久不見！你近來怎麼樣？",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "偏口語、熟人重逢時自然的招呼，不太用在正式商務初見。"
   },
   {
     "phrase": "What's up?",
@@ -83,21 +92,24 @@ module.exports = [
     "meaning": "保重",
     "example": "It was great seeing you. Take care!",
     "exampleZh": "很高興見到你。保重！",
-    "difficulty": 2
+    "difficulty": 2,
+    "context": "常用在道別時，帶一點關心對方的感覺；比 bye 更溫暖。"
   },
   {
     "phrase": "See you later",
     "meaning": "回頭見；待會兒見",
     "example": "I have to go now. See you later!",
     "exampleZh": "我得走了。回頭見！",
-    "difficulty": 3
+    "difficulty": 3,
+    "context": "一般道別用語，不一定真的今天稍後見，只是自然的再見說法；比 goodbye 輕鬆。"
   },
   {
     "phrase": "Have a good day",
     "meaning": "祝你有美好的一天",
     "example": "Thanks for your help. Have a good day!",
     "exampleZh": "謝謝你的幫忙。祝你有美好的一天！",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "常見於服務業或一般禮貌收尾，比 Take care 更中性、少一點親近感。"
   },
   {
     "phrase": "Thank you so much",
@@ -160,7 +172,8 @@ module.exports = [
     "meaning": "我不介意；我沒差",
     "example": "I don't mind waiting a few more minutes.",
     "exampleZh": "我不介意再多等幾分鐘。",
-    "difficulty": 3
+    "difficulty": 3,
+    "context": "表示你可以接受、沒有特別反對；不等於你很想要。比 I'd love to 更被動。"
   },
   {
     "phrase": "Never mind",
@@ -175,14 +188,16 @@ module.exports = [
     "meaning": "請便；繼續吧",
     "example": "Go ahead and start eating. I'll join you in a minute.",
     "exampleZh": "請先開始吃吧。我一會兒就來。",
-    "difficulty": 2
+    "difficulty": 2,
+    "context": "表示允許對方先做、繼續做或開口說；常用於給對方綠燈。"
   },
   {
     "phrase": "I have no idea",
     "meaning": "我不知道；我沒有頭緒",
     "example": "I have no idea where I left my keys.",
     "exampleZh": "我完全不知道把鑰匙放哪裡了。",
-    "difficulty": 3
+    "difficulty": 3,
+    "context": "比 I don't know 更強，表示真的完全沒概念、沒線索。"
   },
   {
     "phrase": "That's great",
@@ -197,7 +212,8 @@ module.exports = [
     "meaning": "聽起來不錯",
     "example": "Dinner at seven? Sounds good to me.",
     "exampleZh": "七點吃晚餐？我覺得聽起來不錯。",
-    "difficulty": 3
+    "difficulty": 3,
+    "context": "常用來回應提議、安排或計畫，表示我同意這個方案；比 I agree 更偏對提案的接受。"
   },
   {
     "phrase": "I think so",
@@ -244,14 +260,16 @@ module.exports = [
     "meaning": "穿上；戴上",
     "example": "It's cold outside. Put on your jacket.",
     "exampleZh": "外面很冷。把外套穿上。",
-    "difficulty": 1
+    "difficulty": 1,
+    "context": "最常指把衣服、鞋子、眼鏡等穿戴到身上；也可延伸成播放音樂、假裝某種態度，要靠受詞判斷。"
   },
   {
     "phrase": "take off",
     "meaning": "脫下；起飛",
     "example": "Please take off your shoes before entering the house.",
     "exampleZh": "進屋前請脫下鞋子。",
-    "difficulty": 2
+    "difficulty": 2,
+    "context": "可指脫掉衣物，也可指飛機起飛，或事業突然爆紅。這句是脫鞋，不是起飛。"
   },
   {
     "phrase": "look for",
@@ -266,7 +284,8 @@ module.exports = [
     "meaning": "撿起；接某人",
     "example": "Can you pick up the kids from school today?",
     "exampleZh": "你今天能去學校接孩子嗎？",
-    "difficulty": 2
+    "difficulty": 2,
+    "context": "很常見的多義片語，可指拿起、領取、順路接人、接電話、偶然學會。要看受詞和場景判斷。"
   },
   {
     "phrase": "give up",
@@ -297,21 +316,24 @@ module.exports = [
     "meaning": "例如",
     "example": "There are many fun things to do here, for example, hiking and swimming.",
     "exampleZh": "這裡有很多有趣的活動，例如健行和游泳。",
-    "difficulty": 3
+    "difficulty": 3,
+    "context": "用來舉具體例子補充前一句內容；比 such as 更像完整插入語。"
   },
   {
     "phrase": "as soon as possible",
     "meaning": "儘快",
     "example": "Please reply to the email as soon as possible.",
     "exampleZh": "請儘快回覆這封電子郵件。",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "表示越快越好，但不一定等於立刻現在做；正式書信常縮寫成 ASAP。"
   },
   {
     "phrase": "kind of",
     "meaning": "有點兒",
     "example": "I'm kind of tired today. Let's stay home.",
     "exampleZh": "我今天有點累。我們就待在家裡吧。",
-    "difficulty": 2
+    "difficulty": 2,
+    "context": "口語裡拿來弱化語氣，讓說法沒那麼直接；比 a little 更隨意。"
   },
   {
     "phrase": "a lot of",
@@ -326,21 +348,24 @@ module.exports = [
     "meaning": "在...前面",
     "example": "The bus stop is right in front of the building.",
     "exampleZh": "公車站就在大樓正前方。",
-    "difficulty": 3
+    "difficulty": 3,
+    "context": "指外部位置在某物前面；和 in the front of 常見的內部前方意思不同。"
   },
   {
     "phrase": "next to",
     "meaning": "在...旁邊",
     "example": "The pharmacy is next to the supermarket.",
     "exampleZh": "藥局就在超市旁邊。",
-    "difficulty": 2
+    "difficulty": 2,
+    "context": "表示緊鄰在旁邊，通常比 near 更近。"
   },
   {
     "phrase": "on time",
     "meaning": "準時",
     "example": "The train arrived on time today.",
     "exampleZh": "今天火車準時到達了。",
-    "difficulty": 2
+    "difficulty": 2,
+    "context": "表示剛好在約定時間，不早不晚；和 in time 的趕得及不同。"
   },
   {
     "phrase": "right now",
@@ -355,21 +380,24 @@ module.exports = [
     "meaning": "到目前為止",
     "example": "So far, everything is going according to plan.",
     "exampleZh": "到目前為止，一切都按計畫進行。",
-    "difficulty": 1
+    "difficulty": 1,
+    "context": "用來總結到現在為止的狀況，暗示之後還可能繼續變化。"
   },
   {
     "phrase": "What do you mean?",
     "meaning": "你什麼意思？",
     "example": "What do you mean? I don't understand your point.",
     "exampleZh": "你什麼意思？我不明白你的意思。",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "可單純請對方說清楚，也可能因語氣不同而像質疑或不滿。"
   },
   {
     "phrase": "I'm just kidding",
     "meaning": "我只是開玩笑的",
     "example": "Don't be upset, I'm just kidding!",
     "exampleZh": "別生氣，我只是開玩笑的！",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "用來收回前面玩笑話，表示別太認真；若傷到人，有時不能完全化解。"
   },
   {
     "phrase": "It doesn't matter",
@@ -392,35 +420,40 @@ module.exports = [
     "meaning": "我期待著...",
     "example": "I'm looking forward to seeing you next week.",
     "exampleZh": "我期待著下週見到你。",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "正式與口語都常用，後面要接名詞或 V-ing；常見於 email 收尾。"
   },
   {
     "phrase": "Make sure",
     "meaning": "記得；務必確認",
     "example": "Make sure you lock the door before leaving.",
     "exampleZh": "離開前記得把門鎖好。",
-    "difficulty": 2
+    "difficulty": 2,
+    "context": "用來提醒對方別忘了某件重要事，語氣比 check 更像確認做到。"
   },
   {
     "phrase": "How much",
     "meaning": "多少（錢）",
     "example": "How much does this shirt cost?",
     "exampleZh": "這件襯衫多少錢？",
-    "difficulty": 2
+    "difficulty": 2,
+    "context": "最常用來問價格或不可數量；和 how many 問可數數量不同。"
   },
   {
     "phrase": "What time",
     "meaning": "幾點；什麼時候",
     "example": "What time does the movie start?",
     "exampleZh": "電影幾點開始？",
-    "difficulty": 2
+    "difficulty": 2,
+    "context": "通常問具體鐘點時間；比 when 更常期待明確時刻。"
   },
   {
     "phrase": "Not bad",
     "meaning": "不錯；還好",
     "example": "How was the food? Not bad, actually.",
     "exampleZh": "食物怎麼樣？說實話，還不錯。",
-    "difficulty": 2
+    "difficulty": 2,
+    "context": "常是保守正面的評價，語氣比 great 弱，介於還可以和不錯之間。"
   },
   {
     "phrase": "I'm afraid",
@@ -435,7 +468,8 @@ module.exports = [
     "meaning": "坐下",
     "example": "Please sit down and make yourself comfortable.",
     "exampleZh": "請坐，放輕鬆一點。",
-    "difficulty": 2
+    "difficulty": 2,
+    "context": "可作指令，也可描述動作；語氣視場合可禮貌也可嚴肅。"
   },
   {
     "phrase": "stand up",
@@ -450,14 +484,16 @@ module.exports = [
     "meaning": "回來",
     "example": "When will you come back from your trip?",
     "exampleZh": "你旅行什麼時候回來？",
-    "difficulty": 2
+    "difficulty": 2,
+    "context": "最常指回到原地，也可延伸成記憶恢復、流行再起、話題回頭再談。這句是旅行回來。"
   },
   {
     "phrase": "go out",
     "meaning": "出去",
     "example": "Let's go out for dinner tonight.",
     "exampleZh": "今晚我們出去吃晚餐吧。",
-    "difficulty": 1
+    "difficulty": 1,
+    "context": "可指外出、社交、約會，也可指燈熄掉。這句是外出吃飯，不是交往或熄滅。"
   },
   {
     "phrase": "find out",
@@ -472,7 +508,8 @@ module.exports = [
     "meaning": "裝好；設置",
     "example": "Can you help me set up my new computer?",
     "exampleZh": "你能幫我把新電腦裝好嗎？",
-    "difficulty": 1
+    "difficulty": 1,
+    "context": "多義片語，可指安裝設備、安排活動、建立系統，甚至設局陷害；要看受詞判斷。"
   },
   {
     "phrase": "hang on",
@@ -487,7 +524,8 @@ module.exports = [
     "meaning": "減速；慢下來",
     "example": "Slow down! You're driving too fast.",
     "exampleZh": "慢下來！你開得太快了。",
-    "difficulty": 2
+    "difficulty": 2,
+    "context": "可指實際速度放慢，也可對說話太快、做事太急的人說。"
   },
   {
     "phrase": "hurry up",
@@ -510,7 +548,8 @@ module.exports = [
     "meaning": "小菜一碟；非常容易的事",
     "example": "The test was a piece of cake. I finished it in ten minutes.",
     "exampleZh": "那次考試根本小菜一碟。我十分鐘就做完了。",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "口語俚語，表示某事超容易；比 easy 更有輕鬆自信感。"
   },
   {
     "phrase": "It's up to you",
@@ -525,7 +564,8 @@ module.exports = [
     "meaning": "我等不及了；我迫不及待",
     "example": "The concert is tomorrow. I can't wait!",
     "exampleZh": "演唱會就在明天。我迫不及待了！",
-    "difficulty": 3
+    "difficulty": 3,
+    "context": "通常是興奮期待，不是真的無法等待；語氣很正面。"
   },
   {
     "phrase": "What's wrong?",
@@ -540,21 +580,24 @@ module.exports = [
     "meaning": "請自便；自己拿吧",
     "example": "There's food on the table. Help yourself!",
     "exampleZh": "桌上有食物，自己拿啊！",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "表示不用客氣、自己拿；也可能依語氣變成帶刺的你自己想辦法。"
   },
   {
     "phrase": "Just a moment",
     "meaning": "稍等一下",
     "example": "Just a moment, I'll be right with you.",
     "exampleZh": "稍等一下，我馬上來。",
-    "difficulty": 3
+    "difficulty": 3,
+    "context": "比 Wait 稍禮貌，常用於服務、電話或請對方短暫等待。"
   },
   {
     "phrase": "first of all",
     "meaning": "首先",
     "example": "First of all, I want to thank everyone for coming.",
     "exampleZh": "首先，我想感謝大家的到來。",
-    "difficulty": 3
+    "difficulty": 3,
+    "context": "用來開頭列第一點，常見於說明、演講或整理步驟。"
   },
   {
     "phrase": "in the end",
@@ -569,7 +612,8 @@ module.exports = [
     "meaning": "我吃飽了",
     "example": "No dessert for me, thanks. I'm full.",
     "exampleZh": "我不吃甜點了，謝謝。我吃飽了。",
-    "difficulty": 2
+    "difficulty": 2,
+    "context": "在用餐情境表示肚子已經飽了；不要和 full of something 的其他意思混淆。"
   },
   {
     "phrase": "My pleasure",
@@ -584,7 +628,8 @@ module.exports = [
     "meaning": "畢竟；終究",
     "example": "Don't be too hard on him. He's only a child, after all.",
     "exampleZh": "別對他太嚴厲了。他畢竟只是個孩子。",
-    "difficulty": 2
+    "difficulty": 2,
+    "context": "常用來補上一個支持前面說法的理由，也可表示事情終究還是如此。"
   },
   {
     "phrase": "all right",
@@ -599,7 +644,8 @@ module.exports = [
     "meaning": "至少",
     "example": "It will take at least two hours to get there.",
     "exampleZh": "到那裡至少需要兩個小時。",
-    "difficulty": 2
+    "difficulty": 2,
+    "context": "可表示最低限度，也常用來安慰自己：at least 還有這點好處。"
   },
   {
     "phrase": "I guess",
@@ -622,7 +668,8 @@ module.exports = [
     "meaning": "祝你好運",
     "example": "Good luck on your exam tomorrow!",
     "exampleZh": "祝你明天考試順利！",
-    "difficulty": 2
+    "difficulty": 2,
+    "context": "常在考試、面試、比賽前鼓勵對方；比 congratulations 是事前，不是事後。"
   },
   {
     "phrase": "No way",
@@ -637,42 +684,48 @@ module.exports = [
     "meaning": "請進",
     "example": "Come in, the door is open.",
     "exampleZh": "請進，門是開著的。",
-    "difficulty": 2
+    "difficulty": 2,
+    "context": "常在有人敲門時說，表示允許對方進入。"
   },
   {
     "phrase": "Watch out",
     "meaning": "小心；當心",
     "example": "Watch out! There's a car coming.",
     "exampleZh": "小心！有輛車過來了。",
-    "difficulty": 2
+    "difficulty": 2,
+    "context": "通常是臨場警告，提醒對方立刻注意危險。"
   },
   {
     "phrase": "I agree",
     "meaning": "我同意",
     "example": "I agree with you. That's a great plan.",
     "exampleZh": "我同意你的看法。這是個很好的計畫。",
-    "difficulty": 2
+    "difficulty": 2,
+    "context": "直接表達和對方觀點一致，比 Sounds good 更偏對意見的認同。"
   },
   {
     "phrase": "That's right",
     "meaning": "沒錯；正是如此",
     "example": "That's right, the meeting is at 3 o'clock.",
     "exampleZh": "沒錯，會議是在三點鐘。",
-    "difficulty": 3
+    "difficulty": 3,
+    "context": "常用來確認對方說得對，也可在教學或引導中表示答對了。"
   },
   {
     "phrase": "in a hurry",
     "meaning": "匆忙地",
     "example": "Sorry, I can't chat now. I'm in a hurry.",
     "exampleZh": "抱歉，我現在不能聊天。我趕時間。",
-    "difficulty": 2
+    "difficulty": 2,
+    "context": "表示時間很趕、沒空慢慢來；也常用來解釋自己現在不能停下。"
   },
   {
     "phrase": "more or less",
     "meaning": "差不多；或多或少",
     "example": "The project is more or less finished.",
     "exampleZh": "這個專案差不多完成了。",
-    "difficulty": 3
+    "difficulty": 3,
+    "context": "表示不完全精準，但大致如此；語氣比 exactly 模糊。"
   },
   {
     "phrase": "a little bit",
@@ -695,7 +748,8 @@ module.exports = [
     "meaning": "互相；彼此",
     "example": "They've known each other since high school.",
     "exampleZh": "他們從高中時代就互相認識了。",
-    "difficulty": 3
+    "difficulty": 3,
+    "context": "表示雙向彼此作用，常見於兩人或多人的互動。"
   },
   {
     "phrase": "keep in touch",
@@ -710,21 +764,24 @@ module.exports = [
     "meaning": "休息一下",
     "example": "You've been working all day. Let's take a break.",
     "exampleZh": "你已經工作了一整天了。我們休息一下吧。",
-    "difficulty": 3
+    "difficulty": 3,
+    "context": "表示暫時停下工作或活動喘口氣，不等於完全結束。"
   },
   {
     "phrase": "I'm on my way",
     "meaning": "我在路上了",
     "example": "Don't worry, I'm on my way. I'll be there in ten minutes.",
     "exampleZh": "別擔心，我在路上了。我十分鐘後到。",
-    "difficulty": 3
+    "difficulty": 3,
+    "context": "常用來通知對方自己已出發或快到了，讓對方放心。"
   },
   {
     "phrase": "It's no big deal",
     "meaning": "沒什麼大不了的",
     "example": "You spilled some water? It's no big deal.",
     "exampleZh": "你打翻了一些水？沒什麼大不了的。",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "用來安撫對方，表示這件事沒嚴重到需要緊張或內疚；比 It's fine 更口語。"
   },
   {
     "phrase": "What a shame",
@@ -747,14 +804,16 @@ module.exports = [
     "meaning": "我要遲到了",
     "example": "I'm running late. Can we push the meeting back 15 minutes?",
     "exampleZh": "我要遲到了。會議可以延後十五分鐘嗎？",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "表示自己比原定時間慢了，常用於通知對方會晚到。比 I'm late 更像正在往遲到的方向發展中。"
   },
   {
     "phrase": "Let me know",
     "meaning": "告訴我；讓我知道",
     "example": "If you need any help, just let me know.",
     "exampleZh": "如果你需要任何幫助，告訴我一聲就行。",
-    "difficulty": 3
+    "difficulty": 3,
+    "context": "很常見的請對方之後通知自己某事，語氣可中性也可關心。"
   },
   {
     "phrase": "How's it going?",
@@ -769,28 +828,32 @@ module.exports = [
     "meaning": "我不確定",
     "example": "I'm not sure if she's coming to the party tonight.",
     "exampleZh": "我不確定她今晚是否會來派對。",
-    "difficulty": 3
+    "difficulty": 3,
+    "context": "表示有點想法但沒把握，比 I have no idea 保留更多可能性。"
   },
   {
     "phrase": "hand in",
     "meaning": "繳交 (片語)",
     "example": "Please hand in your homework by Friday.",
     "exampleZh": "請在星期五之前交作業。",
-    "difficulty": 2
+    "difficulty": 2,
+    "context": "常用於把作業、報告、表單等正式交出去，語氣比 hand over 更偏向提交文件或作業；如果是把實體物品遞給別人，通常不會優先用這個。"
   },
   {
     "phrase": "fill in",
     "meaning": "填寫",
     "example": "Please fill in this form with your personal details.",
     "exampleZh": "請在這張表格上填寫你的個人資料。",
-    "difficulty": 2
+    "difficulty": 2,
+    "context": "最常指在表格、空格中填入資料；也可指臨時代班、補位。看受詞判斷：fill in the form 是填表，fill in for me 是代替我一下。"
   },
   {
     "phrase": "talk behind someone's back",
     "meaning": "在背後說人閒話",
     "example": "I can't believe she's been talking behind my back this whole time.",
     "exampleZh": "我真不敢相信她一直在背後說我的閒話。",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "帶負面評價，指當事人不在場時批評、議論或說閒話。不是單純私下提到對方，而是有背後講人壞話的意味。"
   },
   {
     "phrase": "between you and me",
@@ -805,7 +868,8 @@ module.exports = [
     "meaning": "你有聽說嗎",
     "example": "Did you hear about Lisa and Tom? They broke up last week!",
     "exampleZh": "你有聽說麗莎和湯姆的事嗎？他們上週分手了！",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "常用來開啟八卦、新聞或新消息話題，語氣像先確認對方知不知道再往下講。"
   },
   {
     "phrase": "what's the deal with",
@@ -820,49 +884,56 @@ module.exports = [
     "meaning": "不要跟任何人說",
     "example": "I'm pregnant, but don't tell a soul until I'm ready to announce it.",
     "exampleZh": "我懷孕了，但在我準備好宣布之前，不要跟任何人說。",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "比 don't tell anyone 更戲劇化，強調絕對保密，一個人都不能說。"
   },
   {
     "phrase": "it's all over the place",
     "meaning": "到處都在傳；滿城風雨",
     "example": "Their drama is all over the place. Even my mom heard about it.",
     "exampleZh": "他們的狗血劇情到處都在傳，連我媽都聽說了。",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "這裡指消息或八卦傳得到處都是；同一句也可在別的語境表示東西很亂、思緒很散。要看上下文。"
   },
   {
     "phrase": "that's none of your business",
     "meaning": "這不關你的事",
     "example": "How much I make? That's none of your business!",
     "exampleZh": "我賺多少錢？這不關你的事！",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "語氣直接偏硬，通常用來拒絕回答太私人的問題。比 I'd rather not say 更不客氣。"
   },
   {
     "phrase": "mind your own business",
     "meaning": "管好你自己的事",
     "example": "Stop asking about my love life and mind your own business.",
     "exampleZh": "別再問我的感情生活了，管好你自己的事吧。",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "比 that's none of your business 更帶命令和不耐煩，常是在對方一直干涉時回嗆。"
   },
   {
     "phrase": "fill me in",
     "meaning": "跟我說一下狀況；讓我了解一下",
     "example": "I missed the meeting. Can you fill me in on what happened?",
     "exampleZh": "我沒去開會，你能跟我說說發生什麼事嗎？",
-    "difficulty": 2
+    "difficulty": 2,
+    "context": "表示把我漏掉的背景、進度或內情補給我。比 tell me 更強調補齊上下文。"
   },
   {
     "phrase": "what's the latest",
     "meaning": "最新消息是什麼",
     "example": "What's the latest on Sarah and her boyfriend? Are they still together?",
     "exampleZh": "莎拉和她男友最新狀況是什麼？他們還在一起嗎？",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "用來追問某件事目前發展到哪裡，常用於八卦、新聞、專案進度。"
   },
   {
     "phrase": "hot gossip",
     "meaning": "超辣的八卦",
     "example": "I've got some hot gossip. You're not gonna believe this.",
     "exampleZh": "我有爆炸性的八卦，你一定不會相信的。",
-    "difficulty": 3
+    "difficulty": 3,
+    "context": "語氣很口語，強調這是新鮮、勁爆、很有話題性的八卦，不是一般閒聊。"
   },
   {
     "phrase": "keep it between us",
@@ -877,21 +948,24 @@ module.exports = [
     "meaning": "快說！快講！",
     "example": "I can tell something happened. Come on, spill it!",
     "exampleZh": "我看得出來發生了什麼事，快說啊！",
-    "difficulty": 2
+    "difficulty": 2,
+    "context": "通常是半催半鬧地要對方把秘密、內情或重點快點講出來。比 tell me 更有逼供式口語感。"
   },
   {
     "phrase": "you're kidding me",
     "meaning": "你在開玩笑吧",
     "example": "You're kidding me! She actually said that to his face?",
     "exampleZh": "你在開玩笑吧！她真的當著他的面說那種話？",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "表示非常驚訝、難以置信，未必真的以為對方在開玩笑。和 are you serious? 很接近，但情緒通常更外放。"
   },
   {
     "phrase": "are you serious",
     "meaning": "你認真的嗎",
     "example": "Are you serious? He proposed after only two weeks of dating?",
     "exampleZh": "你認真的嗎？他們才交往兩週就求婚了？",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "可表達驚訝，也可帶質疑或不滿。比 you're kidding me 稍微更像確認對方是不是當真。"
   },
   {
     "phrase": "that's insane",
@@ -906,7 +980,8 @@ module.exports = [
     "meaning": "不會吧！（表示驚訝，非叫人閉嘴）",
     "example": "Shut up! You got free tickets to the concert? Lucky!",
     "exampleZh": "不會吧！你拿到演唱會免費票了？好幸運！",
-    "difficulty": 2
+    "difficulty": 2,
+    "context": "在朋友間可當驚訝語，意思接近 no way；但若對不熟的人或用錯語氣，仍可能被理解成真的叫對方閉嘴。"
   },
   {
     "phrase": "you won't believe this",
@@ -921,7 +996,8 @@ module.exports = [
     "meaning": "我無言了；我說不出話來",
     "example": "They threw me a surprise party. I'm completely speechless.",
     "exampleZh": "他們幫我辦了驚喜派對，我完全說不出話來。",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "可正面也可負面，表示震驚到一時不知道該說什麼。要看情境判斷是感動還是傻眼。"
   },
   {
     "phrase": "that's wild",
@@ -936,7 +1012,8 @@ module.exports = [
     "meaning": "你一定在開玩笑",
     "example": "You've got to be kidding! The flight got cancelled again?",
     "exampleZh": "你一定在開玩笑！班機又被取消了？",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "比 you're kidding me 稍長，也常帶更強的不爽或崩潰感，尤其壞消息時很常用。"
   },
   {
     "phrase": "what in the world",
@@ -959,14 +1036,16 @@ module.exports = [
     "meaning": "太不可思議了",
     "example": "She ate the entire cake by herself? That's unbelievable.",
     "exampleZh": "她一個人把整個蛋糕都吃掉了？太不可思議了。",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "可正面也可負面，表示事情超出常理、難以置信。比 that's surprising 更強烈，也比 ridiculous 少一點批判味。"
   },
   {
     "phrase": "I never saw that coming",
     "meaning": "我完全沒料到",
     "example": "They've been secretly dating for a year? I never saw that coming.",
     "exampleZh": "他們偷偷交往了一年？我完全沒料到。",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "強調事情發展完全超出預期，帶有『這走向我完全沒猜到』的驚訝感。"
   },
   {
     "phrase": "what on earth",
@@ -989,21 +1068,24 @@ module.exports = [
     "meaning": "天啊；我的媽呀",
     "example": "Holy cow, did you see that car accident? That was terrifying!",
     "exampleZh": "天啊，你有看到那起車禍嗎？好可怕！",
-    "difficulty": 2
+    "difficulty": 2,
+    "context": "偏輕鬆、較不粗俗的驚呼語，可表震驚、讚嘆或嚇到。比 oh my God 更溫和。"
   },
   {
     "phrase": "I'm so done with",
     "meaning": "我受夠了...",
     "example": "I'm so done with this weather. It's been raining for two weeks straight.",
     "exampleZh": "我真的受夠這個天氣了，連續下了兩週的雨。",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "表示對某人某事徹底沒耐心、受夠了。比 I'm tired of 更情緒化，也更像忍耐到極限。"
   },
   {
     "phrase": "that's so annoying",
     "meaning": "真的好煩",
     "example": "My neighbor plays loud music every night. That's so annoying.",
     "exampleZh": "我鄰居每天晚上都大聲放音樂，真的好煩。",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "形容某事令人煩躁但未必嚴重，常用於日常抱怨。比 unbearable 或 outrageous 輕很多。"
   },
   {
     "phrase": "give me a break",
@@ -1018,14 +1100,16 @@ module.exports = [
     "meaning": "我受不了",
     "example": "I can't stand it when people chew with their mouths open.",
     "exampleZh": "我受不了別人張著嘴嚼東西。",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "表示某件事讓你極度受不了，重點在忍耐極限。比 I don't like it 強很多。"
   },
   {
     "phrase": "what a pain",
     "meaning": "真麻煩；好煩",
     "example": "The elevator is broken again? What a pain — we're on the 12th floor.",
     "exampleZh": "電梯又壞了？真麻煩，我們在十二樓耶。",
-    "difficulty": 3
+    "difficulty": 3,
+    "context": "口語抱怨某件事很麻煩、很擾人，通常比 disaster 輕，偏日常不便。"
   },
   {
     "phrase": "are you for real",
@@ -1048,84 +1132,96 @@ module.exports = [
     "meaning": "那讓我快抓狂了",
     "example": "That tapping noise drives me crazy. Can you please stop?",
     "exampleZh": "那個敲擊聲讓我快抓狂了，可以請你停下來嗎？",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "表示某件事反覆刺激到你很煩、快受不了。可真的是負面，也可在輕鬆語境裡半開玩笑。"
   },
   {
     "phrase": "not again",
     "meaning": "不要又來了",
     "example": "The internet is down? Not again! I have a deadline today.",
     "exampleZh": "網路又斷了？不要又來了！我今天有截止日期耶。",
-    "difficulty": 2
+    "difficulty": 2,
+    "context": "表示同樣糟糕的事又發生一次，帶無奈、厭煩或崩潰感。"
   },
   {
     "phrase": "what a nightmare",
     "meaning": "真是一場惡夢",
     "example": "My flight got cancelled and I lost my luggage. What a nightmare.",
     "exampleZh": "我的班機被取消，行李又弄丟了，真是一場惡夢。",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "誇張形容整件事非常糟、非常難搞，不是真的在講夢。常用於旅行、流程、工作災難。"
   },
   {
     "phrase": "what a waste of time",
     "meaning": "真是浪費時間",
     "example": "That movie was terrible. What a waste of time.",
     "exampleZh": "那部電影太爛了，真是浪費時間。",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "表示某件事不值得投入時間，帶明顯負評。比 boring 更直接否定價值。"
   },
   {
     "phrase": "I'm over it",
     "meaning": "我已經不在乎了；我放下了",
     "example": "He didn't apologize, but whatever. I don't care anymore.",
     "exampleZh": "他沒有道歉，但算了，我已經不在乎了。", 
-    "difficulty": 3
+    "difficulty": 3,
+    "context": "可表示情緒上已經放下，也可表示對某件事失去耐心、懶得再理。要看語氣判斷是成熟釋懷還是厭煩。"
   },
   {
     "phrase": "enough is enough",
     "meaning": "夠了就是夠了；適可而止",
     "example": "You've been partying every night. Enough is enough!",
     "exampleZh": "你已經連續每晚去派對了，夠了就是夠了！",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "表示忍耐到極限，現在必須停止或改變。語氣通常很堅決。"
   },
   {
     "phrase": "that sucks",
     "meaning": "真爛；真糟糕",
     "example": "You have to work on Christmas? That sucks, man.",
     "exampleZh": "你聖誕節要上班？真的很慘耶，兄弟。",
-    "difficulty": 3
+    "difficulty": 3,
+    "context": "非常口語，用來表示同情、覺得事情很衰。語氣比 That's too bad 更隨意，也較粗一點。"
   },
   {
     "phrase": "can you believe this",
     "meaning": "你敢相信嗎",
     "example": "Can you believe this? They charged me twice for the same meal!",
     "exampleZh": "你敢相信嗎？他們對同一頓飯收了我兩次錢！",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "常用來引出令人傻眼、離譜或驚人的事，語氣像在拉對方一起震驚。"
   },
   {
     "phrase": "ugh, seriously",
     "meaning": "噁，認真假的（表示厭煩）",
     "example": "Ugh, seriously? Another pop quiz? I didn't study at all.",
     "exampleZh": "噁，認真假的？又有隨堂考？我完全沒讀書耶。",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "很口語的厭煩反應，常用於突然遇到煩事時。比 are you serious 更偏情緒抱怨。"
   },
   {
     "phrase": "I'm so frustrated",
     "meaning": "我好挫折；我好火大",
     "example": "I've been trying to fix this bug for hours. It's driving me crazy.",
     "exampleZh": "我已經試著修這個錯誤好幾個小時了，真的快瘋了。", 
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "表示事情卡住、做不成所帶來的挫折感。比 angry 更偏無力和煩躁。"
   },
   {
     "phrase": "it's not fair",
     "meaning": "不公平",
     "example": "She gets to leave early every day. It's not fair!",
     "exampleZh": "她每天都可以提早離開，這不公平！",
-    "difficulty": 3
+    "difficulty": 3,
+    "context": "直接表達覺得待遇、分配或結果不公平，常帶抱怨或委屈。"
   },
   {
     "phrase": "I'm losing my mind",
     "meaning": "我快瘋了",
     "example": "I can't find my keys anywhere. This is so stressful!",
     "exampleZh": "我找不到鑰匙，到處都找不到，真的好崩潰！", 
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "誇張表示壓力大到快失去理智，常用於混亂、焦慮或反覆出錯的情境。"
   },
   {
     "phrase": "same here",
@@ -1140,14 +1236,16 @@ module.exports = [
     "meaning": "毫無疑問",
     "example": "\"Is she the best singer in the group?\" \"No doubt about it.\"",
     "exampleZh": "「她是團裡唱得最好的嗎？」「毫無疑問。」",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "用來非常肯定地認同某個判斷，語氣比 probably 或 I think 強很多。"
   },
   {
     "phrase": "not really",
     "meaning": "不太算；並不是",
     "example": "\"Do you like horror movies?\" \"Not really. They give me nightmares.\"",
     "exampleZh": "「你喜歡恐怖電影嗎？」「不太喜歡，它們會讓我做惡夢。」",
-    "difficulty": 3
+    "difficulty": 3,
+    "context": "常用來委婉否定，不像 no 那麼硬。可以表示不完全是、也不太喜歡。"
   },
   {
     "phrase": "you've got a point there",
@@ -1162,14 +1260,16 @@ module.exports = [
     "meaning": "不是開玩笑的；真的",
     "example": "\"That test was brutal.\" \"No kidding. I think I failed.\"",
     "exampleZh": "「那次考試超難的。」「真的，我覺得我沒過。」",
-    "difficulty": 3
+    "difficulty": 3,
+    "context": "可表示『真的耶／可不是嗎』，是在附和對方，不是真的澄清自己沒開玩笑。"
   },
   {
     "phrase": "I'm with you on that",
     "meaning": "這點我跟你想的一樣",
     "example": "\"We need a longer lunch break.\" \"I'm with you on that.\"",
     "exampleZh": "「我們需要更長的午休時間。」「這點我跟你想的一樣。」",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "表示在某一點上支持對方、跟對方同一陣線。比 I agree 更有站在你這邊的感覺。"
   },
   {
     "phrase": "I hear you",
@@ -1184,7 +1284,8 @@ module.exports = [
     "meaning": "那我不太確定耶",
     "example": "\"This diet will make you lose 10 pounds in a week.\" \"I'm not so sure about that.\"",
     "exampleZh": "「這個飲食法能讓你一週瘦十磅。」「我不太確定是這樣耶。」",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "委婉表達懷疑或不同意，不像 that's wrong 那麼直接。常用於不想把話說死的反駁。"
   },
   {
     "phrase": "for sure",
@@ -1207,7 +1308,8 @@ module.exports = [
     "meaning": "不對吧，那是錯的",
     "example": "\"Tomatoes are vegetables.\" \"No way, that's wrong. They're technically fruits.\"",
     "exampleZh": "「番茄是蔬菜。」「不對吧，那是錯的，嚴格來說它們是水果。」",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "比 I'm not so sure about that 更直接、更強烈，表示你明確認為對方說錯了。"
   },
   {
     "phrase": "I suppose so",
@@ -1230,7 +1332,8 @@ module.exports = [
     "meaning": "你說了算；隨便你",
     "example": "\"This is going to be fun, trust me.\" \"If you say so.\"",
     "exampleZh": "「相信我，這會很好玩的。」「你說了算吧。」",
-    "difficulty": 3
+    "difficulty": 3,
+    "context": "表面上接受，實際常帶保留、半信半疑甚至敷衍。不是熱情同意。"
   },
   {
     "phrase": "I'm stressed out",
@@ -1245,7 +1348,8 @@ module.exports = [
     "meaning": "讓我很心痛",
     "example": "It breaks my heart to see her struggling like this.",
     "exampleZh": "看到她這樣掙扎，讓我很心痛。",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "表示看到某種情況讓人非常難過、揪心，常用於他人受苦、失去、遺憾。"
   },
   {
     "phrase": "I'm feeling down",
@@ -1260,21 +1364,24 @@ module.exports = [
     "meaning": "我快崩潰了；我嚇壞了",
     "example": "My presentation is in ten minutes and I'm so nervous!",
     "exampleZh": "還有十分鐘就要上台報告了，我超緊張的！", 
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "表示情緒失控邊緣，可能是緊張、驚慌或壓力太大。比 worried 強很多，也比 panicking 更口語。"
   },
   {
     "phrase": "I'm in a good mood",
     "meaning": "我心情很好",
     "example": "The sun is shining and I got great news. Today feels wonderful.",
     "exampleZh": "陽光普照，又收到好消息，今天感覺真棒。", 
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "表示整體心情狀態很好，不一定是因為單一事件。可用來解釋自己今天特別好說話。"
   },
   {
     "phrase": "I'm not in the mood",
     "meaning": "我沒那個心情",
     "example": "I don't feel like going out tonight. Can we just stay home?",
     "exampleZh": "我今晚不想出門，我們可以就待在家嗎？", 
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "表示現在沒有心情做某件事，不一定是心情差，也可能只是累、煩、想安靜。"
   },
   {
     "phrase": "I feel like crap",
@@ -1289,98 +1396,112 @@ module.exports = [
     "meaning": "我超開心的；樂翻了",
     "example": "You're coming to visit next month! That's so exciting!",
     "exampleZh": "你下個月要來拜訪，太令人興奮了！", 
-    "difficulty": 3
+    "difficulty": 3,
+    "context": "比 happy 更強，表示非常興奮和開心，常用於好消息、榮幸或期待成真。"
   },
   {
     "phrase": "that makes me sick",
     "meaning": "那讓我反感；我覺得噁心",
     "example": "The way he treats his dog makes me sick.",
     "exampleZh": "他對待他的狗的方式讓我覺得很反感。",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "多半是道德上的厭惡、反感，不一定真的是身體噁心。語氣很強烈。"
   },
   {
     "phrase": "I'm so relieved",
     "meaning": "我鬆了好大一口氣",
     "example": "The surgery went well. What a relief!",
     "exampleZh": "手術很順利，真是鬆了一口氣。", 
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "表示原本擔心的事終於沒事了，重點在壓力解除後的鬆一口氣。"
   },
   {
     "phrase": "I'm dying of boredom",
     "meaning": "我無聊到快死了",
     "example": "This lecture is endless. I can't stand how boring it is.",
     "exampleZh": "這堂課沒完沒了，真的無聊到不行。", 
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "誇張說法，表示極度無聊，不是真的有危險。語氣帶抱怨和戲劇感。"
   },
   {
     "phrase": "I feel left out",
     "meaning": "我覺得被排擠了",
     "example": "Everyone got invited to the party except me. It's so lonely.",
     "exampleZh": "大家都被邀請去派對，就只有我沒有，真的很孤單。", 
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "表示自己被排除在外、沒被算進去，重點在被忽略或沒參與感。"
   },
   {
     "phrase": "I'm so embarrassed",
     "meaning": "我好丟臉",
     "example": "I called my teacher 'Mom' in front of the whole class. That was so embarrassing.",
     "exampleZh": "我在全班面前叫老師「媽媽」，真的超丟臉。", 
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "多用於自己出糗、社交尷尬的情境。和 ashamed 不同，這裡不一定涉及道德羞愧。"
   },
   {
     "phrase": "it warms my heart",
     "meaning": "心裡暖暖的；感到很窩心",
     "example": "Seeing the kids help each other really warms my heart.",
     "exampleZh": "看到孩子們互相幫助，真的讓人感到很窩心。",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "表示某件溫暖、善良的事讓人感到感動和安慰，語氣正面柔和。"
   },
   {
     "phrase": "I'm sick and tired of this",
     "meaning": "我真的煩透了",
     "example": "This commute is exhausting. Two hours every day is insane.",
     "exampleZh": "這段通勤真的讓人受不了，每天兩小時太誇張了。", 
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "比 I'm tired of this 更強烈，表示已經受夠、厭煩到極限。"
   },
   {
     "phrase": "I'm heartbroken",
     "meaning": "我心碎了",
     "example": "My favorite show got cancelled. It really hurts.",
     "exampleZh": "我最喜歡的節目被停播了，真的很難過。", 
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "通常用於失戀、失去、重大失望等情緒很重的場景，比 sad 強得多。"
   },
   {
     "phrase": "I'm anxious about",
     "meaning": "我對...很焦慮",
     "example": "The job interview is tomorrow. I'm so nervous about it.",
     "exampleZh": "明天就要面試了，我真的很緊張。", 
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "表示對未來即將發生的事感到焦慮不安。比 nervous 更持續，也可能更深層。"
   },
   {
     "phrase": "love at first sight",
     "meaning": "一見鍾情",
     "example": "He saw her across the room and instantly felt a strong connection.",
     "exampleZh": "他在房間另一頭看到她時，立刻就有觸電的感覺。", 
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "浪漫語境裡指第一次見面就立刻產生強烈愛意，常帶戲劇或理想化色彩。"
   },
   {
     "phrase": "it's complicated",
     "meaning": "很複雜（形容感情狀態）",
     "example": "\"Are you two together?\" \"It's complicated. We're figuring things out.\"",
     "exampleZh": "「你們兩個在一起嗎？」「關係有點複雜，還說不準。」",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "常用來模糊帶過感情或人際狀態，暗示不是單純在一起或分開，背後有很多細節。"
   },
   {
     "phrase": "they're on a break",
     "meaning": "他們在冷靜期；暫時分開",
     "example": "They're not together right now. Nobody knows if they'll get back together.",
     "exampleZh": "他們現在分開冷靜中，沒人知道會不會復合。", 
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "表示情侶暫時分開、冷靜一下，不一定正式分手，通常保留是否復合的不確定性。"
   },
   {
     "phrase": "seeing someone",
     "meaning": "在跟某人交往中",
     "example": "\"Are you single?\" \"No, I'm actually seeing someone.\"",
     "exampleZh": "「你單身嗎？」「不是耶，我有在交往的對象了。」",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "表示目前有在和某人約會或發展關係，但不一定代表已經正式定義成男女朋友。"
   },
   {
     "phrase": "move on from someone",
@@ -1395,49 +1516,56 @@ module.exports = [
     "meaning": "復合",
     "example": "They broke up twice already. I doubt they'll get back together again.",
     "exampleZh": "他們已經分手兩次了，我不覺得他們會再復合。",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "指分手後重新在一起，重點是關係重新建立，而不是單純見面或和好。"
   },
   {
     "phrase": "it's a match",
     "meaning": "配對成功（交友軟體用語）",
     "example": "I swiped right and it's a match! She liked me back.",
     "exampleZh": "我右滑了，配對成功！她也喜歡我。",
-    "difficulty": 3
+    "difficulty": 3,
+    "context": "常見於交友軟體，表示雙方都互相按喜歡而成功配對。不是一般關係中的『很配』。"
   },
   {
     "phrase": "couple goals",
     "meaning": "模範情侶；令人羨慕的一對",
     "example": "They cook together every night. Total couple goals.",
     "exampleZh": "他們每晚一起做飯，完全是模範情侶。",
-    "difficulty": 3
+    "difficulty": 3,
+    "context": "網路口語，表示某對情侶的互動讓人羨慕、想效法。常帶誇張、稱讚語氣。"
   },
   {
     "phrase": "love is blind",
     "meaning": "愛情是盲目的",
     "example": "She can't see any of his flaws. Love is truly blind.",
     "exampleZh": "她看不到他任何的缺點，愛情真的是盲目的。",
-    "difficulty": 3
+    "difficulty": 3,
+    "context": "用來評論人在戀愛中容易忽略對方缺點，通常帶感嘆或半調侃語氣。"
   },
   {
     "phrase": "make the first move",
     "meaning": "主動出擊；先告白",
     "example": "I'm too shy. I wish she would make the first move.",
     "exampleZh": "我太害羞了，我希望她能先主動出擊。",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "表示在感情、社交或談判中先採取主動。戀愛語境裡常指先搭話、先表白。"
   },
   {
     "phrase": "have a type",
     "meaning": "有固定喜歡的類型",
     "example": "She always dates tall guys. She definitely has a type.",
     "exampleZh": "她總是跟高個子的男生交往，她顯然有固定的類型。",
-    "difficulty": 3
+    "difficulty": 3,
+    "context": "表示一個人在外型、個性或風格上常被某一類型吸引，常見於感情閒聊。"
   },
   {
     "phrase": "swipe right",
     "meaning": "右滑表示喜歡（交友軟體）",
     "example": "I'd swipe right on him in a heartbeat. He's so cute.",
     "exampleZh": "我會毫不猶豫地右滑他，他好可愛。",
-    "difficulty": 3
+    "difficulty": 3,
+    "context": "交友軟體語境裡表示對某人有興趣、按喜歡。不是一般生活中的右滑動作。"
   },
   {
     "phrase": "get over someone",
@@ -1452,20 +1580,23 @@ module.exports = [
     "meaning": "另一半；伴侶",
     "example": "Are you bringing your significant other to the company dinner?",
     "exampleZh": "你要帶另一半來公司晚宴嗎？",
-    "difficulty": 4
+    "difficulty": 4,
+    "context": "較中性、正式的伴侶說法，不特別指已婚或未婚，常見於邀請、表格、職場場合。"
   },
   {
     "phrase": "go live",
     "meaning": "開直播",
     "example": "She goes live on Instagram every night to chat with her fans.",
     "exampleZh": "她每天晚上都在Instagram開直播和粉絲聊天。",
-    "difficulty": 2
+    "difficulty": 2,
+    "context": "可指社群平台開始直播，也可在商務技術語境裡指系統正式上線。這句是社群直播。"
   },
   {
     "phrase": "no filter",
     "meaning": "沒修圖；說話直接不修飾",
     "example": "This photo is no filter. The sunset really looked like that!",
     "exampleZh": "這張照片沒修圖，夕陽真的就是那個樣子！",
-    "difficulty": 2
+    "difficulty": 2,
+    "context": "可指照片沒加濾鏡，也可形容一個人講話很直、不修飾。這句是照片語境，不是個性描述。"
   }
 ];
