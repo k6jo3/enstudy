@@ -267,7 +267,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 1,
     "example": "The company held a press conference to announce the merger.",
-    "exampleZh": "公司召開了記者會宣布合併消息。"
+    "exampleZh": "公司召開了記者會宣布合併消息。",
+    "context": "????????????????????? media??????"
   },
   {
     "word": "sponsor",
@@ -375,7 +376,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 1,
     "example": "The article included a quote from the company president.",
-    "exampleZh": "這篇文章引用了公司總裁的一段話。"
+    "exampleZh": "這篇文章引用了公司總裁的一段話。",
+    "context": "常指被引述的一段原話、名言或報價內容。比較 citation：較正式，常指學術或法律上的出處標註。"
   },
   {
     "word": "caption",
@@ -393,7 +395,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 2,
     "example": "The report included a graphic showing the sales trend.",
-    "exampleZh": "報告中包含了一張顯示銷售趨勢的圖表。"
+    "exampleZh": "報告中包含了一張顯示銷售趨勢的圖表。",
+    "context": "??????????????????????? graph???????"
   },
   {
     "word": "print",
@@ -915,7 +918,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 1,
     "example": "Social media has become a major source of news.",
-    "exampleZh": "社群媒體已成為重要的新聞來源。"
+    "exampleZh": "社群媒體已成為重要的新聞來源。",
+    "context": "????????????????????? press????????????"
   },
   {
     "word": "viral",
@@ -933,7 +937,8 @@ module.exports = [
     "pos": "adj",
     "difficulty": 2,
     "example": "The topic was trending on social media all day.",
-    "exampleZh": "這個話題整天都在社群媒體上是熱門話題。"
+    "exampleZh": "這個話題整天都在社群媒體上是熱門話題。",
+    "context": "????????????? trend??????????"
   },
   {
     "word": "influencer",
@@ -1203,7 +1208,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 1,
     "example": "We hailed a taxi outside the restaurant to get back to the hotel.",
-    "exampleZh": "我們在餐廳外招計程車回飯店。"
+    "exampleZh": "我們在餐廳外招計程車回飯店。",
+    "context": "最常見、最口語的「計程車」。比較 taxicab：較完整、較正式，但意思相同。"
   },
   {
     "word": "cab",
@@ -1239,7 +1245,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 1,
     "example": "They paddled a canoe down the river through the national park.",
-    "exampleZh": "他們划獨木舟沿著河流通過國家公園。"
+    "exampleZh": "他們划獨木舟沿著河流通過國家公園。",
+    "context": "????????????? kayak????????????"
   },
   {
     "word": "sedan",
@@ -1752,7 +1759,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 2,
     "example": "He pushed the trolley through the supermarket aisles loading up on groceries.",
-    "exampleZh": "他推著手推車穿過超市走道採購日用品。"
+    "exampleZh": "他推著手推車穿過超市走道採購日用品。",
+    "context": "?????????????? wheelbarrow?????????"
   },
   {
     "word": "sample",
@@ -1824,7 +1832,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 3,
     "example": "She tested several fragrances before choosing the floral one.",
-    "exampleZh": "她試了幾款香水後選擇了花香味的那款。"
+    "exampleZh": "她試了幾款香水後選擇了花香味的那款。",
+    "context": "????????????????????? aroma???????????"
   },
   {
     "word": "jewelry",
@@ -1905,7 +1914,8 @@ module.exports = [
     "pos": "v",
     "difficulty": 3,
     "example": "Subscribe to our newsletter to receive weekly deals in your inbox.",
-    "exampleZh": "訂閱我們的電子報，每週在收件匣收到優惠資訊。"
+    "exampleZh": "訂閱我們的電子報，每週在收件匣收到優惠資訊。",
+    "context": "動詞，指訂閱頻道、電子報、服務。比較 subscription：名詞，指訂閱本身或訂閱方案。和片語 sign up for 很接近，但 subscribe 更常直接用在內容或服務訂閱。"
   },
   {
     "word": "purchase",
@@ -1923,7 +1933,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 1,
     "example": "Buying paper in bulk is much cheaper than buying single packs.",
-    "exampleZh": "大量購買紙張比買單包便宜得多。"
+    "exampleZh": "大量購買紙張比買單包便宜得多。",
+    "context": "常指大宗、大批量，尤其在 bulk buy 這類商務或採購語境。比較 plenty：強調夠多；mass：可指大量群體。"
   },
   {
     "word": "parcel",
@@ -1941,7 +1952,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 2,
     "example": "Please handle the package with care because the contents are fragile.",
-    "exampleZh": "請小心處理這個包裹，因為裡面的東西很易碎。"
+    "exampleZh": "請小心處理這個包裹，因為裡面的東西很易碎。",
+    "context": "名詞，指包裹、包裝件、整套方案。比較 wrap：動詞，指包起來、包裝這個動作。"
   },
   {
     "word": "wrap",
@@ -1950,7 +1962,8 @@ module.exports = [
     "pos": "v",
     "difficulty": 1,
     "example": "Could you please wrap this as a gift with some ribbon?",
-    "exampleZh": "你能幫我把這個用緞帶包裝成禮物嗎？"
+    "exampleZh": "你能幫我把這個用緞帶包裝成禮物嗎？",
+    "context": "動詞，指包裝、裹起來、用某物包住。比較 package：名詞，指包裹或包裝件。"
   },
   {
     "word": "return",
@@ -1995,7 +2008,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 2,
     "example": "Travel expenses include airfare, meals, and ground transportation costs.",
-    "exampleZh": "旅遊開銷包括機票、餐費和地面交通費用。"
+    "exampleZh": "旅遊開銷包括機票、餐費和地面交通費用。",
+    "context": "??????????? cost????????????"
   },
   {
     "word": "sale",
@@ -2022,7 +2036,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 1,
     "example": "The total cost of the trip was lower than we had originally expected.",
-    "exampleZh": "這趟旅行的總費用比我們原先預期的還要低。"
+    "exampleZh": "這趟旅行的總費用比我們原先預期的還要低。",
+    "context": "??????????????? fee????????expense??????"
   },
   {
     "word": "charge",
@@ -2031,7 +2046,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 2,
     "example": "There is no extra charge for gift wrapping during the holiday season.",
-    "exampleZh": "假日期間禮物包裝不收取額外費用。"
+    "exampleZh": "假日期間禮物包裝不收取額外費用。",
+    "context": "???????????????????? fee????????"
   },
   {
     "word": "import",
@@ -2355,7 +2371,8 @@ module.exports = [
     "pos": "adj",
     "difficulty": 1,
     "example": "Urban development is rapidly transforming farmland into residential housing neighborhoods.",
-    "exampleZh": "都市開發正在迅速將農地轉變為住宅社區。"
+    "exampleZh": "都市開發正在迅速將農地轉變為住宅社區。",
+    "context": "??????????? urbanization???????"
   },
   {
     "word": "population",
@@ -2481,7 +2498,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 1,
     "example": "The street lights automatically turn on at dusk every single evening.",
-    "exampleZh": "路燈每天傍晚黃昏時分自動亮起。"
+    "exampleZh": "路燈每天傍晚黃昏時分自動亮起。",
+    "context": "?????????????? twilight?????????????"
   },
   {
     "word": "punctual",
@@ -2499,7 +2517,8 @@ module.exports = [
     "pos": "adj",
     "difficulty": 1,
     "example": "Prior experience in customer service is required for this job position.",
-    "exampleZh": "這個職位要求具備先前的客戶服務經驗。"
+    "exampleZh": "這個職位要求具備先前的客戶服務經驗。",
+    "context": "較正式的「先前的」，也可表示「優先的」。常見於書面、法律、商務。比較 previous：較日常、較通用。"
   },
   {
     "word": "eternal",

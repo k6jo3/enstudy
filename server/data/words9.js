@@ -582,7 +582,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 4,
     "example": "The governor issued a proclamation declaring a state of emergency.",
-    "exampleZh": "州長發布公告宣布進入緊急狀態。"
+    "exampleZh": "州長發布公告宣布進入緊急狀態。",
+    "context": "??????????? bulletin??????"
   },
   {
     "word": "unilateral",
@@ -1784,7 +1785,8 @@ module.exports = [
     "pos": "adj",
     "difficulty": 1,
     "example": "The clothes are dry.",
-    "exampleZh": "衣服乾了。"
+    "exampleZh": "衣服乾了。",
+    "context": "形容詞，指乾的、沒有水分的。比較 dryer：名詞，指烘乾機或吹風機。"
   },
   {
     "word": "wet",
@@ -1994,7 +1996,8 @@ module.exports = [
     "pos": "adj",
     "difficulty": 1,
     "example": "He is a brave boy.",
-    "exampleZh": "他是一個勇敢的男孩。"
+    "exampleZh": "他是一個勇敢的男孩。",
+    "context": "最常見、最自然的「勇敢的」。可用於人面對危險、困難或害怕時仍敢行動。比較 courageous：語氣更正式，也更強調道德勇氣或重大決定上的勇氣。"
   },
   {
     "word": "shy",
@@ -2003,7 +2006,8 @@ module.exports = [
     "pos": "adj",
     "difficulty": 1,
     "example": "She is very shy.",
-    "exampleZh": "她很害羞。"
+    "exampleZh": "她很害羞。",
+    "context": "???????????????????? timid???????????????????"
   },
   {
     "word": "polite",
@@ -2429,7 +2433,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 1,
     "example": "I live in a big house.",
-    "exampleZh": "我住在一棟大房子裡。"
+    "exampleZh": "我住在一棟大房子裡。",
+    "context": "指房子這棟建築、住宅本身。比較 home：強調家、家的感覺或回家這件事，不一定只指建築物。"
   },
   {
     "word": "home",
@@ -2438,7 +2443,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 1,
     "example": "I go home after school.",
-    "exampleZh": "我放學後回家。"
+    "exampleZh": "我放學後回家。",
+    "context": "強調家、回家、家的感覺，不只是建築物本身。比較 house：指房子這棟建築。也常見於 at home、make yourself at home 這類片語。"
   },
   {
     "word": "room",
@@ -2492,7 +2498,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 1,
     "example": "The floor is clean.",
-    "exampleZh": "地板很乾淨。"
+    "exampleZh": "地板很乾淨。",
+    "context": "一般指地面、樓層的地板，是最常用的說法。比較 floorboard：指一塊一塊的地板木板或車內腳下的板面，不是泛指整個地板。"
   },
   {
     "word": "wall",
@@ -2555,7 +2562,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 2,
     "example": "My teacher is very kind.",
-    "exampleZh": "我的老師很親切。"
+    "exampleZh": "我的老師很親切。",
+    "context": "????????? teach???????"
   },
   {
     "word": "student",
@@ -2573,7 +2581,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 1,
     "example": "I have a test tomorrow.",
-    "exampleZh": "我明天有考試。"
+    "exampleZh": "我明天有考試。",
+    "context": "???????????????? testify????????"
   },
   {
     "word": "homework",
@@ -2601,7 +2610,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 1,
     "example": "Look at the board.",
-    "exampleZh": "看黑板。"
+    "exampleZh": "看黑板。",
+    "context": "這筆是名詞，指板子、黑板。比較 boarding：名詞，指登機或登船程序；兩者不是同義，只是詞形相關。"
   },
   {
     "word": "ruler",
@@ -2628,7 +2638,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 2,
     "example": "Do you have any questions?",
-    "exampleZh": "你有任何問題嗎？"
+    "exampleZh": "你有任何問題嗎？",
+    "context": "??????????????????? issue??????????????"
   },
   {
     "word": "lesson",

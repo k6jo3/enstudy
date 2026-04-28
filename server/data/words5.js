@@ -384,7 +384,8 @@ module.exports = [
     "pos": "v",
     "difficulty": 3,
     "example": "The committee will assess all proposals before making a final decision.",
-    "exampleZh": "委員會會在做最終決定前評估所有提案。"
+    "exampleZh": "委員會會在做最終決定前評估所有提案。",
+    "context": "動詞，指評估、衡量、審查，也可用於稅務上的估定。比較 assessment：名詞，指評估本身或評量結果；assessor：指評估者。"
   },
   {
     "word": "monitor",
@@ -676,7 +677,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 3,
     "example": "A lack of server access has become a major blocker for the development team.",
-    "exampleZh": "缺乏伺服器存取權限已成為開發團隊的主要障礙。"
+    "exampleZh": "缺乏伺服器存取權限已成為開發團隊的主要障礙。",
+    "context": "名詞，指卡住進度的障礙、阻礙因素。比較 block：動詞，指實際阻擋、封鎖。"
   },
   {
     "word": "capacity",
@@ -939,7 +941,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 3,
     "example": "The consultant drew a diagram to illustrate the proposed organizational structure.",
-    "exampleZh": "顧問畫了一張圖表來說明建議的組織架構。"
+    "exampleZh": "顧問畫了一張圖表來說明建議的組織架構。",
+    "context": "????????????????? graph????????"
   },
   {
     "word": "checkpoint",
@@ -1011,7 +1014,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 3,
     "example": "He showed a natural aptitude for mathematics from an early age.",
-    "exampleZh": "他從小就展現出數學方面的天賦。"
+    "exampleZh": "他從小就展現出數學方面的天賦。",
+    "context": "?????????????? talent????????????"
   },
   {
     "word": "discourse",
@@ -1083,7 +1087,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 3,
     "example": "Every claim in the essay must include a proper citation.",
-    "exampleZh": "文章中的每項主張都必須附上正確的引用。"
+    "exampleZh": "文章中的每項主張都必須附上正確的引用。",
+    "context": "常指正式的文獻引用、出處標註，常見於學術、研究、法律文件。比較 quote：較常指被引用的那段原話或引述內容本身。"
   },
   {
     "word": "almanac",
@@ -1894,7 +1899,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 3,
     "example": "Backpacking through Europe is a popular gap-year activity.",
-    "exampleZh": "在歐洲背包旅行是很受歡迎的空檔年活動。"
+    "exampleZh": "在歐洲背包旅行是很受歡迎的空檔年活動。",
+    "context": "名詞，指背包旅行這種活動或旅行方式。比較 backpack：動詞，指去背包旅行。"
   },
   {
     "word": "rebook",
@@ -2084,7 +2090,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 3,
     "example": "Put everything on my tab and I will pay at the end.",
-    "exampleZh": "全部記在我的帳上，我最後再付。"
+    "exampleZh": "全部記在我的帳上，我最後再付。",
+    "context": "?????????????????? fee?????????"
   },
   {
     "word": "split",
@@ -2257,7 +2264,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 3,
     "example": "We took a taxicab from the airport to the hotel.",
-    "exampleZh": "我們從機場搭計程車到飯店。"
+    "exampleZh": "我們從機場搭計程車到飯店。",
+    "context": "和 taxi 幾乎同義，但 taxicab 較完整、較正式，現代口語更常直接說 taxi。"
   },
   {
     "word": "rideshare",
@@ -2284,7 +2292,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 3,
     "example": "Ferries depart from the pier every thirty minutes.",
-    "exampleZh": "渡輪每三十分鐘從碼頭出發。"
+    "exampleZh": "渡輪每三十分鐘從碼頭出發。",
+    "context": "????????????????? dock/wharf?dock ???wharf ????"
   },
   {
     "word": "stopover",
@@ -2293,7 +2302,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 3,
     "example": "We had a brief stopover in Singapore on the way to London.",
-    "exampleZh": "我們在前往倫敦的途中在新加坡短暫停留。"
+    "exampleZh": "我們在前往倫敦的途中在新加坡短暫停留。",
+    "context": "中途停留，通常較強調旅程中安排在某地停一下，可能停留較久。比較 layover：也指轉機停留，但更常用於航空行程和等待下一班機。"
   },
   {
     "word": "declaration",

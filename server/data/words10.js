@@ -161,7 +161,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 1,
     "example": "There are cows on the farm.",
-    "exampleZh": "農場上有牛。"
+    "exampleZh": "農場上有牛。",
+    "context": "名詞，指農場、農莊。比較 farmer：指在農場工作或經營農場的人。"
   },
   {
     "word": "zoo",
@@ -386,7 +387,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 2,
     "example": "Many people are in the park.",
-    "exampleZh": "公園裡有很多人。"
+    "exampleZh": "公園裡有很多人。",
+    "context": "最一般、最中性的「人們」。比較 folk：較有地方色彩、親切感，或偏民間、傳統語境。"
   },
   {
     "word": "man",
@@ -467,7 +469,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 2,
     "example": "The farmer grows rice.",
-    "exampleZh": "農夫種稻米。"
+    "exampleZh": "農夫種稻米。",
+    "context": "名詞，指農夫、農場經營者。比較 farm：指農場這個地方。"
   },
   {
     "word": "driver",
@@ -721,7 +724,8 @@ module.exports = [
     "pos": "prep",
     "difficulty": 1,
     "example": "Tell me about your day.",
-    "exampleZh": "跟我說說你今天過得怎樣。"
+    "exampleZh": "跟我說說你今天過得怎樣。",
+    "context": "最常用、最口語的「關於」。可用在對話、提問、聊天。比較 regarding：較正式，常見於信件、公告、商務往來。"
   },
   {
     "word": "and",
@@ -983,7 +987,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 2,
     "example": "The office is open on weekdays from nine to five.",
-    "exampleZh": "辦公室在工作日上午九點至下午五點開放。"
+    "exampleZh": "辦公室在工作日上午九點至下午五點開放。",
+    "context": "??????????????? workday???????????????"
   },
   {
     "word": "dozen",
@@ -1055,7 +1060,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 1,
     "example": "The total area of the office is five hundred square meters.",
-    "exampleZh": "辦公室的總面積為五百平方米。"
+    "exampleZh": "辦公室的總面積為五百平方米。",
+    "context": "????????????? region????????????????"
   },
   {
     "word": "chart",
@@ -1073,7 +1079,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 1,
     "example": "We need to collect more data before making a decision.",
-    "exampleZh": "做出決定前，我們需要收集更多數據。"
+    "exampleZh": "做出決定前，我們需要收集更多數據。",
+    "context": "??????????? handout????????????"
   },
   {
     "word": "negative",
@@ -1921,7 +1928,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 3,
     "example": "Attendance is required for all classes.",
-    "exampleZh": "所有課程都要求出席。"
+    "exampleZh": "所有課程都要求出席。",
+    "context": "??????????? presence???????????"
   },
   {
     "word": "thunderstorm",
@@ -1957,7 +1965,8 @@ module.exports = [
     "pos": "v",
     "difficulty": 1,
     "example": "Try to avoid eating too much sugar.",
-    "exampleZh": "盡量避免攝取太多糖分。"
+    "exampleZh": "盡量避免攝取太多糖分。",
+    "context": "???????????? refrain?????????????"
   },
   {
     "word": "bend",
@@ -1975,7 +1984,8 @@ module.exports = [
     "pos": "v",
     "difficulty": 1,
     "example": "A fallen tree blocked the road.",
-    "exampleZh": "一棵倒下的樹擋住了道路。"
+    "exampleZh": "一棵倒下的樹擋住了道路。",
+    "context": "動詞，指阻擋、封鎖、卡住去路或進度。比較 blocker：名詞，指造成阻礙的因素。"
   },
   {
     "word": "boil",
@@ -2058,7 +2068,8 @@ module.exports = [
     "pos": "v",
     "difficulty": 1,
     "example": "She earns a good salary at her new job.",
-    "exampleZh": "她在新工作中賺取了不錯的薪水。"
+    "exampleZh": "她在新工作中賺取了不錯的薪水。",
+    "context": "??????????? acquire/obtain???????procure????????"
   },
   {
     "word": "explain",
@@ -2094,7 +2105,8 @@ module.exports = [
     "pos": "v",
     "difficulty": 1,
     "example": "She grabbed her bag and rushed to the bus stop.",
-    "exampleZh": "她抓起包包衝向公車站。"
+    "exampleZh": "她抓起包包衝向公車站。",
+    "context": "??????????????????????? take???????"
   },
   {
     "word": "greet",
@@ -2240,7 +2252,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 1,
     "example": "I put the photo in a wooden frame.",
-    "exampleZh": "我把照片放進一個木頭相框裡。"
+    "exampleZh": "我把照片放進一個木頭相框裡。",
+    "context": "????????????????????????? framework??????????????????"
   },
   {
     "word": "ghost",
@@ -2249,7 +2262,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 1,
     "example": "The old house is said to have a ghost.",
-    "exampleZh": "據說那棟老房子裡有鬼。"
+    "exampleZh": "據說那棟老房子裡有鬼。",
+    "context": "名詞，指鬼魂、幽靈。比較 ghosted：過去式，指被突然斷聯；ghosting：名詞，指這種斷聯行為。"
   },
   {
     "word": "goal",
@@ -2258,7 +2272,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 1,
     "example": "My goal this year is to learn a new skill.",
-    "exampleZh": "我今年的目標是學習一項新技能。"
+    "exampleZh": "我今年的目標是學習一項新技能。",
+    "context": "較泛指想達成的目標、理想或結果。比較 target：較具體，常指目標數字、客群、對象或攻擊目標。"
   },
   {
     "word": "habit",
@@ -2294,7 +2309,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 1,
     "example": "The children were filled with joy on Christmas morning.",
-    "exampleZh": "孩子們在聖誕節早上滿心歡喜。"
+    "exampleZh": "孩子們在聖誕節早上滿心歡喜。",
+    "context": "偏強烈、純粹的喜悅，感情色彩較濃。比較 pleasure：較廣，可指樂趣、滿足感、客套中的高興。"
   },
   {
     "word": "length",
@@ -2312,7 +2328,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 1,
     "example": "Good luck with your new job!",
-    "exampleZh": "祝你新工作順利！"
+    "exampleZh": "祝你新工作順利！",
+    "context": "????????? fortune???????????????"
   },
   {
     "word": "memory",
@@ -2701,7 +2718,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 1,
     "example": "Put the wet clothes in the dryer.",
-    "exampleZh": "把濕衣服放進烘乾機。"
+    "exampleZh": "把濕衣服放進烘乾機。",
+    "context": "名詞，指烘乾機，也可指吹風機。比較 dry：形容詞，指乾的。"
   },
   {
     "word": "dustpan",

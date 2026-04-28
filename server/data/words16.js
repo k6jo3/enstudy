@@ -15,7 +15,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 3,
     "example": "The discovery of penicillin changed medicine.",
-    "exampleZh": "青黴素的發現改變了醫學。"
+    "exampleZh": "青黴素的發現改變了醫學。",
+    "context": "名詞，指發現這件事，或被發現的新事物。比較 discover：動詞，指去發現。"
   },
   {
     "word": "discussion",
@@ -44,7 +45,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 1,
     "example": "It is your duty to report any problems.",
-    "exampleZh": "回報任何問題是你的責任。"
+    "exampleZh": "回報任何問題是你的責任。",
+    "context": "??????????????????????? responsibility????????????????"
   },
   {
     "word": "effort",
@@ -116,7 +118,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 3,
     "example": "No one can prove the existence of ghosts.",
-    "exampleZh": "沒有人能證明鬼魂的存在。"
+    "exampleZh": "沒有人能證明鬼魂的存在。",
+    "context": "名詞，指存在本身或存在狀態。比較 exist：動詞，表示存在。"
   },
   {
     "word": "explanation",
@@ -170,7 +173,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 1,
     "example": "The accident was not my fault.",
-    "exampleZh": "那場意外不是我的錯。"
+    "exampleZh": "那場意外不是我的錯。",
+    "context": "????????????? downside/drawback???????????????"
   },
   {
     "word": "flesh",
@@ -188,7 +192,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 1,
     "example": "The local folk were very friendly and welcoming.",
-    "exampleZh": "當地居民非常友善且熱情。"
+    "exampleZh": "當地居民非常友善且熱情。",
+    "context": "較有地方色彩或群體感的「人們；鄉親」，可帶親切、民間語感。比較 people：最一般、最中性的「人們」。"
   },
   {
     "word": "freedom",
@@ -216,7 +221,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 1,
     "example": "There is a gap between theory and practice.",
-    "exampleZh": "理論和實務之間存在差距。"
+    "exampleZh": "理論和實務之間存在差距。",
+    "context": "??????????????? disparity????????????????"
   },
   {
     "word": "generation",
@@ -343,7 +349,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 3,
     "example": "There has been a great improvement in her grades.",
-    "exampleZh": "她的成績有了很大的進步。"
+    "exampleZh": "她的成績有了很大的進步。",
+    "context": "名詞，指改善、進步、改良的結果。比較 improve：動詞，指去改善。"
   },
   {
     "word": "incident",
@@ -397,7 +404,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 1,
     "example": "We need to address this issue immediately.",
-    "exampleZh": "我們需要立刻處理這個問題。"
+    "exampleZh": "我們需要立刻處理這個問題。",
+    "context": "?????????????????? question????????????????"
   },
   {
     "word": "journey",
@@ -408,6 +416,36 @@ module.exports = [
     "example": "The journey from Taipei to Kaohsiung takes about two hours by train.",
     "exampleZh": "從台北到高雄搭火車大約需要兩個小時。",
     "context": "強調從 A 到 B 的旅途過程，常指陸路或比喻人生歷程；比較 trip（短途往返）、voyage（海上/太空長途旅行）"
+  },
+  {
+    "word": "travel",
+    "phonetic": "/ˈtrævəl/",
+    "meaning": "旅行",
+    "pos": "v",
+    "difficulty": 1,
+    "example": "I love to travel around Taiwan.",
+    "exampleZh": "我喜歡在台灣各地旅行。",
+    "context": "泛指旅行、移動這件事，可作動詞，也常見於 travel plans 這類搭配。比較 trip：一次具體行程；journey：強調旅途過程；tour：觀光或巡迴行程。"
+  },
+  {
+    "word": "trip",
+    "phonetic": "/trɪp/",
+    "meaning": "旅行；行程",
+    "pos": "n",
+    "difficulty": 1,
+    "example": "We took a short trip to Tainan.",
+    "exampleZh": "我們去台南短途旅行了一趟。",
+    "context": "指一次具體的出行，常可短期、往返，如 business trip、day trip。比較 travel：泛指旅行活動；journey：強調從 A 到 B 的過程；tour：較常指觀光或巡迴安排。"
+  },
+  {
+    "word": "tour",
+    "phonetic": "/tʊr/",
+    "meaning": "觀光；巡迴",
+    "pos": "n",
+    "difficulty": 2,
+    "example": "We joined a city tour in Kyoto.",
+    "exampleZh": "我們參加了京都的城市導覽行程。",
+    "context": "可指觀光行程、導覽、巡演或巡迴活動。比較 trip：一般的一趟行程；journey：較強調路程本身。"
   },
   {
     "word": "judgment",
@@ -443,7 +481,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 3,
     "example": "The mountain landscape was absolutely beautiful.",
-    "exampleZh": "山上的景色美極了。"
+    "exampleZh": "山上的景色美極了。",
+    "context": "可指自然景觀、地貌，也可延伸到整體情勢，如 media landscape。比較 scenery：較偏眼前看到的美景。"
   },
   {
     "word": "layer",
@@ -461,7 +500,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 1,
     "example": "The truck carried a heavy load of bricks.",
-    "exampleZh": "卡車載了一大堆沉重的磚頭。"
+    "exampleZh": "卡車載了一大堆沉重的磚頭。",
+    "context": "??????????????????? cargo/freight?????????????"
   },
   {
     "word": "location",
@@ -497,7 +537,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 1,
     "example": "A mass of people waited outside the stadium.",
-    "exampleZh": "一大群人在體育場外等候。"
+    "exampleZh": "一大群人在體育場外等候。",
+    "context": "可指大量群體、整團東西，也可指物理上的質量。比較 bulk：偏大宗數量；plenty：偏充足、很多。"
   },
   {
     "word": "material",
@@ -652,7 +693,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 2,
     "example": "It was a pleasure meeting you.",
-    "exampleZh": "很高興認識你。"
+    "exampleZh": "很高興認識你。",
+    "context": "可指樂趣、愉快、滿足感，也常見於客套說法。比較 joy：情感更強、更純粹的喜悅。"
   },
   {
     "word": "poison",
@@ -670,7 +712,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 2,
     "example": "Your presence at the meeting is required.",
-    "exampleZh": "你必須出席這場會議。"
+    "exampleZh": "你必須出席這場會議。",
+    "context": "?????????????? attendance?????????????"
   },
   {
     "word": "pressure",
@@ -706,7 +749,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 3,
     "example": "Sunscreen provides protection against UV rays.",
-    "exampleZh": "防曬乳提供了抵禦紫外線的保護。"
+    "exampleZh": "防曬乳提供了抵禦紫外線的保護。",
+    "context": "名詞，指保護措施、保護層、保障。比較 protect：動詞，表示去保護。"
   },
   {
     "word": "purpose",
@@ -733,7 +777,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 2,
     "example": "This region is famous for its tea production.",
-    "exampleZh": "這個地區以產茶聞名。"
+    "exampleZh": "這個地區以產茶聞名。",
+    "context": "????????????????????? area??????????"
   },
   {
     "word": "relation",
@@ -886,7 +931,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 1,
     "example": "Music speaks to the soul.",
-    "exampleZh": "音樂能觸動靈魂。"
+    "exampleZh": "音樂能觸動靈魂。",
+    "context": "????????????? spirit??????????"
   },
   {
     "word": "species",
@@ -904,7 +950,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 2,
     "example": "The team spirit was very strong during the game.",
-    "exampleZh": "比賽期間團隊精神非常強烈。"
+    "exampleZh": "比賽期間團隊精神非常強烈。",
+    "context": "????????????? soul?????????"
   },
   {
     "word": "strength",
@@ -940,7 +987,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 2,
     "example": "The supply of fresh water is limited.",
-    "exampleZh": "淡水的供應是有限的。"
+    "exampleZh": "淡水的供應是有限的。",
+    "context": "較偏資源、貨品、物資的供應量或供應來源。比較 serve：較常指供應食物、服務客人或為某目的效力。"
   },
   {
     "word": "surface",
@@ -967,7 +1015,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 2,
     "example": "She has a natural talent for singing.",
-    "exampleZh": "她天生就有唱歌的才華。"
+    "exampleZh": "她天生就有唱歌的才華。",
+    "context": "?????????????? aptitude???????"
   },
   {
     "word": "technique",
@@ -1021,7 +1070,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 1,
     "example": "The labor union is negotiating for better wages.",
-    "exampleZh": "工會正在協商更好的薪資。"
+    "exampleZh": "工會正在協商更好的薪資。",
+    "context": "????????????? coalition???????league???????"
   },
   {
     "word": "variety",
@@ -1277,7 +1327,8 @@ module.exports = [
     "pos": "adj",
     "difficulty": 1,
     "example": "I don't remember the exact date.",
-    "exampleZh": "我不記得確切的日期了。"
+    "exampleZh": "我不記得確切的日期了。",
+    "context": "?????????????? precise??????strict??????????"
   },
   {
     "word": "familiar",
@@ -1304,7 +1355,8 @@ module.exports = [
     "pos": "adj",
     "difficulty": 1,
     "example": "He gave a firm handshake.",
-    "exampleZh": "他給了一個有力的握手。"
+    "exampleZh": "他給了一個有力的握手。",
+    "context": "???????????????????? assertive???????????"
   },
   {
     "word": "formal",
@@ -1439,7 +1491,8 @@ module.exports = [
     "pos": "adj",
     "difficulty": 2,
     "example": "The project requires a massive investment.",
-    "exampleZh": "這個專案需要大量的投資。"
+    "exampleZh": "這個專案需要大量的投資。",
+    "context": "?????????????? numerous????????"
   },
   {
     "word": "mature",
@@ -1558,7 +1611,8 @@ module.exports = [
     "pos": "adj",
     "difficulty": 2,
     "example": "She left her previous job to start a business.",
-    "exampleZh": "她離開了之前的工作去創業。"
+    "exampleZh": "她離開了之前的工作去創業。",
+    "context": "最常用的「先前的；上一個的」，可用於工作、版本、經驗、章節。比較 prior：較正式，常見於書面、法律、商務。"
   },
   {
     "word": "primary",
@@ -1703,7 +1757,8 @@ module.exports = [
     "pos": "adj",
     "difficulty": 2,
     "example": "The school has strict rules about uniforms.",
-    "exampleZh": "這所學校對制服有嚴格的規定。"
+    "exampleZh": "這所學校對制服有嚴格的規定。",
+    "context": "????????????? exact/precise?????????????"
   },
   {
     "word": "suitable",
@@ -1805,7 +1860,8 @@ module.exports = [
     "pos": "adj",
     "difficulty": 2,
     "example": "The charity is worthy of our support.",
-    "exampleZh": "這個慈善機構值得我們支持。"
+    "exampleZh": "這個慈善機構值得我們支持。",
+    "context": "強調配得上、值得某種尊重、支持或注意，常見於 worthy of。比較 worthwhile：強調做某事很值得、很有價值。"
   },
   {
     "word": "aftermath",
@@ -1823,7 +1879,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 2,
     "example": "Small businesses are the backbone of the economy.",
-    "exampleZh": "中小企業是經濟的支柱。"
+    "exampleZh": "中小企業是經濟的支柱。",
+    "context": "????????????????? pillar???????????"
   },
   {
     "word": "breakdown",
@@ -1860,7 +1917,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 2,
     "example": "The downside of living in the city is the noise.",
-    "exampleZh": "住在城市的缺點就是噪音。"
+    "exampleZh": "住在城市的缺點就是噪音。",
+    "context": "?????????????? drawback???????fault??????????"
   },
   {
     "word": "drawback",
@@ -1869,7 +1927,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 2,
     "example": "The only drawback is the high price.",
-    "exampleZh": "唯一的缺點就是價格太高。"
+    "exampleZh": "唯一的缺點就是價格太高。",
+    "context": "??????????????? downside????????fault???????"
   },
   {
     "word": "flashback",
@@ -2141,7 +2200,8 @@ module.exports = [
     "pos": "adj",
     "difficulty": 3,
     "example": "Volunteering is a worthwhile activity.",
-    "exampleZh": "做志工是一項值得的活動。"
+    "exampleZh": "做志工是一項值得的活動。",
+    "context": "強調某件事值得去做、投入時間或精力。比較 worthy：較常接 worthy of，強調配得上某種評價。"
   },
   {
     "word": "furthermore",
@@ -2261,7 +2321,8 @@ module.exports = [
     "pos": "v",
     "difficulty": 1,
     "example": "The factory will cease operations at the end of the month.",
-    "exampleZh": "工廠將在月底停止營運。"
+    "exampleZh": "工廠將在月底停止營運。",
+    "context": "偏正式、書面語的「停止；中止」。常用於營運、活動、敵對行動、法律或官方公告。比較 stop：更口語、更泛用，日常對話最常見。"
   },
   {
     "word": "applaud",
@@ -2279,7 +2340,8 @@ module.exports = [
     "pos": "v",
     "difficulty": 1,
     "example": "We need to alter the plan due to budget cuts.",
-    "exampleZh": "由於預算削減，我們需要修改計劃。"
+    "exampleZh": "由於預算削減，我們需要修改計劃。",
+    "context": "??????????????????? modify ?????? modify?????????"
   },
   {
     "word": "compose",
@@ -2425,7 +2487,8 @@ module.exports = [
     "pos": "v",
     "difficulty": 1,
     "example": "The gym is equipped with modern exercise machines.",
-    "exampleZh": "健身房配備了現代化的運動器材。"
+    "exampleZh": "健身房配備了現代化的運動器材。",
+    "context": "動詞，指替某人或某地配備設備、裝備。比較 equipment：名詞，指那些設備本身。"
   },
   {
     "word": "evident",
@@ -2498,7 +2561,8 @@ module.exports = [
     "pos": "v",
     "difficulty": 1,
     "example": "It took me a while to grasp the concept.",
-    "exampleZh": "我花了一些時間才理解這個概念。"
+    "exampleZh": "我花了一些時間才理解這個概念。",
+    "context": "???????????????????? comprehend??????????"
   },
   {
     "word": "incline",
@@ -2534,7 +2598,8 @@ module.exports = [
     "pos": "v",
     "difficulty": 2,
     "example": "Officers will inspect the factory next week.",
-    "exampleZh": "官員下週將視察工廠。"
+    "exampleZh": "官員下週將視察工廠。",
+    "context": "動詞，指實際去檢查、視察。比較 inspection：名詞，指檢查程序、檢查行為或檢查結果。"
   },
   {
     "word": "intact",
@@ -2682,7 +2747,8 @@ module.exports = [
     "pos": "v",
     "difficulty": 2,
     "example": "Please refrain from using your phone during the meeting.",
-    "exampleZh": "開會期間請避免使用手機。"
+    "exampleZh": "開會期間請避免使用手機。",
+    "context": "???????????????? avoid????????"
   },
   {
     "word": "endure",
@@ -2718,7 +2784,8 @@ module.exports = [
     "pos": "adj",
     "difficulty": 1,
     "example": "The company has rigid rules about working hours.",
-    "exampleZh": "公司對工作時間有嚴格的規定。"
+    "exampleZh": "公司對工作時間有嚴格的規定。",
+    "context": "???????????? strict??????????"
   },
   {
     "word": "solely",

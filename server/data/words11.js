@@ -215,7 +215,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 2,
     "example": "I take a shower every morning before work.",
-    "exampleZh": "我每天早上上班前都會淋浴。"
+    "exampleZh": "我每天早上上班前都會淋浴。",
+    "context": "??????????????? show????????"
   },
   {
     "word": "sink",
@@ -467,7 +468,8 @@ module.exports = [
     "pos": "v",
     "difficulty": 1,
     "example": "Loud music really annoys my neighbors.",
-    "exampleZh": "大聲的音樂真的讓我的鄰居很惱怒。"
+    "exampleZh": "大聲的音樂真的讓我的鄰居很惱怒。",
+    "context": "一般程度的惱怒、煩人、讓人不爽。比較 exasperate：程度更強，常有被逼到受不了的感覺。"
   },
   {
     "word": "confuse",
@@ -476,7 +478,8 @@ module.exports = [
     "pos": "v",
     "difficulty": 2,
     "example": "The complicated directions confused everyone.",
-    "exampleZh": "複雜的指示把大家都搞糊塗了。"
+    "exampleZh": "複雜的指示把大家都搞糊塗了。",
+    "context": "一般的「使困惑、搞混」，常用於資訊不清或容易混淆。比較 bewilder：語氣更強，帶不知所措、摸不著頭緒的感覺。"
   },
   {
     "word": "calm",
@@ -522,7 +525,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 2,
     "example": "There is plenty of food for everyone.",
-    "exampleZh": "食物足夠每個人吃。"
+    "exampleZh": "食物足夠每個人吃。",
+    "context": "強調夠多、很充足，常見於 plenty of。比較 bulk：偏大量購買或大宗數量；mass：可指大量群體或整體塊狀。"
   },
   {
     "word": "probably",
@@ -550,7 +554,8 @@ module.exports = [
     "pos": "v",
     "difficulty": 1,
     "example": "The restaurant serves breakfast from seven to ten.",
-    "exampleZh": "這家餐廳從七點到十點供應早餐。"
+    "exampleZh": "這家餐廳從七點到十點供應早餐。",
+    "context": "可指供應食物、服務客人、為某目的效力。比較 supply：較偏提供物資、資源、貨品。"
   },
   {
     "word": "share",
@@ -659,7 +664,8 @@ module.exports = [
     "pos": "v",
     "difficulty": 2,
     "example": "She resigned from her position due to health reasons.",
-    "exampleZh": "她因健康因素辭去了職位。"
+    "exampleZh": "她因健康因素辭去了職位。",
+    "context": "動詞，指主動辭職、請辭職位。比較 resignation：名詞，指辭職這件事或辭呈。若是口語片語，也常和 step down 對照，但 resign 更直接、更正式。"
   },
   {
     "word": "salary",
@@ -778,7 +784,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 4,
     "example": "Managing the budget is her responsibility.",
-    "exampleZh": "管理預算是她的責任。"
+    "exampleZh": "管理預算是她的責任。",
+    "context": "?????????????? duty????????????"
   },
   {
     "word": "unemployed",
@@ -1091,7 +1098,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 2,
     "example": "The scenery along the coast was breathtaking.",
-    "exampleZh": "沿海的風景美得令人屏息。"
+    "exampleZh": "沿海的風景美得令人屏息。",
+    "context": "通常指自然景色、眼前看到的風景。比較 landscape：除了景色，也可指地貌、景觀，語域更廣。"
   },
   {
     "word": "wander",
@@ -1154,7 +1162,8 @@ module.exports = [
     "pos": "v",
     "difficulty": 2,
     "example": "They backpacked through Southeast Asia last summer.",
-    "exampleZh": "去年夏天他們背包旅行走遍了東南亞。"
+    "exampleZh": "去年夏天他們背包旅行走遍了東南亞。",
+    "context": "動詞，指以背包客方式旅行。比較 backpacking：名詞，指背包旅行這種活動或旅行方式。"
   },
   {
     "word": "symptom",
@@ -1541,7 +1550,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 2,
     "example": "He loves buying the latest electronic gadgets.",
-    "exampleZh": "他喜歡購買最新的電子產品。"
+    "exampleZh": "他喜歡購買最新的電子產品。",
+    "context": "???????????????? widget????????????"
   },
   {
     "word": "innovation",
@@ -1614,7 +1624,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 4,
     "example": "I canceled my subscription to the streaming service.",
-    "exampleZh": "我取消了串流服務的訂閱。"
+    "exampleZh": "我取消了串流服務的訂閱。",
+    "context": "名詞，指訂閱資格、訂閱方案或訂閱費。比較 subscribe：動詞，指去訂閱。也常和 sign up for 對照；sign up for 更口語，範圍也可不只限於付費訂閱。"
   },
   {
     "word": "backup",
@@ -1758,7 +1769,8 @@ module.exports = [
     "pos": "v",
     "difficulty": 3,
     "example": "It took me a while to comprehend the concept.",
-    "exampleZh": "我花了一些時間才理解這個概念。"
+    "exampleZh": "我花了一些時間才理解這個概念。",
+    "context": "?????????????????? grasp????????????????"
   },
   {
     "word": "enroll",
@@ -1785,7 +1797,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 1,
     "example": "He hired a tutor to help with math.",
-    "exampleZh": "他請了一位家教來幫忙數學。"
+    "exampleZh": "他請了一位家教來幫忙數學。",
+    "context": "???????????????? tutoring???????????"
   },
   {
     "word": "seminar",
@@ -1876,7 +1889,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 2,
     "example": "Applications are evaluated based on strict criteria.",
-    "exampleZh": "申請案根據嚴格的標準來評估。"
+    "exampleZh": "申請案根據嚴格的標準來評估。",
+    "context": "criterion 的複數，表示多個評估標準。正式寫作中不要把 criteria 當單數。"
   },
   {
     "word": "analyze",
@@ -1913,7 +1927,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 3,
     "example": "The course includes both written and oral assessments.",
-    "exampleZh": "這門課包含筆試和口試評量。"
+    "exampleZh": "這門課包含筆試和口試評量。",
+    "context": "名詞，指評估、評量、審查結果或程序。比較 assess：動詞，指去評估；assessor：指執行評估的人。"
   },
   {
     "word": "discipline",
@@ -2148,7 +2163,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 1,
     "example": "He worked hard to pay off his student debt.",
-    "exampleZh": "他努力工作償還學貸。"
+    "exampleZh": "他努力工作償還學貸。",
+    "context": "最一般的「債務；欠款」，可指學貸、卡債、公司債等。比較 arrears：偏正式，強調逾期未繳的欠款。"
   },
   {
     "word": "economical",
@@ -2166,7 +2182,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 2,
     "example": "He made a fortune in the stock market.",
-    "exampleZh": "他在股市賺了一大筆錢。"
+    "exampleZh": "他在股市賺了一大筆錢。",
+    "context": "????????????? luck????????"
   },
   {
     "word": "vendor",
@@ -2305,7 +2322,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 1,
     "example": "The aroma of fresh coffee filled the kitchen.",
-    "exampleZh": "新鮮咖啡的香氣瀰漫整個廚房。"
+    "exampleZh": "新鮮咖啡的香氣瀰漫整個廚房。",
+    "context": "????????????????????????? fragrance?????????????????????"
   },
   {
     "word": "nutritious",
@@ -2404,7 +2422,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 1,
     "example": "Add lemon zest to the batter for extra flavor.",
-    "exampleZh": "在麵糊中加入檸檬皮絲增添風味。"
+    "exampleZh": "在麵糊中加入檸檬皮絲增添風味。",
+    "context": "?????????????? enthusiasm????????cordiality???????"
   },
   {
     "word": "whisk",
@@ -2458,7 +2477,8 @@ module.exports = [
     "pos": "v",
     "difficulty": 1,
     "example": "Steep the tea for three to five minutes.",
-    "exampleZh": "將茶葉浸泡三到五分鐘。"
+    "exampleZh": "將茶葉浸泡三到五分鐘。",
+    "context": "?????????????????? infuse????????????????"
   },
   {
     "word": "tenderize",
@@ -2602,7 +2622,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 2,
     "example": "The team plays in the premier league.",
-    "exampleZh": "這支隊伍在超級聯賽中比賽。"
+    "exampleZh": "這支隊伍在超級聯賽中比賽。",
+    "context": "????????????? coalition?????union??????"
   },
   {
     "word": "handicraft",
@@ -2629,7 +2650,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 3,
     "example": "We bought new camping equipment for the trip.",
-    "exampleZh": "我們為這趟旅行買了新的露營裝備。"
+    "exampleZh": "我們為這趟旅行買了新的露營裝備。",
+    "context": "名詞，指裝備、器材、設備總稱。比較 equip：動詞，指配備、裝備某人或某地。"
   },
   {
     "word": "strenuous",

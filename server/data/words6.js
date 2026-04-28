@@ -998,7 +998,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 4,
     "example": "Rapid urbanization has led to overcrowding and housing shortages in many cities.",
-    "exampleZh": "快速的都市化導致許多城市出現過度擁擠和住房短缺。"
+    "exampleZh": "快速的都市化導致許多城市出現過度擁擠和住房短缺。",
+    "context": "??????????? urban??????????"
   },
   {
     "word": "populate",
@@ -1133,7 +1134,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 3,
     "example": "The sky turned beautiful shades of pink and orange during the twilight.",
-    "exampleZh": "暮色中天空呈現出美麗的粉紅色和橙色色調。"
+    "exampleZh": "暮色中天空呈現出美麗的粉紅色和橙色色調。",
+    "context": "?????????????????? dusk???????"
   },
   {
     "word": "simultaneous",
@@ -1632,7 +1634,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 3,
     "example": "Ghosting someone instead of being honest is really immature.",
-    "exampleZh": "對某人人間蒸發而不是誠實相待真的很不成熟。"
+    "exampleZh": "對某人人間蒸發而不是誠實相待真的很不成熟。",
+    "context": "名詞，指突然斷聯、已讀不回這種行為。比較 ghost：可作名詞或動詞原形；ghosted：過去式，指某人已經這樣做了。"
   },
   {
     "word": "acquaintance",
@@ -1650,7 +1653,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 3,
     "example": "The feud between those two families has lasted for years.",
-    "exampleZh": "那兩個家族之間的不和已經持續了多年。"
+    "exampleZh": "那兩個家族之間的不和已經持續了多年。",
+    "context": "指長期、深層、常帶敵意的爭執或世仇。比較 rift：較像關係出現裂痕，不一定演變成長期對立。"
   },
   {
     "word": "clique",
@@ -1912,7 +1916,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 3,
     "example": "The movie was filmed at a beautiful locale in New Zealand.",
-    "exampleZh": "這部電影在紐西蘭一個美麗的場所拍攝。"
+    "exampleZh": "這部電影在紐西蘭一個美麗的場所拍攝。",
+    "context": "????????????????????? venue?????????"
   },
   {
     "word": "contraband",
@@ -1939,7 +1944,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 3,
     "example": "Fishing boats were tied up along the old wharf.",
-    "exampleZh": "漁船停泊在老碼頭旁。"
+    "exampleZh": "漁船停泊在老碼頭旁。",
+    "context": "????????????? pier??????dock????"
   },
   {
     "word": "marina",

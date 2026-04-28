@@ -7,7 +7,8 @@
     "server": "cd server && node index.js",
     "client": "cd client && npx vite",
     "install:all": "npm install && cd server && npm install && cd ../client && npm install",
-    "build": "cd client && npx vite build"
+    "build": "cd client && npx vite build",
+    "audit:context": "node server/scripts/audit-context-gaps.js"
   },
   "devDependencies": {
     "concurrently": "^8.2.2"

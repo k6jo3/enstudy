@@ -10217,12 +10217,12 @@ module.exports = [
   {
     "word": "checkout",
     "phonetic": "/ˈtʃɛkaʊt/",
-    "meaning": "???????",
+    "meaning": "結帳；退房",
     "pos": "n",
     "difficulty": 3,
     "example": "Checkout time is at noon on the day of departure.",
     "exampleZh": "退房時間是離開當天的中午。",
-    "context": "??????????????????????? hotel checkout?check out ?????????????????????????????"
+    "context": "名詞，結帳或退房的程序。hotel checkout 指退房；check out（動詞片語）指實際辦理離開手續或查看某物。比較 check-in：入住/報到。"
   },
   {
     "word": "suite",
@@ -10920,12 +10920,12 @@ module.exports = [
   {
     "word": "followup",
     "phonetic": "/ˈfɑːloʊˌʌp/",
-    "meaning": "?????????",
+    "meaning": "後續追蹤；跟進",
     "pos": "n",
     "difficulty": 3,
     "example": "I will send a followup email to confirm the details we discussed.",
     "exampleZh": "我會寄一封後續追蹤的電子郵件確認我們討論的細節。",
-    "context": "?????????????? follow-up email?followup task?follow up ??????????????????????"
+    "context": "名詞/形容詞寫法。follow-up email、followup task 都指跟進事項；動詞用 follow up（分開）。指某件事後的後續行動。"
   },
   {
     "word": "offsite",
@@ -10953,7 +10953,7 @@ module.exports = [
     "difficulty": 3,
     "example": "The engineering team holds a fifteen-minute standup every morning.",
     "exampleZh": "工程團隊每天早上舉行十五分鐘的站立會議。",
-    "context": "?????????????????????? stand up ????????????? stand-up comedy ????????"
+    "context": "辦公室術語，指每日短暫的站立例會（站著開以保持簡短）。動詞 stand up 指站起來；stand-up comedy（單口喜劇）是完全不同用法。"
   },
   {
     "word": "townhall",
@@ -11508,22 +11508,22 @@ module.exports = [
   {
     "word": "rollout",
     "phonetic": "/ˈroʊlˌaʊt/",
-    "meaning": "?????????",
+    "meaning": "推出；上線；全面部署",
     "pos": "n",
     "difficulty": 3,
     "example": "The rollout of the new software will begin in the Asia-Pacific region.",
     "exampleZh": "新軟體將從亞太地區開始推出。",
-    "context": "????????????????????????roll out ???????????????????"
+    "context": "名詞，指產品、功能或計畫的正式推出或大規模部署。動詞寫法為 roll out（分開）。比較 launch：更廣泛的「上市/啟動」。"
   },
   {
     "word": "onboard",
     "phonetic": "/ˈɒnˌbɔːrd/",
-    "meaning": "???????",
+    "meaning": "入職；使融入團隊",
     "pos": "v",
     "difficulty": 3,
     "example": "The HR team will onboard all new hires during the first week of the month.",
     "exampleZh": "人資團隊會在每月第一週為所有新進員工辦理入職。",
-    "context": "????????????????????????on board ???????????????????????"
+    "context": "動詞，指協助新員工了解公司流程、完成入職手續。介系詞片語 on board 指「在船/飛機上」或「加入團隊」；形容詞用 on-board。"
   },
   {
     "word": "proactive",
@@ -16200,12 +16200,12 @@ module.exports = [
   {
     "word": "callback",
     "phonetic": "/ˈkɔːlbæk/",
-    "meaning": "???????",
+    "meaning": "回呼；回電",
     "pos": "n",
     "difficulty": 3,
     "example": "The callback function is executed after the data is loaded.",
     "exampleZh": "回呼函式會在資料載入完成後執行。",
-    "context": "???????? callback function????????????????call back ?????????????????"
+    "context": "雙重用法：(1) 程式術語 callback function 指回呼函式，在特定事件觸發後由系統呼叫；(2) 一般用法 call back（動詞片語）指回電。"
   },
   {
     "word": "asynchronous",
@@ -17734,7 +17734,7 @@ module.exports = [
     "difficulty": 3,
     "example": "It was difficult; nonetheless, she completed the task.",
     "exampleZh": "這很困難，儘管如此，她還是完成了任務。",
-    "context": "???? that being said ?????????????????that being said ???????????????????????"
+    "context": "副詞，語意近 nevertheless、however，常置句首或句中作轉折；語氣較正式書面。比較 that being said：更口語的轉折，意思是「話雖如此」。"
   },
   {
     "word": "coincide",
@@ -18757,7 +18757,7 @@ module.exports = [
     "difficulty": 4,
     "example": "The government imposed tariffs on imported goods.",
     "exampleZh": "政府對進口商品課徵關稅。",
-    "context": "????????????????????????????customs duty ???????????????"
+    "context": "特指政府對進口（有時也對出口）商品課徵的稅；比較 customs duty（海關關稅，泛指所有進出口稅）、tax（泛指各種稅）。"
   },
   {
     "word": "garnish",
@@ -19743,12 +19743,12 @@ module.exports = [
   {
     "word": "breakeven",
     "phonetic": "/ˌbreɪkˈiːvən/",
-    "meaning": "????",
+    "meaning": "損益兩平點",
     "pos": "n",
     "difficulty": 4,
     "example": "The new store is expected to reach breakeven within the first eighteen months.",
     "exampleZh": "新店預計在前十八個月內達到損益兩平。",
-    "context": "?????????????? breakeven point?break even ??????????????????"
+    "context": "名詞/形容詞，指損益兩平點；breakeven point 是完整說法。動詞用 break even（分開），指收支剛好相抵、無盈虧。"
   },
   {
     "word": "provisional",
@@ -20149,12 +20149,12 @@ module.exports = [
   {
     "word": "notary",
     "phonetic": "/ˈnoʊtəri/",
-    "meaning": "???????",
+    "meaning": "公證人",
     "pos": "n",
     "difficulty": 4,
     "example": "The contract must be witnessed by a notary before it becomes valid.",
     "exampleZh": "合約必須經公證人見證後才具效力。",
-    "context": "????????????????notary public ???????????????????????"
+    "context": "有法律授權、驗證文件真實性並見證簽署的人。完整稱呼是 notary public。常用於合約、遺囑、授權書等需要公證的法律文件。"
   },
   {
     "word": "plea",
@@ -27960,7 +27960,7 @@ module.exports = [
     "difficulty": 2,
     "example": "Cheers! Here's to a wonderful new year!",
     "exampleZh": "乾杯！祝新的一年美好順利！",
-    "context": "?????????????????????????????????????????????????????"
+    "context": "多義口語用語：(1) 舉杯乾杯，慶祝時使用；(2) 英式英語中用來說謝謝或道別，相當於 thanks 或 bye。比較 toast：正式舉杯致詞。"
   },
   {
     "word": "totally",
@@ -31166,12 +31166,12 @@ module.exports = [
   {
     "word": "layoff",
     "phonetic": "/ˈleɪɔːf/",
-    "meaning": "??",
+    "meaning": "裁員",
     "pos": "n",
     "difficulty": 2,
     "example": "The economic downturn led to massive layoffs.",
     "exampleZh": "經濟衰退導致了大規模裁員。",
-    "context": "????????????????????lay off ???????????????????????"
+    "context": "名詞，指公司因財務困難或業務縮減而裁員，非因個人表現。動詞為 lay off（分開）。比較 fire/dismiss：因個人表現或過失解僱。"
   },
   {
     "word": "campaign",
@@ -36347,12 +36347,12 @@ module.exports = [
   {
     "word": "workout",
     "phonetic": "/ˈwɜːrkaʊt/",
-    "meaning": "?????",
+    "meaning": "健身；鍛鍊",
     "pos": "n",
     "difficulty": 2,
     "example": "I try to fit in a quick workout before work every morning.",
     "exampleZh": "我每天早上盡量在上班前擠出時間做一下快速健身。",
-    "context": "??????????????????work out ?????????????????????????"
+    "context": "名詞，指一次健身或運動訓練。動詞片語 work out（分開）可指運動，也指問題被解決或事情順利發展。比較 exercise：泛指各種體育活動。"
   },
   {
     "word": "jogging",
@@ -36699,12 +36699,12 @@ module.exports = [
   {
     "word": "comeback",
     "phonetic": "/ˈkʌmˌbæk/",
-    "meaning": "?????",
+    "meaning": "復出；回歸",
     "pos": "n",
     "difficulty": 2,
     "example": "The singer made an incredible comeback after five years of silence.",
     "exampleZh": "那位歌手在沉寂五年後以驚人之姿復出。",
-    "context": "???????????????????????????????come back ???????????"
+    "context": "名詞，指人或事物在沉寂後再度成功或走紅。動詞 come back（分開）指回來，也指以反駁或機智的話回應。"
   },
   {
     "word": "canceled",
@@ -37951,12 +37951,12 @@ module.exports = [
   {
     "word": "burnout",
     "phonetic": "/ˈbɜːrnaʊt/",
-    "meaning": "?????????",
+    "meaning": "精疲力竭；職業倦怠",
     "pos": "n",
     "difficulty": 2,
     "example": "Working eighty hours a week eventually led to severe burnout.",
     "exampleZh": "每週工作八十小時最終導致了嚴重的職業倦怠。",
-    "context": "????????????????????????burn out ????????????????????????"
+    "context": "名詞，指長期過度工作或壓力造成的身心耗竭，已被 WHO 列為職業現象。動詞片語 burn out（分開）同義。比較 stress：壓力；exhaustion：肉體疲勞。"
   },
   {
     "word": "apprentice",
@@ -42740,12 +42740,12 @@ module.exports = [
   {
     "word": "breakdown",
     "phonetic": "/ˈbreɪkdaʊn/",
-    "meaning": "??????????",
+    "meaning": "故障；崩潰；明細",
     "pos": "n",
     "difficulty": 3,
     "example": "The car had a breakdown on the highway.",
     "exampleZh": "那輛車在高速公路上拋錨了。",
-    "context": "?????????????????????????????break down ??????????????????????"
+    "context": "名詞，三種常見用法：(1) 機器/系統故障；(2) 情緒或精神崩潰；(3) 費用或數據的逐項明細。動詞 break down（分開）涵蓋以上所有意思。"
   },
   {
     "word": "breakthrough",
@@ -42912,12 +42912,12 @@ module.exports = [
   {
     "word": "turnout",
     "phonetic": "/ˈtɜːrnaʊt/",
-    "meaning": "????????",
+    "meaning": "出席人數；投票率",
     "pos": "n",
     "difficulty": 2,
     "example": "The turnout for the event was better than expected.",
     "exampleZh": "活動的出席人數比預期的還要多。",
-    "context": "????????????????????turn out ?????????????????????"
+    "context": "名詞，指活動的參與人數或選舉的投票率。動詞 turn out（分開）指事情最終的結果，也指出席某活動。比較 attendance：正式的出席紀錄。"
   },
   {
     "word": "undertake",
@@ -45238,12 +45238,12 @@ module.exports = [
   {
     "word": "execution",
     "phonetic": "/ˌeksɪˈkjuːʃn/",
-    "meaning": "?????",
+    "meaning": "執行；實施",
     "pos": "n",
     "difficulty": 4,
     "example": "His execution of the strategy was flawless.",
     "exampleZh": "他對策略的執行完美無缺。",
-    "context": "???????????????????carry out ??????????????????"
+    "context": "名詞，指計畫或策略的具體落實；商業語境最常用。比較 carry out（片語動詞，較口語，完成具體任務）、implement（較正式的「實施」）。也有「處決」之意，依上下文判斷。"
   },
   {
     "word": "tactical",

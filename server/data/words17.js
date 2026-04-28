@@ -43,7 +43,8 @@ module.exports = [
     "pos": "adj",
     "difficulty": 3,
     "example": "The team won three successive championships.",
-    "exampleZh": "這支隊伍連續贏得了三次冠軍。"
+    "exampleZh": "這支隊伍連續贏得了三次冠軍。",
+    "context": "表示一個接一個地接續出現，正式感比 consecutive 稍強。比較 consecutive：更強調不中斷地連續發生。"
   },
   {
     "word": "collapse",
@@ -277,7 +278,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 3,
     "example": "He used a wheelbarrow to carry the soil.",
-    "exampleZh": "他用手推車搬運泥土。"
+    "exampleZh": "他用手推車搬運泥土。",
+    "context": "?????????? trolley??????"
   },
   {
     "word": "floorboard",
@@ -286,7 +288,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 3,
     "example": "The old floorboards creaked when you walked on them.",
-    "exampleZh": "走在老舊的地板上會發出嘎吱嘎吱的聲音。"
+    "exampleZh": "走在老舊的地板上會發出嘎吱嘎吱的聲音。",
+    "context": "指地板的一塊塊木板，或車內腳下的板面。比較 floor：泛指整體地板或樓層；floorboard 更具體。"
   },
   {
     "word": "windowsill",
@@ -404,7 +407,8 @@ module.exports = [
     "pos": "adj",
     "difficulty": 1,
     "example": "He gave a brief summary of the report.",
-    "exampleZh": "他做了一份報告的簡短摘要。"
+    "exampleZh": "他做了一份報告的簡短摘要。",
+    "context": "形容詞，指簡短的、精簡的。比較 briefing：名詞，指簡報或事前說明會。"
   },
   {
     "word": "challenge",
@@ -486,7 +490,8 @@ module.exports = [
     "pos": "v",
     "difficulty": 1,
     "example": "She learned to cope with stress through exercise.",
-    "exampleZh": "她學會了透過運動來應對壓力。"
+    "exampleZh": "她學會了透過運動來應對壓力。",
+    "context": "?? with ???????????????? handle???????????????"
   },
   {
     "word": "decline",
@@ -586,7 +591,8 @@ module.exports = [
     "pos": "v",
     "difficulty": 1,
     "example": "The colors of the painting faded over time.",
-    "exampleZh": "隨著時間過去，畫作的顏色褪了。"
+    "exampleZh": "隨著時間過去，畫作的顏色褪了。",
+    "context": "??????????????????????? subside???????????????"
   },
   {
     "word": "extremely",
@@ -622,7 +628,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 2,
     "example": "She is an important figure in the art world.",
-    "exampleZh": "她是藝術界的重要人物。"
+    "exampleZh": "她是藝術界的重要人物。",
+    "context": "作名詞時可指數字、身影、重要人物。不要和片語 figure out 混淆；figure out 是動詞片語，表示弄懂、想出辦法。"
   },
   {
     "word": "frequently",
@@ -757,7 +764,8 @@ module.exports = [
     "pos": "v",
     "difficulty": 2,
     "example": "Experts predict that the economy will recover next year.",
-    "exampleZh": "專家預測明年經濟將會復甦。"
+    "exampleZh": "專家預測明年經濟將會復甦。",
+    "context": "動詞，指做出預測、預言某事將發生。比較 forecast：常作名詞，也可作動詞，但在天氣、商務預測中特別常見。"
   },
   {
     "word": "prefer",
@@ -803,7 +811,8 @@ module.exports = [
     "pos": "v",
     "difficulty": 2,
     "example": "Sunglasses protect your eyes from the sun.",
-    "exampleZh": "太陽眼鏡保護你的眼睛免受陽光傷害。"
+    "exampleZh": "太陽眼鏡保護你的眼睛免受陽光傷害。",
+    "context": "動詞，指保護某人或某物不受傷害。比較 protection：名詞，指保護措施、保護作用或保障。"
   },
   {
     "word": "provide",
@@ -929,7 +938,8 @@ module.exports = [
     "pos": "v",
     "difficulty": 1,
     "example": "You can rely on me to finish the work.",
-    "exampleZh": "你可以依靠我來完成這項工作。"
+    "exampleZh": "你可以依靠我來完成這項工作。",
+    "context": "常指信任、依靠某人某物，語氣比 depend on 更偏人際或功能上的可靠性。比較 depend：也可指取決於某條件。"
   },
   {
     "word": "remain",
@@ -947,7 +957,8 @@ module.exports = [
     "pos": "v",
     "difficulty": 2,
     "example": "Remind me to buy milk on the way home.",
-    "exampleZh": "提醒我回家路上買牛奶。"
+    "exampleZh": "提醒我回家路上買牛奶。",
+    "context": "動詞，指提醒某人記得做某事。比較 reminder：名詞，指提醒通知、提示物或提醒內容。"
   },
   {
     "word": "remove",
@@ -1315,7 +1326,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 3,
     "example": "Boarding begins thirty minutes before departure.",
-    "exampleZh": "登機在起飛前三十分鐘開始。"
+    "exampleZh": "登機在起飛前三十分鐘開始。",
+    "context": "名詞，指登機、登船這個程序。比較 board：這筆是名詞，指板子或黑板，不是同義詞。"
   },
   {
     "word": "accommodation",
@@ -1324,7 +1336,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 4,
     "example": "We booked accommodation near the beach.",
-    "exampleZh": "我們預訂了海灘附近的住宿。"
+    "exampleZh": "我們預訂了海灘附近的住宿。",
+    "context": "比 lodging 更通用，也更常見於飯店、旅遊、正式資訊；可指住宿、住處安排。比較 lodging：較偏實際住處，語感稍舊或偏旅遊用語。"
   },
   {
     "word": "customs",
@@ -1496,7 +1509,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 3,
     "example": "The freight was shipped by sea.",
-    "exampleZh": "貨物是經由海運運送的。"
+    "exampleZh": "貨物是經由海運運送的。",
+    "context": "????????????????????? cargo???????shipment??????"
   },
   {
     "word": "overhead",
@@ -1541,7 +1555,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 3,
     "example": "We had a three-hour layover in Hong Kong.",
-    "exampleZh": "我們在香港中途停留了三個小時。"
+    "exampleZh": "我們在香港中途停留了三個小時。",
+    "context": "多用於航空轉機，指兩段航班之間的停留時間。比較 stopover：也指中途停留，但更常用於旅程安排中的停靠城市，而不只是等下一班飛機。"
   },
   {
     "word": "equilibrium",

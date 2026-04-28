@@ -123,7 +123,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 1,
     "example": "The graph clearly shows the upward trend in revenue.",
-    "exampleZh": "圖表清楚地顯示了收入的上升趨勢。"
+    "exampleZh": "圖表清楚地顯示了收入的上升趨勢。",
+    "context": "?????????? diagram?????????"
   },
   {
     "word": "quantity",
@@ -141,7 +142,8 @@ module.exports = [
     "pos": "adj",
     "difficulty": 2,
     "example": "The company has received numerous complaints about the product.",
-    "exampleZh": "公司收到了關於該產品的許多投訴。"
+    "exampleZh": "公司收到了關於該產品的許多投訴。",
+    "context": "????????? massive??????????"
   },
   {
     "word": "vast",
@@ -160,7 +162,8 @@ module.exports = [
     "pos": "adj",
     "difficulty": 2,
     "example": "Please give me the precise figures for this month's sales.",
-    "exampleZh": "請給我本月銷售的精確數字。"
+    "exampleZh": "請給我本月銷售的精確數字。",
+    "context": "????????????? exact??????strict????"
   },
   {
     "word": "significant",
@@ -251,7 +254,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 2,
     "example": "Add a weather widget to your home screen for quick updates.",
-    "exampleZh": "在主畫面添加天氣小工具以快速更新。"
+    "exampleZh": "在主畫面添加天氣小工具以快速更新。",
+    "context": "?????????????????? gadget????????????"
   },
   {
     "word": "VPN",
@@ -314,7 +318,8 @@ module.exports = [
     "pos": "adj",
     "difficulty": 3,
     "example": "I got suspicious when he started hiding his phone from me.",
-    "exampleZh": "當他開始對我隱瞞手機時，我起了疑心。"
+    "exampleZh": "當他開始對我隱瞞手機時，我起了疑心。",
+    "context": "?????????????? sketchy????????? shady?"
   },
   {
     "word": "confident",
@@ -1453,7 +1458,8 @@ module.exports = [
     "pos": "adj",
     "difficulty": 2,
     "example": "That alley looks really sketchy so let us take another route.",
-    "exampleZh": "那條巷子看起來很可疑，我們走另一條路吧。"
+    "exampleZh": "那條巷子看起來很可疑，我們走另一條路吧。",
+    "context": "???????????????????? suspicious??????????"
   },
   {
     "word": "shady",
@@ -1462,7 +1468,8 @@ module.exports = [
     "pos": "adj",
     "difficulty": 1,
     "example": "That deal sounds pretty shady; I would not trust that website.",
-    "exampleZh": "那筆交易聽起來很不正當，我不會相信那個網站。"
+    "exampleZh": "那筆交易聽起來很不正當，我不會相信那個網站。",
+    "context": "較口語，常指人、交易、網站有鬼、不正當、不可信。比較 dubious：較正式，也可指不太確定、令人存疑。"
   },
   {
     "word": "legit",
@@ -1606,7 +1613,8 @@ module.exports = [
     "pos": "adj",
     "difficulty": 1,
     "example": "She is so extra that she wore a ball gown to a casual dinner.",
-    "exampleZh": "她真的太誇張了，去一般的晚餐聚會居然穿了禮服。"
+    "exampleZh": "她真的太誇張了，去一般的晚餐聚會居然穿了禮服。",
+    "context": "?????????????????? over??? grandiose??????????????????"
   },
   {
     "word": "mood",
@@ -1633,7 +1641,8 @@ module.exports = [
     "pos": "v",
     "difficulty": 2,
     "example": "He ghosted me after three great dates and I never heard from him.",
-    "exampleZh": "三次美好的約會之後他就消失不見了，我再也沒收到他的消息。"
+    "exampleZh": "三次美好的約會之後他就消失不見了，我再也沒收到他的消息。",
+    "context": "過去式，指某人突然斷聯、已讀不回。比較 ghost：可作動詞原形；ghosting：名詞，指這種行為本身。"
   },
   {
     "word": "cockpit",
@@ -1741,7 +1750,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 2,
     "example": "We found affordable lodging near the train station.",
-    "exampleZh": "我們在火車站附近找到了平價的住宿。"
+    "exampleZh": "我們在火車站附近找到了平價的住宿。",
+    "context": "偏旅遊或短期住宿語境，可指住處、住宿地點。比較 accommodation：更通用，也更常見於正式、英式英文或旅館訂房資訊。"
   },
   {
     "word": "surpass",
@@ -1777,7 +1787,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 2,
     "example": "We booked a sleeper car for the overnight train journey.",
-    "exampleZh": "我們預訂了臥鋪車廂來搭乘夜間火車。"
+    "exampleZh": "我們預訂了臥鋪車廂來搭乘夜間火車。",
+    "context": "?????????????????? sleep?????????"
   },
   {
     "word": "propeller",
@@ -2155,7 +2166,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 3,
     "example": "React is a popular JavaScript framework for building web apps.",
-    "exampleZh": "React 是一個流行的 JavaScript 框架，用於建構網頁應用程式。"
+    "exampleZh": "React 是一個流行的 JavaScript 框架，用於建構網頁應用程式。",
+    "context": "??????????????????? frame????????????????"
   },
   {
     "word": "stylesheet",
@@ -2335,7 +2347,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 2,
     "example": "A new flyover was built to reduce traffic at the intersection.",
-    "exampleZh": "新建了一座天橋來減輕十字路口的交通。"
+    "exampleZh": "新建了一座天橋來減輕十字路口的交通。",
+    "context": "?????????????????? overpass???????"
   },
   {
     "word": "jaywalking",
@@ -2499,7 +2512,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 4,
     "example": "She received a commendation for her outstanding customer service.",
-    "exampleZh": "她因出色的客戶服務而獲得嘉獎。"
+    "exampleZh": "她因出色的客戶服務而獲得嘉獎。",
+    "context": "名詞，指嘉獎、表揚、正式肯定。比較 commend：動詞，指去表揚。"
   },
   {
     "word": "receptacle",

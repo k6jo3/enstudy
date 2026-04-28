@@ -637,7 +637,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 3,
     "example": "The plane carried a full load of cargo.",
-    "exampleZh": "飛機載運了滿載的貨物。"
+    "exampleZh": "飛機載運了滿載的貨物。",
+    "context": "???????????????????? load??????????????"
   },
   {
     "word": "perishable",
@@ -802,7 +803,8 @@ module.exports = [
     "pos": "v",
     "difficulty": 3,
     "example": "The department was tasked with procuring new equipment.",
-    "exampleZh": "該部門被指派採購新設備。"
+    "exampleZh": "該部門被指派採購新設備。",
+    "context": "??????????????? earn???????"
   },
   {
     "word": "remuneration",
@@ -1226,7 +1228,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 3,
     "example": "Grout was applied between the tiles to seal the gaps.",
-    "exampleZh": "在磁磚之間塗抹了填縫劑來密封縫隙。"
+    "exampleZh": "在磁磚之間塗抹了填縫劑來密封縫隙。",
+    "context": "?????????????? caulk????????"
   },
   {
     "word": "awning",
@@ -1676,7 +1679,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 3,
     "example": "The new overpass reduced traffic at the intersection.",
-    "exampleZh": "新的高架橋減輕了十字路口的交通流量。"
+    "exampleZh": "新的高架橋減輕了十字路口的交通流量。",
+    "context": "????????????????????? flyover???????"
   },
   {
     "word": "tollbooth",
@@ -1983,7 +1987,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 3,
     "example": "The waiter brought the menu and took our order.",
-    "exampleZh": "服務生端來菜單並幫我們點餐。"
+    "exampleZh": "服務生端來菜單並幫我們點餐。",
+    "context": "?????????? wait????????"
   },
   {
     "word": "menu",
@@ -2424,7 +2429,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 3,
     "example": "The standard workday at this company is from nine to six.",
-    "exampleZh": "這家公司的標準工作日是早上九點到下午六點。"
+    "exampleZh": "這家公司的標準工作日是早上九點到下午六點。",
+    "context": "??????????????????? weekday????????"
   },
   {
     "word": "timeclock",
@@ -2478,7 +2484,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 3,
     "example": "The team attended a briefing on the new safety procedures this morning.",
-    "exampleZh": "團隊今天早上參加了新安全程序的簡報。"
+    "exampleZh": "團隊今天早上參加了新安全程序的簡報。",
+    "context": "名詞，指簡報會、事前說明、概要說明。比較 brief：形容詞，指內容簡短。"
   },
   {
     "word": "recap",

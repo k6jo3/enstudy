@@ -268,7 +268,8 @@ module.exports = [
     "pos": "adj",
     "difficulty": 4,
     "example": "The hotel offers complimentary breakfast for all guests.",
-    "exampleZh": "飯店為所有住客提供免費早餐。"
+    "exampleZh": "飯店為所有住客提供免費早餐。",
+    "context": "常指商家、飯店、航空公司附贈的免費服務或物品，語氣較正式。比較 free：最一般的免費。"
   },
   {
     "word": "ergonomic",
@@ -525,7 +526,8 @@ module.exports = [
     "pos": "adj",
     "difficulty": 4,
     "example": "Sales have increased for five consecutive quarters.",
-    "exampleZh": "銷售額已連續五個季度成長。"
+    "exampleZh": "銷售額已連續五個季度成長。",
+    "context": "強調中間沒有中斷、連著發生。比較 successive：也可指接連發生，但較強調一個接一個的次序，正式感稍強。"
   },
   {
     "word": "requisition",
@@ -783,7 +785,8 @@ module.exports = [
     "pos": "v",
     "difficulty": 4,
     "example": "She was asked to testify before the congressional committee.",
-    "exampleZh": "她被要求在國會委員會面前作證。"
+    "exampleZh": "她被要求在國會委員會面前作證。",
+    "context": "????????????????? test?????????"
   },
   {
     "word": "ordinance",
@@ -1011,7 +1014,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 4,
     "example": "Voters cast their ballots at polling stations across the country.",
-    "exampleZh": "選民在全國各地的投票站投下選票。"
+    "exampleZh": "選民在全國各地的投票站投下選票。",
+    "context": "多指選票本身，或正式投票程序中的票單。比較 vote：較常指投票這個動作或表決結果。"
   },
   {
     "word": "lobbyist",
@@ -1439,7 +1443,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 4,
     "example": "The tenant fell into arrears on the monthly rent payments.",
-    "exampleZh": "租戶拖欠了每月的租金。"
+    "exampleZh": "租戶拖欠了每月的租金。",
+    "context": "偏正式，指逾期未付的欠款，常見於房租、稅金、帳單、貸款。比較 debt：較泛指整體債務或欠款狀態。"
   },
   {
     "word": "denomination",
@@ -2063,7 +2068,8 @@ module.exports = [
     "pos": "v",
     "difficulty": 4,
     "example": "I would like to commend your team for the excellent service.",
-    "exampleZh": "我想表揚你的團隊提供了卓越的服務。"
+    "exampleZh": "我想表揚你的團隊提供了卓越的服務。",
+    "context": "動詞，指正式稱讚、表揚，也可指推薦。比較 commendation：名詞，指嘉獎、表揚本身。"
   },
   {
     "word": "cordial",
@@ -2072,7 +2078,8 @@ module.exports = [
     "pos": "adj",
     "difficulty": 4,
     "example": "The hotel manager gave us a cordial welcome.",
-    "exampleZh": "飯店經理給了我們親切的歡迎。"
+    "exampleZh": "飯店經理給了我們親切的歡迎。",
+    "context": "??????????????? nice??????????"
   },
   {
     "word": "berth",

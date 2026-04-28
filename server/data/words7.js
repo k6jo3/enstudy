@@ -782,7 +782,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 3,
     "example": "The host greeted every guest with genuine cordiality.",
-    "exampleZh": "主人以真誠的熱情迎接每位客人。"
+    "exampleZh": "主人以真誠的熱情迎接每位客人。",
+    "context": "???????????????? zest/enthusiasm????????"
   },
   {
     "word": "deferential",
@@ -856,7 +857,8 @@ module.exports = [
     "pos": "adj",
     "difficulty": 3,
     "example": "He gave a rueful smile after admitting his mistake.",
-    "exampleZh": "承認錯誤後，他帶著悔恨的微笑。"
+    "exampleZh": "承認錯誤後，他帶著悔恨的微笑。",
+    "context": "? sad ?????????????? sad????????"
   },
   {
     "word": "begrudge",
@@ -2489,7 +2491,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 4,
     "example": "What criteria are used for the selection process?",
-    "exampleZh": "甄選過程使用了哪些標準？"
+    "exampleZh": "甄選過程使用了哪些標準？",
+    "context": "單數名詞，指一項標準。比較 criteria：複數形式，表示多項標準。"
   },
   {
     "word": "demographic",
@@ -2507,7 +2510,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 4,
     "example": "There is a growing disparity between rich and poor.",
-    "exampleZh": "貧富之間的差距越來越大。"
+    "exampleZh": "貧富之間的差距越來越大。",
+    "context": "????????????????????????? gap????????????????"
   },
   {
     "word": "dissent",

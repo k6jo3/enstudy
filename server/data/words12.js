@@ -15,7 +15,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 3,
     "example": "She shows great enthusiasm for her hobbies.",
-    "exampleZh": "她對自己的嗜好展現出極大的熱忱。"
+    "exampleZh": "她對自己的嗜好展現出極大的熱忱。",
+    "context": "???????????? zest???????cordiality???????"
   },
   {
     "word": "meditation",
@@ -42,7 +43,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 1,
     "example": "We rented a kayak and paddled along the river.",
-    "exampleZh": "我們租了一艘獨木舟沿著河划行。"
+    "exampleZh": "我們租了一艘獨木舟沿著河划行。",
+    "context": "???????????????? canoe???????"
   },
   {
     "word": "fencing",
@@ -114,7 +116,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 1,
     "example": "The concert venue holds ten thousand people.",
-    "exampleZh": "演唱會場地可容納一萬人。"
+    "exampleZh": "演唱會場地可容納一萬人。",
+    "context": "????????????????? locale??????????"
   },
   {
     "word": "triathlon",
@@ -378,7 +381,8 @@ module.exports = [
     "pos": "adj",
     "difficulty": 3,
     "example": "It was a courageous decision to speak up.",
-    "exampleZh": "勇敢站出來說話是一個有勇氣的決定。"
+    "exampleZh": "勇敢站出來說話是一個有勇氣的決定。",
+    "context": "比 brave 更正式，常用來形容在壓力、風險、道德兩難下仍做出有勇氣的決定。比較 brave：更日常，適用範圍更廣。"
   },
   {
     "word": "timid",
@@ -387,7 +391,8 @@ module.exports = [
     "pos": "adj",
     "difficulty": 1,
     "example": "The timid child hid behind his mother.",
-    "exampleZh": "那個膽怯的孩子躲在媽媽後面。"
+    "exampleZh": "那個膽怯的孩子躲在媽媽後面。",
+    "context": "? shy ???????????? shy???????????"
   },
   {
     "word": "agitated",
@@ -731,7 +736,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 2,
     "example": "The announcement was posted on the office bulletin board.",
-    "exampleZh": "公告已張貼在辦公室的佈告欄上。"
+    "exampleZh": "公告已張貼在辦公室的佈告欄上。",
+    "context": "??????????? proclamation???????????"
   },
   {
     "word": "invoice",
@@ -812,7 +818,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 2,
     "example": "She sent a reminder about tomorrow's meeting.",
-    "exampleZh": "她發了一封關於明天會議的提醒。"
+    "exampleZh": "她發了一封關於明天會議的提醒。",
+    "context": "名詞，指提醒通知、提示物或提醒內容。比較 remind：動詞，指提醒某人。"
   },
   {
     "word": "procedure",
@@ -1057,7 +1064,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 3,
     "example": "She submitted her resignation letter last week.",
-    "exampleZh": "她上週提交了辭職信。"
+    "exampleZh": "她上週提交了辭職信。",
+    "context": "名詞，指辭職這件事或辭呈文件。比較 resign：動詞，表示提出辭職、離開職位。"
   },
   {
     "word": "layoff",
@@ -1094,7 +1102,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 2,
     "example": "Our target audience is young professionals aged 25 to 35.",
-    "exampleZh": "我們的目標客群是 25 到 35 歲的年輕專業人士。"
+    "exampleZh": "我們的目標客群是 25 到 35 歲的年輕專業人士。",
+    "context": "常指瞄準的對象、目標客群、數字目標或攻擊目標，語意較具體。比較 goal：較泛指想達成的目標、理想或結果。"
   },
   {
     "word": "brand",
@@ -1193,7 +1202,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 2,
     "example": "The sales forecast for next quarter looks promising.",
-    "exampleZh": "下一季的銷售預測看起來很有希望。"
+    "exampleZh": "下一季的銷售預測看起來很有希望。",
+    "context": "可作名詞，指預測結果、預報內容，商務和天氣情境都常見。比較 predict：動詞，強調做出預測這個動作。"
   },
   {
     "word": "trend",
@@ -1202,7 +1212,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 1,
     "example": "Market trends indicate a shift toward online shopping.",
-    "exampleZh": "市場趨勢顯示消費行為正轉向網路購物。"
+    "exampleZh": "市場趨勢顯示消費行為正轉向網路購物。",
+    "context": "????????? trending??????????"
   },
   {
     "word": "competitor",
@@ -1319,7 +1330,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 3,
     "example": "The manager gave assurance that the problem would be fixed.",
-    "exampleZh": "經理保證問題會被修復。"
+    "exampleZh": "經理保證問題會被修復。",
+    "context": "偏抽象的「保證、放心保證」，也可指讓人安心的說法。比較 guarantee：較具體，常涉及產品保固、退款保證、正式承諾。"
   },
   {
     "word": "guarantee",
@@ -1328,7 +1340,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 3,
     "example": "The product carries a money-back guarantee.",
-    "exampleZh": "這項產品提供退款保證。"
+    "exampleZh": "這項產品提供退款保證。",
+    "context": "較具體、較正式的保證，常見於產品保固、退款、合約承諾。比較 assurance：更偏口頭保證、安撫、讓人安心。"
   },
   {
     "word": "promptly",
@@ -1355,7 +1368,8 @@ module.exports = [
     "pos": "v",
     "difficulty": 1,
     "example": "Members will vote on the resolution tomorrow.",
-    "exampleZh": "成員們明天將對這項決議進行投票。"
+    "exampleZh": "成員們明天將對這項決議進行投票。",
+    "context": "最常用的「投票；表決」動作。比較 ballot：較常指選票本身或正式投票程序。"
   },
   {
     "word": "chairperson",
@@ -1445,7 +1459,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 2,
     "example": "Please review the handout before the training session.",
-    "exampleZh": "請在培訓課程前先閱讀講義。"
+    "exampleZh": "請在培訓課程前先閱讀講義。",
+    "context": "????????????? data??????????"
   },
   {
     "word": "workshop",
@@ -1690,7 +1705,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 2,
     "example": "The shipment is expected to arrive on Friday.",
-    "exampleZh": "這批貨預計週五到達。"
+    "exampleZh": "這批貨預計週五到達。",
+    "context": "???????????????? cargo/freight??????????"
   },
   {
     "word": "distribution",
@@ -1717,7 +1733,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 1,
     "example": "The trucks are waiting at the loading dock.",
-    "exampleZh": "卡車正在裝貨碼頭等候。"
+    "exampleZh": "卡車正在裝貨碼頭等候。",
+    "context": "????????????????? pier/wharf????????"
   },
   {
     "word": "clearance",
@@ -1781,7 +1798,8 @@ module.exports = [
     "pos": "prep",
     "difficulty": 3,
     "example": "I am writing regarding your recent inquiry.",
-    "exampleZh": "我寫信是關於您近期的詢問。"
+    "exampleZh": "我寫信是關於您近期的詢問。",
+    "context": "較正式的「關於」，常用於信件、Email、公告、商務文字。比較 about：更口語、更自然，日常對話最常用。"
   },
   {
     "word": "recipient",
@@ -1880,7 +1898,8 @@ module.exports = [
     "pos": "v",
     "difficulty": 2,
     "example": "The firm was forced to downsize during the recession.",
-    "exampleZh": "公司在經濟衰退期間被迫縮編。"
+    "exampleZh": "公司在經濟衰退期間被迫縮編。",
+    "context": "動詞，指公司縮編、裁員或縮小規模。比較 downsizing：名詞，指縮編這件事。"
   },
   {
     "word": "incorporate",
@@ -1980,7 +1999,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 3,
     "example": "A thorough inspection is required before shipment.",
-    "exampleZh": "出貨前需要進行徹底的檢查。"
+    "exampleZh": "出貨前需要進行徹底的檢查。",
+    "context": "名詞，指檢查、視察、驗查程序。比較 inspect：動詞，指執行檢查。"
   },
   {
     "word": "machinery",
@@ -2107,7 +2127,8 @@ module.exports = [
     "pos": "v",
     "difficulty": 2,
     "example": "Engineers modified the design to improve efficiency.",
-    "exampleZh": "工程師修改了設計以提升效率。"
+    "exampleZh": "工程師修改了設計以提升效率。",
+    "context": "???????????????????????? alter????????????????????"
   },
   {
     "word": "utilize",
@@ -2116,7 +2137,8 @@ module.exports = [
     "pos": "v",
     "difficulty": 2,
     "example": "The team utilized advanced tools for quality testing.",
-    "exampleZh": "團隊利用先進的工具進行品質測試。"
+    "exampleZh": "團隊利用先進的工具進行品質測試。",
+    "context": "比 use 更正式，常見於商務、技術、報告語境，強調有效利用資源、工具或機會。比較 use：日常最自然。"
   },
   {
     "word": "recall",
@@ -2324,7 +2346,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 3,
     "example": "A solid foundation is essential for a safe building.",
-    "exampleZh": "穩固的地基對於安全的建築至關重要。"
+    "exampleZh": "穩固的地基對於安全的建築至關重要。",
+    "context": "????????????? basis???????????????"
   },
   {
     "word": "plumbing",
@@ -2612,7 +2635,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 2,
     "example": "Four concrete pillars support the entrance of the building.",
-    "exampleZh": "四根混凝土柱子支撐著建築物的入口。"
+    "exampleZh": "四根混凝土柱子支撐著建築物的入口。",
+    "context": "??????????????????? backbone?????????"
   },
   {
     "word": "savings",
@@ -2686,7 +2710,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 1,
     "example": "The bank charges a fee for international wire transfers.",
-    "exampleZh": "銀行對國際電匯收取手續費。"
+    "exampleZh": "銀行對國際電匯收取手續費。",
+    "context": "????????????????????? cost/expense??????"
   },
   {
     "word": "bond",

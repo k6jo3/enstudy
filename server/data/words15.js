@@ -204,7 +204,8 @@ module.exports = [
     "pos": "v",
     "difficulty": 2,
     "example": "Infuse the tea leaves in hot water for five minutes.",
-    "exampleZh": "將茶葉在熱水中浸泡五分鐘。"
+    "exampleZh": "將茶葉在熱水中浸泡五分鐘。",
+    "context": "??????????????????????? steep?????????????"
   },
   {
     "word": "custard",
@@ -636,7 +637,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 1,
     "example": "Apply caulk around the bathtub to prevent water leaks.",
-    "exampleZh": "在浴缸周圍塗上填縫劑以防止漏水。"
+    "exampleZh": "在浴缸周圍塗上填縫劑以防止漏水。",
+    "context": "?????????????? grout????????"
   },
   {
     "word": "deadbolt",
@@ -979,7 +981,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 1,
     "example": "A serious rift developed between the two business partners.",
-    "exampleZh": "兩個商業夥伴之間產生了嚴重的裂痕。"
+    "exampleZh": "兩個商業夥伴之間產生了嚴重的裂痕。",
+    "context": "指關係、意見、陣營之間出現裂痕或不和。比較 feud：較強調長期、激烈的對立或世仇。"
   },
   {
     "word": "truce",
@@ -1006,7 +1009,8 @@ module.exports = [
     "pos": "v",
     "difficulty": 3,
     "example": "His constant lateness exasperated his manager.",
-    "exampleZh": "他經常遲到使他的經理感到惱怒。"
+    "exampleZh": "他經常遲到使他的經理感到惱怒。",
+    "context": "比 annoy 更強，常表示被反覆惹到很煩、快受不了。比較 annoy：一般程度的煩或惱怒。"
   },
   {
     "word": "condolence",
@@ -1132,7 +1136,8 @@ module.exports = [
     "pos": "v",
     "difficulty": 1,
     "example": "The two lanes merge into one ahead.",
-    "exampleZh": "前方兩條車道匯入一條。"
+    "exampleZh": "前方兩條車道匯入一條。",
+    "context": "較常指兩個東西正式合併成一體，例如車道、公司、資料、系統。比較 combine：較泛指把東西結合在一起。"
   },
   {
     "word": "rearview",
@@ -1213,7 +1218,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 2,
     "example": "She offers math tutoring after school.",
-    "exampleZh": "她放學後提供數學輔導。"
+    "exampleZh": "她放學後提供數學輔導。",
+    "context": "??????????????? tutor?????????"
   },
   {
     "word": "cramming",
@@ -1476,7 +1482,8 @@ module.exports = [
     "pos": "v",
     "difficulty": 3,
     "example": "The amount of homework can overwhelm students.",
-    "exampleZh": "大量的作業可能讓學生不知所措。"
+    "exampleZh": "大量的作業可能讓學生不知所措。",
+    "context": "動詞，指某事讓人壓力過大、招架不住，或在數量或力量上壓倒對方。比較 overwhelmed：形容人感到不知所措；overwhelming：形容事物壓倒性的。"
   },
   {
     "word": "yearn",
@@ -1531,7 +1538,8 @@ module.exports = [
     "pos": "v",
     "difficulty": 2,
     "example": "The complex instructions bewildered the new employee.",
-    "exampleZh": "複雜的指示讓新員工感到困惑。"
+    "exampleZh": "複雜的指示讓新員工感到困惑。",
+    "context": "比 confuse 更強，常指讓人不知所措、完全搞不清楚狀況。"
   },
   {
     "word": "dismay",
@@ -1639,7 +1647,8 @@ module.exports = [
     "pos": "v",
     "difficulty": 2,
     "example": "She acquired new skills through the training program.",
-    "exampleZh": "她透過培訓課程習得了新技能。"
+    "exampleZh": "她透過培訓課程習得了新技能。",
+    "context": "???????????????? obtain???????earn???????"
   },
   {
     "word": "adjust",
@@ -1747,7 +1756,8 @@ module.exports = [
     "pos": "v",
     "difficulty": 2,
     "example": "Combine the ingredients in a large bowl.",
-    "exampleZh": "將所有材料混合在一個大碗裡。"
+    "exampleZh": "將所有材料混合在一個大碗裡。",
+    "context": "把幾樣東西結合在一起，常用於材料、方法、技能、因素。比較 merge：較常指兩個系統、公司、車道或資料正式合併成一體。"
   },
   {
     "word": "commit",
@@ -1891,7 +1901,8 @@ module.exports = [
     "pos": "v",
     "difficulty": 2,
     "example": "Customers demanded a full refund.",
-    "exampleZh": "顧客要求全額退款。"
+    "exampleZh": "顧客要求全額退款。",
+    "context": "語氣強硬的「要求」，常表示堅持、強烈主張。比較 ask：一般請求；request：較正式但較客氣。"
   },
   {
     "word": "demonstrate",
@@ -1918,7 +1929,8 @@ module.exports = [
     "pos": "v",
     "difficulty": 2,
     "example": "The result depends on how hard you work.",
-    "exampleZh": "結果取決於你有多努力。"
+    "exampleZh": "結果取決於你有多努力。",
+    "context": "可指依賴某人，也常指某事取決於某條件。比較 rely：較常指信任、仰賴某人或某物。"
   },
   {
     "word": "describe",
@@ -1981,7 +1993,8 @@ module.exports = [
     "pos": "v",
     "difficulty": 2,
     "example": "They discovered a new restaurant near the office.",
-    "exampleZh": "他們在辦公室附近發現了一家新餐廳。"
+    "exampleZh": "他們在辦公室附近發現了一家新餐廳。",
+    "context": "指發現原本不知道的新事物、地方、資訊或事實，常有「新發現」的感覺。比較 find：單純找到；比較 figure out：靠思考弄懂問題。"
   },
   {
     "word": "discuss",
@@ -2054,7 +2067,8 @@ module.exports = [
     "pos": "v",
     "difficulty": 1,
     "example": "Do you believe that ghosts exist?",
-    "exampleZh": "你相信鬼魂存在嗎？"
+    "exampleZh": "你相信鬼魂存在嗎？",
+    "context": "動詞，指某事物客觀上存在。比較 existence：名詞，指存在這件事或存在狀態。"
   },
   {
     "word": "expand",
@@ -2145,7 +2159,8 @@ module.exports = [
     "pos": "v",
     "difficulty": 2,
     "example": "She handled the complaint very professionally.",
-    "exampleZh": "她非常專業地處理了這起投訴。"
+    "exampleZh": "她非常專業地處理了這起投訴。",
+    "context": "??????????????? cope???????????????"
   },
   {
     "word": "harm",
@@ -2208,7 +2223,8 @@ module.exports = [
     "pos": "v",
     "difficulty": 2,
     "example": "I want to improve my English speaking skills.",
-    "exampleZh": "我想要提升我的英文口說能力。"
+    "exampleZh": "我想要提升我的英文口說能力。",
+    "context": "動詞，指讓某事變得更好，或自己進步。比較 improvement：名詞，指改善成果或進步幅度。"
   },
   {
     "word": "include",
@@ -2354,7 +2370,8 @@ module.exports = [
     "pos": "v",
     "difficulty": 2,
     "example": "You can obtain a visa at the embassy.",
-    "exampleZh": "你可以在大使館取得簽證。"
+    "exampleZh": "你可以在大使館取得簽證。",
+    "context": "????????????? acquire?????????"
   },
   {
     "word": "occur",
@@ -2363,7 +2380,8 @@ module.exports = [
     "pos": "v",
     "difficulty": 1,
     "example": "The accident occurred early in the morning.",
-    "exampleZh": "那場意外發生在一大早。"
+    "exampleZh": "那場意外發生在一大早。",
+    "context": "較正式、較客觀的「發生」。常見於新聞、報導、研究、公告、事故描述。比較 happen：較口語、較日常，也更常用在對話裡。"
   },
   {
     "word": "ability",
@@ -2471,7 +2489,8 @@ module.exports = [
     "pos": "n",
     "difficulty": 1,
     "example": "The decision was made on the basis of the report.",
-    "exampleZh": "這個決定是根據報告做出的。"
+    "exampleZh": "這個決定是根據報告做出的。",
+    "context": "???????????? foundation???????????????????????"
   },
   {
     "word": "benefit",

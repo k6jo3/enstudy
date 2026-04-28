@@ -953,7 +953,7 @@ module.exports = [
     "example": "Take the second right and the library will be on your left.",
     "exampleZh": "在第二個路口右轉，圖書館就在你的左手邊。",
     "difficulty": 4,
-    "context": "????????????????????? turn right at the corner ????????????????"
+    "context": "指路時強調是第幾個路口右轉。比較 turn right at the corner（在轉角處右轉，不強調第幾個）、take the first left（同結構，第一個路口左轉）。"
   },
   {
     "phrase": "just down the road",
@@ -1024,7 +1024,7 @@ module.exports = [
     "example": "Nice weather we're having, isn't it? Perfect for a picnic.",
     "exampleZh": "天氣真不錯，對吧？非常適合野餐。",
     "difficulty": 4,
-    "context": "?? small talk ??????????????????????????????????????"
+    "context": "英語 small talk（閒聊）的經典開場白，通常不是真的在討論天氣，而是打招呼或暖場的方式，常加尾問句 isn't it? 邀對方附和。"
   },
   {
     "phrase": "What do you do for a living?",
@@ -1060,7 +1060,7 @@ module.exports = [
     "example": "Have you heard? They're opening a new shopping center next month.",
     "exampleZh": "你有聽說嗎？他們下個月要開一個新的購物中心。",
     "difficulty": 4,
-    "context": "??????????????????????????????????????????"
+    "context": "用來引出新消息或八卦的開場句，語氣帶期待。比較 Did you know?（分享知識性資訊，較中性）、Guess what?（更口語，帶驚喜或興奮感）。"
   },
   {
     "phrase": "I see what you mean",
@@ -1140,7 +1140,7 @@ module.exports = [
     "example": "The children jumped for joy when they heard school was cancelled.",
     "exampleZh": "孩子們聽說學校停課後高興得跳了起來。",
     "difficulty": 3,
-    "context": "???????????????????? happy ???????????"
+    "context": "誇飾說法，形容極度開心，不一定真的跳起來。比較 happy（基本形容詞，較平淡）、over the moon（同樣誇飾，非常開心）、thrilled（強烈興奮）。"
   },
   {
     "phrase": "cheer someone up",
@@ -1352,7 +1352,7 @@ module.exports = [
     "example": "Do you have the scoop on why Jenny left the company?",
     "exampleZh": "你知道珍妮為什麼離職的內幕嗎？",
     "difficulty": 4,
-    "context": "???????????????????????? just know ??????????"
+    "context": "指掌握他人尚未知道的獨家或內幕消息，常帶八卦或搶先知道的語感。比較 be in the know（了解內情，較中性）、just know（只是知道，無特殊意涵）。"
   },
   {
     "phrase": "stir the pot",

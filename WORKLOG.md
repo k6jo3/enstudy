@@ -63,6 +63,39 @@ Examples already cleaned:
 4. Continue duplicate policy cleanup.
    Not every visually similar pair should be merged. Some pairs differ by meaning or grammatical role and should stay separate.
 
+## Completion Rule
+
+The context-cleanup task now uses a 3-way classification instead of raw `missing context` counts.
+
+Script:
+
+- `npm run audit:context`
+- source: `server/scripts/audit-context-gaps.js`
+
+Classifications:
+
+1. `required`
+   These are the groups that should actually be completed.
+   Current rule of thumb:
+   - exact same-meaning overlaps
+   - word/phrase surface overlaps
+   - clear near-synonym word pairs that share the same part of speech and represent a real usage distinction
+
+2. `optional`
+   These are noisy or borderline comparison candidates.
+   They may still be worth fixing later, but they do not block completion.
+
+3. `skip`
+   These are not part of the completion target.
+   Typical cases:
+   - shape-only collisions like `broth / brother`
+   - family pairs that are related in spelling but not worth nuanced comparison for the current task
+
+Important:
+
+- Do not use raw `Words missing context` as the main progress metric.
+- Use `Required groups remaining` as the primary completion line for this task.
+
 ## Remaining Work
 
 ### 1. Duplicate policy finalization
@@ -158,4 +191,3 @@ Quiz / frontend:
 If continuing in a new session, use something like:
 
 > Continue the enStuido dataset cleanup work from `WORKLOG.md`. First inspect current progress, then continue with duplicate cleanup, context completion, translation naturalization, and quiz confusion reduction. Do not restart from scratch.
-
