@@ -91,6 +91,15 @@ async function updateMastery(itemType, itemId, isCorrect, date, questionMode) {
     const base = (questionMode === 'choice' || questionMode === 'hint') ? 0.5 : 1;
     // Streak bonus: 3+ consecutive correct → +0.2 extra (fixed, not cumulative)
     scoreDelta = newStreak >= 3 ? base + 0.2 : base;
+    // High-practice, low-error bonus: review_count ≥ 20 with low lifetime error rate
+    // accelerates pausing so well-mastered items leave the quiz pool sooner
+    const preReviewCount = row.review_count || 0;
+    if (preReviewCount >= 20) {
+      const errorRate = preReviewCount > 0 ? (row.total_wrong || 0) / preReviewCount : 0;
+      if (errorRate < 0.05) scoreDelta += 0.3;
+      else if (errorRate < 0.10) scoreDelta += 0.2;
+      else if (errorRate < 0.12) scoreDelta += 0.1;
+    }
   } else {
     const base = -1.5;
     // Wrong streak penalty: 2+ consecutive wrong → extra -0.1 cumulative
@@ -125,24 +134,24 @@ async function updateMastery(itemType, itemId, isCorrect, date, questionMode) {
 
 // Called when daily learning is completed. Paused items decay each day so mastery eventually
 // falls back below the pause threshold. Decay is tiered by practice volume + lifetime error rate:
-//   - ≥200 attempts & err ≥15% → -0.9  (volatile despite heavy practice)
-//   - ≥150 attempts & err ≤ 5% → -0.6  (well-mastered, decay slower)
-//   - ≥100 attempts & err ≥15% → -0.8
-//   - otherwise                 → -0.7
+//   - ≥200 attempts & err ≥15% → -0.7  (volatile despite heavy practice)
+//   - ≥150 attempts & err ≤ 5% → -0.4  (well-mastered, decay slower)
+//   - ≥100 attempts & err ≥15% → -0.6
+//   - otherwise                 → -0.5
 // If score drops below 6, unpause and mark just_unpaused.
 async function decayPausedItems() {
   await run(`
     UPDATE word_mastery SET score = ROUND(score - CASE
       WHEN review_count >= 200
            AND review_count > 0
-           AND (COALESCE(total_wrong, 0) * 1.0 / review_count) >= 0.15 THEN 0.9
+           AND (COALESCE(total_wrong, 0) * 1.0 / review_count) >= 0.15 THEN 0.7
       WHEN review_count >= 150
            AND review_count > 0
-           AND (COALESCE(total_wrong, 0) * 1.0 / review_count) <= 0.05 THEN 0.6
+           AND (COALESCE(total_wrong, 0) * 1.0 / review_count) <= 0.05 THEN 0.4
       WHEN review_count >= 100
            AND review_count > 0
-           AND (COALESCE(total_wrong, 0) * 1.0 / review_count) >= 0.15 THEN 0.8
-      ELSE 0.7
+           AND (COALESCE(total_wrong, 0) * 1.0 / review_count) >= 0.15 THEN 0.6
+      ELSE 0.5
     END, 1)
     WHERE paused = 1
   `);
