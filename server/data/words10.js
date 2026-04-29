@@ -2,7 +2,7 @@ module.exports = [
   {
     "word": "place",
     "phonetic": "/pleɪs/",
-    "meaning": "地方",
+    "meaning": "地方；地點；放置；地位；安置",
     "pos": "n",
     "difficulty": 1,
     "example": "This is a nice place.",
@@ -29,7 +29,7 @@ module.exports = [
   {
     "word": "park",
     "phonetic": "/pɑːrk/",
-    "meaning": "公園",
+    "meaning": "公園；停車；停車場",
     "pos": "n",
     "difficulty": 1,
     "example": "We play in the park.",
@@ -38,7 +38,7 @@ module.exports = [
   {
     "word": "store",
     "phonetic": "/stɔːr/",
-    "meaning": "商店",
+    "meaning": "商店；儲存；倉庫；積蓄",
     "pos": "n",
     "difficulty": 1,
     "example": "I go to the store.",
@@ -47,7 +47,7 @@ module.exports = [
   {
     "word": "market",
     "phonetic": "/ˈmɑːrkɪt/",
-    "meaning": "市場",
+    "meaning": "市場；銷售；集市",
     "pos": "n",
     "difficulty": 2,
     "example": "We buy food at the market.",
@@ -83,7 +83,7 @@ module.exports = [
   {
     "word": "street",
     "phonetic": "/striːt/",
-    "meaning": "街道",
+    "meaning": "街道；馬路",
     "pos": "n",
     "difficulty": 2,
     "example": "Cross the street carefully.",
@@ -93,7 +93,7 @@ module.exports = [
   {
     "word": "road",
     "phonetic": "/roʊd/",
-    "meaning": "路",
+    "meaning": "道路；公路；途徑",
     "pos": "n",
     "difficulty": 1,
     "example": "The road is long.",
@@ -103,7 +103,7 @@ module.exports = [
   {
     "word": "bridge",
     "phonetic": "/brɪdʒ/",
-    "meaning": "橋",
+    "meaning": "橋；連結；鼻樑；船橋；架橋",
     "pos": "n",
     "difficulty": 2,
     "example": "We walk across the bridge.",
@@ -121,7 +121,7 @@ module.exports = [
   {
     "word": "river",
     "phonetic": "/ˈrɪvər/",
-    "meaning": "河",
+    "meaning": "河流；江",
     "pos": "n",
     "difficulty": 1,
     "example": "The river is wide.",
@@ -130,7 +130,7 @@ module.exports = [
   {
     "word": "sea",
     "phonetic": "/siː/",
-    "meaning": "海",
+    "meaning": "海；海洋；大量",
     "pos": "n",
     "difficulty": 1,
     "example": "I can see the sea.",
@@ -139,7 +139,7 @@ module.exports = [
   {
     "word": "beach",
     "phonetic": "/biːtʃ/",
-    "meaning": "海灘",
+    "meaning": "海灘；擱淺",
     "pos": "n",
     "difficulty": 1,
     "example": "We went to the beach.",
@@ -157,7 +157,7 @@ module.exports = [
   {
     "word": "farm",
     "phonetic": "/fɑːrm/",
-    "meaning": "農場",
+    "meaning": "農場；養殖場；耕作；經營",
     "pos": "n",
     "difficulty": 1,
     "example": "There are cows on the farm.",
@@ -176,7 +176,7 @@ module.exports = [
   {
     "word": "pool",
     "phonetic": "/puːl/",
-    "meaning": "游泳池",
+    "meaning": "游泳池；水池；撞球；聯營；匯集",
     "pos": "n",
     "difficulty": 1,
     "example": "I swim in the pool.",
@@ -185,7 +185,7 @@ module.exports = [
   {
     "word": "bank",
     "phonetic": "/bæŋk/",
-    "meaning": "銀行",
+    "meaning": "銀行；岸；堤；堆積；存放",
     "pos": "n",
     "difficulty": 1,
     "example": "I go to the bank.",
@@ -194,7 +194,7 @@ module.exports = [
   {
     "word": "station",
     "phonetic": "/ˈsteɪʃən/",
-    "meaning": "車站",
+    "meaning": "車站；站；所；局；駐紮",
     "pos": "n",
     "difficulty": 2,
     "example": "I wait at the station.",
@@ -203,7 +203,7 @@ module.exports = [
   {
     "word": "church",
     "phonetic": "/tʃɜːrtʃ/",
-    "meaning": "教堂",
+    "meaning": "教堂；教會；禮拜",
     "pos": "n",
     "difficulty": 2,
     "example": "They go to church on Sunday.",
@@ -212,7 +212,7 @@ module.exports = [
   {
     "word": "world",
     "phonetic": "/wɜːrld/",
-    "meaning": "世界",
+    "meaning": "世界；領域；世俗；大量",
     "pos": "n",
     "difficulty": 1,
     "example": "The world is very big.",
@@ -221,7 +221,7 @@ module.exports = [
   {
     "word": "car",
     "phonetic": "/kɑːr/",
-    "meaning": "汽車",
+    "meaning": "汽車；車廂",
     "pos": "n",
     "difficulty": 1,
     "example": "He drives a car.",
@@ -230,7 +230,7 @@ module.exports = [
   {
     "word": "bus",
     "phonetic": "/bʌs/",
-    "meaning": "公車",
+    "meaning": "公共汽車；巴士；接送",
     "pos": "n",
     "difficulty": 1,
     "example": "I take the bus to school.",
@@ -239,7 +239,7 @@ module.exports = [
   {
     "word": "train",
     "phonetic": "/treɪn/",
-    "meaning": "火車",
+    "meaning": "火車；行列；培訓；鍛鍊；訓練",
     "pos": "n",
     "difficulty": 1,
     "example": "The train is fast.",
@@ -248,7 +248,7 @@ module.exports = [
   {
     "word": "bike",
     "phonetic": "/baɪk/",
-    "meaning": "腳踏車",
+    "meaning": "腳踏車；摩托車；騎車",
     "pos": "n",
     "difficulty": 1,
     "example": "I ride my bike every day.",
@@ -257,7 +257,7 @@ module.exports = [
   {
     "word": "boat",
     "phonetic": "/boʊt/",
-    "meaning": "船",
+    "meaning": "船；小船；划船",
     "pos": "n",
     "difficulty": 1,
     "example": "We ride a boat on the river.",
@@ -275,7 +275,7 @@ module.exports = [
   {
     "word": "tree",
     "phonetic": "/triː/",
-    "meaning": "樹",
+    "meaning": "樹；木料；爬樹",
     "pos": "n",
     "difficulty": 1,
     "example": "The tree is very tall.",
@@ -284,7 +284,7 @@ module.exports = [
   {
     "word": "flower",
     "phonetic": "/ˈflaʊər/",
-    "meaning": "花",
+    "meaning": "花；精華；開花；繁榮",
     "pos": "n",
     "difficulty": 2,
     "example": "The flower smells nice.",
@@ -293,7 +293,7 @@ module.exports = [
   {
     "word": "grass",
     "phonetic": "/ɡræs/",
-    "meaning": "草",
+    "meaning": "草；草地；牧草",
     "pos": "n",
     "difficulty": 1,
     "example": "The grass is green.",
@@ -302,7 +302,7 @@ module.exports = [
   {
     "word": "leaf",
     "phonetic": "/liːf/",
-    "meaning": "葉子",
+    "meaning": "葉子；薄片；翻頁；發芽",
     "pos": "n",
     "difficulty": 1,
     "example": "The leaf is green.",
@@ -311,7 +311,7 @@ module.exports = [
   {
     "word": "rock",
     "phonetic": "/rɑːk/",
-    "meaning": "石頭",
+    "meaning": "岩石；搖動；搖滾樂；震驚",
     "pos": "n",
     "difficulty": 1,
     "example": "He sits on a rock.",
@@ -320,7 +320,7 @@ module.exports = [
   {
     "word": "ground",
     "phonetic": "/ɡraʊnd/",
-    "meaning": "地面",
+    "meaning": "地面；土地；根據；磨碎；禁足",
     "pos": "n",
     "difficulty": 2,
     "example": "The ball is on the ground.",
@@ -329,7 +329,7 @@ module.exports = [
   {
     "word": "fire",
     "phonetic": "/faɪər/",
-    "meaning": "火（泛指火災、火源）",
+    "meaning": "火；火災；開火；解雇；激發",
     "pos": "n",
     "difficulty": 1,
     "example": "The fire is hot.",
@@ -338,7 +338,7 @@ module.exports = [
   {
     "word": "ice",
     "phonetic": "/aɪs/",
-    "meaning": "冰",
+    "meaning": "冰；結冰；冰鎮",
     "pos": "n",
     "difficulty": 1,
     "example": "I want ice in my water.",
@@ -356,7 +356,7 @@ module.exports = [
   {
     "word": "forest",
     "phonetic": "/ˈfɔːrɪst/",
-    "meaning": "森林",
+    "meaning": "森林；林區；植樹",
     "pos": "n",
     "difficulty": 2,
     "example": "There are many trees in the forest.",
@@ -365,7 +365,7 @@ module.exports = [
   {
     "word": "air",
     "phonetic": "/ɛr/",
-    "meaning": "空氣",
+    "meaning": "空氣；大氣；天空；外貌；通風",
     "pos": "n",
     "difficulty": 1,
     "example": "The air is fresh.",
@@ -383,7 +383,7 @@ module.exports = [
   {
     "word": "people",
     "phonetic": "/ˈpiːpəl/",
-    "meaning": "人們",
+    "meaning": "人；民族；公民；居住",
     "pos": "n",
     "difficulty": 2,
     "example": "Many people are in the park.",
@@ -393,7 +393,7 @@ module.exports = [
   {
     "word": "man",
     "phonetic": "/mæn/",
-    "meaning": "男人",
+    "meaning": "男人；人類；配備人手",
     "pos": "n",
     "difficulty": 1,
     "example": "The man is tall.",
@@ -402,7 +402,7 @@ module.exports = [
   {
     "word": "woman",
     "phonetic": "/ˈwʊmən/",
-    "meaning": "女人",
+    "meaning": "女人；女性",
     "pos": "n",
     "difficulty": 1,
     "example": "The woman is kind.",
@@ -411,7 +411,7 @@ module.exports = [
   {
     "word": "boy",
     "phonetic": "/bɔɪ/",
-    "meaning": "男孩",
+    "meaning": "男孩；少年",
     "pos": "n",
     "difficulty": 1,
     "example": "The boy plays with a ball.",
@@ -420,7 +420,7 @@ module.exports = [
   {
     "word": "girl",
     "phonetic": "/ɡɜːrl/",
-    "meaning": "女孩",
+    "meaning": "女孩；少女",
     "pos": "n",
     "difficulty": 1,
     "example": "The girl reads a book.",
@@ -429,7 +429,7 @@ module.exports = [
   {
     "word": "friend",
     "phonetic": "/frɛnd/",
-    "meaning": "朋友",
+    "meaning": "朋友；友人；加為好友",
     "pos": "n",
     "difficulty": 2,
     "example": "She is my best friend.",
@@ -447,7 +447,7 @@ module.exports = [
   {
     "word": "nurse",
     "phonetic": "/nɜːrs/",
-    "meaning": "護士",
+    "meaning": "護士；護理；照料；保姆",
     "pos": "n",
     "difficulty": 1,
     "example": "The nurse takes care of patients.",
@@ -456,7 +456,7 @@ module.exports = [
   {
     "word": "police",
     "phonetic": "/pəˈliːs/",
-    "meaning": "警察",
+    "meaning": "警察；警方；管制",
     "pos": "n",
     "difficulty": 2,
     "example": "The police help keep us safe.",
@@ -475,7 +475,7 @@ module.exports = [
   {
     "word": "driver",
     "phonetic": "/ˈdraɪvər/",
-    "meaning": "司機",
+    "meaning": "司機；駕駛；驅動程式",
     "pos": "n",
     "difficulty": 2,
     "example": "The bus driver is friendly.",
@@ -484,7 +484,7 @@ module.exports = [
   {
     "word": "king",
     "phonetic": "/kɪŋ/",
-    "meaning": "國王",
+    "meaning": "國王；君主",
     "pos": "n",
     "difficulty": 1,
     "example": "The king lives in a castle.",
@@ -493,7 +493,7 @@ module.exports = [
   {
     "word": "queen",
     "phonetic": "/kwiːn/",
-    "meaning": "女王",
+    "meaning": "女王；王后",
     "pos": "n",
     "difficulty": 1,
     "example": "The queen wears a crown.",
@@ -502,7 +502,7 @@ module.exports = [
   {
     "word": "hello",
     "phonetic": "/həˈloʊ/",
-    "meaning": "你好",
+    "meaning": "你好；哈囉",
     "pos": "n",
     "difficulty": 1,
     "example": "Hello, how are you?",
@@ -511,7 +511,7 @@ module.exports = [
   {
     "word": "goodbye",
     "phonetic": "/ˌɡʊdˈbaɪ/",
-    "meaning": "再見",
+    "meaning": "再見；告別",
     "pos": "n",
     "difficulty": 2,
     "example": "Goodbye, see you tomorrow.",
@@ -520,7 +520,7 @@ module.exports = [
   {
     "word": "please",
     "phonetic": "/pliːz/",
-    "meaning": "請",
+    "meaning": "請；使高興；滿意",
     "pos": "adv",
     "difficulty": 2,
     "example": "Please help me.",
@@ -529,7 +529,7 @@ module.exports = [
   {
     "word": "thank",
     "phonetic": "/θæŋk/",
-    "meaning": "感謝",
+    "meaning": "感謝；道謝",
     "pos": "v",
     "difficulty": 1,
     "example": "Thank you very much.",
@@ -547,7 +547,7 @@ module.exports = [
   {
     "word": "no",
     "phonetic": "/noʊ/",
-    "meaning": "不",
+    "meaning": "不；沒有；否定",
     "pos": "adv",
     "difficulty": 1,
     "example": "No, I do not want it.",
@@ -556,7 +556,7 @@ module.exports = [
   {
     "word": "welcome",
     "phonetic": "/ˈwɛlkəm/",
-    "meaning": "歡迎",
+    "meaning": "受歡迎；歡迎；接待",
     "pos": "adj",
     "difficulty": 2,
     "example": "You are welcome here.",
@@ -565,7 +565,7 @@ module.exports = [
   {
     "word": "hope",
     "phonetic": "/hoʊp/",
-    "meaning": "希望",
+    "meaning": "希望；期望；盼望",
     "pos": "v",
     "difficulty": 1,
     "example": "I hope to see you again.",
@@ -575,7 +575,7 @@ module.exports = [
   {
     "word": "wish",
     "phonetic": "/wɪʃ/",
-    "meaning": "祝願",
+    "meaning": "願望；祝願；想要；希望",
     "pos": "v",
     "difficulty": 1,
     "example": "I wish you good luck.",
@@ -585,7 +585,7 @@ module.exports = [
   {
     "word": "surprise",
     "phonetic": "/sərˈpraɪz/",
-    "meaning": "驚喜",
+    "meaning": "驚喜；驚訝；意外；使驚訝",
     "pos": "n",
     "difficulty": 2,
     "example": "What a nice surprise!",
@@ -594,7 +594,7 @@ module.exports = [
   {
     "word": "worry",
     "phonetic": "/ˈwɜːri/",
-    "meaning": "擔心",
+    "meaning": "擔心；煩惱；焦慮",
     "pos": "v",
     "difficulty": 1,
     "example": "Do not worry about it.",
@@ -603,7 +603,7 @@ module.exports = [
   {
     "word": "enjoy",
     "phonetic": "/ɪnˈdʒɔɪ/",
-    "meaning": "享受",
+    "meaning": "享受；喜愛；欣賞",
     "pos": "v",
     "difficulty": 1,
     "example": "I enjoy reading books.",
@@ -612,7 +612,7 @@ module.exports = [
   {
     "word": "hate",
     "phonetic": "/heɪt/",
-    "meaning": "討厭",
+    "meaning": "恨；討厭；憎恨",
     "pos": "v",
     "difficulty": 1,
     "example": "I hate rainy days.",
@@ -621,7 +621,7 @@ module.exports = [
   {
     "word": "miss",
     "phonetic": "/mɪs/",
-    "meaning": "想念",
+    "meaning": "錯過；想念；遺漏；小姐",
     "pos": "v",
     "difficulty": 1,
     "example": "I miss my family.",
@@ -630,7 +630,7 @@ module.exports = [
   {
     "word": "care",
     "phonetic": "/kɛr/",
-    "meaning": "關心",
+    "meaning": "照顧；在乎；關心；介意",
     "pos": "v",
     "difficulty": 1,
     "example": "I care about you.",
@@ -639,7 +639,7 @@ module.exports = [
   {
     "word": "in",
     "phonetic": "/ɪn/",
-    "meaning": "在...裡面",
+    "meaning": "在內；進入；流行",
     "pos": "prep",
     "difficulty": 1,
     "example": "The cat is in the box.",
@@ -648,7 +648,7 @@ module.exports = [
   {
     "word": "on",
     "phonetic": "/ɑːn/",
-    "meaning": "在...上面",
+    "meaning": "在上；關於；進行中；接通",
     "pos": "prep",
     "difficulty": 1,
     "example": "The book is on the table.",
@@ -657,7 +657,7 @@ module.exports = [
   {
     "word": "under",
     "phonetic": "/ˈʌndər/",
-    "meaning": "在...下面",
+    "meaning": "在下；低於；少於",
     "pos": "prep",
     "difficulty": 1,
     "example": "The cat is under the table.",
@@ -666,7 +666,7 @@ module.exports = [
   {
     "word": "behind",
     "phonetic": "/bɪˈhaɪnd/",
-    "meaning": "在...後面",
+    "meaning": "後面；在後；落後；支持；臀部",
     "pos": "prep",
     "difficulty": 2,
     "example": "The dog is behind the door.",
@@ -675,7 +675,7 @@ module.exports = [
   {
     "word": "between",
     "phonetic": "/bɪˈtwiːn/",
-    "meaning": "在...之間",
+    "meaning": "之間；往返於",
     "pos": "prep",
     "difficulty": 2,
     "example": "The park is between the two buildings.",
@@ -684,7 +684,7 @@ module.exports = [
   {
     "word": "near",
     "phonetic": "/nɪr/",
-    "meaning": "靠近",
+    "meaning": "靠近；附近；接近；近；親近",
     "pos": "prep",
     "difficulty": 1,
     "example": "The school is near my house.",
@@ -693,7 +693,7 @@ module.exports = [
   {
     "word": "with",
     "phonetic": "/wɪð/",
-    "meaning": "和",
+    "meaning": "和；具有；用；由於；隨著",
     "pos": "prep",
     "difficulty": 1,
     "example": "I go with my friend.",
@@ -702,7 +702,7 @@ module.exports = [
   {
     "word": "for",
     "phonetic": "/fɔːr/",
-    "meaning": "為了",
+    "meaning": "為了；給；代表；因為；期間",
     "pos": "prep",
     "difficulty": 1,
     "example": "This gift is for you.",
@@ -711,7 +711,7 @@ module.exports = [
   {
     "word": "from",
     "phonetic": "/frʌm/",
-    "meaning": "從",
+    "meaning": "來自；從；由於；離；以免",
     "pos": "prep",
     "difficulty": 1,
     "example": "I am from Taiwan.",
@@ -720,7 +720,7 @@ module.exports = [
   {
     "word": "about",
     "phonetic": "/əˈbaʊt/",
-    "meaning": "關於",
+    "meaning": "關於；大約；附近；即將",
     "pos": "prep",
     "difficulty": 1,
     "example": "Tell me about your day.",
@@ -739,7 +739,7 @@ module.exports = [
   {
     "word": "but",
     "phonetic": "/bʌt/",
-    "meaning": "但是",
+    "meaning": "但是；除了；僅；異議",
     "pos": "conj",
     "difficulty": 1,
     "example": "I am tired but happy.",
@@ -748,7 +748,7 @@ module.exports = [
   {
     "word": "or",
     "phonetic": "/ɔːr/",
-    "meaning": "或者",
+    "meaning": "或者；否則；也就是說",
     "pos": "conj",
     "difficulty": 1,
     "example": "Do you want tea or coffee?",
@@ -766,7 +766,7 @@ module.exports = [
   {
     "word": "very",
     "phonetic": "/ˈvɛri/",
-    "meaning": "非常",
+    "meaning": "非常；正是；十足",
     "pos": "adv",
     "difficulty": 1,
     "example": "I am very happy.",
@@ -775,7 +775,7 @@ module.exports = [
   {
     "word": "also",
     "phonetic": "/ˈɔːlsoʊ/",
-    "meaning": "也",
+    "meaning": "也；此外；同樣",
     "pos": "adv",
     "difficulty": 1,
     "example": "I also like coffee.",
@@ -785,7 +785,7 @@ module.exports = [
   {
     "word": "together",
     "phonetic": "/təˈɡɛðər/",
-    "meaning": "一起",
+    "meaning": "一起；共同；總共；同時",
     "pos": "adv",
     "difficulty": 2,
     "example": "We play together.",
@@ -875,7 +875,7 @@ module.exports = [
   {
     "word": "midnight",
     "phonetic": "/ˈmɪdnaɪt/",
-    "meaning": "午夜",
+    "meaning": "午夜；子夜；凌晨",
     "pos": "n",
     "difficulty": 2,
     "example": "The deadline is midnight on Friday.",
@@ -902,7 +902,7 @@ module.exports = [
   {
     "word": "fourth",
     "phonetic": "/fɔːrθ/",
-    "meaning": "第四的",
+    "meaning": "第四；四分之一",
     "pos": "adj",
     "difficulty": 2,
     "example": "The fourth quarter earnings exceeded all expectations.",
@@ -911,7 +911,7 @@ module.exports = [
   {
     "word": "fifth",
     "phonetic": "/fɪfθ/",
-    "meaning": "第五的",
+    "meaning": "第五；五分之一",
     "pos": "adj",
     "difficulty": 1,
     "example": "This is the fifth time we have revised the proposal.",
@@ -920,7 +920,7 @@ module.exports = [
   {
     "word": "sixth",
     "phonetic": "/sɪksθ/",
-    "meaning": "第六的",
+    "meaning": "第六；六分之一",
     "pos": "adj",
     "difficulty": 1,
     "example": "The sixth chapter covers international trade regulations.",
@@ -929,7 +929,7 @@ module.exports = [
   {
     "word": "seventh",
     "phonetic": "/ˈsɛvənθ/",
-    "meaning": "第七的",
+    "meaning": "第七；七分之一",
     "pos": "adj",
     "difficulty": 2,
     "example": "She finished in seventh place in the competition.",
@@ -947,7 +947,7 @@ module.exports = [
   {
     "word": "ninth",
     "phonetic": "/naɪnθ/",
-    "meaning": "第九的",
+    "meaning": "第九；九分之一",
     "pos": "adj",
     "difficulty": 1,
     "example": "The ninth item on the agenda is the budget discussion.",
@@ -956,7 +956,7 @@ module.exports = [
   {
     "word": "tenth",
     "phonetic": "/tɛnθ/",
-    "meaning": "第十的",
+    "meaning": "第十；十分之一",
     "pos": "adj",
     "difficulty": 1,
     "example": "Today marks the tenth day of the training program.",
@@ -965,7 +965,7 @@ module.exports = [
   {
     "word": "eleventh",
     "phonetic": "/ɪˈlɛvənθ/",
-    "meaning": "第十一的",
+    "meaning": "第十一；十一分之一",
     "pos": "adj",
     "difficulty": 2,
     "example": "The eleventh floor is reserved for senior management.",
@@ -974,7 +974,7 @@ module.exports = [
   {
     "word": "twelfth",
     "phonetic": "/twɛlfθ/",
-    "meaning": "第十二的",
+    "meaning": "第十二；十二分之一",
     "pos": "adj",
     "difficulty": 2,
     "example": "December is the twelfth month of the year.",
@@ -1002,7 +1002,7 @@ module.exports = [
   {
     "word": "divide",
     "phonetic": "/dɪˈvaɪd/",
-    "meaning": "除；分割",
+    "meaning": "分開；劃分；除；分歧",
     "pos": "v",
     "difficulty": 2,
     "example": "Divide the total cost by the number of participants.",
@@ -1011,7 +1011,7 @@ module.exports = [
   {
     "word": "total",
     "phonetic": "/ˈtoʊtəl/",
-    "meaning": "總計；合計",
+    "meaning": "總數；全部；完全；總計；合計",
     "pos": "n",
     "difficulty": 1,
     "example": "The total number of employees is over five hundred.",
@@ -1020,7 +1020,7 @@ module.exports = [
   {
     "word": "double",
     "phonetic": "/ˈdʌbəl/",
-    "meaning": "兩倍的；加倍",
+    "meaning": "兩倍；雙重；加倍；折疊；雙人",
     "pos": "adj",
     "difficulty": 2,
     "example": "Sales have nearly doubled compared to last year.",
@@ -1047,7 +1047,7 @@ module.exports = [
   {
     "word": "half",
     "phonetic": "/hæf/",
-    "meaning": "一半",
+    "meaning": "一半；二分之一；半個",
     "pos": "n",
     "difficulty": 1,
     "example": "Half of the participants chose the morning session.",
@@ -1056,7 +1056,7 @@ module.exports = [
   {
     "word": "area",
     "phonetic": "/ˈɛriə/",
-    "meaning": "面積；區域",
+    "meaning": "區域；面積；領域；範圍",
     "pos": "n",
     "difficulty": 1,
     "example": "The total area of the office is five hundred square meters.",
@@ -1149,7 +1149,7 @@ module.exports = [
   {
     "word": "update",
     "phonetic": "/ˈʌpdeɪt/",
-    "meaning": "更新",
+    "meaning": "更新；使現代化；最新訊息",
     "pos": "v",
     "difficulty": 2,
     "example": "Make sure to update the software to get the latest features.",
@@ -1158,7 +1158,7 @@ module.exports = [
   {
     "word": "version",
     "phonetic": "/ˈvɜːrʒən/",
-    "meaning": "版本",
+    "meaning": "版本；說法；譯本",
     "pos": "n",
     "difficulty": 2,
     "example": "The latest version of the app includes several bug fixes.",
@@ -1176,7 +1176,7 @@ module.exports = [
   {
     "word": "fingerprint",
     "phonetic": "/ˈfɪŋɡərprɪnt/",
-    "meaning": "指紋",
+    "meaning": "指紋；特徵；取指紋",
     "pos": "n",
     "difficulty": 3,
     "example": "Unlock your phone with your fingerprint for faster access.",
@@ -1203,7 +1203,7 @@ module.exports = [
   {
     "word": "backpacker",
     "phonetic": "/ˈbækpækər/",
-    "meaning": "背包客",
+    "meaning": "背包客；自助旅行者",
     "pos": "n",
     "difficulty": 3,
     "example": "The backpacker stayed at cheap hostels throughout Southeast Asia.",
@@ -1212,7 +1212,7 @@ module.exports = [
   {
     "word": "housekeeper",
     "phonetic": "/ˈhaʊskiːpər/",
-    "meaning": "客房服務員",
+    "meaning": "管家；女管家；家務管理員",
     "pos": "n",
     "difficulty": 3,
     "example": "The housekeeper cleaned our room and left fresh towels.",
@@ -1221,7 +1221,7 @@ module.exports = [
   {
     "word": "sightsee",
     "phonetic": "/ˈsaɪtsiː/",
-    "meaning": "觀光",
+    "meaning": "觀光；遊覽",
     "pos": "v",
     "difficulty": 2,
     "example": "We spent the whole day sightseeing around the old town.",
@@ -1230,7 +1230,7 @@ module.exports = [
   {
     "word": "stoplight",
     "phonetic": "/ˈstɒplaɪt/",
-    "meaning": "紅綠燈",
+    "meaning": "紅綠燈；交通信號燈；尾燈",
     "pos": "n",
     "difficulty": 3,
     "example": "Turn left at the next stoplight to reach the hotel.",
@@ -1266,7 +1266,7 @@ module.exports = [
   {
     "word": "zipper",
     "phonetic": "/ˈzɪpər/",
-    "meaning": "拉鍊",
+    "meaning": "拉鍊；拉上拉鍊",
     "pos": "n",
     "difficulty": 2,
     "example": "The zipper on my jacket is broken.",
@@ -1275,7 +1275,7 @@ module.exports = [
   {
     "word": "coastal",
     "phonetic": "/ˈkoʊstəl/",
-    "meaning": "沿海的",
+    "meaning": "沿海；海岸",
     "pos": "adj",
     "difficulty": 2,
     "example": "Coastal cities are vulnerable to rising sea levels.",
@@ -1284,7 +1284,7 @@ module.exports = [
   {
     "word": "elderly",
     "phonetic": "/ˈɛldərli/",
-    "meaning": "年長的",
+    "meaning": "年長；年老；上了年紀；老人",
     "pos": "adj",
     "difficulty": 2,
     "example": "The program provides free healthcare for the elderly.",
@@ -1293,7 +1293,7 @@ module.exports = [
   {
     "word": "centimeter",
     "phonetic": "/ˈsɛntɪmiːtər/",
-    "meaning": "公分",
+    "meaning": "公分；厘米",
     "pos": "n",
     "difficulty": 3,
     "example": "The box is thirty centimeters wide.",
@@ -1302,7 +1302,7 @@ module.exports = [
   {
     "word": "millimeter",
     "phonetic": "/ˈmɪlɪmiːtər/",
-    "meaning": "毫米",
+    "meaning": "公釐；毫米",
     "pos": "n",
     "difficulty": 3,
     "example": "The screen thickness is only seven millimeters.",
@@ -1311,7 +1311,7 @@ module.exports = [
   {
     "word": "loop",
     "phonetic": "/luːp/",
-    "meaning": "迴圈",
+    "meaning": "圈；環；迴圈；繞行；打結",
     "pos": "n",
     "difficulty": 1,
     "example": "Use a loop to repeat the action ten times.",
@@ -1320,7 +1320,7 @@ module.exports = [
   {
     "word": "multiplayer",
     "phonetic": "/ˌmʌltiˈpleɪər/",
-    "meaning": "多人連線的",
+    "meaning": "多人；多玩家",
     "pos": "adj",
     "difficulty": 3,
     "example": "This multiplayer game lets you play with friends online.",
@@ -1338,7 +1338,7 @@ module.exports = [
   {
     "word": "leaderboard",
     "phonetic": "/ˈliːdərbɔːrd/",
-    "meaning": "排行榜",
+    "meaning": "排行榜；積分榜",
     "pos": "n",
     "difficulty": 3,
     "example": "She reached the top of the global leaderboard in the game.",
@@ -1347,7 +1347,7 @@ module.exports = [
   {
     "word": "baggage",
     "phonetic": "/ˈbæɡɪdʒ/",
-    "meaning": "行李",
+    "meaning": "行李；累贅；心理負擔",
     "pos": "n",
     "difficulty": 2,
     "example": "There is a baggage weight limit of twenty-three kilograms.",
@@ -1357,7 +1357,7 @@ module.exports = [
   {
     "word": "escalator",
     "phonetic": "/ˈɛskəleɪtər/",
-    "meaning": "電扶梯",
+    "meaning": "手扶梯；自動樓梯；電扶梯",
     "pos": "n",
     "difficulty": 3,
     "example": "Take the escalator to the second floor to find the gate.",
@@ -1366,7 +1366,7 @@ module.exports = [
   {
     "word": "intern",
     "phonetic": "/ˈɪntɜːrn/",
-    "meaning": "實習生",
+    "meaning": "實習生；實習；拘留；軟禁",
     "pos": "n",
     "difficulty": 2,
     "example": "She started as an intern at the marketing firm last summer.",
@@ -1375,7 +1375,7 @@ module.exports = [
   {
     "word": "photocopier",
     "phonetic": "/ˈfoʊtoʊˌkɑːpiər/",
-    "meaning": "全功能影印機",
+    "meaning": "影印機",
     "pos": "n",
     "difficulty": 3,
     "example": "The photocopier on the third floor is out of paper.",
@@ -1384,7 +1384,7 @@ module.exports = [
   {
     "word": "workmate",
     "phonetic": "/ˈwɜːrkmeɪt/",
-    "meaning": "同事；工作夥伴",
+    "meaning": "同事",
     "pos": "n",
     "difficulty": 2,
     "example": "My workmate and I always eat lunch together.",
@@ -1393,7 +1393,7 @@ module.exports = [
   {
     "word": "janitor",
     "phonetic": "/ˈdʒænɪtər/",
-    "meaning": "清潔工；管理員",
+    "meaning": "校工；管理員；看門人",
     "pos": "n",
     "difficulty": 2,
     "example": "The janitor cleans the offices every evening after work hours.",
@@ -1402,7 +1402,7 @@ module.exports = [
   {
     "word": "secretary",
     "phonetic": "/ˈsɛkrəˌtɛri/",
-    "meaning": "秘書",
+    "meaning": "秘書；部長；大臣",
     "pos": "n",
     "difficulty": 3,
     "example": "The secretary scheduled all the appointments for the director.",
@@ -1411,7 +1411,7 @@ module.exports = [
   {
     "word": "multitasking",
     "phonetic": "/ˌmʌltiˈtæskɪŋ/",
-    "meaning": "多工能力 (名詞)",
+    "meaning": "多工；同時處理多項任務",
     "pos": "n",
     "difficulty": 4,
     "example": "Multitasking can actually reduce your overall productivity.",
@@ -1420,7 +1420,7 @@ module.exports = [
   {
     "word": "interviewee",
     "phonetic": "/ˌɪntərvjuːˈiː/",
-    "meaning": "面試者；受訪者",
+    "meaning": "受訪者；應徵者",
     "pos": "n",
     "difficulty": 3,
     "example": "Each interviewee was given thirty minutes to present their ideas.",
@@ -1429,7 +1429,7 @@ module.exports = [
   {
     "word": "carpooling",
     "phonetic": "/ˈkɑːrˌpuːlɪŋ/",
-    "meaning": "共乘；拼車",
+    "meaning": "共乘",
     "pos": "n",
     "difficulty": 3,
     "example": "Carpooling to work saves money and reduces traffic congestion.",
@@ -1438,7 +1438,7 @@ module.exports = [
   {
     "word": "watercooler",
     "phonetic": "/ˈwɔːtərˌkuːlər/",
-    "meaning": "飲水機；閒聊場所",
+    "meaning": "飲水機",
     "pos": "n",
     "difficulty": 3,
     "example": "Watercooler conversations often spark creative ideas at work.",
@@ -1447,7 +1447,7 @@ module.exports = [
   {
     "word": "elbow",
     "phonetic": "/ˈɛlboʊ/",
-    "meaning": "手肘",
+    "meaning": "手肘；彎管；用肘擠",
     "pos": "n",
     "difficulty": 1,
     "example": "She bumped her elbow on the edge of the table.",
@@ -1474,7 +1474,7 @@ module.exports = [
   {
     "word": "treadmill",
     "phonetic": "/ˈtrɛdˌmɪl/",
-    "meaning": "跑步機",
+    "meaning": "跑步機；枯燥工作",
     "pos": "n",
     "difficulty": 3,
     "example": "He runs on the treadmill for thirty minutes every morning.",
@@ -1483,7 +1483,7 @@ module.exports = [
   {
     "word": "dumbbell",
     "phonetic": "/ˈdʌmˌbɛl/",
-    "meaning": "啞鈴",
+    "meaning": "啞鈴；蠢人",
     "pos": "n",
     "difficulty": 2,
     "example": "She uses five-kilogram dumbbells for her arm exercises.",
@@ -1492,7 +1492,7 @@ module.exports = [
   {
     "word": "blister",
     "phonetic": "/ˈblɪstər/",
-    "meaning": "水泡",
+    "meaning": "水泡；起水泡",
     "pos": "n",
     "difficulty": 2,
     "example": "New shoes gave her a painful blister on her heel.",
@@ -1501,7 +1501,7 @@ module.exports = [
   {
     "word": "rash",
     "phonetic": "/ræʃ/",
-    "meaning": "皮疹",
+    "meaning": "皮疹；輕率",
     "pos": "n",
     "difficulty": 1,
     "example": "The baby developed a rash after eating strawberries.",
@@ -1510,7 +1510,7 @@ module.exports = [
   {
     "word": "stitches",
     "phonetic": "/ˈstɪtʃɪz/",
-    "meaning": "縫針；縫合",
+    "meaning": "縫線；縫針；縫合",
     "pos": "n",
     "difficulty": 2,
     "example": "The cut was deep enough to need twelve stitches.",
@@ -1519,7 +1519,7 @@ module.exports = [
   {
     "word": "posture",
     "phonetic": "/ˈpɑːstʃər/",
-    "meaning": "姿勢",
+    "meaning": "姿勢；態勢；擺姿勢",
     "pos": "n",
     "difficulty": 2,
     "example": "Good posture helps prevent back and neck pain.",
@@ -1528,7 +1528,7 @@ module.exports = [
   {
     "word": "gluten",
     "phonetic": "/ˈɡluːtən/",
-    "meaning": "麩質",
+    "meaning": "麩質；麵筋",
     "pos": "n",
     "difficulty": 2,
     "example": "Some people have a sensitivity to gluten found in wheat.",
@@ -1537,7 +1537,7 @@ module.exports = [
   {
     "word": "spatula",
     "phonetic": "/ˈspætʃələ/",
-    "meaning": "鍋鏟",
+    "meaning": "抹刀；鍋鏟；藥鏟",
     "pos": "n",
     "difficulty": 2,
     "example": "Use a spatula to flip the pancakes carefully.",
@@ -1600,7 +1600,7 @@ module.exports = [
   {
     "word": "granola",
     "phonetic": "/ɡrəˈnoʊlə/",
-    "meaning": "燕麥脆片",
+    "meaning": "燕麥片；穀麥",
     "pos": "n",
     "difficulty": 2,
     "example": "She eats granola with yogurt and fresh fruit for breakfast.",
@@ -1609,7 +1609,7 @@ module.exports = [
   {
     "word": "cilantro",
     "phonetic": "/sɪˈlæntroʊ/",
-    "meaning": "香菜",
+    "meaning": "香菜；芫荽",
     "pos": "n",
     "difficulty": 2,
     "example": "Some people love cilantro while others think it tastes like soap.",
@@ -1618,7 +1618,7 @@ module.exports = [
   {
     "word": "basil",
     "phonetic": "/ˈbæzəl/",
-    "meaning": "羅勒",
+    "meaning": "羅勒；九層塔",
     "pos": "n",
     "difficulty": 1,
     "example": "Fresh basil leaves are essential for making pesto sauce.",
@@ -1636,7 +1636,7 @@ module.exports = [
   {
     "word": "jukebox",
     "phonetic": "/ˈdʒuːkbɒks/",
-    "meaning": "點唱機",
+    "meaning": "自動唱片點唱機",
     "pos": "n",
     "difficulty": 2,
     "example": "The retro diner had a jukebox playing oldies all evening.",
@@ -1663,7 +1663,7 @@ module.exports = [
   {
     "word": "juggling",
     "phonetic": "/ˈdʒʌɡlɪŋ/",
-    "meaning": "雜耍拋接",
+    "meaning": "雜耍；玩把戲",
     "pos": "n",
     "difficulty": 2,
     "example": "The street performer amazed the crowd with his juggling skills.",
@@ -1672,7 +1672,7 @@ module.exports = [
   {
     "word": "origami",
     "phonetic": "/ˌɔːrɪˈɡɑːmi/",
-    "meaning": "摺紙藝術",
+    "meaning": "折紙",
     "pos": "n",
     "difficulty": 2,
     "example": "She taught the children how to make origami cranes.",
@@ -1690,7 +1690,7 @@ module.exports = [
   {
     "word": "foosball",
     "phonetic": "/ˈfuːzˌbɔːl/",
-    "meaning": "桌上足球",
+    "meaning": "手足球",
     "pos": "n",
     "difficulty": 2,
     "example": "We play foosball in the break room during lunch.",
@@ -1726,7 +1726,7 @@ module.exports = [
   {
     "word": "shutter",
     "phonetic": "/ˈʃʌtər/",
-    "meaning": "百葉窗",
+    "meaning": "百葉窗；快門；遮光器",
     "pos": "n",
     "difficulty": 2,
     "example": "Close the shutters to block out the afternoon sun.",
@@ -1735,7 +1735,7 @@ module.exports = [
   {
     "word": "doormat",
     "phonetic": "/ˈdɔːrˌmæt/",
-    "meaning": "門口腳踏墊",
+    "meaning": "門墊",
     "pos": "n",
     "difficulty": 2,
     "example": "Please wipe your shoes on the doormat before coming inside.",
@@ -1744,7 +1744,7 @@ module.exports = [
   {
     "word": "cellar",
     "phonetic": "/ˈsɛlər/",
-    "meaning": "地窖",
+    "meaning": "地窖；地下室；酒窖",
     "pos": "n",
     "difficulty": 2,
     "example": "They store wine in the cellar beneath the house.",
@@ -1762,7 +1762,7 @@ module.exports = [
   {
     "word": "casserole",
     "phonetic": "/ˈkæsəˌroʊl/",
-    "meaning": "砂鍋；焗烤鍋",
+    "meaning": "砂鍋菜；燉鍋",
     "pos": "n",
     "difficulty": 3,
     "example": "She made a hearty chicken casserole for the family dinner.",
@@ -1771,7 +1771,7 @@ module.exports = [
   {
     "word": "planter",
     "phonetic": "/ˈplæntər/",
-    "meaning": "花盆；種植箱",
+    "meaning": "花盆；種植者；播種機",
     "pos": "n",
     "difficulty": 2,
     "example": "She placed ceramic planters filled with herbs on the windowsill.",
@@ -1780,7 +1780,7 @@ module.exports = [
   {
     "word": "duvet",
     "phonetic": "/duːˈveɪ/",
-    "meaning": "羽絨被",
+    "meaning": "羽絨被；被褥",
     "pos": "n",
     "difficulty": 1,
     "example": "In winter, she sleeps under a thick goose-down duvet.",
@@ -1807,7 +1807,7 @@ module.exports = [
   {
     "word": "fern",
     "phonetic": "/fɜːrn/",
-    "meaning": "蕨類植物",
+    "meaning": "蕨類",
     "pos": "n",
     "difficulty": 1,
     "example": "The shady corner of the garden is perfect for growing ferns.",
@@ -1825,7 +1825,7 @@ module.exports = [
   {
     "word": "evergreen",
     "phonetic": "/ˈɛvərˌɡriːn/",
-    "meaning": "常綠的",
+    "meaning": "常綠；長青；永恆",
     "pos": "adj",
     "difficulty": 3,
     "example": "Evergreen trees keep their leaves throughout the winter.",
@@ -1843,7 +1843,7 @@ module.exports = [
   {
     "word": "stepparent",
     "phonetic": "/ˈstɛpˌpɛrənt/",
-    "meaning": "繼父母",
+    "meaning": "繼父或繼母",
     "pos": "n",
     "difficulty": 3,
     "example": "Her stepparent has been a loving and supportive figure in her life.",
@@ -1861,7 +1861,7 @@ module.exports = [
   {
     "word": "gesture",
     "phonetic": "/ˈdʒɛstʃər/",
-    "meaning": "手勢；姿態",
+    "meaning": "手勢；示意；動作；用手勢表示",
     "pos": "n",
     "difficulty": 2,
     "example": "Sending flowers was a thoughtful gesture that brightened her day.",
@@ -1888,7 +1888,7 @@ module.exports = [
   {
     "word": "affectionate",
     "phonetic": "/əˈfɛkʃənɪt/",
-    "meaning": "深情的；充滿愛的",
+    "meaning": "深情；親切；溫柔",
     "pos": "adj",
     "difficulty": 4,
     "example": "She gave her grandmother an affectionate hug.",
@@ -1897,7 +1897,7 @@ module.exports = [
   {
     "word": "trunk",
     "phonetic": "/trʌŋk/",
-    "meaning": "後車廂",
+    "meaning": "樹幹；大衣箱；象鼻；後車廂；軀幹",
     "pos": "n",
     "difficulty": 1,
     "example": "Put the suitcases in the trunk.",
@@ -1906,7 +1906,7 @@ module.exports = [
   {
     "word": "brake",
     "phonetic": "/breɪk/",
-    "meaning": "煞車",
+    "meaning": "煞車；制動器；阻礙",
     "pos": "n",
     "difficulty": 1,
     "example": "He pressed the brake to stop the car.",
@@ -1915,7 +1915,7 @@ module.exports = [
   {
     "word": "alley",
     "phonetic": "/ˈæli/",
-    "meaning": "巷子",
+    "meaning": "小巷；胡同；球道",
     "pos": "n",
     "difficulty": 1,
     "example": "The restaurant is in a small alley behind the bank.",
@@ -1924,7 +1924,7 @@ module.exports = [
   {
     "word": "attendance",
     "phonetic": "/əˈtɛndəns/",
-    "meaning": "出席",
+    "meaning": "出席；出席人數；照顧",
     "pos": "n",
     "difficulty": 3,
     "example": "Attendance is required for all classes.",
@@ -1943,7 +1943,7 @@ module.exports = [
   {
     "word": "dew",
     "phonetic": "/djuː/",
-    "meaning": "露水",
+    "meaning": "露水；結露",
     "pos": "n",
     "difficulty": 1,
     "example": "Morning dew glistened on the grass.",
@@ -1952,7 +1952,7 @@ module.exports = [
   {
     "word": "chilly",
     "phonetic": "/ˈtʃɪli/",
-    "meaning": "寒冷的",
+    "meaning": "寒冷；冷淡",
     "pos": "adj",
     "difficulty": 2,
     "example": "It gets chilly in the evenings during autumn.",
@@ -1990,7 +1990,7 @@ module.exports = [
   {
     "word": "boil",
     "phonetic": "/bɔɪl/",
-    "meaning": "煮沸",
+    "meaning": "沸騰；煮；激動；瘡",
     "pos": "v",
     "difficulty": 1,
     "example": "Boil the water before making tea.",
@@ -1999,7 +1999,7 @@ module.exports = [
   {
     "word": "borrow",
     "phonetic": "/ˈbɑːroʊ/",
-    "meaning": "借入",
+    "meaning": "借入；借用；採用",
     "pos": "v",
     "difficulty": 2,
     "example": "Can I borrow your pen for a minute?",
@@ -2009,7 +2009,7 @@ module.exports = [
   {
     "word": "celebrate",
     "phonetic": "/ˈsɛlɪˌbreɪt/",
-    "meaning": "慶祝",
+    "meaning": "慶祝；頌揚",
     "pos": "v",
     "difficulty": 3,
     "example": "We celebrated her birthday with a big party.",
@@ -2018,7 +2018,7 @@ module.exports = [
   {
     "word": "chase",
     "phonetic": "/tʃeɪs/",
-    "meaning": "追趕",
+    "meaning": "追逐；追捕；追求",
     "pos": "v",
     "difficulty": 1,
     "example": "The dog chased the cat around the garden.",
@@ -2036,7 +2036,7 @@ module.exports = [
   {
     "word": "crash",
     "phonetic": "/kræʃ/",
-    "meaning": "撞擊；墜毀",
+    "meaning": "碰撞；墜毀；當機；暴跌",
     "pos": "v",
     "difficulty": 1,
     "example": "The car crashed into a wall on the highway.",
@@ -2045,7 +2045,7 @@ module.exports = [
   {
     "word": "dig",
     "phonetic": "/dɪɡ/",
-    "meaning": "挖洞；鑽研 (動詞)",
+    "meaning": "挖掘；鑽研；戳",
     "pos": "v",
     "difficulty": 1,
     "example": "The dog likes to dig holes in the garden.",
@@ -2055,7 +2055,7 @@ module.exports = [
   {
     "word": "drag",
     "phonetic": "/dræɡ/",
-    "meaning": "拖；拉",
+    "meaning": "拖曳；緩慢移動；累贅；阻力",
     "pos": "v",
     "difficulty": 1,
     "example": "He dragged the heavy suitcase across the floor.",
@@ -2064,7 +2064,7 @@ module.exports = [
   {
     "word": "earn",
     "phonetic": "/ɜːrn/",
-    "meaning": "賺得；獲得",
+    "meaning": "賺取；贏得；獲得",
     "pos": "v",
     "difficulty": 1,
     "example": "She earns a good salary at her new job.",
@@ -2083,7 +2083,7 @@ module.exports = [
   {
     "word": "float",
     "phonetic": "/floʊt/",
-    "meaning": "漂浮",
+    "meaning": "漂浮；浮動；彩車；發行",
     "pos": "v",
     "difficulty": 1,
     "example": "The leaves floated gently on the surface of the water.",
@@ -2092,7 +2092,7 @@ module.exports = [
   {
     "word": "fold",
     "phonetic": "/foʊld/",
-    "meaning": "折疊",
+    "meaning": "折疊；合攏；對折；褶皺",
     "pos": "v",
     "difficulty": 1,
     "example": "She folded the letter and put it in the envelope.",
@@ -2101,7 +2101,7 @@ module.exports = [
   {
     "word": "grab",
     "phonetic": "/ɡræb/",
-    "meaning": "抓取；拿",
+    "meaning": "抓取；攫取；奪取",
     "pos": "v",
     "difficulty": 1,
     "example": "She grabbed her bag and rushed to the bus stop.",
@@ -2111,7 +2111,7 @@ module.exports = [
   {
     "word": "greet",
     "phonetic": "/ɡriːt/",
-    "meaning": "問候；打招呼",
+    "meaning": "招呼；問候；迎接",
     "pos": "v",
     "difficulty": 1,
     "example": "The receptionist greeted every visitor with a smile.",
@@ -2120,7 +2120,7 @@ module.exports = [
   {
     "word": "hide",
     "phonetic": "/haɪd/",
-    "meaning": "隱藏；躲藏",
+    "meaning": "躲藏；隱瞞；獸皮",
     "pos": "v",
     "difficulty": 1,
     "example": "The children hid behind the sofa.",
@@ -2130,7 +2130,7 @@ module.exports = [
   {
     "word": "imagine",
     "phonetic": "/ɪˈmædʒɪn/",
-    "meaning": "想像",
+    "meaning": "想像；設想；猜想",
     "pos": "v",
     "difficulty": 2,
     "example": "Imagine living in a world without the internet.",
@@ -2139,7 +2139,7 @@ module.exports = [
   {
     "word": "lend",
     "phonetic": "/lɛnd/",
-    "meaning": "借出",
+    "meaning": "借出；提供；增添",
     "pos": "v",
     "difficulty": 1,
     "example": "Could you lend me your umbrella?",
@@ -2149,7 +2149,7 @@ module.exports = [
   {
     "word": "ceiling",
     "phonetic": "/ˈsiːlɪŋ/",
-    "meaning": "天花板",
+    "meaning": "天花板；最高限度",
     "pos": "n",
     "difficulty": 2,
     "example": "The ceiling in this room is very high.",
@@ -2158,7 +2158,7 @@ module.exports = [
   {
     "word": "chapter",
     "phonetic": "/ˈtʃæptər/",
-    "meaning": "章節",
+    "meaning": "章節；時期；篇章",
     "pos": "n",
     "difficulty": 2,
     "example": "Please read chapter five before class.",
@@ -2167,7 +2167,7 @@ module.exports = [
   {
     "word": "clue",
     "phonetic": "/kluː/",
-    "meaning": "線索",
+    "meaning": "線索；提示；跡象",
     "pos": "n",
     "difficulty": 1,
     "example": "The police found an important clue at the scene.",
@@ -2176,7 +2176,7 @@ module.exports = [
   {
     "word": "coin",
     "phonetic": "/kɔɪn/",
-    "meaning": "硬幣",
+    "meaning": "硬幣；鑄造；創造",
     "pos": "n",
     "difficulty": 1,
     "example": "She put a coin into the vending machine.",
@@ -2185,7 +2185,7 @@ module.exports = [
   {
     "word": "crowd",
     "phonetic": "/kraʊd/",
-    "meaning": "人群",
+    "meaning": "人群；擠滿；聚集",
     "pos": "n",
     "difficulty": 1,
     "example": "A large crowd gathered in front of the stage.",
@@ -2194,7 +2194,7 @@ module.exports = [
   {
     "word": "customer",
     "phonetic": "/ˈkʌstəmər/",
-    "meaning": "顧客",
+    "meaning": "顧客；客戶",
     "pos": "n",
     "difficulty": 2,
     "example": "The customer asked for a refund.",
@@ -2203,7 +2203,7 @@ module.exports = [
   {
     "word": "direction",
     "phonetic": "/dɪˈrɛkʃən/",
-    "meaning": "方向；指示",
+    "meaning": "方向；指示；管理；指導；指揮",
     "pos": "n",
     "difficulty": 3,
     "example": "Can you give me directions to the station?",
@@ -2212,7 +2212,7 @@ module.exports = [
   {
     "word": "dust",
     "phonetic": "/dʌst/",
-    "meaning": "灰塵",
+    "meaning": "灰塵；粉末；拂去灰塵；撒粉",
     "pos": "n",
     "difficulty": 1,
     "example": "There is a lot of dust on the bookshelf.",
@@ -2230,7 +2230,7 @@ module.exports = [
   {
     "word": "flame",
     "phonetic": "/fleɪm/",
-    "meaning": "火焰（可見的火舌）",
+    "meaning": "火焰；熱情；燃燒",
     "pos": "n",
     "difficulty": 1,
     "example": "The flame of the candle flickered in the wind.",
@@ -2248,7 +2248,7 @@ module.exports = [
   {
     "word": "frame",
     "phonetic": "/freɪm/",
-    "meaning": "框架；相框",
+    "meaning": "框架；架構；身軀；鑲框；陷害",
     "pos": "n",
     "difficulty": 1,
     "example": "I put the photo in a wooden frame.",
@@ -2258,7 +2258,7 @@ module.exports = [
   {
     "word": "ghost",
     "phonetic": "/ɡoʊst/",
-    "meaning": "鬼魂；幽靈",
+    "meaning": "鬼魂；幽靈；一絲；悄悄移動",
     "pos": "n",
     "difficulty": 1,
     "example": "The old house is said to have a ghost.",
@@ -2268,7 +2268,7 @@ module.exports = [
   {
     "word": "goal",
     "phonetic": "/ɡoʊl/",
-    "meaning": "目標",
+    "meaning": "目標；終點；球門；得分",
     "pos": "n",
     "difficulty": 1,
     "example": "My goal this year is to learn a new skill.",
@@ -2278,7 +2278,7 @@ module.exports = [
   {
     "word": "habit",
     "phonetic": "/ˈhæbɪt/",
-    "meaning": "習慣",
+    "meaning": "習慣；習性；袍服",
     "pos": "n",
     "difficulty": 1,
     "example": "Reading before bed is a good habit.",
@@ -2287,7 +2287,7 @@ module.exports = [
   {
     "word": "hero",
     "phonetic": "/ˈhɪroʊ/",
-    "meaning": "英雄",
+    "meaning": "英雄；男主角；勇士",
     "pos": "n",
     "difficulty": 1,
     "example": "The firefighter was a hero who saved three lives.",
@@ -2296,7 +2296,7 @@ module.exports = [
   {
     "word": "item",
     "phonetic": "/ˈaɪtəm/",
-    "meaning": "物品；項目",
+    "meaning": "項目；條款；一件物品；報導",
     "pos": "n",
     "difficulty": 1,
     "example": "Each item on the menu has a price.",
@@ -2305,7 +2305,7 @@ module.exports = [
   {
     "word": "joy",
     "phonetic": "/dʒɔɪ/",
-    "meaning": "喜悅；快樂",
+    "meaning": "喜悅；快樂；樂事",
     "pos": "n",
     "difficulty": 1,
     "example": "The children were filled with joy on Christmas morning.",
@@ -2334,7 +2334,7 @@ module.exports = [
   {
     "word": "memory",
     "phonetic": "/ˈmɛməri/",
-    "meaning": "記憶；回憶",
+    "meaning": "記憶；記憶力；回憶；內存",
     "pos": "n",
     "difficulty": 2,
     "example": "She has a very good memory for names.",
@@ -2352,7 +2352,7 @@ module.exports = [
   {
     "word": "secret",
     "phonetic": "/ˈsiːkrɪt/",
-    "meaning": "秘密",
+    "meaning": "秘密；秘訣；隱蔽",
     "pos": "n",
     "difficulty": 2,
     "example": "Can you keep a secret?",
@@ -2361,7 +2361,7 @@ module.exports = [
   {
     "word": "shadow",
     "phonetic": "/ˈʃædoʊ/",
-    "meaning": "影子",
+    "meaning": "影子；陰影；尾隨；遮蔽",
     "pos": "n",
     "difficulty": 2,
     "example": "The tree cast a long shadow on the ground.",
@@ -2370,7 +2370,7 @@ module.exports = [
   {
     "word": "skill",
     "phonetic": "/skɪl/",
-    "meaning": "技能",
+    "meaning": "技能；技巧；熟練",
     "pos": "n",
     "difficulty": 1,
     "example": "Communication skills are important for any job.",
@@ -2379,7 +2379,7 @@ module.exports = [
   {
     "word": "taste",
     "phonetic": "/teɪst/",
-    "meaning": "味道；品味",
+    "meaning": "味道；味覺；品味；品嚐；體驗",
     "pos": "n",
     "difficulty": 1,
     "example": "This soup has a wonderful taste.",
@@ -2397,7 +2397,7 @@ module.exports = [
   {
     "word": "awful",
     "phonetic": "/ˈɔːfəl/",
-    "meaning": "糟糕的",
+    "meaning": "糟糕；可怕；極大",
     "pos": "adj",
     "difficulty": 1,
     "example": "The weather was awful all weekend.",
@@ -2407,7 +2407,7 @@ module.exports = [
   {
     "word": "blind",
     "phonetic": "/blaɪnd/",
-    "meaning": "盲的",
+    "meaning": "失明；盲目；遮蔽；百葉窗",
     "pos": "adj",
     "difficulty": 1,
     "example": "The blind man uses a guide dog.",
@@ -2425,7 +2425,7 @@ module.exports = [
   {
     "word": "deaf",
     "phonetic": "/dɛf/",
-    "meaning": "聾的",
+    "meaning": "耳聾；不願聽從",
     "pos": "adj",
     "difficulty": 1,
     "example": "She has been deaf since birth.",
@@ -2443,7 +2443,7 @@ module.exports = [
   {
     "word": "gentle",
     "phonetic": "/ˈdʒɛntəl/",
-    "meaning": "溫柔的；溫和的",
+    "meaning": "溫和；輕柔；高尚",
     "pos": "adj",
     "difficulty": 2,
     "example": "She has a very gentle personality.",
@@ -2479,7 +2479,7 @@ module.exports = [
   {
     "word": "lonely",
     "phonetic": "/ˈloʊnli/",
-    "meaning": "寂寞的；偏僻的",
+    "meaning": "孤獨；寂寞；荒涼",
     "pos": "adj",
     "difficulty": 2,
     "example": "She felt lonely after her friends moved away.",
@@ -2488,7 +2488,7 @@ module.exports = [
   {
     "word": "neat",
     "phonetic": "/niːt/",
-    "meaning": "整潔的",
+    "meaning": "整潔；整齊；簡潔；巧妙",
     "pos": "adj",
     "difficulty": 1,
     "example": "Her desk is always neat and organized.",
@@ -2497,7 +2497,7 @@ module.exports = [
   {
     "word": "opposite",
     "phonetic": "/ˈɑːpəzɪt/",
-    "meaning": "相反的",
+    "meaning": "相反；對面；對立面",
     "pos": "adj",
     "difficulty": 2,
     "example": "They have opposite opinions on the topic.",
@@ -2506,7 +2506,7 @@ module.exports = [
   {
     "word": "proud",
     "phonetic": "/praʊd/",
-    "meaning": "驕傲的",
+    "meaning": "自豪；驕傲；壯麗",
     "pos": "adj",
     "difficulty": 1,
     "example": "Her parents are very proud of her.",
@@ -2515,7 +2515,7 @@ module.exports = [
   {
     "word": "raw",
     "phonetic": "/rɔː/",
-    "meaning": "生的；未加工的",
+    "meaning": "生；原始；未加工；擦傷",
     "pos": "adj",
     "difficulty": 1,
     "example": "You should not eat raw meat.",
@@ -2542,7 +2542,7 @@ module.exports = [
   {
     "word": "stupid",
     "phonetic": "/ˈstjuːpɪd/",
-    "meaning": "愚蠢的",
+    "meaning": "愚笨；傻",
     "pos": "adj",
     "difficulty": 2,
     "example": "That was a stupid mistake to make.",
@@ -2551,7 +2551,7 @@ module.exports = [
   {
     "word": "thick",
     "phonetic": "/θɪk/",
-    "meaning": "厚的；濃的",
+    "meaning": "厚；濃密；粗；笨",
     "pos": "adj",
     "difficulty": 1,
     "example": "The walls of the castle are very thick.",
@@ -2570,7 +2570,7 @@ module.exports = [
   {
     "word": "wild",
     "phonetic": "/waɪld/",
-    "meaning": "野生的；瘋狂的",
+    "meaning": "野生；狂野；荒野；胡亂",
     "pos": "adj",
     "difficulty": 1,
     "example": "There are many wild animals in the national park.",
@@ -2579,7 +2579,7 @@ module.exports = [
   {
     "word": "walkway",
     "phonetic": "/ˈwɔːkweɪ/",
-    "meaning": "走道；步道",
+    "meaning": "人行道；走廊；步道",
     "pos": "n",
     "difficulty": 2,
     "example": "The covered walkway connects the two buildings.",
@@ -2597,7 +2597,7 @@ module.exports = [
   {
     "word": "stopwatch",
     "phonetic": "/ˈstɑːpwɑːtʃ/",
-    "meaning": "碼錶",
+    "meaning": "秒錶；碼錶",
     "pos": "n",
     "difficulty": 3,
     "example": "The coach used a stopwatch to time the runners.",
@@ -2606,7 +2606,7 @@ module.exports = [
   {
     "word": "handmade",
     "phonetic": "/ˌhændˈmeɪd/",
-    "meaning": "手工製作的",
+    "meaning": "手工製作；手工",
     "pos": "adj",
     "difficulty": 2,
     "example": "She sells handmade jewelry at the local market.",
@@ -2615,7 +2615,7 @@ module.exports = [
   {
     "word": "amaze",
     "phonetic": "/əˈmeɪz/",
-    "meaning": "使驚奇",
+    "meaning": "使大為驚奇；使驚愕",
     "pos": "v",
     "difficulty": 1,
     "example": "The magic show amazed the entire audience.",
@@ -2642,7 +2642,7 @@ module.exports = [
   {
     "word": "blender",
     "phonetic": "/ˈblɛndər/",
-    "meaning": "果汁機",
+    "meaning": "攪拌機；果汁機",
     "pos": "n",
     "difficulty": 2,
     "example": "She made a smoothie using the blender.",
@@ -2651,7 +2651,7 @@ module.exports = [
   {
     "word": "broom",
     "phonetic": "/bruːm/",
-    "meaning": "掃把",
+    "meaning": "掃帚",
     "pos": "n",
     "difficulty": 1,
     "example": "Use the broom to sweep the floor.",
@@ -2678,7 +2678,7 @@ module.exports = [
   {
     "word": "cardboard",
     "phonetic": "/ˈkɑːrdˌbɔːrd/",
-    "meaning": "紙板；硬紙板",
+    "meaning": "厚紙板；卡紙",
     "pos": "n",
     "difficulty": 3,
     "example": "Please flatten the cardboard boxes for recycling.",
@@ -2687,7 +2687,7 @@ module.exports = [
   {
     "word": "carpet",
     "phonetic": "/ˈkɑːrpɪt/",
-    "meaning": "地毯",
+    "meaning": "地毯；覆蓋層",
     "pos": "n",
     "difficulty": 2,
     "example": "We need to vacuum the carpet in the living room.",
@@ -2696,7 +2696,7 @@ module.exports = [
   {
     "word": "clothespin",
     "phonetic": "/ˈkloʊzˌpɪn/",
-    "meaning": "衣夾",
+    "meaning": "曬衣夾；衣夾",
     "pos": "n",
     "difficulty": 3,
     "example": "Use clothespins to hang the laundry on the line.",
@@ -2714,7 +2714,7 @@ module.exports = [
   {
     "word": "dryer",
     "phonetic": "/ˈdraɪər/",
-    "meaning": "烘乾機",
+    "meaning": "烘衣機；吹風機；乾燥劑",
     "pos": "n",
     "difficulty": 1,
     "example": "Put the wet clothes in the dryer.",

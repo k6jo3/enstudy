@@ -148,7 +148,7 @@ module.exports = [
   {
     "word": "hinge",
     "phonetic": "/hɪndʒ/",
-    "meaning": "鉸鏈；合頁",
+    "meaning": "鉸鏈；樞紐；取決",
     "pos": "n",
     "difficulty": 1,
     "example": "The door hinge needs to be oiled.",
@@ -193,7 +193,7 @@ module.exports = [
   {
     "word": "rake",
     "phonetic": "/reɪk/",
-    "meaning": "耙子",
+    "meaning": "耙子；浪子；耙；搜尋",
     "pos": "n",
     "difficulty": 1,
     "example": "He used a rake to gather the fallen leaves.",
@@ -229,7 +229,7 @@ module.exports = [
   {
     "word": "valve",
     "phonetic": "/vælv/",
-    "meaning": "閥門",
+    "meaning": "閥；活門",
     "pos": "n",
     "difficulty": 1,
     "example": "Turn the valve to stop the water flow.",
@@ -238,7 +238,7 @@ module.exports = [
   {
     "word": "vent",
     "phonetic": "/vɛnt/",
-    "meaning": "通風口",
+    "meaning": "通風口；出口；宣洩；排放",
     "pos": "n",
     "difficulty": 1,
     "example": "The air conditioning vent is above the door.",
@@ -486,7 +486,7 @@ module.exports = [
   {
     "word": "cope",
     "phonetic": "/koʊp/",
-    "meaning": "應對；處理",
+    "meaning": "應付；處理",
     "pos": "v",
     "difficulty": 1,
     "example": "She learned to cope with stress through exercise.",
@@ -533,7 +533,7 @@ module.exports = [
   {
     "word": "doubt",
     "phonetic": "/daʊt/",
-    "meaning": "懷疑",
+    "meaning": "懷疑；疑慮；不信",
     "pos": "n",
     "difficulty": 1,
     "example": "There is no doubt that she is the best candidate.",
@@ -587,7 +587,7 @@ module.exports = [
   {
     "word": "fade",
     "phonetic": "/feɪd/",
-    "meaning": "褪色；消退",
+    "meaning": "褪色；凋謝；逐漸消失",
     "pos": "v",
     "difficulty": 1,
     "example": "The colors of the painting faded over time.",
@@ -606,7 +606,7 @@ module.exports = [
   {
     "word": "fetch",
     "phonetic": "/fɛtʃ/",
-    "meaning": "取來；拿來",
+    "meaning": "取回；帶來；賣得",
     "pos": "v",
     "difficulty": 1,
     "example": "Can you fetch me a glass of water?",
@@ -826,7 +826,7 @@ module.exports = [
   {
     "word": "hire",
     "phonetic": "/haɪər/",
-    "meaning": "雇用",
+    "meaning": "雇用；租用；租借；租金；錄用",
     "pos": "v",
     "difficulty": 1,
     "example": "The company plans to hire twenty new employees.",
@@ -835,7 +835,7 @@ module.exports = [
   {
     "word": "react",
     "phonetic": "/riˈækt/",
-    "meaning": "反應",
+    "meaning": "反應；回應；起反作用；抗拒",
     "pos": "v",
     "difficulty": 1,
     "example": "How did she react to the news?",
@@ -853,7 +853,7 @@ module.exports = [
   {
     "word": "imply",
     "phonetic": "/ɪmˈplaɪ/",
-    "meaning": "暗示",
+    "meaning": "暗示；意指；包含；必然包含",
     "pos": "v",
     "difficulty": 1,
     "example": "His smile implied that he agreed with the plan.",
@@ -925,7 +925,7 @@ module.exports = [
   {
     "word": "kneel",
     "phonetic": "/niːl/",
-    "meaning": "跪下",
+    "meaning": "跪下；下跪",
     "pos": "v",
     "difficulty": 1,
     "example": "She knelt down to tie her shoelace.",
@@ -934,7 +934,7 @@ module.exports = [
   {
     "word": "rely",
     "phonetic": "/rɪˈlaɪ/",
-    "meaning": "依賴；依靠",
+    "meaning": "依賴；依靠；信賴",
     "pos": "v",
     "difficulty": 1,
     "example": "You can rely on me to finish the work.",
@@ -1044,7 +1044,7 @@ module.exports = [
   {
     "word": "shift",
     "phonetic": "/ʃɪft/",
-    "meaning": "位移；輪班 (名詞/動詞)",
+    "meaning": "轉變；輪班；移動；換檔；變換",
     "pos": "n",
     "difficulty": 1,
     "example": "Her shift starts at eight in the morning.",
@@ -1102,7 +1102,7 @@ module.exports = [
   {
     "word": "norm",
     "phonetic": "/nɔrm/",
-    "meaning": "常態；規範",
+    "meaning": "規範；標準；常態；準則；平均數",
     "pos": "n",
     "difficulty": 1,
     "example": "Remote work is the new norm.",
@@ -1122,7 +1122,7 @@ module.exports = [
   {
     "word": "zeal",
     "phonetic": "/ziːl/",
-    "meaning": "熱誠；熱心",
+    "meaning": "熱心；熱忱；熱情",
     "pos": "n",
     "difficulty": 1,
     "example": "His zeal for the project inspired the entire team.",
@@ -1238,7 +1238,7 @@ module.exports = [
   {
     "word": "dead",
     "phonetic": "/dɛd/",
-    "meaning": "死亡的；沒電的；完全的",
+    "meaning": "死亡；失效；枯萎；完全；停滯",
     "pos": "adj",
     "difficulty": 1,
     "example": "The battery is dead.",
@@ -1761,7 +1761,7 @@ module.exports = [
   {
     "word": "communication",
     "phonetic": "/kəˌmjuːnɪˈkeɪʃn/",
-    "meaning": "溝通；通訊",
+    "meaning": "溝通；通訊；訊息；交流；傳達",
     "pos": "n",
     "difficulty": 4,
     "example": "Clear communication is the key to success.",
@@ -2261,7 +2261,7 @@ module.exports = [
   {
     "word": "available",
     "phonetic": "/əˈveɪləbl/",
-    "meaning": "可獲得的；有空的",
+    "meaning": "可用；有空；可獲得；有效",
     "pos": "adj",
     "difficulty": 3,
     "example": "Is this book available in the library?",
@@ -2431,7 +2431,7 @@ module.exports = [
   {
     "word": "recent",
     "phonetic": "/ˈriːsnt/",
-    "meaning": "最近的",
+    "meaning": "最近；近來；近代",
     "pos": "adj",
     "difficulty": 2,
     "example": "In recent years, the technology has changed a lot.",
@@ -2751,7 +2751,7 @@ module.exports = [
   {
     "word": "cruel",
     "phonetic": "/ˈkruːəl/",
-    "meaning": "殘忍的",
+    "meaning": "殘忍；酷烈；刻毒；悲慘；艱難",
     "pos": "adj",
     "difficulty": 1,
     "example": "It is cruel to treat animals that way.",

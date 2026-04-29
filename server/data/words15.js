@@ -47,7 +47,7 @@ module.exports = [
   {
     "word": "baste",
     "phonetic": "/beɪst/",
-    "meaning": "（烹調時）淋油",
+    "meaning": "塗油；潤肉；疏縫",
     "pos": "v",
     "difficulty": 1,
     "example": "Baste the turkey every thirty minutes to keep it moist.",
@@ -83,7 +83,7 @@ module.exports = [
   {
     "word": "puree",
     "phonetic": "/pjʊˈreɪ/",
-    "meaning": "泥狀食物；打成泥",
+    "meaning": "泥；濃湯；搗成泥",
     "pos": "n",
     "difficulty": 1,
     "example": "Blend the cooked pumpkin into a smooth puree for the soup.",
@@ -579,7 +579,7 @@ module.exports = [
   {
     "word": "mulch",
     "phonetic": "/mʌltʃ/",
-    "meaning": "覆蓋物；護根層",
+    "meaning": "覆蓋物；護根",
     "pos": "n",
     "difficulty": 1,
     "example": "Spread mulch around the plants to retain moisture in the soil.",
@@ -633,7 +633,7 @@ module.exports = [
   {
     "word": "caulk",
     "phonetic": "/kɔːk/",
-    "meaning": "填縫劑",
+    "meaning": "填縫料；填縫",
     "pos": "n",
     "difficulty": 1,
     "example": "Apply caulk around the bathtub to prevent water leaks.",
@@ -886,7 +886,7 @@ module.exports = [
   {
     "word": "talon",
     "phonetic": "/ˈtælən/",
-    "meaning": "（猛禽的）爪",
+    "meaning": "猛禽爪；爪",
     "pos": "n",
     "difficulty": 1,
     "example": "The eagle gripped its prey tightly with its sharp talons.",
@@ -977,7 +977,7 @@ module.exports = [
   {
     "word": "rift",
     "phonetic": "/rɪft/",
-    "meaning": "裂痕；不和",
+    "meaning": "裂縫；裂口；不和；裂開",
     "pos": "n",
     "difficulty": 1,
     "example": "A serious rift developed between the two business partners.",
@@ -1123,7 +1123,7 @@ module.exports = [
   {
     "word": "toll",
     "phonetic": "/toʊl/",
-    "meaning": "通行費",
+    "meaning": "通行費；代價；傷亡人數；鳴鐘",
     "pos": "n",
     "difficulty": 1,
     "example": "You need to pay a toll to cross the bridge.",
@@ -1169,7 +1169,7 @@ module.exports = [
   {
     "word": "tow",
     "phonetic": "/toʊ/",
-    "meaning": "拖（車）",
+    "meaning": "拖；拉；牽引",
     "pos": "v",
     "difficulty": 1,
     "example": "They had to tow the broken car to the garage.",
@@ -1342,7 +1342,7 @@ module.exports = [
   {
     "word": "civic",
     "phonetic": "/ˈsɪvɪk/",
-    "meaning": "公民的",
+    "meaning": "城市；市民；公民",
     "pos": "adj",
     "difficulty": 1,
     "example": "Voting is an important civic duty.",
@@ -1516,7 +1516,7 @@ module.exports = [
   {
     "word": "fret",
     "phonetic": "/frɛt/",
-    "meaning": "焦慮；煩惱",
+    "meaning": "煩躁；發愁；侵蝕；磨損",
     "pos": "v",
     "difficulty": 1,
     "example": "Do not fret about things you cannot control.",
@@ -1589,7 +1589,7 @@ module.exports = [
   {
     "word": "thaw",
     "phonetic": "/θɔː/",
-    "meaning": "解凍；融化",
+    "meaning": "融化；解凍；緩和",
     "pos": "v",
     "difficulty": 1,
     "example": "The snow began to thaw in early spring.",
@@ -1662,7 +1662,7 @@ module.exports = [
   {
     "word": "admit",
     "phonetic": "/ədˈmɪt/",
-    "meaning": "承認錯誤；准許進入",
+    "meaning": "承認；准許進入；收納",
     "pos": "v",
     "difficulty": 1,
     "example": "He admitted that he had made a mistake.",
@@ -1725,7 +1725,7 @@ module.exports = [
   {
     "word": "blame",
     "phonetic": "/bleɪm/",
-    "meaning": "責怪；歸咎",
+    "meaning": "責備；歸咎；責難",
     "pos": "v",
     "difficulty": 1,
     "example": "Don't blame others for your own mistakes.",
@@ -1843,7 +1843,7 @@ module.exports = [
   {
     "word": "cure",
     "phonetic": "/kjʊr/",
-    "meaning": "治癒",
+    "meaning": "治癒；消除；加工保存；療法",
     "pos": "v",
     "difficulty": 1,
     "example": "Scientists are trying to cure the disease.",
@@ -1916,7 +1916,7 @@ module.exports = [
   {
     "word": "deny",
     "phonetic": "/dɪˈnaɪ/",
-    "meaning": "否定；否認",
+    "meaning": "否認；拒絕；拒絕給予",
     "pos": "v",
     "difficulty": 1,
     "example": "He denied any involvement in the incident.",
@@ -2063,7 +2063,7 @@ module.exports = [
   {
     "word": "exist",
     "phonetic": "/ɪɡˈzɪst/",
-    "meaning": "存在",
+    "meaning": "存在；生存",
     "pos": "v",
     "difficulty": 1,
     "example": "Do you believe that ghosts exist?",
@@ -2146,7 +2146,7 @@ module.exports = [
   {
     "word": "guard",
     "phonetic": "/ɡɑːrd/",
-    "meaning": "守護；保衛",
+    "meaning": "守衛；保衛；衛兵；警衛",
     "pos": "v",
     "difficulty": 1,
     "example": "A security officer guards the entrance at night.",
@@ -2174,7 +2174,7 @@ module.exports = [
   {
     "word": "heal",
     "phonetic": "/hiːl/",
-    "meaning": "痊癒；治癒",
+    "meaning": "治癒；癒合；消除",
     "pos": "v",
     "difficulty": 1,
     "example": "The wound took several weeks to heal.",
@@ -2311,7 +2311,7 @@ module.exports = [
   {
     "word": "lean",
     "phonetic": "/liːn/",
-    "meaning": "倚靠；傾斜",
+    "meaning": "傾斜；倚靠；瘦；精簡",
     "pos": "v",
     "difficulty": 1,
     "example": "She leaned against the wall and waited.",
@@ -2376,7 +2376,7 @@ module.exports = [
   {
     "word": "occur",
     "phonetic": "/əˈkɜːr/",
-    "meaning": "發生",
+    "meaning": "發生；出現；想到",
     "pos": "v",
     "difficulty": 1,
     "example": "The accident occurred early in the morning.",
@@ -2485,7 +2485,7 @@ module.exports = [
   {
     "word": "basis",
     "phonetic": "/ˈbeɪsɪs/",
-    "meaning": "基礎；根據",
+    "meaning": "基礎；根據；基準",
     "pos": "n",
     "difficulty": 1,
     "example": "The decision was made on the basis of the report.",
@@ -2640,7 +2640,7 @@ module.exports = [
   {
     "word": "crop",
     "phonetic": "/krɑːp/",
-    "meaning": "農作物",
+    "meaning": "作物；產量；修剪",
     "pos": "n",
     "difficulty": 1,
     "example": "The farmers harvested their crops in the fall.",

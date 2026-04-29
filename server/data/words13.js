@@ -2,7 +2,7 @@ module.exports = [
   {
     "word": "fund",
     "phonetic": "/fʌnd/",
-    "meaning": "基金；資金",
+    "meaning": "資金；基金；資助；撥款",
     "pos": "n",
     "difficulty": 1,
     "example": "The mutual fund has performed well this year.",
@@ -146,7 +146,7 @@ module.exports = [
   {
     "word": "lane",
     "phonetic": "/leɪn/",
-    "meaning": "車道",
+    "meaning": "小路；車道；航線；泳道",
     "pos": "n",
     "difficulty": 1,
     "example": "Stay in the right lane if you are driving slowly.",
@@ -327,7 +327,7 @@ module.exports = [
   {
     "word": "blog",
     "phonetic": "/blɑːɡ/",
-    "meaning": "部落格",
+    "meaning": "部落格；寫網誌",
     "pos": "n",
     "difficulty": 1,
     "example": "His travel blog has attracted a wide readership.",
@@ -372,7 +372,7 @@ module.exports = [
   {
     "word": "quote",
     "phonetic": "/kwoʊt/",
-    "meaning": "引述；引用",
+    "meaning": "引用；報價；引號；引述",
     "pos": "n",
     "difficulty": 1,
     "example": "The article included a quote from the company president.",
@@ -653,7 +653,7 @@ module.exports = [
   {
     "word": "attic",
     "phonetic": "/ˈætɪk/",
-    "meaning": "閣樓",
+    "meaning": "閣樓；頂樓",
     "pos": "n",
     "difficulty": 1,
     "example": "Old boxes and books were stored in the attic.",
@@ -680,7 +680,7 @@ module.exports = [
   {
     "word": "porch",
     "phonetic": "/pɔːrtʃ/",
-    "meaning": "門廊；走廊",
+    "meaning": "門廊；走廊；廊台",
     "pos": "n",
     "difficulty": 1,
     "example": "They sat on the front porch and watched the sunset.",
@@ -743,7 +743,7 @@ module.exports = [
   {
     "word": "virus",
     "phonetic": "/ˈvaɪrəs/",
-    "meaning": "病毒",
+    "meaning": "病毒；病毒程式",
     "pos": "n",
     "difficulty": 1,
     "example": "The virus spread quickly across several countries.",
@@ -824,7 +824,7 @@ module.exports = [
   {
     "word": "drone",
     "phonetic": "/droʊn/",
-    "meaning": "無人機",
+    "meaning": "無人機；雄蜂；嗡嗡聲；懶漢；贅言",
     "pos": "n",
     "difficulty": 1,
     "example": "The company uses drones to deliver packages in rural areas.",
@@ -860,7 +860,7 @@ module.exports = [
   {
     "word": "beta",
     "phonetic": "/ˈbeɪtə/",
-    "meaning": "測試版",
+    "meaning": "測試版；希臘字母第二個",
     "pos": "n",
     "difficulty": 1,
     "example": "The app is still in beta and may contain bugs.",
@@ -914,7 +914,7 @@ module.exports = [
   {
     "word": "media",
     "phonetic": "/ˈmiːdiə/",
-    "meaning": "媒體",
+    "meaning": "媒體；媒介；中間層",
     "pos": "n",
     "difficulty": 1,
     "example": "Social media has become a major source of news.",
@@ -1150,7 +1150,7 @@ module.exports = [
   {
     "word": "plot",
     "phonetic": "/plɑːt/",
-    "meaning": "地塊；土地",
+    "meaning": "情節；陰謀；小塊土地；密謀；繪圖",
     "pos": "n",
     "difficulty": 1,
     "example": "They bought a plot of land to build their dream home.",
@@ -1204,7 +1204,7 @@ module.exports = [
   {
     "word": "taxi",
     "phonetic": "/ˈtæksi/",
-    "meaning": "計程車",
+    "meaning": "計程車；滑行",
     "pos": "n",
     "difficulty": 1,
     "example": "We hailed a taxi outside the restaurant to get back to the hotel.",
@@ -1223,7 +1223,7 @@ module.exports = [
   {
     "word": "tram",
     "phonetic": "/træm/",
-    "meaning": "路面電車；有軌電車",
+    "meaning": "有軌電車；電車；礦車",
     "pos": "n",
     "difficulty": 1,
     "example": "The tram runs along the main street every ten minutes.",
@@ -1241,7 +1241,7 @@ module.exports = [
   {
     "word": "canoe",
     "phonetic": "/kəˈnuː/",
-    "meaning": "獨木舟",
+    "meaning": "獨木舟；皮划艇；划船",
     "pos": "n",
     "difficulty": 1,
     "example": "They paddled a canoe down the river through the national park.",
@@ -1251,7 +1251,7 @@ module.exports = [
   {
     "word": "sedan",
     "phonetic": "/sɪˈdæn/",
-    "meaning": "轎車",
+    "meaning": "轎車；房車；轎子",
     "pos": "n",
     "difficulty": 1,
     "example": "We rented a sedan at the airport for our week-long road trip.",
@@ -1449,7 +1449,7 @@ module.exports = [
   {
     "word": "ruins",
     "phonetic": "/ˈruːɪnz/",
-    "meaning": "遺跡；廢墟",
+    "meaning": "廢墟；遺跡；毀壞；破產",
     "pos": "n",
     "difficulty": 1,
     "example": "We explored the ancient ruins of a Roman fortress on the hilltop.",
@@ -1674,7 +1674,7 @@ module.exports = [
   {
     "word": "mall",
     "phonetic": "/mɔːl/",
-    "meaning": "購物中心",
+    "meaning": "購物中心；商店街；林蔭路",
     "pos": "n",
     "difficulty": 1,
     "example": "The new mall has over two hundred shops and a large food court.",
@@ -1692,7 +1692,7 @@ module.exports = [
   {
     "word": "cart",
     "phonetic": "/kɑːrt/",
-    "meaning": "購物車；推車",
+    "meaning": "手推車；貨車；運送",
     "pos": "n",
     "difficulty": 1,
     "example": "She filled her shopping cart with groceries for the whole week.",
@@ -1737,7 +1737,7 @@ module.exports = [
   {
     "word": "rack",
     "phonetic": "/ræk/",
-    "meaning": "架子；衣架",
+    "meaning": "架子；齒條；折磨；榨取",
     "pos": "n",
     "difficulty": 1,
     "example": "The clearance items are on the rack at the back of the store.",
@@ -1958,7 +1958,7 @@ module.exports = [
   {
     "word": "wrap",
     "phonetic": "/ræp/",
-    "meaning": "包裝；打包",
+    "meaning": "包裝；纏繞；覆蓋；披肩",
     "pos": "v",
     "difficulty": 1,
     "example": "Could you please wrap this as a gift with some ribbon?",
@@ -2023,7 +2023,7 @@ module.exports = [
   {
     "word": "price",
     "phonetic": "/praɪs/",
-    "meaning": "價格",
+    "meaning": "價格；代價；定價；報價",
     "pos": "n",
     "difficulty": 1,
     "example": "The price of this shirt has been reduced from sixty to thirty dollars.",
@@ -2079,7 +2079,7 @@ module.exports = [
   {
     "word": "bay",
     "phonetic": "/beɪ/",
-    "meaning": "海灣",
+    "meaning": "海灣；隔間；月桂",
     "pos": "n",
     "difficulty": 1,
     "example": "The fishing boats returned safely to the calm sheltered bay.",
@@ -2088,7 +2088,7 @@ module.exports = [
   {
     "word": "swamp",
     "phonetic": "/swɑːmp/",
-    "meaning": "沼澤地",
+    "meaning": "沼澤；濕地；淹沒；壓倒",
     "pos": "n",
     "difficulty": 1,
     "example": "Alligators thrive in the warm swamp waters of southern Florida.",
@@ -2133,7 +2133,7 @@ module.exports = [
   {
     "word": "slope",
     "phonetic": "/sloʊp/",
-    "meaning": "斜坡；坡度",
+    "meaning": "斜坡；傾斜；坡度",
     "pos": "n",
     "difficulty": 1,
     "example": "Skiers raced down the steep slope at incredible speeds during training.",
@@ -2196,7 +2196,7 @@ module.exports = [
   {
     "word": "frost",
     "phonetic": "/frɔːst/",
-    "meaning": "霜；結霜",
+    "meaning": "霜；嚴寒；結霜",
     "pos": "n",
     "difficulty": 1,
     "example": "A layer of frost covered the car windshield on the cold morning.",
@@ -2205,7 +2205,7 @@ module.exports = [
   {
     "word": "fog",
     "phonetic": "/fɔːɡ/",
-    "meaning": "霧",
+    "meaning": "霧；困惑；模糊",
     "pos": "n",
     "difficulty": 1,
     "example": "Dense fog reduced visibility and caused several accidents on the highway.",
@@ -2232,7 +2232,7 @@ module.exports = [
   {
     "word": "hail",
     "phonetic": "/heɪl/",
-    "meaning": "冰雹",
+    "meaning": "冰雹；招呼；歡呼；迎接",
     "pos": "n",
     "difficulty": 1,
     "example": "Large hail damaged car rooftops and shattered windows across the neighborhood.",
@@ -2277,7 +2277,7 @@ module.exports = [
   {
     "word": "humid",
     "phonetic": "/ˈhjuːmɪd/",
-    "meaning": "潮濕的",
+    "meaning": "潮濕；濕潤",
     "pos": "adj",
     "difficulty": 1,
     "example": "The air was so humid that our clothes felt damp all day.",
@@ -2358,7 +2358,7 @@ module.exports = [
   {
     "word": "rural",
     "phonetic": "/ˈrʊrəl/",
-    "meaning": "鄉村的；農村的",
+    "meaning": "鄉村；農村；田園",
     "pos": "adj",
     "difficulty": 1,
     "example": "Rural communities often lack access to high-speed internet and public transportation.",
@@ -2494,7 +2494,7 @@ module.exports = [
   {
     "word": "dusk",
     "phonetic": "/dʌsk/",
-    "meaning": "黃昏；薄暮",
+    "meaning": "黃昏；傍晚；微光",
     "pos": "n",
     "difficulty": 1,
     "example": "The street lights automatically turn on at dusk every single evening.",

@@ -30,7 +30,7 @@ module.exports = [
   {
     "word": "scuba",
     "phonetic": "/ˈskuːbə/",
-    "meaning": "水肺潛水",
+    "meaning": "水肺；潛水器",
     "pos": "n",
     "difficulty": 1,
     "example": "We went scuba diving in the coral reef.",
@@ -39,7 +39,7 @@ module.exports = [
   {
     "word": "kayak",
     "phonetic": "/ˈkaɪæk/",
-    "meaning": "皮艇；獨木舟",
+    "meaning": "獨木舟；皮划艇；划獨木舟",
     "pos": "n",
     "difficulty": 1,
     "example": "We rented a kayak and paddled along the river.",
@@ -140,7 +140,7 @@ module.exports = [
   {
     "word": "solo",
     "phonetic": "/ˈsoʊloʊ/",
-    "meaning": "獨自的；獨奏",
+    "meaning": "單獨；獨唱；獨奏；單飛；獨自",
     "pos": "adj",
     "difficulty": 1,
     "example": "She went on a solo hiking trip.",
@@ -341,7 +341,7 @@ module.exports = [
   {
     "word": "grief",
     "phonetic": "/ɡriːf/",
-    "meaning": "悲傷；哀痛",
+    "meaning": "悲痛；傷心；憂傷；不幸",
     "pos": "n",
     "difficulty": 1,
     "example": "He was overcome with grief after the loss.",
@@ -368,7 +368,7 @@ module.exports = [
   {
     "word": "moody",
     "phonetic": "/ˈmuːdi/",
-    "meaning": "情緒化的",
+    "meaning": "喜怒無常；憂鬱；悶悶不樂",
     "pos": "adj",
     "difficulty": 1,
     "example": "Teenagers can sometimes be moody.",
@@ -1108,7 +1108,7 @@ module.exports = [
   {
     "word": "brand",
     "phonetic": "/brænd/",
-    "meaning": "品牌",
+    "meaning": "品牌；烙印；商標；銘刻",
     "pos": "n",
     "difficulty": 1,
     "example": "Building a strong brand takes years of effort.",
@@ -1162,7 +1162,7 @@ module.exports = [
   {
     "word": "flyer",
     "phonetic": "/ˈflaɪər/",
-    "meaning": "傳單",
+    "meaning": "傳單；飛行員；乘客",
     "pos": "n",
     "difficulty": 1,
     "example": "Volunteers distributed flyers in the shopping district.",
@@ -1208,7 +1208,7 @@ module.exports = [
   {
     "word": "trend",
     "phonetic": "/trend/",
-    "meaning": "趨勢",
+    "meaning": "趨勢；流行；傾向；轉向",
     "pos": "n",
     "difficulty": 1,
     "example": "Market trends indicate a shift toward online shopping.",
@@ -1555,7 +1555,7 @@ module.exports = [
   {
     "word": "debit",
     "phonetic": "/ˈdebɪt/",
-    "meaning": "借方；扣款",
+    "meaning": "借方；扣款；借項；記帳",
     "pos": "n",
     "difficulty": 1,
     "example": "A debit of five hundred dollars appeared on the statement.",
@@ -1582,7 +1582,7 @@ module.exports = [
   {
     "word": "gross",
     "phonetic": "/ɡroʊs/",
-    "meaning": "總額的；毛額的",
+    "meaning": "總計；粗俗；噁心；毛額；獲得毛利",
     "pos": "adj",
     "difficulty": 1,
     "example": "Gross income includes all earnings before deductions.",
@@ -1932,7 +1932,7 @@ module.exports = [
   {
     "word": "lease",
     "phonetic": "/liːs/",
-    "meaning": "租約；租賃",
+    "meaning": "租約；租賃；出租；租用",
     "pos": "n",
     "difficulty": 1,
     "example": "The office lease expires at the end of the year.",
@@ -1959,7 +1959,7 @@ module.exports = [
   {
     "word": "bid",
     "phonetic": "/bɪd/",
-    "meaning": "出價；投標",
+    "meaning": "出價；投標；企圖；命令；叮囑",
     "pos": "n",
     "difficulty": 1,
     "example": "Their bid was the lowest among all competitors.",
@@ -2288,7 +2288,7 @@ module.exports = [
   {
     "word": "patch",
     "phonetic": "/pætʃ/",
-    "meaning": "修補程式；補丁",
+    "meaning": "補丁；碎片；小塊土地；修補",
     "pos": "n",
     "difficulty": 1,
     "example": "The security patch was released to fix a vulnerability.",
@@ -2397,7 +2397,7 @@ module.exports = [
   {
     "word": "beam",
     "phonetic": "/biːm/",
-    "meaning": "樑；橫樑",
+    "meaning": "光束；橫樑；微笑；發射；定向傳送",
     "pos": "n",
     "difficulty": 1,
     "example": "The steel beam supports the weight of the upper floors.",
@@ -2451,7 +2451,7 @@ module.exports = [
   {
     "word": "slab",
     "phonetic": "/slæb/",
-    "meaning": "板；混凝土板",
+    "meaning": "厚板；大塊；混凝土板；切片",
     "pos": "n",
     "difficulty": 1,
     "example": "The concrete slab forms the base of the structure.",
@@ -2577,7 +2577,7 @@ module.exports = [
   {
     "word": "mill",
     "phonetic": "/mɪl/",
-    "meaning": "工廠；研磨機",
+    "meaning": "磨坊；工廠；磨碎；碾磨",
     "pos": "n",
     "difficulty": 1,
     "example": "The steel mill operates around the clock.",
@@ -2595,7 +2595,7 @@ module.exports = [
   {
     "word": "title",
     "phonetic": "/ˈtaɪtəl/",
-    "meaning": "產權；所有權",
+    "meaning": "標題；頭銜；冠軍；權利；賦予稱號",
     "pos": "n",
     "difficulty": 1,
     "example": "A clear title is required before the sale can be finalized.",
@@ -2716,7 +2716,7 @@ module.exports = [
   {
     "word": "bond",
     "phonetic": "/bɑːnd/",
-    "meaning": "債券",
+    "meaning": "債券；聯繫；結合；黏合；契約",
     "pos": "n",
     "difficulty": 1,
     "example": "Government bonds are considered a safe investment.",
