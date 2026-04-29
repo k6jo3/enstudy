@@ -583,7 +583,7 @@ module.exports = [
     "difficulty": 4,
     "example": "The governor issued a proclamation declaring a state of emergency.",
     "exampleZh": "州長發布公告宣布進入緊急狀態。",
-    "context": "??????????? bulletin??????"
+    "context": "指政府或官方機構的正式公開聲明，通常具法律效力；比較 bulletin（公告欄或簡短通知，語氣較輕）。"
   },
   {
     "word": "unilateral",
@@ -2007,7 +2007,7 @@ module.exports = [
     "difficulty": 1,
     "example": "She is very shy.",
     "exampleZh": "她很害羞。",
-    "context": "???????????????????? timid???????????????????"
+    "context": "主要指社交上的內斂或靦腆，不一定是膽小；比較 timid（膽怯，面對挑戰或危險時容易退縮）。"
   },
   {
     "word": "polite",
@@ -2563,7 +2563,7 @@ module.exports = [
     "difficulty": 2,
     "example": "My teacher is very kind.",
     "exampleZh": "我的老師很親切。",
-    "context": "????????? teach???????"
+    "context": "由動詞 teach（教導）衍生的名詞，特指教師職業。"
   },
   {
     "word": "student",
@@ -2582,7 +2582,7 @@ module.exports = [
     "difficulty": 1,
     "example": "I have a test tomorrow.",
     "exampleZh": "我明天有考試。",
-    "context": "???????????????? testify????????"
+    "context": "考試或測試，名詞/動詞；比較 testify（在法庭中正式作證，較為正式）。"
   },
   {
     "word": "homework",
@@ -2639,7 +2639,7 @@ module.exports = [
     "difficulty": 2,
     "example": "Do you have any questions?",
     "exampleZh": "你有任何問題嗎？",
-    "context": "??????????????????? issue??????????????"
+    "context": "一般性的問題或疑問；比較 issue（議題或爭議，通常較大或較正式）。"
   },
   {
     "word": "lesson",

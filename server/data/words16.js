@@ -46,7 +46,7 @@ module.exports = [
     "difficulty": 1,
     "example": "It is your duty to report any problems.",
     "exampleZh": "回報任何問題是你的責任。",
-    "context": "??????????????????????? responsibility????????????????"
+    "context": "職責或義務，常涉及道德或法律要求；比較 responsibility（責任，語氣更強調後果承擔）。"
   },
   {
     "word": "effort",
@@ -174,7 +174,7 @@ module.exports = [
     "difficulty": 1,
     "example": "The accident was not my fault.",
     "exampleZh": "那場意外不是我的錯。",
-    "context": "????????????? downside/drawback???????????????"
+    "context": "指錯誤、過失或個人缺點；比較 downside（不利面，指某種選擇的負面因素）、drawback（阻礙目標的不利條件）。"
   },
   {
     "word": "flesh",
@@ -222,7 +222,7 @@ module.exports = [
     "difficulty": 1,
     "example": "There is a gap between theory and practice.",
     "exampleZh": "理論和實務之間存在差距。",
-    "context": "??????????????? disparity????????????????"
+    "context": "泛指差距、缺口或間隔；比較 disparity（差距，強調不平等或不公平，語氣較正式）。"
   },
   {
     "word": "generation",
@@ -405,7 +405,7 @@ module.exports = [
     "difficulty": 1,
     "example": "We need to address this issue immediately.",
     "exampleZh": "我們需要立刻處理這個問題。",
-    "context": "?????????????????? question????????????????"
+    "context": "議題或問題，通常較大或較正式；比較 question（疑問或一般性問題，語氣較輕）。"
   },
   {
     "word": "journey",
@@ -501,7 +501,7 @@ module.exports = [
     "difficulty": 1,
     "example": "The truck carried a heavy load of bricks.",
     "exampleZh": "卡車載了一大堆沉重的磚頭。",
-    "context": "??????????????????? cargo/freight?????????????"
+    "context": "泛指承載的重量或批量；比較 cargo（強調運輸中的貨物本身）、freight（強調整體貨運服務）。"
   },
   {
     "word": "location",
@@ -713,7 +713,7 @@ module.exports = [
     "difficulty": 2,
     "example": "Your presence at the meeting is required.",
     "exampleZh": "你必須出席這場會議。",
-    "context": "?????????????? attendance?????????????"
+    "context": "存在感或出席的狀態，也可比喻氣場；比較 attendance（出席率或出席行為，多用於統計）。"
   },
   {
     "word": "pressure",
@@ -778,7 +778,7 @@ module.exports = [
     "difficulty": 2,
     "example": "This region is famous for its tea production.",
     "exampleZh": "這個地區以產茶聞名。",
-    "context": "????????????????????? area??????????"
+    "context": "較大的地理或行政區域，通常有明確邊界；比較 area（範圍，更通俗，可大可小）。"
   },
   {
     "word": "relation",
@@ -932,7 +932,7 @@ module.exports = [
     "difficulty": 1,
     "example": "Music speaks to the soul.",
     "exampleZh": "音樂能觸動靈魂。",
-    "context": "????????????? spirit??????????"
+    "context": "靈魂，指個人的精神本質；比較 spirit（精神，也可指氣質或烈酒，用法更廣）。"
   },
   {
     "word": "species",
@@ -951,7 +951,7 @@ module.exports = [
     "difficulty": 2,
     "example": "The team spirit was very strong during the game.",
     "exampleZh": "比賽期間團隊精神非常強烈。",
-    "context": "????????????? soul?????????"
+    "context": "精神、氣質或活力；比較 soul（靈魂，更偏向個人內在精神本質）。"
   },
   {
     "word": "strength",
@@ -1016,7 +1016,7 @@ module.exports = [
     "difficulty": 2,
     "example": "She has a natural talent for singing.",
     "exampleZh": "她天生就有唱歌的才華。",
-    "context": "?????????????? aptitude???????"
+    "context": "天賦才能，常指特定藝術或技能；比較 aptitude（天資，偏重學習潛力）。"
   },
   {
     "word": "technique",
@@ -1071,7 +1071,7 @@ module.exports = [
     "difficulty": 1,
     "example": "The labor union is negotiating for better wages.",
     "exampleZh": "工會正在協商更好的薪資。",
-    "context": "????????????? coalition???????league???????"
+    "context": "工會或政治聯合體；比較 coalition（為特定目標臨時結盟的聯合體）、league（體育或組織性聯盟）。"
   },
   {
     "word": "variety",
@@ -1328,7 +1328,7 @@ module.exports = [
     "difficulty": 1,
     "example": "I don't remember the exact date.",
     "exampleZh": "我不記得確切的日期了。",
-    "context": "?????????????? precise??????strict??????????"
+    "context": "確切的、完全符合事實的；比較 precise（精確，強調細節的正確性）、strict（嚴格，強調規範）。"
   },
   {
     "word": "familiar",
@@ -1356,7 +1356,7 @@ module.exports = [
     "difficulty": 1,
     "example": "He gave a firm handshake.",
     "exampleZh": "他給了一個有力的握手。",
-    "context": "???????????????????? assertive???????????"
+    "context": "堅定的，態度上不輕易妥協；比較 assertive（自信果斷，主動表達意見立場）。"
   },
   {
     "word": "formal",
@@ -1492,7 +1492,7 @@ module.exports = [
     "difficulty": 2,
     "example": "The project requires a massive investment.",
     "exampleZh": "這個專案需要大量的投資。",
-    "context": "?????????????? numerous????????"
+    "context": "巨大的、規模龐大的；比較 numerous（眾多，強調數量多）。"
   },
   {
     "word": "mature",
@@ -1758,7 +1758,7 @@ module.exports = [
     "difficulty": 2,
     "example": "The school has strict rules about uniforms.",
     "exampleZh": "這所學校對制服有嚴格的規定。",
-    "context": "????????????? exact/precise?????????????"
+    "context": "嚴格的，在規範上不容妥協；比較 exact（確切，強調數值或事實的精準）、precise（精確，強調細節）。"
   },
   {
     "word": "suitable",
@@ -1880,17 +1880,17 @@ module.exports = [
     "difficulty": 2,
     "example": "Small businesses are the backbone of the economy.",
     "exampleZh": "中小企業是經濟的支柱。",
-    "context": "????????????????? pillar???????????"
+    "context": "脊梁，比喻核心支撐力量；比較 pillar（柱子，比喻支柱，語氣較柔和）。"
   },
   {
     "word": "breakdown",
     "phonetic": "/ˈbreɪkdaʊn/",
-    "meaning": "??????????",
+    "meaning": "故障；精神崩潰；明細",
     "pos": "n",
     "difficulty": 3,
     "example": "The car had a breakdown on the highway.",
     "exampleZh": "那輛車在高速公路上拋錨了。",
-    "context": "?????????????????????????????break down ??????????????????????"
+    "context": "名詞，可指機器故障、精神崩潰或數據的詳細分解；動詞 break down 表示失靈、崩潰或分析拆解。"
   },
   {
     "word": "breakthrough",
@@ -1918,7 +1918,7 @@ module.exports = [
     "difficulty": 2,
     "example": "The downside of living in the city is the noise.",
     "exampleZh": "住在城市的缺點就是噪音。",
-    "context": "?????????????? drawback???????fault??????????"
+    "context": "缺點或不利面；比較 drawback（缺點，多指阻礙目標的不利因素）、fault（過失或個人缺陷）。"
   },
   {
     "word": "drawback",
@@ -1928,7 +1928,7 @@ module.exports = [
     "difficulty": 2,
     "example": "The only drawback is the high price.",
     "exampleZh": "唯一的缺點就是價格太高。",
-    "context": "??????????????? downside????????fault???????"
+    "context": "阻礙達成目標的缺點；比較 downside（不利面，較廣義）、fault（過失，偏指錯誤）。"
   },
   {
     "word": "flashback",
@@ -2059,12 +2059,12 @@ module.exports = [
   {
     "word": "turnout",
     "phonetic": "/ˈtɜːrnaʊt/",
-    "meaning": "????????",
+    "meaning": "出席人數；投票率",
     "pos": "n",
     "difficulty": 2,
     "example": "The turnout for the event was better than expected.",
     "exampleZh": "活動的出席人數比預期的還要多。",
-    "context": "????????????????????turn out ?????????????????????"
+    "context": "指活動或選舉的出席人數或參與率；動詞 turn out 可指出席、結果為或生產製造。"
   },
   {
     "word": "undertake",
@@ -2341,7 +2341,7 @@ module.exports = [
     "difficulty": 1,
     "example": "We need to alter the plan due to budget cuts.",
     "exampleZh": "由於預算削減，我們需要修改計劃。",
-    "context": "??????????????????? modify ?????? modify?????????"
+    "context": "改變或修改，語氣較溫和；比較 modify（修改，多用於技術或正式語境）。"
   },
   {
     "word": "compose",
@@ -2562,7 +2562,7 @@ module.exports = [
     "difficulty": 1,
     "example": "It took me a while to grasp the concept.",
     "exampleZh": "我花了一些時間才理解這個概念。",
-    "context": "???????????????????? comprehend??????????"
+    "context": "抓緊或理解，更口語化且常用；比較 comprehend（理解，較正式，強調完全明白的過程）。"
   },
   {
     "word": "incline",
@@ -2748,7 +2748,7 @@ module.exports = [
     "difficulty": 2,
     "example": "Please refrain from using your phone during the meeting.",
     "exampleZh": "開會期間請避免使用手機。",
-    "context": "???????????????? avoid????????"
+    "context": "克制自己不做某事，語氣正式；比較 avoid（避免，更通俗）。"
   },
   {
     "word": "endure",
@@ -2785,7 +2785,7 @@ module.exports = [
     "difficulty": 1,
     "example": "The company has rigid rules about working hours.",
     "exampleZh": "公司對工作時間有嚴格的規定。",
-    "context": "???????????? strict??????????"
+    "context": "僵硬或嚴格，不易彎曲也不易妥協；比較 strict（嚴格，多指規範或紀律要求）。"
   },
   {
     "word": "solely",

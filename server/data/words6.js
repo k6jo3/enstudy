@@ -999,7 +999,7 @@ module.exports = [
     "difficulty": 4,
     "example": "Rapid urbanization has led to overcrowding and housing shortages in many cities.",
     "exampleZh": "快速的都市化導致許多城市出現過度擁擠和住房短缺。",
-    "context": "??????????? urban??????????"
+    "context": "由形容詞 urban（都市的）衍生的名詞，指人口向城市集中的過程。"
   },
   {
     "word": "populate",
@@ -1135,7 +1135,7 @@ module.exports = [
     "difficulty": 3,
     "example": "The sky turned beautiful shades of pink and orange during the twilight.",
     "exampleZh": "暮色中天空呈現出美麗的粉紅色和橙色色調。",
-    "context": "?????????????????? dusk???????"
+    "context": "日落後天空餘光的短暫時段，也可隱喻某事物的尾聲；比較 dusk（薄暮，也指入夜前的暗淡光線）。"
   },
   {
     "word": "simultaneous",
@@ -1917,7 +1917,7 @@ module.exports = [
     "difficulty": 3,
     "example": "The movie was filmed at a beautiful locale in New Zealand.",
     "exampleZh": "這部電影在紐西蘭一個美麗的場所拍攝。",
-    "context": "????????????????????? venue?????????"
+    "context": "指特定活動或故事發生的地點，帶有文學或電影語境；比較 venue（更正式，常用於活動或比賽場地）。"
   },
   {
     "word": "contraband",
@@ -1945,7 +1945,7 @@ module.exports = [
     "difficulty": 3,
     "example": "Fishing boats were tied up along the old wharf.",
     "exampleZh": "漁船停泊在老碼頭旁。",
-    "context": "????????????? pier??????dock????"
+    "context": "指用於裝卸貨物的大型碼頭；比較 pier（伸入水中的棧橋，也可供行人漫步）、dock（船塢或貨運碼頭）。"
   },
   {
     "word": "marina",
@@ -2475,12 +2475,12 @@ module.exports = [
   {
     "word": "callback",
     "phonetic": "/ˈkɔːlbæk/",
-    "meaning": "???????",
+    "meaning": "回呼函式",
     "pos": "n",
     "difficulty": 3,
     "example": "The callback function is executed after the data is loaded.",
     "exampleZh": "回呼函式會在資料載入完成後執行。",
-    "context": "???????? callback function????????????????call back ?????????????????"
+    "context": "程式語言中 callback function 是在特定事件發生後被執行的函式；動詞 call back 則是指回電，須依語境分辨。"
   },
   {
     "word": "asynchronous",

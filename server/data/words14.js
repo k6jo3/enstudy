@@ -124,7 +124,7 @@ module.exports = [
     "difficulty": 1,
     "example": "The graph clearly shows the upward trend in revenue.",
     "exampleZh": "圖表清楚地顯示了收入的上升趨勢。",
-    "context": "?????????? diagram?????????"
+    "context": "數據的視覺化圖表，如折線圖、長條圖等；比較 diagram（圖解，側重說明結構、流程或關係）。"
   },
   {
     "word": "quantity",
@@ -143,7 +143,7 @@ module.exports = [
     "difficulty": 2,
     "example": "The company has received numerous complaints about the product.",
     "exampleZh": "公司收到了關於該產品的許多投訴。",
-    "context": "????????? massive??????????"
+    "context": "強調數量上的眾多；比較 massive（強調體積或規模的龐大，不一定指數量）。"
   },
   {
     "word": "vast",
@@ -163,7 +163,7 @@ module.exports = [
     "difficulty": 2,
     "example": "Please give me the precise figures for this month's sales.",
     "exampleZh": "請給我本月銷售的精確數字。",
-    "context": "????????????? exact??????strict????"
+    "context": "形容信息、數字或描述的精確性；比較 exact（確切，強調與事實完全一致）、strict（嚴格，強調紀律或規範）。"
   },
   {
     "word": "significant",
@@ -255,7 +255,7 @@ module.exports = [
     "difficulty": 2,
     "example": "Add a weather widget to your home screen for quick updates.",
     "exampleZh": "在主畫面添加天氣小工具以快速更新。",
-    "context": "?????????????????? gadget????????????"
+    "context": "軟體介面中的小元件，或指泛用的小裝置；比較 gadget（實體小工具或電子裝置，強調新奇實用）。"
   },
   {
     "word": "VPN",
@@ -319,7 +319,7 @@ module.exports = [
     "difficulty": 3,
     "example": "I got suspicious when he started hiding his phone from me.",
     "exampleZh": "當他開始對我隱瞞手機時，我起了疑心。",
-    "context": "?????????????? sketchy????????? shady?"
+    "context": "令人起疑心的；比較 sketchy（口語，感覺不可靠或模糊）、shady（陰暗可疑，常暗示不法行為）。"
   },
   {
     "word": "confident",
@@ -849,12 +849,12 @@ module.exports = [
   {
     "word": "workout",
     "phonetic": "/ˈwɜːrkaʊt/",
-    "meaning": "?????",
+    "meaning": "運動；健身",
     "pos": "n",
     "difficulty": 2,
     "example": "I try to fit in a quick workout before work every morning.",
     "exampleZh": "我每天早上盡量在上班前擠出時間做一下快速健身。",
-    "context": "??????????????????work out ?????????????????????????"
+    "context": "名詞，指一次健身或訓練過程；動詞 work out 可指鍛鍊、解決問題或計算結果，須依語境分辨。"
   },
   {
     "word": "jogging",
@@ -1201,12 +1201,12 @@ module.exports = [
   {
     "word": "comeback",
     "phonetic": "/ˈkʌmˌbæk/",
-    "meaning": "?????",
+    "meaning": "復出；回擊",
     "pos": "n",
     "difficulty": 2,
     "example": "The singer made an incredible comeback after five years of silence.",
     "exampleZh": "那位歌手在沉寂五年後以驚人之姿復出。",
-    "context": "???????????????????????????????come back ???????????"
+    "context": "指在沉寂後的精彩復出，也可指妙語反擊；動詞 come back 則表示回來，不帶復出含義。"
   },
   {
     "word": "canceled",
@@ -1459,7 +1459,7 @@ module.exports = [
     "difficulty": 2,
     "example": "That alley looks really sketchy so let us take another route.",
     "exampleZh": "那條巷子看起來很可疑，我們走另一條路吧。",
-    "context": "???????????????????? suspicious??????????"
+    "context": "口語，形容感覺不可靠或有可疑之處；比較 suspicious（令人懷疑的，語氣較正式）。"
   },
   {
     "word": "shady",
@@ -1614,7 +1614,7 @@ module.exports = [
     "difficulty": 1,
     "example": "She is so extra that she wore a ball gown to a casual dinner.",
     "exampleZh": "她真的太誇張了，去一般的晚餐聚會居然穿了禮服。",
-    "context": "?????????????????? over??? grandiose??????????????????"
+    "context": "俚語，形容某人行為過於誇張；比較 over（超過界限）、grandiose（形容詞，宏大或浮誇）。"
   },
   {
     "word": "mood",
@@ -1788,7 +1788,7 @@ module.exports = [
     "difficulty": 2,
     "example": "We booked a sleeper car for the overnight train journey.",
     "exampleZh": "我們預訂了臥鋪車廂來搭乘夜間火車。",
-    "context": "?????????????????? sleep?????????"
+    "context": "與 sleep（睡覺）同根，但指臥鋪車廂，也可比喻未受關注卻後來大放異彩的人事物。"
   },
   {
     "word": "propeller",
@@ -2167,7 +2167,7 @@ module.exports = [
     "difficulty": 3,
     "example": "React is a popular JavaScript framework for building web apps.",
     "exampleZh": "React 是一個流行的 JavaScript 框架，用於建構網頁應用程式。",
-    "context": "??????????????????? frame????????????????"
+    "context": "抽象的框架，如軟體框架或政策框架；比較 frame（實體相框或結構框架）。"
   },
   {
     "word": "stylesheet",
@@ -2348,7 +2348,7 @@ module.exports = [
     "difficulty": 2,
     "example": "A new flyover was built to reduce traffic at the intersection.",
     "exampleZh": "新建了一座天橋來減輕十字路口的交通。",
-    "context": "?????????????????? overpass???????"
+    "context": "英式英語，指讓車輛越過路口的高架橋；比較 overpass（美式英語用法，意思相近）。"
   },
   {
     "word": "jaywalking",
@@ -2461,12 +2461,12 @@ module.exports = [
   {
     "word": "burnout",
     "phonetic": "/ˈbɜːrnaʊt/",
-    "meaning": "?????????",
+    "meaning": "職業倦怠；精力耗盡",
     "pos": "n",
     "difficulty": 2,
     "example": "Working eighty hours a week eventually led to severe burnout.",
     "exampleZh": "每週工作八十小時最終導致了嚴重的職業倦怠。",
-    "context": "????????????????????????burn out ????????????????????????"
+    "context": "指長期過勞導致的身心耗竭狀態；動詞 burn out 表示因負荷過重而耗盡精力。"
   },
   {
     "word": "apprentice",

@@ -16,7 +16,7 @@ module.exports = [
     "difficulty": 3,
     "example": "She shows great enthusiasm for her hobbies.",
     "exampleZh": "她對自己的嗜好展現出極大的熱忱。",
-    "context": "???????????? zest???????cordiality???????"
+    "context": "對某事強烈的興趣與熱情；比較 zest（充滿活力的生活熱情）、cordiality（待人溫暖友善的熱情）。"
   },
   {
     "word": "meditation",
@@ -44,7 +44,7 @@ module.exports = [
     "difficulty": 1,
     "example": "We rented a kayak and paddled along the river.",
     "exampleZh": "我們租了一艘獨木舟沿著河划行。",
-    "context": "???????????????? canoe???????"
+    "context": "有頂蓋座艙的輕型槳船，槳為雙葉式；比較 canoe（無頂開放式獨木舟，通常以單葉槳划行）。"
   },
   {
     "word": "fencing",
@@ -117,7 +117,7 @@ module.exports = [
     "difficulty": 1,
     "example": "The concert venue holds ten thousand people.",
     "exampleZh": "演唱會場地可容納一萬人。",
-    "context": "????????????????? locale??????????"
+    "context": "指舉辦活動、比賽或演出的正式場地；比較 locale（場所，較文學化，多用於電影或小說中的場景）。"
   },
   {
     "word": "triathlon",
@@ -392,7 +392,7 @@ module.exports = [
     "difficulty": 1,
     "example": "The timid child hid behind his mother.",
     "exampleZh": "那個膽怯的孩子躲在媽媽後面。",
-    "context": "? shy ???????????? shy???????????"
+    "context": "容易退縮的膽怯，面對挑戰時缺乏勇氣；比較 shy（害羞，主要指社交上的內斂，不一定是膽怯）。"
   },
   {
     "word": "agitated",
@@ -737,7 +737,7 @@ module.exports = [
     "difficulty": 2,
     "example": "The announcement was posted on the office bulletin board.",
     "exampleZh": "公告已張貼在辦公室的佈告欄上。",
-    "context": "??????????? proclamation???????????"
+    "context": "公告或通知，通常較短且以張貼或廣播方式傳遞；比較 proclamation（官方正式宣言，具法律效力，語氣更莊重）。"
   },
   {
     "word": "invoice",
@@ -1070,12 +1070,12 @@ module.exports = [
   {
     "word": "layoff",
     "phonetic": "/ˈleɪɔːf/",
-    "meaning": "??",
+    "meaning": "裁員",
     "pos": "n",
     "difficulty": 2,
     "example": "The economic downturn led to massive layoffs.",
     "exampleZh": "經濟衰退導致了大規模裁員。",
-    "context": "????????????????????lay off ???????????????????????"
+    "context": "指企業因財務或業務調整集體解雇員工；動詞 lay off 可指解雇或暫停工作，正式通知書上常出現此詞。"
   },
   {
     "word": "campaign",
@@ -1213,7 +1213,7 @@ module.exports = [
     "difficulty": 1,
     "example": "Market trends indicate a shift toward online shopping.",
     "exampleZh": "市場趨勢顯示消費行為正轉向網路購物。",
-    "context": "????????? trending??????????"
+    "context": "指一段時間內持續發展的方向或模式；比較 trending（形容詞，目前正在流行或熱搜中）。"
   },
   {
     "word": "competitor",
@@ -1460,7 +1460,7 @@ module.exports = [
     "difficulty": 2,
     "example": "Please review the handout before the training session.",
     "exampleZh": "請在培訓課程前先閱讀講義。",
-    "context": "????????????? data??????????"
+    "context": "講義或印刷資料，通常在課程或會議中分發；比較 data（資料或數據，多指電子或科學數據）。"
   },
   {
     "word": "workshop",
@@ -1706,7 +1706,7 @@ module.exports = [
     "difficulty": 2,
     "example": "The shipment is expected to arrive on Friday.",
     "exampleZh": "這批貨預計週五到達。",
-    "context": "???????????????? cargo/freight??????????"
+    "context": "一批送出或待收的貨物，強調運輸批次；比較 cargo（貨物本身）、freight（貨運服務或運費）。"
   },
   {
     "word": "distribution",
@@ -1734,7 +1734,7 @@ module.exports = [
     "difficulty": 1,
     "example": "The trucks are waiting at the loading dock.",
     "exampleZh": "卡車正在裝貨碼頭等候。",
-    "context": "????????????????? pier/wharf????????"
+    "context": "供船隻停靠或裝卸貨物的水邊設施；比較 pier（伸入水中的棧橋，也可供行人散步）、wharf（較大型的商業碼頭）。"
   },
   {
     "word": "clearance",
@@ -2128,7 +2128,7 @@ module.exports = [
     "difficulty": 2,
     "example": "Engineers modified the design to improve efficiency.",
     "exampleZh": "工程師修改了設計以提升效率。",
-    "context": "???????????????????????? alter????????????????????"
+    "context": "對現有內容進行局部調整；比較 alter（更改，強調形式或結構上的改變）。"
   },
   {
     "word": "utilize",
@@ -2347,7 +2347,7 @@ module.exports = [
     "difficulty": 3,
     "example": "A solid foundation is essential for a safe building.",
     "exampleZh": "穩固的地基對於安全的建築至關重要。",
-    "context": "????????????? basis???????????????"
+    "context": "建築的地基或抽象的基礎；比較 basis（基礎或根據，多用於論點或決策的依據）。"
   },
   {
     "word": "plumbing",
@@ -2636,7 +2636,7 @@ module.exports = [
     "difficulty": 2,
     "example": "Four concrete pillars support the entrance of the building.",
     "exampleZh": "四根混凝土柱子支撐著建築物的入口。",
-    "context": "??????????????????? backbone?????????"
+    "context": "建築中的支撐柱，也比喻重要支柱；比較 backbone（脊梁，比喻核心支撐力量，語氣更強）。"
   },
   {
     "word": "savings",
@@ -2711,7 +2711,7 @@ module.exports = [
     "difficulty": 1,
     "example": "The bank charges a fee for international wire transfers.",
     "exampleZh": "銀行對國際電匯收取手續費。",
-    "context": "????????????????????? cost/expense??????"
+    "context": "服務或使用的固定收費；比較 cost（整體費用或成本）、expense（花費的金額或開銷）。"
   },
   {
     "word": "bond",

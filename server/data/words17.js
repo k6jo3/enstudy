@@ -279,7 +279,7 @@ module.exports = [
     "difficulty": 3,
     "example": "He used a wheelbarrow to carry the soil.",
     "exampleZh": "他用手推車搬運泥土。",
-    "context": "?????????? trolley??????"
+    "context": "單輪手推車，主要用於建築或園藝搬運；比較 trolley（有多輪的推車，用於超市購物或行李搬運）。"
   },
   {
     "word": "floorboard",
@@ -491,7 +491,7 @@ module.exports = [
     "difficulty": 1,
     "example": "She learned to cope with stress through exercise.",
     "exampleZh": "她學會了透過運動來應對壓力。",
-    "context": "?? with ???????????????? handle???????????????"
+    "context": "勉強撐過或應付困難局面；比較 handle（主動且有能力地處理問題，語氣較積極）。"
   },
   {
     "word": "decline",
@@ -592,7 +592,7 @@ module.exports = [
     "difficulty": 1,
     "example": "The colors of the painting faded over time.",
     "exampleZh": "隨著時間過去，畫作的顏色褪了。",
-    "context": "??????????????????????? subside???????????????"
+    "context": "顏色或記憶逐漸消退；比較 subside（逐漸消退，多用於情緒、疼痛或風暴等強度減弱）。"
   },
   {
     "word": "extremely",
@@ -1510,7 +1510,7 @@ module.exports = [
     "difficulty": 3,
     "example": "The freight was shipped by sea.",
     "exampleZh": "貨物是經由海運運送的。",
-    "context": "????????????????????? cargo???????shipment??????"
+    "context": "貨運服務或運費，也指被運輸的貨物；比較 cargo（貨物本身）、shipment（一批貨物的運輸批次）。"
   },
   {
     "word": "overhead",
@@ -1611,12 +1611,12 @@ module.exports = [
   {
     "word": "execution",
     "phonetic": "/ˌeksɪˈkjuːʃn/",
-    "meaning": "?????",
+    "meaning": "執行；處決",
     "pos": "n",
     "difficulty": 4,
     "example": "His execution of the strategy was flawless.",
     "exampleZh": "他對策略的執行完美無缺。",
-    "context": "???????????????????carry out ??????????????????"
+    "context": "計畫或策略的實際執行，強調行動落實；carry out 與 execute 意思相近，但 execution 也可指死刑執行。"
   },
   {
     "word": "tactical",

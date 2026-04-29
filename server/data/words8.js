@@ -493,12 +493,12 @@ module.exports = [
   {
     "word": "breakeven",
     "phonetic": "/ˌbreɪkˈiːvən/",
-    "meaning": "????",
+    "meaning": "損益兩平",
     "pos": "n",
     "difficulty": 4,
     "example": "The new store is expected to reach breakeven within the first eighteen months.",
     "exampleZh": "新店預計在前十八個月內達到損益兩平。",
-    "context": "?????????????? breakeven point?break even ??????????????????"
+    "context": "指收支相抵不賺不賠的狀態；breakeven point 是達成此狀態的關鍵指標；動詞 break even 表示達到損益兩平。"
   },
   {
     "word": "provisional",
@@ -786,7 +786,7 @@ module.exports = [
     "difficulty": 4,
     "example": "She was asked to testify before the congressional committee.",
     "exampleZh": "她被要求在國會委員會面前作證。",
-    "context": "????????????????? test?????????"
+    "context": "指在法庭或正式場合提供言詞作證；比較 test（考試或測試，名詞/動詞）。"
   },
   {
     "word": "ordinance",
@@ -901,12 +901,12 @@ module.exports = [
   {
     "word": "notary",
     "phonetic": "/ˈnoʊtəri/",
-    "meaning": "???????",
+    "meaning": "公證人",
     "pos": "n",
     "difficulty": 4,
     "example": "The contract must be witnessed by a notary before it becomes valid.",
     "exampleZh": "合約必須經公證人見證後才具效力。",
-    "context": "????????????????notary public ???????????????????????"
+    "context": "具公信力的法律見證人，可認證文件和簽名；notary public 是正式頭銜，在許多法律文件中必須出現才具效力。"
   },
   {
     "word": "plea",
@@ -2079,7 +2079,7 @@ module.exports = [
     "difficulty": 4,
     "example": "The hotel manager gave us a cordial welcome.",
     "exampleZh": "飯店經理給了我們親切的歡迎。",
-    "context": "??????????????? nice??????????"
+    "context": "形容對待他人時溫暖親切但不失禮儀；比較 nice（一般的友善或令人喜歡，語氣較隨意）。"
   },
   {
     "word": "berth",

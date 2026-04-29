@@ -216,7 +216,7 @@ module.exports = [
     "difficulty": 2,
     "example": "I take a shower every morning before work.",
     "exampleZh": "我每天早上上班前都會淋浴。",
-    "context": "??????????????? show????????"
+    "context": "指洗澡用的淋浴間或淋浴動作；與 show（展示）讀音相近，注意拼法不同。"
   },
   {
     "word": "sink",
@@ -574,7 +574,7 @@ module.exports = [
     "difficulty": 2,
     "example": "Cheers! Here's to a wonderful new year!",
     "exampleZh": "乾杯！祝新的一年美好順利！",
-    "context": "?????????????????????????????????????????????????????"
+    "context": "英式英語中的萬用語，可表示乾杯、謝謝或再見；比較 toast（正式舉杯致詞）、thanks（謝謝）、bottoms up（乾杯，較口語）。"
   },
   {
     "word": "totally",
@@ -785,7 +785,7 @@ module.exports = [
     "difficulty": 4,
     "example": "Managing the budget is her responsibility.",
     "exampleZh": "管理預算是她的責任。",
-    "context": "?????????????? duty????????????"
+    "context": "強調個人應盡的義務與承擔；比較 duty（義務，較正式，常涉及職責或道德要求）。"
   },
   {
     "word": "unemployed",
@@ -1551,7 +1551,7 @@ module.exports = [
     "difficulty": 2,
     "example": "He loves buying the latest electronic gadgets.",
     "exampleZh": "他喜歡購買最新的電子產品。",
-    "context": "???????????????? widget????????????"
+    "context": "小型電子或機械工具，強調新奇實用；比較 widget（軟體介面元件或泛指小裝置）。"
   },
   {
     "word": "innovation",
@@ -1770,7 +1770,7 @@ module.exports = [
     "difficulty": 3,
     "example": "It took me a while to comprehend the concept.",
     "exampleZh": "我花了一些時間才理解這個概念。",
-    "context": "?????????????????? grasp????????????????"
+    "context": "透過思考理解深層意義，較為正式；比較 grasp（理解，也可表示掌握，更口語化）。"
   },
   {
     "word": "enroll",
@@ -1798,7 +1798,7 @@ module.exports = [
     "difficulty": 1,
     "example": "He hired a tutor to help with math.",
     "exampleZh": "他請了一位家教來幫忙數學。",
-    "context": "???????????????? tutoring???????????"
+    "context": "名詞，指提供一對一指導的家教老師；比較 tutoring（家教指導的行為，動詞 tutor 也可直接使用）。"
   },
   {
     "word": "seminar",
@@ -2183,7 +2183,7 @@ module.exports = [
     "difficulty": 2,
     "example": "He made a fortune in the stock market.",
     "exampleZh": "他在股市賺了一大筆錢。",
-    "context": "????????????? luck????????"
+    "context": "財富或命運，範疇比 luck 更廣，也可指算命；比較 luck（運氣，多用於日常語境）。"
   },
   {
     "word": "vendor",
@@ -2323,7 +2323,7 @@ module.exports = [
     "difficulty": 1,
     "example": "The aroma of fresh coffee filled the kitchen.",
     "exampleZh": "新鮮咖啡的香氣瀰漫整個廚房。",
-    "context": "????????????????????????? fragrance?????????????????????"
+    "context": "香氣，多指食物或飲料散發的怡人氣味；比較 fragrance（香水或花香，常用於美妝或植物）。"
   },
   {
     "word": "nutritious",
@@ -2423,7 +2423,7 @@ module.exports = [
     "difficulty": 1,
     "example": "Add lemon zest to the batter for extra flavor.",
     "exampleZh": "在麵糊中加入檸檬皮絲增添風味。",
-    "context": "?????????????? enthusiasm????????cordiality???????"
+    "context": "原指柑橘果皮磨成的碎末，引申為對生活的活力；比較 enthusiasm（對某事的熱忱與投入）、cordiality（待人的溫暖友善）。"
   },
   {
     "word": "whisk",
@@ -2478,7 +2478,7 @@ module.exports = [
     "difficulty": 1,
     "example": "Steep the tea for three to five minutes.",
     "exampleZh": "將茶葉浸泡三到五分鐘。",
-    "context": "?????????????????? infuse????????????????"
+    "context": "讓材料在液體中浸泡以釋放風味，較常用於茶或草藥；比較 infuse（浸泡或注入，用法更廣）。"
   },
   {
     "word": "tenderize",
@@ -2623,7 +2623,7 @@ module.exports = [
     "difficulty": 2,
     "example": "The team plays in the premier league.",
     "exampleZh": "這支隊伍在超級聯賽中比賽。",
-    "context": "????????????? coalition?????union??????"
+    "context": "指體育或組織聯盟；比較 coalition（為特定目標臨時結盟）、union（工會或政治聯合，較正式）。"
   },
   {
     "word": "handicraft",

@@ -268,7 +268,7 @@ module.exports = [
     "difficulty": 1,
     "example": "The company held a press conference to announce the merger.",
     "exampleZh": "公司召開了記者會宣布合併消息。",
-    "context": "????????????????????? media??????"
+    "context": "指新聞記者群體或媒體業，尤其是紙媒；比較 media（更廣義，涵蓋電視、網路等各種媒體形式）。"
   },
   {
     "word": "sponsor",
@@ -396,7 +396,7 @@ module.exports = [
     "difficulty": 2,
     "example": "The report included a graphic showing the sales trend.",
     "exampleZh": "報告中包含了一張顯示銷售趨勢的圖表。",
-    "context": "??????????????????????? graph???????"
+    "context": "圖示、圖像或視覺設計，應用範疇廣；比較 graph（數據圖表，如折線圖或長條圖，較專指數值可視化）。"
   },
   {
     "word": "print",
@@ -919,7 +919,7 @@ module.exports = [
     "difficulty": 1,
     "example": "Social media has become a major source of news.",
     "exampleZh": "社群媒體已成為重要的新聞來源。",
-    "context": "????????????????????? press????????????"
+    "context": "廣義的媒體，包括電視、廣播、網路；比較 press（特指印刷媒體或新聞界）。"
   },
   {
     "word": "viral",
@@ -938,7 +938,7 @@ module.exports = [
     "difficulty": 2,
     "example": "The topic was trending on social media all day.",
     "exampleZh": "這個話題整天都在社群媒體上是熱門話題。",
-    "context": "????????????? trend??????????"
+    "context": "形容詞，描述目前正在流行或廣泛傳播的內容；比較 trend（名詞，指一段時間內的趨勢走向）。"
   },
   {
     "word": "influencer",
@@ -1246,7 +1246,7 @@ module.exports = [
     "difficulty": 1,
     "example": "They paddled a canoe down the river through the national park.",
     "exampleZh": "他們划獨木舟沿著河流通過國家公園。",
-    "context": "????????????? kayak????????????"
+    "context": "開放式無頂槳船，通常以單葉槳划行；比較 kayak（有封閉座艙，以雙葉槳划行，較適合激流）。"
   },
   {
     "word": "sedan",
@@ -1760,7 +1760,7 @@ module.exports = [
     "difficulty": 2,
     "example": "He pushed the trolley through the supermarket aisles loading up on groceries.",
     "exampleZh": "他推著手推車穿過超市走道採購日用品。",
-    "context": "?????????????? wheelbarrow?????????"
+    "context": "有多個輪子的推車，常用於超市購物或行李搬運；比較 wheelbarrow（單輪手推車，主要用於建築或園藝）。"
   },
   {
     "word": "sample",
@@ -1833,7 +1833,7 @@ module.exports = [
     "difficulty": 3,
     "example": "She tested several fragrances before choosing the floral one.",
     "exampleZh": "她試了幾款香水後選擇了花香味的那款。",
-    "context": "????????????????????? aroma???????????"
+    "context": "香水或花卉的香氣，多用於美妝或植物；比較 aroma（食物或咖啡的香味，強調怡人氣息）。"
   },
   {
     "word": "jewelry",
@@ -2009,7 +2009,7 @@ module.exports = [
     "difficulty": 2,
     "example": "Travel expenses include airfare, meals, and ground transportation costs.",
     "exampleZh": "旅遊開銷包括機票、餐費和地面交通費用。",
-    "context": "??????????? cost????????????"
+    "context": "指支出的金額，多用於正式財務語境；比較 cost（整體費用或成本，也可指代價）。"
   },
   {
     "word": "sale",
@@ -2037,7 +2037,7 @@ module.exports = [
     "difficulty": 1,
     "example": "The total cost of the trip was lower than we had originally expected.",
     "exampleZh": "這趟旅行的總費用比我們原先預期的還要低。",
-    "context": "??????????????? fee????????expense??????"
+    "context": "整體費用或製造成本，也可指時間或精力的代價；比較 fee（服務費，通常為固定金額）、expense（開銷，強調實際支出）。"
   },
   {
     "word": "charge",
@@ -2047,7 +2047,7 @@ module.exports = [
     "difficulty": 2,
     "example": "There is no extra charge for gift wrapping during the holiday season.",
     "exampleZh": "假日期間禮物包裝不收取額外費用。",
-    "context": "???????????????????? fee????????"
+    "context": "向人收取的費用，也可指額外加收的費用；比較 fee（服務或專業費用，通常為固定收費）。"
   },
   {
     "word": "import",
@@ -2372,7 +2372,7 @@ module.exports = [
     "difficulty": 1,
     "example": "Urban development is rapidly transforming farmland into residential housing neighborhoods.",
     "exampleZh": "都市開發正在迅速將農地轉變為住宅社區。",
-    "context": "??????????? urbanization???????"
+    "context": "形容詞，描述與城市相關的特質；比較 urbanization（名詞，城市化的過程）。"
   },
   {
     "word": "population",
@@ -2499,7 +2499,7 @@ module.exports = [
     "difficulty": 1,
     "example": "The street lights automatically turn on at dusk every single evening.",
     "exampleZh": "路燈每天傍晚黃昏時分自動亮起。",
-    "context": "?????????????? twilight?????????????"
+    "context": "傍晚天色轉暗前的短暫時刻；比較 twilight（暮光，也可比喻某事物的尾聲，語氣更詩意）。"
   },
   {
     "word": "punctual",

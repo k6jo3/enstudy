@@ -490,22 +490,22 @@ module.exports = [
   {
     "word": "rollout",
     "phonetic": "/ˈroʊlˌaʊt/",
-    "meaning": "?????????",
+    "meaning": "推出；發布上市",
     "pos": "n",
     "difficulty": 3,
     "example": "The rollout of the new software will begin in the Asia-Pacific region.",
     "exampleZh": "新軟體將從亞太地區開始推出。",
-    "context": "????????????????????????roll out ???????????????????"
+    "context": "指新產品、功能或服務的正式推出或部署；動詞 roll out 表示逐步展開或推廣。"
   },
   {
     "word": "onboard",
     "phonetic": "/ˈɒnˌbɔːrd/",
-    "meaning": "???????",
+    "meaning": "引導入職",
     "pos": "v",
     "difficulty": 3,
     "example": "The HR team will onboard all new hires during the first week of the month.",
     "exampleZh": "人資團隊會在每月第一週為所有新進員工辦理入職。",
-    "context": "????????????????????????on board ???????????????????????"
+    "context": "動詞，指協助新進員工熟悉公司文化與流程；比較 on board（形容詞/副詞，表示已加入或同意計畫）。"
   },
   {
     "word": "proactive",
@@ -942,7 +942,7 @@ module.exports = [
     "difficulty": 3,
     "example": "The consultant drew a diagram to illustrate the proposed organizational structure.",
     "exampleZh": "顧問畫了一張圖表來說明建議的組織架構。",
-    "context": "????????????????? graph????????"
+    "context": "廣義圖示，用於說明結構、流程或關係；比較 graph（通常指數據圖表，如折線圖、長條圖等）。"
   },
   {
     "word": "checkpoint",
@@ -1015,7 +1015,7 @@ module.exports = [
     "difficulty": 3,
     "example": "He showed a natural aptitude for mathematics from an early age.",
     "exampleZh": "他從小就展現出數學方面的天賦。",
-    "context": "?????????????? talent????????????"
+    "context": "天生的學習潛力或掌握某項技能的天資；比較 talent（更廣義的天賦，常指藝術或特殊才能）。"
   },
   {
     "word": "discourse",
@@ -2091,7 +2091,7 @@ module.exports = [
     "difficulty": 3,
     "example": "Put everything on my tab and I will pay at the end.",
     "exampleZh": "全部記在我的帳上，我最後再付。",
-    "context": "?????????????????? fee?????????"
+    "context": "通常指在酒吧或餐廳的累計消費帳單；比較 fee（服務或專業費用，如律師費、手續費）。"
   },
   {
     "word": "split",
@@ -2293,7 +2293,7 @@ module.exports = [
     "difficulty": 3,
     "example": "Ferries depart from the pier every thirty minutes.",
     "exampleZh": "渡輪每三十分鐘從碼頭出發。",
-    "context": "????????????????? dock/wharf?dock ???wharf ????"
+    "context": "指延伸入水的棧橋，供船隻停靠或行人散步；dock 指船塢或貨運碼頭，wharf 則是較大型的貨運碼頭。"
   },
   {
     "word": "stopover",

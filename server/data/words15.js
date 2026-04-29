@@ -205,7 +205,7 @@ module.exports = [
     "difficulty": 2,
     "example": "Infuse the tea leaves in hot water for five minutes.",
     "exampleZh": "將茶葉在熱水中浸泡五分鐘。",
-    "context": "??????????????????????? steep?????????????"
+    "context": "注入液體或讓材料在液體中浸泡以釋放風味；比較 steep（浸泡，通常特指茶葉等需在熱水中泡開的食材）。"
   },
   {
     "word": "custard",
@@ -638,7 +638,7 @@ module.exports = [
     "difficulty": 1,
     "example": "Apply caulk around the bathtub to prevent water leaks.",
     "exampleZh": "在浴缸周圍塗上填縫劑以防止漏水。",
-    "context": "?????????????? grout????????"
+    "context": "防水密封材料，具有彈性，常用於浴室邊緣或窗框；比較 grout（磁磚填縫劑，硬化後不具彈性）。"
   },
   {
     "word": "deadbolt",
@@ -1219,7 +1219,7 @@ module.exports = [
     "difficulty": 2,
     "example": "She offers math tutoring after school.",
     "exampleZh": "她放學後提供數學輔導。",
-    "context": "??????????????? tutor?????????"
+    "context": "名詞，指家教輔導的行為或服務；比較 tutor（名詞，指提供輔導的老師，也可作動詞用）。"
   },
   {
     "word": "cramming",
@@ -1648,7 +1648,7 @@ module.exports = [
     "difficulty": 2,
     "example": "She acquired new skills through the training program.",
     "exampleZh": "她透過培訓課程習得了新技能。",
-    "context": "???????????????? obtain???????earn???????"
+    "context": "透過努力或正式管道取得技能、財產或知識；比較 obtain（獲得，較中性）、earn（賺取，強調付出勞動）。"
   },
   {
     "word": "adjust",
@@ -2160,7 +2160,7 @@ module.exports = [
     "difficulty": 2,
     "example": "She handled the complaint very professionally.",
     "exampleZh": "她非常專業地處理了這起投訴。",
-    "context": "??????????????? cope???????????????"
+    "context": "主動處理或應對問題；比較 cope（勉強應付，語氣帶有承受壓力的感覺）。"
   },
   {
     "word": "harm",
@@ -2371,7 +2371,7 @@ module.exports = [
     "difficulty": 2,
     "example": "You can obtain a visa at the embassy.",
     "exampleZh": "你可以在大使館取得簽證。",
-    "context": "????????????? acquire?????????"
+    "context": "透過正當途徑取得某物；比較 acquire（取得，常暗示較費力或長期努力）。"
   },
   {
     "word": "occur",
@@ -2490,7 +2490,7 @@ module.exports = [
     "difficulty": 1,
     "example": "The decision was made on the basis of the report.",
     "exampleZh": "這個決定是根據報告做出的。",
-    "context": "???????????? foundation???????????????????????"
+    "context": "決策或論點的依據；比較 foundation（更實體的地基或基礎，也指基金會）。"
   },
   {
     "word": "benefit",

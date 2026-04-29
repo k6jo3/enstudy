@@ -988,7 +988,7 @@ module.exports = [
     "difficulty": 2,
     "example": "The office is open on weekdays from nine to five.",
     "exampleZh": "辦公室在工作日上午九點至下午五點開放。",
-    "context": "??????????????? workday???????????????"
+    "context": "指週一到週五的非假日，不一定是工作日；比較 workday（指一個正式工作日，強調工作性質）。"
   },
   {
     "word": "dozen",
@@ -1061,7 +1061,7 @@ module.exports = [
     "difficulty": 1,
     "example": "The total area of the office is five hundred square meters.",
     "exampleZh": "辦公室的總面積為五百平方米。",
-    "context": "????????????? region????????????????"
+    "context": "泛指某個範圍或地帶，可大可小；比較 region（較大的地理或行政區域，通常有明確邊界）。"
   },
   {
     "word": "chart",
@@ -1080,7 +1080,7 @@ module.exports = [
     "difficulty": 1,
     "example": "We need to collect more data before making a decision.",
     "exampleZh": "做出決定前，我們需要收集更多數據。",
-    "context": "??????????? handout????????????"
+    "context": "泛指資料或數據，多用於數位或科學語境；比較 handout（紙本講義，多用於教育場合）。"
   },
   {
     "word": "negative",
@@ -1929,7 +1929,7 @@ module.exports = [
     "difficulty": 3,
     "example": "Attendance is required for all classes.",
     "exampleZh": "所有課程都要求出席。",
-    "context": "??????????? presence???????????"
+    "context": "指出席某場活動的人數或行為；比較 presence（存在感或出席狀態，也可比喻個人魅力）。"
   },
   {
     "word": "thunderstorm",
@@ -1966,7 +1966,7 @@ module.exports = [
     "difficulty": 1,
     "example": "Try to avoid eating too much sugar.",
     "exampleZh": "盡量避免攝取太多糖分。",
-    "context": "???????????? refrain?????????????"
+    "context": "主動遠離或不做某事；比較 refrain（克制自己不做某事，語氣較正式）。"
   },
   {
     "word": "bend",
@@ -2069,7 +2069,7 @@ module.exports = [
     "difficulty": 1,
     "example": "She earns a good salary at her new job.",
     "exampleZh": "她在新工作中賺取了不錯的薪水。",
-    "context": "??????????? acquire/obtain???????procure????????"
+    "context": "透過勞動、成就換取報酬或認可；比較 acquire/obtain（取得，方式較中性）、procure（採辦，多用於正式採購）。"
   },
   {
     "word": "explain",
@@ -2106,7 +2106,7 @@ module.exports = [
     "difficulty": 1,
     "example": "She grabbed her bag and rushed to the bus stop.",
     "exampleZh": "她抓起包包衝向公車站。",
-    "context": "??????????????????????? take???????"
+    "context": "快速抓取或拿取，帶有動作感；比較 take（拿取，更中性，不強調速度）。"
   },
   {
     "word": "greet",
@@ -2253,7 +2253,7 @@ module.exports = [
     "difficulty": 1,
     "example": "I put the photo in a wooden frame.",
     "exampleZh": "我把照片放進一個木頭相框裡。",
-    "context": "????????????????????????? framework??????????????????"
+    "context": "實體的相框或結構框架；比較 framework（抽象的框架，如軟體框架或政策框架）。"
   },
   {
     "word": "ghost",
@@ -2329,7 +2329,7 @@ module.exports = [
     "difficulty": 1,
     "example": "Good luck with your new job!",
     "exampleZh": "祝你新工作順利！",
-    "context": "????????? fortune???????????????"
+    "context": "泛指運氣，常用於日常語境；比較 fortune（財富或命運，範疇更廣）。"
   },
   {
     "word": "memory",

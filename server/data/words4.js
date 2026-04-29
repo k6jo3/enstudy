@@ -638,7 +638,7 @@ module.exports = [
     "difficulty": 3,
     "example": "The plane carried a full load of cargo.",
     "exampleZh": "飛機載運了滿載的貨物。",
-    "context": "???????????????????? load??????????????"
+    "context": "指運輸中承載的貨物，強調物品本身；比較 load（更廣義，泛指任何承載重量或批量）、freight（強調運費或整體貨運服務）。"
   },
   {
     "word": "perishable",
@@ -804,7 +804,7 @@ module.exports = [
     "difficulty": 3,
     "example": "The department was tasked with procuring new equipment.",
     "exampleZh": "該部門被指派採購新設備。",
-    "context": "??????????????? earn???????"
+    "context": "強調透過正式管道或費心安排取得所需；比較 earn（以勞動換取報酬或認可）。"
   },
   {
     "word": "remuneration",
@@ -1229,7 +1229,7 @@ module.exports = [
     "difficulty": 3,
     "example": "Grout was applied between the tiles to seal the gaps.",
     "exampleZh": "在磁磚之間塗抹了填縫劑來密封縫隙。",
-    "context": "?????????????? caulk????????"
+    "context": "磁磚縫隙的填充灰漿，硬化後不具彈性；比較 caulk（防水密封材料，常用於浴室邊緣或窗框，具彈性柔韌）。"
   },
   {
     "word": "awning",
@@ -1680,7 +1680,7 @@ module.exports = [
     "difficulty": 3,
     "example": "The new overpass reduced traffic at the intersection.",
     "exampleZh": "新的高架橋減輕了十字路口的交通流量。",
-    "context": "????????????????????? flyover???????"
+    "context": "讓車輛越過路口的高架橋；比較 flyover（英式英語用法，意思相近）。"
   },
   {
     "word": "tollbooth",
@@ -1919,12 +1919,12 @@ module.exports = [
   {
     "word": "checkout",
     "phonetic": "/ˈtʃɛkaʊt/",
-    "meaning": "???????",
+    "meaning": "退房手續；結帳",
     "pos": "n",
     "difficulty": 3,
     "example": "Checkout time is at noon on the day of departure.",
     "exampleZh": "退房時間是離開當天的中午。",
-    "context": "??????????????????????? hotel checkout?check out ?????????????????????????????"
+    "context": "作為名詞指退房手續或超市結帳；動詞形式 check out 可指辦理退房、查看或結帳，語境有所不同。"
   },
   {
     "word": "suite",
@@ -1988,7 +1988,7 @@ module.exports = [
     "difficulty": 3,
     "example": "The waiter brought the menu and took our order.",
     "exampleZh": "服務生端來菜單並幫我們點餐。",
-    "context": "?????????? wait????????"
+    "context": "waiter 為名詞，指在餐廳服務的人員；wait 為動詞，意為等待，兩者拼法相近但詞性與意義不同。"
   },
   {
     "word": "menu",
@@ -2430,7 +2430,7 @@ module.exports = [
     "difficulty": 3,
     "example": "The standard workday at this company is from nine to six.",
     "exampleZh": "這家公司的標準工作日是早上九點到下午六點。",
-    "context": "??????????????????? weekday????????"
+    "context": "指正常的工作天，強調工作性質；比較 weekday（泛指週一到週五，未必是工作日）。"
   },
   {
     "word": "timeclock",
@@ -2625,12 +2625,12 @@ module.exports = [
   {
     "word": "followup",
     "phonetic": "/ˈfɑːloʊˌʌp/",
-    "meaning": "?????????",
+    "meaning": "後續追蹤；跟進",
     "pos": "n",
     "difficulty": 3,
     "example": "I will send a followup email to confirm the details we discussed.",
     "exampleZh": "我會寄一封後續追蹤的電子郵件確認我們討論的細節。",
-    "context": "?????????????? follow-up email?followup task?follow up ??????????????????????"
+    "context": "名詞形式 followup 或 follow-up email 指追蹤後續事項的郵件；動詞 follow up 表示採取後續行動確認進展。"
   },
   {
     "word": "offsite",
@@ -2658,7 +2658,7 @@ module.exports = [
     "difficulty": 3,
     "example": "The engineering team holds a fifteen-minute standup every morning.",
     "exampleZh": "工程團隊每天早上舉行十五分鐘的站立會議。",
-    "context": "?????????????????????? stand up ????????????? stand-up comedy ????????"
+    "context": "指工作場合中的站立簡報會議；比較 stand up（動詞，起立或爽約）、stand-up comedy（單口喜劇）。"
   },
   {
     "word": "townhall",
