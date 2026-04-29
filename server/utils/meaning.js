@@ -77,8 +77,8 @@ function buildMeaningLabel(item, peers = [], { includeUsageHint = false } = {}) 
 
   const qualifier = getMeaningQualifier(item);
   const shouldQualify = qualifier && (includeUsageHint || hasMultipleVariants || hasSimilarPeer);
-  const preferredMeaning = isPhraseLikeItem(item) && hasMultipleVariants
-    ? variants.join(' / ')
+  const preferredMeaning = hasMultipleVariants
+    ? variants.join(isPhraseLikeItem(item) ? ' / ' : '；')
     : primaryMeaning;
 
   if (shouldQualify) {
