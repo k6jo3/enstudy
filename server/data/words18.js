@@ -2,7 +2,7 @@ module.exports = [
   {
     "word": "upright",
     "phonetic": "/ˈʌpraɪt/",
-    "meaning": "垂直的；正直的",
+    "meaning": "正直；垂直；挺直；直柱",
     "pos": "adj",
     "difficulty": 4,
     "example": "He is an upright citizen who follows the law.",
@@ -12,7 +12,7 @@ module.exports = [
   {
     "word": "reliable",
     "phonetic": "/rɪˈlaɪəbl/",
-    "meaning": "可靠的",
+    "meaning": "可靠；可信；確實",
     "pos": "adj",
     "difficulty": 2,
     "example": "The machine is very reliable.",
@@ -22,7 +22,7 @@ module.exports = [
   {
     "word": "dependable",
     "phonetic": "/dɪˈpendəbl/",
-    "meaning": "可信賴的",
+    "meaning": "可靠；可信",
     "pos": "adj",
     "difficulty": 3,
     "example": "He is a dependable worker.",
@@ -32,7 +32,7 @@ module.exports = [
   {
     "word": "consistent",
     "phonetic": "/kənˈsɪstənt/",
-    "meaning": "一貫的；一致的",
+    "meaning": "始終如一；一致；連貫",
     "pos": "adj",
     "difficulty": 3,
     "example": "Her performance has been consistent over the years.",
@@ -42,7 +42,7 @@ module.exports = [
   {
     "word": "resolute",
     "phonetic": "/ˈrezəluːt/",
-    "meaning": "堅定的",
+    "meaning": "堅決；果斷；堅毅",
     "pos": "adj",
     "difficulty": 4,
     "example": "She was resolute in her decision to leave.",
@@ -52,7 +52,7 @@ module.exports = [
   {
     "word": "determined",
     "phonetic": "/dɪˈtɜːrmɪnd/",
-    "meaning": "下定決心的",
+    "meaning": "堅定；下定決心",
     "pos": "adj",
     "difficulty": 3,
     "example": "He is determined to win the competition.",
@@ -62,7 +62,7 @@ module.exports = [
   {
     "word": "unwavering",
     "phonetic": "/ʌnˈweɪvərɪŋ/",
-    "meaning": "不動搖的",
+    "meaning": "堅定不移；不動搖",
     "pos": "adj",
     "difficulty": 4,
     "example": "Her support for the project remained unwavering.",
@@ -72,7 +72,7 @@ module.exports = [
   {
     "word": "steadfast",
     "phonetic": "/ˈstedfæst/",
-    "meaning": "忠實的；堅定的",
+    "meaning": "堅定；忠實；不移",
     "pos": "adj",
     "difficulty": 4,
     "example": "He remained a steadfast friend during difficult times.",
@@ -82,7 +82,7 @@ module.exports = [
   {
     "word": "faithful",
     "phonetic": "/ˈfeɪθfʊl/",
-    "meaning": "守信的；忠實的",
+    "meaning": "忠實；準確；信徒；守信",
     "pos": "adj",
     "difficulty": 3,
     "example": "She is a faithful wife.",
@@ -92,7 +92,7 @@ module.exports = [
   {
     "word": "dedicated",
     "phonetic": "/ˈdedɪkeɪtɪd/",
-    "meaning": "奉獻的；專用的",
+    "meaning": "盡力；專用；獻身",
     "pos": "adj",
     "difficulty": 3,
     "example": "The hospital has a dedicated wing for cancer patients.",
@@ -102,7 +102,7 @@ module.exports = [
   {
     "word": "committed",
     "phonetic": "/kəˈmɪtɪd/",
-    "meaning": "承諾的；堅定的",
+    "meaning": "堅定；承諾；盡責",
     "pos": "adj",
     "difficulty": 3,
     "example": "We are committed to improving our service.",
@@ -112,7 +112,7 @@ module.exports = [
   {
     "word": "keen",
     "phonetic": "/kiːn/",
-    "meaning": "敏銳的；熱衷的",
+    "meaning": "熱衷；敏銳；渴望；鋒利；哀悼",
     "pos": "adj",
     "difficulty": 3,
     "example": "She has a keen interest in photography.",
@@ -122,7 +122,7 @@ module.exports = [
   {
     "word": "redundancy",
     "phonetic": "/rɪˈdʌndənsi/",
-    "meaning": "裁員；多餘",
+    "meaning": "多餘；冗餘；裁員；重複",
     "pos": "n",
     "difficulty": 3,
     "example": "The company announced 200 redundancies.",
@@ -132,7 +132,7 @@ module.exports = [
   {
     "word": "allocation",
     "phonetic": "/ˌæləˈkeɪʃn/",
-    "meaning": "分配額；配置",
+    "meaning": "分配；配置；撥款；配額",
     "pos": "n",
     "difficulty": 3,
     "example": "The budget allocation was fair.",

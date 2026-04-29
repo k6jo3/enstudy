@@ -2,7 +2,7 @@ module.exports = [
   {
     "word": "difficulty",
     "phonetic": "/ˈdɪfɪˌkʌlti/",
-    "meaning": "困難",
+    "meaning": "困難；難點；麻煩",
     "pos": "n",
     "difficulty": 3,
     "example": "She had difficulty understanding the instructions.",
@@ -11,7 +11,7 @@ module.exports = [
   {
     "word": "discovery",
     "phonetic": "/dɪˈskʌvəri/",
-    "meaning": "發現",
+    "meaning": "發現；發覺",
     "pos": "n",
     "difficulty": 3,
     "example": "The discovery of penicillin changed medicine.",
@@ -21,7 +21,7 @@ module.exports = [
   {
     "word": "discussion",
     "phonetic": "/dɪˈskʌʃən/",
-    "meaning": "討論",
+    "meaning": "討論；商議；論述",
     "pos": "n",
     "difficulty": 3,
     "example": "We had a long discussion about the budget.",
@@ -31,7 +31,7 @@ module.exports = [
   {
     "word": "disease",
     "phonetic": "/dɪˈziːz/",
-    "meaning": "疾病",
+    "meaning": "疾病；弊端",
     "pos": "n",
     "difficulty": 2,
     "example": "Heart disease is a leading cause of death.",
@@ -41,7 +41,7 @@ module.exports = [
   {
     "word": "duty",
     "phonetic": "/ˈduːti/",
-    "meaning": "責任；義務；稅務；職務；值班",
+    "meaning": "責任；義務；職務；稅",
     "pos": "n",
     "difficulty": 1,
     "example": "It is your duty to report any problems.",
@@ -51,7 +51,7 @@ module.exports = [
   {
     "word": "effort",
     "phonetic": "/ˈɛfərt/",
-    "meaning": "努力",
+    "meaning": "努力；成就；力氣",
     "pos": "n",
     "difficulty": 2,
     "example": "With a little more effort, you can pass the test.",
@@ -60,7 +60,7 @@ module.exports = [
   {
     "word": "element",
     "phonetic": "/ˈɛlɪmənt/",
-    "meaning": "元素；要素",
+    "meaning": "元素；要素；成分；原理",
     "pos": "n",
     "difficulty": 2,
     "example": "Trust is an important element of any relationship.",
@@ -69,7 +69,7 @@ module.exports = [
   {
     "word": "emotion",
     "phonetic": "/ɪˈmoʊʃən/",
-    "meaning": "情緒；情感",
+    "meaning": "情感；情緒；激動",
     "pos": "n",
     "difficulty": 2,
     "example": "She tried to hide her emotions during the speech.",
@@ -78,7 +78,7 @@ module.exports = [
   {
     "word": "engine",
     "phonetic": "/ˈɛndʒɪn/",
-    "meaning": "引擎；發動機",
+    "meaning": "引擎；發動機；火車頭",
     "pos": "n",
     "difficulty": 2,
     "example": "The mechanic checked the car engine.",
@@ -87,7 +87,7 @@ module.exports = [
   {
     "word": "environment",
     "phonetic": "/ɪnˈvaɪrənmənt/",
-    "meaning": "環境",
+    "meaning": "環境；周圍",
     "pos": "n",
     "difficulty": 3,
     "example": "We should protect the environment for future generations.",
@@ -96,7 +96,7 @@ module.exports = [
   {
     "word": "evidence",
     "phonetic": "/ˈɛvɪdəns/",
-    "meaning": "證據",
+    "meaning": "證據；跡象；證明；顯示",
     "pos": "n",
     "difficulty": 2,
     "example": "There is no evidence to support his claim.",
@@ -105,7 +105,7 @@ module.exports = [
   {
     "word": "exception",
     "phonetic": "/ɪkˈsɛpʃən/",
-    "meaning": "例外",
+    "meaning": "例外；異議",
     "pos": "n",
     "difficulty": 3,
     "example": "Everyone must follow the rules without exception.",
@@ -114,7 +114,7 @@ module.exports = [
   {
     "word": "existence",
     "phonetic": "/ɪɡˈzɪstəns/",
-    "meaning": "存在",
+    "meaning": "存在；生存",
     "pos": "n",
     "difficulty": 3,
     "example": "No one can prove the existence of ghosts.",
@@ -124,7 +124,7 @@ module.exports = [
   {
     "word": "explanation",
     "phonetic": "/ˌɛkspləˈneɪʃən/",
-    "meaning": "解釋",
+    "meaning": "解釋；說明；原因",
     "pos": "n",
     "difficulty": 3,
     "example": "He gave a simple explanation of the problem.",
@@ -133,7 +133,7 @@ module.exports = [
   {
     "word": "expression",
     "phonetic": "/ɪkˈsprɛʃən/",
-    "meaning": "表情；表達",
+    "meaning": "表達；表情；詞句；術語",
     "pos": "n",
     "difficulty": 3,
     "example": "She had a surprised expression on her face.",
@@ -142,7 +142,7 @@ module.exports = [
   {
     "word": "factor",
     "phonetic": "/ˈfæktər/",
-    "meaning": "因素",
+    "meaning": "因素；要素；係數；代理人",
     "pos": "n",
     "difficulty": 2,
     "example": "Price is an important factor for most customers.",
@@ -151,7 +151,7 @@ module.exports = [
   {
     "word": "failure",
     "phonetic": "/ˈfeɪljər/",
-    "meaning": "失敗",
+    "meaning": "失敗；故障；衰竭",
     "pos": "n",
     "difficulty": 2,
     "example": "Don't be afraid of failure; learn from it.",
@@ -160,7 +160,7 @@ module.exports = [
   {
     "word": "faith",
     "phonetic": "/feɪθ/",
-    "meaning": "信念；信仰",
+    "meaning": "信仰；信任；守信",
     "pos": "n",
     "difficulty": 1,
     "example": "I have faith that everything will work out.",
@@ -169,7 +169,7 @@ module.exports = [
   {
     "word": "fault",
     "phonetic": "/fɔːlt/",
-    "meaning": "過失；缺點",
+    "meaning": "錯誤；缺點；斷層；挑剔",
     "pos": "n",
     "difficulty": 1,
     "example": "The accident was not my fault.",
@@ -179,7 +179,7 @@ module.exports = [
   {
     "word": "flesh",
     "phonetic": "/flɛʃ/",
-    "meaning": "肉體；肌膚",
+    "meaning": "肉；肉體；果肉",
     "pos": "n",
     "difficulty": 1,
     "example": "The fruit has sweet, soft flesh inside.",
@@ -188,7 +188,7 @@ module.exports = [
   {
     "word": "folk",
     "phonetic": "/foʊk/",
-    "meaning": "人們；民間的",
+    "meaning": "人們；親屬；民間",
     "pos": "n",
     "difficulty": 1,
     "example": "The local folk were very friendly and welcoming.",
@@ -198,7 +198,7 @@ module.exports = [
   {
     "word": "freedom",
     "phonetic": "/ˈfriːdəm/",
-    "meaning": "自由",
+    "meaning": "自由；直率；特權",
     "pos": "n",
     "difficulty": 2,
     "example": "Everyone deserves the freedom to express their opinions.",
@@ -208,7 +208,7 @@ module.exports = [
   {
     "word": "fuel",
     "phonetic": "/fjuːəl/",
-    "meaning": "燃料",
+    "meaning": "燃料；加燃料；激起",
     "pos": "n",
     "difficulty": 1,
     "example": "The car is running low on fuel.",
@@ -217,7 +217,7 @@ module.exports = [
   {
     "word": "gap",
     "phonetic": "/ɡæp/",
-    "meaning": "間隙；差距；缺口；分歧",
+    "meaning": "差距；缺口；間隔；分歧",
     "pos": "n",
     "difficulty": 1,
     "example": "There is a gap between theory and practice.",
@@ -227,7 +227,7 @@ module.exports = [
   {
     "word": "generation",
     "phonetic": "/ˌdʒɛnəˈreɪʃən/",
-    "meaning": "世代",
+    "meaning": "世代；產生；同代人",
     "pos": "n",
     "difficulty": 3,
     "example": "The younger generation uses technology every day.",
@@ -236,7 +236,7 @@ module.exports = [
   {
     "word": "grain",
     "phonetic": "/ɡreɪn/",
-    "meaning": "穀物；顆粒",
+    "meaning": "穀物；顆粒；紋理；微量",
     "pos": "n",
     "difficulty": 1,
     "example": "Rice is the main grain in many Asian countries.",
@@ -245,7 +245,7 @@ module.exports = [
   {
     "word": "growth",
     "phonetic": "/ɡroʊθ/",
-    "meaning": "成長；增長",
+    "meaning": "成長；發育；增加；生長物",
     "pos": "n",
     "difficulty": 2,
     "example": "The company saw strong growth last year.",
@@ -254,7 +254,7 @@ module.exports = [
   {
     "word": "guidance",
     "phonetic": "/ˈɡaɪdəns/",
-    "meaning": "指導；引導",
+    "meaning": "指導；引導；諮詢",
     "pos": "n",
     "difficulty": 2,
     "example": "She provided guidance to the new employees.",
@@ -263,7 +263,7 @@ module.exports = [
   {
     "word": "honor",
     "phonetic": "/ˈɑːnər/",
-    "meaning": "榮譽；尊敬；光榮；信守",
+    "meaning": "榮譽；光榮；尊敬；信守；承擔",
     "pos": "n",
     "difficulty": 1,
     "example": "It was an honor to receive the award.",
@@ -272,7 +272,7 @@ module.exports = [
   {
     "word": "horizon",
     "phonetic": "/həˈraɪzən/",
-    "meaning": "地平線",
+    "meaning": "地平線；眼界；範圍",
     "pos": "n",
     "difficulty": 2,
     "example": "The sun slowly sank below the horizon.",
@@ -281,7 +281,7 @@ module.exports = [
   {
     "word": "humor",
     "phonetic": "/ˈhjuːmər/",
-    "meaning": "幽默；情緒；體液；迎合",
+    "meaning": "幽默；幽默感；情緒；迎合；適應",
     "pos": "n",
     "difficulty": 1,
     "example": "He has a great sense of humor.",
@@ -290,7 +290,7 @@ module.exports = [
   {
     "word": "identity",
     "phonetic": "/aɪˈdɛntɪti/",
-    "meaning": "身分",
+    "meaning": "身分；特性；一致；認同",
     "pos": "n",
     "difficulty": 2,
     "example": "You need to show your identity card at the gate.",
@@ -299,7 +299,7 @@ module.exports = [
   {
     "word": "illness",
     "phonetic": "/ˈɪlnɪs/",
-    "meaning": "疾病",
+    "meaning": "疾病；生病；不適",
     "pos": "n",
     "difficulty": 2,
     "example": "She took a week off because of illness.",
@@ -309,7 +309,7 @@ module.exports = [
   {
     "word": "imagination",
     "phonetic": "/ɪˌmædʒɪˈneɪʃən/",
-    "meaning": "想像力",
+    "meaning": "想像力；幻想；創造力",
     "pos": "n",
     "difficulty": 3,
     "example": "Children have a wonderful imagination.",
@@ -318,7 +318,7 @@ module.exports = [
   {
     "word": "impact",
     "phonetic": "/ˈɪmpækt/",
-    "meaning": "影響；衝擊",
+    "meaning": "影響；衝擊；撞擊；碰撞",
     "pos": "n",
     "difficulty": 2,
     "example": "Technology has a huge impact on our daily lives.",
@@ -327,7 +327,7 @@ module.exports = [
   {
     "word": "importance",
     "phonetic": "/ɪmˈpɔːrtəns/",
-    "meaning": "重要性",
+    "meaning": "重要性；重要",
     "pos": "n",
     "difficulty": 3,
     "example": "He stressed the importance of safety at work.",
@@ -336,7 +336,7 @@ module.exports = [
   {
     "word": "impression",
     "phonetic": "/ɪmˈprɛʃən/",
-    "meaning": "印象",
+    "meaning": "印象；感觸；印記；模仿",
     "pos": "n",
     "difficulty": 3,
     "example": "She made a good impression at the interview.",
@@ -345,7 +345,7 @@ module.exports = [
   {
     "word": "improvement",
     "phonetic": "/ɪmˈpruːvmənt/",
-    "meaning": "改善；進步",
+    "meaning": "改進；進步；改善；提高",
     "pos": "n",
     "difficulty": 3,
     "example": "There has been a great improvement in her grades.",
@@ -355,7 +355,7 @@ module.exports = [
   {
     "word": "incident",
     "phonetic": "/ˈɪnsɪdənt/",
-    "meaning": "事件",
+    "meaning": "事件；事故；插曲",
     "pos": "n",
     "difficulty": 2,
     "example": "The police are investigating the incident.",
@@ -364,7 +364,7 @@ module.exports = [
   {
     "word": "industry",
     "phonetic": "/ˈɪndəstri/",
-    "meaning": "產業；工業",
+    "meaning": "工業；產業；勤奮；企業",
     "pos": "n",
     "difficulty": 2,
     "example": "The tourism industry is growing rapidly.",
@@ -373,7 +373,7 @@ module.exports = [
   {
     "word": "instruction",
     "phonetic": "/ɪnˈstrʌkʃən/",
-    "meaning": "說明；指示",
+    "meaning": "指示；教學；說明書；指令",
     "pos": "n",
     "difficulty": 3,
     "example": "Follow the instructions carefully before assembling the furniture.",
@@ -382,7 +382,7 @@ module.exports = [
   {
     "word": "intelligence",
     "phonetic": "/ɪnˈtɛlɪdʒəns/",
-    "meaning": "智力；情報",
+    "meaning": "智力；情報；才智",
     "pos": "n",
     "difficulty": 4,
     "example": "Emotional intelligence is just as important as IQ.",
@@ -391,7 +391,7 @@ module.exports = [
   {
     "word": "intention",
     "phonetic": "/ɪnˈtɛnʃən/",
-    "meaning": "意圖；目的",
+    "meaning": "意圖；目的；打算",
     "pos": "n",
     "difficulty": 3,
     "example": "I had no intention of hurting your feelings.",
@@ -400,7 +400,7 @@ module.exports = [
   {
     "word": "issue",
     "phonetic": "/ˈɪʃuː/",
-    "meaning": "問題；議題",
+    "meaning": "問題；議題；發行；發送；流出",
     "pos": "n",
     "difficulty": 1,
     "example": "We need to address this issue immediately.",
@@ -410,7 +410,7 @@ module.exports = [
   {
     "word": "journey",
     "phonetic": "/ˈdʒɜːrni/",
-    "meaning": "旅程",
+    "meaning": "旅程；旅行；歷程",
     "pos": "n",
     "difficulty": 2,
     "example": "The journey from Taipei to Kaohsiung takes about two hours by train.",
@@ -450,7 +450,7 @@ module.exports = [
   {
     "word": "judgment",
     "phonetic": "/ˈdʒʌdʒmənt/",
-    "meaning": "判斷",
+    "meaning": "判斷；審判；判決；看法",
     "pos": "n",
     "difficulty": 2,
     "example": "Use your own judgment to make the decision.",
@@ -459,7 +459,7 @@ module.exports = [
   {
     "word": "justice",
     "phonetic": "/ˈdʒʌstɪs/",
-    "meaning": "正義；公正",
+    "meaning": "正義；公正；司法；法官",
     "pos": "n",
     "difficulty": 2,
     "example": "Everyone deserves justice.",
@@ -468,7 +468,7 @@ module.exports = [
   {
     "word": "knowledge",
     "phonetic": "/ˈnɑːlɪdʒ/",
-    "meaning": "知識",
+    "meaning": "知識；知曉；學問",
     "pos": "n",
     "difficulty": 3,
     "example": "He has a good knowledge of computer science.",
@@ -477,7 +477,7 @@ module.exports = [
   {
     "word": "landscape",
     "phonetic": "/ˈlændskeɪp/",
-    "meaning": "風景；景色",
+    "meaning": "風景；景觀；地貌；美化",
     "pos": "n",
     "difficulty": 3,
     "example": "The mountain landscape was absolutely beautiful.",
@@ -487,7 +487,7 @@ module.exports = [
   {
     "word": "layer",
     "phonetic": "/ˈleɪər/",
-    "meaning": "層",
+    "meaning": "層；階層；分層；堆疊",
     "pos": "n",
     "difficulty": 1,
     "example": "She wore several layers of clothing in winter.",
@@ -496,7 +496,7 @@ module.exports = [
   {
     "word": "load",
     "phonetic": "/loʊd/",
-    "meaning": "負荷；大量；裝載；裝彈",
+    "meaning": "裝載；負荷；負擔；工作量",
     "pos": "n",
     "difficulty": 1,
     "example": "The truck carried a heavy load of bricks.",
@@ -506,7 +506,7 @@ module.exports = [
   {
     "word": "location",
     "phonetic": "/loʊˈkeɪʃən/",
-    "meaning": "位置；地點",
+    "meaning": "位置；地點；場所",
     "pos": "n",
     "difficulty": 2,
     "example": "The location of the new office is very convenient.",
@@ -515,7 +515,7 @@ module.exports = [
   {
     "word": "loss",
     "phonetic": "/lɑːs/",
-    "meaning": "損失；喪失；失敗；遺失；虧損",
+    "meaning": "損失；失敗；遺失；虧損；減少",
     "pos": "n",
     "difficulty": 1,
     "example": "The company reported a loss of two million dollars.",
@@ -524,7 +524,7 @@ module.exports = [
   {
     "word": "manner",
     "phonetic": "/ˈmænər/",
-    "meaning": "方式；態度",
+    "meaning": "方式；舉止；禮貌；風俗",
     "pos": "n",
     "difficulty": 2,
     "example": "She spoke in a polite manner.",
@@ -533,7 +533,7 @@ module.exports = [
   {
     "word": "mass",
     "phonetic": "/mæs/",
-    "meaning": "大量；質量",
+    "meaning": "質量；大量；民眾；聚集；彌撒",
     "pos": "n",
     "difficulty": 1,
     "example": "A mass of people waited outside the stadium.",
@@ -543,7 +543,7 @@ module.exports = [
   {
     "word": "material",
     "phonetic": "/məˈtɪriəl/",
-    "meaning": "材料；素材",
+    "meaning": "材料；物質；素材；實質；重要",
     "pos": "n",
     "difficulty": 2,
     "example": "The bag is made of recycled materials.",
@@ -552,7 +552,7 @@ module.exports = [
   {
     "word": "matter",
     "phonetic": "/ˈmætər/",
-    "meaning": "事情；問題；要緊",
+    "meaning": "事情；物質；問題；重要；有關係",
     "pos": "n/v",
     "difficulty": 2,
     "example": "This is a serious matter. It doesn't matter.",
@@ -562,7 +562,7 @@ module.exports = [
   {
     "word": "method",
     "phonetic": "/ˈmɛθəd/",
-    "meaning": "方法",
+    "meaning": "方法；方式；條理",
     "pos": "n",
     "difficulty": 2,
     "example": "This is the most effective method of learning.",
@@ -571,7 +571,7 @@ module.exports = [
   {
     "word": "mission",
     "phonetic": "/ˈmɪʃən/",
-    "meaning": "任務；使命",
+    "meaning": "任務；使命；代表團；傳教",
     "pos": "n",
     "difficulty": 2,
     "example": "Our mission is to provide excellent customer service.",
@@ -580,7 +580,7 @@ module.exports = [
   {
     "word": "mixture",
     "phonetic": "/ˈmɪkstʃər/",
-    "meaning": "混合物",
+    "meaning": "混合；混合物",
     "pos": "n",
     "difficulty": 2,
     "example": "The cake is made from a mixture of flour, eggs, and sugar.",
@@ -589,7 +589,7 @@ module.exports = [
   {
     "word": "mystery",
     "phonetic": "/ˈmɪstəri/",
-    "meaning": "神秘；謎",
+    "meaning": "神秘；謎；推理小說",
     "pos": "n",
     "difficulty": 2,
     "example": "The cause of the fire remains a mystery.",
@@ -598,7 +598,7 @@ module.exports = [
   {
     "word": "nerve",
     "phonetic": "/nɜːrv/",
-    "meaning": "神經；勇氣；膽量；鼓起勇氣",
+    "meaning": "神經；勇氣；膽量",
     "pos": "n",
     "difficulty": 1,
     "example": "She didn't have the nerve to ask her boss for a raise.",
@@ -607,7 +607,7 @@ module.exports = [
   {
     "word": "object",
     "phonetic": "/ˈɑːbdʒɪkt/",
-    "meaning": "物體；目標；反對",
+    "meaning": "物體；目標；對象；受詞；反對",
     "pos": "n/v",
     "difficulty": 2,
     "example": "A strange object was found. I object to the plan.",
@@ -617,7 +617,7 @@ module.exports = [
   {
     "word": "occasion",
     "phonetic": "/əˈkeɪʒən/",
-    "meaning": "場合；時機",
+    "meaning": "場合；時機；理由；引起",
     "pos": "n",
     "difficulty": 2,
     "example": "Birthdays are happy occasions for celebration.",
@@ -626,7 +626,7 @@ module.exports = [
   {
     "word": "opinion",
     "phonetic": "/əˈpɪnjən/",
-    "meaning": "意見；看法",
+    "meaning": "意見；看法；評價",
     "pos": "n",
     "difficulty": 2,
     "example": "In my opinion, we should postpone the event.",
@@ -635,7 +635,7 @@ module.exports = [
   {
     "word": "opportunity",
     "phonetic": "/ˌɑːpərˈtuːnɪti/",
-    "meaning": "機會",
+    "meaning": "機會；時機",
     "pos": "n",
     "difficulty": 3,
     "example": "This is a great opportunity for career growth.",
@@ -644,7 +644,7 @@ module.exports = [
   {
     "word": "origin",
     "phonetic": "/ˈɔːrɪdʒɪn/",
-    "meaning": "來源；血統",
+    "meaning": "起源；來源；出身；起點",
     "pos": "n",
     "difficulty": 2,
     "example": "Scientists study the origin of the universe.",
@@ -653,7 +653,7 @@ module.exports = [
   {
     "word": "passage",
     "phonetic": "/ˈpæsɪdʒ/",
-    "meaning": "通道；段落",
+    "meaning": "通道；段落；經過；通過",
     "pos": "n",
     "difficulty": 2,
     "example": "Read the passage and answer the questions.",
@@ -662,7 +662,7 @@ module.exports = [
   {
     "word": "patience",
     "phonetic": "/ˈpeɪʃəns/",
-    "meaning": "耐心",
+    "meaning": "耐心；耐性",
     "pos": "n",
     "difficulty": 2,
     "example": "Learning a language requires a lot of patience.",
@@ -671,7 +671,7 @@ module.exports = [
   {
     "word": "pattern",
     "phonetic": "/ˈpætərn/",
-    "meaning": "模式；圖案",
+    "meaning": "圖案；模式；樣式；型態；典範",
     "pos": "n",
     "difficulty": 2,
     "example": "I noticed a pattern in the data.",
@@ -680,7 +680,7 @@ module.exports = [
   {
     "word": "period",
     "phonetic": "/ˈpɪriəd/",
-    "meaning": "期間；時期",
+    "meaning": "時期；期間；句號；課時；生理期",
     "pos": "n",
     "difficulty": 2,
     "example": "The project will be completed within a six-month period.",
@@ -689,7 +689,7 @@ module.exports = [
   {
     "word": "pleasure",
     "phonetic": "/ˈplɛʒər/",
-    "meaning": "快樂；樂趣",
+    "meaning": "快樂；樂趣；榮幸；滿足；愉悅",
     "pos": "n",
     "difficulty": 2,
     "example": "It was a pleasure meeting you.",
@@ -699,7 +699,7 @@ module.exports = [
   {
     "word": "poison",
     "phonetic": "/ˈpɔɪzən/",
-    "meaning": "毒藥",
+    "meaning": "毒藥；毒素；下毒；毒害；毒化",
     "pos": "n",
     "difficulty": 2,
     "example": "Some mushrooms contain poison.",
@@ -708,7 +708,7 @@ module.exports = [
   {
     "word": "presence",
     "phonetic": "/ˈprɛzəns/",
-    "meaning": "存在；出席",
+    "meaning": "出席；存在；風采；儀表；在場",
     "pos": "n",
     "difficulty": 2,
     "example": "Your presence at the meeting is required.",
@@ -718,7 +718,7 @@ module.exports = [
   {
     "word": "pressure",
     "phonetic": "/ˈprɛʃər/",
-    "meaning": "壓力",
+    "meaning": "壓力；壓迫；施壓；迫使；壓強",
     "pos": "n",
     "difficulty": 2,
     "example": "She works well under pressure.",
@@ -727,7 +727,7 @@ module.exports = [
   {
     "word": "pride",
     "phonetic": "/praɪd/",
-    "meaning": "驕傲；自尊",
+    "meaning": "自豪；驕傲；自尊；獅群",
     "pos": "n",
     "difficulty": 1,
     "example": "He takes great pride in his work.",
@@ -736,7 +736,7 @@ module.exports = [
   {
     "word": "progress",
     "phonetic": "/ˈprɑːɡrɛs/",
-    "meaning": "進展；進步",
+    "meaning": "進步；進展；前進；發展",
     "pos": "n",
     "difficulty": 2,
     "example": "We are making good progress on the project.",
@@ -745,7 +745,7 @@ module.exports = [
   {
     "word": "protection",
     "phonetic": "/prəˈtɛkʃən/",
-    "meaning": "保護",
+    "meaning": "保護；防護；保障；護身符；保護貿易",
     "pos": "n",
     "difficulty": 3,
     "example": "Sunscreen provides protection against UV rays.",
@@ -755,7 +755,7 @@ module.exports = [
   {
     "word": "purpose",
     "phonetic": "/ˈpɜːrpəs/",
-    "meaning": "目的",
+    "meaning": "目的；意圖；用途；決心；效用",
     "pos": "n",
     "difficulty": 2,
     "example": "What is the purpose of this meeting?",
@@ -764,7 +764,7 @@ module.exports = [
   {
     "word": "reality",
     "phonetic": "/riˈælɪti/",
-    "meaning": "現實",
+    "meaning": "現實；真實；事實；實際情況",
     "pos": "n",
     "difficulty": 2,
     "example": "You need to face reality and make a plan.",
@@ -773,7 +773,7 @@ module.exports = [
   {
     "word": "region",
     "phonetic": "/ˈriːdʒən/",
-    "meaning": "地區；區域",
+    "meaning": "地區；區域；地帶；領域；行政區",
     "pos": "n",
     "difficulty": 2,
     "example": "This region is famous for its tea production.",
@@ -783,7 +783,7 @@ module.exports = [
   {
     "word": "relation",
     "phonetic": "/rɪˈleɪʃən/",
-    "meaning": "關係",
+    "meaning": "關係；關聯；親戚；敘述",
     "pos": "n",
     "difficulty": 2,
     "example": "Good relations between countries promote peace.",
@@ -792,7 +792,7 @@ module.exports = [
   {
     "word": "relief",
     "phonetic": "/rɪˈliːf/",
-    "meaning": "緩解；解脫",
+    "meaning": "寬慰；減輕；救濟；浮雕；換班",
     "pos": "n",
     "difficulty": 2,
     "example": "It was a relief to hear that everyone was safe.",
@@ -801,7 +801,7 @@ module.exports = [
   {
     "word": "reputation",
     "phonetic": "/ˌrɛpjʊˈteɪʃən/",
-    "meaning": "名聲；聲譽",
+    "meaning": "名聲；聲譽；信譽；名氣",
     "pos": "n",
     "difficulty": 3,
     "example": "The restaurant has an excellent reputation.",
@@ -810,7 +810,7 @@ module.exports = [
   {
     "word": "resource",
     "phonetic": "/ˈriːsɔːrs/",
-    "meaning": "資源",
+    "meaning": "資源；財力；謀略；資產",
     "pos": "n",
     "difficulty": 2,
     "example": "Water is our most precious natural resource.",
@@ -819,7 +819,7 @@ module.exports = [
   {
     "word": "respect",
     "phonetic": "/rɪˈspɛkt/",
-    "meaning": "尊重",
+    "meaning": "尊重；敬意；方面；遵守",
     "pos": "n",
     "difficulty": 2,
     "example": "We should show respect for older people.",
@@ -828,7 +828,7 @@ module.exports = [
   {
     "word": "result",
     "phonetic": "/rɪˈzʌlt/",
-    "meaning": "結果",
+    "meaning": "結果；成果；導致；產生",
     "pos": "n",
     "difficulty": 2,
     "example": "The test results will be announced next week.",
@@ -837,7 +837,7 @@ module.exports = [
   {
     "word": "reward",
     "phonetic": "/rɪˈwɔːrd/",
-    "meaning": "獎勵",
+    "meaning": "報酬；獎賞；酬謝；報答；獎勵",
     "pos": "n",
     "difficulty": 2,
     "example": "Hard work often brings great rewards.",
@@ -846,7 +846,7 @@ module.exports = [
   {
     "word": "risk",
     "phonetic": "/rɪsk/",
-    "meaning": "風險",
+    "meaning": "風險；危險；冒險",
     "pos": "n",
     "difficulty": 1,
     "example": "There is a risk of rain this afternoon.",
@@ -855,7 +855,7 @@ module.exports = [
   {
     "word": "role",
     "phonetic": "/roʊl/",
-    "meaning": "角色；作用；職責",
+    "meaning": "角色；職責；任務；功能",
     "pos": "n",
     "difficulty": 1,
     "example": "She plays an important role in the company.",
@@ -864,7 +864,7 @@ module.exports = [
   {
     "word": "root",
     "phonetic": "/ruːt/",
-    "meaning": "根；根源",
+    "meaning": "根；起源；核心；生根；紮根",
     "pos": "n",
     "difficulty": 1,
     "example": "Money is often said to be the root of many problems.",
@@ -873,7 +873,7 @@ module.exports = [
   {
     "word": "selection",
     "phonetic": "/sɪˈlɛkʃən/",
-    "meaning": "篩選出的物件 (名詞)",
+    "meaning": "選擇；精選；選集；挑選",
     "pos": "n",
     "difficulty": 3,
     "example": "The store offers a wide selection of products.",
@@ -882,7 +882,7 @@ module.exports = [
   {
     "word": "shelter",
     "phonetic": "/ˈʃɛltər/",
-    "meaning": "庇護所；遮蔽",
+    "meaning": "避難所；庇護；躲避；遮蓋物",
     "pos": "n",
     "difficulty": 2,
     "example": "They found shelter from the rain under a big tree.",
@@ -891,7 +891,7 @@ module.exports = [
   {
     "word": "signal",
     "phonetic": "/ˈsɪɡnəl/",
-    "meaning": "信號",
+    "meaning": "信號；發信號；標誌；顯著",
     "pos": "n",
     "difficulty": 2,
     "example": "The traffic signal turned green.",
@@ -900,7 +900,7 @@ module.exports = [
   {
     "word": "silence",
     "phonetic": "/ˈsaɪləns/",
-    "meaning": "沉默；安靜",
+    "meaning": "沉默；無聲；使沉默；壓制",
     "pos": "n",
     "difficulty": 2,
     "example": "There was complete silence in the room.",
@@ -909,7 +909,7 @@ module.exports = [
   {
     "word": "situation",
     "phonetic": "/ˌsɪtʃuˈeɪʃən/",
-    "meaning": "情況；處境",
+    "meaning": "情況；處境；位置；工作",
     "pos": "n",
     "difficulty": 3,
     "example": "The situation is getting worse every day.",
@@ -918,7 +918,7 @@ module.exports = [
   {
     "word": "solution",
     "phonetic": "/səˈluːʃən/",
-    "meaning": "解決方案",
+    "meaning": "解決方法；溶液；溶解",
     "pos": "n",
     "difficulty": 2,
     "example": "We need to find a solution to this problem.",
@@ -927,7 +927,7 @@ module.exports = [
   {
     "word": "soul",
     "phonetic": "/soʊl/",
-    "meaning": "靈魂；精神；核心；人",
+    "meaning": "靈魂；心靈；核心；人",
     "pos": "n",
     "difficulty": 1,
     "example": "Music speaks to the soul.",
@@ -937,7 +937,7 @@ module.exports = [
   {
     "word": "species",
     "phonetic": "/ˈspiːʃiːz/",
-    "meaning": "物種",
+    "meaning": "物種；種類",
     "pos": "n",
     "difficulty": 2,
     "example": "Many species of birds live in this forest.",
@@ -946,7 +946,7 @@ module.exports = [
   {
     "word": "spirit",
     "phonetic": "/ˈspɪrɪt/",
-    "meaning": "精神；靈魂",
+    "meaning": "精神；心靈；幽靈；情緒；烈酒",
     "pos": "n",
     "difficulty": 2,
     "example": "The team spirit was very strong during the game.",
@@ -956,7 +956,7 @@ module.exports = [
   {
     "word": "strength",
     "phonetic": "/strɛŋθ/",
-    "meaning": "力量；優勢",
+    "meaning": "力量；強度；長處；兵力",
     "pos": "n",
     "difficulty": 2,
     "example": "One of her strengths is her attention to detail.",
@@ -965,7 +965,7 @@ module.exports = [
   {
     "word": "struggle",
     "phonetic": "/ˈstrʌɡəl/",
-    "meaning": "掙扎；奮鬥",
+    "meaning": "奮鬥；掙扎；努力；鬥爭",
     "pos": "n",
     "difficulty": 2,
     "example": "It was a struggle to finish the work on time.",
@@ -974,7 +974,7 @@ module.exports = [
   {
     "word": "success",
     "phonetic": "/səkˈsɛs/",
-    "meaning": "成功",
+    "meaning": "成功；成就；勝利",
     "pos": "n",
     "difficulty": 2,
     "example": "Hard work is the key to success.",
@@ -983,7 +983,7 @@ module.exports = [
   {
     "word": "supply",
     "phonetic": "/səˈplaɪ/",
-    "meaning": "供應",
+    "meaning": "供應；提供；補給品；庫存",
     "pos": "n",
     "difficulty": 2,
     "example": "The supply of fresh water is limited.",
@@ -993,7 +993,7 @@ module.exports = [
   {
     "word": "surface",
     "phonetic": "/ˈsɜːrfɪs/",
-    "meaning": "表面",
+    "meaning": "表面；水面；浮出水面；外表",
     "pos": "n",
     "difficulty": 2,
     "example": "The surface of the lake was perfectly calm.",
@@ -1002,7 +1002,7 @@ module.exports = [
   {
     "word": "tale",
     "phonetic": "/teɪl/",
-    "meaning": "故事；傳說",
+    "meaning": "故事；傳說；謊言",
     "pos": "n",
     "difficulty": 1,
     "example": "Grandma told us a tale about a brave knight.",
@@ -1011,7 +1011,7 @@ module.exports = [
   {
     "word": "talent",
     "phonetic": "/ˈtælənt/",
-    "meaning": "天賦；才能",
+    "meaning": "天賦；天才；人才",
     "pos": "n",
     "difficulty": 2,
     "example": "She has a natural talent for singing.",
@@ -1021,7 +1021,7 @@ module.exports = [
   {
     "word": "technique",
     "phonetic": "/tɛkˈniːk/",
-    "meaning": "技術；技巧",
+    "meaning": "技巧；技術；手法",
     "pos": "n",
     "difficulty": 3,
     "example": "She learned a new painting technique.",
@@ -1030,7 +1030,7 @@ module.exports = [
   {
     "word": "temperature",
     "phonetic": "/ˈtɛmpərɪtʃər/",
-    "meaning": "溫度",
+    "meaning": "溫度；氣溫；體溫",
     "pos": "n",
     "difficulty": 3,
     "example": "The temperature dropped below zero last night.",
@@ -1039,7 +1039,7 @@ module.exports = [
   {
     "word": "threat",
     "phonetic": "/θrɛt/",
-    "meaning": "威脅",
+    "meaning": "威脅；恐嚇；凶兆",
     "pos": "n",
     "difficulty": 2,
     "example": "Climate change is a serious threat to the planet.",
@@ -1048,7 +1048,7 @@ module.exports = [
   {
     "word": "tradition",
     "phonetic": "/trəˈdɪʃən/",
-    "meaning": "傳統",
+    "meaning": "傳統；慣例",
     "pos": "n",
     "difficulty": 3,
     "example": "Eating dumplings is a tradition in many Asian cultures.",
@@ -1057,7 +1057,7 @@ module.exports = [
   {
     "word": "treasure",
     "phonetic": "/ˈtrɛʒər/",
-    "meaning": "寶藏；珍品",
+    "meaning": "寶藏；珍惜；珍藏；珍品",
     "pos": "n",
     "difficulty": 2,
     "example": "The museum is full of historical treasures.",
@@ -1066,7 +1066,7 @@ module.exports = [
   {
     "word": "union",
     "phonetic": "/ˈjuːnjən/",
-    "meaning": "聯盟；結合；工會；一致",
+    "meaning": "聯盟；工會；結合；一致",
     "pos": "n",
     "difficulty": 1,
     "example": "The labor union is negotiating for better wages.",
@@ -1076,7 +1076,7 @@ module.exports = [
   {
     "word": "variety",
     "phonetic": "/vəˈraɪəti/",
-    "meaning": "多樣性；種類",
+    "meaning": "多樣性；種類；變化；多樣化；綜藝節目",
     "pos": "n",
     "difficulty": 2,
     "example": "The restaurant offers a variety of dishes.",
@@ -1085,7 +1085,7 @@ module.exports = [
   {
     "word": "victim",
     "phonetic": "/ˈvɪktɪm/",
-    "meaning": "受害者",
+    "meaning": "受害者；罹難者；犧牲者；受騙者",
     "pos": "n",
     "difficulty": 2,
     "example": "The victims of the earthquake received aid quickly.",
@@ -1094,7 +1094,7 @@ module.exports = [
   {
     "word": "violence",
     "phonetic": "/ˈvaɪələns/",
-    "meaning": "暴力",
+    "meaning": "暴力；猛烈；激進",
     "pos": "n",
     "difficulty": 2,
     "example": "The government is trying to reduce violence in cities.",
@@ -1103,7 +1103,7 @@ module.exports = [
   {
     "word": "vision",
     "phonetic": "/ˈvɪʒən/",
-    "meaning": "視野；願景",
+    "meaning": "視力；遠見；幻象；視覺；眼光",
     "pos": "n",
     "difficulty": 2,
     "example": "The CEO shared her vision for the company's future.",
@@ -1112,7 +1112,7 @@ module.exports = [
   {
     "word": "wealth",
     "phonetic": "/wɛlθ/",
-    "meaning": "財富",
+    "meaning": "財富；豐富；資源；財產",
     "pos": "n",
     "difficulty": 2,
     "example": "Health is more important than wealth.",
@@ -1121,7 +1121,7 @@ module.exports = [
   {
     "word": "weapon",
     "phonetic": "/ˈwɛpən/",
-    "meaning": "武器",
+    "meaning": "武器；工具；手段",
     "pos": "n",
     "difficulty": 2,
     "example": "Knowledge is the most powerful weapon.",
@@ -1130,7 +1130,7 @@ module.exports = [
   {
     "word": "wisdom",
     "phonetic": "/ˈwɪzdəm/",
-    "meaning": "智慧",
+    "meaning": "智慧；明智；見識；名言",
     "pos": "n",
     "difficulty": 2,
     "example": "We can learn wisdom from older generations.",
@@ -1139,7 +1139,7 @@ module.exports = [
   {
     "word": "acceptable",
     "phonetic": "/əkˈsɛptəbəl/",
-    "meaning": "可接受的",
+    "meaning": "可接受；滿意；尚可；合宜",
     "pos": "adj",
     "difficulty": 3,
     "example": "The quality of the work is acceptable.",
@@ -1148,7 +1148,7 @@ module.exports = [
   {
     "word": "accurate",
     "phonetic": "/ˈækjərɪt/",
-    "meaning": "準確的",
+    "meaning": "準確；精確；正確",
     "pos": "adj",
     "difficulty": 2,
     "example": "Make sure the information is accurate before publishing.",
@@ -1157,7 +1157,7 @@ module.exports = [
   {
     "word": "actual",
     "phonetic": "/ˈæktʃuəl/",
-    "meaning": "實際的",
+    "meaning": "實際；真實；現行",
     "pos": "adj",
     "difficulty": 2,
     "example": "The actual cost was higher than the estimate.",
@@ -1166,7 +1166,7 @@ module.exports = [
   {
     "word": "ancient",
     "phonetic": "/ˈeɪnʃənt/",
-    "meaning": "古老的",
+    "meaning": "古老；古代；古舊",
     "pos": "adj",
     "difficulty": 2,
     "example": "They visited an ancient temple in the mountains.",
@@ -1175,7 +1175,7 @@ module.exports = [
   {
     "word": "apparent",
     "phonetic": "/əˈpærənt/",
-    "meaning": "明顯的；表面上的",
+    "meaning": "明顯；表面；顯然",
     "pos": "adj",
     "difficulty": 2,
     "example": "It was apparent that she was not feeling well.",
@@ -1184,7 +1184,7 @@ module.exports = [
   {
     "word": "aware",
     "phonetic": "/əˈwɛr/",
-    "meaning": "意識到；察覺；明白；知道",
+    "meaning": "察覺；意識；知道；明白",
     "pos": "adj",
     "difficulty": 1,
     "example": "Are you aware of the new company policy?",
@@ -1193,7 +1193,7 @@ module.exports = [
   {
     "word": "bare",
     "phonetic": "/bɛr/",
-    "meaning": "赤裸；光禿；僅僅；揭露；露出",
+    "meaning": "赤裸；光禿；僅僅；露出；暴露",
     "pos": "adj",
     "difficulty": 1,
     "example": "The walls were bare with no decorations.",
@@ -1202,7 +1202,7 @@ module.exports = [
   {
     "word": "broad",
     "phonetic": "/brɔːd/",
-    "meaning": "寬闊；廣泛；概括；清晰",
+    "meaning": "寬闊；廣泛；概括；寬廣",
     "pos": "adj",
     "difficulty": 1,
     "example": "The river is very broad at this point.",
@@ -1211,7 +1211,7 @@ module.exports = [
   {
     "word": "capable",
     "phonetic": "/ˈkeɪpəbəl/",
-    "meaning": "有能力的",
+    "meaning": "有能力；足以；能幹；勝任",
     "pos": "adj",
     "difficulty": 2,
     "example": "She is capable of managing the entire team.",
@@ -1220,7 +1220,7 @@ module.exports = [
   {
     "word": "creative",
     "phonetic": "/kriˈeɪtɪv/",
-    "meaning": "有創意的",
+    "meaning": "有創意；創造性；啟發",
     "pos": "adj",
     "difficulty": 2,
     "example": "She found a creative solution to the problem.",
@@ -1229,7 +1229,7 @@ module.exports = [
   {
     "word": "crucial",
     "phonetic": "/ˈkruːʃəl/",
-    "meaning": "關鍵的；至關重要的",
+    "meaning": "至關重要；關鍵；決定性",
     "pos": "adj",
     "difficulty": 2,
     "example": "Timing is crucial for the success of this project.",
@@ -1239,7 +1239,7 @@ module.exports = [
   {
     "word": "curious",
     "phonetic": "/ˈkjʊriəs/",
-    "meaning": "好奇的",
+    "meaning": "好奇；稀奇；古怪",
     "pos": "adj",
     "difficulty": 2,
     "example": "The curious child asked many questions.",
@@ -1248,7 +1248,7 @@ module.exports = [
   {
     "word": "decent",
     "phonetic": "/ˈdiːsənt/",
-    "meaning": "像樣的；體面的",
+    "meaning": "正派；體體面面；像樣；親切；合宜",
     "pos": "adj",
     "difficulty": 2,
     "example": "He found a decent apartment near the office.",
@@ -1257,7 +1257,7 @@ module.exports = [
   {
     "word": "delicate",
     "phonetic": "/ˈdɛlɪkɪt/",
-    "meaning": "精緻的；脆弱的",
+    "meaning": "脆弱；精緻；纖細；微妙；清淡",
     "pos": "adj",
     "difficulty": 2,
     "example": "Be careful with that vase; it is very delicate.",
@@ -1266,7 +1266,7 @@ module.exports = [
   {
     "word": "desperate",
     "phonetic": "/ˈdɛspərɪt/",
-    "meaning": "絕望的；拚命的",
+    "meaning": "絕望；拼命；渴望；危急",
     "pos": "adj",
     "difficulty": 3,
     "example": "He was desperate to find a job.",
@@ -1285,7 +1285,7 @@ module.exports = [
   {
     "word": "elegant",
     "phonetic": "/ˈɛlɪɡənt/",
-    "meaning": "優雅的",
+    "meaning": "優雅；典雅；高雅",
     "pos": "adj",
     "difficulty": 2,
     "example": "She wore an elegant dress to the party.",
@@ -1294,7 +1294,7 @@ module.exports = [
   {
     "word": "enormous",
     "phonetic": "/ɪˈnɔːrməs/",
-    "meaning": "巨大的",
+    "meaning": "巨大；龐大；極大",
     "pos": "adj",
     "difficulty": 2,
     "example": "They built an enormous shopping mall in the city center.",
@@ -1304,7 +1304,7 @@ module.exports = [
   {
     "word": "essential",
     "phonetic": "/ɪˈsɛnʃəl/",
-    "meaning": "本質的；不可或缺的",
+    "meaning": "必要；必需品；基本；要素",
     "pos": "adj",
     "difficulty": 3,
     "example": "Water is essential for survival.",
@@ -1314,7 +1314,7 @@ module.exports = [
   {
     "word": "evil",
     "phonetic": "/ˈiːvəl/",
-    "meaning": "邪惡；有害；罪惡；禍害",
+    "meaning": "邪惡；罪惡；有害",
     "pos": "adj",
     "difficulty": 1,
     "example": "The villain in the movie was truly evil.",
@@ -1323,7 +1323,7 @@ module.exports = [
   {
     "word": "exact",
     "phonetic": "/ɪɡˈzækt/",
-    "meaning": "精確；嚴謹；索取；要求",
+    "meaning": "精確；確切；強求；索取",
     "pos": "adj",
     "difficulty": 1,
     "example": "I don't remember the exact date.",
@@ -1333,7 +1333,7 @@ module.exports = [
   {
     "word": "familiar",
     "phonetic": "/fəˈmɪliər/",
-    "meaning": "熟悉的",
+    "meaning": "熟悉；親近；常客",
     "pos": "adj",
     "difficulty": 2,
     "example": "This song sounds very familiar.",
@@ -1342,7 +1342,7 @@ module.exports = [
   {
     "word": "fierce",
     "phonetic": "/fɪrs/",
-    "meaning": "兇猛的；激烈的",
+    "meaning": "兇猛；激烈；狂暴",
     "pos": "adj",
     "difficulty": 2,
     "example": "There was fierce competition for the position.",
@@ -1351,7 +1351,7 @@ module.exports = [
   {
     "word": "firm",
     "phonetic": "/fɜːrm/",
-    "meaning": "堅定的；結實的",
+    "meaning": "堅固；公司；堅定；穩固",
     "pos": "adj",
     "difficulty": 1,
     "example": "He gave a firm handshake.",
@@ -1361,7 +1361,7 @@ module.exports = [
   {
     "word": "formal",
     "phonetic": "/ˈfɔːrməl/",
-    "meaning": "正式的",
+    "meaning": "正式；正規；形式",
     "pos": "adj",
     "difficulty": 2,
     "example": "The dinner is a formal event, so please wear a suit.",
@@ -1370,7 +1370,7 @@ module.exports = [
   {
     "word": "former",
     "phonetic": "/ˈfɔːrmər/",
-    "meaning": "以前的",
+    "meaning": "以前；前者",
     "pos": "adj",
     "difficulty": 2,
     "example": "The former president gave a speech yesterday.",
@@ -1379,7 +1379,7 @@ module.exports = [
   {
     "word": "frequent",
     "phonetic": "/ˈfriːkwənt/",
-    "meaning": "頻繁的",
+    "meaning": "頻繁；經常；常去",
     "pos": "adj",
     "difficulty": 2,
     "example": "He is a frequent visitor to this restaurant.",
@@ -1388,7 +1388,7 @@ module.exports = [
   {
     "word": "global",
     "phonetic": "/ˈɡloʊbəl/",
-    "meaning": "全球的",
+    "meaning": "全球；全面；全世界",
     "pos": "adj",
     "difficulty": 2,
     "example": "Climate change is a global problem.",
@@ -1397,7 +1397,7 @@ module.exports = [
   {
     "word": "guilty",
     "phonetic": "/ˈɡɪlti/",
-    "meaning": "有罪的；內疚的",
+    "meaning": "有罪；內疚",
     "pos": "adj",
     "difficulty": 2,
     "example": "He felt guilty about lying to his friend.",
@@ -1406,7 +1406,7 @@ module.exports = [
   {
     "word": "harsh",
     "phonetic": "/hɑːrʃ/",
-    "meaning": "嚴厲；嚴酷；刺耳；粗糙",
+    "meaning": "嚴厲；刺耳；粗糙；殘酷",
     "pos": "adj",
     "difficulty": 1,
     "example": "The winter weather here can be very harsh.",
@@ -1415,7 +1415,7 @@ module.exports = [
   {
     "word": "historic",
     "phonetic": "/hɪˈstɔːrɪk/",
-    "meaning": "歷史性的",
+    "meaning": "具歷史意義；著名；歷史性",
     "pos": "adj",
     "difficulty": 2,
     "example": "The signing of the treaty was a historic event.",
@@ -1424,7 +1424,7 @@ module.exports = [
   {
     "word": "hollow",
     "phonetic": "/ˈhɑːloʊ/",
-    "meaning": "空心的",
+    "meaning": "空心；凹陷；虛偽；坑；挖空",
     "pos": "adj",
     "difficulty": 2,
     "example": "The old tree had a hollow trunk.",
@@ -1433,7 +1433,7 @@ module.exports = [
   {
     "word": "ideal",
     "phonetic": "/aɪˈdiːəl/",
-    "meaning": "理想的",
+    "meaning": "理想；典範；想像",
     "pos": "adj",
     "difficulty": 1,
     "example": "This location is ideal for a new office.",
@@ -1442,7 +1442,7 @@ module.exports = [
   {
     "word": "immediate",
     "phonetic": "/ɪˈmiːdiɪt/",
-    "meaning": "立即的",
+    "meaning": "立即；直接；最接近",
     "pos": "adj",
     "difficulty": 3,
     "example": "The problem requires immediate attention.",
@@ -1451,7 +1451,7 @@ module.exports = [
   {
     "word": "incredible",
     "phonetic": "/ɪnˈkrɛdɪbəl/",
-    "meaning": "難以置信的",
+    "meaning": "難以置信；極大；極好",
     "pos": "adj",
     "difficulty": 3,
     "example": "The view from the mountain top was incredible.",
@@ -1460,7 +1460,7 @@ module.exports = [
   {
     "word": "inner",
     "phonetic": "/ˈɪnər/",
-    "meaning": "內部；內心；私人",
+    "meaning": "內部；內心；內在",
     "pos": "adj",
     "difficulty": 1,
     "example": "She listened to her inner voice.",
@@ -1469,7 +1469,7 @@ module.exports = [
   {
     "word": "intense",
     "phonetic": "/ɪnˈtɛns/",
-    "meaning": "強烈的；激烈的",
+    "meaning": "強烈；劇烈；極度；熱切",
     "pos": "adj",
     "difficulty": 2,
     "example": "The heat was intense during the summer.",
@@ -1478,7 +1478,7 @@ module.exports = [
   {
     "word": "loose",
     "phonetic": "/luːs/",
-    "meaning": "鬆的",
+    "meaning": "鬆；寬鬆；解開；釋放",
     "pos": "adj",
     "difficulty": 1,
     "example": "The screw is loose; can you tighten it?",
@@ -1487,7 +1487,7 @@ module.exports = [
   {
     "word": "massive",
     "phonetic": "/ˈmæsɪv/",
-    "meaning": "巨大的；大量的",
+    "meaning": "巨大；厚重；大規模；大塊",
     "pos": "adj",
     "difficulty": 2,
     "example": "The project requires a massive investment.",
@@ -1497,7 +1497,7 @@ module.exports = [
   {
     "word": "mature",
     "phonetic": "/məˈtʃʊr/",
-    "meaning": "成熟的",
+    "meaning": "成熟；成年；到期；慎重",
     "pos": "adj",
     "difficulty": 2,
     "example": "He is very mature for his age.",
@@ -1506,7 +1506,7 @@ module.exports = [
   {
     "word": "minor",
     "phonetic": "/ˈmaɪnər/",
-    "meaning": "次要；較小；未成年人；副修",
+    "meaning": "次要；未成年；輔修；輕微",
     "pos": "adj",
     "difficulty": 1,
     "example": "There were only minor problems with the plan.",
@@ -1516,7 +1516,7 @@ module.exports = [
   {
     "word": "modest",
     "phonetic": "/ˈmɑːdɪst/",
-    "meaning": "謙虛的；適度的",
+    "meaning": "謙虛；適度；端莊；質樸",
     "pos": "adj",
     "difficulty": 2,
     "example": "Despite his success, he remained modest.",
@@ -1525,7 +1525,7 @@ module.exports = [
   {
     "word": "native",
     "phonetic": "/ˈneɪtɪv/",
-    "meaning": "本地的；母語的",
+    "meaning": "本地；原產；土著；天生",
     "pos": "adj",
     "difficulty": 2,
     "example": "She is a native speaker of Japanese.",
@@ -1534,7 +1534,7 @@ module.exports = [
   {
     "word": "noble",
     "phonetic": "/ˈnoʊbəl/",
-    "meaning": "高尚；宏偉；貴族",
+    "meaning": "高尚；貴族；崇高；宏偉",
     "pos": "adj",
     "difficulty": 1,
     "example": "Teaching is a noble profession.",
@@ -1543,7 +1543,7 @@ module.exports = [
   {
     "word": "obvious",
     "phonetic": "/ˈɑːbviəs/",
-    "meaning": "明顯的",
+    "meaning": "明顯；顯著；平庸",
     "pos": "adj",
     "difficulty": 2,
     "example": "The answer is obvious if you think about it.",
@@ -1553,7 +1553,7 @@ module.exports = [
   {
     "word": "official",
     "phonetic": "/əˈfɪʃəl/",
-    "meaning": "官方的；正式的",
+    "meaning": "官方；正式；官員；公職",
     "pos": "adj",
     "difficulty": 2,
     "example": "English is the official language of the meeting.",
@@ -1562,7 +1562,7 @@ module.exports = [
   {
     "word": "ordinary",
     "phonetic": "/ˈɔːrdɪˌnɛri/",
-    "meaning": "普通的",
+    "meaning": "普通；平凡；常規；平淡",
     "pos": "adj",
     "difficulty": 2,
     "example": "It looked like an ordinary day, but then something amazing happened.",
@@ -1571,7 +1571,7 @@ module.exports = [
   {
     "word": "original",
     "phonetic": "/əˈrɪdʒɪnəl/",
-    "meaning": "原始的；獨創的",
+    "meaning": "最初；原創；原文；原作；新穎",
     "pos": "adj",
     "difficulty": 2,
     "example": "Is this the original painting or a copy?",
@@ -1580,7 +1580,7 @@ module.exports = [
   {
     "word": "pale",
     "phonetic": "/peɪl/",
-    "meaning": "蒼白的；淡色的",
+    "meaning": "蒼白；淺色；淡薄；變色；柵欄",
     "pos": "adj",
     "difficulty": 1,
     "example": "She looked pale after the long illness.",
@@ -1589,7 +1589,7 @@ module.exports = [
   {
     "word": "pleasant",
     "phonetic": "/ˈplɛzənt/",
-    "meaning": "愉快的；宜人的",
+    "meaning": "令人愉悅；親切；舒適；和藹",
     "pos": "adj",
     "difficulty": 2,
     "example": "The weather was very pleasant today.",
@@ -1598,7 +1598,7 @@ module.exports = [
   {
     "word": "precious",
     "phonetic": "/ˈprɛʃəs/",
-    "meaning": "珍貴的",
+    "meaning": "珍貴；寶貴；矯揉造作；非常",
     "pos": "adj",
     "difficulty": 2,
     "example": "Time is precious; don't waste it.",
@@ -1607,7 +1607,7 @@ module.exports = [
   {
     "word": "previous",
     "phonetic": "/ˈpriːviəs/",
-    "meaning": "先前的",
+    "meaning": "以前；先前；過早",
     "pos": "adj",
     "difficulty": 2,
     "example": "She left her previous job to start a business.",
@@ -1617,7 +1617,7 @@ module.exports = [
   {
     "word": "primary",
     "phonetic": "/ˈpraɪˌmɛri/",
-    "meaning": "首要的；初級的",
+    "meaning": "主要；最初；基本；首選；初選",
     "pos": "adj",
     "difficulty": 2,
     "example": "The primary goal is to increase sales.",
@@ -1626,7 +1626,7 @@ module.exports = [
   {
     "word": "proper",
     "phonetic": "/ˈprɑːpər/",
-    "meaning": "適當的；正確的",
+    "meaning": "適當；正確；合體統；完全",
     "pos": "adj",
     "difficulty": 2,
     "example": "Make sure you use the proper tools for the job.",
@@ -1635,7 +1635,7 @@ module.exports = [
   {
     "word": "pure",
     "phonetic": "/pjʊr/",
-    "meaning": "純的；純淨的",
+    "meaning": "純粹；純潔；純淨；完全",
     "pos": "adj",
     "difficulty": 1,
     "example": "This is made from pure cotton.",
@@ -1644,7 +1644,7 @@ module.exports = [
   {
     "word": "rapid",
     "phonetic": "/ˈræpɪd/",
-    "meaning": "快速的",
+    "meaning": "快速；急促",
     "pos": "adj",
     "difficulty": 1,
     "example": "Technology is changing at a rapid pace.",
@@ -1654,7 +1654,7 @@ module.exports = [
   {
     "word": "rare",
     "phonetic": "/rɛr/",
-    "meaning": "稀有的；罕見的",
+    "meaning": "罕見；半熟",
     "pos": "adj",
     "difficulty": 1,
     "example": "This is a rare species of butterfly.",
@@ -1663,7 +1663,7 @@ module.exports = [
   {
     "word": "reasonable",
     "phonetic": "/ˈriːzənəbəl/",
-    "meaning": "合理的",
+    "meaning": "合理；講理；適度",
     "pos": "adj",
     "difficulty": 3,
     "example": "The price is very reasonable for the quality.",
@@ -1672,7 +1672,7 @@ module.exports = [
   {
     "word": "remarkable",
     "phonetic": "/rɪˈmɑːrkəbəl/",
-    "meaning": "非凡的；值得注意的",
+    "meaning": "卓越；顯著；非凡",
     "pos": "adj",
     "difficulty": 3,
     "example": "She made a remarkable recovery after surgery.",
@@ -1681,7 +1681,7 @@ module.exports = [
   {
     "word": "remote",
     "phonetic": "/rɪˈmoʊt/",
-    "meaning": "遙遠的；偏僻的",
+    "meaning": "遙遠；偏僻；遙控器；冷淡",
     "pos": "adj",
     "difficulty": 2,
     "example": "The village is in a remote area of the country.",
@@ -1690,7 +1690,7 @@ module.exports = [
   {
     "word": "rough",
     "phonetic": "/rʌf/",
-    "meaning": "粗糙；粗略；艱難；粗魯；草圖",
+    "meaning": "粗糙；粗略；艱難；粗魯；草擬",
     "pos": "adj",
     "difficulty": 1,
     "example": "The surface of the road was very rough.",
@@ -1699,7 +1699,7 @@ module.exports = [
   {
     "word": "senior",
     "phonetic": "/ˈsiːniər/",
-    "meaning": "資深的；年長的",
+    "meaning": "資深；前輩；高年級；長者",
     "pos": "adj",
     "difficulty": 2,
     "example": "He is the senior manager of the department.",
@@ -1708,7 +1708,7 @@ module.exports = [
   {
     "word": "severe",
     "phonetic": "/sɪˈvɪr/",
-    "meaning": "嚴重的；嚴厲的",
+    "meaning": "嚴重；嚴厲；嚴謹",
     "pos": "adj",
     "difficulty": 2,
     "example": "The storm caused severe damage to the area.",
@@ -1717,7 +1717,7 @@ module.exports = [
   {
     "word": "slight",
     "phonetic": "/slaɪt/",
-    "meaning": "輕微的",
+    "meaning": "輕微；纖弱；藐視；輕蔑",
     "pos": "adj",
     "difficulty": 2,
     "example": "There was a slight delay in the schedule.",
@@ -1726,7 +1726,7 @@ module.exports = [
   {
     "word": "solid",
     "phonetic": "/ˈsɑːlɪd/",
-    "meaning": "堅固的；實心的",
+    "meaning": "固體；堅固；可靠；純粹",
     "pos": "adj",
     "difficulty": 1,
     "example": "The table is made of solid wood.",
@@ -1735,7 +1735,7 @@ module.exports = [
   {
     "word": "steady",
     "phonetic": "/ˈstɛdi/",
-    "meaning": "穩定的",
+    "meaning": "穩定；穩固；持續；使穩定",
     "pos": "adj",
     "difficulty": 2,
     "example": "The patient is making steady progress.",
@@ -1744,7 +1744,7 @@ module.exports = [
   {
     "word": "shallow",
     "phonetic": "/ˈʃæloʊ/",
-    "meaning": "淺的",
+    "meaning": "淺；膚淺；淺灘；變淺",
     "pos": "adj",
     "difficulty": 2,
     "example": "The swimming pool has a shallow end for children.",
@@ -1753,7 +1753,7 @@ module.exports = [
   {
     "word": "strict",
     "phonetic": "/strɪkt/",
-    "meaning": "嚴格的；精確的",
+    "meaning": "嚴格；精確；完全",
     "pos": "adj",
     "difficulty": 2,
     "example": "The school has strict rules about uniforms.",
@@ -1763,7 +1763,7 @@ module.exports = [
   {
     "word": "suitable",
     "phonetic": "/ˈsuːtəbəl/",
-    "meaning": "合適的",
+    "meaning": "合適",
     "pos": "adj",
     "difficulty": 2,
     "example": "This movie is not suitable for children.",
@@ -1772,7 +1772,7 @@ module.exports = [
   {
     "word": "tough",
     "phonetic": "/tʌf/",
-    "meaning": "堅韌的；困難的",
+    "meaning": "堅韌；棘手；強硬；惡棍；粗暴",
     "pos": "adj",
     "difficulty": 1,
     "example": "It was a tough decision to make.",
@@ -1782,7 +1782,7 @@ module.exports = [
   {
     "word": "typical",
     "phonetic": "/ˈtɪpɪkəl/",
-    "meaning": "典型的",
+    "meaning": "典型；特有",
     "pos": "adj",
     "difficulty": 2,
     "example": "This is a typical example of modern architecture.",
@@ -1791,7 +1791,7 @@ module.exports = [
   {
     "word": "plain",
     "phonetic": "/pleɪn/",
-    "meaning": "平易的；純色的",
+    "meaning": "樸素；清楚；平原；坦白",
     "pos": "adj",
     "difficulty": 1,
     "example": "She wore a plain white dress to the meeting.",
@@ -1800,7 +1800,7 @@ module.exports = [
   {
     "word": "unique",
     "phonetic": "/juˈniːk/",
-    "meaning": "獨特的",
+    "meaning": "獨特；唯一",
     "pos": "adj",
     "difficulty": 2,
     "example": "Everyone has a unique fingerprint.",
@@ -1809,7 +1809,7 @@ module.exports = [
   {
     "word": "unusual",
     "phonetic": "/ʌnˈjuːʒuəl/",
-    "meaning": "不尋常的",
+    "meaning": "異常；罕見；特別",
     "pos": "adj",
     "difficulty": 2,
     "example": "It is unusual to see snow in this region.",
@@ -1818,7 +1818,7 @@ module.exports = [
   {
     "word": "valuable",
     "phonetic": "/ˈvæljuəbəl/",
-    "meaning": "有價值的；貴重的",
+    "meaning": "貴重；有價值；有用；貴重物品",
     "pos": "adj",
     "difficulty": 2,
     "example": "Time is the most valuable resource we have.",
@@ -1827,7 +1827,7 @@ module.exports = [
   {
     "word": "visible",
     "phonetic": "/ˈvɪzɪbəl/",
-    "meaning": "可見的",
+    "meaning": "可見；明顯；顯而易見；在場",
     "pos": "adj",
     "difficulty": 2,
     "example": "The mountains were visible from the hotel window.",
@@ -1836,7 +1836,7 @@ module.exports = [
   {
     "word": "vital",
     "phonetic": "/ˈvaɪtəl/",
-    "meaning": "至關重要；充滿活力；維持生命",
+    "meaning": "至關重要；維持生命；充滿活力；生死攸關",
     "pos": "adj",
     "difficulty": 1,
     "example": "Exercise is vital for maintaining good health.",
@@ -1846,7 +1846,7 @@ module.exports = [
   {
     "word": "wise",
     "phonetic": "/waɪz/",
-    "meaning": "聰明；明智；博學",
+    "meaning": "明智；聰明；博學；賢明",
     "pos": "adj",
     "difficulty": 1,
     "example": "It is wise to save money for the future.",
@@ -1856,7 +1856,7 @@ module.exports = [
   {
     "word": "worthy",
     "phonetic": "/ˈwɜːrði/",
-    "meaning": "值得的",
+    "meaning": "值得；配得上；可敬；傑出人物",
     "pos": "adj",
     "difficulty": 2,
     "example": "The charity is worthy of our support.",
@@ -1875,7 +1875,7 @@ module.exports = [
   {
     "word": "backbone",
     "phonetic": "/ˈbækboʊn/",
-    "meaning": "脊樑；支柱",
+    "meaning": "脊椎；骨幹；支柱；毅力",
     "pos": "n",
     "difficulty": 2,
     "example": "Small businesses are the backbone of the economy.",
@@ -1885,7 +1885,7 @@ module.exports = [
   {
     "word": "breakdown",
     "phonetic": "/ˈbreɪkdaʊn/",
-    "meaning": "故障；精神崩潰；明細",
+    "meaning": "故障；崩潰；明細；衰竭",
     "pos": "n",
     "difficulty": 3,
     "example": "The car had a breakdown on the highway.",
@@ -1895,7 +1895,7 @@ module.exports = [
   {
     "word": "breakthrough",
     "phonetic": "/ˈbreɪkθruː/",
-    "meaning": "突破",
+    "meaning": "突破；重大進展；發現",
     "pos": "n",
     "difficulty": 4,
     "example": "Scientists made a major breakthrough in cancer research.",
@@ -1904,7 +1904,7 @@ module.exports = [
   {
     "word": "downfall",
     "phonetic": "/ˈdaʊnfɔːl/",
-    "meaning": "垮台；衰敗",
+    "meaning": "垮台；衰落；大雨",
     "pos": "n",
     "difficulty": 2,
     "example": "Pride was his downfall.",
@@ -1913,7 +1913,7 @@ module.exports = [
   {
     "word": "downside",
     "phonetic": "/ˈdaʊnsaɪd/",
-    "meaning": "缺點；不利面",
+    "meaning": "缺點；負面",
     "pos": "n",
     "difficulty": 2,
     "example": "The downside of living in the city is the noise.",
@@ -1923,7 +1923,7 @@ module.exports = [
   {
     "word": "drawback",
     "phonetic": "/ˈdrɔːbæk/",
-    "meaning": "缺點",
+    "meaning": "缺點；不利條件",
     "pos": "n",
     "difficulty": 2,
     "example": "The only drawback is the high price.",
@@ -1933,7 +1933,7 @@ module.exports = [
   {
     "word": "flashback",
     "phonetic": "/ˈflæʃbæk/",
-    "meaning": "倒敘；閃回",
+    "meaning": "倒敘；閃回；回想",
     "pos": "n",
     "difficulty": 3,
     "example": "The movie uses flashbacks to tell the story.",
@@ -1942,7 +1942,7 @@ module.exports = [
   {
     "word": "hardship",
     "phonetic": "/ˈhɑːrdʃɪp/",
-    "meaning": "困苦；艱難",
+    "meaning": "艱難；困苦",
     "pos": "n",
     "difficulty": 2,
     "example": "Many families face financial hardship.",
@@ -1951,7 +1951,7 @@ module.exports = [
   {
     "word": "income",
     "phonetic": "/ˈɪnkʌm/",
-    "meaning": "收入",
+    "meaning": "收入；收益",
     "pos": "n",
     "difficulty": 2,
     "example": "His monthly income is enough to cover all expenses.",
@@ -1960,7 +1960,7 @@ module.exports = [
   {
     "word": "insight",
     "phonetic": "/ˈɪnsaɪt/",
-    "meaning": "洞察力；見解",
+    "meaning": "洞察；見解；眼光",
     "pos": "n",
     "difficulty": 2,
     "example": "The report provides valuable insights into consumer behavior.",
@@ -1969,7 +1969,7 @@ module.exports = [
   {
     "word": "layout",
     "phonetic": "/ˈleɪaʊt/",
-    "meaning": "布局；排版",
+    "meaning": "佈局；設計；編排",
     "pos": "n",
     "difficulty": 2,
     "example": "The layout of the office is very efficient.",
@@ -1987,7 +1987,7 @@ module.exports = [
   {
     "word": "newcomer",
     "phonetic": "/ˈnjuːˌkʌmər/",
-    "meaning": "新來者",
+    "meaning": "新來者；新手",
     "pos": "n",
     "difficulty": 2,
     "example": "The newcomer quickly adapted to the work environment.",
@@ -1996,7 +1996,7 @@ module.exports = [
   {
     "word": "offspring",
     "phonetic": "/ˈɔːfsprɪŋ/",
-    "meaning": "後代；子女",
+    "meaning": "後代；子女；幼獸；產物",
     "pos": "n",
     "difficulty": 3,
     "example": "The bird feeds its offspring several times a day.",
@@ -2005,7 +2005,7 @@ module.exports = [
   {
     "word": "outbreak",
     "phonetic": "/ˈaʊtbreɪk/",
-    "meaning": "爆發",
+    "meaning": "爆發；突發",
     "pos": "n",
     "difficulty": 2,
     "example": "There was an outbreak of the flu at the school.",
@@ -2014,7 +2014,7 @@ module.exports = [
   {
     "word": "pitfall",
     "phonetic": "/ˈpɪtfɔːl/",
-    "meaning": "陷阱；隱患",
+    "meaning": "陷阱；隱患；困難；圈套",
     "pos": "n",
     "difficulty": 2,
     "example": "Be aware of the common pitfalls when starting a business.",
@@ -2023,7 +2023,7 @@ module.exports = [
   {
     "word": "shortcut",
     "phonetic": "/ˈʃɔːrtkʌt/",
-    "meaning": "捷徑；快捷鍵",
+    "meaning": "捷徑；近路",
     "pos": "n",
     "difficulty": 2,
     "example": "I know a shortcut to the station.",
@@ -2032,7 +2032,7 @@ module.exports = [
   {
     "word": "showdown",
     "phonetic": "/ˈʃoʊdaʊn/",
-    "meaning": "攤牌；最終對決",
+    "meaning": "攤牌；最後對決；決戰",
     "pos": "n",
     "difficulty": 2,
     "example": "The final match was a showdown between the two best teams.",
@@ -2041,7 +2041,7 @@ module.exports = [
   {
     "word": "standpoint",
     "phonetic": "/ˈstændpɔɪnt/",
-    "meaning": "觀點；立場",
+    "meaning": "立場；觀點",
     "pos": "n",
     "difficulty": 3,
     "example": "From a financial standpoint, the project is not profitable.",
@@ -2050,7 +2050,7 @@ module.exports = [
   {
     "word": "stepchild",
     "phonetic": "/ˈstɛptʃaɪld/",
-    "meaning": "繼子女",
+    "meaning": "繼子女；受忽視者",
     "pos": "n",
     "difficulty": 3,
     "example": "She treats her stepchild like her own.",
@@ -2059,7 +2059,7 @@ module.exports = [
   {
     "word": "turnout",
     "phonetic": "/ˈtɜːrnaʊt/",
-    "meaning": "出席人數；投票率",
+    "meaning": "出席人數；投票率；產量；裝束",
     "pos": "n",
     "difficulty": 2,
     "example": "The turnout for the event was better than expected.",
@@ -2069,7 +2069,7 @@ module.exports = [
   {
     "word": "undertake",
     "phonetic": "/ˌʌndərˈteɪk/",
-    "meaning": "承擔；從事",
+    "meaning": "承擔；著手進行；承諾",
     "pos": "v",
     "difficulty": 3,
     "example": "She undertook the responsibility of managing the project.",
@@ -2078,7 +2078,7 @@ module.exports = [
   {
     "word": "upbringing",
     "phonetic": "/ˈʌpˌbrɪŋɪŋ/",
-    "meaning": "教養；成長環境",
+    "meaning": "教養；養育；家庭教育",
     "pos": "n",
     "difficulty": 3,
     "example": "His upbringing taught him the value of hard work.",
@@ -2087,7 +2087,7 @@ module.exports = [
   {
     "word": "uproar",
     "phonetic": "/ˈʌprɔːr/",
-    "meaning": "喧鬧；騷動",
+    "meaning": "騷動；喧嘩；吵鬧",
     "pos": "n",
     "difficulty": 2,
     "example": "The announcement caused an uproar among employees.",
@@ -2096,7 +2096,7 @@ module.exports = [
   {
     "word": "milestone",
     "phonetic": "/ˈmaɪlstoʊn/",
-    "meaning": "里程碑",
+    "meaning": "里程碑；轉折點",
     "pos": "n",
     "difficulty": 3,
     "example": "Graduating from college was an important milestone in her life.",
@@ -2105,7 +2105,7 @@ module.exports = [
   {
     "word": "wellbeing",
     "phonetic": "/ˌwɛlˈbiːɪŋ/",
-    "meaning": "幸福；健康",
+    "meaning": "安康；幸福；福利",
     "pos": "n",
     "difficulty": 3,
     "example": "The company cares about the wellbeing of its employees.",
@@ -2114,7 +2114,7 @@ module.exports = [
   {
     "word": "sideline",
     "phonetic": "/ˈsaɪdlaɪn/",
-    "meaning": "副業；場邊",
+    "meaning": "副業；兼職；邊線；使退出",
     "pos": "n",
     "difficulty": 2,
     "example": "She started a small business as a sideline.",
@@ -2123,7 +2123,7 @@ module.exports = [
   {
     "word": "frontline",
     "phonetic": "/ˈfrʌntlaɪn/",
-    "meaning": "前線",
+    "meaning": "第一線；前線",
     "pos": "n",
     "difficulty": 3,
     "example": "Nurses are on the frontline of healthcare.",
@@ -2132,7 +2132,7 @@ module.exports = [
   {
     "word": "headcount",
     "phonetic": "/ˈhɛdkaʊnt/",
-    "meaning": "人數統計",
+    "meaning": "總人數；人口統計",
     "pos": "n",
     "difficulty": 3,
     "example": "The manager did a headcount before the trip.",
@@ -2141,7 +2141,7 @@ module.exports = [
   {
     "word": "groundwork",
     "phonetic": "/ˈɡraʊndwɜːrk/",
-    "meaning": "基礎工作",
+    "meaning": "基礎；準備工作；地基",
     "pos": "n",
     "difficulty": 3,
     "example": "We need to lay the groundwork for the new project.",
@@ -2150,7 +2150,7 @@ module.exports = [
   {
     "word": "outweigh",
     "phonetic": "/ˌaʊtˈweɪ/",
-    "meaning": "超過；重於",
+    "meaning": "重於；勝過；超過",
     "pos": "v",
     "difficulty": 2,
     "example": "The benefits outweigh the risks.",
@@ -2159,7 +2159,7 @@ module.exports = [
   {
     "word": "widespread",
     "phonetic": "/ˈwaɪdsprɛd/",
-    "meaning": "廣泛的",
+    "meaning": "廣泛；普遍；分布廣",
     "pos": "adj",
     "difficulty": 3,
     "example": "The use of smartphones is now widespread.",
@@ -2168,7 +2168,7 @@ module.exports = [
   {
     "word": "outlook",
     "phonetic": "/ˈaʊtlʊk/",
-    "meaning": "前景；觀點",
+    "meaning": "前景；觀點；展望；景色",
     "pos": "n",
     "difficulty": 2,
     "example": "The economic outlook for next year is positive.",
@@ -2177,7 +2177,7 @@ module.exports = [
   {
     "word": "upside",
     "phonetic": "/ˈʌpsaɪd/",
-    "meaning": "好的一面；上方",
+    "meaning": "好處；優點；正面；上側",
     "pos": "n",
     "difficulty": 2,
     "example": "The upside of working from home is saving commute time.",
@@ -2186,7 +2186,7 @@ module.exports = [
   {
     "word": "ongoing",
     "phonetic": "/ˈɑːnˌɡoʊɪŋ/",
-    "meaning": "進行中的",
+    "meaning": "進行中；持續；不斷",
     "pos": "adj",
     "difficulty": 2,
     "example": "The investigation is still ongoing.",
@@ -2196,7 +2196,7 @@ module.exports = [
   {
     "word": "worthwhile",
     "phonetic": "/ˌwɜːrθˈwaɪl/",
-    "meaning": "值得的",
+    "meaning": "值得；有價值；意義重大",
     "pos": "adj",
     "difficulty": 3,
     "example": "Volunteering is a worthwhile activity.",
@@ -2206,7 +2206,7 @@ module.exports = [
   {
     "word": "furthermore",
     "phonetic": "/ˌfɜːrðərˈmɔːr/",
-    "meaning": "此外；而且",
+    "meaning": "此外；而且；再者",
     "pos": "adv",
     "difficulty": 3,
     "example": "The plan is too expensive; furthermore, it will take too long.",
@@ -2216,7 +2216,7 @@ module.exports = [
   {
     "word": "straightforward",
     "phonetic": "/ˌstreɪtˈfɔːrwərd/",
-    "meaning": "簡單明瞭的",
+    "meaning": "簡單；直截了當；坦率；誠實",
     "pos": "adj",
     "difficulty": 4,
     "example": "The instructions are quite straightforward.",
@@ -2226,7 +2226,7 @@ module.exports = [
   {
     "word": "undergo",
     "phonetic": "/ˌʌndərˈɡoʊ/",
-    "meaning": "經歷；接受",
+    "meaning": "經歷；承受；接受",
     "pos": "v",
     "difficulty": 2,
     "example": "The building will undergo major renovation next year.",
@@ -2235,7 +2235,7 @@ module.exports = [
   {
     "word": "thorough",
     "phonetic": "/ˈθɜːroʊ/",
-    "meaning": "徹底的；仔細的",
+    "meaning": "徹底；周詳；詳盡；完全",
     "pos": "adj",
     "difficulty": 2,
     "example": "The police conducted a thorough investigation.",
@@ -2244,7 +2244,7 @@ module.exports = [
   {
     "word": "accordingly",
     "phonetic": "/əˈkɔːrdɪŋli/",
-    "meaning": "因此；相應地",
+    "meaning": "因此；相應地；照著；於是",
     "pos": "adv",
     "difficulty": 3,
     "example": "The budget was reduced, and plans were adjusted accordingly.",
@@ -2253,7 +2253,7 @@ module.exports = [
   {
     "word": "anticipate",
     "phonetic": "/ænˈtɪsɪˌpeɪt/",
-    "meaning": "預期；期待",
+    "meaning": "預期；預料；期待；預先處理",
     "pos": "v",
     "difficulty": 3,
     "example": "We anticipate a busy season this summer.",
@@ -2262,7 +2262,7 @@ module.exports = [
   {
     "word": "appeal",
     "phonetic": "/əˈpiːl/",
-    "meaning": "吸引；呼籲",
+    "meaning": "上訴；呼籲；吸引力；訴諸",
     "pos": "v",
     "difficulty": 2,
     "example": "The new design appeals to younger customers.",
@@ -2271,7 +2271,7 @@ module.exports = [
   {
     "word": "applicable",
     "phonetic": "/ˈæplɪkəbəl/",
-    "meaning": "適用的",
+    "meaning": "適用；合適",
     "pos": "adj",
     "difficulty": 3,
     "example": "This rule is applicable to all employees.",
@@ -2280,7 +2280,7 @@ module.exports = [
   {
     "word": "approximate",
     "phonetic": "/əˈprɑːksɪmɪt/",
-    "meaning": "大約的",
+    "meaning": "大約；近似；接近",
     "pos": "adj",
     "difficulty": 3,
     "example": "The approximate cost of the project is fifty thousand dollars.",
@@ -2289,7 +2289,7 @@ module.exports = [
   {
     "word": "aspire",
     "phonetic": "/əˈspaɪər/",
-    "meaning": "渴望；嚮往",
+    "meaning": "追求；渴望；立志",
     "pos": "v",
     "difficulty": 2,
     "example": "She aspires to become a doctor someday.",
@@ -2298,7 +2298,7 @@ module.exports = [
   {
     "word": "attribute",
     "phonetic": "/əˈtrɪbjuːt/",
-    "meaning": "歸因於",
+    "meaning": "歸因於；特質；屬性；歸屬",
     "pos": "v",
     "difficulty": 3,
     "example": "The success was attributed to good teamwork.",
@@ -2307,7 +2307,7 @@ module.exports = [
   {
     "word": "beneficial",
     "phonetic": "/ˌbenɪˈfɪʃl/",
-    "meaning": "有益的",
+    "meaning": "有益；有利",
     "pos": "adj",
     "difficulty": 3,
     "example": "Regular exercise is beneficial to your health.",
@@ -2327,7 +2327,7 @@ module.exports = [
   {
     "word": "applaud",
     "phonetic": "/əˈplɔːd/",
-    "meaning": "鼓掌；讚賞",
+    "meaning": "鼓掌；稱讚；讚賞",
     "pos": "v",
     "difficulty": 2,
     "example": "The audience applauded loudly after the performance.",
@@ -2336,7 +2336,7 @@ module.exports = [
   {
     "word": "alter",
     "phonetic": "/ˈɔːltər/",
-    "meaning": "改變；修改",
+    "meaning": "改變；修改；改動",
     "pos": "v",
     "difficulty": 1,
     "example": "We need to alter the plan due to budget cuts.",
@@ -2346,7 +2346,7 @@ module.exports = [
   {
     "word": "compose",
     "phonetic": "/kəmˈpoʊz/",
-    "meaning": "組成；撰寫",
+    "meaning": "組成；創作；寫作；使平靜；調停",
     "pos": "v",
     "difficulty": 2,
     "example": "He composed a formal letter to the client.",
@@ -2355,7 +2355,7 @@ module.exports = [
   {
     "word": "confine",
     "phonetic": "/kənˈfaɪn/",
-    "meaning": "監禁；侷限於",
+    "meaning": "限制；監禁；禁閉；邊界",
     "pos": "v",
     "difficulty": 2,
     "example": "Please confine your comments to the topic at hand.",
@@ -2364,7 +2364,7 @@ module.exports = [
   {
     "word": "conform",
     "phonetic": "/kənˈfɔːrm/",
-    "meaning": "符合；遵守規則",
+    "meaning": "遵守；符合；一致；順應",
     "pos": "v",
     "difficulty": 2,
     "example": "All products must conform to safety standards.",
@@ -2373,7 +2373,7 @@ module.exports = [
   {
     "word": "consent",
     "phonetic": "/kənˈsɛnt/",
-    "meaning": "許可；贊同 (名詞/動詞)",
+    "meaning": "同意；准許；贊同",
     "pos": "n",
     "difficulty": 2,
     "example": "You need written consent before making any changes.",
@@ -2382,7 +2382,7 @@ module.exports = [
   {
     "word": "considerable",
     "phonetic": "/kənˈsɪdərəbl/",
-    "meaning": "相當大的；值得考慮的",
+    "meaning": "相當多；相當大；重要；值得考慮",
     "pos": "adj",
     "difficulty": 4,
     "example": "She has considerable influence in the industry.",
@@ -2392,7 +2392,7 @@ module.exports = [
   {
     "word": "consult",
     "phonetic": "/kənˈsʌlt/",
-    "meaning": "諮詢專家 (動詞)",
+    "meaning": "諮詢；請教；商議；查閱",
     "pos": "v",
     "difficulty": 2,
     "example": "You should consult a doctor about your symptoms.",
@@ -2401,7 +2401,7 @@ module.exports = [
   {
     "word": "convert",
     "phonetic": "/kənˈvɜːrt/",
-    "meaning": "轉換；轉變",
+    "meaning": "轉換；轉變；兌換；改變信仰；皈依者",
     "pos": "v",
     "difficulty": 2,
     "example": "They plan to convert the old warehouse into apartments.",
@@ -2410,7 +2410,7 @@ module.exports = [
   {
     "word": "devote",
     "phonetic": "/dɪˈvoʊt/",
-    "meaning": "致力於；奉獻",
+    "meaning": "奉獻；致力；投入",
     "pos": "v",
     "difficulty": 2,
     "example": "He devoted his life to helping others.",
@@ -2419,7 +2419,7 @@ module.exports = [
   {
     "word": "discard",
     "phonetic": "/dɪˈskɑːrd/",
-    "meaning": "丟棄",
+    "meaning": "丟棄；墊牌；拋棄物",
     "pos": "v",
     "difficulty": 2,
     "example": "Please discard any expired products.",
@@ -2428,7 +2428,7 @@ module.exports = [
   {
     "word": "dismiss",
     "phonetic": "/dɪˈsmɪs/",
-    "meaning": "解散；駁回",
+    "meaning": "解僱；駁回；遣散；不再考慮",
     "pos": "v",
     "difficulty": 2,
     "example": "The judge dismissed the case due to lack of evidence.",
@@ -2437,7 +2437,7 @@ module.exports = [
   {
     "word": "distinguish",
     "phonetic": "/dɪˈstɪŋɡwɪʃ/",
-    "meaning": "區分；辨別",
+    "meaning": "區分；辨別；識別；使傑出",
     "pos": "v",
     "difficulty": 3,
     "example": "It is hard to distinguish between the two products.",
@@ -2446,7 +2446,7 @@ module.exports = [
   {
     "word": "embrace",
     "phonetic": "/ɪmˈbreɪs/",
-    "meaning": "擁抱；接受",
+    "meaning": "擁抱；接受；包含；包圍",
     "pos": "v",
     "difficulty": 2,
     "example": "The company embraced new technology to stay competitive.",
@@ -2455,7 +2455,7 @@ module.exports = [
   {
     "word": "enforce",
     "phonetic": "/ɪnˈfɔːrs/",
-    "meaning": "強制執行",
+    "meaning": "執行；強迫；實施",
     "pos": "v",
     "difficulty": 3,
     "example": "The police are here to enforce the law.",
@@ -2465,7 +2465,7 @@ module.exports = [
   {
     "word": "enhance",
     "phonetic": "/ɪnˈhæns/",
-    "meaning": "增強；提升",
+    "meaning": "增強；提升；提高",
     "pos": "v",
     "difficulty": 2,
     "example": "The new lighting enhances the atmosphere of the restaurant.",
@@ -2474,7 +2474,7 @@ module.exports = [
   {
     "word": "enrich",
     "phonetic": "/ɪnˈrɪtʃ/",
-    "meaning": "充實；豐富",
+    "meaning": "使豐富；充實；使富裕；強化",
     "pos": "v",
     "difficulty": 2,
     "example": "Travel can enrich your understanding of different cultures.",
@@ -2483,7 +2483,7 @@ module.exports = [
   {
     "word": "equip",
     "phonetic": "/ɪˈkwɪp/",
-    "meaning": "配備；裝備；訓練",
+    "meaning": "裝備；配備；訓練",
     "pos": "v",
     "difficulty": 1,
     "example": "The gym is equipped with modern exercise machines.",
@@ -2493,7 +2493,7 @@ module.exports = [
   {
     "word": "evident",
     "phonetic": "/ˈɛvɪdənt/",
-    "meaning": "明顯的",
+    "meaning": "明顯；顯而易見",
     "pos": "adj",
     "difficulty": 2,
     "example": "It was evident that the plan was not working.",
@@ -2503,7 +2503,7 @@ module.exports = [
   {
     "word": "evolve",
     "phonetic": "/ɪˈvɑːlv/",
-    "meaning": "演變；進化",
+    "meaning": "進化；演變；發展；逐步形成",
     "pos": "v",
     "difficulty": 2,
     "example": "Technology continues to evolve rapidly.",
@@ -2512,7 +2512,7 @@ module.exports = [
   {
     "word": "portray",
     "phonetic": "/pɔːrˈtreɪ/",
-    "meaning": "描繪人物；飾演角色",
+    "meaning": "描繪；飾演；刻畫",
     "pos": "v",
     "difficulty": 2,
     "example": "The movie portrays life in a small village.",
@@ -2521,7 +2521,7 @@ module.exports = [
   {
     "word": "extensive",
     "phonetic": "/ɪkˈstɛnsɪv/",
-    "meaning": "廣泛的；大規模的",
+    "meaning": "廣泛；廣闊；大規模",
     "pos": "adj",
     "difficulty": 3,
     "example": "The hotel underwent extensive renovation last year.",
@@ -2530,7 +2530,7 @@ module.exports = [
   {
     "word": "extract",
     "phonetic": "/ɪkˈstrækt/",
-    "meaning": "提取；摘錄",
+    "meaning": "提取；拔出；摘錄；提煉；萃取物",
     "pos": "v",
     "difficulty": 2,
     "example": "They extract oil from the ground.",
@@ -2539,7 +2539,7 @@ module.exports = [
   {
     "word": "fulfill",
     "phonetic": "/fʊlˈfɪl/",
-    "meaning": "實現；履行",
+    "meaning": "履行；實現；完成；滿足",
     "pos": "v",
     "difficulty": 2,
     "example": "He fulfilled his promise to finish the project on time.",
@@ -2548,7 +2548,7 @@ module.exports = [
   {
     "word": "grant",
     "phonetic": "/ɡrænt/",
-    "meaning": "授予；同意",
+    "meaning": "給予；准許；承認；撥款",
     "pos": "v",
     "difficulty": 1,
     "example": "The university granted her a scholarship.",
@@ -2557,7 +2557,7 @@ module.exports = [
   {
     "word": "grasp",
     "phonetic": "/ɡræsp/",
-    "meaning": "抓緊；理解；掌握",
+    "meaning": "抓緊；理解；領會",
     "pos": "v",
     "difficulty": 1,
     "example": "It took me a while to grasp the concept.",
@@ -2567,7 +2567,7 @@ module.exports = [
   {
     "word": "incline",
     "phonetic": "/ɪnˈklaɪn/",
-    "meaning": "傾向於；傾斜 (動詞)",
+    "meaning": "傾向；傾斜；斜面",
     "pos": "v",
     "difficulty": 2,
     "example": "I am inclined to agree with your suggestion.",
@@ -2576,7 +2576,7 @@ module.exports = [
   {
     "word": "inevitable",
     "phonetic": "/ɪnˈɛvɪtəbəl/",
-    "meaning": "不可避免的",
+    "meaning": "不可避免；必然",
     "pos": "adj",
     "difficulty": 3,
     "example": "Change is inevitable in any growing company.",
@@ -2585,7 +2585,7 @@ module.exports = [
   {
     "word": "initiate",
     "phonetic": "/ɪˈnɪʃiˌeɪt/",
-    "meaning": "發起；開始",
+    "meaning": "開始；發起；接納；新成員",
     "pos": "v",
     "difficulty": 2,
     "example": "The manager initiated a review of the company policy.",
@@ -2594,7 +2594,7 @@ module.exports = [
   {
     "word": "inspect",
     "phonetic": "/ɪnˈspɛkt/",
-    "meaning": "檢查；視察",
+    "meaning": "檢查；視察；檢驗",
     "pos": "v",
     "difficulty": 2,
     "example": "Officers will inspect the factory next week.",
@@ -2604,7 +2604,7 @@ module.exports = [
   {
     "word": "intact",
     "phonetic": "/ɪnˈtækt/",
-    "meaning": "完好無損的",
+    "meaning": "完好無損；完整",
     "pos": "adj",
     "difficulty": 2,
     "example": "The package arrived intact despite the long journey.",
@@ -2613,7 +2613,7 @@ module.exports = [
   {
     "word": "integrate",
     "phonetic": "/ˈɪntɪˌɡreɪt/",
-    "meaning": "整合",
+    "meaning": "整合；結合；合併；融入",
     "pos": "v",
     "difficulty": 3,
     "example": "The company aims to integrate all systems into one platform.",
@@ -2623,7 +2623,7 @@ module.exports = [
   {
     "word": "minimal",
     "phonetic": "/ˈmɪnɪməl/",
-    "meaning": "最小的；極少的",
+    "meaning": "最小；最低限度；極微",
     "pos": "adj",
     "difficulty": 2,
     "example": "The damage to the car was minimal.",
@@ -2633,7 +2633,7 @@ module.exports = [
   {
     "word": "notable",
     "phonetic": "/ˈnoʊtəbəl/",
-    "meaning": "值得注意的；顯著的",
+    "meaning": "顯著；著名；名人；顯要；值得注意",
     "pos": "adj",
     "difficulty": 2,
     "example": "There was a notable improvement in sales.",
@@ -2642,7 +2642,7 @@ module.exports = [
   {
     "word": "omit",
     "phonetic": "/oʊˈmɪt/",
-    "meaning": "省略；遺漏；刪除",
+    "meaning": "遺漏；忽略；省略；刪除",
     "pos": "v",
     "difficulty": 1,
     "example": "He omitted several important details from the report.",
@@ -2652,7 +2652,7 @@ module.exports = [
   {
     "word": "outline",
     "phonetic": "/ˈaʊtlaɪn/",
-    "meaning": "大綱；輪廓",
+    "meaning": "概述；大綱；輪廓；描繪；概要",
     "pos": "v",
     "difficulty": 2,
     "example": "The speaker outlined the main goals for the year.",
@@ -2661,7 +2661,7 @@ module.exports = [
   {
     "word": "participate",
     "phonetic": "/pɑːrˈtɪsɪˌpeɪt/",
-    "meaning": "參加",
+    "meaning": "參加；參與",
     "pos": "v",
     "difficulty": 3,
     "example": "All employees are encouraged to participate in the survey.",
@@ -2670,7 +2670,7 @@ module.exports = [
   {
     "word": "persist",
     "phonetic": "/pərˈsɪst/",
-    "meaning": "堅持；持續",
+    "meaning": "堅持；持續；執意；存留",
     "pos": "v",
     "difficulty": 2,
     "example": "The problem persisted despite our efforts to fix it.",
@@ -2679,7 +2679,7 @@ module.exports = [
   {
     "word": "pledge",
     "phonetic": "/plɛdʒ/",
-    "meaning": "承諾；保證",
+    "meaning": "保證；誓言；抵押；發誓；保證金",
     "pos": "v",
     "difficulty": 2,
     "example": "The company pledged to reduce carbon emissions.",
@@ -2688,7 +2688,7 @@ module.exports = [
   {
     "word": "accompany",
     "phonetic": "/əˈkʌmpəni/",
-    "meaning": "陪伴；伴隨",
+    "meaning": "陪伴；伴隨；伴奏；陪同",
     "pos": "v",
     "difficulty": 3,
     "example": "She accompanied her friend to the airport.",
@@ -2697,7 +2697,7 @@ module.exports = [
   {
     "word": "prescribe",
     "phonetic": "/prɪˈskraɪb/",
-    "meaning": "開處方；規定",
+    "meaning": "開處方；規定；指示",
     "pos": "v",
     "difficulty": 3,
     "example": "The doctor prescribed medicine for the cough.",
@@ -2706,7 +2706,7 @@ module.exports = [
   {
     "word": "proceed",
     "phonetic": "/prəˈsiːd/",
-    "meaning": "繼續；前進",
+    "meaning": "繼續進行；行進；開始",
     "pos": "v",
     "difficulty": 2,
     "example": "Please proceed to the next item on the agenda.",
@@ -2715,7 +2715,7 @@ module.exports = [
   {
     "word": "prominent",
     "phonetic": "/ˈprɒmɪnənt/",
-    "meaning": "傑出的；突出的",
+    "meaning": "顯著；著名；傑出；突出",
     "pos": "adj",
     "difficulty": 3,
     "example": "He is a prominent figure in the local community.",
@@ -2734,7 +2734,7 @@ module.exports = [
   {
     "word": "radical",
     "phonetic": "/ˈrædɪkəl/",
-    "meaning": "激進的；徹底的",
+    "meaning": "激進；徹底；根本；激進分子；根式",
     "pos": "adj",
     "difficulty": 2,
     "example": "The company needs radical changes to survive.",
@@ -2743,7 +2743,7 @@ module.exports = [
   {
     "word": "refrain",
     "phonetic": "/rɪˈfreɪn/",
-    "meaning": "克制；避免",
+    "meaning": "克制；節制；副歌；疊句；忍住",
     "pos": "v",
     "difficulty": 2,
     "example": "Please refrain from using your phone during the meeting.",
@@ -2753,7 +2753,7 @@ module.exports = [
   {
     "word": "endure",
     "phonetic": "/ɪnˈdjʊr/",
-    "meaning": "忍受；持續",
+    "meaning": "忍受；忍耐；持久；持續",
     "pos": "v",
     "difficulty": 2,
     "example": "She endured the pain without complaining.",
@@ -2762,7 +2762,7 @@ module.exports = [
   {
     "word": "respectively",
     "phonetic": "/rɪˈspɛktɪvli/",
-    "meaning": "分別地",
+    "meaning": "分別；各自",
     "pos": "adv",
     "difficulty": 4,
     "example": "The two buildings are five and eight stories tall, respectively.",
@@ -2771,7 +2771,7 @@ module.exports = [
   {
     "word": "retrieve",
     "phonetic": "/rɪˈtriːv/",
-    "meaning": "取回；檢索",
+    "meaning": "檢索；取回；挽回；恢復；重獲",
     "pos": "v",
     "difficulty": 2,
     "example": "I need to retrieve my files from the old computer.",
@@ -2780,7 +2780,7 @@ module.exports = [
   {
     "word": "rigid",
     "phonetic": "/ˈrɪdʒɪd/",
-    "meaning": "僵硬；嚴格；死板",
+    "meaning": "嚴格；僵硬；刻板；堅硬",
     "pos": "adj",
     "difficulty": 1,
     "example": "The company has rigid rules about working hours.",
@@ -2790,7 +2790,7 @@ module.exports = [
   {
     "word": "solely",
     "phonetic": "/ˈsoʊlli/",
-    "meaning": "僅僅；單獨地",
+    "meaning": "僅僅；單獨；完全",
     "pos": "adv",
     "difficulty": 2,
     "example": "The decision was solely based on merit.",

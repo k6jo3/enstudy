@@ -2,7 +2,7 @@ module.exports = [
   {
     "word": "lien",
     "phonetic": "/liːn/",
-    "meaning": "留置權",
+    "meaning": "留置權；抵押權",
     "pos": "n",
     "difficulty": 4,
     "example": "The bank placed a lien on the property.",
@@ -11,7 +11,7 @@ module.exports = [
   {
     "word": "amortization",
     "phonetic": "/ˌæmərtɪˈzeɪʃən/",
-    "meaning": "攤銷；分期償還",
+    "meaning": "分期償還；攤銷",
     "pos": "n",
     "difficulty": 4,
     "example": "The loan amortization schedule spans twenty years.",
@@ -20,7 +20,7 @@ module.exports = [
   {
     "word": "reimbursement",
     "phonetic": "/ˌriːɪmˈbɜːrsmənt/",
-    "meaning": "報銷；償還",
+    "meaning": "核銷；退還；補償",
     "pos": "n",
     "difficulty": 4,
     "example": "Submit your receipts for travel reimbursement.",
@@ -38,7 +38,7 @@ module.exports = [
   {
     "word": "concession",
     "phonetic": "/kənˈseʃən/",
-    "meaning": "讓步；特許權",
+    "meaning": "讓步；特許權；減免",
     "pos": "n",
     "difficulty": 4,
     "example": "Management made several concessions during the negotiation.",
@@ -56,7 +56,7 @@ module.exports = [
   {
     "word": "surcharge",
     "phonetic": "/ˈsɜːrtʃɑːrdʒ/",
-    "meaning": "附加費",
+    "meaning": "附加費；額外稅；加收費用",
     "pos": "n",
     "difficulty": 4,
     "example": "A fuel surcharge was added to the shipping cost.",
@@ -65,7 +65,7 @@ module.exports = [
   {
     "word": "underwrite",
     "phonetic": "/ˌʌndərˈraɪt/",
-    "meaning": "承保；擔保",
+    "meaning": "承保；包銷；資助；簽署",
     "pos": "v",
     "difficulty": 4,
     "example": "The bank agreed to underwrite the bond issue.",
@@ -74,7 +74,7 @@ module.exports = [
   {
     "word": "escrow",
     "phonetic": "/ˈeskroʊ/",
-    "meaning": "第三方託管",
+    "meaning": "託管；代管；託管契約",
     "pos": "n",
     "difficulty": 4,
     "example": "The deposit is held in escrow until the deal closes.",
@@ -83,7 +83,7 @@ module.exports = [
   {
     "word": "annuity",
     "phonetic": "/əˈnuːəti/",
-    "meaning": "年金",
+    "meaning": "年金；養老金",
     "pos": "n",
     "difficulty": 4,
     "example": "She invested in an annuity to secure her retirement income.",
@@ -92,7 +92,7 @@ module.exports = [
   {
     "word": "proprietor",
     "phonetic": "/prəˈpraɪətər/",
-    "meaning": "業主；所有人",
+    "meaning": "所有者；經營者",
     "pos": "n",
     "difficulty": 4,
     "example": "The proprietor manages the store personally.",
@@ -101,7 +101,7 @@ module.exports = [
   {
     "word": "gratuity",
     "phonetic": "/ɡrəˈtuːəti/",
-    "meaning": "服務費；賞錢",
+    "meaning": "酬金；小費",
     "pos": "n",
     "difficulty": 4,
     "example": "A gratuity of fifteen percent was added to the bill.",
@@ -110,7 +110,7 @@ module.exports = [
   {
     "word": "collate",
     "phonetic": "/kəˈleɪt/",
-    "meaning": "整理；校對",
+    "meaning": "核對；整理",
     "pos": "v",
     "difficulty": 4,
     "example": "Please collate the reports before the presentation.",
@@ -119,7 +119,7 @@ module.exports = [
   {
     "word": "tabulate",
     "phonetic": "/ˈtæbjuleɪt/",
-    "meaning": "製表；列表",
+    "meaning": "列表；製表",
     "pos": "v",
     "difficulty": 4,
     "example": "The data was tabulated for the quarterly review.",
@@ -128,7 +128,7 @@ module.exports = [
   {
     "word": "foreclose",
     "phonetic": "/fɔːrˈkloʊz/",
-    "meaning": "取消贖回權；查封",
+    "meaning": "取消抵押品贖回權",
     "pos": "v",
     "difficulty": 4,
     "example": "The bank threatened to foreclose on the property.",
@@ -137,7 +137,7 @@ module.exports = [
   {
     "word": "throughput",
     "phonetic": "/ˈθruːpʊt/",
-    "meaning": "產出量；處理量",
+    "meaning": "吞吐量；處理量；生產能力",
     "pos": "n",
     "difficulty": 4,
     "example": "The new layout increased throughput by twenty percent.",
@@ -146,7 +146,7 @@ module.exports = [
   {
     "word": "occupancy",
     "phonetic": "/ˈɑːkjʊpənsi/",
-    "meaning": "入住率；佔用",
+    "meaning": "居住；佔用；使用率；佔用期",
     "pos": "n",
     "difficulty": 4,
     "example": "The building has reached ninety percent occupancy.",
@@ -155,7 +155,7 @@ module.exports = [
   {
     "word": "premises",
     "phonetic": "/ˈpremɪsɪz/",
-    "meaning": "房屋；經營場所",
+    "meaning": "營業場所；前提；建築物；房屋",
     "pos": "n",
     "difficulty": 4,
     "example": "Smoking is not allowed on the premises.",
@@ -164,7 +164,7 @@ module.exports = [
   {
     "word": "latency",
     "phonetic": "/ˈleɪtənsi/",
-    "meaning": "延遲時間",
+    "meaning": "延遲；潛伏；潛時",
     "pos": "n",
     "difficulty": 4,
     "example": "Low latency is crucial for real-time applications.",
@@ -173,7 +173,7 @@ module.exports = [
   {
     "word": "repository",
     "phonetic": "/rɪˈpɑːzɪtɔːri/",
-    "meaning": "儲存庫；資料庫",
+    "meaning": "儲存庫；倉庫；存放處；知識庫",
     "pos": "n",
     "difficulty": 4,
     "example": "All source code is stored in the repository.",
@@ -200,7 +200,7 @@ module.exports = [
   {
     "word": "iterate",
     "phonetic": "/ˈɪtəreɪt/",
-    "meaning": "反覆；迭代",
+    "meaning": "迭代；重複；反覆",
     "pos": "v",
     "difficulty": 4,
     "example": "The team will iterate on the design based on user feedback.",
@@ -209,7 +209,7 @@ module.exports = [
   {
     "word": "penthouse",
     "phonetic": "/ˈpenthaʊs/",
-    "meaning": "頂樓豪華公寓",
+    "meaning": "頂層豪華公寓；屋頂閣樓",
     "pos": "n",
     "difficulty": 4,
     "example": "The penthouse offers a panoramic view of the city skyline.",
@@ -237,7 +237,7 @@ module.exports = [
   {
     "word": "concierge",
     "phonetic": "/ˌkɑːnsiˈɛrʒ/",
-    "meaning": "禮賓服務人員",
+    "meaning": "門房；禮賓員；管理員",
     "pos": "n",
     "difficulty": 4,
     "example": "The concierge recommended several local restaurants.",
@@ -246,7 +246,7 @@ module.exports = [
   {
     "word": "valet",
     "phonetic": "/ˈvæleɪ/",
-    "meaning": "代客泊車人員",
+    "meaning": "代客泊車員；侍從；清洗衣物",
     "pos": "n",
     "difficulty": 4,
     "example": "The valet parked our car in front of the hotel.",
@@ -264,7 +264,7 @@ module.exports = [
   {
     "word": "complimentary",
     "phonetic": "/ˌkɑːmplɪˈmɛntəri/",
-    "meaning": "免費的；贈送的",
+    "meaning": "贈送；稱讚；免費",
     "pos": "adj",
     "difficulty": 4,
     "example": "The hotel offers complimentary breakfast for all guests.",
@@ -274,7 +274,7 @@ module.exports = [
   {
     "word": "ergonomic",
     "phonetic": "/ˌɜːrɡəˈnɑːmɪk/",
-    "meaning": "人體工學的",
+    "meaning": "人體工學",
     "pos": "adj",
     "difficulty": 4,
     "example": "The company invested in ergonomic chairs to reduce back injuries.",
@@ -283,7 +283,7 @@ module.exports = [
   {
     "word": "annotate",
     "phonetic": "/ˈænəˌteɪt/",
-    "meaning": "加註解；標注",
+    "meaning": "註解；註釋",
     "pos": "v",
     "difficulty": 4,
     "example": "The editor annotated the draft with suggestions for improvement.",
@@ -292,7 +292,7 @@ module.exports = [
   {
     "word": "custodian",
     "phonetic": "/kʌˈstoʊdiən/",
-    "meaning": "管理員；保管人",
+    "meaning": "管理員；監護人；保管人",
     "pos": "n",
     "difficulty": 4,
     "example": "The custodian is responsible for maintaining the office building.",
@@ -301,7 +301,7 @@ module.exports = [
   {
     "word": "dossier",
     "phonetic": "/ˈdɑːsieɪ/",
-    "meaning": "卷宗；一組文件",
+    "meaning": "卷宗；檔案",
     "pos": "n",
     "difficulty": 4,
     "example": "The lawyer compiled a dossier of evidence for the upcoming case.",
@@ -310,7 +310,7 @@ module.exports = [
   {
     "word": "debrief",
     "phonetic": "/ˌdiːˈbriːf/",
-    "meaning": "任務報告；彙報",
+    "meaning": "聽取匯報；詢問",
     "pos": "v",
     "difficulty": 4,
     "example": "The project team gathered to debrief after the product launch event.",
@@ -319,7 +319,7 @@ module.exports = [
   {
     "word": "confer",
     "phonetic": "/kənˈfɜːr/",
-    "meaning": "商議；商討",
+    "meaning": "商討；授予；給予",
     "pos": "v",
     "difficulty": 4,
     "example": "I need to confer with my supervisor before making a final decision.",
@@ -328,7 +328,7 @@ module.exports = [
   {
     "word": "preside",
     "phonetic": "/prɪˈzaɪd/",
-    "meaning": "主持；主導",
+    "meaning": "主持；掌管",
     "pos": "v",
     "difficulty": 4,
     "example": "The vice president will preside over the annual general meeting.",
@@ -346,7 +346,7 @@ module.exports = [
   {
     "word": "lectern",
     "phonetic": "/ˈlektərn/",
-    "meaning": "演講台；閱讀架",
+    "meaning": "講桌；講稿台",
     "pos": "n",
     "difficulty": 4,
     "example": "The speaker placed her notes on the lectern before addressing the audience.",
@@ -355,7 +355,7 @@ module.exports = [
   {
     "word": "defer",
     "phonetic": "/dɪˈfɜːr/",
-    "meaning": "延後；推遲",
+    "meaning": "推遲；延期；遵從；順從",
     "pos": "v",
     "difficulty": 4,
     "example": "The committee decided to defer the vote until the next session.",
@@ -364,7 +364,7 @@ module.exports = [
   {
     "word": "unanimous",
     "phonetic": "/juːˈnænɪməs/",
-    "meaning": "全體一致的",
+    "meaning": "全體一致；一致同意",
     "pos": "adj",
     "difficulty": 4,
     "example": "The board reached a unanimous decision to approve the new budget.",
@@ -374,7 +374,7 @@ module.exports = [
   {
     "word": "reconvene",
     "phonetic": "/ˌriːkənˈviːn/",
-    "meaning": "重新召開",
+    "meaning": "重新召集；再次開會",
     "pos": "v",
     "difficulty": 4,
     "example": "The meeting will reconvene after a thirty-minute lunch break.",
@@ -383,7 +383,7 @@ module.exports = [
   {
     "word": "caucus",
     "phonetic": "/ˈkɔːkəs/",
-    "meaning": "核心小組會議",
+    "meaning": "核心小組會議；政黨基層會議；派別；召開會議",
     "pos": "n",
     "difficulty": 4,
     "example": "A caucus of senior managers was held to discuss the restructuring plan.",
@@ -392,7 +392,7 @@ module.exports = [
   {
     "word": "liaise",
     "phonetic": "/liˈeɪz/",
-    "meaning": "聯繫；協調溝通",
+    "meaning": "聯絡；聯繫",
     "pos": "v",
     "difficulty": 4,
     "example": "She will liaise with the marketing department on the new campaign.",
@@ -401,7 +401,7 @@ module.exports = [
   {
     "word": "commence",
     "phonetic": "/kəˈmens/",
-    "meaning": "開始；著手 (正式)",
+    "meaning": "開始；著手",
     "pos": "v",
     "difficulty": 4,
     "example": "The opening ceremony will commence at exactly nine o'clock tomorrow.",
@@ -411,7 +411,7 @@ module.exports = [
   {
     "word": "disclaimer",
     "phonetic": "/dɪsˈkleɪmər/",
-    "meaning": "免責聲明",
+    "meaning": "免責聲明；棄權聲明；拒絕",
     "pos": "n",
     "difficulty": 4,
     "example": "A legal disclaimer was added at the bottom of every outgoing email.",
@@ -420,7 +420,7 @@ module.exports = [
   {
     "word": "salutation",
     "phonetic": "/ˌsæljʊˈteɪʃən/",
-    "meaning": "問候語；稱呼",
+    "meaning": "問候；致詞；稱呼",
     "pos": "n",
     "difficulty": 4,
     "example": "The appropriate salutation for a formal letter is Dear Mr. or Dear Ms.",
@@ -429,7 +429,7 @@ module.exports = [
   {
     "word": "administer",
     "phonetic": "/ədˈmɪnɪstər/",
-    "meaning": "管理；執行",
+    "meaning": "管理；執行；治理；給予",
     "pos": "v",
     "difficulty": 4,
     "example": "She administers the employee benefits program for the entire company.",
@@ -438,7 +438,7 @@ module.exports = [
   {
     "word": "formulate",
     "phonetic": "/ˈfɔːrmjʊleɪt/",
-    "meaning": "擬定；制定",
+    "meaning": "制定；規劃；配製；闡述",
     "pos": "v",
     "difficulty": 4,
     "example": "The management team formulated a new growth strategy for the next three years.",
@@ -447,7 +447,7 @@ module.exports = [
   {
     "word": "spearhead",
     "phonetic": "/ˈspɪrˌhed/",
-    "meaning": "帶頭推動；領導",
+    "meaning": "帶頭；先鋒；矛頭",
     "pos": "v",
     "difficulty": 4,
     "example": "She spearheaded the digital transformation initiative across the organization.",
@@ -456,7 +456,7 @@ module.exports = [
   {
     "word": "entrust",
     "phonetic": "/ɪnˈtrʌst/",
-    "meaning": "委託；託付",
+    "meaning": "委託；交託",
     "pos": "v",
     "difficulty": 4,
     "example": "The director entrusted the marketing manager with the product launch campaign.",
@@ -465,7 +465,7 @@ module.exports = [
   {
     "word": "revamp",
     "phonetic": "/riːˈvæmp/",
-    "meaning": "改造；翻新",
+    "meaning": "翻新；改進；修改",
     "pos": "v",
     "difficulty": 4,
     "example": "The company plans to revamp its website to improve the user experience.",
@@ -474,7 +474,7 @@ module.exports = [
   {
     "word": "synergy",
     "phonetic": "/ˈsɪnərdʒi/",
-    "meaning": "協同效應；綜效",
+    "meaning": "協同作用；增效；合力",
     "pos": "n",
     "difficulty": 4,
     "example": "The merger is expected to create significant synergy.",
@@ -484,7 +484,7 @@ module.exports = [
   {
     "word": "disruption",
     "phonetic": "/dɪsˈrʌpʃən/",
-    "meaning": "干擾；顛覆",
+    "meaning": "中斷；擾亂；瓦解；干擾",
     "pos": "n",
     "difficulty": 4,
     "example": "Digital disruption has forced many traditional retailers to adapt their strategy.",
@@ -493,7 +493,7 @@ module.exports = [
   {
     "word": "breakeven",
     "phonetic": "/ˌbreɪkˈiːvən/",
-    "meaning": "損益兩平",
+    "meaning": "收支平衡；保本",
     "pos": "n",
     "difficulty": 4,
     "example": "The new store is expected to reach breakeven within the first eighteen months.",
@@ -503,7 +503,7 @@ module.exports = [
   {
     "word": "provisional",
     "phonetic": "/prəˈvɪʒənl/",
-    "meaning": "臨時的；預備的",
+    "meaning": "臨時；暫定；暫時",
     "pos": "adj",
     "difficulty": 3,
     "example": "This is a provisional schedule.",
@@ -513,7 +513,7 @@ module.exports = [
   {
     "word": "concurrent",
     "phonetic": "/kənˈkɜːrənt/",
-    "meaning": "同時進行的",
+    "meaning": "同時發生；並行；一致；共同",
     "pos": "adj",
     "difficulty": 4,
     "example": "The company is managing three concurrent projects this quarter.",
@@ -522,7 +522,7 @@ module.exports = [
   {
     "word": "consecutive",
     "phonetic": "/kənˈsekjʊtɪv/",
-    "meaning": "連續的",
+    "meaning": "連續；相連；接連",
     "pos": "adj",
     "difficulty": 4,
     "example": "Sales have increased for five consecutive quarters.",
@@ -532,7 +532,7 @@ module.exports = [
   {
     "word": "requisition",
     "phonetic": "/ˌrekwɪˈzɪʃn/",
-    "meaning": "正式請求；徵用",
+    "meaning": "申請；徵用；要求；調撥",
     "pos": "n",
     "difficulty": 4,
     "example": "The department submitted a requisition for new laptops.",
@@ -542,7 +542,7 @@ module.exports = [
   {
     "word": "volatility",
     "phonetic": "/ˌvɑːləˈtɪləti/",
-    "meaning": "波動性；不穩定性",
+    "meaning": "波動；揮發性；不穩定；反覆無常",
     "pos": "n",
     "difficulty": 4,
     "example": "Market volatility has made investors more cautious about new investments.",
@@ -551,7 +551,7 @@ module.exports = [
   {
     "word": "governance",
     "phonetic": "/ˈɡʌvərnəns/",
-    "meaning": "治理；管理體制",
+    "meaning": "治理；管理；統治；支配",
     "pos": "n",
     "difficulty": 4,
     "example": "Good corporate governance is essential for maintaining investor confidence.",
@@ -560,7 +560,7 @@ module.exports = [
   {
     "word": "incremental",
     "phonetic": "/ˌɪnkrəˈmentəl/",
-    "meaning": "漸進的；逐步增加的",
+    "meaning": "增加；增量；遞增",
     "pos": "adj",
     "difficulty": 4,
     "example": "The team adopted an incremental approach to implementing the system changes.",
@@ -569,7 +569,7 @@ module.exports = [
   {
     "word": "scalability",
     "phonetic": "/ˌskeɪləˈbɪləti/",
-    "meaning": "可擴展性",
+    "meaning": "可擴展性；可伸縮性",
     "pos": "n",
     "difficulty": 4,
     "example": "Scalability is a key factor when choosing a new software platform.",
@@ -578,7 +578,7 @@ module.exports = [
   {
     "word": "intangible",
     "phonetic": "/ɪnˈtændʒəbl/",
-    "meaning": "無形的",
+    "meaning": "無形；觸摸不到；難以捉摸",
     "pos": "adj",
     "difficulty": 4,
     "example": "Goodwill is an intangible asset for a company.",
@@ -588,7 +588,7 @@ module.exports = [
   {
     "word": "dependency",
     "phonetic": "/dɪˈpendənsi/",
-    "meaning": "依賴關係",
+    "meaning": "依賴關係；附屬物；從屬",
     "pos": "n",
     "difficulty": 4,
     "example": "Identify all task dependencies before creating the project schedule.",
@@ -597,7 +597,7 @@ module.exports = [
   {
     "word": "precondition",
     "phonetic": "/ˌpriːkənˈdɪʃən/",
-    "meaning": "前提條件",
+    "meaning": "前提；先決條件",
     "pos": "n",
     "difficulty": 4,
     "example": "Budget approval is a precondition for starting the construction phase.",
@@ -606,7 +606,7 @@ module.exports = [
   {
     "word": "charter",
     "phonetic": "/ˈtʃɑːrtər/",
-    "meaning": "章程；專案特許狀",
+    "meaning": "憲章；許可證；租借；包租",
     "pos": "n",
     "difficulty": 4,
     "example": "The project charter defines the goals, scope, and key responsibilities.",
@@ -615,7 +615,7 @@ module.exports = [
   {
     "word": "wireframe",
     "phonetic": "/ˈwaɪərˌfreɪm/",
-    "meaning": "線框圖",
+    "meaning": "線框圖；骨架圖",
     "pos": "n",
     "difficulty": 4,
     "example": "The wireframe shows the basic layout of each page before visual design begins.",
@@ -624,7 +624,7 @@ module.exports = [
   {
     "word": "constraint",
     "phonetic": "/kənˈstreɪnt/",
-    "meaning": "束縛；約束力 (名詞)",
+    "meaning": "限制；束縛；強迫",
     "pos": "n",
     "difficulty": 4,
     "example": "Budget constraints forced the team to reduce the scope of the project.",
@@ -633,7 +633,7 @@ module.exports = [
   {
     "word": "rectify",
     "phonetic": "/ˈrektɪfaɪ/",
-    "meaning": "糾正；改正",
+    "meaning": "糾正；改正；整流；精製",
     "pos": "v",
     "difficulty": 4,
     "example": "The company takes immediate steps to rectify errors.",
@@ -643,7 +643,7 @@ module.exports = [
   {
     "word": "unforeseen",
     "phonetic": "/ˌʌnfɔːrˈsiːn/",
-    "meaning": "無法預見的；意外的",
+    "meaning": "意料之外；未預見；突發",
     "pos": "adj",
     "difficulty": 4,
     "example": "Unforeseen technical issues caused a two-week delay in the project.",
@@ -652,7 +652,7 @@ module.exports = [
   {
     "word": "retrospective",
     "phonetic": "/ˌretrəˈspektɪv/",
-    "meaning": "回顧會議",
+    "meaning": "回顧；追溯；作品展",
     "pos": "n",
     "difficulty": 4,
     "example": "At the end of each sprint, the team holds a retrospective to discuss lessons learned.",
@@ -661,7 +661,7 @@ module.exports = [
   {
     "word": "procedural",
     "phonetic": "/prəˈsiːdʒərəl/",
-    "meaning": "程序上的；流程性的",
+    "meaning": "程序；手續；流程",
     "pos": "adj",
     "difficulty": 4,
     "example": "A procedural review was conducted to identify inefficiencies in the workflow.",
@@ -670,7 +670,7 @@ module.exports = [
   {
     "word": "impediment",
     "phonetic": "/ɪmˈpedɪmənt/",
-    "meaning": "障礙物；口吃 (名詞)",
+    "meaning": "阻礙；障礙；妨礙；口吃",
     "pos": "n",
     "difficulty": 4,
     "example": "Slow internet speed was a major impediment to the team's productivity.",
@@ -679,7 +679,7 @@ module.exports = [
   {
     "word": "parameter",
     "phonetic": "/pəˈræmɪtər/",
-    "meaning": "參數；條件範圍",
+    "meaning": "參數；參量；變數；範圍；界限",
     "pos": "n",
     "difficulty": 4,
     "example": "The research must be conducted within the parameters set by the committee.",
@@ -688,7 +688,7 @@ module.exports = [
   {
     "word": "oversight",
     "phonetic": "/ˈoʊvərsaɪt/",
-    "meaning": "失察；監督 (名詞)",
+    "meaning": "疏忽；監督；監管；失察",
     "pos": "n",
     "difficulty": 3,
     "example": "It was a simple oversight.",
@@ -698,7 +698,7 @@ module.exports = [
   {
     "word": "cutover",
     "phonetic": "/ˈkʌtˌoʊvər/",
-    "meaning": "系統切換；轉換",
+    "meaning": "切換；轉換；過渡",
     "pos": "n",
     "difficulty": 4,
     "example": "The cutover from the old system to the new one was completed over the weekend.",
@@ -707,7 +707,7 @@ module.exports = [
   {
     "word": "conformity",
     "phonetic": "/kənˈfɔːrməti/",
-    "meaning": "符合；一致性",
+    "meaning": "符合；一致；遵從；順應",
     "pos": "n",
     "difficulty": 4,
     "example": "All products must be tested for conformity with international safety standards.",
@@ -716,7 +716,7 @@ module.exports = [
   {
     "word": "traceability",
     "phonetic": "/ˌtreɪsəˈbɪləti/",
-    "meaning": "可追溯性",
+    "meaning": "追溯；可追蹤性",
     "pos": "n",
     "difficulty": 4,
     "example": "The new system ensures full traceability of every component in the supply chain.",
@@ -725,7 +725,7 @@ module.exports = [
   {
     "word": "pivotal",
     "phonetic": "/ˈpɪvətl/",
-    "meaning": "關鍵的；樞紐的",
+    "meaning": "關鍵；核心；樞紐",
     "pos": "adj",
     "difficulty": 4,
     "example": "This is a pivotal moment in our company's history.",
@@ -735,7 +735,7 @@ module.exports = [
   {
     "word": "discretionary",
     "phonetic": "/dɪˈskreʃəneri/",
-    "meaning": "酌情處理的；自由裁量的",
+    "meaning": "自由裁量；酌情；隨意",
     "pos": "adj",
     "difficulty": 4,
     "example": "The manager has discretionary power over the budget.",
@@ -745,7 +745,7 @@ module.exports = [
   {
     "word": "legislative",
     "phonetic": "/ˈlɛdʒɪslətɪv/",
-    "meaning": "立法的",
+    "meaning": "立法；法律；有立法權",
     "pos": "adj",
     "difficulty": 4,
     "example": "The legislative branch is responsible for making laws.",
@@ -754,7 +754,7 @@ module.exports = [
   {
     "word": "legislator",
     "phonetic": "/ˈlɛdʒɪsleɪtər/",
-    "meaning": "立法者；議員",
+    "meaning": "立法者；國會議員",
     "pos": "n",
     "difficulty": 4,
     "example": "The legislator proposed a new bill on environmental protection.",
@@ -763,7 +763,7 @@ module.exports = [
   {
     "word": "prosecutor",
     "phonetic": "/ˈprɑːsɪkjuːtər/",
-    "meaning": "檢察官",
+    "meaning": "檢察官；起訴人",
     "pos": "n",
     "difficulty": 4,
     "example": "The prosecutor presented evidence against the accused.",
@@ -772,7 +772,7 @@ module.exports = [
   {
     "word": "prosecution",
     "phonetic": "/ˌprɑːsɪˈkjuːʃən/",
-    "meaning": "控方；起訴 (名詞)",
+    "meaning": "起訴；控方；執行；原告",
     "pos": "n",
     "difficulty": 4,
     "example": "The prosecution called its first witness to the stand.",
@@ -781,7 +781,7 @@ module.exports = [
   {
     "word": "testify",
     "phonetic": "/ˈtɛstɪfaɪ/",
-    "meaning": "作證；證實",
+    "meaning": "作證；證明",
     "pos": "v",
     "difficulty": 4,
     "example": "She was asked to testify before the congressional committee.",
@@ -791,7 +791,7 @@ module.exports = [
   {
     "word": "ordinance",
     "phonetic": "/ˈɔːrdɪnəns/",
-    "meaning": "地方法令；條例",
+    "meaning": "條例；法令；規章",
     "pos": "n",
     "difficulty": 4,
     "example": "The city passed an ordinance banning single-use plastics.",
@@ -800,7 +800,7 @@ module.exports = [
   {
     "word": "enact",
     "phonetic": "/ɪˈnækt/",
-    "meaning": "制定（法律）；頒布",
+    "meaning": "制定；演出；發生",
     "pos": "v",
     "difficulty": 4,
     "example": "Congress plans to enact new regulations on data privacy.",
@@ -809,7 +809,7 @@ module.exports = [
   {
     "word": "repeal",
     "phonetic": "/rɪˈpiːl/",
-    "meaning": "廢止；撤銷 (法令)",
+    "meaning": "廢除；撤銷",
     "pos": "v",
     "difficulty": 4,
     "example": "The government moved to repeal the outdated trade law.",
@@ -818,7 +818,7 @@ module.exports = [
   {
     "word": "decree",
     "phonetic": "/dɪˈkriː/",
-    "meaning": "法令；判決 (名詞/動詞)",
+    "meaning": "法令；判決；發布；裁定",
     "pos": "n",
     "difficulty": 4,
     "example": "The president signed a decree banning the import of certain goods.",
@@ -827,7 +827,7 @@ module.exports = [
   {
     "word": "judicial",
     "phonetic": "/dʒuːˈdɪʃəl/",
-    "meaning": "司法的；法院的",
+    "meaning": "司法；審判；公正",
     "pos": "adj",
     "difficulty": 4,
     "example": "The judicial system ensures the fair application of the law.",
@@ -836,7 +836,7 @@ module.exports = [
   {
     "word": "bail",
     "phonetic": "/beɪl/",
-    "meaning": "保釋金；保釋",
+    "meaning": "保釋；保釋金；舀水；離開",
     "pos": "n",
     "difficulty": 4,
     "example": "The judge set bail at fifty thousand dollars.",
@@ -845,7 +845,7 @@ module.exports = [
   {
     "word": "parole",
     "phonetic": "/pəˈroʊl/",
-    "meaning": "假釋",
+    "meaning": "假釋；誓言",
     "pos": "n",
     "difficulty": 4,
     "example": "The prisoner was released on parole after serving ten years.",
@@ -854,7 +854,7 @@ module.exports = [
   {
     "word": "statutory",
     "phonetic": "/ˈstætʃətɔːri/",
-    "meaning": "法定的；法規的",
+    "meaning": "法定；法令",
     "pos": "adj",
     "difficulty": 4,
     "example": "The company must meet all statutory requirements before launching the product.",
@@ -864,7 +864,7 @@ module.exports = [
   {
     "word": "fraud",
     "phonetic": "/frɔːd/",
-    "meaning": "詐欺；詐騙",
+    "meaning": "詐欺；騙子；騙局",
     "pos": "n",
     "difficulty": 4,
     "example": "The company was investigated for insurance fraud.",
@@ -873,7 +873,7 @@ module.exports = [
   {
     "word": "fraudulent",
     "phonetic": "/ˈfrɔːdʒələnt/",
-    "meaning": "欺詐的；不正當的",
+    "meaning": "欺詐；欺騙",
     "pos": "adj",
     "difficulty": 4,
     "example": "The bank detected several fraudulent transactions on the account.",
@@ -883,7 +883,7 @@ module.exports = [
   {
     "word": "counterfeit",
     "phonetic": "/ˈkaʊntərfɪt/",
-    "meaning": "偽造的；仿冒品",
+    "meaning": "偽造；贗品；假冒；仿造",
     "pos": "adj",
     "difficulty": 4,
     "example": "Customs officers seized a shipment of counterfeit goods at the border.",
@@ -892,7 +892,7 @@ module.exports = [
   {
     "word": "heir",
     "phonetic": "/ɛr/",
-    "meaning": "繼承人",
+    "meaning": "繼承人；後嗣",
     "pos": "n",
     "difficulty": 4,
     "example": "The heir inherited the family business after the founder passed away.",
@@ -911,7 +911,7 @@ module.exports = [
   {
     "word": "plea",
     "phonetic": "/pliː/",
-    "meaning": "答辯；懇求",
+    "meaning": "辯解；請求；抗辯；託辭",
     "pos": "n",
     "difficulty": 4,
     "example": "The defendant entered a plea of not guilty at the hearing.",
@@ -920,7 +920,7 @@ module.exports = [
   {
     "word": "arbitrator",
     "phonetic": "/ˈɑːrbɪtreɪtər/",
-    "meaning": "仲裁人",
+    "meaning": "仲裁人；公斷者",
     "pos": "n",
     "difficulty": 4,
     "example": "An independent arbitrator was appointed to resolve the labor dispute.",
@@ -929,7 +929,7 @@ module.exports = [
   {
     "word": "conviction",
     "phonetic": "/kənˈvɪkʃən/",
-    "meaning": "定罪；信念 (名詞)",
+    "meaning": "定罪；堅信；信念",
     "pos": "n",
     "difficulty": 4,
     "example": "The conviction was upheld by the appellate court.",
@@ -938,7 +938,7 @@ module.exports = [
   {
     "word": "detain",
     "phonetic": "/dɪˈteɪn/",
-    "meaning": "拘留；扣押",
+    "meaning": "拘留；耽擱；扣留",
     "pos": "v",
     "difficulty": 4,
     "example": "The authorities detained the suspect for further questioning.",
@@ -947,7 +947,7 @@ module.exports = [
   {
     "word": "summons",
     "phonetic": "/ˈsʌmənz/",
-    "meaning": "傳票；召喚",
+    "meaning": "傳票；傳喚；召集；通知",
     "pos": "n",
     "difficulty": 4,
     "example": "The company received a summons to appear in court next month.",
@@ -956,7 +956,7 @@ module.exports = [
   {
     "word": "revoke",
     "phonetic": "/rɪˈvoʊk/",
-    "meaning": "撤銷；吊銷",
+    "meaning": "撤回；取消；廢止",
     "pos": "v",
     "difficulty": 4,
     "example": "The agency can revoke a business license for repeated violations.",
@@ -974,7 +974,7 @@ module.exports = [
   {
     "word": "counsel",
     "phonetic": "/ˈkaʊnsəl/",
-    "meaning": "律師；法律顧問",
+    "meaning": "建議；顧問；辯護律師；諮商；商議",
     "pos": "n",
     "difficulty": 4,
     "example": "The company retained outside counsel to handle the lawsuit.",
@@ -983,7 +983,7 @@ module.exports = [
   {
     "word": "forensic",
     "phonetic": "/fəˈrɛnzɪk/",
-    "meaning": "法醫的；鑑識的",
+    "meaning": "法庭；鑑識；辯論",
     "pos": "adj",
     "difficulty": 4,
     "example": "Forensic accountants uncovered evidence of financial manipulation.",
@@ -992,7 +992,7 @@ module.exports = [
   {
     "word": "constitution",
     "phonetic": "/ˌkɑːnstɪˈtuːʃən/",
-    "meaning": "憲法；章程",
+    "meaning": "憲法；構成；體質；組成",
     "pos": "n",
     "difficulty": 4,
     "example": "The constitution guarantees freedom of speech for all citizens.",
@@ -1001,7 +1001,7 @@ module.exports = [
   {
     "word": "constitutional",
     "phonetic": "/ˌkɑːnstɪˈtuːʃənəl/",
-    "meaning": "憲法的；合憲的",
+    "meaning": "憲法；合憲；體質；固有",
     "pos": "adj",
     "difficulty": 4,
     "example": "The court ruled that the law was constitutional.",
@@ -1010,7 +1010,7 @@ module.exports = [
   {
     "word": "ballot",
     "phonetic": "/ˈbælət/",
-    "meaning": "選票；投票",
+    "meaning": "選票；投票；投票總數",
     "pos": "n",
     "difficulty": 4,
     "example": "Voters cast their ballots at polling stations across the country.",
@@ -1020,7 +1020,7 @@ module.exports = [
   {
     "word": "lobbyist",
     "phonetic": "/ˈlɑːbiɪst/",
-    "meaning": "遊說者；說客",
+    "meaning": "說客；遊說者",
     "pos": "n",
     "difficulty": 4,
     "example": "The lobbyist met with lawmakers to advocate for the new trade policy.",
@@ -1029,7 +1029,7 @@ module.exports = [
   {
     "word": "diplomat",
     "phonetic": "/ˈdɪpləmæt/",
-    "meaning": "外交官",
+    "meaning": "外交官；圓滑者",
     "pos": "n",
     "difficulty": 4,
     "example": "The diplomat negotiated a ceasefire between the two nations.",
@@ -1056,7 +1056,7 @@ module.exports = [
   {
     "word": "accord",
     "phonetic": "/əˈkɔːrd/",
-    "meaning": "一致；協議",
+    "meaning": "協議；一致；符合；給予",
     "pos": "n",
     "difficulty": 4,
     "example": "The trade accord eliminated tariffs on agricultural products.",
@@ -1065,7 +1065,7 @@ module.exports = [
   {
     "word": "pact",
     "phonetic": "/pækt/",
-    "meaning": "條約；協議",
+    "meaning": "契約；條約；協定",
     "pos": "n",
     "difficulty": 4,
     "example": "The defense pact requires member nations to assist each other.",
@@ -1074,7 +1074,7 @@ module.exports = [
   {
     "word": "veto",
     "phonetic": "/ˈviːtoʊ/",
-    "meaning": "否決；否決權",
+    "meaning": "否決權；否決；禁止",
     "pos": "n",
     "difficulty": 4,
     "example": "The president used the veto to block the proposed legislation.",
@@ -1083,7 +1083,7 @@ module.exports = [
   {
     "word": "federal",
     "phonetic": "/ˈfɛdərəl/",
-    "meaning": "聯邦的",
+    "meaning": "聯邦；中央政府",
     "pos": "adj",
     "difficulty": 4,
     "example": "Federal agencies oversee trade and commerce across state lines.",
@@ -1092,7 +1092,7 @@ module.exports = [
   {
     "word": "incumbent",
     "phonetic": "/ɪnˈkʌmbənt/",
-    "meaning": "現任者；在職的",
+    "meaning": "現任者；在職者；義不容辭",
     "pos": "n",
     "difficulty": 4,
     "example": "The incumbent senator faces a strong challenger in the upcoming election.",
@@ -1101,7 +1101,7 @@ module.exports = [
   {
     "word": "asylum",
     "phonetic": "/əˈsaɪləm/",
-    "meaning": "庇護；政治庇護",
+    "meaning": "庇護；避難所；避難",
     "pos": "n",
     "difficulty": 4,
     "example": "The refugee applied for political asylum in a neighboring country.",
@@ -1110,7 +1110,7 @@ module.exports = [
   {
     "word": "deportation",
     "phonetic": "/ˌdiːpɔːrˈteɪʃən/",
-    "meaning": "驅逐出境",
+    "meaning": "驅逐出境；遣送",
     "pos": "n",
     "difficulty": 4,
     "example": "The court issued a deportation order for the undocumented immigrant.",
@@ -1119,7 +1119,7 @@ module.exports = [
   {
     "word": "levy",
     "phonetic": "/ˈlevi/",
-    "meaning": "徵收；扣押",
+    "meaning": "徵收；課稅；徵兵",
     "pos": "v",
     "difficulty": 4,
     "example": "The government plans to levy a tax on sugar.",
@@ -1129,7 +1129,7 @@ module.exports = [
   {
     "word": "taxation",
     "phonetic": "/tækˈseɪʃən/",
-    "meaning": "稅制；課稅",
+    "meaning": "稅收；課稅；稅制",
     "pos": "n",
     "difficulty": 4,
     "example": "Corporate taxation policies vary significantly between countries.",
@@ -1138,7 +1138,7 @@ module.exports = [
   {
     "word": "monetary",
     "phonetic": "/ˈmɑːnɪteri/",
-    "meaning": "貨幣的；金融的",
+    "meaning": "貨幣；金融",
     "pos": "adj",
     "difficulty": 4,
     "example": "The central bank adjusted its monetary policy to control inflation.",
@@ -1147,7 +1147,7 @@ module.exports = [
   {
     "word": "stimulus",
     "phonetic": "/ˈstɪmjələs/",
-    "meaning": "刺激；激勵措施",
+    "meaning": "刺激；促動力；激勵",
     "pos": "n",
     "difficulty": 4,
     "example": "The government introduced a fiscal stimulus package to boost the economy.",
@@ -1156,7 +1156,7 @@ module.exports = [
   {
     "word": "recession",
     "phonetic": "/rɪˈsɛʃən/",
-    "meaning": "經濟衰退",
+    "meaning": "衰退；後退；撤回",
     "pos": "n",
     "difficulty": 4,
     "example": "Many businesses struggled to survive during the global recession.",
@@ -1166,7 +1166,7 @@ module.exports = [
   {
     "word": "regulatory",
     "phonetic": "/ˈrɛɡjələtɔːri/",
-    "meaning": "監管的；法規的",
+    "meaning": "監管；管理；調整",
     "pos": "adj",
     "difficulty": 4,
     "example": "Companies must comply with strict regulatory standards in the industry.",
@@ -1175,7 +1175,7 @@ module.exports = [
   {
     "word": "regulator",
     "phonetic": "/ˈrɛɡjəleɪtər/",
-    "meaning": "監管機構；監管者",
+    "meaning": "調節器；監管者；控制器",
     "pos": "n",
     "difficulty": 4,
     "example": "The financial regulator imposed fines on the bank for misconduct.",
@@ -1184,7 +1184,7 @@ module.exports = [
   {
     "word": "autonomy",
     "phonetic": "/ɔːˈtɑːnəmi/",
-    "meaning": "自治；自主權",
+    "meaning": "自治；自主；獨立性",
     "pos": "n",
     "difficulty": 4,
     "example": "The region was granted greater political autonomy by the central government.",
@@ -1193,7 +1193,7 @@ module.exports = [
   {
     "word": "privatize",
     "phonetic": "/ˈpraɪvətaɪz/",
-    "meaning": "私有化",
+    "meaning": "民營化；私有化",
     "pos": "v",
     "difficulty": 4,
     "example": "The government plans to privatize the national railway system.",
@@ -1202,7 +1202,7 @@ module.exports = [
   {
     "word": "nationalize",
     "phonetic": "/ˈnæʃənəlaɪz/",
-    "meaning": "國有化",
+    "meaning": "國有化；使入國籍",
     "pos": "v",
     "difficulty": 4,
     "example": "The country decided to nationalize its oil industry.",
@@ -1211,7 +1211,7 @@ module.exports = [
   {
     "word": "deregulate",
     "phonetic": "/diːˈrɛɡjuleɪt/",
-    "meaning": "解除管制；放寬限制",
+    "meaning": "解除管制；放寬監管",
     "pos": "v",
     "difficulty": 4,
     "example": "The government moved to deregulate the telecommunications sector.",
@@ -1220,7 +1220,7 @@ module.exports = [
   {
     "word": "subsidize",
     "phonetic": "/ˈsʌbsɪdaɪz/",
-    "meaning": "給予津貼 (動詞)",
+    "meaning": "資助；補助；津貼",
     "pos": "v",
     "difficulty": 4,
     "example": "The government subsidizes public transportation.",
@@ -1230,7 +1230,7 @@ module.exports = [
   {
     "word": "legislature",
     "phonetic": "/ˈlɛdʒɪsleɪtʃər/",
-    "meaning": "立法機關；議會",
+    "meaning": "立法機關；立法會",
     "pos": "n",
     "difficulty": 4,
     "example": "The state legislature approved the new education reform bill.",
@@ -1239,7 +1239,7 @@ module.exports = [
   {
     "word": "sovereignty",
     "phonetic": "/ˈsɑːvrənti/",
-    "meaning": "主權",
+    "meaning": "主權；統治權；獨立國",
     "pos": "n",
     "difficulty": 4,
     "example": "National sovereignty must be respected in all international agreements.",
@@ -1248,7 +1248,7 @@ module.exports = [
   {
     "word": "policyholder",
     "phonetic": "/ˈpɑːləsihoʊldər/",
-    "meaning": "保單持有人；投保人",
+    "meaning": "要保人；保單持有人",
     "pos": "n",
     "difficulty": 4,
     "example": "The policyholder filed a claim after the property was damaged.",
@@ -1257,7 +1257,7 @@ module.exports = [
   {
     "word": "underwriter",
     "phonetic": "/ˈʌndərraɪtər/",
-    "meaning": "保險業者；承銷商",
+    "meaning": "核保人；保險商；承銷商",
     "pos": "n",
     "difficulty": 4,
     "example": "The underwriter assessed the risk before approving the policy.",
@@ -1266,7 +1266,7 @@ module.exports = [
   {
     "word": "claimant",
     "phonetic": "/ˈkleɪmənt/",
-    "meaning": "索賠人；申請人",
+    "meaning": "索賠人；原告；申請人",
     "pos": "n",
     "difficulty": 4,
     "example": "The claimant submitted all required documents to the insurance company.",
@@ -1275,7 +1275,7 @@ module.exports = [
   {
     "word": "exclusion",
     "phonetic": "/ɪkˈskluːʒən/",
-    "meaning": "排除條款；除外責任",
+    "meaning": "排除；除外責任；不包括",
     "pos": "n",
     "difficulty": 4,
     "example": "The policy has an exclusion for damage caused by natural disasters.",
@@ -1284,7 +1284,7 @@ module.exports = [
   {
     "word": "casualty",
     "phonetic": "/ˈkæʒuəlti/",
-    "meaning": "傷亡者；意外事故",
+    "meaning": "傷亡；受害者；意外；急診室",
     "pos": "n",
     "difficulty": 4,
     "example": "The casualty insurance covers injuries sustained in workplace accidents.",
@@ -1293,7 +1293,7 @@ module.exports = [
   {
     "word": "insurer",
     "phonetic": "/ɪnˈʃʊrər/",
-    "meaning": "保險公司；承保人",
+    "meaning": "保險業者；承保人",
     "pos": "n",
     "difficulty": 4,
     "example": "The insurer agreed to pay the full amount of the claim.",
@@ -1302,7 +1302,7 @@ module.exports = [
   {
     "word": "copayment",
     "phonetic": "/ˈkoʊpeɪmənt/",
-    "meaning": "共付額；部分負擔",
+    "meaning": "部分負擔；共付額",
     "pos": "n",
     "difficulty": 4,
     "example": "The health plan requires a copayment of twenty dollars per visit.",
@@ -1311,7 +1311,7 @@ module.exports = [
   {
     "word": "adjuster",
     "phonetic": "/əˈdʒʌstər/",
-    "meaning": "理賠人員",
+    "meaning": "理賠師；調整器；調解人",
     "pos": "n",
     "difficulty": 4,
     "example": "The insurance adjuster inspected the damage to the vehicle.",
@@ -1320,7 +1320,7 @@ module.exports = [
   {
     "word": "aggregate",
     "phonetic": "/ˈæɡrɪɡət/",
-    "meaning": "總計的；累計的",
+    "meaning": "合計；總數；集合；聚集",
     "pos": "adj",
     "difficulty": 4,
     "example": "The aggregate limit on the policy is one million dollars.",
@@ -1329,7 +1329,7 @@ module.exports = [
   {
     "word": "hazard",
     "phonetic": "/ˈhæzərd/",
-    "meaning": "危險因素；風險",
+    "meaning": "危險；風險；冒險；障礙",
     "pos": "n",
     "difficulty": 4,
     "example": "The insurer identified several hazards that could increase the premium.",
@@ -1338,7 +1338,7 @@ module.exports = [
   {
     "word": "exposure",
     "phonetic": "/ɪkˈspoʊʒər/",
-    "meaning": "曝險；暴露",
+    "meaning": "暴露；揭露；曝光；風險敞口",
     "pos": "n",
     "difficulty": 4,
     "example": "The company sought to reduce its financial exposure to market downturns.",
@@ -1347,7 +1347,7 @@ module.exports = [
   {
     "word": "salvage",
     "phonetic": "/ˈsælvɪdʒ/",
-    "meaning": "打撈；殘值",
+    "meaning": "搶救；救助；打撈；補救；廢料",
     "pos": "n",
     "difficulty": 4,
     "example": "The salvage value of the damaged equipment was assessed by the adjuster.",
@@ -1356,7 +1356,7 @@ module.exports = [
   {
     "word": "mortality",
     "phonetic": "/mɔːrˈtæləti/",
-    "meaning": "死亡率",
+    "meaning": "死亡率；死亡；必死性；人類",
     "pos": "n",
     "difficulty": 4,
     "example": "Life insurance premiums are calculated based on mortality tables.",
@@ -1365,7 +1365,7 @@ module.exports = [
   {
     "word": "securities",
     "phonetic": "/sɪˈkjʊrɪtiz/",
-    "meaning": "證券；有價證券",
+    "meaning": "證券；有價證券；擔保",
     "pos": "n",
     "difficulty": 4,
     "example": "The firm trades in government and corporate securities.",
@@ -1374,7 +1374,7 @@ module.exports = [
   {
     "word": "hedge",
     "phonetic": "/hɛdʒ/",
-    "meaning": "避險；對沖",
+    "meaning": "樹籬；障礙；規避；圍住；兩面下注",
     "pos": "v",
     "difficulty": 4,
     "example": "The company used currency forwards to hedge against exchange rate risk.",
@@ -1383,7 +1383,7 @@ module.exports = [
   {
     "word": "speculation",
     "phonetic": "/ˌspekjuˈleɪʃn/",
-    "meaning": "投機；推測",
+    "meaning": "投機；推測；思索",
     "pos": "n",
     "difficulty": 4,
     "example": "Speculation on the currency led to a sudden drop in value.",
@@ -1393,7 +1393,7 @@ module.exports = [
   {
     "word": "endowment",
     "phonetic": "/ɪnˈdaʊmənt/",
-    "meaning": "捐贈基金；捐款",
+    "meaning": "捐贈；天賦；資助；基金；長期壽險",
     "pos": "n",
     "difficulty": 4,
     "example": "The university's endowment fund supports scholarships for students.",
@@ -1402,7 +1402,7 @@ module.exports = [
   {
     "word": "trustee",
     "phonetic": "/trʌˈstiː/",
-    "meaning": "受託人；信託管理人",
+    "meaning": "受託人；託管人；董事；理事",
     "pos": "n",
     "difficulty": 4,
     "example": "The trustee manages the investment fund on behalf of the beneficiaries.",
@@ -1411,7 +1411,7 @@ module.exports = [
   {
     "word": "maturity",
     "phonetic": "/məˈtʃʊrɪti/",
-    "meaning": "到期日；成熟",
+    "meaning": "成熟；到期；屆期",
     "pos": "n",
     "difficulty": 4,
     "example": "The bond reaches maturity in five years with a fixed interest rate.",
@@ -1420,7 +1420,7 @@ module.exports = [
   {
     "word": "liquidate",
     "phonetic": "/ˈlɪkwɪdeɪt/",
-    "meaning": "清算；變現",
+    "meaning": "清算；變現；結清；殺害",
     "pos": "v",
     "difficulty": 4,
     "example": "The company was forced to liquidate its assets to pay off debts.",
@@ -1430,7 +1430,7 @@ module.exports = [
   {
     "word": "inflationary",
     "phonetic": "/ɪnˈfleɪʃəneri/",
-    "meaning": "通貨膨脹的",
+    "meaning": "通貨膨脹；物價上漲",
     "pos": "adj",
     "difficulty": 4,
     "example": "Inflationary pressures forced the central bank to raise interest rates.",
@@ -1439,7 +1439,7 @@ module.exports = [
   {
     "word": "arrears",
     "phonetic": "/əˈrɪrz/",
-    "meaning": "欠款；拖欠",
+    "meaning": "欠款；拖欠；待辦事項",
     "pos": "n",
     "difficulty": 4,
     "example": "The tenant fell into arrears on the monthly rent payments.",
@@ -1449,7 +1449,7 @@ module.exports = [
   {
     "word": "denomination",
     "phonetic": "/dɪˌnɑːmɪˈneɪʃən/",
-    "meaning": "面額；面值",
+    "meaning": "面額；教派；派別；名稱",
     "pos": "n",
     "difficulty": 4,
     "example": "The bonds are available in denominations of one thousand dollars.",
@@ -1458,7 +1458,7 @@ module.exports = [
   {
     "word": "compounding",
     "phonetic": "/kəmˈpaʊndɪŋ/",
-    "meaning": "複利計算",
+    "meaning": "複利；混合；合成；化合",
     "pos": "n",
     "difficulty": 4,
     "example": "Interest compounding increases the total return on long-term investments.",
@@ -1467,7 +1467,7 @@ module.exports = [
   {
     "word": "convertible",
     "phonetic": "/kənˈvɜːrtɪbəl/",
-    "meaning": "可轉換的",
+    "meaning": "可轉換；敞篷車；兌換",
     "pos": "adj",
     "difficulty": 4,
     "example": "The company issued convertible bonds that can be exchanged for shares.",
@@ -1476,7 +1476,7 @@ module.exports = [
   {
     "word": "liquidation",
     "phonetic": "/ˌlɪkwɪˈdeɪʃn/",
-    "meaning": "清算；變現",
+    "meaning": "清算；償付；變現",
     "pos": "n",
     "difficulty": 4,
     "example": "The bankrupt firm is currently in liquidation.",
@@ -1486,7 +1486,7 @@ module.exports = [
   {
     "word": "damages",
     "phonetic": "/ˈdæmɪdʒɪz/",
-    "meaning": "損害賠償金",
+    "meaning": "賠償金；損害",
     "pos": "n",
     "difficulty": 4,
     "example": "The plaintiff was awarded damages of five hundred thousand dollars.",
@@ -1495,7 +1495,7 @@ module.exports = [
   {
     "word": "lessee",
     "phonetic": "/lɛˈsiː/",
-    "meaning": "承租人",
+    "meaning": "承租人；租戶",
     "pos": "n",
     "difficulty": 4,
     "example": "The lessee is responsible for maintaining the property during the lease term.",
@@ -1504,7 +1504,7 @@ module.exports = [
   {
     "word": "lessor",
     "phonetic": "/lɛˈsɔːr/",
-    "meaning": "出租人",
+    "meaning": "出租人；業主",
     "pos": "n",
     "difficulty": 4,
     "example": "The lessor agreed to reduce the rent for the first three months.",
@@ -1513,7 +1513,7 @@ module.exports = [
   {
     "word": "preamble",
     "phonetic": "/ˈpriːæmbəl/",
-    "meaning": "序言；前言",
+    "meaning": "序言；前言；導言",
     "pos": "n",
     "difficulty": 4,
     "example": "The preamble of the contract outlines the purpose of the agreement.",
@@ -1522,7 +1522,7 @@ module.exports = [
   {
     "word": "stipulation",
     "phonetic": "/ˌstɪpjəˈleɪʃən/",
-    "meaning": "契約條款 (名詞)",
+    "meaning": "規定；條款；約定",
     "pos": "n",
     "difficulty": 4,
     "example": "One stipulation of the agreement is that payment must be made in advance.",
@@ -1531,7 +1531,7 @@ module.exports = [
   {
     "word": "caveat",
     "phonetic": "/ˈkæviæt/",
-    "meaning": "警告；附帶說明",
+    "meaning": "警告；中止訴訟通知；限制說明",
     "pos": "n",
     "difficulty": 4,
     "example": "The report comes with the caveat that the data has not yet been verified.",
@@ -1540,7 +1540,7 @@ module.exports = [
   {
     "word": "whistleblower",
     "phonetic": "/ˈwɪsəlbloʊər/",
-    "meaning": "吹哨者；舉報人",
+    "meaning": "告密者；揭發者；吹哨人",
     "pos": "n",
     "difficulty": 4,
     "example": "The whistleblower reported illegal accounting practices to the authorities.",
@@ -1549,7 +1549,7 @@ module.exports = [
   {
     "word": "corruption",
     "phonetic": "/kəˈrʌpʃən/",
-    "meaning": "貪腐；腐敗",
+    "meaning": "貪汙；腐敗；墮落；受賄",
     "pos": "n",
     "difficulty": 4,
     "example": "The anti-corruption agency launched an investigation into government officials.",
@@ -1558,7 +1558,7 @@ module.exports = [
   {
     "word": "bribery",
     "phonetic": "/ˈbraɪbəri/",
-    "meaning": "賄賂；行賄",
+    "meaning": "賄賂；行賄；受賄",
     "pos": "n",
     "difficulty": 4,
     "example": "The company executive was charged with bribery of a public official.",
@@ -1567,7 +1567,7 @@ module.exports = [
   {
     "word": "antitrust",
     "phonetic": "/ˌæntiˈtrʌst/",
-    "meaning": "反壟斷的",
+    "meaning": "反壟斷；反托拉斯",
     "pos": "adj",
     "difficulty": 4,
     "example": "The company faced antitrust charges for engaging in price-fixing.",
@@ -1576,7 +1576,7 @@ module.exports = [
   {
     "word": "stewardship",
     "phonetic": "/ˈstuːərdʃɪp/",
-    "meaning": "管理責任；監管",
+    "meaning": "管理職務；管家職責；管理",
     "pos": "n",
     "difficulty": 4,
     "example": "Corporate stewardship requires directors to act in shareholders' best interests.",
@@ -1585,7 +1585,7 @@ module.exports = [
   {
     "word": "violation",
     "phonetic": "/ˌvaɪəˈleɪʃən/",
-    "meaning": "違規；違反",
+    "meaning": "違反；侵害；違背",
     "pos": "n",
     "difficulty": 4,
     "example": "The company was fined for a violation of environmental regulations.",
@@ -1594,7 +1594,7 @@ module.exports = [
   {
     "word": "infraction",
     "phonetic": "/ɪnˈfrækʃən/",
-    "meaning": "違規；違法行為",
+    "meaning": "違法行為；違反；侵害",
     "pos": "n",
     "difficulty": 4,
     "example": "Minor infractions may result in a warning rather than a fine.",
@@ -1603,7 +1603,7 @@ module.exports = [
   {
     "word": "infringement",
     "phonetic": "/ɪnˈfrɪndʒmənt/",
-    "meaning": "侵權；侵犯",
+    "meaning": "侵權；違規；侵害",
     "pos": "n",
     "difficulty": 4,
     "example": "The company sued for patent infringement in federal court.",
@@ -1612,7 +1612,7 @@ module.exports = [
   {
     "word": "trespass",
     "phonetic": "/ˈtrɛspəs/",
-    "meaning": "非法侵入；侵害",
+    "meaning": "侵入；侵害；罪過；違反",
     "pos": "n",
     "difficulty": 4,
     "example": "The owner posted signs warning against trespass on the private property.",
@@ -1621,7 +1621,7 @@ module.exports = [
   {
     "word": "accomplice",
     "phonetic": "/əˈkɑːmplɪs/",
-    "meaning": "共犯；從犯",
+    "meaning": "共犯；幫兇；同謀",
     "pos": "n",
     "difficulty": 4,
     "example": "The police arrested the accomplice who helped plan the robbery.",
@@ -1630,7 +1630,7 @@ module.exports = [
   {
     "word": "perpetrator",
     "phonetic": "/ˈpɜːrpətreɪtər/",
-    "meaning": "犯罪者；行兇者",
+    "meaning": "犯罪者；行兇者；加害者",
     "pos": "n",
     "difficulty": 4,
     "example": "The perpetrator of the fraud was sentenced to seven years in prison.",
@@ -1639,7 +1639,7 @@ module.exports = [
   {
     "word": "allege",
     "phonetic": "/əˈlɛdʒ/",
-    "meaning": "指稱；斷言 (動詞)",
+    "meaning": "宣稱；斷言；指控",
     "pos": "v",
     "difficulty": 4,
     "example": "The plaintiff alleged that the company knowingly sold defective products.",
@@ -1648,7 +1648,7 @@ module.exports = [
   {
     "word": "implicate",
     "phonetic": "/ˈɪmplɪkeɪt/",
-    "meaning": "牽連；暗示涉及",
+    "meaning": "牽連；涉及；暗示",
     "pos": "v",
     "difficulty": 4,
     "example": "The investigation implicated several officials in the corruption scandal.",
@@ -1657,7 +1657,7 @@ module.exports = [
   {
     "word": "infringe",
     "phonetic": "/ɪnˈfrɪndʒ/",
-    "meaning": "侵犯；違反",
+    "meaning": "侵犯；違反；侵害",
     "pos": "v",
     "difficulty": 4,
     "example": "The company was accused of infringing on a competitor's trademark.",
@@ -1666,7 +1666,7 @@ module.exports = [
   {
     "word": "omission",
     "phonetic": "/oʊˈmɪʃən/",
-    "meaning": "遺漏；疏忽",
+    "meaning": "遺漏；疏忽；失職；廢止",
     "pos": "n",
     "difficulty": 4,
     "example": "The omission of key financial data from the report raised concerns.",
@@ -1675,7 +1675,7 @@ module.exports = [
   {
     "word": "boycott",
     "phonetic": "/ˈbɔɪkɑːt/",
-    "meaning": "抵制；杯葛",
+    "meaning": "抵制；拒絕參加；杯葛",
     "pos": "v",
     "difficulty": 4,
     "example": "Consumer groups threatened to boycott the company over labor practices.",
@@ -1685,7 +1685,7 @@ module.exports = [
   {
     "word": "deterrent",
     "phonetic": "/dɪˈtɜːrənt/",
-    "meaning": "威懾物；嚇阻力",
+    "meaning": "威懾；制止物；震懾；威懾性",
     "pos": "n",
     "difficulty": 4,
     "example": "Heavy fines serve as a deterrent against corporate misconduct.",
@@ -1694,7 +1694,7 @@ module.exports = [
   {
     "word": "divulge",
     "phonetic": "/dɪˈvʌldʒ/",
-    "meaning": "洩露；透露",
+    "meaning": "洩漏；透露；揭露；公開",
     "pos": "v",
     "difficulty": 4,
     "example": "Employees are forbidden to divulge confidential company information.",
@@ -1703,7 +1703,7 @@ module.exports = [
   {
     "word": "immunity",
     "phonetic": "/ɪˈmjuːnɪti/",
-    "meaning": "豁免權；免責",
+    "meaning": "免疫；豁免；免除",
     "pos": "n",
     "difficulty": 4,
     "example": "Diplomatic immunity protects foreign officials from prosecution.",
@@ -1712,7 +1712,7 @@ module.exports = [
   {
     "word": "exempt",
     "phonetic": "/ɪɡˈzɛmpt/",
-    "meaning": "免除的；豁免的",
+    "meaning": "免除；豁免",
     "pos": "adj",
     "difficulty": 4,
     "example": "Non-profit organizations are exempt from certain types of taxation.",
@@ -1721,7 +1721,7 @@ module.exports = [
   {
     "word": "exemption",
     "phonetic": "/ɪɡˈzɛmpʃən/",
-    "meaning": "免除；豁免",
+    "meaning": "免除；豁免；免稅額",
     "pos": "n",
     "difficulty": 4,
     "example": "The company applied for a tax exemption on its charitable donations.",
@@ -1730,7 +1730,7 @@ module.exports = [
   {
     "word": "fugitive",
     "phonetic": "/ˈfjuːdʒɪtɪv/",
-    "meaning": "逃犯；逃亡者",
+    "meaning": "逃犯；短暫；亡命者；流逝",
     "pos": "n",
     "difficulty": 4,
     "example": "The fugitive was captured after a two-year international manhunt.",
@@ -1739,7 +1739,7 @@ module.exports = [
   {
     "word": "culprit",
     "phonetic": "/ˈkʌlprɪt/",
-    "meaning": "犯人；罪魁禍首",
+    "meaning": "罪犯；禍端；被告；原因",
     "pos": "n",
     "difficulty": 4,
     "example": "The investigation identified the culprit behind the data breach.",
@@ -1748,7 +1748,7 @@ module.exports = [
   {
     "word": "requisite",
     "phonetic": "/ˈrɛkwɪzɪt/",
-    "meaning": "必要的；必備品",
+    "meaning": "必要；必需品；必備",
     "pos": "adj",
     "difficulty": 4,
     "example": "All requisite documents must be submitted before the filing deadline.",
@@ -1758,7 +1758,7 @@ module.exports = [
   {
     "word": "nonpartisan",
     "phonetic": "/nɑːnˈpɑːrtɪzən/",
-    "meaning": "無黨派的；超黨派的",
+    "meaning": "無黨派；中立；非黨派人士",
     "pos": "adj",
     "difficulty": 4,
     "example": "The commission operates as a nonpartisan body to ensure fair elections.",
@@ -1767,7 +1767,7 @@ module.exports = [
   {
     "word": "prohibition",
     "phonetic": "/ˌproʊhɪˈbɪʃən/",
-    "meaning": "禁令；禁酒時期",
+    "meaning": "禁止；禁令；禁酒",
     "pos": "n",
     "difficulty": 4,
     "example": "There is a strict prohibition against insider trading in securities markets.",
@@ -1776,7 +1776,7 @@ module.exports = [
   {
     "word": "supersede",
     "phonetic": "/ˌsuːpərˈsiːd/",
-    "meaning": "取代；替代",
+    "meaning": "取代；代替；廢棄",
     "pos": "v",
     "difficulty": 4,
     "example": "The new regulation will supersede all previous guidelines on the matter.",
@@ -1785,7 +1785,7 @@ module.exports = [
   {
     "word": "defraud",
     "phonetic": "/dɪˈfrɔːd/",
-    "meaning": "詐騙；欺詐",
+    "meaning": "詐取；欺騙",
     "pos": "v",
     "difficulty": 4,
     "example": "The scheme was designed to defraud investors of their retirement savings.",
@@ -1794,7 +1794,7 @@ module.exports = [
   {
     "word": "overrule",
     "phonetic": "/ˌoʊvərˈruːl/",
-    "meaning": "駁回；推翻",
+    "meaning": "駁回；否決；支配",
     "pos": "v",
     "difficulty": 4,
     "example": "The judge overruled the objection and allowed the evidence to be presented.",
@@ -1803,7 +1803,7 @@ module.exports = [
   {
     "word": "overturn",
     "phonetic": "/ˌoʊvərˈtɜːrn/",
-    "meaning": "推翻；撤銷",
+    "meaning": "推翻；打翻；撤銷；顛覆",
     "pos": "v",
     "difficulty": 4,
     "example": "The appellate court overturned the original verdict on appeal.",
@@ -1812,7 +1812,7 @@ module.exports = [
   {
     "word": "affirm",
     "phonetic": "/əˈfɜːrm/",
-    "meaning": "確認；維持原判",
+    "meaning": "斷言；確認；證實；肯定",
     "pos": "v",
     "difficulty": 4,
     "example": "The supreme court affirmed the lower court's ruling on the case.",
@@ -1821,7 +1821,7 @@ module.exports = [
   {
     "word": "noncompliance",
     "phonetic": "/ˌnɑːnkəmˈplaɪəns/",
-    "meaning": "不合規；不遵守",
+    "meaning": "不服從；未遵守",
     "pos": "n",
     "difficulty": 4,
     "example": "Noncompliance with safety regulations can result in heavy fines.",
@@ -1830,7 +1830,7 @@ module.exports = [
   {
     "word": "disqualify",
     "phonetic": "/dɪsˈkwɑːlɪfaɪ/",
-    "meaning": "取消資格",
+    "meaning": "取消資格；使不合格",
     "pos": "v",
     "difficulty": 4,
     "example": "The conflict of interest was enough to disqualify the judge from the case.",
@@ -1848,7 +1848,7 @@ module.exports = [
   {
     "word": "nucleus",
     "phonetic": "/ˈnuːkliəs/",
-    "meaning": "細胞核；原子核",
+    "meaning": "核心；原子核；細胞核",
     "pos": "n",
     "difficulty": 4,
     "example": "The nucleus contains the genetic material of the cell.",
@@ -1866,7 +1866,7 @@ module.exports = [
   {
     "word": "genome",
     "phonetic": "/ˈdʒiːnoʊm/",
-    "meaning": "基因組",
+    "meaning": "基因組；染色體組",
     "pos": "n",
     "difficulty": 4,
     "example": "Scientists successfully mapped the entire human genome.",
@@ -1884,7 +1884,7 @@ module.exports = [
   {
     "word": "nanotechnology",
     "phonetic": "/ˌnænoʊtekˈnɑːlədʒi/",
-    "meaning": "奈米技術",
+    "meaning": "奈米科技",
     "pos": "n",
     "difficulty": 4,
     "example": "Nanotechnology has promising applications in medicine.",
@@ -1893,7 +1893,7 @@ module.exports = [
   {
     "word": "quantum",
     "phonetic": "/ˈkwɑːntəm/",
-    "meaning": "量子的",
+    "meaning": "量子；重大；定額",
     "pos": "adj",
     "difficulty": 4,
     "example": "Quantum computing could solve problems that are impossible for classical computers.",
@@ -1902,7 +1902,7 @@ module.exports = [
   {
     "word": "cardiovascular",
     "phonetic": "/ˌkɑːrdioʊˈvæskjələr/",
-    "meaning": "心血管的",
+    "meaning": "心血管",
     "pos": "adj",
     "difficulty": 4,
     "example": "Regular exercise reduces the risk of cardiovascular disease.",
@@ -1920,7 +1920,7 @@ module.exports = [
   {
     "word": "dermatology",
     "phonetic": "/ˌdɜːrməˈtɑːlədʒi/",
-    "meaning": "皮膚科",
+    "meaning": "皮膚科；皮膚學",
     "pos": "n",
     "difficulty": 4,
     "example": "She consulted a dermatology specialist for her skin condition.",
@@ -1929,7 +1929,7 @@ module.exports = [
   {
     "word": "neurology",
     "phonetic": "/njʊˈrɑːlədʒi/",
-    "meaning": "神經科",
+    "meaning": "神經內科；神經學",
     "pos": "n",
     "difficulty": 4,
     "example": "Neurology deals with disorders of the nervous system.",
@@ -1938,7 +1938,7 @@ module.exports = [
   {
     "word": "cardiology",
     "phonetic": "/ˌkɑːrdiˈɑːlədʒi/",
-    "meaning": "心臟科",
+    "meaning": "心臟科；心臟學",
     "pos": "n",
     "difficulty": 4,
     "example": "He was referred to the cardiology department for further tests.",
@@ -1947,7 +1947,7 @@ module.exports = [
   {
     "word": "oncology",
     "phonetic": "/ɑːŋˈkɑːlədʒi/",
-    "meaning": "腫瘤科",
+    "meaning": "腫瘤科；腫瘤學",
     "pos": "n",
     "difficulty": 4,
     "example": "Advances in oncology have improved cancer survival rates.",
@@ -1956,7 +1956,7 @@ module.exports = [
   {
     "word": "psychiatry",
     "phonetic": "/saɪˈkaɪətri/",
-    "meaning": "精神醫學",
+    "meaning": "精神科；精神病學",
     "pos": "n",
     "difficulty": 4,
     "example": "Psychiatry focuses on the diagnosis and treatment of mental disorders.",
@@ -1974,7 +1974,7 @@ module.exports = [
   {
     "word": "prosthetic",
     "phonetic": "/prɑːsˈθetɪk/",
-    "meaning": "義肢的；人工的",
+    "meaning": "義肢；假體",
     "pos": "adj",
     "difficulty": 4,
     "example": "Modern prosthetic limbs allow patients to regain mobility.",
@@ -1983,7 +1983,7 @@ module.exports = [
   {
     "word": "cinematography",
     "phonetic": "/ˌsɪnəməˈtɑːɡrəfi/",
-    "meaning": "電影攝影",
+    "meaning": "電影攝影術；電影藝術",
     "pos": "n",
     "difficulty": 4,
     "example": "The film won an award for its stunning cinematography.",
@@ -1992,7 +1992,7 @@ module.exports = [
   {
     "word": "choreography",
     "phonetic": "/ˌkɔːriˈɑːɡrəfi/",
-    "meaning": "編舞",
+    "meaning": "編舞；舞蹈安排",
     "pos": "n",
     "difficulty": 4,
     "example": "The choreography for the musical was energetic and creative.",
@@ -2001,7 +2001,7 @@ module.exports = [
   {
     "word": "virtuoso",
     "phonetic": "/ˌvɜːrtʃuˈoʊsoʊ/",
-    "meaning": "大師；技藝精湛的人",
+    "meaning": "藝術名家；演奏大師；名家",
     "pos": "n",
     "difficulty": 4,
     "example": "The pianist is a virtuoso who has performed on stages around the world.",
@@ -2010,7 +2010,7 @@ module.exports = [
   {
     "word": "fresco",
     "phonetic": "/ˈfreskoʊ/",
-    "meaning": "濕壁畫",
+    "meaning": "濕壁畫；壁畫法",
     "pos": "n",
     "difficulty": 4,
     "example": "The Sistine Chapel ceiling is a famous fresco by Michelangelo.",
@@ -2019,7 +2019,7 @@ module.exports = [
   {
     "word": "libretto",
     "phonetic": "/lɪˈbretoʊ/",
-    "meaning": "歌劇劇本",
+    "meaning": "劇本；腳本",
     "pos": "n",
     "difficulty": 4,
     "example": "The libretto was written in Italian and later translated into English.",
@@ -2028,7 +2028,7 @@ module.exports = [
   {
     "word": "consulate",
     "phonetic": "/ˈkɑːnsələt/",
-    "meaning": "領事館",
+    "meaning": "領事館；領事職務",
     "pos": "n",
     "difficulty": 4,
     "example": "The consulate can issue emergency travel documents.",
@@ -2046,7 +2046,7 @@ module.exports = [
   {
     "word": "marinara",
     "phonetic": "/ˌmærɪˈnɑːrə/",
-    "meaning": "番茄醬汁（義式）",
+    "meaning": "義大利番茄醬；紅醬",
     "pos": "n",
     "difficulty": 4,
     "example": "The pasta was served with a rich marinara sauce.",
@@ -2055,7 +2055,7 @@ module.exports = [
   {
     "word": "receptive",
     "phonetic": "/rɪˈsɛptɪv/",
-    "meaning": "善於接受的；開放的",
+    "meaning": "善於接受；接納；傾聽",
     "pos": "adj",
     "difficulty": 4,
     "example": "The staff was receptive to the customer's suggestions.",
@@ -2064,7 +2064,7 @@ module.exports = [
   {
     "word": "commend",
     "phonetic": "/kəˈmɛnd/",
-    "meaning": "稱讚；推薦",
+    "meaning": "表揚；推薦；委託",
     "pos": "v",
     "difficulty": 4,
     "example": "I would like to commend your team for the excellent service.",
@@ -2074,7 +2074,7 @@ module.exports = [
   {
     "word": "cordial",
     "phonetic": "/ˈkɔːrdʒəl/",
-    "meaning": "親切的；熱誠的",
+    "meaning": "熱誠；衷心；熱情；甜酒",
     "pos": "adj",
     "difficulty": 4,
     "example": "The hotel manager gave us a cordial welcome.",
@@ -2084,7 +2084,7 @@ module.exports = [
   {
     "word": "berth",
     "phonetic": "/bɜːrθ/",
-    "meaning": "臥鋪；泊位",
+    "meaning": "臥舖；泊位；停泊處；職位",
     "pos": "n",
     "difficulty": 4,
     "example": "We reserved an upper berth on the overnight train.",
@@ -2093,7 +2093,7 @@ module.exports = [
   {
     "word": "disembark",
     "phonetic": "/ˌdɪsɪmˈbɑːrk/",
-    "meaning": "下船；下機",
+    "meaning": "下船；登陸；下車",
     "pos": "v",
     "difficulty": 4,
     "example": "Please remain seated until it is safe to disembark.",
@@ -2102,7 +2102,7 @@ module.exports = [
   {
     "word": "maritime",
     "phonetic": "/ˈmærɪtaɪm/",
-    "meaning": "海事的；航海的",
+    "meaning": "海事；海洋；沿海；航海",
     "pos": "adj",
     "difficulty": 4,
     "example": "The city has a long maritime history and tradition.",
@@ -2111,7 +2111,7 @@ module.exports = [
   {
     "word": "itinerant",
     "phonetic": "/aɪˈtɪnərənt/",
-    "meaning": "巡迴的；流動的",
+    "meaning": "巡迴；流動；巡迴者",
     "pos": "adj",
     "difficulty": 4,
     "example": "The itinerant vendor sells snacks at different tourist spots.",
@@ -2120,7 +2120,7 @@ module.exports = [
   {
     "word": "concourse",
     "phonetic": "/ˈkɑːnkɔːrs/",
-    "meaning": "大廳；中央廣場",
+    "meaning": "大廳；中央廣場；匯合",
     "pos": "n",
     "difficulty": 4,
     "example": "Shops and restaurants line the airport concourse.",
@@ -2129,7 +2129,7 @@ module.exports = [
   {
     "word": "embarkation",
     "phonetic": "/ˌɛmbɑːrˈkeɪʃən/",
-    "meaning": "登船；上船地點",
+    "meaning": "登機；上船；裝載",
     "pos": "n",
     "difficulty": 4,
     "example": "The embarkation point for the cruise is at pier twelve.",
@@ -2138,7 +2138,7 @@ module.exports = [
   {
     "word": "disembarkation",
     "phonetic": "/ˌdɪsɛmbɑːrˈkeɪʃən/",
-    "meaning": "下船；下機",
+    "meaning": "離機；下船；登陸",
     "pos": "n",
     "difficulty": 4,
     "example": "Disembarkation will begin once the ship has docked.",
@@ -2147,7 +2147,7 @@ module.exports = [
   {
     "word": "proprietorship",
     "phonetic": "/prəˈpraɪətərʃɪp/",
-    "meaning": "所有權；獨資經營",
+    "meaning": "所有權；獨資經營；經營權",
     "pos": "n",
     "difficulty": 4,
     "example": "The hotel operates under a sole proprietorship.",
@@ -2156,7 +2156,7 @@ module.exports = [
   {
     "word": "chauffeur",
     "phonetic": "/ˈʃoʊfər/",
-    "meaning": "專屬司機；駕駛",
+    "meaning": "私人司機；開車送",
     "pos": "n",
     "difficulty": 4,
     "example": "A chauffeur drove us from the airport to the resort.",
@@ -2165,7 +2165,7 @@ module.exports = [
   {
     "word": "panoramic",
     "phonetic": "/ˌpænəˈræmɪk/",
-    "meaning": "全景的；全貌的",
+    "meaning": "全景；全貌；全方位",
     "pos": "adj",
     "difficulty": 4,
     "example": "The restaurant offers panoramic views of the city skyline.",
@@ -2174,7 +2174,7 @@ module.exports = [
   {
     "word": "promenade",
     "phonetic": "/ˌprɑːməˈneɪd/",
-    "meaning": "散步道；海濱步道",
+    "meaning": "散步場所；海濱步道；閒逛；散步",
     "pos": "n",
     "difficulty": 4,
     "example": "We took a walk along the seaside promenade.",
@@ -2183,7 +2183,7 @@ module.exports = [
   {
     "word": "overbooking",
     "phonetic": "/ˌoʊvərˈbʊkɪŋ/",
-    "meaning": "超額預訂",
+    "meaning": "超額預訂；超賣",
     "pos": "n",
     "difficulty": 4,
     "example": "Overbooking is a common practice among airlines.",
@@ -2192,7 +2192,7 @@ module.exports = [
   {
     "word": "tarmac",
     "phonetic": "/ˈtɑːrmæk/",
-    "meaning": "停機坪；柏油碎石路面",
+    "meaning": "柏油路面；飛機跑道；停機坪；鋪柏油",
     "pos": "n",
     "difficulty": 4,
     "example": "The plane sat on the tarmac for an hour before takeoff.",
@@ -2201,7 +2201,7 @@ module.exports = [
   {
     "word": "hangar",
     "phonetic": "/ˈhæŋər/",
-    "meaning": "飛機棚；機庫",
+    "meaning": "飛機庫",
     "pos": "n",
     "difficulty": 4,
     "example": "The aircraft was moved to the hangar for maintenance.",
@@ -2210,7 +2210,7 @@ module.exports = [
   {
     "word": "excursionist",
     "phonetic": "/ɪkˈskɜːrʒənɪst/",
-    "meaning": "短途旅行者",
+    "meaning": "遠足者；遊客",
     "pos": "n",
     "difficulty": 4,
     "example": "Excursionists filled the town during the holiday weekend.",
@@ -2219,7 +2219,7 @@ module.exports = [
   {
     "word": "amenable",
     "phonetic": "/əˈmiːnəbəl/",
-    "meaning": "樂於配合的；順從的",
+    "meaning": "順從；願意接受；經得起檢驗",
     "pos": "adj",
     "difficulty": 4,
     "example": "The hotel staff was amenable to our special dietary requests.",
@@ -2228,7 +2228,7 @@ module.exports = [
   {
     "word": "exemplary",
     "phonetic": "/ɪɡˈzɛmpləri/",
-    "meaning": "模範的；優異的",
+    "meaning": "模範；懲罰性",
     "pos": "adj",
     "difficulty": 4,
     "example": "The resort is known for its exemplary customer service.",
@@ -2237,7 +2237,7 @@ module.exports = [
   {
     "word": "impeccable",
     "phonetic": "/ɪmˈpɛkəbəl/",
-    "meaning": "無可挑剔的",
+    "meaning": "無懈可擊",
     "pos": "adj",
     "difficulty": 4,
     "example": "The hotel's impeccable service earned it a five-star rating.",
@@ -2246,7 +2246,7 @@ module.exports = [
   {
     "word": "compliant",
     "phonetic": "/kəmˈplaɪənt/",
-    "meaning": "符合規定的；順從的",
+    "meaning": "順從；符合",
     "pos": "adj",
     "difficulty": 4,
     "example": "All facilities are compliant with international safety standards.",
@@ -2255,7 +2255,7 @@ module.exports = [
   {
     "word": "immaculate",
     "phonetic": "/ɪˈmækjələt/",
-    "meaning": "一塵不染的；完美的",
+    "meaning": "潔淨",
     "pos": "adj",
     "difficulty": 4,
     "example": "The rooms were immaculate when we checked in.",
@@ -2264,7 +2264,7 @@ module.exports = [
   {
     "word": "prestigious",
     "phonetic": "/preˈstɪdʒəs/",
-    "meaning": "享譽盛名的",
+    "meaning": "有名望",
     "pos": "adj",
     "difficulty": 4,
     "example": "He won a prestigious award for his work.",
@@ -2274,7 +2274,7 @@ module.exports = [
   {
     "word": "inaugural",
     "phonetic": "/ɪˈnɔːɡjərəl/",
-    "meaning": "首次的；開幕的",
+    "meaning": "就職；開幕；首屆",
     "pos": "adj",
     "difficulty": 4,
     "example": "The airline celebrated its inaugural flight to Tokyo.",
@@ -2283,7 +2283,7 @@ module.exports = [
   {
     "word": "excise",
     "phonetic": "/ˈɛksaɪz/",
-    "meaning": "消費稅；貨物稅",
+    "meaning": "消費稅；切除；刪除",
     "pos": "n",
     "difficulty": 4,
     "example": "An excise tax is included in the price of imported goods.",
@@ -2292,7 +2292,7 @@ module.exports = [
   {
     "word": "kernel",
     "phonetic": "/ˈkɜːrnəl/",
-    "meaning": "核心程式",
+    "meaning": "核心；仁；精髓",
     "pos": "n",
     "difficulty": 4,
     "example": "The operating system kernel manages hardware resources efficiently.",
@@ -2301,7 +2301,7 @@ module.exports = [
   {
     "word": "parse",
     "phonetic": "/pɑːrs/",
-    "meaning": "剖析；解析",
+    "meaning": "解析",
     "pos": "v",
     "difficulty": 4,
     "example": "The program can parse large XML files in just a few seconds.",
@@ -2310,7 +2310,7 @@ module.exports = [
   {
     "word": "runtime",
     "phonetic": "/ˈrʌntaɪm/",
-    "meaning": "執行時期",
+    "meaning": "執行時期；運行時間",
     "pos": "n",
     "difficulty": 4,
     "example": "The error occurs only at runtime and not during compilation.",
@@ -2319,7 +2319,7 @@ module.exports = [
   {
     "word": "geothermal",
     "phonetic": "/ˌdʒiːoʊˈθɜːrməl/",
-    "meaning": "地熱的",
+    "meaning": "地熱",
     "pos": "adj",
     "difficulty": 4,
     "example": "Iceland uses geothermal energy to heat most of its buildings.",
@@ -2346,7 +2346,7 @@ module.exports = [
   {
     "word": "hypothesize",
     "phonetic": "/haɪˈpɑːθəsaɪz/",
-    "meaning": "建立假設 (動詞)",
+    "meaning": "假設",
     "pos": "v",
     "difficulty": 4,
     "example": "The researchers hypothesize that warmer oceans will increase storm frequency.",
@@ -2355,7 +2355,7 @@ module.exports = [
   {
     "word": "endemic",
     "phonetic": "/enˈdemɪk/",
-    "meaning": "地方性的；特有的",
+    "meaning": "地方性；固有；流行",
     "pos": "adj",
     "difficulty": 4,
     "example": "The bird species is endemic to the tropical island.",
@@ -2364,7 +2364,7 @@ module.exports = [
   {
     "word": "biome",
     "phonetic": "/ˈbaɪoʊm/",
-    "meaning": "生物群落",
+    "meaning": "生物群系；群落",
     "pos": "n",
     "difficulty": 4,
     "example": "The tropical rainforest is the most biodiverse biome on Earth.",
@@ -2373,7 +2373,7 @@ module.exports = [
   {
     "word": "synthesize",
     "phonetic": "/ˈsɪnθəsaɪz/",
-    "meaning": "合成",
+    "meaning": "合成；綜合",
     "pos": "v",
     "difficulty": 4,
     "example": "The laboratory was able to synthesize the compound in large quantities.",
@@ -2382,7 +2382,7 @@ module.exports = [
   {
     "word": "pollinate",
     "phonetic": "/ˈpɑːlɪneɪt/",
-    "meaning": "授粉",
+    "meaning": "傳粉；授粉",
     "pos": "v",
     "difficulty": 4,
     "example": "Bees pollinate a large percentage of the crops we depend on.",
@@ -2391,7 +2391,7 @@ module.exports = [
   {
     "word": "aerosol",
     "phonetic": "/ˈerəsɔːl/",
-    "meaning": "氣溶膠；噴霧劑",
+    "meaning": "噴霧器；氣膠；懸浮微粒",
     "pos": "n",
     "difficulty": 4,
     "example": "Aerosol particles in the atmosphere can affect climate patterns.",
@@ -2400,7 +2400,7 @@ module.exports = [
   {
     "word": "omnichannel",
     "phonetic": "/ˈɑːmnɪtʃænəl/",
-    "meaning": "全通路的",
+    "meaning": "全通路",
     "pos": "adj",
     "difficulty": 4,
     "example": "The omnichannel strategy connects online and in-store shopping experiences.",
@@ -2409,7 +2409,7 @@ module.exports = [
   {
     "word": "retarget",
     "phonetic": "/riːˈtɑːrɡɪt/",
-    "meaning": "再行銷",
+    "meaning": "重新鎖定目標",
     "pos": "v",
     "difficulty": 4,
     "example": "The ads retarget users who visited the site but did not buy.",
@@ -2418,7 +2418,7 @@ module.exports = [
   {
     "word": "prefabricated",
     "phonetic": "/priːˈfæbrɪkeɪtɪd/",
-    "meaning": "預製的；組合式的",
+    "meaning": "預製；組合式",
     "pos": "adj",
     "difficulty": 4,
     "example": "Prefabricated walls reduce construction time on the building site.",
@@ -2427,7 +2427,7 @@ module.exports = [
   {
     "word": "mezzanine",
     "phonetic": "/ˈmezəniːn/",
-    "meaning": "夾層樓",
+    "meaning": "夾層；中二樓",
     "pos": "n",
     "difficulty": 4,
     "example": "The mezzanine level houses the employee lounge and break room.",
@@ -2436,7 +2436,7 @@ module.exports = [
   {
     "word": "leasehold",
     "phonetic": "/ˈliːshoʊld/",
-    "meaning": "租賃權",
+    "meaning": "租賃權；租賃物",
     "pos": "n",
     "difficulty": 4,
     "example": "The leasehold agreement runs for ninety-nine years from the start date.",
@@ -2445,7 +2445,7 @@ module.exports = [
   {
     "word": "prorated",
     "phonetic": "/proʊˈreɪtɪd/",
-    "meaning": "按比例分配的",
+    "meaning": "比例分配；比例計算",
     "pos": "adj",
     "difficulty": 4,
     "example": "The refund will be prorated based on the remaining months of the contract.",
@@ -2454,7 +2454,7 @@ module.exports = [
   {
     "word": "archipelago",
     "phonetic": "/ˌɑːrkɪˈpɛləɡoʊ/",
-    "meaning": "群島",
+    "meaning": "群島；列島",
     "pos": "n",
     "difficulty": 4,
     "example": "The archipelago consists of over seven thousand islands in the Pacific.",
@@ -2472,7 +2472,7 @@ module.exports = [
   {
     "word": "knoll",
     "phonetic": "/noʊl/",
-    "meaning": "小丘；圓丘",
+    "meaning": "圓丘；小山",
     "pos": "n",
     "difficulty": 4,
     "example": "A single oak tree stood on top of the grassy knoll.",
@@ -2490,7 +2490,7 @@ module.exports = [
   {
     "word": "estuary",
     "phonetic": "/ˈɛstʃuˌɛri/",
-    "meaning": "河口；入海口",
+    "meaning": "河口",
     "pos": "n",
     "difficulty": 4,
     "example": "The estuary is where fresh river water meets the salty ocean water.",
@@ -2508,7 +2508,7 @@ module.exports = [
   {
     "word": "topography",
     "phonetic": "/təˈpɑːɡrəfi/",
-    "meaning": "地形學；地勢",
+    "meaning": "地形；地貌",
     "pos": "n",
     "difficulty": 4,
     "example": "Engineers must study the topography before designing roads through mountain areas.",
@@ -2517,7 +2517,7 @@ module.exports = [
   {
     "word": "subterranean",
     "phonetic": "/ˌsʌbtəˈreɪniən/",
-    "meaning": "地下的",
+    "meaning": "地下；秘密",
     "pos": "adj",
     "difficulty": 4,
     "example": "Explorers discovered a vast subterranean cave system beneath the desert surface.",
@@ -2526,7 +2526,7 @@ module.exports = [
   {
     "word": "condensation",
     "phonetic": "/ˌkɑːndɛnˈseɪʃən/",
-    "meaning": "凝結；凝結物",
+    "meaning": "凝結；冷凝；濃縮",
     "pos": "n",
     "difficulty": 4,
     "example": "Condensation on the window shows that the air inside is quite humid.",
@@ -2535,7 +2535,7 @@ module.exports = [
   {
     "word": "barometer",
     "phonetic": "/bəˈrɑːmɪtər/",
-    "meaning": "氣壓計",
+    "meaning": "氣壓計；指標",
     "pos": "n",
     "difficulty": 4,
     "example": "The falling barometer reading indicates that a storm is approaching soon.",
@@ -2553,7 +2553,7 @@ module.exports = [
   {
     "word": "nomadic",
     "phonetic": "/noʊˈmædɪk/",
-    "meaning": "遊牧的；流浪的",
+    "meaning": "遊牧；流浪",
     "pos": "adj",
     "difficulty": 4,
     "example": "Nomadic tribes travel across the desert following seasonal water sources and pastures.",
@@ -2562,7 +2562,7 @@ module.exports = [
   {
     "word": "municipality",
     "phonetic": "/mjuːˌnɪsɪˈpælɪti/",
-    "meaning": "市；自治市",
+    "meaning": "自治市；市政當局",
     "pos": "n",
     "difficulty": 4,
     "example": "The municipality approved a new budget for improving public transportation services.",
@@ -2571,7 +2571,7 @@ module.exports = [
   {
     "word": "precinct",
     "phonetic": "/ˈpriːsɪŋkt/",
-    "meaning": "管轄區；警察分局",
+    "meaning": "選區；管轄區；範圍",
     "pos": "n",
     "difficulty": 4,
     "example": "Voters lined up at the local precinct to cast their ballots early.",
@@ -2580,7 +2580,7 @@ module.exports = [
   {
     "word": "enclave",
     "phonetic": "/ˈɛnkleɪv/",
-    "meaning": "飛地；少數族群聚居區",
+    "meaning": "飛地；被包圍的領土；聚居區",
     "pos": "n",
     "difficulty": 4,
     "example": "The diplomatic enclave houses several foreign embassies and international organizations nearby.",
@@ -2589,7 +2589,7 @@ module.exports = [
   {
     "word": "diaspora",
     "phonetic": "/daɪˈæspərə/",
-    "meaning": "離散族群；大流散",
+    "meaning": "僑民；散居者；大離散",
     "pos": "n",
     "difficulty": 4,
     "example": "The Chinese diaspora has established thriving communities across Southeast Asia and beyond.",
@@ -2598,7 +2598,7 @@ module.exports = [
   {
     "word": "expatriate",
     "phonetic": "/ɛksˈpeɪtriɪt/",
-    "meaning": "僑民；旅居國外者",
+    "meaning": "僑民；外派人員；移居國外；放逐",
     "pos": "n",
     "difficulty": 4,
     "example": "Many expatriates living abroad still maintain strong cultural ties to their homeland.",
@@ -2607,7 +2607,7 @@ module.exports = [
   {
     "word": "domicile",
     "phonetic": "/ˈdɑːmɪsaɪl/",
-    "meaning": "住所；居所",
+    "meaning": "住所；戶籍；定居",
     "pos": "n",
     "difficulty": 4,
     "example": "You must provide proof of your current domicile when applying for residency.",
@@ -2616,7 +2616,7 @@ module.exports = [
   {
     "word": "epoch",
     "phonetic": "/ˈɛpək/",
-    "meaning": "紀元；重大時期",
+    "meaning": "時代；紀元；時期",
     "pos": "n",
     "difficulty": 4,
     "example": "The invention of the printing press marked a new epoch in history.",
@@ -2625,7 +2625,7 @@ module.exports = [
   {
     "word": "elapse",
     "phonetic": "/ɪˈlæps/",
-    "meaning": "（時間）消逝",
+    "meaning": "逝去；過去",
     "pos": "v",
     "difficulty": 4,
     "example": "Several months elapsed before we received any response to our application letter.",
@@ -2634,7 +2634,7 @@ module.exports = [
   {
     "word": "henceforth",
     "phonetic": "/ˌhɛnsˈfɔːrθ/",
-    "meaning": "從此以後",
+    "meaning": "從此以後；今後",
     "pos": "adv",
     "difficulty": 4,
     "example": "Henceforth all employees must wear identification badges inside the office building.",
@@ -2643,7 +2643,7 @@ module.exports = [
   {
     "word": "antiquity",
     "phonetic": "/ænˈtɪkwɪti/",
-    "meaning": "古代；古物",
+    "meaning": "古代；古物；古蹟；高齡",
     "pos": "n",
     "difficulty": 4,
     "example": "These pottery fragments date back to antiquity and are extremely valuable artifacts.",
@@ -2652,7 +2652,7 @@ module.exports = [
   {
     "word": "diurnal",
     "phonetic": "/daɪˈɜːrnəl/",
-    "meaning": "白天的；日間的",
+    "meaning": "日間；每日；晝行",
     "pos": "adj",
     "difficulty": 4,
     "example": "Most songbirds are diurnal animals that are active only during daylight hours.",
@@ -2661,7 +2661,7 @@ module.exports = [
   {
     "word": "perennial",
     "phonetic": "/pəˈrɛniəl/",
-    "meaning": "終年的；常年的",
+    "meaning": "多年生；終年；長久",
     "pos": "adj",
     "difficulty": 4,
     "example": "Traffic congestion is a perennial problem that affects commuters in every major city.",
@@ -2670,7 +2670,7 @@ module.exports = [
   {
     "word": "circumference",
     "phonetic": "/sərˈkʌmfərəns/",
-    "meaning": "圓周；周長",
+    "meaning": "圓周；周長；周圍",
     "pos": "n",
     "difficulty": 4,
     "example": "The circumference of the Earth at the equator is about forty thousand kilometers.",
@@ -2679,7 +2679,7 @@ module.exports = [
   {
     "word": "quotient",
     "phonetic": "/ˈkwoʊʃənt/",
-    "meaning": "商（除法結果）",
+    "meaning": "商；商數",
     "pos": "n",
     "difficulty": 4,
     "example": "The quotient of twenty divided by four equals exactly five every time.",
@@ -2688,7 +2688,7 @@ module.exports = [
   {
     "word": "hiatus",
     "phonetic": "/haɪˈeɪtəs/",
-    "meaning": "間斷；裂縫 (名詞)",
+    "meaning": "中斷；間斷；裂口",
     "pos": "n",
     "difficulty": 4,
     "example": "The band announced a hiatus so members could work on solo projects.",
@@ -2697,7 +2697,7 @@ module.exports = [
   {
     "word": "sojourn",
     "phonetic": "/ˈsoʊdʒɜːrn/",
-    "meaning": "逗留；旅居",
+    "meaning": "逗留；寄居",
     "pos": "n",
     "difficulty": 4,
     "example": "During our sojourn in Paris, we visited many famous museums.",
@@ -2706,7 +2706,7 @@ module.exports = [
   {
     "word": "inoculation",
     "phonetic": "/ɪˌnɒkjəˈleɪʃən/",
-    "meaning": "預防接種",
+    "meaning": "接種；預防接種",
     "pos": "n",
     "difficulty": 4,
     "example": "Some countries require inoculation records before entry.",
@@ -2715,7 +2715,7 @@ module.exports = [
   {
     "word": "wayfarer",
     "phonetic": "/ˈweɪfɛrər/",
-    "meaning": "旅人",
+    "meaning": "旅人；徒步旅行者",
     "pos": "n",
     "difficulty": 4,
     "example": "The inn provided shelter for weary wayfarers.",
