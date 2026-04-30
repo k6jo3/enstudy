@@ -2331,5 +2331,16 @@
   "hanger": "專指有肩膀支撐結構、用來撐掛衣服的衣架。",
   "hinge": "比 rely 更強調「關鍵樞紐」帶來的決定性影響。",
   "saucer": "專指墊在杯子下方、接住溢出液體的小淺碟。",
-  "entire": "作為形容詞，強調單一事物從頭到尾的完整性。"
+  "entire": "作為形容詞，強調單一事物從頭到尾的完整性。",
+  "sometimes": "通用的「有時候」，頻率中等，無強調低頻",
+  "once in a while": "強調低頻率，比 sometimes 更少見，約「偶爾才一次」",
+  "often": "頻率偏高，超過一半的時間都會發生",
+  "frequently": "比 often 更頻繁，強調反覆發生",
+  "always": "百分之百發生，每次都是如此",
+  "usually": "大多數情況，約八九成的時間",
+  "rarely": "極少發生，比 seldom 更少",
+  "seldom": "不常發生，較書面正式；比較 rarely（更口語）",
+  "never": "從不發生，頻率為零",
+  "occasionally": "偶爾發生，比 sometimes 少，比 rarely 多",
+  "every now and then": "口語化的「偶爾」，與 once in a while 幾乎同義"
 }
