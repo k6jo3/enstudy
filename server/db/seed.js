@@ -57,7 +57,7 @@ async function seedData() {
   // Always sync word fields from data file so translation/example edits take effect
   const stmtWSync = db.prepare(`
     UPDATE words
-    SET phonetic = ?, meaning = ?, part_of_speech = ?, difficulty = ?, example = ?, example_zh = ?, context = ?
+    SET phonetic = ?, meaning = ?, part_of_speech = ?, difficulty = ?, example = ?, example_zh = ?, context = COALESCE(?, context)
     WHERE word = ?
   `);
   let wsCount = 0;
@@ -124,7 +124,7 @@ async function seedData() {
   // Always sync phrase fields from data file so translation/example edits take effect
   const stmtPSync = db.prepare(`
     UPDATE phrases
-    SET meaning = ?, example = ?, difficulty = ?, example_zh = ?, context = ?
+    SET meaning = ?, example = ?, difficulty = ?, example_zh = ?, context = COALESCE(?, context)
     WHERE phrase = ?
   `);
   let psCount = 0;
