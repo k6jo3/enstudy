@@ -1418,8 +1418,8 @@ module.exports = [
   {
     "phrase": "I'm dying of boredom",
     "meaning": "我無聊到快死了",
-    "example": "This lecture is endless. I can't stand how boring it is.",
-    "exampleZh": "這堂課沒完沒了，真的無聊到不行。", 
+    "example": "I'm dying of boredom in this lecture — it's been three hours and he's still on slide two.",
+    "exampleZh": "這堂課無聊到我快死了——都三個小時了還在第二張投影片。",
     "difficulty": 4,
     "context": "誇張說法，表示極度無聊，不是真的有危險。語氣帶抱怨和戲劇感。"
   },
