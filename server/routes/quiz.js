@@ -318,7 +318,7 @@ async function selectItemsByTier(quizCount, today, roundNumber = 1, avgReview = 
   for (const name of Object.keys(pools)) {
     const scored = pools[name].map(item => ({
       item,
-      score: masteryService.computePriorityScore(item, avgReview, roundNumber)
+      score: masteryService.computePriorityScore(item, avgReview)
         + (item.error_count || 0) * 0.02
         + Math.random() * 0.15,
     }));
@@ -399,7 +399,7 @@ router.get('/items', async (req, res) => {
 
     const round = await roundService.getCurrentRound();
     const roundNumber = round ? round.round_number : 1;
-    const avgReview = roundNumber >= 2 ? await masteryService.getAverageReviewCount() : 0;
+    const avgReview = await masteryService.getAverageReviewCount();
     const items = await selectItemsByTier(quizCount, today, roundNumber, avgReview);
     const wordDiffMap = items.some(it => it.item_type === 'phrase') ? await getWordDiffMap() : null;
 

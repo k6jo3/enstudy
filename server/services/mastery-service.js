@@ -160,29 +160,21 @@ async function decayPausedItems() {
 }
 
 // Error-rate priority: lifetime total_wrong / review_count, ignored under MIN_ATTEMPTS.
-// Round-2+ bonus: under-practiced items (review_count < avg) get a deficit bonus so
-// less-practiced / error-prone items float to the top on the next round.
 const ERROR_RATE_MIN_ATTEMPTS = 4;
-const DEFICIT_WEIGHT = 0.5;
 
-function computePriorityScore(row, avgReview, roundNumber) {
+function computePriorityScore(row, avgReview) {
   const reviewCount = row.review_count || 0;
   const totalWrong = row.total_wrong || 0;
 
-  // Error rate component: items with more mistakes float up (needs 4+ reviews)
+  // Error rate: items with more mistakes float up (needs 4+ reviews to be reliable)
   const errorRate = reviewCount >= ERROR_RATE_MIN_ATTEMPTS ? totalWrong / reviewCount : 0;
 
-  // Fresh bonus: items quizzed fewer times get priority regardless of round.
-  // Scales from 0.5 (never quizzed) down to 0 at ~1.5× the current average.
-  const baseline = Math.max(avgReview * 1.5, 10);
+  // Fresh bonus: 0.5 for never-quizzed, scales to 0 at 1.5× the current avg.
+  // avgReview is always the real average so this is always relative, not absolute.
+  const baseline = avgReview > 0 ? avgReview * 1.5 : 1;
   const freshBonus = reviewCount === 0 ? 0.5 : Math.max(0, 0.5 * (1 - reviewCount / baseline));
 
-  // Round-2+ deficit for under-practiced items (kept for backward compat)
-  let deficit = 0;
-  if (roundNumber >= 2 && avgReview > 0 && reviewCount < avgReview) {
-    deficit = (1 - reviewCount / avgReview) * DEFICIT_WEIGHT;
-  }
-  return errorRate + freshBonus + deficit;
+  return errorRate + freshBonus;
 }
 
 async function getAverageReviewCount() {
@@ -223,7 +215,7 @@ async function getDueReviews(date, limit = 40, roundNumber = 1) {
 
   const seeded = rows
     .slice()
-    .map(row => ({ ...row, priority_score: computePriorityScore(row, avgReview, roundNumber) }))
+    .map(row => ({ ...row, priority_score: computePriorityScore(row, avgReview) }))
     .sort((left, right) => {
       const priorityDelta =
         (right.just_unpaused - left.just_unpaused) ||
