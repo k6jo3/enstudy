@@ -311,16 +311,19 @@ async function selectItemsByTier(quizCount, today, roundNumber = 1, avgReview = 
   const pools = { today: todayItems, untested: untestedItems, score0, weak, medium, strong };
   const { dynamicRatios, dominantTier } = getDynamicRatios(pools);
 
-  // Sort each pool by error-rate priority (lifetime total_wrong / review_count),
-  // with a deficit bonus in round 2+ for under-practiced items. Falls back to dynamic
-  // error_count so today/untested items (no review_count yet) still have a sensible order.
+  // Pre-assign a selection score (priority + small noise) so:
+  // - High error-rate and under-quizzed items tend to appear first
+  // - Noise (±0.15) prevents the exact same set being picked every session
+  // - error_count gives a small extra nudge for items with recorded errors
   for (const name of Object.keys(pools)) {
-    pools[name].sort((a, b) => {
-      const pa = masteryService.computePriorityScore(a, avgReview, roundNumber);
-      const pb = masteryService.computePriorityScore(b, avgReview, roundNumber);
-      if (pb !== pa) return pb - pa;
-      return (b.error_count || 0) - (a.error_count || 0);
-    });
+    const scored = pools[name].map(item => ({
+      item,
+      score: masteryService.computePriorityScore(item, avgReview, roundNumber)
+        + (item.error_count || 0) * 0.02
+        + Math.random() * 0.15,
+    }));
+    scored.sort((a, b) => b.score - a.score);
+    pools[name] = scored.map(s => s.item);
   }
 
   const usedKeys = new Set();

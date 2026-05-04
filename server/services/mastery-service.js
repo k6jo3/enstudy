@@ -168,12 +168,21 @@ const DEFICIT_WEIGHT = 0.5;
 function computePriorityScore(row, avgReview, roundNumber) {
   const reviewCount = row.review_count || 0;
   const totalWrong = row.total_wrong || 0;
+
+  // Error rate component: items with more mistakes float up (needs 4+ reviews)
   const errorRate = reviewCount >= ERROR_RATE_MIN_ATTEMPTS ? totalWrong / reviewCount : 0;
+
+  // Fresh bonus: items quizzed fewer times get priority regardless of round.
+  // Scales from 0.5 (never quizzed) down to 0 at ~1.5× the current average.
+  const baseline = Math.max(avgReview * 1.5, 10);
+  const freshBonus = reviewCount === 0 ? 0.5 : Math.max(0, 0.5 * (1 - reviewCount / baseline));
+
+  // Round-2+ deficit for under-practiced items (kept for backward compat)
   let deficit = 0;
   if (roundNumber >= 2 && avgReview > 0 && reviewCount < avgReview) {
     deficit = (1 - reviewCount / avgReview) * DEFICIT_WEIGHT;
   }
-  return errorRate + deficit;
+  return errorRate + freshBonus + deficit;
 }
 
 async function getAverageReviewCount() {
