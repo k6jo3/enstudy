@@ -25240,7 +25240,7 @@ module.exports = [
   {
     "word": "hope",
     "phonetic": "/hoʊp/",
-    "meaning": "希望；期望；盼望；信心",
+    "meaning": "希望（可能實現的期待）；盼望",
     "pos": "v",
     "difficulty": 1,
     "example": "I hope to see you again.",
@@ -25250,7 +25250,7 @@ module.exports = [
   {
     "word": "wish",
     "phonetic": "/wɪʃ/",
-    "meaning": "希望；想要；祝願；願望",
+    "meaning": "希望（不太可能的願望）；祝願",
     "pos": "v",
     "difficulty": 1,
     "example": "I wish you good luck.",
