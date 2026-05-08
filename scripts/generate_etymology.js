@@ -62,7 +62,7 @@ for (let i = 0; i < toProcess.length; i += BATCH) {
   process.stdout.write(`Batch ${batchNum}/${totalBatches} [${batch[0]}..${batch[batch.length-1]}]... `);
 
   try {
-    const result = spawnSync('cmd', ['/c', 'gemini.cmd', '-p', prompt], {
+    const result = spawnSync('cmd', ['/c', 'gemini.cmd', '--skip-trust', '-p', prompt], {
       encoding: 'utf8',
       timeout: 120000,
       maxBuffer: 10 * 1024 * 1024,
@@ -100,10 +100,14 @@ for (let i = 0; i < toProcess.length; i += BATCH) {
     console.log(`FAILED: ${err.message}`);
   }
 
-  // Save checkpoint every 5 batches or on last batch
-  if (batchNum % 5 === 0 || i + BATCH >= toProcess.length) {
-    fs.writeFileSync(ETYMOLOGY_FILE, JSON.stringify(results, null, 2));
-    console.log(`  -> Checkpoint saved (${Object.keys(results).length} total entries)`);
+  // Save checkpoint every batch
+  fs.writeFileSync(ETYMOLOGY_FILE, JSON.stringify(results, null, 2));
+
+  // Delay between calls to avoid Gemini quota limits
+  if (i + BATCH < toProcess.length) {
+    process.stdout.write('  [waiting 4s] ');
+    Atomics.wait(new Int32Array(new SharedArrayBuffer(4)), 0, 0, 4000);
+    console.log('');
   }
 }
 
