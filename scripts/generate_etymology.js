@@ -41,16 +41,15 @@ const toProcess = words
 console.log(`Words to process: ${toProcess.length} (index ${START}-${END})`);
 if (toProcess.length === 0) { console.log('All done!'); process.exit(0); }
 
-const SYSTEM_PROMPT = `Etymology lookup task. Output ONLY a JSON object, no other text.
+const SYSTEM_PROMPT = `Return ONLY a valid raw JSON object. No explanation, no markdown fences, no other text.
 
-JSON format: {"word": [{"root":"root","meaning_zh":"中文","origin":"Latin"}], ...}
-- Return [] for basic words without useful Latin/Greek roots (numbers, go/be/have/get, articles, pronouns)
-- Max 2 roots per word, Chinese 2-5 chars, origins: Latin/Greek/Old English/French
-- No markdown, no explanation, just raw JSON
+Output format: {"word":[{"root":"root_text","meaning_zh":"Traditional Chinese 2-5 chars for root meaning","origin":"Latin"}],...}
+- meaning_zh field: Traditional Chinese characters describing what the root means
+- Return [] for words with no useful etymological roots: numbers, pronouns, articles, basic verbs (go/be/have/get/put)
+- Max 2 roots per word
+- Valid origins: Latin, Greek, Old English, French
 
-Examples: {"biology":[{"root":"bio","meaning_zh":"生命","origin":"Greek"},{"root":"logy","meaning_zh":"學科","origin":"Greek"}],"uniform":[{"root":"uni","meaning_zh":"一","origin":"Latin"}],"dog":[],"go":[]}
-
-Words: `;
+Words to process: `;
 
 let batchNum = 0;
 const totalBatches = Math.ceil(toProcess.length / BATCH);

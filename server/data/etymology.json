@@ -1,0 +1,646 @@
+{
+  "biology": [
+    {
+      "root": "bio",
+      "meaning_zh": "生命",
+      "origin": "Greek"
+    },
+    {
+      "root": "logy",
+      "meaning_zh": "學科",
+      "origin": "Greek"
+    }
+  ],
+  "telephone": [
+    {
+      "root": "tele",
+      "meaning_zh": "遠距",
+      "origin": "Greek"
+    },
+    {
+      "root": "phone",
+      "meaning_zh": "聲音",
+      "origin": "Greek"
+    }
+  ],
+  "uniform": [
+    {
+      "root": "uni",
+      "meaning_zh": "一、單一",
+      "origin": "Latin"
+    },
+    {
+      "root": "form",
+      "meaning_zh": "形式",
+      "origin": "Latin"
+    }
+  ],
+  "prediction": [
+    {
+      "root": "pre",
+      "meaning_zh": "在...之前",
+      "origin": "Latin"
+    },
+    {
+      "root": "dict",
+      "meaning_zh": "說、言",
+      "origin": "Latin"
+    }
+  ],
+  "transport": [
+    {
+      "root": "trans",
+      "meaning_zh": "穿過、轉移",
+      "origin": "Latin"
+    },
+    {
+      "root": "port",
+      "meaning_zh": "運送、港口",
+      "origin": "Latin"
+    }
+  ],
+  "benevolent": [
+    {
+      "root": "bene",
+      "meaning_zh": "好、善",
+      "origin": "Latin"
+    },
+    {
+      "root": "vol",
+      "meaning_zh": "意志、意願",
+      "origin": "Latin"
+    }
+  ],
+  "inspect": [
+    {
+      "root": "in",
+      "meaning_zh": "向內",
+      "origin": "Latin"
+    },
+    {
+      "root": "spect",
+      "meaning_zh": "看",
+      "origin": "Latin"
+    }
+  ],
+  "unique": [
+    {
+      "root": "uni",
+      "meaning_zh": "一、唯一",
+      "origin": "Latin"
+    }
+  ],
+  "psychology": [
+    {
+      "root": "psych",
+      "meaning_zh": "靈魂、心理",
+      "origin": "Greek"
+    },
+    {
+      "root": "logy",
+      "meaning_zh": "學科",
+      "origin": "Greek"
+    }
+  ],
+  "geography": [
+    {
+      "root": "geo",
+      "meaning_zh": "地球、土地",
+      "origin": "Greek"
+    },
+    {
+      "root": "graph",
+      "meaning_zh": "寫、畫",
+      "origin": "Greek"
+    }
+  ],
+  "monarchy": [
+    {
+      "root": "mono",
+      "meaning_zh": "單一",
+      "origin": "Greek"
+    },
+    {
+      "root": "archy",
+      "meaning_zh": "統治、首領",
+      "origin": "Greek"
+    }
+  ],
+  "audible": [
+    {
+      "root": "audi",
+      "meaning_zh": "聽",
+      "origin": "Latin"
+    }
+  ],
+  "solo": [
+    {
+      "root": "sol",
+      "meaning_zh": "單獨",
+      "origin": "Latin"
+    }
+  ],
+  "export": [
+    {
+      "root": "ex",
+      "meaning_zh": "向外",
+      "origin": "Latin"
+    },
+    {
+      "root": "port",
+      "meaning_zh": "運送",
+      "origin": "Latin"
+    }
+  ],
+  "import": [
+    {
+      "root": "im",
+      "meaning_zh": "向內",
+      "origin": "Latin"
+    },
+    {
+      "root": "port",
+      "meaning_zh": "運送",
+      "origin": "Latin"
+    }
+  ],
+  "report": [
+    {
+      "root": "re",
+      "meaning_zh": "回、向後",
+      "origin": "Latin"
+    },
+    {
+      "root": "port",
+      "meaning_zh": "運送",
+      "origin": "Latin"
+    }
+  ],
+  "support": [
+    {
+      "root": "sup",
+      "meaning_zh": "在...下面",
+      "origin": "Latin"
+    },
+    {
+      "root": "port",
+      "meaning_zh": "運送、支撐",
+      "origin": "Latin"
+    }
+  ],
+  "verify": [
+    {
+      "root": "ver",
+      "meaning_zh": "真實",
+      "origin": "Latin"
+    }
+  ],
+  "construct": [
+    {
+      "root": "con",
+      "meaning_zh": "共同、一起",
+      "origin": "Latin"
+    },
+    {
+      "root": "struct",
+      "meaning_zh": "建立、建造",
+      "origin": "Latin"
+    }
+  ],
+  "structure": [
+    {
+      "root": "struct",
+      "meaning_zh": "建立、建造",
+      "origin": "Latin"
+    }
+  ],
+  "meal": [],
+  "snack": [],
+  "water": [],
+  "milk": [],
+  "tea": [],
+  "coffee": [],
+  "juice": [],
+  "drink": [],
+  "fruit": [],
+  "apple": [],
+  "banana": [],
+  "grape": [],
+  "lemon": [],
+  "mango": [],
+  "watermelon": [],
+  "strawberry": [],
+  "pear": [],
+  "peach": [],
+  "cherry": [],
+  "pineapple": [],
+  "vegetable": [],
+  "tomato": [],
+  "potato": [],
+  "carrot": [],
+  "onion": [],
+  "corn": [],
+  "bean": [],
+  "animal": [],
+  "dog": [],
+  "cat": [],
+  "bird": [],
+  "cow": [],
+  "pig": [],
+  "horse": [],
+  "sheep": [],
+  "rabbit": [],
+  "mouse": [],
+  "duck": [],
+  "monkey": [],
+  "bear": [],
+  "lion": [],
+  "tiger": [],
+  "elephant": [],
+  "snake": [],
+  "frog": [],
+  "butterfly": [],
+  "bee": [],
+  "weather": [],
+  "sun": [],
+  "moon": [],
+  "star": [],
+  "rain": [],
+  "snow": [],
+  "wind": [],
+  "hot": [],
+  "cold": [],
+  "warm": [],
+  "cool": [],
+  "sky": [],
+  "time": [],
+  "day": [],
+  "night": [],
+  "morning": [],
+  "afternoon": [],
+  "evening": [],
+  "today": [],
+  "tomorrow": [],
+  "yesterday": [],
+  "week": [],
+  "month": [],
+  "year": [],
+  "hour": [],
+  "minute": [],
+  "clock": [],
+  "now": [],
+  "soon": [],
+  "always": [],
+  "never": [],
+  "sometimes": [],
+  "often": [],
+  "undergraduate": [
+    {
+      "root": "grad",
+      "meaning_zh": "步、階級",
+      "origin": "Latin"
+    }
+  ],
+  "proficiency": [
+    {
+      "root": "pro",
+      "meaning_zh": "向前",
+      "origin": "Latin"
+    },
+    {
+      "root": "fic",
+      "meaning_zh": "做",
+      "origin": "Latin"
+    }
+  ],
+  "syllabus": [
+    {
+      "root": "sylla",
+      "meaning_zh": "一起",
+      "origin": "Greek"
+    },
+    {
+      "root": "lab",
+      "meaning_zh": "取",
+      "origin": "Greek"
+    }
+  ],
+  "hypothesis": [],
+  "prerequisite": [],
+  "extracurricular": [],
+  "credential": [],
+  "abstract": [],
+  "principal": [],
+  "refund": [],
+  "expenditure": [],
+  "mortgage": [],
+  "installment": [],
+  "inflation": [],
+  "commodity": [],
+  "liable": [],
+  "premium": [],
+  "reimburse": [],
+  "depreciate": [],
+  "fiscal": [],
+  "surplus": [],
+  "dividend": [],
+  "leverage": [],
+  "frugal": [],
+  "reliable": [
+    {
+      "root": "re",
+      "meaning_zh": "回、向後",
+      "origin": "Latin"
+    },
+    {
+      "root": "li",
+      "meaning_zh": "綁、繫",
+      "origin": "Latin"
+    }
+  ],
+  "consistent": [
+    {
+      "root": "con",
+      "meaning_zh": "共同、一起",
+      "origin": "Latin"
+    },
+    {
+      "root": "sist",
+      "meaning_zh": "站立、設置",
+      "origin": "Latin"
+    }
+  ],
+  "resolute": [
+    {
+      "root": "re",
+      "meaning_zh": "強化、向後",
+      "origin": "Latin"
+    },
+    {
+      "root": "solu",
+      "meaning_zh": "解開、鬆開",
+      "origin": "Latin"
+    }
+  ],
+  "dedicated": [
+    {
+      "root": "de",
+      "meaning_zh": "離開、向下",
+      "origin": "Latin"
+    },
+    {
+      "root": "dic",
+      "meaning_zh": "說、宣稱",
+      "origin": "Latin"
+    }
+  ],
+  "committed": [
+    {
+      "root": "com",
+      "meaning_zh": "共同、一起",
+      "origin": "Latin"
+    },
+    {
+      "root": "mit",
+      "meaning_zh": "送、放",
+      "origin": "Latin"
+    }
+  ],
+  "allocation": [
+    {
+      "root": "ad",
+      "meaning_zh": "向、往",
+      "origin": "Latin"
+    },
+    {
+      "root": "loc",
+      "meaning_zh": "地方、放置",
+      "origin": "Latin"
+    }
+  ],
+  "encrypt": [],
+  "malware": [],
+  "upload": [],
+  "debug": [],
+  "optimize": [],
+  "server": [],
+  "synchronize": [],
+  "upgrade": [],
+  "authenticate": [],
+  "peripheral": [],
+  "satellite": [],
+  "simulate": [],
+  "biometric": [],
+  "platform": [],
+  "offshore": [],
+  "cache": [],
+  "curriculum": [],
+  "faculty": [],
+  "literacy": [],
+  "methodology": [],
+  "plagiarism": [],
+  "thesis": [
+    {
+      "root": "the",
+      "meaning_zh": "放置",
+      "origin": "Greek"
+    }
+  ],
+  "appraisal": [],
+  "voucher": [],
+  "liability": [],
+  "appetizer": [],
+  "ingredient": [],
+  "cuisine": [],
+  "portion": [],
+  "beverage": [],
+  "marinate": [],
+  "utensil": [],
+  "pastry": [],
+  "buffet": [],
+  "entrée": [],
+  "dietary": [],
+  "catering": [],
+  "tender": [],
+  "condiment": [],
+  "vegetarian": [],
+  "cater": [],
+  "terrain": [],
+  "aquatic": [],
+  "preliminary": [],
+  "versatile": [],
+  "calligraphy": [],
+  "enthusiastic": [],
+  "impulsive": [],
+  "melancholy": [],
+  "optimistic": [],
+  "pessimistic": [],
+  "resilient": [],
+  "vulnerable": [],
+  "empathy": [],
+  "arrogant": [],
+  "charismatic": [],
+  "emotion": [
+    {
+      "root": "e",
+      "meaning_zh": "向外",
+      "origin": "Latin"
+    },
+    {
+      "root": "mot",
+      "meaning_zh": "移動",
+      "origin": "Latin"
+    }
+  ],
+  "equitable": [],
+  "eradicate": [],
+  "erratic": [],
+  "espionage": [],
+  "esteem": [],
+  "euphemism": [],
+  "exacerbate": [],
+  "exalt": [],
+  "excerpt": [],
+  "exemplify": [],
+  "exert": [],
+  "exodus": [],
+  "expedite": [],
+  "exploit": [],
+  "exponential": [],
+  "extravagant": [],
+  "fabricate": [],
+  "faction": [],
+  "fallacy": [],
+  "fanatical": [],
+  "feasible": [],
+  "fluctuate": [],
+  "foremost": [],
+  "formidable": [],
+  "forthcoming": [],
+  "foster": [],
+  "futile": [],
+  "galvanize": [],
+  "garrison": [],
+  "genesis": [],
+  "genocide": [],
+  "grandiose": [],
+  "gratuitous": [],
+  "grievance": [],
+  "grueling": [],
+  "guise": [],
+  "hamper": [],
+  "harmonize": [],
+  "havoc": [],
+  "hegemony": [],
+  "heresy": [],
+  "hierarchy": [],
+  "hinder": [],
+  "holistic": [],
+  "homogeneous": [],
+  "humanitarian": [],
+  "hypothetical": [],
+  "ideology": [],
+  "illicit": [],
+  "imminent": [],
+  "impair": [],
+  "impartial": [],
+  "impeach": [],
+  "impede": [],
+  "imperative": [],
+  "implication": [],
+  "implicit": [],
+  "impose": [],
+  "impoverished": [],
+  "improvise": [],
+  "inaugurate": [],
+  "incarcerate": [],
+  "incentive": [],
+  "incite": [],
+  "inclination": [],
+  "incoherent": [],
+  "increment": [],
+  "indictment": [],
+  "indignation": [],
+  "indoctrinate": [],
+  "infer": [],
+  "influx": [],
+  "infrastructure": [],
+  "inherent": [],
+  "inhibit": [],
+  "innate": [],
+  "innovate": [],
+  "insatiable": [],
+  "instigate": [],
+  "integral": [],
+  "congestion": [
+    {
+      "root": "con",
+      "meaning_zh": "一起",
+      "origin": "Latin"
+    },
+    {
+      "root": "gest",
+      "meaning_zh": "帶、運",
+      "origin": "Latin"
+    }
+  ],
+  "visa": [
+    {
+      "root": "vis",
+      "meaning_zh": "看",
+      "origin": "Latin"
+    }
+  ],
+  "chronic": [
+    {
+      "root": "chron",
+      "meaning_zh": "時間",
+      "origin": "Greek"
+    }
+  ],
+  "surgeon": [
+    {
+      "root": "chir",
+      "meaning_zh": "手",
+      "origin": "Greek"
+    },
+    {
+      "root": "erg",
+      "meaning_zh": "工作",
+      "origin": "Greek"
+    }
+  ],
+  "vaccination": [
+    {
+      "root": "vacc",
+      "meaning_zh": "牛",
+      "origin": "Latin"
+    }
+  ],
+  "metabolism": [
+    {
+      "root": "meta",
+      "meaning_zh": "變化",
+      "origin": "Greek"
+    },
+    {
+      "root": "bal",
+      "meaning_zh": "投擲",
+      "origin": "Greek"
+    }
+  ],
+  "fatigue": [
+    {
+      "root": "fat",
+      "meaning_zh": "裂縫、疲倦",
+      "origin": "Latin"
+    }
+  ],
+  "dosage": [
+    {
+      "root": "dos",
+      "meaning_zh": "給予",
+      "origin": "Greek"
+    }
+  ]
+}
