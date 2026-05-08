@@ -1,9 +1,11 @@
+import { Link } from 'react-router-dom';
 import { useTTS } from '../hooks/useTTS';
 import './WordCard.css';
 
 function WordCard({ word, showMeaning = true, hasError = false, onNext }) {
   const { speak } = useTTS();
   const masteryLevel = word.mastery_level;
+  const roots = (() => { try { return word.roots_json ? JSON.parse(word.roots_json) : []; } catch { return []; } })();
   const examples = Array.isArray(word.examples) && word.examples.length > 0
     ? word.examples
     : (word.example ? [{
@@ -61,6 +63,20 @@ function WordCard({ word, showMeaning = true, hasError = false, onNext }) {
             </div>
           )}
         </>
+      )}
+      {showMeaning && roots.length > 0 && (
+        <div className="word-roots">
+          <span className="roots-label">詞根</span>
+          <div className="word-roots-list">
+            {roots.map((r, i) => (
+              <Link key={i} to={`/roots?root=${r.root}`} className="word-root-tag">
+                <span className="root-tag-root">{r.root}-</span>
+                <span className="root-tag-meaning">{r.meaning_zh}</span>
+                <span className="root-tag-origin">（{r.origin}）</span>
+              </Link>
+            ))}
+          </div>
+        </div>
       )}
       {onNext && (
         <button className="next-btn" onClick={onNext}>下一個</button>

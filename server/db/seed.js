@@ -240,6 +240,21 @@ async function seedData() {
     if (ctxCount > 0) console.log(`Applied ${ctxCount} disambiguation contexts from context_results.json.`);
   }
 
+  // Etymology roots — load from server/data/etymology.json if it exists
+  const ETYMOLOGY_FILE = path.join(__dirname, '..', 'data', 'etymology.json');
+  if (fs.existsSync(ETYMOLOGY_FILE)) {
+    const etymData = JSON.parse(fs.readFileSync(ETYMOLOGY_FILE, 'utf8'));
+    const stmtEtym = db.prepare('UPDATE words SET roots_json = ? WHERE LOWER(word) = LOWER(?)');
+    let etymCount = 0;
+    for (const [word, roots] of Object.entries(etymData)) {
+      const rootsJson = roots && roots.length > 0 ? JSON.stringify(roots) : null;
+      stmtEtym.run([rootsJson, word]);
+      etymCount++;
+    }
+    stmtEtym.free();
+    if (etymCount > 0) console.log(`Etymology loaded for ${etymCount} words from etymology.json.`);
+  }
+
   saveDb();
 }
 

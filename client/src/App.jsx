@@ -10,6 +10,7 @@ import ReadingPage from './pages/ReadingPage';
 import PlaybackPage from './pages/PlaybackPage';
 import GamesPage from './pages/GamesPage';
 import GradedReadingPage from './pages/GradedReadingPage';
+import RootsPage from './pages/RootsPage';
 
 const NAV_ITEMS = [
   { path: '/', label: '首頁' },
@@ -21,6 +22,7 @@ const NAV_ITEMS = [
   { path: '/listen', label: '聽寫' },
   { path: '/playback', label: '播放' },
   { path: '/games', label: '遊戲' },
+  { path: '/roots', label: '詞根' },
   { path: '/stats', label: '統計' },
 ];
 
@@ -54,6 +56,7 @@ function App() {
           <Route path="/listen" element={<ListenPage />} />
           <Route path="/playback" element={<PlaybackPage />} />
           <Route path="/games" element={<GamesPage />} />
+          <Route path="/roots" element={<RootsPage />} />
           <Route path="/stats" element={<StatsPage />} />
         </Routes>
       </main>

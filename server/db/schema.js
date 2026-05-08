@@ -207,6 +207,9 @@ async function initSchema() {
   // Migration: add round_number to learning_log
   try { db.run('ALTER TABLE learning_log ADD COLUMN round_number INTEGER DEFAULT 1'); } catch (e) { /* already exists */ }
 
+  // Etymology roots
+  try { db.run('ALTER TABLE words ADD COLUMN roots_json TEXT'); } catch (e) { /* already exists */ }
+
   // Migration: add score + paused to word_mastery
   try { db.run('ALTER TABLE word_mastery ADD COLUMN score REAL DEFAULT 0'); } catch (e) { /* already exists */ }
   try { db.run('ALTER TABLE word_mastery ADD COLUMN paused INTEGER DEFAULT 0'); } catch (e) { /* already exists */ }

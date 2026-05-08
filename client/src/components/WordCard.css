@@ -169,6 +169,64 @@
   font-weight: 600;
 }
 
+/* ---- Etymology roots ---- */
+.word-roots {
+  margin-top: 0.75rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid #1e293b;
+}
+
+.roots-label {
+  display: block;
+  color: #64748b;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.4rem;
+}
+
+.word-roots-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.word-root-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  text-decoration: none;
+  padding: 0.25rem 0.6rem;
+  background: rgba(124, 58, 237, 0.08);
+  border: 1px solid rgba(124, 58, 237, 0.25);
+  border-radius: 0.375rem;
+  transition: border-color 0.2s, background 0.2s;
+  width: fit-content;
+}
+
+.word-root-tag:hover {
+  background: rgba(124, 58, 237, 0.18);
+  border-color: #7c3aed;
+}
+
+.root-tag-root {
+  color: #a78bfa;
+  font-weight: 700;
+  font-family: monospace;
+  font-size: 0.9rem;
+}
+
+.root-tag-meaning {
+  color: #e2e8f0;
+  font-size: 0.85rem;
+}
+
+.root-tag-origin {
+  color: #64748b;
+  font-size: 0.75rem;
+}
+
 .next-btn {
   margin-top: 1.5rem;
   width: 100%;
