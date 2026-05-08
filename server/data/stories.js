@@ -397,5 +397,57 @@ module.exports = [
       { question: "Who was chosen as the next pope after Francis?", options: ["A cardinal from Italy", "A cardinal from Brazil", "Cardinal Robert Prevost from the United States", "A cardinal from Germany"], answer: 2 }
     ],
     difficulty: 2, sort_order: 32
+  },
+
+  // ============================================================
+  // Series 5: Everyday Stories (using learned vocabulary)
+  // ============================================================
+  {
+    id: 33, series: "everyday", seriesName: "Everyday Stories", episode: 1,
+    title: "The Race to the Tech Office",
+    content: "Jamie woke up with a start. The morning sun was already high, and a quick look at the phone revealed it was 8:30 AM. \"Oh no, I'm running late!\" Jamie shouted. There was a big job interview at a top tech company at 9:15. Jamie's roommate, Sam, heard the noise and rushed into the room. \"Don't worry, just stay calm,\" Sam said while grabbing a clean white shirt from the closet. \"Make sure you have everything. You're in a hurry, but you can still make it!\"\n\nJamie felt incredibly tired and nervous. \"I'm stressed out, Sam. Here's the deal: if I don't arrive on time, I'll lose this chance.\" Jamie quickly dressed, grabbed a bag, and ran toward the train station. By the way, the bus was already gone, so the train was the only hope. Long story short, the platform was a massive crowd of people, and the train was slow. Jamie tried to prepare by reading common questions and practicing every answer silently. It was a brave effort to stay smart and ready despite the chaos.\n\nWhen Jamie finally reached the office, they had to wait for five minutes at a sleek wooden desk. A firm voice called Jamie's name. The interview began, and Jamie decided to be completely honest about their skills. \"I'm eager to learn and work with a smart team,\" Jamie said with a bold smile. They didn't try to hide their lack of experience but focused on their goal to grow. The interviewers liked that Jamie was so brave and spoke with such hope.\n\nAfter an hour, the manager stood up and offered a firm handshake. \"Well done, Jamie. You really nailed it. We need someone who is ready to step up.\" Jamie was thrilled and immediately called Sam. \"Not bad for a morning that started with a rush! Just saying, I actually landed the job!\" Jamie felt so proud and happy. It was the perfect start to a new career.",
+    vocabulary: ["nervous", "honest", "thrilled", "skill", "firm"],
+    vocabMeanings: { "nervous": "緊張；焦慮", "honest": "誠實；坦白", "thrilled": "興奮；激動", "skill": "技能；技巧", "firm": "堅定；穩固" },
+    questions: [
+      { question: "Why was Jamie worried at the beginning of the story?", options: ["They forgot the office address", "They woke up late for an interview", "They lost their favorite shirt", "They didn't want the job"], answer: 1 },
+      { question: "How did Jamie handle the interview?", options: ["By remaining silent and shy", "By arriving an hour early", "By being honest and eager to learn", "By lying about past experience"], answer: 2 }
+    ],
+    difficulty: 2, sort_order: 33
+  },
+  {
+    id: 34, series: "everyday", seriesName: "Everyday Stories", episode: 2,
+    title: "A Messy Masterpiece in the Kitchen",
+    content: "Saturday morning in the kitchen usually meant toast, but today was different. Mia and Sam decided to cook a wonderful dinner for their friends. They visited the grocery store to buy fresh meat, onions, tomatoes, and carrots. \"Meal prep is the secret to success,\" Mia said, though Sam was already trying to dice a potato with a small spoon. \"You need a knife for that!\" Mia laughed.\n\nThe aroma of garlic began to fill the home. They started to boil the rice while Mia prepared a vegetable stir-fry in a large saucepan. \"Thank you so much for helping, Sam,\" Mia said, \"but please don't burn the bread in the oven!\" Sam was busy trying to fix the salt level in the soup. \"More or less, it tastes great,\" Sam replied. \"I'm just kidding, it needs more butter and sugar to balance the sour taste.\"\n\nSuddenly, a thick cloud of smoke came from the stove. \"What a shame! I burnt the onions!\" Sam cried. Mia rushed over to pitch in. \"It's a piece of cake to fix,\" she said, quickly washing the saucepan and starting again. They worked together, sharing a laugh over their mistakes. By the time their friends arrived, the table was set with plates, forks, and spoons. The meal was finally ready, and the warm aroma of the main dish was wonderful.\n\n\"Dig in, everyone!\" Sam shouted happily. The friends sat together like a big family. The food was not bad at all — in fact, they nailed it. \"I'm so relieved,\" Mia whispered to Sam. After the meal, everyone was full and happy. Sam patted his stomach. \"I'm full, I can't eat another bite.\" Even though the kitchen was a mess and they had to wash a lot of dishes, it was a perfect Saturday.",
+    vocabulary: ["aroma", "saucepan", "grocery", "relieved", "dice"],
+    vocabMeanings: { "aroma": "香氣；芬芳", "saucepan": "長柄燉鍋", "grocery": "食材；雜貨店", "relieved": "鬆了一口氣；如釋重負", "dice": "切丁；骰子" },
+    questions: [
+      { question: "What mistake did Sam make while cooking?", options: ["He forgot to buy meat", "He burnt the onions", "He lost the kitchen key", "He broke all the plates"], answer: 1 },
+      { question: "How did the roommates feel about the final meal?", options: ["They were angry at each other", "They decided to order pizza instead", "They thought the food was too sour", "They were relieved and happy with the result"], answer: 3 }
+    ],
+    difficulty: 2, sort_order: 34
+  },
+  {
+    id: 35, series: "everyday", seriesName: "Everyday Stories", episode: 3,
+    title: "Discovery in the Rain",
+    content: "Alex was a solo backpacker who loved to travel to new cities. However, arriving in an unfamiliar city during heavy rain was not part of the plan. The road was wet and the sky was dark. Alex looked at the phone, but the GPS was failing. \"I'm not sure where my hotel is,\" Alex muttered. To make things worse, the phone battery was at two percent. \"I'm freaking out right now. Are you serious? Not today!\"\n\nStanding on a stone bridge, Alex tried to look for a map. Suddenly, a kind local named Lily noticed the confused backpacker. \"Are you lost?\" she asked with a warm smile. \"No problem, I can help you find out where you need to go.\" Alex felt a huge relief. \"Sounds good! By the way, I'm also very hungry,\" Alex admitted. Lily laughed. \"After all, you can't explore a new city on an empty stomach. No wonder you look so tired.\"\n\nLily led Alex through a narrow lane and a hidden alley. In no time, they reached a vibrant market. Not gonna lie, the smell of street food was amazing. They decided to discover the best local tastes together. They walked past shops selling tea and coffee, and the bright light of the stalls made the night feel warm. Lily was brave enough to try the spiciest snacks, while Alex preferred the sweet ones.\n\n\"Run into me anytime you need help,\" Lily said as they finally reached the hotel street. Alex realized that getting lost was actually a great way to find a new friend. \"Thank you, Lily. You were so kind to help a stranger.\" The morning rain had turned into a clear night. Alex felt free and happy in this city. It was a brave new world, and Alex was ready to explore every road and bridge.",
+    vocabulary: ["backpacker", "unfamiliar", "vibrant", "relief", "discover"],
+    vocabMeanings: { "backpacker": "背包客", "unfamiliar": "不熟悉的；陌生的", "vibrant": "充滿活力的；熱鬧的", "relief": "如釋重負；鬆了一口氣", "discover": "發現；探索" },
+    questions: [
+      { question: "What was Alex's main problem at the start of the story?", options: ["He lost his backpack at the airport", "He didn't have money for food", "He was lost and his phone battery was nearly dead", "He was afraid of the dark"], answer: 2 },
+      { question: "How did Alex and Lily spend their time together?", options: ["Waiting for a bus at the station", "Searching for a lost map in the rain", "Staying inside the hotel all evening", "Exploring markets and eating street food"], answer: 3 }
+    ],
+    difficulty: 2, sort_order: 35
+  },
+  {
+    id: 36, series: "everyday", seriesName: "Everyday Stories", episode: 4,
+    title: "The Courage to Quit",
+    content: "During the day, Chris worked at a quiet desk in a large office. The work involved many emails and a busy schedule. However, when night came, Chris's real passion began. Chris ran a small online blog and store selling handmade goods. It was a secret side project. Maya, Chris's partner, was very supportive but also a bit worried. \"I'm with you on that dream, but you look so tired,\" Maya said over coffee one evening.\n\n\"I'm stressed out, Maya. I'm torn between my steady job and my brand,\" Chris admitted. \"Think twice about it,\" Maya suggested. \"Real talk, the bottom line is that you need to be happy.\" Chris's goal was to grow the store until it could earn enough money to save for the future. After months of hard work, the store was finally on track. Success was near.\n\n\"Here's the deal,\" Chris said one evening. \"I'm going to step up and follow my heart. I've decided to quit the office job.\" Maya looked at Chris with proud eyes. \"Not gonna lie, it's a big risk, but go for it. You do you!\" So basically, Chris sent a final email and left the computer at the office for the last time. It was a bold change, but Chris felt free.\n\nIn a nutshell, the online store became a huge success. Chris spent the days building the brand and the nights planning new ideas. \"By the way, I'm so glad I didn't wait,\" Chris told Maya. \"I ended up exactly where I wanted to be.\" Chris was no longer busy with tasks that felt meaningless. Instead, Chris was a brave business owner following a real dream. Maya was incredibly proud.",
+    vocabulary: ["passion", "supportive", "steady", "brand", "bold"],
+    vocabMeanings: { "passion": "熱情；激情", "supportive": "支持的；給予鼓勵的", "steady": "穩定的；固定的", "brand": "品牌；商標", "bold": "大膽的；醒目的" },
+    questions: [
+      { question: "What was Chris's secret side project?", options: ["Teaching Maya how to code", "Writing emails for a large company", "Working extra hours at the office", "Running an online store and blog"], answer: 3 },
+      { question: "Why did Chris decide to quit the office job?", options: ["Because Maya told Chris to quit immediately", "To follow their heart and run the store full-time", "Because the office was too noisy", "Because the computer at work was broken"], answer: 1 }
+    ],
+    difficulty: 2, sort_order: 36
   }
 ];
