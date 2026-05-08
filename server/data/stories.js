@@ -369,5 +369,33 @@ module.exports = [
       { question: "What shape was the anniversary cake?", options: ["A heart", "A star", "A coffee cup", "A number 20"], answer: 2 }
     ],
     difficulty: 2, sort_order: 30
+  },
+
+  // ============================================================
+  // Series 4: World News
+  // ============================================================
+  {
+    id: 31, series: "news-world", seriesName: "World News", episode: 1,
+    title: "Trump Announces 'Liberation Day' Tariffs",
+    content: "On April 2, 2025, US President Donald Trump announced a sweeping new trade policy, declaring the day \"Liberation Day.\" He introduced a universal baseline tariff of ten percent on all goods imported into the United States, the broadest such measure in decades.\n\nThe announcement went further for specific trading partners. China faced an initial tariff of thirty-four percent, which was later raised to one hundred and twenty-five percent after Beijing responded with its own retaliatory measures. The European Union faced a twenty percent tariff, India twenty-six percent, and all foreign-made vehicles a twenty-five percent tariff regardless of origin.\n\nTrump described the policy as a way to protect American manufacturing, reduce the trade deficit, and bring jobs back to the United States. He argued that other countries had taken advantage of American trade openness for decades and that the tariffs would force fairer conditions.\n\nMarkets reacted sharply. Stock prices fell around the world as investors worried about higher costs and slower economic growth. Companies that rely heavily on international supply chains, such as Apple and Nike, saw their share prices drop significantly. Canada and other allies announced retaliatory tariffs on American goods in response.\n\nOn April 10, Trump announced a ninety-day pause on the higher tariffs for most countries, excluding China, saying he wanted to give trading partners time to negotiate. The pause provided some relief to markets but left the situation deeply uncertain for businesses planning ahead.\n\nEconomists disagreed about the long-term effects. Supporters argued the tariffs would strengthen American industry. Critics warned they would raise prices for consumers and damage relationships with key allies. The policy marked one of the most significant shifts in US trade strategy in modern history.",
+    vocabulary: ["tariff", "sweeping", "retaliatory", "deficit", "allies"],
+    vocabMeanings: { "tariff": "關稅", "sweeping": "大規模的；全面性的", "retaliatory": "報復性的", "deficit": "逆差；赤字", "allies": "盟友" },
+    questions: [
+      { question: "What did Trump call April 2, 2025?", options: ["Independence Day", "Liberation Day", "Freedom Day", "Trade Day"], answer: 1 },
+      { question: "What did Trump do on April 10 for most countries except China?", options: ["He doubled the tariffs", "He cancelled all tariffs", "He paused the higher tariffs for 90 days", "He signed new trade deals"], answer: 2 }
+    ],
+    difficulty: 2, sort_order: 31
+  },
+  {
+    id: 32, series: "news-world", seriesName: "World News", episode: 2,
+    title: "Pope Francis Dies at Age 88",
+    content: "Pope Francis, the leader of the Roman Catholic Church, died on April 21, 2025, Easter Monday, at 7:35 in the morning. He was eighty-eight years old. The Vatican announced that he passed away at the Casa Santa Marta, his residence inside Vatican City, from a stroke that led to a coma and irreversible cardiac arrest.\n\nIn the weeks before his death, Francis had been seriously ill. He had spent thirty-eight days in hospital being treated for a respiratory infection. Despite his condition, he made a brief public appearance on Easter Sunday, just one day before he died, greeting crowds gathered in St. Peter's Square in Rome.\n\nBorn Jorge Mario Bergoglio in Buenos Aires, Argentina, in 1936, he was elected pope in 2013 and became the first pope from Latin America and the first from the Jesuit religious order. He led the Catholic Church for twelve years.\n\nHis funeral was held on April 26, 2025. In a break from tradition, he was buried not in St. Peter's Basilica but at the Basilica of Santa Maria Maggiore in Rome, a church he had long felt a personal connection to.\n\nWorld leaders and millions of Catholics mourned his passing. Francis had been known for his emphasis on caring for the poor, his concern for the environment, and his calls for greater dialogue within the Church and with other faiths.\n\nIn May 2025, the College of Cardinals gathered in Rome for a conclave to elect his successor. They chose Cardinal Robert Prevost of the United States, who took the name Pope Leo XIV, becoming the first American pope in the history of the Catholic Church.",
+    vocabulary: ["Vatican", "cardiac arrest", "respiratory", "conclave", "successor"],
+    vocabMeanings: { "Vatican": "梵蒂岡", "cardiac arrest": "心臟驟停", "respiratory": "呼吸的；呼吸系統的", "conclave": "秘密會議（選教宗）", "successor": "繼任者" },
+    questions: [
+      { question: "Where did Pope Francis die?", options: ["In a hospital in Rome", "At the Casa Santa Marta in Vatican City", "In Buenos Aires, Argentina", "At St. Peter's Basilica"], answer: 1 },
+      { question: "Who was chosen as the next pope after Francis?", options: ["A cardinal from Italy", "A cardinal from Brazil", "Cardinal Robert Prevost from the United States", "A cardinal from Germany"], answer: 2 }
+    ],
+    difficulty: 2, sort_order: 32
   }
 ];

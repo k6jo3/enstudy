@@ -6,7 +6,7 @@ async function getTodayStory(date) {
     `SELECT rl.*, s.id as story_id, s.series, s.series_name, s.episode, s.title, s.content,
             s.vocabulary, s.vocab_meanings, s.questions, s.difficulty, s.content_zh, s.grammar_notes
      FROM reading_log rl JOIN stories s ON s.id = rl.story_id
-     WHERE rl.read_date = ?`,
+     WHERE rl.read_date = ? AND rl.completed = 0`,
     [date]
   );
   if (existing) return formatStory(existing);
