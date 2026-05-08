@@ -422,7 +422,7 @@ function ReadingPage() {
     setSubmitted(true);
     const correct = story.questions.filter((q, i) => answers[i] === q.answer).length;
     const score = Math.round((correct / story.questions.length) * 100);
-    await postApi('/reading/complete', { storyId: story.id || story.story_id, quizScore: score });
+    await postApi('/reading/complete', { storyId: story.story_id, quizScore: score });
   }
 
   const quizScore = submitted

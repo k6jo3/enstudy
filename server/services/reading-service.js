@@ -11,12 +11,19 @@ async function getTodayStory(date) {
   );
   if (existing) return formatStory(existing);
 
-  const nextStory = await queryOne(`
+  let nextStory = await queryOne(`
     SELECT s.* FROM stories s
     WHERE s.id NOT IN (SELECT story_id FROM reading_log WHERE completed = 1)
     ORDER BY s.sort_order ASC
     LIMIT 1
   `);
+
+  if (!nextStory) {
+    await run('DELETE FROM reading_log');
+    saveDb();
+    nextStory = await queryOne('SELECT s.* FROM stories s ORDER BY s.sort_order ASC LIMIT 1');
+  }
+
   if (!nextStory) return null;
 
   await run('INSERT OR IGNORE INTO reading_log (story_id, read_date) VALUES (?, ?)', [nextStory.id, date]);
