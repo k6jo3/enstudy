@@ -459,3 +459,102 @@
   text-align: center;
   color: #94a3b8;
 }
+
+/* ---- Story List view ---- */
+.reading-list-title {
+  color: #f1f5f9;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.series-section {
+  margin-bottom: 1.75rem;
+}
+
+.series-section-title {
+  color: #f472b6;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  padding-left: 0.25rem;
+}
+
+.story-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.story-list-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 0.625rem;
+  cursor: pointer;
+  text-align: left;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.story-list-item:hover {
+  border-color: #475569;
+  background: #263549;
+}
+
+.story-list-item.completed {
+  border-color: #16a34a;
+  background: rgba(22, 163, 74, 0.07);
+}
+
+.story-list-ep {
+  color: #64748b;
+  font-size: 0.8rem;
+  font-weight: 600;
+  min-width: 3.5rem;
+  flex-shrink: 0;
+}
+
+.story-list-name {
+  color: #e2e8f0;
+  font-size: 0.95rem;
+  flex: 1;
+}
+
+.story-list-done {
+  color: #22c55e;
+  font-size: 1rem;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.story-list-arrow {
+  color: #475569;
+  font-size: 1.25rem;
+  flex-shrink: 0;
+}
+
+/* ---- Back to list button ---- */
+.back-to-list-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.4rem 0.9rem;
+  margin-bottom: 1.25rem;
+  background: transparent;
+  border: 1px solid #334155;
+  border-radius: 0.5rem;
+  color: #94a3b8;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.back-to-list-btn:hover {
+  border-color: #60a5fa;
+  color: #60a5fa;
+}

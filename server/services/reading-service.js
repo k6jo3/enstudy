@@ -31,10 +31,30 @@ async function getTodayStory(date) {
   return formatStory(nextStory);
 }
 
-async function completeStory(storyId, date, quizScore) {
-  await run('UPDATE reading_log SET completed = 1, quiz_score = ? WHERE story_id = ? AND read_date = ?',
-    [quizScore || 0, storyId, date]);
+async function completeStory(storyId, quizScore) {
+  const today = new Date().toISOString().slice(0, 10);
+  await run(
+    'INSERT OR REPLACE INTO reading_log (story_id, read_date, completed, quiz_score) VALUES (?, ?, 1, ?)',
+    [storyId, today, quizScore || 0]
+  );
   saveDb();
+}
+
+async function getStoryList() {
+  return queryAll(`
+    SELECT s.id, s.series, s.series_name, s.episode, s.title, s.difficulty,
+           COALESCE(MAX(rl.completed), 0) as completed
+    FROM stories s
+    LEFT JOIN reading_log rl ON rl.story_id = s.id
+    GROUP BY s.id
+    ORDER BY s.sort_order ASC
+  `);
+}
+
+async function getStoryById(id) {
+  const row = await queryOne('SELECT * FROM stories WHERE id = ?', [id]);
+  if (!row) return null;
+  return formatStory(row);
 }
 
 async function getReadingStats() {
@@ -62,4 +82,4 @@ function formatStory(row) {
   };
 }
 
-module.exports = { getTodayStory, completeStory, getReadingStats, getReadingHistory };
+module.exports = { getTodayStory, completeStory, getStoryList, getStoryById, getReadingStats, getReadingHistory };
