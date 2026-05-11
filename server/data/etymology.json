@@ -207,93 +207,12 @@
       "origin": "Latin"
     }
   ],
-  "structure": [
-    {
-      "root": "struct",
-      "meaning_zh": "建立、建造",
-      "origin": "Latin"
-    }
-  ],
-  "meal": [],
-  "snack": [],
-  "water": [],
-  "milk": [],
-  "tea": [],
-  "coffee": [],
-  "juice": [],
-  "drink": [],
-  "fruit": [],
-  "apple": [],
-  "banana": [],
-  "grape": [],
-  "lemon": [],
-  "mango": [],
-  "watermelon": [],
-  "strawberry": [],
-  "pear": [],
-  "peach": [],
-  "cherry": [],
-  "pineapple": [],
-  "vegetable": [],
-  "tomato": [],
-  "potato": [],
-  "carrot": [],
-  "onion": [],
-  "corn": [],
-  "bean": [],
-  "animal": [],
-  "dog": [],
-  "cat": [],
-  "bird": [],
-  "cow": [],
-  "pig": [],
-  "horse": [],
-  "sheep": [],
-  "rabbit": [],
-  "mouse": [],
-  "duck": [],
-  "monkey": [],
-  "bear": [],
-  "lion": [],
-  "tiger": [],
-  "elephant": [],
-  "snake": [],
-  "frog": [],
-  "butterfly": [],
-  "bee": [],
-  "weather": [],
-  "sun": [],
-  "moon": [],
-  "star": [],
-  "rain": [],
-  "snow": [],
-  "wind": [],
-  "hot": [],
-  "cold": [],
-  "warm": [],
-  "cool": [],
-  "sky": [],
-  "time": [],
-  "day": [],
-  "night": [],
-  "morning": [],
-  "afternoon": [],
-  "evening": [],
-  "today": [],
-  "tomorrow": [],
-  "yesterday": [],
-  "week": [],
-  "month": [],
-  "year": [],
-  "hour": [],
-  "minute": [],
-  "clock": [],
-  "now": [],
-  "soon": [],
-  "always": [],
-  "never": [],
-  "sometimes": [],
-  "often": [],
+  "structure": {
+    "client": "Frontend source code and components",
+    "server": "Backend API, services, and routes",
+    "scripts": "Utility and automation scripts",
+    "data": "Word lists, phrases, and graded reading content"
+  },
   "undergraduate": [
     {
       "root": "grad",
@@ -380,8 +299,6 @@
       "origin": "Latin"
     }
   ],
-  "principal": [],
-  "refund": [],
   "expenditure": [
     {
       "root": "ex",
@@ -394,8 +311,6 @@
       "origin": "Latin"
     }
   ],
-  "mortgage": [],
-  "installment": [],
   "inflation": [
     {
       "root": "in",
@@ -408,9 +323,6 @@
       "origin": "Latin"
     }
   ],
-  "commodity": [],
-  "liable": [],
-  "premium": [],
   "reimburse": [
     {
       "root": "re",
@@ -423,8 +335,6 @@
       "origin": "Latin"
     }
   ],
-  "depreciate": [],
-  "fiscal": [],
   "surplus": [
     {
       "root": "sur",
@@ -437,9 +347,6 @@
       "origin": "Latin"
     }
   ],
-  "dividend": [],
-  "leverage": [],
-  "frugal": [],
   "reliable": [
     {
       "root": "re",
@@ -512,12 +419,6 @@
       "origin": "Latin"
     }
   ],
-  "encrypt": [],
-  "malware": [],
-  "upload": [],
-  "debug": [],
-  "optimize": [],
-  "server": [],
   "synchronize": [
     {
       "root": "syn",
@@ -530,20 +431,6 @@
       "origin": "Greek"
     }
   ],
-  "upgrade": [],
-  "authenticate": [],
-  "peripheral": [],
-  "satellite": [],
-  "simulate": [],
-  "biometric": [],
-  "platform": [],
-  "offshore": [],
-  "cache": [],
-  "curriculum": [],
-  "faculty": [],
-  "literacy": [],
-  "methodology": [],
-  "plagiarism": [],
   "thesis": [
     {
       "root": "the",
@@ -551,37 +438,6 @@
       "origin": "Greek"
     }
   ],
-  "appraisal": [],
-  "voucher": [],
-  "liability": [],
-  "appetizer": [],
-  "ingredient": [],
-  "cuisine": [],
-  "portion": [],
-  "beverage": [],
-  "marinate": [],
-  "utensil": [],
-  "pastry": [],
-  "buffet": [],
-  "entrée": [],
-  "dietary": [],
-  "catering": [],
-  "tender": [],
-  "condiment": [],
-  "vegetarian": [],
-  "cater": [],
-  "terrain": [],
-  "aquatic": [],
-  "preliminary": [],
-  "versatile": [],
-  "calligraphy": [],
-  "enthusiastic": [],
-  "impulsive": [],
-  "melancholy": [],
-  "optimistic": [],
-  "pessimistic": [],
-  "resilient": [],
-  "vulnerable": [],
   "empathy": [
     {
       "root": "em",
@@ -594,8 +450,6 @@
       "origin": "Greek"
     }
   ],
-  "arrogant": [],
-  "charismatic": [],
   "emotion": [
     {
       "root": "e",
@@ -608,86 +462,6 @@
       "origin": "Latin"
     }
   ],
-  "equitable": [],
-  "eradicate": [],
-  "erratic": [],
-  "espionage": [],
-  "esteem": [],
-  "euphemism": [],
-  "exacerbate": [],
-  "exalt": [],
-  "excerpt": [],
-  "exemplify": [],
-  "exert": [],
-  "exodus": [],
-  "expedite": [],
-  "exploit": [],
-  "exponential": [],
-  "extravagant": [],
-  "fabricate": [],
-  "faction": [],
-  "fallacy": [],
-  "fanatical": [],
-  "feasible": [],
-  "fluctuate": [],
-  "foremost": [],
-  "formidable": [],
-  "forthcoming": [],
-  "foster": [],
-  "futile": [],
-  "galvanize": [],
-  "garrison": [],
-  "genesis": [],
-  "genocide": [],
-  "grandiose": [],
-  "gratuitous": [],
-  "grievance": [],
-  "grueling": [],
-  "guise": [],
-  "hamper": [],
-  "harmonize": [],
-  "havoc": [],
-  "hegemony": [],
-  "heresy": [],
-  "hierarchy": [],
-  "hinder": [],
-  "holistic": [],
-  "homogeneous": [],
-  "humanitarian": [],
-  "hypothetical": [],
-  "ideology": [],
-  "illicit": [],
-  "imminent": [],
-  "impair": [],
-  "impartial": [],
-  "impeach": [],
-  "impede": [],
-  "imperative": [],
-  "implication": [],
-  "implicit": [],
-  "impose": [],
-  "impoverished": [],
-  "improvise": [],
-  "inaugurate": [],
-  "incarcerate": [],
-  "incentive": [],
-  "incite": [],
-  "inclination": [],
-  "incoherent": [],
-  "increment": [],
-  "indictment": [],
-  "indignation": [],
-  "indoctrinate": [],
-  "infer": [],
-  "influx": [],
-  "infrastructure": [],
-  "inherent": [],
-  "inhibit": [],
-  "innate": [],
-  "innovate": [],
-  "insatiable": [],
-  "instigate": [],
-  "integral": [],
   "congestion": [
     {
       "root": "con",
@@ -759,238 +533,2712 @@
       "origin": "Greek"
     }
   ],
-  "seniority": [],
-  "demotion": [],
-  "harassment": [],
-  "discrimination": [],
-  "absenteeism": [],
-  "retention": [],
-  "dismissal": [],
-  "severance": [],
-  "stipend": [],
-  "brochure": [],
-  "survey": [],
-  "niche": [],
-  "endorsement": [],
-  "franchise": [],
-  "royalty": [],
-  "quota": [],
-  "rebate": [],
-  "portfolio": [],
-  "complaint": [],
-  "satisfaction": [],
-  "inquiry": [],
-  "feedback": [],
-  "resolve": [],
-  "accommodate": [],
-  "malfunction": [],
-  "negligence": [],
-  "courtesy": [],
-  "representative": [],
-  "loyalty": [],
-  "patronage": [],
-  "rapport": [],
-  "hospitality": [],
-  "apologize": [],
-  "adjourn": [],
-  "quorum": [],
-  "amendment": [],
-  "facilitator": [],
-  "presentation": [],
-  "convene": [],
-  "plenary": [],
-  "deliberation": [],
-  "audit": [],
-  "equity": [],
-  "stakeholder": [],
-  "merger": [],
-  "bankruptcy": [],
-  "depreciation": [],
-  "procurement": [],
-  "clause": [],
-  "mediation": [],
-  "proprietary": [],
-  "nondisclosure": [],
-  "feasibility": [],
-  "restructure": [],
-  "subsidiary": [],
-  "deductible": [],
-  "solvent": [],
-  "proxy": [],
-  "prospective": [],
-  "quarterly": [],
-  "accrual": [],
-  "liquidity": [],
-  "receivable": [],
-  "valuation": [],
-  "withholding": [],
-  "counteroffer": [],
-  "deadlock": [],
-  "impasse": [],
-  "concur": [],
-  "stalemate": [],
-  "comply": [],
-  "enforceable": [],
-  "indemnify": [],
-  "disclosure": [],
-  "confidentiality": [],
-  "obligate": [],
-  "forfeit": [],
-  "contractual": [],
-  "signatory": [],
-  "covenant": [],
-  "laundry": [],
-  "linen": [],
-  "minibar": [],
-  "balcony": [],
-  "terrace": [],
-  "inn": [],
-  "lodge": [],
-  "interoffice": [],
-  "workspace": "C:\\Users\\T90006~2\\AppData\\Local\\Temp",
-  "switchboard": [],
-  "whiteboard": [],
-  "toner": [],
-  "cartridge": [],
-  "laminate": [],
-  "proofread": [],
-  "copier": [],
-  "voicemail": [],
-  "intercom": [],
-  "archive": [],
-  "pantry": [],
-  "workload": [],
-  "roster": [],
-  "podium": [],
-  "swipe": [],
-  "badge": [],
-  "inbox": [],
-  "outbox": [],
-  "mailroom": [],
-  "fax": [],
-  "stockroom": [],
-  "locker": [],
-  "timesheet": [],
-  "telecommute": [],
-  "nameplate": [],
-  "fixture": [],
-  "memo": [],
-  "notepad": [],
-  "signage": [],
-  "logbook": [],
-  "backlog": [],
-  "cubby": [],
-  "swivel": [],
-  "multitask": [],
-  "workday": [],
-  "timeclock": [],
-  "shred": [],
-  "staple": [],
-  "storeroom": [],
-  "letterbox": [],
-  "briefing": [],
-  "recap": [],
-  "roundtable": [],
-  "sidebar": [],
-  "webinar": [],
-  "videoconference": [],
-  "panelist": [],
-  "overview": [],
-  "rundown": [],
-  "huddle": [],
-  "emcee": [],
-  "coordinate": [],
-  "designate": [],
-  "conclude": [],
-  "breakout": [],
-  "actionable": [],
-  "followup": [],
-  "offsite": [],
-  "kickoff": [],
-  "standup": [],
-  "townhall": [],
-  "forum": [],
-  "slideshow": [],
-  "flipchart": [],
-  "walkthrough": [],
-  "rehearsal": [],
-  "summarize": [],
-  "takeaway": [],
-  "presenter": [],
-  "recess": [],
-  "draft": [],
-  "smile": [],
-  "call": [],
-  "drive": [],
-  "ride": [],
-  "bring": [],
-  "send": [],
-  "show": [],
-  "feel": [],
-  "meet": [],
-  "find": [],
-  "lose": [],
-  "win": [],
-  "wear": [],
-  "grow": [],
-  "live": [],
-  "remember": [],
-  "forget": [],
-  "big": [],
-  "small": [],
-  "good": [],
-  "bad": [],
-  "new": [],
-  "old": [],
-  "young": [],
-  "long": [],
-  "short": [],
-  "tall": [],
-  "fast": [],
-  "slow": [],
-  "happy": [],
-  "sad": [],
-  "beautiful": [],
-  "ugly": [],
-  "dirty": [],
-  "easy": [],
-  "hard": [],
-  "heavy": [],
-  "light": [],
-  "strong": [],
-  "weak": [],
-  "rich": [],
-  "poor": [],
-  "full": [],
-  "empty": [],
-  "nice": [],
-  "kind": [],
-  "funny": [],
-  "busy": [],
-  "free": [],
-  "hungry": [],
-  "thirsty": [],
-  "tired": [],
-  "sick": [],
-  "ready": true,
-  "right": [],
-  "wrong": [],
-  "important": [],
-  "different": [],
-  "inflammation": [],
-  "contagious": [],
-  "epidemic": [],
-  "ointment": [],
-  "rehabilitation": [],
-  "supplement": [],
-  "specimen": [],
-  "obesity": [],
-  "stethoscope": [],
-  "insomnia": [],
-  "antibiotic": [],
-  "diabetes": [],
-  "algorithm": [],
-  "bandwidth": [],
+  "workspace": "D:\\workspace-jason\\enStuido",
+  "status": "ready",
+  "agent": "Gemini CLI",
+  "os": "win32",
+  "intent": "Session initialization and context acknowledgement",
+  "strategic_intent": "Initialize the project environment and begin the development lifecycle for the HR & Project Management System.",
+  "summary": "This is the initial step in my engagement with the HR & Project Management System. I am setting up the foundation for a Research-Strategy-Execution lifecycle, as mandated by the project's engineering standards. My first priority is to gain a high-level understanding of the existing codebase, specifically the 14 microservices and the React frontend, while adhering to the TDD and DDD principles outlined in GEMINI.md. I will begin by listing the root directory to confirm the structure and locate the key design documents mentioned in the project overview.",
+  "title": "Project Initialization & Research Phase",
+  "timestamp": "2026-05-08T00:00:00Z",
+  "session_id": "20260508-friday",
+  "message": "Context loaded successfully.",
+  "workspace_root": "D:\\workspace-jason\\enStuido",
+  "operating_system": "win32",
+  "current_date": "2026-05-11",
+  "date": "2026-05-11",
+  "project_type": "English learning application (enStuido)",
+  "frontend": "React (Vite)",
+  "backend": "Node.js (Express)",
+  "database": "SQLite (enstudy.db)",
+  "one": [],
+  "two": [],
+  "three": [],
+  "four": [],
+  "five": [],
+  "six": [],
+  "seven": [],
+  "eight": [],
+  "nine": [],
+  "ten": [],
+  "zero": [],
+  "hundred": [],
+  "thousand": [],
+  "first": [],
+  "second": [],
+  "red": [
+    {
+      "root": "reudh",
+      "meaning_zh": "紅色",
+      "origin": "Proto-Indo-European"
+    }
+  ],
+  "blue": [
+    {
+      "root": "bhle-",
+      "meaning_zh": "藍色、淺色",
+      "origin": "Proto-Indo-European"
+    }
+  ],
+  "green": [
+    {
+      "root": "ghre-",
+      "meaning_zh": "生長、綠色",
+      "origin": "Proto-Indo-European"
+    }
+  ],
+  "yellow": [
+    {
+      "root": "ghel-",
+      "meaning_zh": "發光、黃色",
+      "origin": "Proto-Indo-European"
+    }
+  ],
+  "black": [
+    {
+      "root": "bhleg-",
+      "meaning_zh": "燃燒、變黑",
+      "origin": "Proto-Indo-European"
+    }
+  ],
+  "white": [
+    {
+      "root": "kweit-",
+      "meaning_zh": "閃耀、白色",
+      "origin": "Proto-Indo-European"
+    }
+  ],
+  "orange": [
+    {
+      "root": "naranga",
+      "meaning_zh": "橙樹",
+      "origin": "Sanskrit"
+    }
+  ],
+  "pink": [
+    {
+      "root": "pink",
+      "meaning_zh": "刺、裝飾邊緣",
+      "origin": "Middle Dutch"
+    }
+  ],
+  "purple": [
+    {
+      "root": "purpura",
+      "meaning_zh": "紫色染料",
+      "origin": "Latin"
+    }
+  ],
+  "brown": [
+    {
+      "root": "bher-",
+      "meaning_zh": "褐色、發亮",
+      "origin": "Proto-Indo-European"
+    }
+  ],
+  "gray": [
+    {
+      "root": "ghere-",
+      "meaning_zh": "灰色",
+      "origin": "Proto-Indo-European"
+    }
+  ],
+  "color": [
+    {
+      "root": "color",
+      "meaning_zh": "遮蓋、隱藏",
+      "origin": "Latin"
+    }
+  ],
+  "family": [
+    {
+      "root": "familia",
+      "meaning_zh": "家僕、家庭",
+      "origin": "Latin"
+    }
+  ],
+  "mother": [
+    {
+      "root": "mater",
+      "meaning_zh": "母親",
+      "origin": "Proto-Indo-European"
+    }
+  ],
+  "father": [
+    {
+      "root": "pater",
+      "meaning_zh": "父親",
+      "origin": "Proto-Indo-European"
+    }
+  ],
+  "project": "enStuido",
+  "capabilities": [
+    "Vocabulary learning and games",
+    "Graded reading with translations",
+    "Grammar exercises",
+    "AI-powered sentence generation (Gemini)",
+    "TTS (Text-to-Speech) integration",
+    "Progress tracking and stats"
+  ],
+  "sister": [
+    {
+      "root": "swestēr",
+      "meaning_zh": "姊妹",
+      "origin": "Proto-Germanic"
+    }
+  ],
+  "brother": [
+    {
+      "root": "brōthar",
+      "meaning_zh": "兄弟",
+      "origin": "Proto-Germanic"
+    }
+  ],
+  "baby": [
+    {
+      "root": "babi",
+      "meaning_zh": "嬰兒",
+      "origin": "Middle English"
+    }
+  ],
+  "son": [
+    {
+      "root": "sunuz",
+      "meaning_zh": "兒子",
+      "origin": "Proto-Germanic"
+    }
+  ],
+  "daughter": [
+    {
+      "root": "duhtēr",
+      "meaning_zh": "女兒",
+      "origin": "Proto-Germanic"
+    }
+  ],
+  "parent": [
+    {
+      "root": "parere",
+      "meaning_zh": "父母",
+      "origin": "Latin"
+    }
+  ],
+  "child": [
+    {
+      "root": "kiltham",
+      "meaning_zh": "兒童",
+      "origin": "Proto-Germanic"
+    }
+  ],
+  "husband": [
+    {
+      "root": "hūsbōndi",
+      "meaning_zh": "丈夫",
+      "origin": "Old Norse"
+    }
+  ],
+  "wife": [
+    {
+      "root": "wībam",
+      "meaning_zh": "妻子",
+      "origin": "Proto-Germanic"
+    }
+  ],
+  "grandma": [
+    {
+      "root": "grandis",
+      "meaning_zh": "祖母",
+      "origin": "Latin"
+    }
+  ],
+  "grandpa": [
+    {
+      "root": "grandis",
+      "meaning_zh": "祖父",
+      "origin": "Latin"
+    }
+  ],
+  "uncle": [
+    {
+      "root": "avunculus",
+      "meaning_zh": "叔伯舅",
+      "origin": "Latin"
+    }
+  ],
+  "aunt": [
+    {
+      "root": "amita",
+      "meaning_zh": "姑姨嬸",
+      "origin": "Latin"
+    }
+  ],
+  "head": [
+    {
+      "root": "haubidą",
+      "meaning_zh": "頭",
+      "origin": "Proto-Germanic"
+    }
+  ],
+  "eye": [
+    {
+      "root": "augō",
+      "meaning_zh": "眼睛",
+      "origin": "Proto-Germanic"
+    }
+  ],
+  "ear": [
+    {
+      "root": "auzon",
+      "meaning_zh": "耳朵",
+      "origin": "Proto-Germanic"
+    }
+  ],
+  "nose": [
+    {
+      "root": "nusō",
+      "meaning_zh": "鼻子",
+      "origin": "Proto-Germanic"
+    }
+  ],
+  "mouth": [
+    {
+      "root": "munthaz",
+      "meaning_zh": "嘴巴",
+      "origin": "Proto-Germanic"
+    }
+  ],
+  "tooth": [
+    {
+      "root": "tanthz",
+      "meaning_zh": "牙齒",
+      "origin": "Proto-Germanic"
+    }
+  ],
+  "face": [
+    {
+      "root": "facies",
+      "meaning_zh": "臉",
+      "origin": "Latin"
+    }
+  ],
+  "hair": [
+    {
+      "root": "hērą",
+      "meaning_zh": "頭髮",
+      "origin": "Proto-Germanic"
+    }
+  ],
+  "hand": [
+    {
+      "root": "handuz",
+      "meaning_zh": "手",
+      "origin": "Proto-Germanic"
+    }
+  ],
+  "finger": [
+    {
+      "root": "fingraz",
+      "meaning_zh": "手指",
+      "origin": "Proto-Germanic"
+    }
+  ],
+  "arm": [
+    {
+      "root": "armaz",
+      "meaning_zh": "手臂",
+      "origin": "Proto-Germanic"
+    }
+  ],
+  "leg": [
+    {
+      "root": "leggr",
+      "meaning_zh": "腿",
+      "origin": "Old Norse"
+    }
+  ],
+  "foot": [
+    {
+      "root": "fōts",
+      "meaning_zh": "腳",
+      "origin": "Proto-Germanic"
+    }
+  ],
+  "body": [
+    {
+      "root": "bodig",
+      "meaning_zh": "身體",
+      "origin": "Old English"
+    }
+  ],
+  "heart": [
+    {
+      "root": "hertōn",
+      "meaning_zh": "心臟",
+      "origin": "Proto-Germanic"
+    }
+  ],
+  "back": [
+    {
+      "root": "baką",
+      "meaning_zh": "背部",
+      "origin": "Proto-Germanic"
+    }
+  ],
+  "stomach": [
+    {
+      "root": "stomachus",
+      "meaning_zh": "胃",
+      "origin": "Latin"
+    }
+  ],
+  "language": "Traditional Chinese",
+  "food": [
+    {
+      "root": "fod",
+      "meaning_zh": "餵養",
+      "origin": "Germanic"
+    }
+  ],
+  "rice": [
+    {
+      "root": "oryza",
+      "meaning_zh": "稻米",
+      "origin": "Greek"
+    }
+  ],
+  "bread": [
+    {
+      "root": "bhreuh",
+      "meaning_zh": "煮、冒泡",
+      "origin": "Proto-Indo-European"
+    }
+  ],
+  "egg": [
+    {
+      "root": "oy",
+      "meaning_zh": "鳥、蛋",
+      "origin": "Proto-Indo-European"
+    }
+  ],
+  "meat": [
+    {
+      "root": "mad",
+      "meaning_zh": "食物",
+      "origin": "Proto-Indo-European"
+    }
+  ],
+  "chicken": [
+    {
+      "root": "cicen",
+      "meaning_zh": "雛雞",
+      "origin": "Germanic"
+    }
+  ],
+  "fish": [
+    {
+      "root": "peisk",
+      "meaning_zh": "魚",
+      "origin": "Proto-Indo-European"
+    }
+  ],
+  "soup": [
+    {
+      "root": "suppa",
+      "meaning_zh": "浸泡",
+      "origin": "Germanic"
+    }
+  ],
+  "cake": [
+    {
+      "root": "kaka",
+      "meaning_zh": "扁平的餅",
+      "origin": "Old Norse"
+    }
+  ],
+  "candy": [
+    {
+      "root": "khanda",
+      "meaning_zh": "糖碎片",
+      "origin": "Sanskrit"
+    }
+  ],
+  "cheese": [
+    {
+      "root": "kwat",
+      "meaning_zh": "發酵",
+      "origin": "Proto-Indo-European"
+    }
+  ],
+  "butter": [
+    {
+      "root": "bouturon",
+      "meaning_zh": "牛-起司",
+      "origin": "Greek"
+    }
+  ],
+  "sugar": [
+    {
+      "root": "sharkara",
+      "meaning_zh": "碎石、糖",
+      "origin": "Sanskrit"
+    }
+  ],
+  "salt": [
+    {
+      "root": "sal",
+      "meaning_zh": "鹽",
+      "origin": "Latin"
+    }
+  ],
+  "noodle": [
+    {
+      "root": "nudel",
+      "meaning_zh": "結",
+      "origin": "German"
+    }
+  ],
+  "sandwich": [
+    {
+      "root": "Sandwich",
+      "meaning_zh": "三明治伯爵",
+      "origin": "English"
+    }
+  ],
+  "pizza": [
+    {
+      "root": "pizza",
+      "meaning_zh": "餅、點心",
+      "origin": "Italian"
+    }
+  ],
+  "breakfast": [
+    {
+      "root": "break fast",
+      "meaning_zh": "打破禁食",
+      "origin": "English"
+    }
+  ],
+  "lunch": [
+    {
+      "root": "luncheon",
+      "meaning_zh": "大塊食物",
+      "origin": "English"
+    }
+  ],
+  "dinner": [
+    {
+      "root": "disjejunare",
+      "meaning_zh": "打破禁食",
+      "origin": "Latin"
+    }
+  ],
+  "meal": [
+    {
+      "root": "me",
+      "meaning_zh": "量、固定時間",
+      "origin": "Proto-Indo-European"
+    }
+  ],
+  "snack": [
+    {
+      "root": "snacken",
+      "meaning_zh": "咬、張嘴",
+      "origin": "Dutch"
+    }
+  ],
+  "water": [
+    {
+      "root": "wed",
+      "meaning_zh": "水、濕",
+      "origin": "Proto-Indo-European"
+    }
+  ],
+  "milk": [
+    {
+      "root": "melg",
+      "meaning_zh": "擠奶",
+      "origin": "Proto-Indo-European"
+    }
+  ],
+  "tea": [
+    {
+      "root": "te",
+      "meaning_zh": "茶",
+      "origin": "Chinese"
+    }
+  ],
+  "coffee": [
+    {
+      "root": "qahwah",
+      "meaning_zh": "咖啡、酒",
+      "origin": "Arabic"
+    }
+  ],
+  "juice": [
+    {
+      "root": "ius",
+      "meaning_zh": "肉湯、汁液",
+      "origin": "Latin"
+    }
+  ],
+  "drink": [
+    {
+      "root": "dhreg",
+      "meaning_zh": "拉、吸",
+      "origin": "Proto-Indo-European"
+    }
+  ],
+  "fruit": [
+    {
+      "root": "fructus",
+      "meaning_zh": "享受、成果",
+      "origin": "Latin"
+    }
+  ],
+  "apple": [
+    {
+      "root": "abel",
+      "meaning_zh": "蘋果",
+      "origin": "Proto-Indo-European"
+    }
+  ],
+  "project_info": {
+    "name": "enStuido",
+    "path": "D:\\workspace-jason\\enStuido",
+    "os": "win32",
+    "date": "2026-05-11"
+  },
+  "readiness": "ready_for_task",
+  "banana": [
+    {
+      "root": "banan",
+      "meaning_zh": "手指",
+      "origin": "Arabic"
+    }
+  ],
+  "grape": [
+    {
+      "root": "krappa",
+      "meaning_zh": "鉤子",
+      "origin": "Germanic"
+    }
+  ],
+  "lemon": [
+    {
+      "root": "laymūn",
+      "meaning_zh": "檸檬",
+      "origin": "Arabic"
+    }
+  ],
+  "mango": [
+    {
+      "root": "māṅkāy",
+      "meaning_zh": "芒果",
+      "origin": "Tamil"
+    }
+  ],
+  "watermelon": [
+    {
+      "root": "mēlon",
+      "meaning_zh": "甜瓜",
+      "origin": "Greek"
+    }
+  ],
+  "strawberry": [
+    {
+      "root": "strēawberige",
+      "meaning_zh": "鋪撒的漿果",
+      "origin": "Old English"
+    }
+  ],
+  "pear": [
+    {
+      "root": "pirum",
+      "meaning_zh": "梨子",
+      "origin": "Latin"
+    }
+  ],
+  "peach": [
+    {
+      "root": "persicum",
+      "meaning_zh": "波斯的",
+      "origin": "Latin"
+    }
+  ],
+  "cherry": [
+    {
+      "root": "kerasion",
+      "meaning_zh": "櫻桃",
+      "origin": "Greek"
+    }
+  ],
+  "pineapple": [
+    {
+      "root": "pinus",
+      "meaning_zh": "松樹",
+      "origin": "Latin"
+    }
+  ],
+  "vegetable": [
+    {
+      "root": "vegetare",
+      "meaning_zh": "使活躍",
+      "origin": "Latin"
+    }
+  ],
+  "tomato": [
+    {
+      "root": "tomatl",
+      "meaning_zh": "腫脹的水果",
+      "origin": "Nahuatl"
+    }
+  ],
+  "potato": [
+    {
+      "root": "batata",
+      "meaning_zh": "甘薯",
+      "origin": "Taino"
+    }
+  ],
+  "carrot": [
+    {
+      "root": "karōton",
+      "meaning_zh": "胡蘿蔔",
+      "origin": "Greek"
+    }
+  ],
+  "onion": [
+    {
+      "root": "unio",
+      "meaning_zh": "珍珠/單一",
+      "origin": "Latin"
+    }
+  ],
+  "corn": [
+    {
+      "root": "kurnam",
+      "meaning_zh": "穀粒",
+      "origin": "Germanic"
+    }
+  ],
+  "bean": [
+    {
+      "root": "baunō",
+      "meaning_zh": "豆子",
+      "origin": "Germanic"
+    }
+  ],
+  "animal": [
+    {
+      "root": "anima",
+      "meaning_zh": "呼吸/生命",
+      "origin": "Latin"
+    }
+  ],
+  "dog": [
+    {
+      "root": "docga",
+      "meaning_zh": "狗",
+      "origin": "Old English"
+    }
+  ],
+  "cat": [
+    {
+      "root": "cattus",
+      "meaning_zh": "貓",
+      "origin": "Late Latin"
+    }
+  ],
+  "bird": [
+    {
+      "root": "brid",
+      "meaning_zh": "幼鳥",
+      "origin": "Old English"
+    }
+  ],
+  "cow": [
+    {
+      "root": "kūz",
+      "meaning_zh": "母牛",
+      "origin": "Germanic"
+    }
+  ],
+  "pig": [
+    {
+      "root": "pigge",
+      "meaning_zh": "豬",
+      "origin": "Middle English"
+    }
+  ],
+  "horse": [
+    {
+      "root": "hursaz",
+      "meaning_zh": "馬",
+      "origin": "Germanic"
+    }
+  ],
+  "sheep": [
+    {
+      "root": "skēpą",
+      "meaning_zh": "羊",
+      "origin": "Germanic"
+    }
+  ],
+  "rabbit": [
+    {
+      "root": "rabet",
+      "meaning_zh": "小兔子",
+      "origin": "Middle English"
+    }
+  ],
+  "mouse": [
+    {
+      "root": "mūs",
+      "meaning_zh": "老鼠",
+      "origin": "Latin"
+    }
+  ],
+  "duck": [
+    {
+      "root": "duce",
+      "meaning_zh": "潛水者",
+      "origin": "Old English"
+    }
+  ],
+  "monkey": [
+    {
+      "root": "monneke",
+      "meaning_zh": "小猴子",
+      "origin": "Low German"
+    }
+  ],
+  "bear": [
+    {
+      "root": "beran",
+      "meaning_zh": "褐色的",
+      "origin": "Germanic"
+    }
+  ],
+  "project_name": "enStuido",
+  "system_info": {
+    "date": "2026-05-11",
+    "os": "win32"
+  },
+  "ready": [
+    {
+      "root": "ræde",
+      "meaning_zh": "準備好的",
+      "origin": "Old English"
+    }
+  ],
+  "lion": [
+    {
+      "root": "leon",
+      "meaning_zh": "獅子",
+      "origin": "Greek"
+    }
+  ],
+  "tiger": [
+    {
+      "root": "tigris",
+      "meaning_zh": "老虎、快速",
+      "origin": "Greek"
+    }
+  ],
+  "elephant": [
+    {
+      "root": "elephas",
+      "meaning_zh": "大象、象牙",
+      "origin": "Greek"
+    }
+  ],
+  "snake": [
+    {
+      "root": "snak-",
+      "meaning_zh": "爬行",
+      "origin": "Old English"
+    }
+  ],
+  "frog": [
+    {
+      "root": "fros-",
+      "meaning_zh": "青蛙、跳躍",
+      "origin": "Old English"
+    }
+  ],
+  "butterfly": [
+    {
+      "root": "butere+fleoge",
+      "meaning_zh": "奶油+蒼蠅",
+      "origin": "Old English"
+    }
+  ],
+  "bee": [
+    {
+      "root": "beo",
+      "meaning_zh": "蜜蜂",
+      "origin": "Old English"
+    }
+  ],
+  "weather": [
+    {
+      "root": "we-",
+      "meaning_zh": "吹",
+      "origin": "PIE"
+    }
+  ],
+  "sun": [
+    {
+      "root": "sawel-",
+      "meaning_zh": "發光",
+      "origin": "PIE"
+    }
+  ],
+  "moon": [
+    {
+      "root": "me-",
+      "meaning_zh": "測量",
+      "origin": "PIE"
+    }
+  ],
+  "star": [
+    {
+      "root": "ster-",
+      "meaning_zh": "星",
+      "origin": "PIE"
+    }
+  ],
+  "rain": [
+    {
+      "root": "reg-",
+      "meaning_zh": "濕潤",
+      "origin": "PIE"
+    }
+  ],
+  "snow": [
+    {
+      "root": "sneigwh-",
+      "meaning_zh": "雪",
+      "origin": "PIE"
+    }
+  ],
+  "wind": [
+    {
+      "root": "we-",
+      "meaning_zh": "吹",
+      "origin": "PIE"
+    }
+  ],
+  "hot": [
+    {
+      "root": "kai-",
+      "meaning_zh": "熱",
+      "origin": "PIE"
+    }
+  ],
+  "cold": [
+    {
+      "root": "gel-",
+      "meaning_zh": "寒冷",
+      "origin": "PIE"
+    }
+  ],
+  "warm": [
+    {
+      "root": "guer-",
+      "meaning_zh": "溫暖",
+      "origin": "PIE"
+    }
+  ],
+  "cool": [
+    {
+      "root": "gel-",
+      "meaning_zh": "寒冷",
+      "origin": "PIE"
+    }
+  ],
+  "sky": [
+    {
+      "root": "sky",
+      "meaning_zh": "雲、覆蓋",
+      "origin": "Old Norse"
+    }
+  ],
+  "time": [
+    {
+      "root": "da-",
+      "meaning_zh": "分割",
+      "origin": "PIE"
+    }
+  ],
+  "day": [
+    {
+      "root": "agh-",
+      "meaning_zh": "白天",
+      "origin": "PIE"
+    }
+  ],
+  "night": [
+    {
+      "root": "nekwt-",
+      "meaning_zh": "黑夜",
+      "origin": "PIE"
+    }
+  ],
+  "morning": [
+    {
+      "root": "mer-",
+      "meaning_zh": "閃爍、黎明",
+      "origin": "PIE"
+    }
+  ],
+  "afternoon": [
+    {
+      "root": "after+noon",
+      "meaning_zh": "在...之後+正午",
+      "origin": "Old English"
+    }
+  ],
+  "evening": [
+    {
+      "root": "ep-",
+      "meaning_zh": "晚、後",
+      "origin": "PIE"
+    }
+  ],
+  "today": [
+    {
+      "root": "to+day",
+      "meaning_zh": "這+天",
+      "origin": "Old English"
+    }
+  ],
+  "tomorrow": [
+    {
+      "root": "to+morrow",
+      "meaning_zh": "至+早晨",
+      "origin": "Old English"
+    }
+  ],
+  "yesterday": [
+    {
+      "root": "ghyes-",
+      "meaning_zh": "昨天",
+      "origin": "PIE"
+    }
+  ],
+  "week": [
+    {
+      "root": "weik-",
+      "meaning_zh": "轉動、交替",
+      "origin": "PIE"
+    }
+  ],
+  "month": [
+    {
+      "root": "me-",
+      "meaning_zh": "測量",
+      "origin": "PIE"
+    }
+  ],
+  "workspace_info": {
+    "root": "D:\\workspace-jason\\enStuido",
+    "type": "Full-stack (React + Node.js + SQLite)",
+    "os": "win32"
+  },
+  "year": [
+    {
+      "root": "gear",
+      "meaning_zh": "年",
+      "origin": "古英語"
+    }
+  ],
+  "hour": [
+    {
+      "root": "hora",
+      "meaning_zh": "小時/時間",
+      "origin": "拉丁語"
+    }
+  ],
+  "minute": [
+    {
+      "root": "minutus",
+      "meaning_zh": "微小的",
+      "origin": "拉丁語"
+    }
+  ],
+  "clock": [
+    {
+      "root": "clocca",
+      "meaning_zh": "鐘",
+      "origin": "拉丁語"
+    }
+  ],
+  "now": [
+    {
+      "root": "nu",
+      "meaning_zh": "現在",
+      "origin": "古英語"
+    }
+  ],
+  "soon": [
+    {
+      "root": "sona",
+      "meaning_zh": "立刻",
+      "origin": "古英語"
+    }
+  ],
+  "always": [
+    {
+      "root": "eallne weg",
+      "meaning_zh": "始終",
+      "origin": "古英語"
+    }
+  ],
+  "never": [
+    {
+      "root": "ne æfre",
+      "meaning_zh": "從未",
+      "origin": "古英語"
+    }
+  ],
+  "sometimes": [
+    {
+      "root": "sum tima",
+      "meaning_zh": "有時",
+      "origin": "古英語"
+    }
+  ],
+  "often": [
+    {
+      "root": "oft",
+      "meaning_zh": "經常",
+      "origin": "古英語"
+    }
+  ],
+  "early": [
+    {
+      "root": "ær",
+      "meaning_zh": "早",
+      "origin": "古英語"
+    }
+  ],
+  "late": [
+    {
+      "root": "læt",
+      "meaning_zh": "遲",
+      "origin": "古英語"
+    }
+  ],
+  "monday": [
+    {
+      "root": "monandæg",
+      "meaning_zh": "月亮之日",
+      "origin": "古英語"
+    }
+  ],
+  "tuesday": [
+    {
+      "root": "Tiwesdæg",
+      "meaning_zh": "戰神之日",
+      "origin": "古英語"
+    }
+  ],
+  "wednesday": [
+    {
+      "root": "Wodnesdæg",
+      "meaning_zh": "奧丁之日",
+      "origin": "古英語"
+    }
+  ],
+  "thursday": [
+    {
+      "root": "Þunresdæg",
+      "meaning_zh": "雷神之日",
+      "origin": "古英語"
+    }
+  ],
+  "friday": [
+    {
+      "root": "Frigedæg",
+      "meaning_zh": "愛神之日",
+      "origin": "古英語"
+    }
+  ],
+  "saturday": [
+    {
+      "root": "Saturni dies",
+      "meaning_zh": "農神之日",
+      "origin": "拉丁語"
+    }
+  ],
+  "sunday": [
+    {
+      "root": "sunnandæg",
+      "meaning_zh": "太陽之日",
+      "origin": "古英語"
+    }
+  ],
+  "eat": [
+    {
+      "root": "etan",
+      "meaning_zh": "吃",
+      "origin": "古英語"
+    }
+  ],
+  "come": [
+    {
+      "root": "cuman",
+      "meaning_zh": "來",
+      "origin": "古英語"
+    }
+  ],
+  "see": [
+    {
+      "root": "seon",
+      "meaning_zh": "看",
+      "origin": "古英語"
+    }
+  ],
+  "hear": [
+    {
+      "root": "hyran",
+      "meaning_zh": "聽",
+      "origin": "古英語"
+    }
+  ],
+  "say": [
+    {
+      "root": "secgan",
+      "meaning_zh": "說",
+      "origin": "古英語"
+    }
+  ],
+  "speak": [
+    {
+      "root": "specan",
+      "meaning_zh": "說話",
+      "origin": "古英語"
+    }
+  ],
+  "talk": [
+    {
+      "root": "talu",
+      "meaning_zh": "談話/故事",
+      "origin": "古英語"
+    }
+  ],
+  "tell": [
+    {
+      "root": "tellan",
+      "meaning_zh": "告知/計算",
+      "origin": "古英語"
+    }
+  ],
+  "ask": [
+    {
+      "root": "ascian",
+      "meaning_zh": "詢問",
+      "origin": "古英語"
+    }
+  ],
+  "answer": [
+    {
+      "root": "andswaru",
+      "meaning_zh": "回答",
+      "origin": "古英語"
+    }
+  ],
+  "read": [
+    {
+      "root": "rædan",
+      "meaning_zh": "閱讀/解釋",
+      "origin": "古英語"
+    }
+  ],
+  "environment": {
+    "os": "win32",
+    "date": "2026-05-11"
+  },
+  "write": [
+    {
+      "root": "writ",
+      "meaning_zh": "刻、劃",
+      "origin": "Old English"
+    }
+  ],
+  "listen": [
+    {
+      "root": "hlyst",
+      "meaning_zh": "聽、傾聽",
+      "origin": "Old English"
+    }
+  ],
+  "look": [
+    {
+      "root": "loc",
+      "meaning_zh": "看、注視",
+      "origin": "Old English"
+    }
+  ],
+  "watch": [
+    {
+      "root": "wæccan",
+      "meaning_zh": "醒著、守候",
+      "origin": "Old English"
+    }
+  ],
+  "run": [
+    {
+      "root": "rinnan",
+      "meaning_zh": "流動、奔跑",
+      "origin": "Old English"
+    }
+  ],
+  "walk": [
+    {
+      "root": "wealcan",
+      "meaning_zh": "翻滾、行走",
+      "origin": "Old English"
+    }
+  ],
+  "sit": [
+    {
+      "root": "sed",
+      "meaning_zh": "坐",
+      "origin": "Proto-Indo-European"
+    }
+  ],
+  "stand": [
+    {
+      "root": "sta",
+      "meaning_zh": "站立、穩固",
+      "origin": "Proto-Indo-European"
+    }
+  ],
+  "sleep": [
+    {
+      "root": "slep",
+      "meaning_zh": "睡、放鬆",
+      "origin": "Old English"
+    }
+  ],
+  "wake": [
+    {
+      "root": "wacan",
+      "meaning_zh": "醒、生出",
+      "origin": "Old English"
+    }
+  ],
+  "open": [
+    {
+      "root": "open",
+      "meaning_zh": "打開、曝露",
+      "origin": "Old English"
+    }
+  ],
+  "close": [
+    {
+      "root": "claud",
+      "meaning_zh": "關閉",
+      "origin": "Latin"
+    }
+  ],
+  "give": [
+    {
+      "root": "gief",
+      "meaning_zh": "給予",
+      "origin": "Old English"
+    }
+  ],
+  "take": [
+    {
+      "root": "taka",
+      "meaning_zh": "拿、抓取",
+      "origin": "Old Norse"
+    }
+  ],
+  "put": [
+    {
+      "root": "putung",
+      "meaning_zh": "推、放置",
+      "origin": "Old English"
+    }
+  ],
+  "get": [
+    {
+      "root": "geta",
+      "meaning_zh": "得到、到達",
+      "origin": "Old Norse"
+    }
+  ],
+  "make": [
+    {
+      "root": "mac",
+      "meaning_zh": "製作、適應",
+      "origin": "Old English"
+    }
+  ],
+  "have": [],
+  "want": [
+    {
+      "root": "vanta",
+      "meaning_zh": "缺少、想要",
+      "origin": "Old Norse"
+    }
+  ],
+  "need": [
+    {
+      "root": "neod",
+      "meaning_zh": "迫切、需要",
+      "origin": "Old English"
+    }
+  ],
+  "like": [
+    {
+      "root": "lic",
+      "meaning_zh": "外貌、相似",
+      "origin": "Old English"
+    }
+  ],
+  "love": [
+    {
+      "root": "leubh",
+      "meaning_zh": "喜愛、渴望",
+      "origin": "Proto-Indo-European"
+    }
+  ],
+  "know": [
+    {
+      "root": "gno",
+      "meaning_zh": "知道、辨識",
+      "origin": "Proto-Indo-European"
+    }
+  ],
+  "think": [
+    {
+      "root": "tong",
+      "meaning_zh": "思考、感覺",
+      "origin": "Proto-Indo-European"
+    }
+  ],
+  "learn": [
+    {
+      "root": "leorn",
+      "meaning_zh": "追隨、學習",
+      "origin": "Old English"
+    }
+  ],
+  "study": [
+    {
+      "root": "stud",
+      "meaning_zh": "熱切、努力",
+      "origin": "Latin"
+    }
+  ],
+  "teach": [
+    {
+      "root": "tæcan",
+      "meaning_zh": "展示、指示",
+      "origin": "Old English"
+    }
+  ],
+  "play": [
+    {
+      "root": "plegan",
+      "meaning_zh": "運動、承諾",
+      "origin": "Old English"
+    }
+  ],
+  "sing": [
+    {
+      "root": "sengwh",
+      "meaning_zh": "唱歌、發聲",
+      "origin": "Proto-Indo-European"
+    }
+  ],
+  "dance": [
+    {
+      "root": "dans",
+      "meaning_zh": "拉、伸展",
+      "origin": "Old French"
+    }
+  ],
+  "available_subagents": [
+    "codebase_investigator",
+    "cli_help",
+    "generalist"
+  ],
+  "configuration": {
+    "global_context_loaded": true,
+    "gemini_md_version": "3.2"
+  },
+  "draw": [
+    {
+      "root": "dragan",
+      "meaning_zh": "拉、拖",
+      "origin": "Proto-Germanic"
+    }
+  ],
+  "swim": [
+    {
+      "root": "swimman",
+      "meaning_zh": "游泳",
+      "origin": "Old English"
+    }
+  ],
+  "fly": [
+    {
+      "root": "fleogan",
+      "meaning_zh": "飛翔",
+      "origin": "Old English"
+    }
+  ],
+  "jump": [
+    {
+      "root": "jumpen",
+      "meaning_zh": "跳躍",
+      "origin": "Middle English"
+    }
+  ],
+  "stop": [
+    {
+      "root": "stuppare",
+      "meaning_zh": "堵塞、停止",
+      "origin": "Latin"
+    }
+  ],
+  "start": [
+    {
+      "root": "sturtjan",
+      "meaning_zh": "跳起、開始",
+      "origin": "Proto-Germanic"
+    }
+  ],
+  "finish": [
+    {
+      "root": "finis",
+      "meaning_zh": "界限、結束",
+      "origin": "Latin"
+    }
+  ],
+  "help": [
+    {
+      "root": "helpan",
+      "meaning_zh": "幫助",
+      "origin": "Old English"
+    }
+  ],
+  "work": [
+    {
+      "root": "werkan",
+      "meaning_zh": "工作",
+      "origin": "Proto-Germanic"
+    }
+  ],
+  "buy": [
+    {
+      "root": "bugjan",
+      "meaning_zh": "購買",
+      "origin": "Proto-Germanic"
+    }
+  ],
+  "sell": [
+    {
+      "root": "saljan",
+      "meaning_zh": "交付、販賣",
+      "origin": "Proto-Germanic"
+    }
+  ],
+  "pay": [
+    {
+      "root": "pacare",
+      "meaning_zh": "安撫、支付",
+      "origin": "Latin"
+    }
+  ],
+  "wait": [
+    {
+      "root": "waht",
+      "meaning_zh": "看守、等待",
+      "origin": "Germanic"
+    }
+  ],
+  "try": [
+    {
+      "root": "trier",
+      "meaning_zh": "篩選、嘗試",
+      "origin": "Old French"
+    }
+  ],
+  "use": [
+    {
+      "root": "uti",
+      "meaning_zh": "使用",
+      "origin": "Latin"
+    }
+  ],
+  "wash": [
+    {
+      "root": "waskan",
+      "meaning_zh": "洗滌",
+      "origin": "Proto-Germanic"
+    }
+  ],
+  "clean": [
+    {
+      "root": "klainjaz",
+      "meaning_zh": "明淨、乾淨",
+      "origin": "Proto-Germanic"
+    }
+  ],
+  "cook": [
+    {
+      "root": "coquere",
+      "meaning_zh": "烹調",
+      "origin": "Latin"
+    }
+  ],
+  "cut": [
+    {
+      "root": "cutten",
+      "meaning_zh": "切、割",
+      "origin": "Middle English"
+    }
+  ],
+  "carry": [
+    {
+      "root": "carrus",
+      "meaning_zh": "馬車、運送",
+      "origin": "Latin"
+    }
+  ],
+  "hold": [
+    {
+      "root": "haldan",
+      "meaning_zh": "持有、握住",
+      "origin": "Proto-Germanic"
+    }
+  ],
+  "pull": [
+    {
+      "root": "pullian",
+      "meaning_zh": "拉、拔",
+      "origin": "Old English"
+    }
+  ],
+  "push": [
+    {
+      "root": "pulsare",
+      "meaning_zh": "推、驅動",
+      "origin": "Latin"
+    }
+  ],
+  "turn": [
+    {
+      "root": "tornus",
+      "meaning_zh": "車床、轉向",
+      "origin": "Latin"
+    }
+  ],
+  "move": [
+    {
+      "root": "movere",
+      "meaning_zh": "移動",
+      "origin": "Latin"
+    }
+  ],
+  "catch": [
+    {
+      "root": "captiare",
+      "meaning_zh": "捕捉、追逐",
+      "origin": "Latin"
+    }
+  ],
+  "throw": [
+    {
+      "root": "threwan",
+      "meaning_zh": "扭轉、投擲",
+      "origin": "Proto-Germanic"
+    }
+  ],
+  "fall": [
+    {
+      "root": "fallan",
+      "meaning_zh": "落下",
+      "origin": "Proto-Germanic"
+    }
+  ],
+  "cry": [
+    {
+      "root": "quiritare",
+      "meaning_zh": "哀號、哭泣",
+      "origin": "Latin"
+    }
+  ],
+  "laugh": [
+    {
+      "root": "hlahjan",
+      "meaning_zh": "笑",
+      "origin": "Proto-Germanic"
+    }
+  ],
+  "agent_config": {
+    "name": "Gemini CLI",
+    "primary_language": "zh-TW",
+    "capabilities": [
+      "Research",
+      "Strategy",
+      "Execution"
+    ],
+    "standards": [
+      "TDD",
+      "SOLID",
+      "Clean Code"
+    ]
+  },
+  "smile": [
+    {
+      "root": "(s)mei-",
+      "meaning_zh": "微笑、驚訝",
+      "origin": "PIE"
+    }
+  ],
+  "call": [
+    {
+      "root": "gal-",
+      "meaning_zh": "喊叫",
+      "origin": "PIE"
+    }
+  ],
+  "drive": [
+    {
+      "root": "dhreibh-",
+      "meaning_zh": "驅動、推",
+      "origin": "PIE"
+    }
+  ],
+  "ride": [
+    {
+      "root": "reidh-",
+      "meaning_zh": "騎行、旅行",
+      "origin": "PIE"
+    }
+  ],
+  "bring": [
+    {
+      "root": "bher-",
+      "meaning_zh": "攜帶",
+      "origin": "PIE"
+    }
+  ],
+  "send": [
+    {
+      "root": "sent-",
+      "meaning_zh": "前往、尋找",
+      "origin": "PIE"
+    }
+  ],
+  "show": [
+    {
+      "root": "skeue-",
+      "meaning_zh": "觀察、注意",
+      "origin": "PIE"
+    }
+  ],
+  "feel": [
+    {
+      "root": "pal-",
+      "meaning_zh": "觸摸",
+      "origin": "PIE"
+    }
+  ],
+  "meet": [
+    {
+      "root": "mot-",
+      "meaning_zh": "遇見、遭遇",
+      "origin": "Germanic"
+    }
+  ],
+  "find": [
+    {
+      "root": "pent-",
+      "meaning_zh": "踏、尋找",
+      "origin": "PIE"
+    }
+  ],
+  "lose": [
+    {
+      "root": "leu-",
+      "meaning_zh": "鬆開、解開",
+      "origin": "PIE"
+    }
+  ],
+  "win": [
+    {
+      "root": "wen-",
+      "meaning_zh": "渴望、爭取",
+      "origin": "PIE"
+    }
+  ],
+  "wear": [
+    {
+      "root": "wes-",
+      "meaning_zh": "穿衣",
+      "origin": "PIE"
+    }
+  ],
+  "grow": [
+    {
+      "root": "ghre-",
+      "meaning_zh": "生長、變綠",
+      "origin": "PIE"
+    }
+  ],
+  "live": [
+    {
+      "root": "leip-",
+      "meaning_zh": "粘住、持續",
+      "origin": "PIE"
+    }
+  ],
+  "remember": [
+    {
+      "root": "memor",
+      "meaning_zh": "記憶",
+      "origin": "Latin"
+    }
+  ],
+  "forget": [
+    {
+      "root": "ghet-",
+      "meaning_zh": "獲得、抓取",
+      "origin": "PIE"
+    }
+  ],
+  "big": [
+    {
+      "root": "bigge",
+      "meaning_zh": "強大、巨大",
+      "origin": "Middle English"
+    }
+  ],
+  "small": [
+    {
+      "root": "smal-",
+      "meaning_zh": "微小、狹窄",
+      "origin": "Germanic"
+    }
+  ],
+  "good": [
+    {
+      "root": "ghedh-",
+      "meaning_zh": "聯合、合適",
+      "origin": "PIE"
+    }
+  ],
+  "bad": [
+    {
+      "root": "baeddel",
+      "meaning_zh": "劣質、壞",
+      "origin": "Old English"
+    }
+  ],
+  "new": [
+    {
+      "root": "newo-",
+      "meaning_zh": "新的",
+      "origin": "PIE"
+    }
+  ],
+  "old": [
+    {
+      "root": "al-",
+      "meaning_zh": "滋養、成長",
+      "origin": "PIE"
+    }
+  ],
+  "young": [
+    {
+      "root": "yeu-",
+      "meaning_zh": "年輕、生命力",
+      "origin": "PIE"
+    }
+  ],
+  "long": [
+    {
+      "root": "del-",
+      "meaning_zh": "長的",
+      "origin": "PIE"
+    }
+  ],
+  "short": [
+    {
+      "root": "sker-",
+      "meaning_zh": "剪、割",
+      "origin": "PIE"
+    }
+  ],
+  "tall": [
+    {
+      "root": "ge-tæl",
+      "meaning_zh": "迅速、活躍",
+      "origin": "Old English"
+    }
+  ],
+  "fast": [
+    {
+      "root": "past-",
+      "meaning_zh": "堅固、固定",
+      "origin": "PIE"
+    }
+  ],
+  "slow": [
+    {
+      "root": "slæw",
+      "meaning_zh": "遲鈍、懶散",
+      "origin": "Old English"
+    }
+  ],
+  "happy": [
+    {
+      "root": "hap",
+      "meaning_zh": "運氣、偶然",
+      "origin": "Old Norse"
+    }
+  ],
+  "technologies": {
+    "frontend": {
+      "framework": "React (Vite)",
+      "styling": "CSS Modules",
+      "state_management": "Hooks",
+      "key_components": [
+        "MatchGame",
+        "SpellingGame",
+        "TimedChallenge",
+        "WordChain",
+        "RDrill"
+      ]
+    },
+    "backend": {
+      "runtime": "Node.js",
+      "framework": "Express",
+      "database": "SQLite (enstudy.db)",
+      "services": [
+        "gemini-service",
+        "word-service",
+        "mastery-service",
+        "daily-session",
+        "grammar-service",
+        "reading-service"
+      ]
+    }
+  },
+  "content_types": [
+    "Vocabulary (words.js, words1-18.js)",
+    "Phrases (phrases.js, phrases1-8.js)",
+    "Graded Reading (g1-9)",
+    "Grammar",
+    "Dialogues"
+  ],
+  "agent_status": "READY",
+  "detected_configuration": {
+    "has_git": true,
+    "has_package_json": true,
+    "has_claude_md": true,
+    "has_worklog": true
+  },
+  "sad": [
+    {
+      "root": "sæd",
+      "meaning_zh": "飽足的、厭倦的",
+      "origin": "Old English"
+    }
+  ],
+  "beautiful": [
+    {
+      "root": "bellus",
+      "meaning_zh": "美麗的",
+      "origin": "Latin"
+    }
+  ],
+  "ugly": [
+    {
+      "root": "uggligr",
+      "meaning_zh": "可怕的",
+      "origin": "Old Norse"
+    }
+  ],
+  "dirty": [
+    {
+      "root": "drit",
+      "meaning_zh": "糞便",
+      "origin": "Old English"
+    }
+  ],
+  "easy": [
+    {
+      "root": "aise",
+      "meaning_zh": "舒適、方便",
+      "origin": "Old French"
+    }
+  ],
+  "hard": [
+    {
+      "root": "heard",
+      "meaning_zh": "堅硬的",
+      "origin": "Old English"
+    }
+  ],
+  "heavy": [
+    {
+      "root": "hefig",
+      "meaning_zh": "沉重的",
+      "origin": "Old English"
+    }
+  ],
+  "light": [
+    {
+      "root": "leoht",
+      "meaning_zh": "發光的、輕的",
+      "origin": "Old English"
+    }
+  ],
+  "strong": [
+    {
+      "root": "strang",
+      "meaning_zh": "強大的",
+      "origin": "Old English"
+    }
+  ],
+  "weak": [
+    {
+      "root": "veikr",
+      "meaning_zh": "虛弱的",
+      "origin": "Old Norse"
+    }
+  ],
+  "rich": [
+    {
+      "root": "rex",
+      "meaning_zh": "統治者",
+      "origin": "Latin"
+    }
+  ],
+  "poor": [
+    {
+      "root": "pauper",
+      "meaning_zh": "貧窮的",
+      "origin": "Latin"
+    }
+  ],
+  "full": [
+    {
+      "root": "full",
+      "meaning_zh": "充滿的",
+      "origin": "Old English"
+    }
+  ],
+  "empty": [
+    {
+      "root": "æmettig",
+      "meaning_zh": "空虛的、閒暇的",
+      "origin": "Old English"
+    }
+  ],
+  "nice": [
+    {
+      "root": "nescius",
+      "meaning_zh": "無知的",
+      "origin": "Latin"
+    }
+  ],
+  "kind": [
+    {
+      "root": "gecynde",
+      "meaning_zh": "自然的、親屬的",
+      "origin": "Old English"
+    }
+  ],
+  "funny": [
+    {
+      "root": "fonne",
+      "meaning_zh": "傻瓜",
+      "origin": "Middle English"
+    }
+  ],
+  "busy": [
+    {
+      "root": "bisig",
+      "meaning_zh": "忙碌的",
+      "origin": "Old English"
+    }
+  ],
+  "free": [
+    {
+      "root": "freo",
+      "meaning_zh": "自由的",
+      "origin": "Old English"
+    }
+  ],
+  "hungry": [
+    {
+      "root": "hungrig",
+      "meaning_zh": "飢餓的",
+      "origin": "Old English"
+    }
+  ],
+  "thirsty": [
+    {
+      "root": "thurstig",
+      "meaning_zh": "口渴的",
+      "origin": "Old English"
+    }
+  ],
+  "tired": [
+    {
+      "root": "tiorian",
+      "meaning_zh": "疲倦、失敗",
+      "origin": "Old English"
+    }
+  ],
+  "sick": [
+    {
+      "root": "seoc",
+      "meaning_zh": "患病的",
+      "origin": "Old English"
+    }
+  ],
+  "right": [
+    {
+      "root": "riht",
+      "meaning_zh": "正直的、正確的",
+      "origin": "Old English"
+    }
+  ],
+  "wrong": [
+    {
+      "root": "rangr",
+      "meaning_zh": "彎曲的、錯誤的",
+      "origin": "Old Norse"
+    }
+  ],
+  "important": [
+    {
+      "root": "portare",
+      "meaning_zh": "攜帶",
+      "origin": "Latin"
+    }
+  ],
+  "different": [
+    {
+      "root": "ferre",
+      "meaning_zh": "攜帶",
+      "origin": "Latin"
+    }
+  ],
+  "inflammation": [
+    {
+      "root": "flamma",
+      "meaning_zh": "火焰",
+      "origin": "Latin"
+    }
+  ],
+  "contagious": [
+    {
+      "root": "tangere",
+      "meaning_zh": "接觸",
+      "origin": "Latin"
+    }
+  ],
+  "projectname": "enStuido",
+  "platform": [
+    {
+      "root": "plattus",
+      "meaning_zh": "平的",
+      "origin": "Latin"
+    },
+    {
+      "root": "forma",
+      "meaning_zh": "形狀",
+      "origin": "Latin"
+    }
+  ],
+  "architecture": {
+    "frontend": {
+      "framework": "React (Vite)",
+      "path": "client",
+      "mainComponents": [
+        "MatchGame",
+        "SpellingGame",
+        "TimedChallenge",
+        "WordChain",
+        "RDrill"
+      ],
+      "pages": [
+        "Dashboard",
+        "GamesPage",
+        "GradedReadingPage",
+        "GrammarPage",
+        "LearnPage",
+        "QuizPage",
+        "RootsPage"
+      ]
+    },
+    "backend": {
+      "framework": "Node.js (Express)",
+      "path": "server",
+      "database": "SQLite (enstudy.db)",
+      "services": [
+        "word-service",
+        "phrase-service",
+        "reading-service",
+        "grammar-service",
+        "gemini-service",
+        "mastery-service"
+      ],
+      "dataFiles": [
+        "words.js",
+        "phrases.js",
+        "graded-reading.js",
+        "etymology.json"
+      ]
+    }
+  },
+  "epidemic": [
+    {
+      "root": "epi-",
+      "meaning_zh": "在...之上",
+      "origin": "Greek"
+    },
+    {
+      "root": "demos",
+      "meaning_zh": "人民",
+      "origin": "Greek"
+    }
+  ],
+  "ointment": [
+    {
+      "root": "unguen",
+      "meaning_zh": "膏油",
+      "origin": "Latin"
+    }
+  ],
+  "rehabilitation": [
+    {
+      "root": "re-",
+      "meaning_zh": "再次",
+      "origin": "Latin"
+    },
+    {
+      "root": "habilis",
+      "meaning_zh": "適合的/有能力的",
+      "origin": "Latin"
+    }
+  ],
+  "supplement": [
+    {
+      "root": "sub-",
+      "meaning_zh": "在下面",
+      "origin": "Latin"
+    },
+    {
+      "root": "plere",
+      "meaning_zh": "填滿",
+      "origin": "Latin"
+    }
+  ],
+  "specimen": [
+    {
+      "root": "specere",
+      "meaning_zh": "看",
+      "origin": "Latin"
+    }
+  ],
+  "obesity": [
+    {
+      "root": "ob-",
+      "meaning_zh": "朝向/過度",
+      "origin": "Latin"
+    },
+    {
+      "root": "edere",
+      "meaning_zh": "吃",
+      "origin": "Latin"
+    }
+  ],
+  "stethoscope": [
+    {
+      "root": "stethos",
+      "meaning_zh": "胸部",
+      "origin": "Greek"
+    },
+    {
+      "root": "skopein",
+      "meaning_zh": "觀察",
+      "origin": "Greek"
+    }
+  ],
+  "insomnia": [
+    {
+      "root": "in-",
+      "meaning_zh": "不",
+      "origin": "Latin"
+    },
+    {
+      "root": "somnus",
+      "meaning_zh": "睡眠",
+      "origin": "Latin"
+    }
+  ],
+  "antibiotic": [
+    {
+      "root": "anti-",
+      "meaning_zh": "抗/反對",
+      "origin": "Greek"
+    },
+    {
+      "root": "bios",
+      "meaning_zh": "生命",
+      "origin": "Greek"
+    }
+  ],
+  "diabetes": [
+    {
+      "root": "dia-",
+      "meaning_zh": "穿過",
+      "origin": "Greek"
+    },
+    {
+      "root": "bainein",
+      "meaning_zh": "走",
+      "origin": "Greek"
+    }
+  ],
+  "algorithm": [
+    {
+      "root": "Al-Khwarizmi",
+      "meaning_zh": "人名(花剌子模)",
+      "origin": "Arabic"
+    }
+  ],
+  "bandwidth": [
+    {
+      "root": "band",
+      "meaning_zh": "帶子",
+      "origin": "Germanic"
+    },
+    {
+      "root": "width",
+      "meaning_zh": "寬度",
+      "origin": "Germanic"
+    }
+  ],
+  "encrypt": [
+    {
+      "root": "en-",
+      "meaning_zh": "進入",
+      "origin": "Greek"
+    },
+    {
+      "root": "kruptos",
+      "meaning_zh": "隱藏",
+      "origin": "Greek"
+    }
+  ],
+  "malware": [
+    {
+      "root": "mal-",
+      "meaning_zh": "壞的",
+      "origin": "Latin"
+    },
+    {
+      "root": "ware",
+      "meaning_zh": "物品",
+      "origin": "Germanic"
+    }
+  ],
+  "upload": [
+    {
+      "root": "up",
+      "meaning_zh": "向上",
+      "origin": "Germanic"
+    },
+    {
+      "root": "hladan",
+      "meaning_zh": "裝載",
+      "origin": "Germanic"
+    }
+  ],
+  "debug": [
+    {
+      "root": "de-",
+      "meaning_zh": "除去",
+      "origin": "Latin"
+    },
+    {
+      "root": "bug",
+      "meaning_zh": "小蟲",
+      "origin": "English"
+    }
+  ],
+  "optimize": [
+    {
+      "root": "optimus",
+      "meaning_zh": "最好的",
+      "origin": "Latin"
+    }
+  ],
+  "server": [
+    {
+      "root": "servire",
+      "meaning_zh": "服務",
+      "origin": "Latin"
+    }
+  ],
+  "upgrade": [
+    {
+      "root": "up",
+      "meaning_zh": "向上",
+      "origin": "Germanic"
+    },
+    {
+      "root": "gradus",
+      "meaning_zh": "階梯/等級",
+      "origin": "Latin"
+    }
+  ],
+  "authenticate": [
+    {
+      "root": "authentikos",
+      "meaning_zh": "真實的",
+      "origin": "Greek"
+    }
+  ],
+  "peripheral": [
+    {
+      "root": "peri-",
+      "meaning_zh": "周圍",
+      "origin": "Greek"
+    },
+    {
+      "root": "pherein",
+      "meaning_zh": "攜帶",
+      "origin": "Greek"
+    }
+  ],
+  "satellite": [
+    {
+      "root": "satelles",
+      "meaning_zh": "隨從",
+      "origin": "Latin"
+    }
+  ],
+  "simulate": [
+    {
+      "root": "similis",
+      "meaning_zh": "相似",
+      "origin": "Latin"
+    }
+  ],
+  "biometric": [
+    {
+      "root": "bios",
+      "meaning_zh": "生命",
+      "origin": "Greek"
+    },
+    {
+      "root": "metron",
+      "meaning_zh": "測量",
+      "origin": "Greek"
+    }
+  ],
+  "offshore": [
+    {
+      "root": "off",
+      "meaning_zh": "離開",
+      "origin": "Germanic"
+    },
+    {
+      "root": "shore",
+      "meaning_zh": "岸",
+      "origin": "Germanic"
+    }
+  ],
+  "cache": [
+    {
+      "root": "coactare",
+      "meaning_zh": "儲藏",
+      "origin": "Latin"
+    }
+  ],
+  "curriculum": [
+    {
+      "root": "currere",
+      "meaning_zh": "跑",
+      "origin": "Latin"
+    }
+  ],
+  "faculty": [
+    {
+      "root": "facere",
+      "meaning_zh": "做",
+      "origin": "Latin"
+    }
+  ],
+  "literacy": [
+    {
+      "root": "littera",
+      "meaning_zh": "字母/文字",
+      "origin": "Latin"
+    }
+  ],
+  "research_summary": {
+    "guidelines": "Architecture and conventions parsed from CLAUDE.md",
+    "dependencies": "Managed via npm, concurrently for dev session",
+    "data_sources": "Static JS/JSON files in server/data and SQLite db"
+  },
+  "methodology": [
+    {
+      "root": "meta + hodos",
+      "meaning_zh": "追隨路徑",
+      "origin": "Greek"
+    }
+  ],
+  "plagiarism": [
+    {
+      "root": "plagium",
+      "meaning_zh": "綁架者",
+      "origin": "Latin"
+    }
+  ],
+  "principal": [
+    {
+      "root": "princeps",
+      "meaning_zh": "第一/首要",
+      "origin": "Latin"
+    }
+  ],
+  "refund": [
+    {
+      "root": "re + fundere",
+      "meaning_zh": "流回/歸還",
+      "origin": "Latin"
+    }
+  ],
+  "mortgage": [
+    {
+      "root": "mort + gage",
+      "meaning_zh": "死誓",
+      "origin": "Old French"
+    }
+  ],
+  "installment": [
+    {
+      "root": "in + staller",
+      "meaning_zh": "安置於位",
+      "origin": "Old French"
+    }
+  ],
+  "commodity": [
+    {
+      "root": "commodus",
+      "meaning_zh": "便利/適當",
+      "origin": "Latin"
+    }
+  ],
+  "liable": [
+    {
+      "root": "ligare",
+      "meaning_zh": "綁定/負有義務",
+      "origin": "Latin"
+    }
+  ],
+  "premium": [
+    {
+      "root": "prae + emere",
+      "meaning_zh": "優先拿取/獎賞",
+      "origin": "Latin"
+    }
+  ],
+  "depreciate": [
+    {
+      "root": "de + pretiare",
+      "meaning_zh": "降低價值",
+      "origin": "Latin"
+    }
+  ],
+  "fiscal": [
+    {
+      "root": "fiscus",
+      "meaning_zh": "錢筐/國庫",
+      "origin": "Latin"
+    }
+  ],
+  "dividend": [
+    {
+      "root": "dividere",
+      "meaning_zh": "應被分配之物",
+      "origin": "Latin"
+    }
+  ],
+  "leverage": [
+    {
+      "root": "levare",
+      "meaning_zh": "舉起/使變輕",
+      "origin": "Latin"
+    }
+  ],
+  "frugal": [
+    {
+      "root": "frux",
+      "meaning_zh": "果實/節儉",
+      "origin": "Latin"
+    }
+  ],
+  "appraisal": [
+    {
+      "root": "ad + pretiare",
+      "meaning_zh": "估計價值",
+      "origin": "Latin"
+    }
+  ],
+  "voucher": [
+    {
+      "root": "vouch",
+      "meaning_zh": "呼喚/保證",
+      "origin": "Old French"
+    }
+  ],
+  "liability": [
+    {
+      "root": "ligare",
+      "meaning_zh": "綁定/債務",
+      "origin": "Latin"
+    }
+  ],
+  "appetizer": [
+    {
+      "root": "ad + petere",
+      "meaning_zh": "追求/欲望",
+      "origin": "Latin"
+    }
+  ],
+  "ingredient": [
+    {
+      "root": "in + gradi",
+      "meaning_zh": "走入/成分",
+      "origin": "Latin"
+    }
+  ],
+  "cuisine": [
+    {
+      "root": "coquere",
+      "meaning_zh": "烹飪",
+      "origin": "Latin"
+    }
+  ],
+  "portion": [
+    {
+      "root": "partitio",
+      "meaning_zh": "分配/部分",
+      "origin": "Latin"
+    }
+  ],
+  "beverage": [
+    {
+      "root": "bevre",
+      "meaning_zh": "喝",
+      "origin": "Old French"
+    }
+  ],
+  "marinate": [
+    {
+      "root": "marinus",
+      "meaning_zh": "海洋(鹽水)",
+      "origin": "Latin"
+    }
+  ],
+  "utensil": [
+    {
+      "root": "utensilis",
+      "meaning_zh": "可用之物",
+      "origin": "Latin"
+    }
+  ],
+  "pastry": [
+    {
+      "root": "paster",
+      "meaning_zh": "麵糰/麵糊",
+      "origin": "Old French"
+    }
+  ],
+  "buffet": [
+    {
+      "root": "buffet",
+      "meaning_zh": "餐具櫃/自助餐",
+      "origin": "French"
+    }
+  ],
+  "entrée": [
+    {
+      "root": "entrer",
+      "meaning_zh": "進入/開端",
+      "origin": "French"
+    }
+  ],
+  "dietary": [
+    {
+      "root": "diaita",
+      "meaning_zh": "生活方式/飲食",
+      "origin": "Greek"
+    }
+  ],
+  "catering": [
+    {
+      "root": "acater",
+      "meaning_zh": "購買/供應",
+      "origin": "Old French"
+    }
+  ],
+  "tender": [
+    {
+      "root": "tendere",
+      "meaning_zh": "伸展/提供",
+      "origin": "Latin"
+    }
+  ],
+  "path": "D:\\workspace-jason\\enStuido",
+  "type": "English Learning Platform",
+  "stack": {
+    "frontend": "React (Vite)",
+    "backend": "Node.js (Express)",
+    "database": "SQLite (enstudy.db)"
+  },
+  "features": [
+    "Interactive Games (Match, Spelling, Word Chain)",
+    "Graded Reading (Levels 1-9)",
+    "Grammar and Etymology Analysis",
+    "Daily Learning Sessions",
+    "TTS Integration"
+  ],
+  "condiment": [],
+  "vegetarian": [],
+  "cater": [],
+  "terrain": [],
+  "aquatic": [],
+  "preliminary": [],
+  "versatile": [],
+  "calligraphy": [],
+  "enthusiastic": [],
+  "impulsive": [],
+  "melancholy": [],
+  "optimistic": [],
+  "pessimistic": [],
+  "resilient": [],
+  "vulnerable": [],
+  "arrogant": [],
+  "charismatic": [],
   "introverted": [],
   "nostalgia": [],
   "overwhelmed": [],
@@ -999,113 +3247,4300 @@
   "temperamental": [],
   "assertive": [],
   "remorse": [],
-  "status": "success",
-  "agent": "Gemini CLI",
-  "os": "win32",
-  "project": "HR & Project Management System",
-  "intent": "Session initialization and context acknowledgement",
   "apathetic": [],
   "ecosystem": [],
   "conservation": [],
   "sustainable": [],
   "drought": [],
-  "erosion": [],
-  "habitat": [],
-  "renewable": [],
-  "emission": [],
-  "glacier": [],
-  "compost": [],
-  "avalanche": [],
-  "contaminate": [],
-  "ozone": [],
-  "tsunami": [],
-  "magnitude": [],
-  "tributary": [],
-  "canopy": [],
-  "pesticide": [],
-  "peninsula": [],
-  "migrate": [],
-  "arid": [],
-  "catastrophe": [],
-  "sustainability": [],
-  "abolish": [],
-  "abstain": [],
-  "abundance": [],
-  "accelerate": [],
-  "accumulate": [],
-  "acquisition": [],
-  "adamant": [],
-  "adhere": [],
-  "adjacent": [],
-  "adversary": [],
-  "advocate": [],
-  "aesthetic": [],
-  "aggravate": [],
-  "agitate": [],
-  "allegation": [],
-  "alleviate": [],
-  "allocate": [],
-  "allusion": [],
-  "altruism": [],
-  "ambiguity": [],
-  "ambivalent": [],
-  "amend": [],
-  "analogy": [],
-  "anomaly": [],
-  "antagonist": [],
-  "apprehend": [],
-  "arbitrary": [],
-  "articulate": [],
-  "ascertain": [],
-  "aspiration": [],
-  "assertion": [],
-  "atrocity": [],
-  "audacious": [],
-  "augment": [],
-  "austerity": [],
-  "aversion": [],
-  "backdrop": [],
-  "bilateral": [],
-  "bipartisan": [],
-  "bolster": [],
-  "breach": [],
-  "bureaucracy": [],
-  "capitulate": [],
-  "censorship": [],
-  "circumvent": [],
-  "clandestine": [],
-  "coalition": [],
-  "coerce": [],
-  "cognitive": [],
-  "coherent": [],
-  "compliance": [],
-  "comprehensive": [],
-  "compulsory": [],
-  "concede": [],
-  "conducive": [],
-  "confiscate": [],
-  "strategic_intent": "Initialize the project environment and begin the development lifecycle for the HR & Project Management System.",
-  "summary": "This is the initial step in my engagement with the HR & Project Management System. I am setting up the foundation for a Research-Strategy-Execution lifecycle, as mandated by the project's engineering standards. My first priority is to gain a high-level understanding of the existing codebase, specifically the 14 microservices and the React frontend, while adhering to the TDD and DDD principles outlined in GEMINI.md. I will begin by listing the root directory to confirm the structure and locate the key design documents mentioned in the project overview.",
-  "title": "Project Initialization & Research Phase",
-  "congregate": [],
-  "conjecture": [],
-  "conscientious": [],
-  "consensus": [],
-  "consolidate": [],
-  "conspicuous": [],
-  "constituency": [],
-  "contemplate": [],
-  "contentious": [],
-  "timestamp": "2026-05-08T00:00:00Z",
-  "project_context": {
-    "name": "HR & Project Management System",
-    "version": "3.2",
-    "framework": "DDD, CQRS, Event-Driven",
-    "standards": [
-      "TDD",
-      "SOLID",
-      "Clean Code",
-      "Factory Pattern"
-    ]
-  }
+  "erosion": [
+    {
+      "root": "rod/ros",
+      "meaning_zh": "侵蝕",
+      "origin": "Latin"
+    }
+  ],
+  "habitat": [
+    {
+      "root": "hab",
+      "meaning_zh": "棲息地",
+      "origin": "Latin"
+    }
+  ],
+  "renewable": [
+    {
+      "root": "new",
+      "meaning_zh": "可再生的",
+      "origin": "Latin/Old English"
+    }
+  ],
+  "emission": [
+    {
+      "root": "mit/miss",
+      "meaning_zh": "排放",
+      "origin": "Latin"
+    }
+  ],
+  "glacier": [
+    {
+      "root": "glacies",
+      "meaning_zh": "冰河",
+      "origin": "Latin"
+    }
+  ],
+  "compost": [
+    {
+      "root": "pos/pon",
+      "meaning_zh": "堆肥",
+      "origin": "Latin"
+    }
+  ],
+  "avalanche": [
+    {
+      "root": "lab",
+      "meaning_zh": "雪崩",
+      "origin": "Latin"
+    }
+  ],
+  "contaminate": [
+    {
+      "root": "tag/tang",
+      "meaning_zh": "污染",
+      "origin": "Latin"
+    }
+  ],
+  "ozone": [
+    {
+      "root": "ozein",
+      "meaning_zh": "臭氧",
+      "origin": "Greek"
+    }
+  ],
+  "tsunami": [
+    {
+      "root": "tsu+nami",
+      "meaning_zh": "海嘯",
+      "origin": "Japanese"
+    }
+  ],
+  "magnitude": [
+    {
+      "root": "magn",
+      "meaning_zh": "震級/規模",
+      "origin": "Latin"
+    }
+  ],
+  "tributary": [
+    {
+      "root": "tribut",
+      "meaning_zh": "支流",
+      "origin": "Latin"
+    }
+  ],
+  "canopy": [
+    {
+      "root": "konops",
+      "meaning_zh": "樹冠層",
+      "origin": "Greek"
+    }
+  ],
+  "pesticide": [
+    {
+      "root": "pest+cid",
+      "meaning_zh": "殺蟲劑",
+      "origin": "Latin"
+    }
+  ],
+  "peninsula": [
+    {
+      "root": "paene+insula",
+      "meaning_zh": "半島",
+      "origin": "Latin"
+    }
+  ],
+  "migrate": [
+    {
+      "root": "migr",
+      "meaning_zh": "遷移",
+      "origin": "Latin"
+    }
+  ],
+  "arid": [
+    {
+      "root": "arere",
+      "meaning_zh": "乾旱的",
+      "origin": "Latin"
+    }
+  ],
+  "catastrophe": [
+    {
+      "root": "cata+strophe",
+      "meaning_zh": "災難",
+      "origin": "Greek"
+    }
+  ],
+  "sustainability": [
+    {
+      "root": "tain",
+      "meaning_zh": "永續性",
+      "origin": "Latin"
+    }
+  ],
+  "abolish": [
+    {
+      "root": "olescere",
+      "meaning_zh": "廢除",
+      "origin": "Latin"
+    }
+  ],
+  "abstain": [
+    {
+      "root": "tain",
+      "meaning_zh": "戒除/棄權",
+      "origin": "Latin"
+    }
+  ],
+  "abundance": [
+    {
+      "root": "und",
+      "meaning_zh": "豐富",
+      "origin": "Latin"
+    }
+  ],
+  "accelerate": [
+    {
+      "root": "celer",
+      "meaning_zh": "加速",
+      "origin": "Latin"
+    }
+  ],
+  "accumulate": [
+    {
+      "root": "cumul",
+      "meaning_zh": "累積",
+      "origin": "Latin"
+    }
+  ],
+  "acquisition": [
+    {
+      "root": "quisit",
+      "meaning_zh": "取得",
+      "origin": "Latin"
+    }
+  ],
+  "adamant": [
+    {
+      "root": "adamas",
+      "meaning_zh": "堅定不移的",
+      "origin": "Greek"
+    }
+  ],
+  "adhere": [
+    {
+      "root": "her/hes",
+      "meaning_zh": "堅持/黏附",
+      "origin": "Latin"
+    }
+  ],
+  "adjacent": [
+    {
+      "root": "jac",
+      "meaning_zh": "鄰近的",
+      "origin": "Latin"
+    }
+  ],
+  "adversary": [
+    {
+      "root": "vert/vers",
+      "meaning_zh": "對手",
+      "origin": "Latin"
+    }
+  ],
+  "advocate": [
+    {
+      "root": "voc",
+      "meaning_zh": "擁護者",
+      "origin": "Latin"
+    }
+  ],
+  "aesthetic": [
+    {
+      "root": "aisth-",
+      "meaning_zh": "感覺",
+      "origin": "Greek"
+    }
+  ],
+  "aggravate": [
+    {
+      "root": "grav-",
+      "meaning_zh": "重",
+      "origin": "Latin"
+    }
+  ],
+  "agitate": [
+    {
+      "root": "ag-",
+      "meaning_zh": "做/驅動",
+      "origin": "Latin"
+    }
+  ],
+  "allegation": [
+    {
+      "root": "leg-",
+      "meaning_zh": "委派/法律",
+      "origin": "Latin"
+    }
+  ],
+  "alleviate": [
+    {
+      "root": "lev-",
+      "meaning_zh": "輕",
+      "origin": "Latin"
+    }
+  ],
+  "allocate": [
+    {
+      "root": "loc-",
+      "meaning_zh": "地方",
+      "origin": "Latin"
+    }
+  ],
+  "allusion": [
+    {
+      "root": "lud-",
+      "meaning_zh": "玩/戲弄",
+      "origin": "Latin"
+    }
+  ],
+  "altruism": [
+    {
+      "root": "alter-",
+      "meaning_zh": "其他",
+      "origin": "Latin"
+    }
+  ],
+  "ambiguity": [
+    {
+      "root": "ambi-",
+      "meaning_zh": "二/兩側",
+      "origin": "Latin"
+    }
+  ],
+  "ambivalent": [
+    {
+      "root": "val-",
+      "meaning_zh": "強大/價值",
+      "origin": "Latin"
+    }
+  ],
+  "amend": [
+    {
+      "root": "mend-",
+      "meaning_zh": "錯誤",
+      "origin": "Latin"
+    }
+  ],
+  "analogy": [
+    {
+      "root": "log-",
+      "meaning_zh": "比例/言說",
+      "origin": "Greek"
+    }
+  ],
+  "anomaly": [
+    {
+      "root": "homal-",
+      "meaning_zh": "平坦/相同",
+      "origin": "Greek"
+    }
+  ],
+  "antagonist": [
+    {
+      "root": "agon-",
+      "meaning_zh": "鬥爭/競賽",
+      "origin": "Greek"
+    }
+  ],
+  "apprehend": [
+    {
+      "root": "prehend-",
+      "meaning_zh": "抓住",
+      "origin": "Latin"
+    }
+  ],
+  "arbitrary": [
+    {
+      "root": "arbit-",
+      "meaning_zh": "裁決者",
+      "origin": "Latin"
+    }
+  ],
+  "articulate": [
+    {
+      "root": "art-",
+      "meaning_zh": "關節/連接",
+      "origin": "Latin"
+    }
+  ],
+  "ascertain": [
+    {
+      "root": "cert-",
+      "meaning_zh": "確定的",
+      "origin": "Latin"
+    }
+  ],
+  "aspiration": [
+    {
+      "root": "spir-",
+      "meaning_zh": "呼吸",
+      "origin": "Latin"
+    }
+  ],
+  "assertion": [
+    {
+      "root": "ser-",
+      "meaning_zh": "連接/排列",
+      "origin": "Latin"
+    }
+  ],
+  "atrocity": [
+    {
+      "root": "atro-",
+      "meaning_zh": "殘暴/黑",
+      "origin": "Latin"
+    }
+  ],
+  "audacious": [
+    {
+      "root": "aud-",
+      "meaning_zh": "大膽",
+      "origin": "Latin"
+    }
+  ],
+  "augment": [
+    {
+      "root": "aug-",
+      "meaning_zh": "增加",
+      "origin": "Latin"
+    }
+  ],
+  "austerity": [
+    {
+      "root": "aust-",
+      "meaning_zh": "嚴厲/乾燥",
+      "origin": "Greek"
+    }
+  ],
+  "aversion": [
+    {
+      "root": "vert-",
+      "meaning_zh": "轉向",
+      "origin": "Latin"
+    }
+  ],
+  "backdrop": [
+    {
+      "root": "back+drop",
+      "meaning_zh": "後方+掉落",
+      "origin": "Germanic"
+    }
+  ],
+  "bilateral": [
+    {
+      "root": "lat-",
+      "meaning_zh": "側面",
+      "origin": "Latin"
+    }
+  ],
+  "bipartisan": [
+    {
+      "root": "part-",
+      "meaning_zh": "部分/分開",
+      "origin": "Latin"
+    }
+  ],
+  "bolster": [
+    {
+      "root": "bol-",
+      "meaning_zh": "膨脹/墊子",
+      "origin": "Germanic"
+    }
+  ],
+  "breach": [
+    {
+      "root": "brecan",
+      "meaning_zh": "打破",
+      "origin": "Germanic"
+    }
+  ],
+  "system": {
+    "os": "win32",
+    "date": "2026-05-11"
+  },
+  "bureaucracy": [
+    {
+      "root": "bureau + kratos",
+      "meaning_zh": "官僚制度",
+      "origin": "French/Greek"
+    }
+  ],
+  "capitulate": [
+    {
+      "root": "caput",
+      "meaning_zh": "投降",
+      "origin": "Latin"
+    }
+  ],
+  "censorship": [
+    {
+      "root": "censor",
+      "meaning_zh": "審查制度",
+      "origin": "Latin"
+    }
+  ],
+  "circumvent": [
+    {
+      "root": "circum + venire",
+      "meaning_zh": "規避",
+      "origin": "Latin"
+    }
+  ],
+  "clandestine": [
+    {
+      "root": "clam",
+      "meaning_zh": "秘密的",
+      "origin": "Latin"
+    }
+  ],
+  "coalition": [
+    {
+      "root": "coalescere",
+      "meaning_zh": "聯盟",
+      "origin": "Latin"
+    }
+  ],
+  "coerce": [
+    {
+      "root": "coercere",
+      "meaning_zh": "強迫",
+      "origin": "Latin"
+    }
+  ],
+  "cognitive": [
+    {
+      "root": "cognoscere",
+      "meaning_zh": "認知的",
+      "origin": "Latin"
+    }
+  ],
+  "coherent": [
+    {
+      "root": "cohaerere",
+      "meaning_zh": "連貫的",
+      "origin": "Latin"
+    }
+  ],
+  "compliance": [
+    {
+      "root": "complere",
+      "meaning_zh": "遵守",
+      "origin": "Latin"
+    }
+  ],
+  "comprehensive": [
+    {
+      "root": "comprehendere",
+      "meaning_zh": "全面的",
+      "origin": "Latin"
+    }
+  ],
+  "compulsory": [
+    {
+      "root": "compellere",
+      "meaning_zh": "強制的",
+      "origin": "Latin"
+    }
+  ],
+  "concede": [
+    {
+      "root": "concedere",
+      "meaning_zh": "承認",
+      "origin": "Latin"
+    }
+  ],
+  "conducive": [
+    {
+      "root": "conducere",
+      "meaning_zh": "有助於",
+      "origin": "Latin"
+    }
+  ],
+  "confiscate": [
+    {
+      "root": "confiscare",
+      "meaning_zh": "沒收",
+      "origin": "Latin"
+    }
+  ],
+  "congregate": [
+    {
+      "root": "congregare",
+      "meaning_zh": "聚集",
+      "origin": "Latin"
+    }
+  ],
+  "conjecture": [
+    {
+      "root": "conjectura",
+      "meaning_zh": "推測",
+      "origin": "Latin"
+    }
+  ],
+  "conscientious": [
+    {
+      "root": "conscientia",
+      "meaning_zh": "認真的",
+      "origin": "Latin"
+    }
+  ],
+  "consensus": [
+    {
+      "root": "consensus",
+      "meaning_zh": "共識",
+      "origin": "Latin"
+    }
+  ],
+  "consolidate": [
+    {
+      "root": "consolidare",
+      "meaning_zh": "鞏固",
+      "origin": "Latin"
+    }
+  ],
+  "conspicuous": [
+    {
+      "root": "conspicuus",
+      "meaning_zh": "顯眼的",
+      "origin": "Latin"
+    }
+  ],
+  "constituency": [
+    {
+      "root": "constituere",
+      "meaning_zh": "選區",
+      "origin": "Latin"
+    }
+  ],
+  "contemplate": [
+    {
+      "root": "contemplari",
+      "meaning_zh": "沉思",
+      "origin": "Latin"
+    }
+  ],
+  "contentious": [
+    {
+      "root": "contentiosus",
+      "meaning_zh": "爭議性的",
+      "origin": "Latin"
+    }
+  ],
+  "guidelines_loaded": {
+    "global_preferences": "c:/users/t900067056/.gemini/gemini.md",
+    "architecture": "DDD, CQRS, TDD (as per global guidelines)"
+  },
+  "contradict": [
+    {
+      "root": "contra- (against) + dicere (to speak)",
+      "meaning_zh": "反駁、與...矛盾",
+      "origin": "Latin"
+    }
+  ],
+  "controversy": [
+    {
+      "root": "contra- (against) + vertere (to turn)",
+      "meaning_zh": "爭議、爭論",
+      "origin": "Latin"
+    }
+  ],
+  "converge": [
+    {
+      "root": "con- (together) + vergere (to incline)",
+      "meaning_zh": "匯聚、交匯",
+      "origin": "Latin"
+    }
+  ],
+  "convict": [
+    {
+      "root": "con- (completely) + vincere (to conquer)",
+      "meaning_zh": "宣判有罪",
+      "origin": "Latin"
+    }
+  ],
+  "corroborate": [
+    {
+      "root": "con- (completely) + robur (strength)",
+      "meaning_zh": "證實、佐證",
+      "origin": "Latin"
+    }
+  ],
+  "culminate": [
+    {
+      "root": "culmen (summit)",
+      "meaning_zh": "達到頂點、以...告終",
+      "origin": "Latin"
+    }
+  ],
+  "curtail": [
+    {
+      "root": "curtus (short)",
+      "meaning_zh": "縮減、削減",
+      "origin": "Latin"
+    }
+  ],
+  "cynical": [
+    {
+      "root": "kunikos (dog-like)",
+      "meaning_zh": "憤世嫉俗的、犬儒的",
+      "origin": "Greek"
+    }
+  ],
+  "debacle": [
+    {
+      "root": "de- (un-) + bacler (to bar)",
+      "meaning_zh": "崩潰、慘敗",
+      "origin": "French"
+    }
+  ],
+  "decimate": [
+    {
+      "root": "decimus (tenth)",
+      "meaning_zh": "大量毀滅、大幅削減",
+      "origin": "Latin"
+    }
+  ],
+  "deduce": [
+    {
+      "root": "de- (down) + ducere (to lead)",
+      "meaning_zh": "推論、演繹",
+      "origin": "Latin"
+    }
+  ],
+  "defamation": [
+    {
+      "root": "de- (away) + fama (reputation)",
+      "meaning_zh": "誹謗、抹黑",
+      "origin": "Latin"
+    }
+  ],
+  "deficit": [
+    {
+      "root": "deficere (to lack)",
+      "meaning_zh": "赤字、虧損",
+      "origin": "Latin"
+    }
+  ],
+  "degradation": [
+    {
+      "root": "de- (down) + gradus (step)",
+      "meaning_zh": "降級、退化、墮落",
+      "origin": "Latin"
+    }
+  ],
+  "deliberate": [
+    {
+      "root": "de- (completely) + librare (to weigh)",
+      "meaning_zh": "故意的、深思熟慮的",
+      "origin": "Latin"
+    }
+  ],
+  "delineate": [
+    {
+      "root": "de- (out) + linea (line)",
+      "meaning_zh": "描繪、闡述",
+      "origin": "Latin"
+    }
+  ],
+  "delusion": [
+    {
+      "root": "de- (mockery) + ludere (to play)",
+      "meaning_zh": "妄想、錯覺",
+      "origin": "Latin"
+    }
+  ],
+  "denounce": [
+    {
+      "root": "de- (completely) + nuntiare (to announce)",
+      "meaning_zh": "譴責、斥責",
+      "origin": "Latin"
+    }
+  ],
+  "depict": [
+    {
+      "root": "de- (completely) + pingere (to paint)",
+      "meaning_zh": "描繪、描述",
+      "origin": "Latin"
+    }
+  ],
+  "deplete": [
+    {
+      "root": "de- (away) + plere (to fill)",
+      "meaning_zh": "耗盡、枯竭",
+      "origin": "Latin"
+    }
+  ],
+  "deploy": [
+    {
+      "root": "de- (un-) + plicare (to fold)",
+      "meaning_zh": "部署、調動",
+      "origin": "Latin"
+    }
+  ],
+  "deprive": [
+    {
+      "root": "de- (away) + privare (to deprive/separate)",
+      "meaning_zh": "剝奪、使喪開",
+      "origin": "Latin"
+    }
+  ],
+  "desolate": [
+    {
+      "root": "de- (completely) + solus (alone)",
+      "meaning_zh": "荒涼的、孤寂的",
+      "origin": "Latin"
+    }
+  ],
+  "deter": [
+    {
+      "root": "de- (away) + terrere (to frighten)",
+      "meaning_zh": "威懾、制止",
+      "origin": "Latin"
+    }
+  ],
+  "detrimental": [
+    {
+      "root": "de- (away) + terere (to rub)",
+      "meaning_zh": "有害的、不利的",
+      "origin": "Latin"
+    }
+  ],
+  "devastate": [
+    {
+      "root": "de- (completely) + vastare (to lay waste)",
+      "meaning_zh": "摧毀、破壞",
+      "origin": "Latin"
+    }
+  ],
+  "deviate": [
+    {
+      "root": "de- (away from) + via (way)",
+      "meaning_zh": "偏離、背離",
+      "origin": "Latin"
+    }
+  ],
+  "devout": [
+    {
+      "root": "de- (completely) + vovere (to vow)",
+      "meaning_zh": "虔誠的",
+      "origin": "Latin"
+    }
+  ],
+  "dexterity": [
+    {
+      "root": "dexter (right hand)",
+      "meaning_zh": "靈巧、敏捷",
+      "origin": "Latin"
+    }
+  ],
+  "dichotomy": [
+    {
+      "root": "dikho- (in two) + temnein (to cut)",
+      "meaning_zh": "二分法、對立",
+      "origin": "Greek"
+    }
+  ],
+  "digress": [
+    {
+      "root": "di- (aside) + gradi (to step)",
+      "meaning_zh": "離題",
+      "origin": "Latin"
+    }
+  ],
+  "dilemma": [
+    {
+      "root": "di- (two) + lemma (premise)",
+      "meaning_zh": "進退兩難",
+      "origin": "Greek"
+    }
+  ],
+  "diminish": [
+    {
+      "root": "de- (completely) + minuere (to lessen)",
+      "meaning_zh": "減少",
+      "origin": "Latin"
+    }
+  ],
+  "discern": [
+    {
+      "root": "dis- (apart) + cernere (to separate)",
+      "meaning_zh": "辨別",
+      "origin": "Latin"
+    }
+  ],
+  "disclose": [
+    {
+      "root": "dis- (opposite of) + claudere (to close)",
+      "meaning_zh": "揭露",
+      "origin": "Latin"
+    }
+  ],
+  "discrepancy": [
+    {
+      "root": "dis- (apart) + crepare (to rattle)",
+      "meaning_zh": "差異",
+      "origin": "Latin"
+    }
+  ],
+  "discretion": [
+    {
+      "root": "dis- (apart) + cernere (to separate)",
+      "meaning_zh": "謹慎",
+      "origin": "Latin"
+    }
+  ],
+  "discriminate": [
+    {
+      "root": "dis- (apart) + cernere (to separate)",
+      "meaning_zh": "歧視",
+      "origin": "Latin"
+    }
+  ],
+  "disdain": [
+    {
+      "root": "dis- (not) + dignari (to deem worthy)",
+      "meaning_zh": "蔑視",
+      "origin": "Latin"
+    }
+  ],
+  "dismantle": [
+    {
+      "root": "des- (reversal) + mantel (cloak)",
+      "meaning_zh": "拆卸",
+      "origin": "Old French/Latin"
+    }
+  ],
+  "disposition": [
+    {
+      "root": "dis- (apart) + ponere (to place)",
+      "meaning_zh": "性格",
+      "origin": "Latin"
+    }
+  ],
+  "disproportionate": [
+    {
+      "root": "dis- (not) + pro- (for) + portio (portion)",
+      "meaning_zh": "不成比例的",
+      "origin": "Latin"
+    }
+  ],
+  "disseminate": [
+    {
+      "root": "dis- (abroad) + seminare (to sow)",
+      "meaning_zh": "傳播",
+      "origin": "Latin"
+    }
+  ],
+  "divert": [
+    {
+      "root": "di- (aside) + vertere (to turn)",
+      "meaning_zh": "轉移",
+      "origin": "Latin"
+    }
+  ],
+  "doctrine": [
+    {
+      "root": "docere (to teach)",
+      "meaning_zh": "教義",
+      "origin": "Latin"
+    }
+  ],
+  "dormant": [
+    {
+      "root": "dormire (to sleep)",
+      "meaning_zh": "休眠的",
+      "origin": "Latin"
+    }
+  ],
+  "draconian": [
+    {
+      "root": "Drakon (Athenian legislator)",
+      "meaning_zh": "嚴酷的",
+      "origin": "Greek"
+    }
+  ],
+  "dubious": [
+    {
+      "root": "dubius (uncertain) + duo (two)",
+      "meaning_zh": "可疑的",
+      "origin": "Latin"
+    }
+  ],
+  "dysfunction": [
+    {
+      "root": "dys- (bad) + functio (performance)",
+      "meaning_zh": "功能障礙",
+      "origin": "Greek/Latin"
+    }
+  ],
+  "eccentric": [
+    {
+      "root": "ek (out) + kentron (center)",
+      "meaning_zh": "古怪的",
+      "origin": "Greek"
+    }
+  ],
+  "eclectic": [
+    {
+      "root": "ek (out) + legein (to pick)",
+      "meaning_zh": "折衷的",
+      "origin": "Greek"
+    }
+  ],
+  "efficacy": [
+    {
+      "root": "ex- (out) + facere (to do)",
+      "meaning_zh": "功效",
+      "origin": "Latin"
+    }
+  ],
+  "elaborate": [
+    {
+      "root": "e- (out) + labor (work)",
+      "meaning_zh": "精心製作的",
+      "origin": "Latin"
+    }
+  ],
+  "elicit": [
+    {
+      "root": "e- (out) + lacere (to entice)",
+      "meaning_zh": "引出",
+      "origin": "Latin"
+    }
+  ],
+  "eloquent": [
+    {
+      "root": "e- (out) + loqui (to speak)",
+      "meaning_zh": "雄辯的",
+      "origin": "Latin"
+    }
+  ],
+  "embody": [
+    {
+      "root": "em- (in) + body (body)",
+      "meaning_zh": "體現",
+      "origin": "English"
+    }
+  ],
+  "eminent": [
+    {
+      "root": "e- (out) + minere (to jut)",
+      "meaning_zh": "卓越的",
+      "origin": "Latin"
+    }
+  ],
+  "encompass": [
+    {
+      "root": "en- (in) + com- (together) + passus (step)",
+      "meaning_zh": "包含",
+      "origin": "Latin"
+    }
+  ],
+  "endorse": [
+    {
+      "root": "in- (on) + dorsum (back)",
+      "meaning_zh": "贊同",
+      "origin": "Latin"
+    }
+  ],
+  "engender": [
+    {
+      "root": "en- (in) + generare (to beget)",
+      "meaning_zh": "產生",
+      "origin": "Latin"
+    }
+  ],
+  "enigma": [
+    {
+      "root": "ainigma",
+      "meaning_zh": "謎語",
+      "origin": "Greek"
+    }
+  ],
+  "entail": [
+    {
+      "root": "tailler",
+      "meaning_zh": "切割",
+      "origin": "French"
+    }
+  ],
+  "epitome": [
+    {
+      "root": "temnein",
+      "meaning_zh": "切割",
+      "origin": "Greek"
+    }
+  ],
+  "equitable": [
+    {
+      "root": "aequus",
+      "meaning_zh": "公平的",
+      "origin": "Latin"
+    }
+  ],
+  "eradicate": [
+    {
+      "root": "radix",
+      "meaning_zh": "根",
+      "origin": "Latin"
+    }
+  ],
+  "erratic": [
+    {
+      "root": "errare",
+      "meaning_zh": "漂泊",
+      "origin": "Latin"
+    }
+  ],
+  "espionage": [
+    {
+      "root": "specere",
+      "meaning_zh": "觀察",
+      "origin": "Latin"
+    }
+  ],
+  "esteem": [
+    {
+      "root": "aestimare",
+      "meaning_zh": "價值",
+      "origin": "Latin"
+    }
+  ],
+  "euphemism": [
+    {
+      "root": "pheme",
+      "meaning_zh": "說話",
+      "origin": "Greek"
+    }
+  ],
+  "exacerbate": [
+    {
+      "root": "acer",
+      "meaning_zh": "尖銳",
+      "origin": "Latin"
+    }
+  ],
+  "exalt": [
+    {
+      "root": "altus",
+      "meaning_zh": "高",
+      "origin": "Latin"
+    }
+  ],
+  "excerpt": [
+    {
+      "root": "carpere",
+      "meaning_zh": "採摘",
+      "origin": "Latin"
+    }
+  ],
+  "exemplify": [
+    {
+      "root": "exemplum",
+      "meaning_zh": "例子",
+      "origin": "Latin"
+    }
+  ],
+  "exert": [
+    {
+      "root": "serere",
+      "meaning_zh": "放置",
+      "origin": "Latin"
+    }
+  ],
+  "exodus": [
+    {
+      "root": "hodos",
+      "meaning_zh": "道路",
+      "origin": "Greek"
+    }
+  ],
+  "expedite": [
+    {
+      "root": "pes",
+      "meaning_zh": "腳",
+      "origin": "Latin"
+    }
+  ],
+  "exploit": [
+    {
+      "root": "plicare",
+      "meaning_zh": "折疊",
+      "origin": "Latin"
+    }
+  ],
+  "exponential": [
+    {
+      "root": "ponere",
+      "meaning_zh": "放置",
+      "origin": "Latin"
+    }
+  ],
+  "extravagant": [
+    {
+      "root": "vagari",
+      "meaning_zh": "漫遊",
+      "origin": "Latin"
+    }
+  ],
+  "fabricate": [
+    {
+      "root": "faber",
+      "meaning_zh": "工匠",
+      "origin": "Latin"
+    }
+  ],
+  "faction": [
+    {
+      "root": "facere",
+      "meaning_zh": "做",
+      "origin": "Latin"
+    }
+  ],
+  "fallacy": [
+    {
+      "root": "fallere",
+      "meaning_zh": "欺騙",
+      "origin": "Latin"
+    }
+  ],
+  "fanatical": [
+    {
+      "root": "fanum",
+      "meaning_zh": "神廟",
+      "origin": "Latin"
+    }
+  ],
+  "feasible": [
+    {
+      "root": "facere",
+      "meaning_zh": "做",
+      "origin": "Latin"
+    }
+  ],
+  "fluctuate": [
+    {
+      "root": "fluere",
+      "meaning_zh": "流動",
+      "origin": "Latin"
+    }
+  ],
+  "foremost": [
+    {
+      "root": "forma",
+      "meaning_zh": "第一",
+      "origin": "Old English"
+    }
+  ],
+  "formidable": [
+    {
+      "root": "formido",
+      "meaning_zh": "害怕",
+      "origin": "Latin"
+    }
+  ],
+  "forthcoming": [
+    {
+      "root": "forth + come",
+      "meaning_zh": "向前來",
+      "origin": "Old English"
+    }
+  ],
+  "foster": [
+    {
+      "root": "fodur",
+      "meaning_zh": "食物",
+      "origin": "Old English"
+    }
+  ],
+  "futile": [
+    {
+      "root": "fundere",
+      "meaning_zh": "傾倒",
+      "origin": "Latin"
+    }
+  ],
+  "galvanize": [
+    {
+      "root": "galvan",
+      "meaning_zh": "激勵；鍍鋅",
+      "origin": "Italian"
+    }
+  ],
+  "garrison": [
+    {
+      "root": "garris",
+      "meaning_zh": "衛戍部隊",
+      "origin": "Old French"
+    }
+  ],
+  "genesis": [
+    {
+      "root": "gen",
+      "meaning_zh": "起源",
+      "origin": "Greek"
+    }
+  ],
+  "genocide": [
+    {
+      "root": "gen",
+      "meaning_zh": "種族",
+      "origin": "Greek"
+    },
+    {
+      "root": "cid",
+      "meaning_zh": "殺死",
+      "origin": "Latin"
+    }
+  ],
+  "grandiose": [
+    {
+      "root": "grand",
+      "meaning_zh": "宏偉",
+      "origin": "Latin"
+    }
+  ],
+  "gratuitous": [
+    {
+      "root": "grat",
+      "meaning_zh": "恩惠；無償",
+      "origin": "Latin"
+    }
+  ],
+  "grievance": [
+    {
+      "root": "griev",
+      "meaning_zh": "重；委屈",
+      "origin": "Latin"
+    }
+  ],
+  "grueling": [
+    {
+      "root": "gruel",
+      "meaning_zh": "折磨",
+      "origin": "Middle English"
+    }
+  ],
+  "guise": [
+    {
+      "root": "guis",
+      "meaning_zh": "外觀",
+      "origin": "Old French"
+    }
+  ],
+  "hamper": [
+    {
+      "root": "hamper",
+      "meaning_zh": "妨礙",
+      "origin": "Middle English"
+    }
+  ],
+  "harmonize": [
+    {
+      "root": "harmon",
+      "meaning_zh": "和諧",
+      "origin": "Greek"
+    }
+  ],
+  "havoc": [
+    {
+      "root": "havot",
+      "meaning_zh": "浩劫",
+      "origin": "Old French"
+    }
+  ],
+  "hegemony": [
+    {
+      "root": "hegemon",
+      "meaning_zh": "領導者",
+      "origin": "Greek"
+    }
+  ],
+  "heresy": [
+    {
+      "root": "heres",
+      "meaning_zh": "選擇",
+      "origin": "Greek"
+    }
+  ],
+  "hierarchy": [
+    {
+      "root": "hier",
+      "meaning_zh": "神聖",
+      "origin": "Greek"
+    },
+    {
+      "root": "arch",
+      "meaning_zh": "統治",
+      "origin": "Greek"
+    }
+  ],
+  "hinder": [
+    {
+      "root": "hind",
+      "meaning_zh": "後面",
+      "origin": "Old English"
+    }
+  ],
+  "holistic": [
+    {
+      "root": "hol",
+      "meaning_zh": "全部",
+      "origin": "Greek"
+    }
+  ],
+  "homogeneous": [
+    {
+      "root": "homo",
+      "meaning_zh": "相同",
+      "origin": "Greek"
+    },
+    {
+      "root": "gen",
+      "meaning_zh": "種類",
+      "origin": "Greek"
+    }
+  ],
+  "humanitarian": [
+    {
+      "root": "human",
+      "meaning_zh": "人類",
+      "origin": "Latin"
+    }
+  ],
+  "hypothetical": [
+    {
+      "root": "hypo",
+      "meaning_zh": "在下",
+      "origin": "Greek"
+    },
+    {
+      "root": "the",
+      "meaning_zh": "放置",
+      "origin": "Greek"
+    }
+  ],
+  "ideology": [
+    {
+      "root": "ideo",
+      "meaning_zh": "想法",
+      "origin": "Greek"
+    },
+    {
+      "root": "log",
+      "meaning_zh": "學說",
+      "origin": "Greek"
+    }
+  ],
+  "illicit": [
+    {
+      "root": "il",
+      "meaning_zh": "不",
+      "origin": "Latin"
+    },
+    {
+      "root": "licit",
+      "meaning_zh": "許可",
+      "origin": "Latin"
+    }
+  ],
+  "imminent": [
+    {
+      "root": "im",
+      "meaning_zh": "在之上",
+      "origin": "Latin"
+    },
+    {
+      "root": "min",
+      "meaning_zh": "突出",
+      "origin": "Latin"
+    }
+  ],
+  "impair": [
+    {
+      "root": "im",
+      "meaning_zh": "使",
+      "origin": "Latin"
+    },
+    {
+      "root": "peior",
+      "meaning_zh": "更差",
+      "origin": "Latin"
+    }
+  ],
+  "impartial": [
+    {
+      "root": "im",
+      "meaning_zh": "不",
+      "origin": "Latin"
+    },
+    {
+      "root": "part",
+      "meaning_zh": "部分",
+      "origin": "Latin"
+    }
+  ],
+  "impeach": [
+    {
+      "root": "im",
+      "meaning_zh": "在內",
+      "origin": "Latin"
+    },
+    {
+      "root": "ped",
+      "meaning_zh": "腳/鐐銬",
+      "origin": "Latin"
+    }
+  ],
+  "impede": [
+    {
+      "root": "im",
+      "meaning_zh": "在內",
+      "origin": "Latin"
+    },
+    {
+      "root": "ped",
+      "meaning_zh": "腳",
+      "origin": "Latin"
+    }
+  ],
+  "imperative": [
+    {
+      "root": "imper",
+      "meaning_zh": "命令",
+      "origin": "Latin"
+    }
+  ],
+  "implication": [
+    {
+      "root": "im",
+      "meaning_zh": "在內",
+      "origin": "Latin"
+    },
+    {
+      "root": "plic",
+      "meaning_zh": "摺疊",
+      "origin": "Latin"
+    }
+  ],
+  "implicit": [
+    {
+      "root": "im",
+      "meaning_zh": "在內",
+      "origin": "Latin"
+    },
+    {
+      "root": "plic",
+      "meaning_zh": "摺疊",
+      "origin": "Latin"
+    }
+  ],
+  "impose": [
+    {
+      "root": "pos",
+      "meaning_zh": "放置",
+      "origin": "Latin"
+    }
+  ],
+  "impoverished": [
+    {
+      "root": "pauper",
+      "meaning_zh": "貧窮",
+      "origin": "Latin"
+    }
+  ],
+  "improvise": [
+    {
+      "root": "vis",
+      "meaning_zh": "看見",
+      "origin": "Latin"
+    }
+  ],
+  "inaugurate": [
+    {
+      "root": "augur",
+      "meaning_zh": "占卜師",
+      "origin": "Latin"
+    }
+  ],
+  "incarcerate": [
+    {
+      "root": "carcer",
+      "meaning_zh": "監獄",
+      "origin": "Latin"
+    }
+  ],
+  "incentive": [
+    {
+      "root": "cant",
+      "meaning_zh": "唱/歌",
+      "origin": "Latin"
+    }
+  ],
+  "incite": [
+    {
+      "root": "cit",
+      "meaning_zh": "喚起/移動",
+      "origin": "Latin"
+    }
+  ],
+  "inclination": [
+    {
+      "root": "clin",
+      "meaning_zh": "傾斜",
+      "origin": "Latin"
+    }
+  ],
+  "incoherent": [
+    {
+      "root": "haer",
+      "meaning_zh": "黏附",
+      "origin": "Latin"
+    }
+  ],
+  "increment": [
+    {
+      "root": "cresc",
+      "meaning_zh": "生長",
+      "origin": "Latin"
+    }
+  ],
+  "indictment": [
+    {
+      "root": "dict",
+      "meaning_zh": "說",
+      "origin": "Latin"
+    }
+  ],
+  "indignation": [
+    {
+      "root": "dign",
+      "meaning_zh": "值得/尊嚴",
+      "origin": "Latin"
+    }
+  ],
+  "indoctrinate": [
+    {
+      "root": "doc",
+      "meaning_zh": "教導",
+      "origin": "Latin"
+    }
+  ],
+  "infer": [
+    {
+      "root": "fer",
+      "meaning_zh": "攜帶/帶來",
+      "origin": "Latin"
+    }
+  ],
+  "influx": [
+    {
+      "root": "flux",
+      "meaning_zh": "流動",
+      "origin": "Latin"
+    }
+  ],
+  "infrastructure": [
+    {
+      "root": "struct",
+      "meaning_zh": "建造",
+      "origin": "Latin"
+    }
+  ],
+  "inherent": [
+    {
+      "root": "haer",
+      "meaning_zh": "黏附",
+      "origin": "Latin"
+    }
+  ],
+  "inhibit": [
+    {
+      "root": "hab",
+      "meaning_zh": "持有/握住",
+      "origin": "Latin"
+    }
+  ],
+  "innate": [
+    {
+      "root": "nat",
+      "meaning_zh": "出生",
+      "origin": "Latin"
+    }
+  ],
+  "innovate": [
+    {
+      "root": "nov",
+      "meaning_zh": "新",
+      "origin": "Latin"
+    }
+  ],
+  "insatiable": [
+    {
+      "root": "sat",
+      "meaning_zh": "足夠",
+      "origin": "Latin"
+    }
+  ],
+  "instigate": [
+    {
+      "root": "stig",
+      "meaning_zh": "刺/促使",
+      "origin": "Latin"
+    }
+  ],
+  "integral": [
+    {
+      "root": "tang",
+      "meaning_zh": "接觸",
+      "origin": "Latin"
+    }
+  ],
+  "intensify": [
+    {
+      "root": "tend",
+      "meaning_zh": "伸展",
+      "origin": "Latin"
+    }
+  ],
+  "intercept": [
+    {
+      "root": "cept",
+      "meaning_zh": "拿取",
+      "origin": "Latin"
+    }
+  ],
+  "interim": [
+    {
+      "root": "inter",
+      "meaning_zh": "在...之間",
+      "origin": "Latin"
+    }
+  ],
+  "intervene": [
+    {
+      "root": "ven",
+      "meaning_zh": "來",
+      "origin": "Latin"
+    }
+  ],
+  "intimidate": [
+    {
+      "root": "tim",
+      "meaning_zh": "害怕",
+      "origin": "Latin"
+    }
+  ],
+  "intricate": [
+    {
+      "root": "tric",
+      "meaning_zh": "瑣事/障礙",
+      "origin": "Latin"
+    }
+  ],
+  "intrinsic": [
+    {
+      "root": "intra",
+      "meaning_zh": "在內",
+      "origin": "Latin"
+    }
+  ],
+  "invoke": [
+    {
+      "root": "voc",
+      "meaning_zh": "召喚",
+      "origin": "Latin"
+    }
+  ],
+  "irony": [
+    {
+      "root": "eiron",
+      "meaning_zh": "諷刺",
+      "origin": "Greek"
+    }
+  ],
+  "jeopardize": [
+    {
+      "root": "joc + part",
+      "meaning_zh": "危害",
+      "origin": "Old French"
+    }
+  ],
+  "jurisdiction": [
+    {
+      "root": "jur + dict",
+      "meaning_zh": "管轄權",
+      "origin": "Latin"
+    }
+  ],
+  "juxtapose": [
+    {
+      "root": "juxta + posit",
+      "meaning_zh": "並列",
+      "origin": "Latin/French"
+    }
+  ],
+  "kinship": [
+    {
+      "root": "cynn",
+      "meaning_zh": "親屬關係",
+      "origin": "Old English"
+    }
+  ],
+  "labyrinth": [
+    {
+      "root": "labyrinthos",
+      "meaning_zh": "迷宮",
+      "origin": "Greek"
+    }
+  ],
+  "lament": [
+    {
+      "root": "lamentum",
+      "meaning_zh": "哀悼",
+      "origin": "Latin"
+    }
+  ],
+  "latent": [
+    {
+      "root": "lat",
+      "meaning_zh": "潛伏的",
+      "origin": "Latin"
+    }
+  ],
+  "legitimate": [
+    {
+      "root": "leg",
+      "meaning_zh": "合法的",
+      "origin": "Latin"
+    }
+  ],
+  "liberate": [
+    {
+      "root": "liber",
+      "meaning_zh": "解放",
+      "origin": "Latin"
+    }
+  ],
+  "litigation": [
+    {
+      "root": "lit + ag",
+      "meaning_zh": "訴訟",
+      "origin": "Latin"
+    }
+  ],
+  "livelihood": [
+    {
+      "root": "lif + lad",
+      "meaning_zh": "生計",
+      "origin": "Old English"
+    }
+  ],
+  "lobby": [
+    {
+      "root": "laubia",
+      "meaning_zh": "遊說",
+      "origin": "Medieval Latin"
+    }
+  ],
+  "lucrative": [
+    {
+      "root": "lucr",
+      "meaning_zh": "獲利的",
+      "origin": "Latin"
+    }
+  ],
+  "magnify": [
+    {
+      "root": "magn + fy",
+      "meaning_zh": "放大",
+      "origin": "Latin"
+    }
+  ],
+  "malicious": [
+    {
+      "root": "mal",
+      "meaning_zh": "惡意的",
+      "origin": "Latin"
+    }
+  ],
+  "mandate": [
+    {
+      "root": "man + dare",
+      "meaning_zh": "授權",
+      "origin": "Latin"
+    }
+  ],
+  "manifest": [
+    {
+      "root": "man + fest",
+      "meaning_zh": "顯現",
+      "origin": "Latin"
+    }
+  ],
+  "manipulate": [
+    {
+      "root": "man + ple",
+      "meaning_zh": "操縱",
+      "origin": "Latin"
+    }
+  ],
+  "marginalize": [
+    {
+      "root": "marg",
+      "meaning_zh": "邊緣化",
+      "origin": "Latin"
+    }
+  ],
+  "mediate": [
+    {
+      "root": "med",
+      "meaning_zh": "調解",
+      "origin": "Latin"
+    }
+  ],
+  "meticulous": [
+    {
+      "root": "met",
+      "meaning_zh": "一絲不苟的",
+      "origin": "Latin"
+    }
+  ],
+  "militant": [
+    {
+      "root": "milit",
+      "meaning_zh": "好戰的",
+      "origin": "Latin"
+    }
+  ],
+  "mitigate": [
+    {
+      "root": "mit + ag",
+      "meaning_zh": "緩和",
+      "origin": "Latin"
+    }
+  ],
+  "mobilize": [
+    {
+      "root": "mov",
+      "meaning_zh": "動員",
+      "origin": "Latin"
+    }
+  ],
+  "monopoly": [
+    {
+      "root": "mono + poly",
+      "meaning_zh": "壟斷",
+      "origin": "Greek"
+    }
+  ],
+  "morale": [
+    {
+      "root": "mor",
+      "meaning_zh": "士氣",
+      "origin": "Latin"
+    }
+  ],
+  "moratorium": [
+    {
+      "root": "mor",
+      "meaning_zh": "延期履行",
+      "origin": "Latin"
+    }
+  ],
+  "municipal": [
+    {
+      "root": "mun + cip",
+      "meaning_zh": "市政的",
+      "origin": "Latin"
+    }
+  ],
+  "myriad": [
+    {
+      "root": "myrios",
+      "meaning_zh": "無數",
+      "origin": "Greek"
+    }
+  ],
+  "negligent": [
+    {
+      "root": "neg- (not) + legere (pick up)",
+      "meaning_zh": "疏忽的",
+      "origin": "Latin"
+    }
+  ],
+  "nihilism": [
+    {
+      "root": "nihil",
+      "meaning_zh": "虛無",
+      "origin": "Latin"
+    }
+  ],
+  "nominal": [
+    {
+      "root": "nomen",
+      "meaning_zh": "名義上的",
+      "origin": "Latin"
+    }
+  ],
+  "notorious": [
+    {
+      "root": "notus",
+      "meaning_zh": "眾所周知的",
+      "origin": "Latin"
+    }
+  ],
+  "nurture": [
+    {
+      "root": "nutrire",
+      "meaning_zh": "養育",
+      "origin": "Latin"
+    }
+  ],
+  "objective": [
+    {
+      "root": "ob- (before) + jacere (throw)",
+      "meaning_zh": "客觀的",
+      "origin": "Latin"
+    }
+  ],
+  "obscure": [
+    {
+      "root": "ob- (over) + scurus (covered)",
+      "meaning_zh": "模糊的",
+      "origin": "Latin"
+    }
+  ],
+  "obsolete": [
+    {
+      "root": "ob- (away) + solere (accustomed)",
+      "meaning_zh": "過時的",
+      "origin": "Latin"
+    }
+  ],
+  "omnipotent": [
+    {
+      "root": "omnis (all) + potens (powerful)",
+      "meaning_zh": "全能的",
+      "origin": "Latin"
+    }
+  ],
+  "opaque": [
+    {
+      "root": "opacus",
+      "meaning_zh": "不透明的",
+      "origin": "Latin"
+    }
+  ],
+  "oppression": [
+    {
+      "root": "ob- (against) + premere (press)",
+      "meaning_zh": "壓迫",
+      "origin": "Latin"
+    }
+  ],
+  "opt": [
+    {
+      "root": "optare",
+      "meaning_zh": "選擇",
+      "origin": "Latin"
+    }
+  ],
+  "oracle": [
+    {
+      "root": "orare (speak)",
+      "meaning_zh": "神諭",
+      "origin": "Latin"
+    }
+  ],
+  "orthodox": [
+    {
+      "root": "orthos (straight) + doxa (opinion)",
+      "meaning_zh": "正統的",
+      "origin": "Greek"
+    }
+  ],
+  "ostracize": [
+    {
+      "root": "ostrakon (potsherd)",
+      "meaning_zh": "排斥",
+      "origin": "Greek"
+    }
+  ],
+  "overt": [
+    {
+      "root": "aperire (open)",
+      "meaning_zh": "公開的",
+      "origin": "Latin"
+    }
+  ],
+  "overwhelming": [
+    {
+      "root": "over + whelmen (turn over)",
+      "meaning_zh": "壓倒性的",
+      "origin": "English"
+    }
+  ],
+  "paradox": [
+    {
+      "root": "para- (contrary) + doxa (opinion)",
+      "meaning_zh": "悖論",
+      "origin": "Greek"
+    }
+  ],
+  "paramount": [
+    {
+      "root": "per (by) + amont (above)",
+      "meaning_zh": "至高無上的",
+      "origin": "French"
+    }
+  ],
+  "partisan": [
+    {
+      "root": "pars (part)",
+      "meaning_zh": "黨派的",
+      "origin": "Latin"
+    }
+  ],
+  "patent": [
+    {
+      "root": "patere (lie open)",
+      "meaning_zh": "專利",
+      "origin": "Latin"
+    }
+  ],
+  "patronize": [
+    {
+      "root": "patronus (protector)",
+      "meaning_zh": "光顧/庇護",
+      "origin": "Latin"
+    }
+  ],
+  "peculiar": [
+    {
+      "root": "peculium (private property)",
+      "meaning_zh": "獨特的",
+      "origin": "Latin"
+    }
+  ],
+  "penchant": [
+    {
+      "root": "pendere (hang/lean)",
+      "meaning_zh": "嗜好",
+      "origin": "Latin"
+    }
+  ],
+  "perceive": [
+    {
+      "root": "per- (thoroughly) + capere (take)",
+      "meaning_zh": "察覺",
+      "origin": "Latin"
+    }
+  ],
+  "perpetuate": [
+    {
+      "root": "perpetuus (continuous)",
+      "meaning_zh": "使永恆",
+      "origin": "Latin"
+    }
+  ],
+  "persecute": [
+    {
+      "root": "per- (through) + sequi (follow)",
+      "meaning_zh": "迫害",
+      "origin": "Latin"
+    }
+  ],
+  "pertinent": [
+    {
+      "root": "per- (through) + tenere (hold)",
+      "meaning_zh": "相關的",
+      "origin": "Latin"
+    }
+  ],
+  "pervasive": [
+    {
+      "root": "per- (through) + vadere (go)",
+      "meaning_zh": "遍布的",
+      "origin": "Latin"
+    }
+  ],
+  "philanthropy": [
+    {
+      "root": "phil-",
+      "meaning_zh": "愛",
+      "origin": "Greek"
+    },
+    {
+      "root": "anthropos",
+      "meaning_zh": "人類",
+      "origin": "Greek"
+    }
+  ],
+  "plague": [
+    {
+      "root": "plaga",
+      "meaning_zh": "擊打、傷口",
+      "origin": "Latin"
+    }
+  ],
+  "plausible": [
+    {
+      "root": "plaud",
+      "meaning_zh": "鼓掌、讚許",
+      "origin": "Latin"
+    }
+  ],
+  "plight": [
+    {
+      "root": "pli",
+      "meaning_zh": "折疊",
+      "origin": "Latin"
+    }
+  ],
+  "polarize": [
+    {
+      "root": "pol",
+      "meaning_zh": "軸、極",
+      "origin": "Greek"
+    }
+  ],
+  "postulate": [
+    {
+      "root": "postul",
+      "meaning_zh": "要求、請求",
+      "origin": "Latin"
+    }
+  ],
+  "pragmatic": [
+    {
+      "root": "prag",
+      "meaning_zh": "做事、行動",
+      "origin": "Greek"
+    }
+  ],
+  "precarious": [
+    {
+      "root": "precar",
+      "meaning_zh": "祈求",
+      "origin": "Latin"
+    }
+  ],
+  "precedent": [
+    {
+      "root": "pre-",
+      "meaning_zh": "在...之前",
+      "origin": "Latin"
+    },
+    {
+      "root": "ced",
+      "meaning_zh": "走",
+      "origin": "Latin"
+    }
+  ],
+  "preclude": [
+    {
+      "root": "pre-",
+      "meaning_zh": "在...之前",
+      "origin": "Latin"
+    },
+    {
+      "root": "clud",
+      "meaning_zh": "關閉",
+      "origin": "Latin"
+    }
+  ],
+  "predominant": [
+    {
+      "root": "pre-",
+      "meaning_zh": "在...之前",
+      "origin": "Latin"
+    },
+    {
+      "root": "domin",
+      "meaning_zh": "支配、主宰",
+      "origin": "Latin"
+    }
+  ],
+  "preemptive": [
+    {
+      "root": "pre-",
+      "meaning_zh": "在...之前",
+      "origin": "Latin"
+    },
+    {
+      "root": "empt",
+      "meaning_zh": "買、拿",
+      "origin": "Latin"
+    }
+  ],
+  "prejudice": [
+    {
+      "root": "pre-",
+      "meaning_zh": "在...之前",
+      "origin": "Latin"
+    },
+    {
+      "root": "judic",
+      "meaning_zh": "判斷",
+      "origin": "Latin"
+    }
+  ],
+  "premise": [
+    {
+      "root": "pre-",
+      "meaning_zh": "在...之前",
+      "origin": "Latin"
+    },
+    {
+      "root": "miss",
+      "meaning_zh": "送、放",
+      "origin": "Latin"
+    }
+  ],
+  "prerogative": [
+    {
+      "root": "pre-",
+      "meaning_zh": "在...之前",
+      "origin": "Latin"
+    },
+    {
+      "root": "rog",
+      "meaning_zh": "要求、詢問",
+      "origin": "Latin"
+    }
+  ],
+  "prevalent": [
+    {
+      "root": "pre-",
+      "meaning_zh": "在...之前",
+      "origin": "Latin"
+    },
+    {
+      "root": "val",
+      "meaning_zh": "強壯、價值",
+      "origin": "Latin"
+    }
+  ],
+  "proclaim": [
+    {
+      "root": "pro-",
+      "meaning_zh": "向前、公開",
+      "origin": "Latin"
+    },
+    {
+      "root": "clam",
+      "meaning_zh": "喊叫",
+      "origin": "Latin"
+    }
+  ],
+  "proficient": [
+    {
+      "root": "pro-",
+      "meaning_zh": "向前",
+      "origin": "Latin"
+    },
+    {
+      "root": "fic",
+      "meaning_zh": "做、製造",
+      "origin": "Latin"
+    }
+  ],
+  "profound": [
+    {
+      "root": "pro-",
+      "meaning_zh": "向前",
+      "origin": "Latin"
+    },
+    {
+      "root": "fund",
+      "meaning_zh": "底部",
+      "origin": "Latin"
+    }
+  ],
+  "prohibit": [
+    {
+      "root": "pro-",
+      "meaning_zh": "在...之前、遠離",
+      "origin": "Latin"
+    },
+    {
+      "root": "habit",
+      "meaning_zh": "持有",
+      "origin": "Latin"
+    }
+  ],
+  "proliferate": [
+    {
+      "root": "prol",
+      "meaning_zh": "後代",
+      "origin": "Latin"
+    },
+    {
+      "root": "fer",
+      "meaning_zh": "攜帶、生產",
+      "origin": "Latin"
+    }
+  ],
+  "propaganda": [
+    {
+      "root": "propag",
+      "meaning_zh": "傳播、繁殖",
+      "origin": "Latin"
+    }
+  ],
+  "proponent": [
+    {
+      "root": "pro-",
+      "meaning_zh": "向前",
+      "origin": "Latin"
+    },
+    {
+      "root": "pon",
+      "meaning_zh": "放置",
+      "origin": "Latin"
+    }
+  ],
+  "prosecute": [
+    {
+      "root": "pro-",
+      "meaning_zh": "向前",
+      "origin": "Latin"
+    },
+    {
+      "root": "secut",
+      "meaning_zh": "跟隨",
+      "origin": "Latin"
+    }
+  ],
+  "protagonist": [
+    {
+      "root": "proto-",
+      "meaning_zh": "第一",
+      "origin": "Greek"
+    },
+    {
+      "root": "agon",
+      "meaning_zh": "奮鬥、競賽",
+      "origin": "Greek"
+    }
+  ],
+  "provoke": [
+    {
+      "root": "pro-",
+      "meaning_zh": "向前、出來",
+      "origin": "Latin"
+    },
+    {
+      "root": "vok",
+      "meaning_zh": "呼喚",
+      "origin": "Latin"
+    }
+  ],
+  "prudent": [
+    {
+      "root": "prud",
+      "meaning_zh": "預見、審慎",
+      "origin": "Latin"
+    }
+  ],
+  "pseudonym": [
+    {
+      "root": "pseud-",
+      "meaning_zh": "假的",
+      "origin": "Greek"
+    },
+    {
+      "root": "onym",
+      "meaning_zh": "名字",
+      "origin": "Greek"
+    }
+  ],
+  "purge": [
+    {
+      "root": "purg",
+      "meaning_zh": "清潔、洗淨",
+      "origin": "Latin"
+    }
+  ],
+  "qualitative": [
+    {
+      "root": "qual",
+      "meaning_zh": "什麼種類",
+      "origin": "Latin"
+    }
+  ],
+  "quantitative": [
+    {
+      "root": "quant",
+      "meaning_zh": "數量的",
+      "origin": "Latin"
+    }
+  ],
+  "quell": [
+    {
+      "root": "cwellan",
+      "meaning_zh": "鎮壓",
+      "origin": "Old English"
+    }
+  ],
+  "ratify": [
+    {
+      "root": "rat",
+      "meaning_zh": "批准",
+      "origin": "Latin"
+    }
+  ],
+  "raucous": [
+    {
+      "root": "rauc",
+      "meaning_zh": "沙啞的",
+      "origin": "Latin"
+    }
+  ],
+  "rebuke": [
+    {
+      "root": "buk",
+      "meaning_zh": "斥責",
+      "origin": "Old French"
+    }
+  ],
+  "reconcile": [
+    {
+      "root": "concil",
+      "meaning_zh": "和解",
+      "origin": "Latin"
+    }
+  ],
+  "redundant": [
+    {
+      "root": "und",
+      "meaning_zh": "多餘的",
+      "origin": "Latin"
+    }
+  ],
+  "referendum": [
+    {
+      "root": "fer",
+      "meaning_zh": "公民投票",
+      "origin": "Latin"
+    }
+  ],
+  "refute": [
+    {
+      "root": "fut",
+      "meaning_zh": "反駁",
+      "origin": "Latin"
+    }
+  ],
+  "regime": [
+    {
+      "root": "reg",
+      "meaning_zh": "政權",
+      "origin": "Latin"
+    }
+  ],
+  "rehabilitate": [
+    {
+      "root": "habit",
+      "meaning_zh": "恢復健康",
+      "origin": "Latin"
+    }
+  ],
+  "reign": [
+    {
+      "root": "reg",
+      "meaning_zh": "統治",
+      "origin": "Latin"
+    }
+  ],
+  "reinforce": [
+    {
+      "root": "forc",
+      "meaning_zh": "加強",
+      "origin": "Latin"
+    }
+  ],
+  "relentless": [
+    {
+      "root": "lent",
+      "meaning_zh": "無情的",
+      "origin": "Latin"
+    }
+  ],
+  "relinquish": [
+    {
+      "root": "linqu",
+      "meaning_zh": "放棄",
+      "origin": "Latin"
+    }
+  ],
+  "reminiscent": [
+    {
+      "root": "min",
+      "meaning_zh": "懷舊的",
+      "origin": "Latin"
+    }
+  ],
+  "renaissance": [
+    {
+      "root": "nasc",
+      "meaning_zh": "文藝復興",
+      "origin": "French"
+    }
+  ],
+  "repercussion": [
+    {
+      "root": "cuss",
+      "meaning_zh": "反響",
+      "origin": "Latin"
+    }
+  ],
+  "replenish": [
+    {
+      "root": "plen",
+      "meaning_zh": "補充",
+      "origin": "Latin"
+    }
+  ],
+  "repression": [
+    {
+      "root": "press",
+      "meaning_zh": "鎮壓",
+      "origin": "Latin"
+    }
+  ],
+  "reprimand": [
+    {
+      "root": "press",
+      "meaning_zh": "訓斥",
+      "origin": "French"
+    }
+  ],
+  "repudiate": [
+    {
+      "root": "pud",
+      "meaning_zh": "拒絕",
+      "origin": "Latin"
+    }
+  ],
+  "resolution": [
+    {
+      "root": "solut",
+      "meaning_zh": "決心",
+      "origin": "Latin"
+    }
+  ],
+  "resonate": [
+    {
+      "root": "son",
+      "meaning_zh": "共鳴",
+      "origin": "Latin"
+    }
+  ],
+  "restitution": [
+    {
+      "root": "stat",
+      "meaning_zh": "歸還",
+      "origin": "Latin"
+    }
+  ],
+  "retain": [
+    {
+      "root": "tain",
+      "meaning_zh": "保留",
+      "origin": "Latin"
+    }
+  ],
+  "retaliate": [
+    {
+      "root": "tali",
+      "meaning_zh": "報復",
+      "origin": "Latin"
+    }
+  ],
+  "retribution": [
+    {
+      "root": "tribut",
+      "meaning_zh": "報應",
+      "origin": "Latin"
+    }
+  ],
+  "revelation": [
+    {
+      "root": "vel",
+      "meaning_zh": "啟示",
+      "origin": "Latin"
+    }
+  ],
+  "rigorous": [
+    {
+      "root": "rig",
+      "meaning_zh": "嚴格的",
+      "origin": "Latin"
+    }
+  ],
+  "robust": [
+    {
+      "root": "robur",
+      "meaning_zh": "橡樹、力量",
+      "origin": "Latin"
+    }
+  ],
+  "ruthless": [
+    {
+      "root": "hru",
+      "meaning_zh": "悲傷、遺憾",
+      "origin": "Germanic"
+    }
+  ],
+  "safeguard": [
+    {
+      "root": "salvus",
+      "meaning_zh": "安全",
+      "origin": "Latin"
+    },
+    {
+      "root": "wardon",
+      "meaning_zh": "守衛",
+      "origin": "Germanic"
+    }
+  ],
+  "sanction": [
+    {
+      "root": "sancire",
+      "meaning_zh": "神聖化、制定",
+      "origin": "Latin"
+    }
+  ],
+  "scarcity": [
+    {
+      "root": "carpere",
+      "meaning_zh": "採集、挑選",
+      "origin": "Latin"
+    }
+  ],
+  "scrutinize": [
+    {
+      "root": "scruta",
+      "meaning_zh": "碎屑、瑣事",
+      "origin": "Latin"
+    }
+  ],
+  "secular": [
+    {
+      "root": "saeculum",
+      "meaning_zh": "世代、塵世",
+      "origin": "Latin"
+    }
+  ],
+  "segregation": [
+    {
+      "root": "grex",
+      "meaning_zh": "群體、集合",
+      "origin": "Latin"
+    }
+  ],
+  "sentiment": [
+    {
+      "root": "sentire",
+      "meaning_zh": "感覺、感知",
+      "origin": "Latin"
+    }
+  ],
+  "siege": [
+    {
+      "root": "sedere",
+      "meaning_zh": "坐",
+      "origin": "Latin"
+    }
+  ],
+  "skeptical": [
+    {
+      "root": "skeptesthai",
+      "meaning_zh": "觀察、考慮",
+      "origin": "Greek"
+    }
+  ],
+  "solitary": [
+    {
+      "root": "solus",
+      "meaning_zh": "單獨",
+      "origin": "Latin"
+    }
+  ],
+  "speculate": [
+    {
+      "root": "specere",
+      "meaning_zh": "看",
+      "origin": "Latin"
+    }
+  ],
+  "sporadic": [
+    {
+      "root": "speirein",
+      "meaning_zh": "播種、散布",
+      "origin": "Greek"
+    }
+  ],
+  "stagnant": [
+    {
+      "root": "stagnum",
+      "meaning_zh": "池塘、積水",
+      "origin": "Latin"
+    }
+  ],
+  "statute": [
+    {
+      "root": "stare",
+      "meaning_zh": "站立",
+      "origin": "Latin"
+    }
+  ],
+  "stereotype": [
+    {
+      "root": "stereos",
+      "meaning_zh": "固體、堅硬",
+      "origin": "Greek"
+    },
+    {
+      "root": "typos",
+      "meaning_zh": "印記、型態",
+      "origin": "Greek"
+    }
+  ],
+  "stigma": [
+    {
+      "root": "stizein",
+      "meaning_zh": "刺、標記",
+      "origin": "Greek"
+    }
+  ],
+  "stipulate": [
+    {
+      "root": "stipula",
+      "meaning_zh": "稻草、莖",
+      "origin": "Latin"
+    }
+  ],
+  "strife": [
+    {
+      "root": "stri-",
+      "meaning_zh": "奮鬥、競爭",
+      "origin": "Germanic"
+    }
+  ],
+  "stringent": [
+    {
+      "root": "stringere",
+      "meaning_zh": "拉緊、束縛",
+      "origin": "Latin"
+    }
+  ],
+  "subordinate": [
+    {
+      "root": "ordo",
+      "meaning_zh": "順序、等級",
+      "origin": "Latin"
+    }
+  ],
+  "subside": [
+    {
+      "root": "sidere",
+      "meaning_zh": "坐、沉降",
+      "origin": "Latin"
+    }
+  ],
+  "subsidy": [
+    {
+      "root": "sedere",
+      "meaning_zh": "坐、駐紮",
+      "origin": "Latin"
+    }
+  ],
+  "substantiate": [
+    {
+      "root": "stare",
+      "meaning_zh": "站立、存在",
+      "origin": "Latin"
+    }
+  ],
+  "subtle": [
+    {
+      "root": "tela",
+      "meaning_zh": "織物、網",
+      "origin": "Latin"
+    }
+  ],
+  "subversive": [
+    {
+      "root": "vertere",
+      "meaning_zh": "轉動、覆轉",
+      "origin": "Latin"
+    }
+  ],
+  "succumb": [
+    {
+      "root": "cumbere",
+      "meaning_zh": "躺、臥",
+      "origin": "Latin"
+    }
+  ],
+  "superficial": [
+    {
+      "root": "facies",
+      "meaning_zh": "臉、表面",
+      "origin": "Latin"
+    }
+  ],
+  "suppress": [
+    {
+      "root": "premere",
+      "meaning_zh": "壓制",
+      "origin": "Latin"
+    }
+  ],
+  "surveillance": [
+    {
+      "root": "vigil",
+      "meaning_zh": "看守",
+      "origin": "Latin"
+    }
+  ],
+  "susceptible": [
+    {
+      "root": "cept",
+      "meaning_zh": "拿、取",
+      "origin": "Latin"
+    }
+  ],
+  "synthesis": [
+    {
+      "root": "thesis",
+      "meaning_zh": "放置",
+      "origin": "Greek"
+    }
+  ],
+  "taboo": [
+    {
+      "root": "tapu",
+      "meaning_zh": "神聖、禁止",
+      "origin": "Tongan"
+    }
+  ],
+  "tangible": [
+    {
+      "root": "tang",
+      "meaning_zh": "接觸",
+      "origin": "Latin"
+    }
+  ],
+  "tentative": [
+    {
+      "root": "tent",
+      "meaning_zh": "嘗試",
+      "origin": "Latin"
+    }
+  ],
+  "tenure": [
+    {
+      "root": "ten",
+      "meaning_zh": "持有",
+      "origin": "Latin"
+    }
+  ],
+  "terrestrial": [
+    {
+      "root": "terr",
+      "meaning_zh": "土地",
+      "origin": "Latin"
+    }
+  ],
+  "testimony": [
+    {
+      "root": "test",
+      "meaning_zh": "證人",
+      "origin": "Latin"
+    }
+  ],
+  "therapeutic": [
+    {
+      "root": "therap",
+      "meaning_zh": "治療",
+      "origin": "Greek"
+    }
+  ],
+  "threshold": [
+    {
+      "root": "thresh",
+      "meaning_zh": "踩踏",
+      "origin": "Old English"
+    }
+  ],
+  "thrive": [
+    {
+      "root": "thrifa",
+      "meaning_zh": "抓取",
+      "origin": "Old Norse"
+    }
+  ],
+  "totalitarian": [
+    {
+      "root": "tot",
+      "meaning_zh": "全部",
+      "origin": "Latin"
+    }
+  ],
+  "transcend": [
+    {
+      "root": "scend",
+      "meaning_zh": "攀爬",
+      "origin": "Latin"
+    }
+  ],
+  "transgression": [
+    {
+      "root": "gress",
+      "meaning_zh": "行走",
+      "origin": "Latin"
+    }
+  ],
+  "transient": [
+    {
+      "root": "it",
+      "meaning_zh": "走",
+      "origin": "Latin"
+    }
+  ],
+  "transparent": [
+    {
+      "root": "par",
+      "meaning_zh": "出現",
+      "origin": "Latin"
+    }
+  ],
+  "traumatic": [
+    {
+      "root": "trauma",
+      "meaning_zh": "創傷",
+      "origin": "Greek"
+    }
+  ],
+  "tribunal": [
+    {
+      "root": "tribu",
+      "meaning_zh": "分配、部落",
+      "origin": "Latin"
+    }
+  ],
+  "trivial": [
+    {
+      "root": "vi",
+      "meaning_zh": "路",
+      "origin": "Latin"
+    }
+  ],
+  "tumultuous": [
+    {
+      "root": "tum",
+      "meaning_zh": "腫脹、起伏",
+      "origin": "Latin"
+    }
+  ],
+  "tyranny": [
+    {
+      "root": "tyrann",
+      "meaning_zh": "暴君",
+      "origin": "Greek"
+    }
+  ],
+  "ubiquitous": [
+    {
+      "root": "ubi",
+      "meaning_zh": "哪裡、到處",
+      "origin": "Latin"
+    }
+  ],
+  "unambiguous": [
+    {
+      "root": "ag",
+      "meaning_zh": "做、驅動",
+      "origin": "Latin"
+    }
+  ],
+  "undermine": [
+    {
+      "root": "min",
+      "meaning_zh": "挖掘",
+      "origin": "Latin"
+    }
+  ],
+  "unprecedented": [
+    {
+      "root": "ced",
+      "meaning_zh": "行走",
+      "origin": "Latin"
+    }
+  ],
+  "unrest": [
+    {
+      "root": "rest",
+      "meaning_zh": "休息、停止",
+      "origin": "Germanic"
+    }
+  ],
+  "uphold": [
+    {
+      "root": "hold",
+      "meaning_zh": "持有、握住",
+      "origin": "Germanic"
+    }
+  ],
+  "usurp": [
+    {
+      "root": "rap",
+      "meaning_zh": "抓取",
+      "origin": "Latin"
+    }
+  ],
+  "utilitarian": [
+    {
+      "root": "ut",
+      "meaning_zh": "使用",
+      "origin": "Latin"
+    }
+  ],
+  "utopia": [
+    {
+      "root": "ou-",
+      "meaning_zh": "不",
+      "origin": "Greek"
+    },
+    {
+      "root": "topos",
+      "meaning_zh": "地方",
+      "origin": "Greek"
+    }
+  ],
+  "validate": [
+    {
+      "root": "val-",
+      "meaning_zh": "強壯、價值",
+      "origin": "Latin"
+    }
+  ],
+  "vanquish": [
+    {
+      "root": "vinc-",
+      "meaning_zh": "征服",
+      "origin": "Latin"
+    }
+  ],
+  "vengeance": [
+    {
+      "root": "vindic-",
+      "meaning_zh": "維護、復仇",
+      "origin": "Latin"
+    }
+  ],
+  "verbose": [
+    {
+      "root": "verb-",
+      "meaning_zh": "詞語",
+      "origin": "Latin"
+    }
+  ],
+  "verdict": [
+    {
+      "root": "ver-",
+      "meaning_zh": "真實",
+      "origin": "Latin"
+    },
+    {
+      "root": "dict-",
+      "meaning_zh": "說",
+      "origin": "Latin"
+    }
+  ],
+  "viable": [
+    {
+      "root": "vi-",
+      "meaning_zh": "生命",
+      "origin": "Latin"
+    }
+  ],
+  "vigilant": [
+    {
+      "root": "vigil-",
+      "meaning_zh": "警覺、清醒",
+      "origin": "Latin"
+    }
+  ],
+  "vindicate": [
+    {
+      "root": "vindic-",
+      "meaning_zh": "維護、聲張",
+      "origin": "Latin"
+    }
+  ],
+  "violate": [
+    {
+      "root": "viol-",
+      "meaning_zh": "暴力、侵犯",
+      "origin": "Latin"
+    }
+  ],
+  "voracious": [
+    {
+      "root": "vor-",
+      "meaning_zh": "吞食",
+      "origin": "Latin"
+    }
+  ],
+  "waive": [
+    {
+      "root": "waiv-",
+      "meaning_zh": "放棄",
+      "origin": "Old French"
+    }
+  ],
+  "wary": [
+    {
+      "root": "war-",
+      "meaning_zh": "警戒、注意",
+      "origin": "Old English"
+    }
+  ],
+  "wield": [
+    {
+      "root": "wield-",
+      "meaning_zh": "控制、支配",
+      "origin": "Old English"
+    }
+  ],
+  "xenophobia": [
+    {
+      "root": "xeno-",
+      "meaning_zh": "陌生人",
+      "origin": "Greek"
+    },
+    {
+      "root": "phob-",
+      "meaning_zh": "恐懼",
+      "origin": "Greek"
+    }
+  ],
+  "yield": [
+    {
+      "root": "yield-",
+      "meaning_zh": "產出、服從",
+      "origin": "Old English"
+    }
+  ],
+  "zealous": [
+    {
+      "root": "zel-",
+      "meaning_zh": "熱心、熱情",
+      "origin": "Greek"
+    }
+  ],
+  "acquiesce": [
+    {
+      "root": "quies-",
+      "meaning_zh": "安靜、休息",
+      "origin": "Latin"
+    }
+  ],
+  "admonish": [
+    {
+      "root": "mon-",
+      "meaning_zh": "警告、提醒",
+      "origin": "Latin"
+    }
+  ],
+  "affinity": [
+    {
+      "root": "fin-",
+      "meaning_zh": "界限、結束",
+      "origin": "Latin"
+    }
+  ],
+  "amnesty": [
+    {
+      "root": "mnes-",
+      "meaning_zh": "記憶",
+      "origin": "Greek"
+    }
+  ],
+  "anarchy": [
+    {
+      "root": "arch-",
+      "meaning_zh": "統治、首領",
+      "origin": "Greek"
+    }
+  ],
+  "animosity": [
+    {
+      "root": "anim-",
+      "meaning_zh": "生命、心靈",
+      "origin": "Latin"
+    }
+  ],
+  "apparatus": [
+    {
+      "root": "par-",
+      "meaning_zh": "準備",
+      "origin": "Latin"
+    }
+  ],
+  "astute": [
+    {
+      "root": "astu-",
+      "meaning_zh": "精明、狡黠",
+      "origin": "Latin"
+    }
+  ],
+  "attrition": [
+    {
+      "root": "ter-",
+      "meaning_zh": "磨擦",
+      "origin": "Latin"
+    }
+  ],
+  "austere": [
+    {
+      "root": "auster-",
+      "meaning_zh": "嚴厲、嚴肅",
+      "origin": "Greek"
+    }
+  ],
+  "benign": [
+    {
+      "root": "ben-",
+      "meaning_zh": "好",
+      "origin": "Latin"
+    },
+    {
+      "root": "gen-",
+      "meaning_zh": "產生、種類",
+      "origin": "Latin"
+    }
+  ],
+  "blatant": [
+    {
+      "root": "blat-",
+      "meaning_zh": "喧鬧、喋喋不休",
+      "origin": "Latin"
+    }
+  ],
+  "candid": [
+    {
+      "root": "cand-",
+      "meaning_zh": "白、發光、公正",
+      "origin": "Latin"
+    }
+  ],
+  "caustic": [
+    {
+      "root": "kaustikos",
+      "meaning_zh": "腐蝕性的, 刻薄的",
+      "origin": "Greek"
+    }
+  ],
+  "clemency": [
+    {
+      "root": "clemens",
+      "meaning_zh": "仁慈, 寬厚",
+      "origin": "Latin"
+    }
+  ],
+  "complacent": [
+    {
+      "root": "placere",
+      "meaning_zh": "自滿的, 得意的",
+      "origin": "Latin"
+    }
+  ],
+  "condone": [
+    {
+      "root": "donare",
+      "meaning_zh": "寬恕, 縱容",
+      "origin": "Latin"
+    }
+  ],
+  "conglomerate": [
+    {
+      "root": "glomus",
+      "meaning_zh": "企業集團, 聚合物",
+      "origin": "Latin"
+    }
+  ],
+  "constrain": [
+    {
+      "root": "stringere",
+      "meaning_zh": "限制, 強制",
+      "origin": "Latin"
+    }
+  ],
+  "contrite": [
+    {
+      "root": "terere",
+      "meaning_zh": "悔罪的, 痛悔的",
+      "origin": "Latin"
+    }
+  ],
+  "conundrum": [
+    {
+      "root": "conundrum",
+      "meaning_zh": "謎題, 難題",
+      "origin": "Unknown"
+    }
+  ],
+  "credible": [
+    {
+      "root": "credere",
+      "meaning_zh": "可信的, 可靠的",
+      "origin": "Latin"
+    }
+  ],
+  "defunct": [
+    {
+      "root": "fungi",
+      "meaning_zh": "死的, 已廢止的",
+      "origin": "Latin"
+    }
+  ],
+  "demeanor": [
+    {
+      "root": "mener",
+      "meaning_zh": "行為, 舉止",
+      "origin": "French"
+    }
+  ],
+  "depiction": [
+    {
+      "root": "pingere",
+      "meaning_zh": "描寫, 描繪",
+      "origin": "Latin"
+    }
+  ],
+  "dispel": [
+    {
+      "root": "pellere",
+      "meaning_zh": "消除, 驅散",
+      "origin": "Latin"
+    }
+  ],
+  "equivocal": [
+    {
+      "root": "vox",
+      "meaning_zh": "模稜兩可的",
+      "origin": "Latin"
+    }
+  ],
+  "memorandum": [
+    {
+      "root": "memorare",
+      "meaning_zh": "備忘錄",
+      "origin": "Latin"
+    }
+  ],
+  "cubicle": [
+    {
+      "root": "cubare",
+      "meaning_zh": "小隔間",
+      "origin": "Latin"
+    }
+  ],
+  "letterhead": [
+    {
+      "root": "litera",
+      "meaning_zh": "信頭",
+      "origin": "Latin"
+    }
+  ],
+  "correspondence": [
+    {
+      "root": "respondere",
+      "meaning_zh": "通信, 信件",
+      "origin": "Latin"
+    }
+  ],
+  "protocol": [
+    {
+      "root": "protos",
+      "meaning_zh": "協議, 禮儀",
+      "origin": "Greek"
+    }
+  ],
+  "logistics": [
+    {
+      "root": "logos",
+      "meaning_zh": "物流, 後勤",
+      "origin": "Greek"
+    }
+  ],
+  "ledger": [
+    {
+      "root": "liggen",
+      "meaning_zh": "帳簿, 總帳",
+      "origin": "Dutch"
+    }
+  ],
+  "probation": [
+    {
+      "root": "probare",
+      "meaning_zh": "試用期, 緩刑",
+      "origin": "Latin"
+    }
+  ],
+  "vacancy": [
+    {
+      "root": "vacare",
+      "meaning_zh": "空缺, 職缺",
+      "origin": "Latin"
+    }
+  ],
+  "seniority": [
+    {
+      "root": "senior",
+      "meaning_zh": "資歷, 年長",
+      "origin": "Latin"
+    }
+  ],
+  "demotion": [
+    {
+      "root": "movere",
+      "meaning_zh": "降職",
+      "origin": "Latin"
+    }
+  ],
+  "harassment": [
+    {
+      "root": "harer",
+      "meaning_zh": "騷擾",
+      "origin": "French"
+    }
+  ],
+  "discrimination": [
+    {
+      "root": "cernere",
+      "meaning_zh": "歧視, 辨別",
+      "origin": "Latin"
+    }
+  ],
+  "absenteeism": [
+    {
+      "root": "absentia",
+      "meaning_zh": "曠職, 曠課",
+      "origin": "Latin"
+    }
+  ],
+  "retention": [
+    {
+      "root": "tenere",
+      "meaning_zh": "保留, 留用",
+      "origin": "Latin"
+    }
+  ],
+  "dismissal": [
+    {
+      "root": "mittere",
+      "meaning_zh": "解雇, 駁回",
+      "origin": "Latin"
+    }
+  ],
+  "severance": [
+    {
+      "root": "sever",
+      "meaning_zh": "割斷",
+      "origin": "Latin"
+    }
+  ],
+  "stipend": [
+    {
+      "root": "stip",
+      "meaning_zh": "工資",
+      "origin": "Latin"
+    }
+  ],
+  "brochure": [
+    {
+      "root": "broch",
+      "meaning_zh": "針、縫製",
+      "origin": "French"
+    }
+  ],
+  "survey": [
+    {
+      "root": "vey",
+      "meaning_zh": "看、察看",
+      "origin": "Latin"
+    }
+  ],
+  "niche": [
+    {
+      "root": "niche",
+      "meaning_zh": "神龕、合適的位置",
+      "origin": "French"
+    }
+  ],
+  "endorsement": [
+    {
+      "root": "dors",
+      "meaning_zh": "背部",
+      "origin": "Latin"
+    }
+  ],
+  "franchise": [
+    {
+      "root": "franch",
+      "meaning_zh": "自由",
+      "origin": "French"
+    }
+  ],
+  "royalty": [
+    {
+      "root": "roy",
+      "meaning_zh": "國王",
+      "origin": "French"
+    }
+  ],
+  "quota": [
+    {
+      "root": "quot",
+      "meaning_zh": "多少",
+      "origin": "Latin"
+    }
+  ],
+  "rebate": [
+    {
+      "root": "bat",
+      "meaning_zh": "擊打",
+      "origin": "French"
+    }
+  ],
+  "portfolio": [
+    {
+      "root": "port/foli",
+      "meaning_zh": "攜帶/葉子",
+      "origin": "Latin"
+    }
+  ],
+  "complaint": [
+    {
+      "root": "plain",
+      "meaning_zh": "捶胸、抱怨",
+      "origin": "Latin"
+    }
+  ],
+  "satisfaction": [
+    {
+      "root": "satis/fac",
+      "meaning_zh": "足夠/做",
+      "origin": "Latin"
+    }
+  ],
+  "inquiry": [
+    {
+      "root": "quir",
+      "meaning_zh": "尋求、詢問",
+      "origin": "Latin"
+    }
+  ],
+  "feedback": [
+    {
+      "root": "feed/back",
+      "meaning_zh": "餵養/回饋",
+      "origin": "Germanic"
+    }
+  ],
+  "resolve": [
+    {
+      "root": "solv",
+      "meaning_zh": "鬆開、解決",
+      "origin": "Latin"
+    }
+  ],
+  "accommodate": [
+    {
+      "root": "mod",
+      "meaning_zh": "模式、合適",
+      "origin": "Latin"
+    }
+  ],
+  "malfunction": [
+    {
+      "root": "mal/func",
+      "meaning_zh": "壞/執行",
+      "origin": "Latin"
+    }
+  ],
+  "negligence": [
+    {
+      "root": "neg/lig",
+      "meaning_zh": "不/選擇",
+      "origin": "Latin"
+    }
+  ],
+  "courtesy": [
+    {
+      "root": "court",
+      "meaning_zh": "庭院、宮廷",
+      "origin": "French"
+    }
+  ],
+  "representative": [
+    {
+      "root": "sent",
+      "meaning_zh": "存在、展現",
+      "origin": "Latin"
+    }
+  ],
+  "loyalty": [
+    {
+      "root": "loy",
+      "meaning_zh": "法律、忠誠",
+      "origin": "French"
+    }
+  ],
+  "patronage": [
+    {
+      "root": "patr",
+      "meaning_zh": "父親、贊助",
+      "origin": "Latin"
+    }
+  ],
+  "rapport": [
+    {
+      "root": "port",
+      "meaning_zh": "攜帶、帶回",
+      "origin": "French"
+    }
+  ],
+  "hospitality": [
+    {
+      "root": "hosp",
+      "meaning_zh": "客人、主人",
+      "origin": "Latin"
+    }
+  ],
+  "apologize": [
+    {
+      "root": "log",
+      "meaning_zh": "說話、言論",
+      "origin": "Greek"
+    }
+  ],
+  "adjourn": [
+    {
+      "root": "journ",
+      "meaning_zh": "日子、天",
+      "origin": "French"
+    }
+  ],
+  "quorum": [
+    {
+      "root": "quor",
+      "meaning_zh": "其中",
+      "origin": "Latin"
+    }
+  ],
+  "amendment": [
+    {
+      "root": "mend",
+      "meaning_zh": "缺陷、修正",
+      "origin": "Latin"
+    }
+  ],
+  "facilitator": [
+    {
+      "root": "fac",
+      "meaning_zh": "做、容易",
+      "origin": "Latin"
+    }
+  ],
+  "presentation": [
+    {
+      "root": "prae",
+      "meaning_zh": "在...之前",
+      "origin": "Latin"
+    },
+    {
+      "root": "esse",
+      "meaning_zh": "存在",
+      "origin": "Latin"
+    }
+  ],
+  "convene": [
+    {
+      "root": "ven",
+      "meaning_zh": "來",
+      "origin": "Latin"
+    }
+  ],
+  "plenary": [
+    {
+      "root": "plen",
+      "meaning_zh": "滿的",
+      "origin": "Latin"
+    }
+  ],
+  "deliberation": [
+    {
+      "root": "libra",
+      "meaning_zh": "衡量/天平",
+      "origin": "Latin"
+    }
+  ],
+  "audit": [
+    {
+      "root": "aud",
+      "meaning_zh": "聽",
+      "origin": "Latin"
+    }
+  ],
+  "equity": [
+    {
+      "root": "equ",
+      "meaning_zh": "相等/平均",
+      "origin": "Latin"
+    }
+  ],
+  "stakeholder": [
+    {
+      "root": "stake",
+      "meaning_zh": "樁/賭注",
+      "origin": "Old English"
+    },
+    {
+      "root": "hold",
+      "meaning_zh": "持有",
+      "origin": "Old English"
+    }
+  ],
+  "merger": [
+    {
+      "root": "merg",
+      "meaning_zh": "沉沒/浸入",
+      "origin": "Latin"
+    }
+  ],
+  "bankruptcy": [
+    {
+      "root": "banca",
+      "meaning_zh": "長凳/銀行",
+      "origin": "Old Italian"
+    },
+    {
+      "root": "rupt",
+      "meaning_zh": "斷裂",
+      "origin": "Latin"
+    }
+  ],
+  "depreciation": [
+    {
+      "root": "pret",
+      "meaning_zh": "價值/價格",
+      "origin": "Latin"
+    }
+  ],
+  "procurement": [
+    {
+      "root": "cur",
+      "meaning_zh": "關心/照顧",
+      "origin": "Latin"
+    }
+  ],
+  "clause": [
+    {
+      "root": "claud",
+      "meaning_zh": "關閉",
+      "origin": "Latin"
+    }
+  ],
+  "mediation": [
+    {
+      "root": "medi",
+      "meaning_zh": "中間",
+      "origin": "Latin"
+    }
+  ],
+  "proprietary": [
+    {
+      "root": "propri",
+      "meaning_zh": "自己的/私有的",
+      "origin": "Latin"
+    }
+  ],
+  "nondisclosure": [
+    {
+      "root": "claud",
+      "meaning_zh": "關閉",
+      "origin": "Latin"
+    }
+  ],
+  "feasibility": [
+    {
+      "root": "fac",
+      "meaning_zh": "做",
+      "origin": "Latin"
+    }
+  ],
+  "restructure": [
+    {
+      "root": "stru",
+      "meaning_zh": "建立/堆疊",
+      "origin": "Latin"
+    }
+  ],
+  "subsidiary": [
+    {
+      "root": "sed",
+      "meaning_zh": "坐",
+      "origin": "Latin"
+    }
+  ],
+  "deductible": [
+    {
+      "root": "duc",
+      "meaning_zh": "引導",
+      "origin": "Latin"
+    }
+  ],
+  "solvent": [
+    {
+      "root": "solv",
+      "meaning_zh": "鬆開/支付",
+      "origin": "Latin"
+    }
+  ],
+  "proxy": [
+    {
+      "root": "cur",
+      "meaning_zh": "關心/照顧",
+      "origin": "Latin"
+    }
+  ],
+  "prospective": [
+    {
+      "root": "spec",
+      "meaning_zh": "看",
+      "origin": "Latin"
+    }
+  ],
+  "quarterly": [
+    {
+      "root": "quart",
+      "meaning_zh": "四",
+      "origin": "Latin"
+    }
+  ],
+  "accrual": [
+    {
+      "root": "cresc",
+      "meaning_zh": "增加/生長",
+      "origin": "Latin"
+    }
+  ],
+  "liquidity": [
+    {
+      "root": "liqu",
+      "meaning_zh": "流動",
+      "origin": "Latin"
+    }
+  ],
+  "receivable": [
+    {
+      "root": "cap",
+      "meaning_zh": "拿取/捕捉",
+      "origin": "Latin"
+    }
+  ],
+  "valuation": [
+    {
+      "root": "val",
+      "meaning_zh": "價值/強壯",
+      "origin": "Latin"
+    }
+  ],
+  "withholding": [
+    {
+      "root": "hold",
+      "meaning_zh": "持有/保留",
+      "origin": "Old English"
+    }
+  ],
+  "counteroffer": [
+    {
+      "root": "fer",
+      "meaning_zh": "攜帶/帶來",
+      "origin": "Latin"
+    }
+  ],
+  "deadlock": [
+    {
+      "root": "dead",
+      "meaning_zh": "死亡/完全",
+      "origin": "Old English"
+    },
+    {
+      "root": "lock",
+      "meaning_zh": "鎖/固定",
+      "origin": "Old English"
+    }
+  ],
+  "impasse": [
+    {
+      "root": "pass",
+      "meaning_zh": "通過",
+      "origin": "French"
+    }
+  ],
+  "concur": [
+    {
+      "root": "curr",
+      "meaning_zh": "跑",
+      "origin": "Latin"
+    }
+  ],
+  "stalemate": [
+    {
+      "root": "stale",
+      "meaning_zh": "固定",
+      "origin": "French"
+    }
+  ],
+  "comply": [
+    {
+      "root": "ple",
+      "meaning_zh": "充滿",
+      "origin": "Latin"
+    }
+  ],
+  "enforceable": [
+    {
+      "root": "fort",
+      "meaning_zh": "力量",
+      "origin": "Latin"
+    }
+  ],
+  "indemnify": [
+    {
+      "root": "damn",
+      "meaning_zh": "損失",
+      "origin": "Latin"
+    }
+  ],
+  "disclosure": [
+    {
+      "root": "claud",
+      "meaning_zh": "關閉",
+      "origin": "Latin"
+    }
+  ],
+  "confidentiality": [
+    {
+      "root": "fid",
+      "meaning_zh": "信任",
+      "origin": "Latin"
+    }
+  ],
+  "obligate": [
+    {
+      "root": "lig",
+      "meaning_zh": "綁",
+      "origin": "Latin"
+    }
+  ],
+  "forfeit": [
+    {
+      "root": "fac",
+      "meaning_zh": "做",
+      "origin": "Latin"
+    }
+  ],
+  "contractual": [
+    {
+      "root": "trah",
+      "meaning_zh": "拉",
+      "origin": "Latin"
+    }
+  ],
+  "signatory": [
+    {
+      "root": "sign",
+      "meaning_zh": "標記",
+      "origin": "Latin"
+    }
+  ],
+  "covenant": [
+    {
+      "root": "ven",
+      "meaning_zh": "來",
+      "origin": "Latin"
+    }
+  ],
+  "addendum": [
+    {
+      "root": "add",
+      "meaning_zh": "增加",
+      "origin": "Latin"
+    }
+  ],
+  "plaintiff": [
+    {
+      "root": "plang",
+      "meaning_zh": "悲嘆",
+      "origin": "Latin"
+    }
+  ],
+  "defendant": [
+    {
+      "root": "fend",
+      "meaning_zh": "擊打",
+      "origin": "Latin"
+    }
+  ],
+  "waiver": [
+    {
+      "root": "waiv",
+      "meaning_zh": "放棄",
+      "origin": "Old French"
+    }
+  ],
+  "consignment": [
+    {
+      "root": "sign",
+      "meaning_zh": "標記",
+      "origin": "Latin"
+    }
+  ],
+  "cargo": [
+    {
+      "root": "carr",
+      "meaning_zh": "車",
+      "origin": "Latin"
+    }
+  ],
+  "perishable": [
+    {
+      "root": "ire",
+      "meaning_zh": "走",
+      "origin": "Latin"
+    }
+  ],
+  "stockpile": [
+    {
+      "root": "pile",
+      "meaning_zh": "堆",
+      "origin": "Latin"
+    }
+  ],
+  "hereby": [],
+  "pursuant": [
+    {
+      "root": "sequ",
+      "meaning_zh": "跟隨",
+      "origin": "Latin"
+    }
+  ],
+  "forthwith": [],
+  "herewith": [],
+  "aforementioned": [
+    {
+      "root": "ment",
+      "meaning_zh": "提到",
+      "origin": "Latin"
+    }
+  ],
+  "addressee": [
+    {
+      "root": "rect",
+      "meaning_zh": "直",
+      "origin": "Latin"
+    }
+  ],
+  "reiterate": [
+    {
+      "root": "iter",
+      "meaning_zh": "又一次",
+      "origin": "Latin"
+    }
+  ],
+  "attest": [
+    {
+      "root": "test",
+      "meaning_zh": "證人",
+      "origin": "Latin"
+    }
+  ],
+  "transparency": [
+    {
+      "root": "par",
+      "meaning_zh": "出現",
+      "origin": "Latin"
+    }
+  ],
+  "diversify": [
+    {
+      "root": "vers",
+      "meaning_zh": "轉向",
+      "origin": "Latin"
+    }
+  ],
+  "capitalize": [
+    {
+      "root": "capit",
+      "meaning_zh": "頭",
+      "origin": "Latin"
+    }
+  ],
+  "creditor": [
+    {
+      "root": "cred",
+      "meaning_zh": "相信/信任",
+      "origin": "Latin"
+    }
+  ],
+  "debtor": [
+    {
+      "root": "debit",
+      "meaning_zh": "欠債",
+      "origin": "Latin"
+    }
+  ],
+  "disburse": [
+    {
+      "root": "burs",
+      "meaning_zh": "錢包",
+      "origin": "Latin"
+    }
+  ],
+  "solicit": [
+    {
+      "root": "cit",
+      "meaning_zh": "召喚/驅動",
+      "origin": "Latin"
+    }
+  ],
+  "procure": [
+    {
+      "root": "cur",
+      "meaning_zh": "照料/關心",
+      "origin": "Latin"
+    }
+  ],
+  "remuneration": [
+    {
+      "root": "muner",
+      "meaning_zh": "贈送/服務",
+      "origin": "Latin"
+    }
+  ],
+  "refinance": [
+    {
+      "root": "fin",
+      "meaning_zh": "界限/支付",
+      "origin": "Latin"
+    }
+  ],
+  "beneficiary": [
+    {
+      "root": "bene",
+      "meaning_zh": "好",
+      "origin": "Latin"
+    },
+    {
+      "root": "fic",
+      "meaning_zh": "做",
+      "origin": "Latin"
+    }
+  ],
+  "subcontract": [
+    {
+      "root": "tract",
+      "meaning_zh": "拉/拖",
+      "origin": "Latin"
+    }
+  ],
+  "retainer": [
+    {
+      "root": "tain",
+      "meaning_zh": "握住/保持",
+      "origin": "Latin"
+    }
+  ],
+  "adjudicate": [
+    {
+      "root": "judic",
+      "meaning_zh": "判斷/審判",
+      "origin": "Latin"
+    }
+  ],
+  "prototype": [
+    {
+      "root": "proto",
+      "meaning_zh": "第一/原始",
+      "origin": "Greek"
+    },
+    {
+      "root": "type",
+      "meaning_zh": "模型/印記",
+      "origin": "Greek"
+    }
+  ],
+  "conveyor": [
+    {
+      "root": "vey",
+      "meaning_zh": "道路/運送",
+      "origin": "Latin"
+    }
+  ],
+  "specification": [
+    {
+      "root": "spec",
+      "meaning_zh": "看/外觀",
+      "origin": "Latin"
+    }
+  ],
+  "streamline": [
+    {
+      "root": "line",
+      "meaning_zh": "線",
+      "origin": "Latin"
+    }
+  ],
+  "overhaul": [
+    {
+      "root": "haul",
+      "meaning_zh": "拉/拖",
+      "origin": "Old French"
+    }
+  ],
+  "tolerance": [
+    {
+      "root": "toler",
+      "meaning_zh": "忍受",
+      "origin": "Latin"
+    }
+  ]
 }
