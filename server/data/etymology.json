@@ -11490,7 +11490,18 @@
       "origin": "Latin"
     }
   ],
-  "trailhead": [],
+  "trailhead": [
+    {
+      "root": "trail",
+      "meaning_zh": "小徑",
+      "origin": "Old French"
+    },
+    {
+      "root": "head",
+      "meaning_zh": "起點",
+      "origin": "Old English"
+    }
+  ],
   "cavern": [
     {
       "root": "cavus",
@@ -11561,8 +11572,30 @@
       "origin": "Latin"
     }
   ],
-  "layaway": [],
-  "backordered": [],
+  "layaway": [
+    {
+      "root": "lay",
+      "meaning_zh": "放置",
+      "origin": "Old English"
+    },
+    {
+      "root": "away",
+      "meaning_zh": "儲存",
+      "origin": "Old English"
+    }
+  ],
+  "backordered": [
+    {
+      "root": "back",
+      "meaning_zh": "延後",
+      "origin": "Old English"
+    },
+    {
+      "root": "order",
+      "meaning_zh": "訂單",
+      "origin": "Latin"
+    }
+  ],
   "barter": [
     {
       "root": "barater",
@@ -11570,7 +11603,13 @@
       "origin": "Old French"
     }
   ],
-  "splurge": [],
+  "splurge": [
+    {
+      "root": "splurge",
+      "meaning_zh": "揮霍",
+      "origin": "Onomatopoeic"
+    }
+  ],
   "plateau": [
     {
       "root": "platus",
@@ -12887,7 +12926,13 @@
       "origin": "Portuguese/Malay"
     }
   ],
-  "steppe": [],
+  "steppe": [
+    {
+      "root": "steppe",
+      "meaning_zh": "乾草原",
+      "origin": "Russian"
+    }
+  ],
   "juvenile": [
     {
       "root": "juvenis",
@@ -14348,7 +14393,23 @@
       "origin": "Germanic"
     }
   ],
-  "nonetheless": [],
+  "nonetheless": [
+    {
+      "root": "none",
+      "meaning_zh": "無",
+      "origin": "Old English"
+    },
+    {
+      "root": "the",
+      "meaning_zh": "那",
+      "origin": "Old English"
+    },
+    {
+      "root": "less",
+      "meaning_zh": "較少",
+      "origin": "Old English"
+    }
+  ],
   "coincide": [
     {
       "root": "cadere",
@@ -14431,9 +14492,42 @@
       "origin": "Latin"
     }
   ],
-  "thereby": [],
-  "whereby": [],
-  "withhold": [],
+  "thereby": [
+    {
+      "root": "there",
+      "meaning_zh": "那裡",
+      "origin": "Old English"
+    },
+    {
+      "root": "by",
+      "meaning_zh": "經由",
+      "origin": "Old English"
+    }
+  ],
+  "whereby": [
+    {
+      "root": "where",
+      "meaning_zh": "何處",
+      "origin": "Old English"
+    },
+    {
+      "root": "by",
+      "meaning_zh": "經由",
+      "origin": "Old English"
+    }
+  ],
+  "withhold": [
+    {
+      "root": "with",
+      "meaning_zh": "對抗/回扣",
+      "origin": "Old English"
+    },
+    {
+      "root": "hold",
+      "meaning_zh": "保留",
+      "origin": "Old English"
+    }
+  ],
   "optimum": [
     {
       "root": "optim-",
@@ -14768,6 +14862,216 @@
       "root": "quag (bog) + mire (mud)",
       "meaning_zh": "沼澤、困境",
       "origin": "English/Old Norse"
+    }
+  ],
+  "segmentation": [
+    {
+      "root": "sect",
+      "meaning_zh": "分割",
+      "origin": "Latin"
+    }
+  ],
+  "positioning": [
+    {
+      "root": "pos",
+      "meaning_zh": "定位",
+      "origin": "Latin"
+    }
+  ],
+  "monetize": [
+    {
+      "root": "moneta",
+      "meaning_zh": "貨幣化",
+      "origin": "Latin"
+    }
+  ],
+  "rebrand": [
+    {
+      "root": "brand",
+      "meaning_zh": "重塑品牌",
+      "origin": "Germanic"
+    }
+  ],
+  "tagline": [
+    {
+      "root": "tag",
+      "meaning_zh": "口號",
+      "origin": "Germanic"
+    }
+  ],
+  "subdivision": [
+    {
+      "root": "divis",
+      "meaning_zh": "分部",
+      "origin": "Latin"
+    }
+  ],
+  "appreciation": [
+    {
+      "root": "preti",
+      "meaning_zh": "增值",
+      "origin": "Latin"
+    }
+  ],
+  "surveyor": [
+    {
+      "root": "vid",
+      "meaning_zh": "測量員",
+      "origin": "Latin"
+    }
+  ],
+  "insulate": [
+    {
+      "root": "insul",
+      "meaning_zh": "絕緣",
+      "origin": "Latin"
+    }
+  ],
+  "habitable": [
+    {
+      "root": "habit",
+      "meaning_zh": "適宜居住的",
+      "origin": "Latin"
+    }
+  ],
+  "detached": [
+    {
+      "root": "tach",
+      "meaning_zh": "獨立的",
+      "origin": "Old French"
+    }
+  ],
+  "foyer": [
+    {
+      "root": "foc",
+      "meaning_zh": "門廳",
+      "origin": "Latin"
+    }
+  ],
+  "outskirts": [
+    {
+      "root": "skirt",
+      "meaning_zh": "郊區",
+      "origin": "Old Norse"
+    }
+  ],
+  "kickback": [
+    {
+      "root": "kick",
+      "meaning_zh": "回扣",
+      "origin": "Middle English"
+    }
+  ],
+  "markup": [
+    {
+      "root": "mark",
+      "meaning_zh": "加價",
+      "origin": "Germanic"
+    }
+  ],
+  "carousel": [
+    {
+      "root": "carr",
+      "meaning_zh": "旋轉木馬",
+      "origin": "Latin"
+    }
+  ],
+  "monorail": [
+    {
+      "root": "mono",
+      "meaning_zh": "單軌鐵路",
+      "origin": "Greek"
+    }
+  ],
+  "rickshaw": [
+    {
+      "root": "sha",
+      "meaning_zh": "人力車",
+      "origin": "Japanese"
+    }
+  ],
+  "underpass": [
+    {
+      "root": "pass",
+      "meaning_zh": "地下通道",
+      "origin": "Latin"
+    }
+  ],
+  "gondola": [
+    {
+      "root": "gondola",
+      "meaning_zh": "貢多拉",
+      "origin": "Italian"
+    }
+  ],
+  "hovercraft": [
+    {
+      "root": "hover",
+      "meaning_zh": "氣墊船",
+      "origin": "Middle English"
+    }
+  ],
+  "boulevard": [
+    {
+      "root": "boulevard",
+      "meaning_zh": "林蔭大道",
+      "origin": "Dutch"
+    }
+  ],
+  "interchange": [
+    {
+      "root": "inter",
+      "meaning_zh": "交流道",
+      "origin": "Latin"
+    }
+  ],
+  "innkeeper": [
+    {
+      "root": "inn",
+      "meaning_zh": "旅館老闆",
+      "origin": "Germanic"
+    }
+  ],
+  "continental": [
+    {
+      "root": "ten",
+      "meaning_zh": "大陸的",
+      "origin": "Latin"
+    }
+  ],
+  "cathedral": [
+    {
+      "root": "hed",
+      "meaning_zh": "大教堂",
+      "origin": "Greek"
+    }
+  ],
+  "paragliding": [
+    {
+      "root": "para",
+      "meaning_zh": "滑翔傘運動",
+      "origin": "Latin"
+    }
+  ],
+  "observatory": [
+    {
+      "root": "serv",
+      "meaning_zh": "天文台",
+      "origin": "Latin"
+    }
+  ],
+  "planetarium": [
+    {
+      "root": "plan",
+      "meaning_zh": "天文館",
+      "origin": "Greek"
+    }
+  ],
+  "amphitheater": [
+    {
+      "root": "thea",
+      "meaning_zh": "露天劇場",
+      "origin": "Greek"
     }
   ]
 }
