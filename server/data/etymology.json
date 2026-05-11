@@ -3210,11 +3210,13 @@
   ],
   "path": "D:\\workspace-jason\\enStuido",
   "type": "English Learning Platform",
-  "stack": {
-    "frontend": "React (Vite)",
-    "backend": "Node.js (Express)",
-    "database": "SQLite (enstudy.db)"
-  },
+  "stack": [
+    {
+      "root": "stakkr",
+      "meaning_zh": "堆棧",
+      "origin": "Old Norse"
+    }
+  ],
   "features": [
     "Interactive Games (Match, Spelling, Word Chain)",
     "Graded Reading (Levels 1-9)",
@@ -8503,7 +8505,13 @@
       "origin": "Latin"
     }
   ],
-  "tip": [],
+  "tip": [
+    {
+      "root": "tippen",
+      "meaning_zh": "輕觸；末端",
+      "origin": "Germanic"
+    }
+  ],
   "resort": [
     {
       "root": "sort",
@@ -8511,8 +8519,20 @@
       "origin": "Latin"
     }
   ],
-  "spa": [],
-  "sauna": [],
+  "spa": [
+    {
+      "root": "espa",
+      "meaning_zh": "噴泉；溫泉",
+      "origin": "Walloon"
+    }
+  ],
+  "sauna": [
+    {
+      "root": "sauna",
+      "meaning_zh": "芬蘭浴",
+      "origin": "Finnish"
+    }
+  ],
   "laundry": [
     {
       "root": "lav",
@@ -8534,7 +8554,13 @@
       "origin": "Latin"
     }
   ],
-  "balcony": [],
+  "balcony": [
+    {
+      "root": "balcone",
+      "meaning_zh": "陽台；大樑",
+      "origin": "Italian"
+    }
+  ],
   "terrace": [
     {
       "root": "terr",
@@ -8542,8 +8568,20 @@
       "origin": "Latin"
     }
   ],
-  "inn": [],
-  "lodge": [],
+  "inn": [
+    {
+      "root": "inn",
+      "meaning_zh": "內部；小旅館",
+      "origin": "Germanic"
+    }
+  ],
+  "lodge": [
+    {
+      "root": "loge",
+      "meaning_zh": "小屋；涼亭",
+      "origin": "Old French"
+    }
+  ],
   "interoffice": [
     {
       "root": "inter",
@@ -8556,8 +8594,30 @@
       "origin": "Latin"
     }
   ],
-  "switchboard": [],
-  "whiteboard": [],
+  "switchboard": [
+    {
+      "root": "swicche",
+      "meaning_zh": "開關",
+      "origin": "Germanic"
+    },
+    {
+      "root": "bord",
+      "meaning_zh": "板",
+      "origin": "Germanic"
+    }
+  ],
+  "whiteboard": [
+    {
+      "root": "hwit",
+      "meaning_zh": "白色",
+      "origin": "Germanic"
+    },
+    {
+      "root": "bord",
+      "meaning_zh": "板",
+      "origin": "Germanic"
+    }
+  ],
   "toner": [
     {
       "root": "ton",
@@ -8626,8 +8686,25 @@
       "origin": "Latin"
     }
   ],
-  "workload": [],
-  "roster": [],
+  "workload": [
+    {
+      "root": "weorc",
+      "meaning_zh": "工作",
+      "origin": "Germanic"
+    },
+    {
+      "root": "lad",
+      "meaning_zh": "路徑；負擔",
+      "origin": "Germanic"
+    }
+  ],
+  "roster": [
+    {
+      "root": "rooster",
+      "meaning_zh": "名冊；格子",
+      "origin": "Dutch"
+    }
+  ],
   "podium": [
     {
       "root": "pod",
@@ -8635,8 +8712,20 @@
       "origin": "Greek"
     }
   ],
-  "swipe": [],
-  "badge": [],
+  "swipe": [
+    {
+      "root": "swapan",
+      "meaning_zh": "揮動；掃除",
+      "origin": "Germanic"
+    }
+  ],
+  "badge": [
+    {
+      "root": "bage",
+      "meaning_zh": "徽章",
+      "origin": "Middle English"
+    }
+  ],
   "inbox": [
     {
       "root": "box",
@@ -10220,8 +10309,30 @@
       "origin": "Greek"
     }
   ],
-  "breathtaking": [],
-  "getaway": [],
+  "breathtaking": [
+    {
+      "root": "breath",
+      "meaning_zh": "呼吸",
+      "origin": "Old English"
+    },
+    {
+      "root": "take",
+      "meaning_zh": "拿，取",
+      "origin": "Old Norse"
+    }
+  ],
+  "getaway": [
+    {
+      "root": "get",
+      "meaning_zh": "獲得",
+      "origin": "Old Norse"
+    },
+    {
+      "root": "away",
+      "meaning_zh": "離開",
+      "origin": "Old English"
+    }
+  ],
   "tourist": [
     {
       "root": "tornus",
@@ -10236,8 +10347,30 @@
       "origin": "Latin"
     }
   ],
-  "guidebook": [],
-  "overseas": [],
+  "guidebook": [
+    {
+      "root": "guide",
+      "meaning_zh": "引導",
+      "origin": "French"
+    },
+    {
+      "root": "book",
+      "meaning_zh": "書",
+      "origin": "Old English"
+    }
+  ],
+  "overseas": [
+    {
+      "root": "over",
+      "meaning_zh": "越過",
+      "origin": "Old English"
+    },
+    {
+      "root": "sea",
+      "meaning_zh": "海",
+      "origin": "Old English"
+    }
+  ],
   "domestic": [
     {
       "root": "domus",
@@ -10276,7 +10409,18 @@
       "origin": "Latin"
     }
   ],
-  "backpacking": [],
+  "backpacking": [
+    {
+      "root": "back",
+      "meaning_zh": "背部",
+      "origin": "Old English"
+    },
+    {
+      "root": "pack",
+      "meaning_zh": "包裹",
+      "origin": "Middle English"
+    }
+  ],
   "rebook": [
     {
       "root": "re",
@@ -10310,7 +10454,18 @@
       "origin": "Latin"
     }
   ],
-  "bellhop": [],
+  "bellhop": [
+    {
+      "root": "bell",
+      "meaning_zh": "鈴",
+      "origin": "Old English"
+    },
+    {
+      "root": "hop",
+      "meaning_zh": "跳躍",
+      "origin": "Old English"
+    }
+  ],
   "receptionist": [
     {
       "root": "capere",
@@ -10719,6 +10874,559 @@
       "root": "sellan",
       "meaning_zh": "交付/出售",
       "origin": "Old English"
+    }
+  ],
+  "footer": [
+    {
+      "root": "fot",
+      "meaning_zh": "腳；底部",
+      "origin": "Germanic"
+    }
+  ],
+  "hyperlink": [
+    {
+      "root": "hyper",
+      "meaning_zh": "超越；過度",
+      "origin": "Greek"
+    },
+    {
+      "root": "link",
+      "meaning_zh": "連結",
+      "origin": "Scandinavian"
+    }
+  ],
+  "redirect": [
+    {
+      "root": "re-",
+      "meaning_zh": "回；再",
+      "origin": "Latin"
+    },
+    {
+      "root": "dirigere",
+      "meaning_zh": "引導；指導",
+      "origin": "Latin"
+    }
+  ],
+  "spellcheck": [
+    {
+      "root": "spell",
+      "meaning_zh": "故事；拼寫",
+      "origin": "Germanic"
+    },
+    {
+      "root": "eschequier",
+      "meaning_zh": "檢查",
+      "origin": "Old French"
+    }
+  ],
+  "embed": [
+    {
+      "root": "in-",
+      "meaning_zh": "入；在內",
+      "origin": "Latin"
+    },
+    {
+      "root": "bedd",
+      "meaning_zh": "床；基座",
+      "origin": "Germanic"
+    }
+  ],
+  "digitize": [
+    {
+      "root": "digitus",
+      "meaning_zh": "手指",
+      "origin": "Latin"
+    }
+  ],
+  "automate": [
+    {
+      "root": "autos",
+      "meaning_zh": "自己",
+      "origin": "Greek"
+    },
+    {
+      "root": "matos",
+      "meaning_zh": "動作",
+      "origin": "Greek"
+    }
+  ],
+  "alert": [
+    {
+      "root": "all'erta",
+      "meaning_zh": "在瞭望台上",
+      "origin": "Italian"
+    }
+  ],
+  "sync": [
+    {
+      "root": "syn",
+      "meaning_zh": "共同",
+      "origin": "Greek"
+    },
+    {
+      "root": "khronos",
+      "meaning_zh": "時間",
+      "origin": "Greek"
+    }
+  ],
+  "portal": [
+    {
+      "root": "porta",
+      "meaning_zh": "門",
+      "origin": "Latin"
+    }
+  ],
+  "dashboard": [
+    {
+      "root": "dasken",
+      "meaning_zh": "衝撞；猛打",
+      "origin": "Germanic"
+    },
+    {
+      "root": "bord",
+      "meaning_zh": "板",
+      "origin": "Germanic"
+    }
+  ],
+  "login": [
+    {
+      "root": "logge",
+      "meaning_zh": "航海日誌；紀錄",
+      "origin": "Germanic"
+    },
+    {
+      "root": "in",
+      "meaning_zh": "進",
+      "origin": "Germanic"
+    }
+  ],
+  "logout": [
+    {
+      "root": "logge",
+      "meaning_zh": "紀錄",
+      "origin": "Germanic"
+    },
+    {
+      "root": "ut",
+      "meaning_zh": "出",
+      "origin": "Germanic"
+    }
+  ],
+  "username": [
+    {
+      "root": "uti",
+      "meaning_zh": "使用",
+      "origin": "Latin"
+    },
+    {
+      "root": "nama",
+      "meaning_zh": "名字",
+      "origin": "Germanic"
+    }
+  ],
+  "passcode": [
+    {
+      "root": "passus",
+      "meaning_zh": "步；通過",
+      "origin": "Latin"
+    },
+    {
+      "root": "codex",
+      "meaning_zh": "法規；代碼",
+      "origin": "Latin"
+    }
+  ],
+  "bookmark": [
+    {
+      "root": "boc",
+      "meaning_zh": "書",
+      "origin": "Germanic"
+    },
+    {
+      "root": "mearc",
+      "meaning_zh": "標記",
+      "origin": "Germanic"
+    }
+  ],
+  "toolbar": [
+    {
+      "root": "tol",
+      "meaning_zh": "工具",
+      "origin": "Germanic"
+    },
+    {
+      "root": "barre",
+      "meaning_zh": "條；欄",
+      "origin": "Old French"
+    }
+  ],
+  "dropdown": [
+    {
+      "root": "dropa",
+      "meaning_zh": "滴",
+      "origin": "Germanic"
+    },
+    {
+      "root": "dun",
+      "meaning_zh": "向下",
+      "origin": "Germanic"
+    }
+  ],
+  "popup": [
+    {
+      "root": "pop",
+      "meaning_zh": "發出爆裂聲",
+      "origin": "Imitative"
+    },
+    {
+      "root": "up",
+      "meaning_zh": "向上",
+      "origin": "Old English"
+    }
+  ],
+  "ping": [
+    {
+      "root": "ping",
+      "meaning_zh": "發出尖銳聲音",
+      "origin": "Imitative"
+    }
+  ],
+  "intranet": [
+    {
+      "root": "intra",
+      "meaning_zh": "在內",
+      "origin": "Latin"
+    },
+    {
+      "root": "net",
+      "meaning_zh": "網",
+      "origin": "Old English"
+    }
+  ],
+  "connectivity": [
+    {
+      "root": "nect",
+      "meaning_zh": "繫，綁",
+      "origin": "Latin"
+    }
+  ],
+  "hotspot": [
+    {
+      "root": "hot",
+      "meaning_zh": "熱的",
+      "origin": "Old English"
+    },
+    {
+      "root": "spot",
+      "meaning_zh": "地點",
+      "origin": "Middle English"
+    }
+  ],
+  "offline": [
+    {
+      "root": "off",
+      "meaning_zh": "脫離",
+      "origin": "Old English"
+    },
+    {
+      "root": "line",
+      "meaning_zh": "線",
+      "origin": "Latin"
+    }
+  ],
+  "chatbot": [
+    {
+      "root": "chat",
+      "meaning_zh": "閒談",
+      "origin": "Middle English"
+    },
+    {
+      "root": "bot",
+      "meaning_zh": "強迫勞動(機器人)",
+      "origin": "Czech"
+    }
+  ],
+  "forwarding": [
+    {
+      "root": "fore",
+      "meaning_zh": "在前",
+      "origin": "Old English"
+    },
+    {
+      "root": "ward",
+      "meaning_zh": "向...方向",
+      "origin": "Old English"
+    }
+  ],
+  "prioritize": [
+    {
+      "root": "prior",
+      "meaning_zh": "較早的，優先的",
+      "origin": "Latin"
+    }
+  ],
+  "submit": [
+    {
+      "root": "sub",
+      "meaning_zh": "在下",
+      "origin": "Latin"
+    },
+    {
+      "root": "mit",
+      "meaning_zh": "傳送，派遣",
+      "origin": "Latin"
+    }
+  ],
+  "approve": [
+    {
+      "root": "ad",
+      "meaning_zh": "去，向",
+      "origin": "Latin"
+    },
+    {
+      "root": "prob",
+      "meaning_zh": "測試，證明",
+      "origin": "Latin"
+    }
+  ],
+  "assign": [
+    {
+      "root": "ad",
+      "meaning_zh": "去，向",
+      "origin": "Latin"
+    },
+    {
+      "root": "sign",
+      "meaning_zh": "記號，標記",
+      "origin": "Latin"
+    }
+  ],
+  "pier": [
+    {
+      "root": "petra",
+      "meaning_zh": "石頭",
+      "origin": "Latin"
+    }
+  ],
+  "stopover": [
+    {
+      "root": "stop",
+      "meaning_zh": "塞住，停止",
+      "origin": "Old English"
+    },
+    {
+      "root": "over",
+      "meaning_zh": "越過",
+      "origin": "Old English"
+    }
+  ],
+  "declaration": [
+    {
+      "root": "de",
+      "meaning_zh": "加強語義",
+      "origin": "Latin"
+    },
+    {
+      "root": "clar",
+      "meaning_zh": "清楚的",
+      "origin": "Latin"
+    }
+  ],
+  "limousine": [
+    {
+      "root": "Limousin",
+      "meaning_zh": "利穆贊(地名)",
+      "origin": "French"
+    }
+  ],
+  "porter": [
+    {
+      "root": "port",
+      "meaning_zh": "搬運",
+      "origin": "Latin"
+    }
+  ],
+  "jacuzzi": [
+    {
+      "root": "Jacuzzi",
+      "meaning_zh": "賈庫齊(姓氏)",
+      "origin": "Italian"
+    }
+  ],
+  "waterfront": [
+    {
+      "root": "water",
+      "meaning_zh": "水",
+      "origin": "Old English"
+    },
+    {
+      "root": "front",
+      "meaning_zh": "前面，前額",
+      "origin": "Latin"
+    }
+  ],
+  "kiosk": [
+    {
+      "root": "kosk",
+      "meaning_zh": "亭子",
+      "origin": "Turkish"
+    }
+  ],
+  "queue": [
+    {
+      "root": "cauda",
+      "meaning_zh": "尾巴",
+      "origin": "Latin"
+    }
+  ],
+  "standby": [
+    {
+      "root": "stand",
+      "meaning_zh": "站立",
+      "origin": "Old English"
+    },
+    {
+      "root": "by",
+      "meaning_zh": "在旁邊",
+      "origin": "Old English"
+    }
+  ],
+  "patio": [
+    {
+      "root": "patio",
+      "meaning_zh": "院子",
+      "origin": "Spanish"
+    }
+  ],
+  "seafood": [
+    {
+      "root": "sea",
+      "meaning_zh": "海",
+      "origin": "Old English"
+    },
+    {
+      "root": "food",
+      "meaning_zh": "食物",
+      "origin": "Old English"
+    }
+  ],
+  "brunch": [
+    {
+      "root": "breakfast + lunch",
+      "meaning_zh": "早午餐",
+      "origin": "English"
+    }
+  ],
+  "busboy": [
+    {
+      "root": "omnibus",
+      "meaning_zh": "餐具收拾工",
+      "origin": "Latin"
+    }
+  ],
+  "hostess": [
+    {
+      "root": "hospes",
+      "meaning_zh": "女主人/女服務員",
+      "origin": "Latin"
+    }
+  ],
+  "dispatcher": [
+    {
+      "root": "despecher",
+      "meaning_zh": "調度員",
+      "origin": "Old French"
+    }
+  ],
+  "postcard": [
+    {
+      "root": "ponere + charta",
+      "meaning_zh": "明信片",
+      "origin": "Latin"
+    }
+  ],
+  "ample": [
+    {
+      "root": "amplus",
+      "meaning_zh": "充足的",
+      "origin": "Latin"
+    }
+  ],
+  "renowned": [
+    {
+      "root": "re + nominare",
+      "meaning_zh": "著名的",
+      "origin": "Latin"
+    }
+  ],
+  "gateway": [
+    {
+      "root": "geat + weg",
+      "meaning_zh": "網關/門戶",
+      "origin": "Old English"
+    }
+  ],
+  "node": [
+    {
+      "root": "nodus",
+      "meaning_zh": "節點",
+      "origin": "Latin"
+    }
+  ],
+  "query": [
+    {
+      "root": "quaerere",
+      "meaning_zh": "查詢",
+      "origin": "Latin"
+    }
+  ],
+  "uptime": [
+    {
+      "root": "up + time",
+      "meaning_zh": "運行時間",
+      "origin": "English"
+    }
+  ],
+  "token": [
+    {
+      "root": "tacen",
+      "meaning_zh": "代幣/權杖",
+      "origin": "Old English"
+    }
+  ],
+  "sandbox": [
+    {
+      "root": "sand + box",
+      "meaning_zh": "沙箱",
+      "origin": "English"
+    }
+  ],
+  "render": [
+    {
+      "root": "reddere",
+      "meaning_zh": "渲染/提供",
+      "origin": "Latin"
+    }
+  ],
+  "snippet": [
+    {
+      "root": "snippen",
+      "meaning_zh": "片段/代碼段",
+      "origin": "Dutch"
+    }
+  ],
+  "captcha": [
+    {
+      "root": "Acronym (Turing test)",
+      "meaning_zh": "驗證碼",
+      "origin": "English"
+    }
+  ],
+  "pollutant": [
+    {
+      "root": "polluere",
+      "meaning_zh": "污染物",
+      "origin": "Latin"
     }
   ]
 }
