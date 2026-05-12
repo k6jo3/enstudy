@@ -17,11 +17,14 @@ async function getAllRoots() {
   const rootsJsonMap = {};
   for (const r of withRoots) rootsJsonMap[r.id] = parseRoots(r.roots_json);
 
+  const USEFUL_ORIGINS = /latin|greek|french|roman/i;
+
   const rootMap = new Map();
   for (const w of words) {
     const roots = rootsJsonMap[w.id] || [];
     for (const r of roots) {
       if (!r.root) continue;
+      if (!r.origin || !USEFUL_ORIGINS.test(r.origin)) continue;
       if (!rootMap.has(r.root)) {
         rootMap.set(r.root, { root: r.root, meaning_zh: r.meaning_zh, origin: r.origin, words: [] });
       }
