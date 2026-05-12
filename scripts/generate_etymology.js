@@ -22,7 +22,7 @@ function getArg(name, def) {
 }
 const START = getArg('--start', 0);
 const END   = getArg('--end',   2000);
-const BATCH = getArg('--batch', 80);
+const BATCH = getArg('--batch', 30);
 
 // Load existing data (resumable)
 let results = {};
@@ -31,7 +31,12 @@ if (fs.existsSync(ETYMOLOGY_FILE)) {
   console.log(`Loaded ${Object.keys(results).length} existing entries.`);
 }
 
-const alreadyDone = new Set(Object.keys(results).map(w => w.toLowerCase()));
+// Only skip words that already have actual roots ([] entries may be wrong from agent-mode runs)
+const alreadyDone = new Set(
+  Object.entries(results)
+    .filter(([_, v]) => v.length > 0)
+    .map(([k]) => k.toLowerCase())
+);
 
 const toProcess = words
   .slice(START, END)
@@ -41,15 +46,7 @@ const toProcess = words
 console.log(`Words to process: ${toProcess.length} (index ${START}-${END})`);
 if (toProcess.length === 0) { console.log('All done!'); process.exit(0); }
 
-const SYSTEM_PROMPT = `Return ONLY a valid raw JSON object. No explanation, no markdown fences, no other text.
-
-Output format: {"word":[{"root":"root_text","meaning_zh":"Traditional Chinese 2-5 chars for root meaning","origin":"Latin"}],...}
-- meaning_zh field: Traditional Chinese characters describing what the root means
-- Return [] for words with no useful etymological roots: numbers, pronouns, articles, basic verbs (go/be/have/get/put)
-- Max 2 roots per word
-- Valid origins: Latin, Greek, Old English, French
-
-Words to process: `;
+const SYSTEM_PROMPT = `Return ONLY raw JSON: {"word":[{"root":"port","meaning_zh":"攜帶","origin":"Latin"}],...}. Latin/Greek morphemes only that recur across many words (port=carry,dict=say,bio=life,vis=see,aud=hear,scrib=write,gen=birth,rupt=break,mit=send,cap=take,duc=lead,fac=make). NOT suffixes(-tion/-age/-ment/-ness/-ize/-ous). NOT compounds(a+b form). Traditional Chinese for meaning_zh. Return [] if no useful root. Words: `;
 
 let batchNum = 0;
 const totalBatches = Math.ceil(toProcess.length / BATCH);
@@ -62,11 +59,10 @@ for (let i = 0; i < toProcess.length; i += BATCH) {
   process.stdout.write(`Batch ${batchNum}/${totalBatches} [${batch[0]}..${batch[batch.length-1]}]... `);
 
   try {
-    const result = spawnSync('cmd', ['/c', 'gemini.cmd', '--skip-trust', '-p', prompt], {
+    const result = spawnSync('cmd', ['/c', 'gemini.cmd', '-o', 'text', '-p', prompt], {
       encoding: 'utf8',
       timeout: 120000,
       maxBuffer: 10 * 1024 * 1024,
-      cwd: require('os').tmpdir(), // avoid Gemini picking up project CLAUDE.md
     });
 
     if (result.error) throw result.error;
