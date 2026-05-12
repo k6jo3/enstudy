@@ -37927,5 +37927,360 @@
       "meaning_zh": "冗餘",
       "origin": "Latin"
     }
+  ],
+  "showdown": [
+    {
+      "root": "show",
+      "meaning_zh": "展示",
+      "origin": "English"
+    },
+    {
+      "root": "down",
+      "meaning_zh": "向下",
+      "origin": "English"
+    }
+  ],
+  "standpoint": [
+    {
+      "root": "stand",
+      "meaning_zh": "站立",
+      "origin": "English"
+    },
+    {
+      "root": "point",
+      "meaning_zh": "點",
+      "origin": "English"
+    }
+  ],
+  "stepchild": [
+    {
+      "root": "stēop-",
+      "meaning_zh": "孤兒的",
+      "origin": "Old English"
+    },
+    {
+      "root": "child",
+      "meaning_zh": "孩子",
+      "origin": "English"
+    }
+  ],
+  "turnout": [
+    {
+      "root": "turn",
+      "meaning_zh": "轉動",
+      "origin": "English"
+    },
+    {
+      "root": "out",
+      "meaning_zh": "向外",
+      "origin": "English"
+    }
+  ],
+  "undertake": [
+    {
+      "root": "under",
+      "meaning_zh": "在下面",
+      "origin": "English"
+    },
+    {
+      "root": "take",
+      "meaning_zh": "拿取",
+      "origin": "English"
+    }
+  ],
+  "upbringing": [
+    {
+      "root": "up",
+      "meaning_zh": "向上",
+      "origin": "English"
+    },
+    {
+      "root": "bring",
+      "meaning_zh": "帶來",
+      "origin": "English"
+    }
+  ],
+  "uproar": [
+    {
+      "root": "op",
+      "meaning_zh": "向上",
+      "origin": "Dutch"
+    },
+    {
+      "root": "roer",
+      "meaning_zh": "攪動",
+      "origin": "Dutch"
+    }
+  ],
+  "milestone": [
+    {
+      "root": "mille",
+      "meaning_zh": "千",
+      "origin": "Latin"
+    },
+    {
+      "root": "stone",
+      "meaning_zh": "石頭",
+      "origin": "English"
+    }
+  ],
+  "wellbeing": [
+    {
+      "root": "well",
+      "meaning_zh": "好",
+      "origin": "English"
+    },
+    {
+      "root": "being",
+      "meaning_zh": "存在",
+      "origin": "English"
+    }
+  ],
+  "sideline": [
+    {
+      "root": "side",
+      "meaning_zh": "旁邊",
+      "origin": "English"
+    },
+    {
+      "root": "line",
+      "meaning_zh": "線",
+      "origin": "English"
+    }
+  ],
+  "frontline": [
+    {
+      "root": "front",
+      "meaning_zh": "前面",
+      "origin": "English"
+    },
+    {
+      "root": "line",
+      "meaning_zh": "線",
+      "origin": "English"
+    }
+  ],
+  "headcount": [
+    {
+      "root": "head",
+      "meaning_zh": "頭",
+      "origin": "English"
+    },
+    {
+      "root": "count",
+      "meaning_zh": "計數",
+      "origin": "English"
+    }
+  ],
+  "groundwork": [
+    {
+      "root": "ground",
+      "meaning_zh": "地面",
+      "origin": "English"
+    },
+    {
+      "root": "work",
+      "meaning_zh": "工作",
+      "origin": "English"
+    }
+  ],
+  "outweigh": [
+    {
+      "root": "out",
+      "meaning_zh": "超過",
+      "origin": "English"
+    },
+    {
+      "root": "weigh",
+      "meaning_zh": "稱重",
+      "origin": "English"
+    }
+  ],
+  "widespread": [
+    {
+      "root": "wide",
+      "meaning_zh": "寬廣",
+      "origin": "English"
+    },
+    {
+      "root": "spread",
+      "meaning_zh": "傳播",
+      "origin": "English"
+    }
+  ],
+  "outlook": [
+    {
+      "root": "out",
+      "meaning_zh": "向外",
+      "origin": "English"
+    },
+    {
+      "root": "look",
+      "meaning_zh": "看",
+      "origin": "English"
+    }
+  ],
+  "upside": [
+    {
+      "root": "up",
+      "meaning_zh": "向上",
+      "origin": "English"
+    },
+    {
+      "root": "side",
+      "meaning_zh": "側面",
+      "origin": "English"
+    }
+  ],
+  "ongoing": [
+    {
+      "root": "on",
+      "meaning_zh": "在...上",
+      "origin": "English"
+    },
+    {
+      "root": "go",
+      "meaning_zh": "走",
+      "origin": "English"
+    }
+  ],
+  "worthwhile": [
+    {
+      "root": "worth",
+      "meaning_zh": "價值",
+      "origin": "English"
+    },
+    {
+      "root": "while",
+      "meaning_zh": "時間",
+      "origin": "English"
+    }
+  ],
+  "furthermore": [
+    {
+      "root": "further",
+      "meaning_zh": "更遠",
+      "origin": "English"
+    },
+    {
+      "root": "more",
+      "meaning_zh": "更多",
+      "origin": "English"
+    }
+  ],
+  "straightforward": [
+    {
+      "root": "straight",
+      "meaning_zh": "筆直",
+      "origin": "English"
+    },
+    {
+      "root": "forward",
+      "meaning_zh": "向前",
+      "origin": "English"
+    }
+  ],
+  "undergo": [
+    {
+      "root": "under",
+      "meaning_zh": "在下面",
+      "origin": "English"
+    },
+    {
+      "root": "go",
+      "meaning_zh": "走",
+      "origin": "English"
+    }
+  ],
+  "thorough": [
+    {
+      "root": "thurh",
+      "meaning_zh": "穿過",
+      "origin": "Old English"
+    }
+  ],
+  "accordingly": [
+    {
+      "root": "ad",
+      "meaning_zh": "向",
+      "origin": "Latin"
+    },
+    {
+      "root": "cor",
+      "meaning_zh": "心",
+      "origin": "Latin"
+    }
+  ],
+  "anticipate": [
+    {
+      "root": "ante",
+      "meaning_zh": "在之前",
+      "origin": "Latin"
+    },
+    {
+      "root": "cap",
+      "meaning_zh": "拿取",
+      "origin": "Latin"
+    }
+  ],
+  "appeal": [
+    {
+      "root": "ad",
+      "meaning_zh": "向",
+      "origin": "Latin"
+    },
+    {
+      "root": "pell",
+      "meaning_zh": "驅動",
+      "origin": "Latin"
+    }
+  ],
+  "applicable": [
+    {
+      "root": "ad",
+      "meaning_zh": "向",
+      "origin": "Latin"
+    },
+    {
+      "root": "plic",
+      "meaning_zh": "摺疊",
+      "origin": "Latin"
+    }
+  ],
+  "approximate": [
+    {
+      "root": "ad",
+      "meaning_zh": "向",
+      "origin": "Latin"
+    },
+    {
+      "root": "proxim",
+      "meaning_zh": "最接近的",
+      "origin": "Latin"
+    }
+  ],
+  "aspire": [
+    {
+      "root": "ad",
+      "meaning_zh": "向",
+      "origin": "Latin"
+    },
+    {
+      "root": "spir",
+      "meaning_zh": "呼吸",
+      "origin": "Latin"
+    }
+  ],
+  "attribute": [
+    {
+      "root": "ad",
+      "meaning_zh": "向",
+      "origin": "Latin"
+    },
+    {
+      "root": "tribut",
+      "meaning_zh": "給予",
+      "origin": "Latin"
+    }
   ]
 }
