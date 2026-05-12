@@ -21,6 +21,7 @@ async function getAllRoots() {
   for (const w of words) {
     const roots = rootsJsonMap[w.id] || [];
     for (const r of roots) {
+      if (!r.root) continue;
       if (!rootMap.has(r.root)) {
         rootMap.set(r.root, { root: r.root, meaning_zh: r.meaning_zh, origin: r.origin, words: [] });
       }
