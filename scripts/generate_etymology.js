@@ -68,7 +68,8 @@ for (let i = 0; i < toProcess.length; i += BATCH) {
     if (result.error) throw result.error;
     if (result.status !== 0) throw new Error((result.stderr || 'gemini failed').slice(0, 200));
 
-    const output = result.stdout.trim();
+    // Strip Gemini CLI warning lines before parsing
+    const output = result.stdout.replace(/^Warning:.*\n?/gm, '').trim();
 
     // Find JSON object in output (strip any preamble/postamble)
     const jsonMatch = output.match(/\{[\s\S]*\}/);
