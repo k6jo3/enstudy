@@ -13033,5 +13033,1747 @@
       "meaning_zh": "新的",
       "origin": "Latin"
     }
+  ],
+  "prorate": [
+    {
+      "root": "rat",
+      "meaning_zh": "比例、估算",
+      "origin": "Latin"
+    }
+  ],
+  "sequester": [
+    {
+      "root": "sequ",
+      "meaning_zh": "跟隨",
+      "origin": "Latin"
+    }
+  ],
+  "duress": [
+    {
+      "root": "dur",
+      "meaning_zh": "堅硬、持久",
+      "origin": "Latin"
+    }
+  ],
+  "fungible": [
+    {
+      "root": "fung",
+      "meaning_zh": "履行、執行",
+      "origin": "Latin"
+    }
+  ],
+  "emolument": [
+    {
+      "root": "mol",
+      "meaning_zh": "磨、碾",
+      "origin": "Latin"
+    }
+  ],
+  "pecuniary": [
+    {
+      "root": "pecu",
+      "meaning_zh": "牲畜、財產",
+      "origin": "Latin"
+    }
+  ],
+  "surtax": [
+    {
+      "root": "tax",
+      "meaning_zh": "估價、稅",
+      "origin": "Latin"
+    }
+  ],
+  "exchequer": [],
+  "usury": [
+    {
+      "root": "us",
+      "meaning_zh": "使用",
+      "origin": "Latin"
+    }
+  ],
+  "bullion": [
+    {
+      "root": "bull",
+      "meaning_zh": "沸騰、冒泡",
+      "origin": "Latin"
+    }
+  ],
+  "securitize": [
+    {
+      "root": "cur",
+      "meaning_zh": "照料、關心",
+      "origin": "Latin"
+    }
+  ],
+  "gilt": [],
+  "callable": [],
+  "flotation": [],
+  "arbitrageur": [
+    {
+      "root": "arbitr",
+      "meaning_zh": "裁決、判斷",
+      "origin": "Latin"
+    }
+  ],
+  "severability": [
+    {
+      "root": "par",
+      "meaning_zh": "準備、安排",
+      "origin": "Latin"
+    }
+  ],
+  "assignee": [
+    {
+      "root": "sign",
+      "meaning_zh": "記號、標誌",
+      "origin": "Latin"
+    }
+  ],
+  "privity": [
+    {
+      "root": "priv",
+      "meaning_zh": "私人的、單個的",
+      "origin": "Latin"
+    }
+  ],
+  "unconscionable": [
+    {
+      "root": "sci",
+      "meaning_zh": "知道、了解",
+      "origin": "Latin"
+    }
+  ],
+  "voidable": [
+    {
+      "root": "vac",
+      "meaning_zh": "空的",
+      "origin": "Latin"
+    }
+  ],
+  "perpetuity": [
+    {
+      "root": "pet",
+      "meaning_zh": "追求、尋求",
+      "origin": "Latin"
+    }
+  ],
+  "grantor": [],
+  "grantee": [],
+  "cessation": [
+    {
+      "root": "ced",
+      "meaning_zh": "行走、讓步",
+      "origin": "Latin"
+    }
+  ],
+  "encumber": [],
+  "hereinafter": [],
+  "estoppel": [],
+  "arbitral": [
+    {
+      "root": "arbitr",
+      "meaning_zh": "裁決、判斷",
+      "origin": "Latin"
+    }
+  ],
+  "litigant": [
+    {
+      "root": "ag",
+      "meaning_zh": "做、驅動",
+      "origin": "Latin"
+    }
+  ],
+  "declaratory": [
+    {
+      "root": "clar",
+      "meaning_zh": "清楚、明亮",
+      "origin": "Latin"
+    }
+  ],
+  "codicil": [
+    {
+      "root": "cod",
+      "meaning_zh": "書寫",
+      "origin": "Latin"
+    }
+  ],
+  "docket": [],
+  "writ": [],
+  "interlocutory": [
+    {
+      "root": "loqu",
+      "meaning_zh": "說話",
+      "origin": "Latin"
+    }
+  ],
+  "proviso": [
+    {
+      "root": "vis",
+      "meaning_zh": "看",
+      "origin": "Latin"
+    }
+  ],
+  "collusion": [
+    {
+      "root": "lus",
+      "meaning_zh": "玩耍",
+      "origin": "Latin"
+    }
+  ],
+  "cartel": [
+    {
+      "root": "cart",
+      "meaning_zh": "紙",
+      "origin": "Latin"
+    }
+  ],
+  "oligopoly": [
+    {
+      "root": "oligo",
+      "meaning_zh": "少",
+      "origin": "Greek"
+    },
+    {
+      "root": "poly",
+      "meaning_zh": "賣",
+      "origin": "Greek"
+    }
+  ],
+  "prudential": [
+    {
+      "root": "vis",
+      "meaning_zh": "看",
+      "origin": "Latin"
+    }
+  ],
+  "contravene": [
+    {
+      "root": "ven",
+      "meaning_zh": "來",
+      "origin": "Latin"
+    }
+  ],
+  "censure": [
+    {
+      "root": "cens",
+      "meaning_zh": "判斷",
+      "origin": "Latin"
+    }
+  ],
+  "exculpatory": [
+    {
+      "root": "culp",
+      "meaning_zh": "過錯",
+      "origin": "Latin"
+    }
+  ],
+  "incriminate": [
+    {
+      "root": "crim",
+      "meaning_zh": "罪行",
+      "origin": "Latin"
+    }
+  ],
+  "complicit": [
+    {
+      "root": "plic",
+      "meaning_zh": "摺疊",
+      "origin": "Latin"
+    }
+  ],
+  "abrogation": [
+    {
+      "root": "rog",
+      "meaning_zh": "要求",
+      "origin": "Latin"
+    }
+  ],
+  "ombudsman": [],
+  "proscribe": [
+    {
+      "root": "scrib",
+      "meaning_zh": "書寫",
+      "origin": "Latin"
+    }
+  ],
+  "impunity": [
+    {
+      "root": "pun",
+      "meaning_zh": "懲罰",
+      "origin": "Latin"
+    }
+  ],
+  "abscond": [
+    {
+      "root": "cond",
+      "meaning_zh": "放置",
+      "origin": "Latin"
+    }
+  ],
+  "misfeasance": [
+    {
+      "root": "fac",
+      "meaning_zh": "做",
+      "origin": "Latin"
+    }
+  ],
+  "complicity": [
+    {
+      "root": "plic",
+      "meaning_zh": "摺疊",
+      "origin": "Latin"
+    }
+  ],
+  "exigent": [
+    {
+      "root": "ag",
+      "meaning_zh": "驅動",
+      "origin": "Latin"
+    }
+  ],
+  "abstention": [
+    {
+      "root": "ten",
+      "meaning_zh": "握持",
+      "origin": "Latin"
+    }
+  ],
+  "quash": [
+    {
+      "root": "quas",
+      "meaning_zh": "震動",
+      "origin": "Latin"
+    }
+  ],
+  "derogate": [
+    {
+      "root": "rog",
+      "meaning_zh": "要求",
+      "origin": "Latin"
+    }
+  ],
+  "extenuating": [
+    {
+      "root": "tenu",
+      "meaning_zh": "薄",
+      "origin": "Latin"
+    }
+  ],
+  "commensurate": [
+    {
+      "root": "mens",
+      "meaning_zh": "測量",
+      "origin": "Latin"
+    }
+  ],
+  "coercive": [
+    {
+      "root": "arc",
+      "meaning_zh": "束縛",
+      "origin": "Latin"
+    }
+  ],
+  "redaction": [
+    {
+      "root": "act",
+      "meaning_zh": "做",
+      "origin": "Latin"
+    }
+  ],
+  "probity": [
+    {
+      "root": "prob",
+      "meaning_zh": "正直",
+      "origin": "Latin"
+    }
+  ],
+  "indictable": [
+    {
+      "root": "dict",
+      "meaning_zh": "說",
+      "origin": "Latin"
+    }
+  ],
+  "prosecutorial": [
+    {
+      "root": "secut",
+      "meaning_zh": "跟隨",
+      "origin": "Latin"
+    }
+  ],
+  "extrajudicial": [
+    {
+      "root": "judic",
+      "meaning_zh": "審判",
+      "origin": "Latin"
+    }
+  ],
+  "circumscribe": [
+    {
+      "root": "scrib",
+      "meaning_zh": "寫",
+      "origin": "Latin"
+    }
+  ],
+  "interdict": [
+    {
+      "root": "dict",
+      "meaning_zh": "說",
+      "origin": "Latin"
+    }
+  ],
+  "remand": [
+    {
+      "root": "mand",
+      "meaning_zh": "命令",
+      "origin": "Latin"
+    }
+  ],
+  "abet": [],
+  "recidivism": [
+    {
+      "root": "cid",
+      "meaning_zh": "落下",
+      "origin": "Latin"
+    }
+  ],
+  "abdicate": [
+    {
+      "root": "dic",
+      "meaning_zh": "說",
+      "origin": "Latin"
+    }
+  ],
+  "adjure": [
+    {
+      "root": "jur",
+      "meaning_zh": "發誓",
+      "origin": "Latin"
+    }
+  ],
+  "expunge": [
+    {
+      "root": "pung",
+      "meaning_zh": "刺",
+      "origin": "Latin"
+    }
+  ],
+  "impropriety": [
+    {
+      "root": "propr",
+      "meaning_zh": "自己的",
+      "origin": "Latin"
+    }
+  ],
+  "debar": [],
+  "abeyance": [],
+  "absolution": [
+    {
+      "root": "solut",
+      "meaning_zh": "解開",
+      "origin": "Latin"
+    }
+  ],
+  "extort": [
+    {
+      "root": "tort",
+      "meaning_zh": "扭曲",
+      "origin": "Latin"
+    }
+  ],
+  "recusal": [
+    {
+      "root": "cus",
+      "meaning_zh": "原因",
+      "origin": "Latin"
+    }
+  ],
+  "adjudge": [
+    {
+      "root": "jud",
+      "meaning_zh": "審判",
+      "origin": "Latin"
+    }
+  ],
+  "juristic": [
+    {
+      "root": "jur",
+      "meaning_zh": "法律",
+      "origin": "Latin"
+    }
+  ],
+  "isotope": [
+    {
+      "root": "topo",
+      "meaning_zh": "地方",
+      "origin": "Greek"
+    }
+  ],
+  "telemetry": [
+    {
+      "root": "tele",
+      "meaning_zh": "遠",
+      "origin": "Greek"
+    },
+    {
+      "root": "metr",
+      "meaning_zh": "測量",
+      "origin": "Greek"
+    }
+  ],
+  "aquifer": [
+    {
+      "root": "aqua",
+      "meaning_zh": "水",
+      "origin": "Latin"
+    },
+    {
+      "root": "fer",
+      "meaning_zh": "攜帶",
+      "origin": "Latin"
+    }
+  ],
+  "permafrost": [],
+  "photovoltaic": [
+    {
+      "root": "photo",
+      "meaning_zh": "光",
+      "origin": "Greek"
+    }
+  ],
+  "desalination": [
+    {
+      "root": "sal",
+      "meaning_zh": "鹽",
+      "origin": "Latin"
+    }
+  ],
+  "entropy": [
+    {
+      "root": "trop",
+      "meaning_zh": "轉動",
+      "origin": "Greek"
+    }
+  ],
+  "collateralize": [
+    {
+      "root": "later",
+      "meaning_zh": "側面",
+      "origin": "Latin"
+    }
+  ],
+  "same": [],
+  "special": [
+    {
+      "root": "spec",
+      "meaning_zh": "看",
+      "origin": "Latin"
+    }
+  ],
+  "favorite": [
+    {
+      "root": "favor",
+      "meaning_zh": "喜愛",
+      "origin": "Latin"
+    }
+  ],
+  "afraid": [],
+  "angry": [],
+  "quiet": [
+    {
+      "root": "quie",
+      "meaning_zh": "安靜/休息",
+      "origin": "Latin"
+    }
+  ],
+  "loud": [],
+  "sweet": [],
+  "sour": [],
+  "dry": [],
+  "wet": [],
+  "dark": [],
+  "bright": [],
+  "safe": [
+    {
+      "root": "salv",
+      "meaning_zh": "安全/救助",
+      "origin": "Latin"
+    }
+  ],
+  "dangerous": [
+    {
+      "root": "domin",
+      "meaning_zh": "支配/主人",
+      "origin": "Latin"
+    }
+  ],
+  "sure": [
+    {
+      "root": "cur",
+      "meaning_zh": "照料/關心",
+      "origin": "Latin"
+    }
+  ],
+  "sorry": [],
+  "glad": [],
+  "exciting": [
+    {
+      "root": "cit",
+      "meaning_zh": "召喚/推動",
+      "origin": "Latin"
+    }
+  ],
+  "boring": [],
+  "wonderful": [],
+  "terrible": [
+    {
+      "root": "terr",
+      "meaning_zh": "恐懼",
+      "origin": "Latin"
+    }
+  ],
+  "pretty": [],
+  "cute": [
+    {
+      "root": "acu",
+      "meaning_zh": "尖銳",
+      "origin": "Latin"
+    }
+  ],
+  "fat": [],
+  "thin": [],
+  "deep": [],
+  "cheap": [],
+  "expensive": [
+    {
+      "root": "pend",
+      "meaning_zh": "懸掛/稱重/支付",
+      "origin": "Latin"
+    }
+  ],
+  "fresh": [],
+  "delicious": [
+    {
+      "root": "delic",
+      "meaning_zh": "誘惑/愉悅",
+      "origin": "Latin"
+    }
+  ],
+  "lazy": [],
+  "brave": [],
+  "shy": [],
+  "polite": [
+    {
+      "root": "poli",
+      "meaning_zh": "磨光",
+      "origin": "Latin"
+    }
+  ],
+  "honest": [
+    {
+      "root": "hon",
+      "meaning_zh": "榮譽",
+      "origin": "Latin"
+    }
+  ],
+  "smart": [],
+  "true": [],
+  "false": [
+    {
+      "root": "fal",
+      "meaning_zh": "欺騙",
+      "origin": "Latin"
+    }
+  ],
+  "book": [],
+  "pen": [
+    {
+      "root": "pen",
+      "meaning_zh": "羽毛",
+      "origin": "Latin"
+    }
+  ],
+  "pencil": [],
+  "paper": [],
+  "bag": [],
+  "key": [],
+  "phone": [
+    {
+      "root": "phon",
+      "meaning_zh": "聲音",
+      "origin": "Greek"
+    }
+  ],
+  "computer": [
+    {
+      "root": "put",
+      "meaning_zh": "思考",
+      "origin": "Latin"
+    }
+  ],
+  "table": [
+    {
+      "root": "tab",
+      "meaning_zh": "板",
+      "origin": "Latin"
+    }
+  ],
+  "chair": [
+    {
+      "root": "hed",
+      "meaning_zh": "坐",
+      "origin": "Greek"
+    }
+  ],
+  "door": [],
+  "window": [],
+  "box": [],
+  "cup": [],
+  "plate": [
+    {
+      "root": "plat",
+      "meaning_zh": "平坦",
+      "origin": "Greek"
+    }
+  ],
+  "bottle": [],
+  "knife": [],
+  "spoon": [],
+  "fork": [
+    {
+      "root": "furc",
+      "meaning_zh": "叉",
+      "origin": "Latin"
+    }
+  ],
+  "picture": [
+    {
+      "root": "pict",
+      "meaning_zh": "繪畫",
+      "origin": "Latin"
+    }
+  ],
+  "camera": [
+    {
+      "root": "cam",
+      "meaning_zh": "室",
+      "origin": "Latin"
+    }
+  ],
+  "umbrella": [
+    {
+      "root": "umbr",
+      "meaning_zh": "影子",
+      "origin": "Latin"
+    }
+  ],
+  "gift": [],
+  "toy": [],
+  "ball": [],
+  "letter": [
+    {
+      "root": "liter",
+      "meaning_zh": "文字",
+      "origin": "Latin"
+    }
+  ],
+  "money": [],
+  "ticket": [],
+  "mirror": [
+    {
+      "root": "mir",
+      "meaning_zh": "看/驚奇",
+      "origin": "Latin"
+    }
+  ],
+  "map": [],
+  "clothes": [],
+  "shirt": [],
+  "pants": [],
+  "dress": [
+    {
+      "root": "rect",
+      "meaning_zh": "直/正",
+      "origin": "Latin"
+    }
+  ],
+  "shoe": [],
+  "hat": [],
+  "coat": [],
+  "jacket": [],
+  "sock": [],
+  "skirt": [],
+  "glasses": [],
+  "house": [],
+  "home": [],
+  "room": [],
+  "bedroom": [],
+  "bathroom": [],
+  "kitchen": [
+    {
+      "root": "coqu",
+      "meaning_zh": "煮",
+      "origin": "Latin"
+    }
+  ],
+  "bed": [],
+  "floor": [],
+  "wall": [
+    {
+      "root": "vall",
+      "meaning_zh": "牆/屏障",
+      "origin": "Latin"
+    }
+  ],
+  "garden": [],
+  "roof": [],
+  "lamp": [],
+  "school": [
+    {
+      "root": "schol",
+      "meaning_zh": "學習/閒暇",
+      "origin": "Greek"
+    }
+  ],
+  "class": [
+    {
+      "root": "class",
+      "meaning_zh": "類別、等級",
+      "origin": "Latin"
+    }
+  ],
+  "teacher": [],
+  "student": [
+    {
+      "root": "stud",
+      "meaning_zh": "努力、致力於",
+      "origin": "Latin"
+    }
+  ],
+  "test": [
+    {
+      "root": "test",
+      "meaning_zh": "證人、證據",
+      "origin": "Latin"
+    }
+  ],
+  "homework": [],
+  "desk": [
+    {
+      "root": "disc",
+      "meaning_zh": "圓盤",
+      "origin": "Latin"
+    }
+  ],
+  "board": [],
+  "ruler": [
+    {
+      "root": "reg",
+      "meaning_zh": "統治、引導",
+      "origin": "Latin"
+    }
+  ],
+  "eraser": [
+    {
+      "root": "rad",
+      "meaning_zh": "刮、擦",
+      "origin": "Latin"
+    }
+  ],
+  "question": [
+    {
+      "root": "ques",
+      "meaning_zh": "尋求、詢問",
+      "origin": "Latin"
+    }
+  ],
+  "lesson": [
+    {
+      "root": "lect",
+      "meaning_zh": "讀、挑選",
+      "origin": "Latin"
+    }
+  ],
+  "sentence": [
+    {
+      "root": "sent",
+      "meaning_zh": "感覺、想法",
+      "origin": "Latin"
+    }
+  ],
+  "page": [
+    {
+      "root": "pag",
+      "meaning_zh": "固定、繫",
+      "origin": "Latin"
+    }
+  ],
+  "story": [
+    {
+      "root": "hist",
+      "meaning_zh": "歷史、敘述",
+      "origin": "Greek"
+    }
+  ],
+  "song": [],
+  "game": [],
+  "music": [
+    {
+      "root": "mus",
+      "meaning_zh": "繆思、藝術",
+      "origin": "Greek"
+    }
+  ],
+  "english": [],
+  "place": [
+    {
+      "root": "plat",
+      "meaning_zh": "平的、寬廣",
+      "origin": "Greek"
+    }
+  ],
+  "city": [
+    {
+      "root": "civ",
+      "meaning_zh": "公民",
+      "origin": "Latin"
+    }
+  ],
+  "country": [
+    {
+      "root": "contra",
+      "meaning_zh": "相反、對面",
+      "origin": "Latin"
+    }
+  ],
+  "park": [],
+  "store": [
+    {
+      "root": "staur",
+      "meaning_zh": "建立、修復",
+      "origin": "Latin"
+    }
+  ],
+  "market": [
+    {
+      "root": "merc",
+      "meaning_zh": "貿易、商品",
+      "origin": "Latin"
+    }
+  ],
+  "hospital": [
+    {
+      "root": "hosp",
+      "meaning_zh": "客人、主人",
+      "origin": "Latin"
+    }
+  ],
+  "restaurant": [
+    {
+      "root": "staur",
+      "meaning_zh": "建立、修復",
+      "origin": "Latin"
+    }
+  ],
+  "library": [
+    {
+      "root": "libr",
+      "meaning_zh": "書",
+      "origin": "Latin"
+    }
+  ],
+  "street": [
+    {
+      "root": "strat",
+      "meaning_zh": "鋪、層",
+      "origin": "Latin"
+    }
+  ],
+  "road": [],
+  "bridge": [],
+  "mountain": [
+    {
+      "root": "mont",
+      "meaning_zh": "山",
+      "origin": "Latin"
+    }
+  ],
+  "river": [
+    {
+      "root": "riv",
+      "meaning_zh": "河岸",
+      "origin": "Latin"
+    }
+  ],
+  "sea": [],
+  "beach": [],
+  "island": [],
+  "farm": [
+    {
+      "root": "firm",
+      "meaning_zh": "穩固",
+      "origin": "Latin"
+    }
+  ],
+  "zoo": [
+    {
+      "root": "zo",
+      "meaning_zh": "動物",
+      "origin": "Greek"
+    }
+  ],
+  "pool": [],
+  "bank": [],
+  "station": [
+    {
+      "root": "stat",
+      "meaning_zh": "站立",
+      "origin": "Latin"
+    }
+  ],
+  "church": [],
+  "world": [],
+  "car": [
+    {
+      "root": "car",
+      "meaning_zh": "運行",
+      "origin": "Latin"
+    }
+  ],
+  "bus": [
+    {
+      "root": "omni",
+      "meaning_zh": "全部",
+      "origin": "Latin"
+    }
+  ],
+  "train": [
+    {
+      "root": "tract",
+      "meaning_zh": "拉",
+      "origin": "Latin"
+    }
+  ],
+  "bike": [
+    {
+      "root": "cycl",
+      "meaning_zh": "圓/環",
+      "origin": "Greek"
+    }
+  ],
+  "boat": [],
+  "airplane": [
+    {
+      "root": "aer",
+      "meaning_zh": "空氣",
+      "origin": "Greek"
+    }
+  ],
+  "tree": [],
+  "flower": [
+    {
+      "root": "flor",
+      "meaning_zh": "花",
+      "origin": "Latin"
+    }
+  ],
+  "grass": [],
+  "leaf": [],
+  "rock": [],
+  "ground": [],
+  "fire": [],
+  "ice": [],
+  "lake": [
+    {
+      "root": "lac",
+      "meaning_zh": "湖泊",
+      "origin": "Latin"
+    }
+  ],
+  "forest": [
+    {
+      "root": "for",
+      "meaning_zh": "外面",
+      "origin": "Latin"
+    }
+  ],
+  "air": [
+    {
+      "root": "aer",
+      "meaning_zh": "空氣",
+      "origin": "Greek"
+    }
+  ],
+  "earth": [],
+  "people": [
+    {
+      "root": "popul",
+      "meaning_zh": "人民",
+      "origin": "Latin"
+    }
+  ],
+  "man": [],
+  "woman": [],
+  "boy": [],
+  "girl": [],
+  "friend": [],
+  "doctor": [
+    {
+      "root": "doc",
+      "meaning_zh": "教導",
+      "origin": "Latin"
+    }
+  ],
+  "nurse": [
+    {
+      "root": "nutri",
+      "meaning_zh": "滋養",
+      "origin": "Latin"
+    }
+  ],
+  "police": [
+    {
+      "root": "poli",
+      "meaning_zh": "城市",
+      "origin": "Greek"
+    }
+  ],
+  "farmer": [
+    {
+      "root": "firm",
+      "meaning_zh": "固定",
+      "origin": "Latin"
+    }
+  ],
+  "driver": [],
+  "king": [],
+  "queen": [],
+  "hello": [],
+  "goodbye": [],
+  "please": [
+    {
+      "root": "plac",
+      "meaning_zh": "使愉悅",
+      "origin": "Latin"
+    }
+  ],
+  "thank": [],
+  "yes": [],
+  "welcome": [],
+  "hope": [],
+  "wish": [],
+  "surprise": [
+    {
+      "root": "prehend",
+      "meaning_zh": "抓取",
+      "origin": "Latin"
+    }
+  ],
+  "worry": [],
+  "enjoy": [],
+  "hate": [],
+  "miss": [],
+  "care": [],
+  "under": [],
+  "behind": [],
+  "between": [],
+  "eleventh": [],
+  "twelfth": [],
+  "weekday": [],
+  "dozen": [
+    {
+      "root": "dec",
+      "meaning_zh": "十",
+      "origin": "Latin"
+    }
+  ],
+  "divide": [
+    {
+      "root": "vid",
+      "meaning_zh": "分開",
+      "origin": "Latin"
+    }
+  ],
+  "total": [
+    {
+      "root": "tot",
+      "meaning_zh": "全部",
+      "origin": "Latin"
+    }
+  ],
+  "double": [
+    {
+      "root": "du",
+      "meaning_zh": "二",
+      "origin": "Latin"
+    }
+  ],
+  "million": [
+    {
+      "root": "mill",
+      "meaning_zh": "千",
+      "origin": "Latin"
+    }
+  ],
+  "quarter": [
+    {
+      "root": "quar",
+      "meaning_zh": "四",
+      "origin": "Latin"
+    }
+  ],
+  "half": [],
+  "area": [
+    {
+      "root": "are",
+      "meaning_zh": "空間",
+      "origin": "Latin"
+    }
+  ],
+  "chart": [
+    {
+      "root": "chart",
+      "meaning_zh": "紙/圖表",
+      "origin": "Greek"
+    }
+  ],
+  "data": [
+    {
+      "root": "dat",
+      "meaning_zh": "給予",
+      "origin": "Latin"
+    }
+  ],
+  "negative": [
+    {
+      "root": "neg",
+      "meaning_zh": "否認",
+      "origin": "Latin"
+    }
+  ],
+  "positive": [
+    {
+      "root": "pos",
+      "meaning_zh": "放置",
+      "origin": "Latin"
+    }
+  ],
+  "emoji": [],
+  "profile": [
+    {
+      "root": "fil",
+      "meaning_zh": "線條",
+      "origin": "Latin"
+    }
+  ],
+  "content": [
+    {
+      "root": "ten",
+      "meaning_zh": "持/握",
+      "origin": "Latin"
+    }
+  ],
+  "wishlist": [],
+  "bug": [],
+  "update": [],
+  "version": [
+    {
+      "root": "vers",
+      "meaning_zh": "轉動",
+      "origin": "Latin"
+    }
+  ],
+  "bluetooth": [],
+  "fingerprint": [],
+  "traffic": [],
+  "gps": [],
+  "backpacker": [],
+  "housekeeper": [],
+  "sightsee": [],
+  "stoplight": [],
+  "campfire": [
+    {
+      "root": "camp",
+      "meaning_zh": "田野/營地",
+      "origin": "Latin"
+    }
+  ],
+  "earbuds": [],
+  "promo": [
+    {
+      "root": "mot",
+      "meaning_zh": "移動",
+      "origin": "Latin"
+    }
+  ],
+  "zipper": [],
+  "coastal": [
+    {
+      "root": "cost",
+      "meaning_zh": "側邊/肋骨",
+      "origin": "Latin"
+    }
+  ],
+  "elderly": [],
+  "centimeter": [
+    {
+      "root": "cent",
+      "meaning_zh": "百",
+      "origin": "Latin"
+    },
+    {
+      "root": "metr",
+      "meaning_zh": "測量",
+      "origin": "Greek"
+    }
+  ],
+  "millimeter": [
+    {
+      "root": "milli",
+      "meaning_zh": "千",
+      "origin": "Latin"
+    },
+    {
+      "root": "metr",
+      "meaning_zh": "測量",
+      "origin": "Greek"
+    }
+  ],
+  "loop": [],
+  "multiplayer": [
+    {
+      "root": "multi",
+      "meaning_zh": "許多",
+      "origin": "Latin"
+    }
+  ],
+  "avatar": [],
+  "leaderboard": [],
+  "baggage": [],
+  "escalator": [
+    {
+      "root": "scal",
+      "meaning_zh": "梯子/階梯",
+      "origin": "Latin"
+    }
+  ],
+  "intern": [
+    {
+      "root": "intern",
+      "meaning_zh": "內部的",
+      "origin": "Latin"
+    }
+  ],
+  "photocopier": [
+    {
+      "root": "phot",
+      "meaning_zh": "光",
+      "origin": "Greek"
+    },
+    {
+      "root": "copi",
+      "meaning_zh": "副本/豐富",
+      "origin": "Latin"
+    }
+  ],
+  "workmate": [],
+  "janitor": [
+    {
+      "root": "janu",
+      "meaning_zh": "門",
+      "origin": "Latin"
+    }
+  ],
+  "secretary": [
+    {
+      "root": "secret",
+      "meaning_zh": "秘密",
+      "origin": "Latin"
+    }
+  ],
+  "multitasking": [
+    {
+      "root": "multi",
+      "meaning_zh": "許多",
+      "origin": "Latin"
+    }
+  ],
+  "interviewee": [
+    {
+      "root": "inter",
+      "meaning_zh": "在...之間",
+      "origin": "Latin"
+    },
+    {
+      "root": "vis",
+      "meaning_zh": "看",
+      "origin": "Latin"
+    }
+  ],
+  "carpooling": [],
+  "watercooler": [],
+  "elbow": [],
+  "ankle": [],
+  "wrist": [],
+  "treadmill": [],
+  "dumbbell": [],
+  "blister": [],
+  "rash": [],
+  "stitches": [],
+  "posture": [
+    {
+      "root": "pos",
+      "meaning_zh": "放置",
+      "origin": "Latin"
+    }
+  ],
+  "gluten": [
+    {
+      "root": "glu",
+      "meaning_zh": "膠、黏",
+      "origin": "Latin"
+    }
+  ],
+  "spatula": [
+    {
+      "root": "spath",
+      "meaning_zh": "寬闊的片、槳",
+      "origin": "Latin/Greek"
+    }
+  ],
+  "ladle": [],
+  "tongs": [],
+  "grater": [],
+  "wok": [],
+  "crouton": [
+    {
+      "root": "crust",
+      "meaning_zh": "硬殼",
+      "origin": "Latin"
+    }
+  ],
+  "tempura": [
+    {
+      "root": "temp",
+      "meaning_zh": "時間",
+      "origin": "Latin"
+    }
+  ],
+  "granola": [
+    {
+      "root": "gran",
+      "meaning_zh": "穀物、種子",
+      "origin": "Latin"
+    }
+  ],
+  "cilantro": [],
+  "basil": [
+    {
+      "root": "basil",
+      "meaning_zh": "王、皇室",
+      "origin": "Greek"
+    }
+  ],
+  "badminton": [],
+  "jukebox": [],
+  "cello": [],
+  "harmonica": [
+    {
+      "root": "harm",
+      "meaning_zh": "適合、調和",
+      "origin": "Greek"
+    }
+  ],
+  "juggling": [],
+  "origami": [],
+  "acrobat": [
+    {
+      "root": "acr",
+      "meaning_zh": "尖端、高處",
+      "origin": "Greek"
+    }
+  ],
+  "foosball": [],
+  "nightstand": [],
+  "bookshelf": [],
+  "countertop": [],
+  "shutter": [],
+  "doormat": [],
+  "cellar": [
+    {
+      "root": "cel",
+      "meaning_zh": "隱藏、小室",
+      "origin": "Latin"
+    }
+  ],
+  "comforter": [
+    {
+      "root": "fort",
+      "meaning_zh": "強大、力量",
+      "origin": "Latin"
+    }
+  ],
+  "casserole": [],
+  "planter": [
+    {
+      "root": "plant",
+      "meaning_zh": "種植",
+      "origin": "Latin"
+    }
+  ],
+  "duvet": [],
+  "hedgehog": [],
+  "marigold": [],
+  "fern": [],
+  "pollen": [],
+  "evergreen": [],
+  "sibling": [],
+  "stepparent": [],
+  "guardian": [],
+  "gesture": [
+    {
+      "root": "gest",
+      "meaning_zh": "攜帶",
+      "origin": "Latin"
+    }
+  ],
+  "misunderstanding": [],
+  "quarrel": [],
+  "affectionate": [
+    {
+      "root": "fac",
+      "meaning_zh": "做",
+      "origin": "Latin"
+    }
+  ],
+  "trunk": [],
+  "brake": [],
+  "alley": [],
+  "attendance": [
+    {
+      "root": "tend",
+      "meaning_zh": "伸展",
+      "origin": "Latin"
+    }
+  ],
+  "thunderstorm": [],
+  "dew": [],
+  "chilly": [],
+  "avoid": [
+    {
+      "root": "vac",
+      "meaning_zh": "空的",
+      "origin": "Latin"
+    }
+  ],
+  "bend": [],
+  "block": [],
+  "boil": [],
+  "borrow": [],
+  "celebrate": [],
+  "chase": [
+    {
+      "root": "cap",
+      "meaning_zh": "拿",
+      "origin": "Latin"
+    }
+  ],
+  "correct": [
+    {
+      "root": "reg",
+      "meaning_zh": "引導",
+      "origin": "Latin"
+    }
+  ],
+  "crash": [],
+  "dig": [],
+  "drag": [],
+  "earn": [],
+  "explain": [
+    {
+      "root": "plan",
+      "meaning_zh": "平坦、清楚",
+      "origin": "Latin"
+    }
+  ],
+  "float": [],
+  "fold": [],
+  "grab": [],
+  "greet": [],
+  "hide": [],
+  "imagine": [
+    {
+      "root": "imag",
+      "meaning_zh": "圖像、肖像",
+      "origin": "Latin"
+    }
+  ],
+  "lend": [],
+  "ceiling": [],
+  "chapter": [
+    {
+      "root": "capit",
+      "meaning_zh": "頭",
+      "origin": "Latin"
+    }
+  ],
+  "clue": [],
+  "coin": [],
+  "crowd": [],
+  "customer": [],
+  "direction": [
+    {
+      "root": "rect",
+      "meaning_zh": "正、直、引導",
+      "origin": "Latin"
+    }
+  ],
+  "dust": [],
+  "enemy": [
+    {
+      "root": "ami",
+      "meaning_zh": "朋友",
+      "origin": "Latin"
+    }
+  ],
+  "flame": [
+    {
+      "root": "flam",
+      "meaning_zh": "火焰、燃燒",
+      "origin": "Latin"
+    }
+  ],
+  "flight": [],
+  "frame": [],
+  "ghost": [],
+  "goal": [],
+  "habit": [
+    {
+      "root": "habit",
+      "meaning_zh": "有、持有、居住",
+      "origin": "Latin"
+    }
+  ],
+  "hero": [],
+  "item": [],
+  "joy": [],
+  "length": [],
+  "luck": [],
+  "memory": [
+    {
+      "root": "memor",
+      "meaning_zh": "記憶",
+      "origin": "Latin"
+    }
+  ],
+  "reason": [
+    {
+      "root": "rat",
+      "meaning_zh": "思考/計算",
+      "origin": "Latin"
+    }
+  ],
+  "secret": [
+    {
+      "root": "cret",
+      "meaning_zh": "分開/隱藏",
+      "origin": "Latin"
+    }
+  ],
+  "shadow": [],
+  "skill": [],
+  "taste": [],
+  "trouble": [
+    {
+      "root": "turb",
+      "meaning_zh": "攪亂/混亂",
+      "origin": "Latin"
+    }
+  ],
+  "awful": [],
+  "blind": [],
+  "daily": [],
+  "deaf": [],
+  "fair": [],
+  "gentle": [
+    {
+      "root": "gen",
+      "meaning_zh": "出生/產生",
+      "origin": "Latin"
+    }
+  ],
+  "healthy": [],
+  "helpful": [],
+  "horrible": [
+    {
+      "root": "horr",
+      "meaning_zh": "震顫/恐懼",
+      "origin": "Latin"
+    }
+  ],
+  "lonely": [],
+  "neat": [],
+  "opposite": [
+    {
+      "root": "pos",
+      "meaning_zh": "放置",
+      "origin": "Latin"
+    }
+  ],
+  "proud": [],
+  "raw": [],
+  "sharp": [],
+  "smooth": [],
+  "stupid": [
+    {
+      "root": "stup",
+      "meaning_zh": "震驚/麻木",
+      "origin": "Latin"
+    }
+  ],
+  "thick": [],
+  "tiny": [],
+  "wild": [],
+  "walkway": [],
+  "yearbook": [],
+  "stopwatch": [],
+  "handmade": [],
+  "amaze": [],
+  "backyard": [],
+  "basement": [
+    {
+      "root": "bas",
+      "meaning_zh": "底部/低下",
+      "origin": "Latin"
+    }
+  ],
+  "blender": [],
+  "broom": [],
+  "bucket": [],
+  "candle": [
+    {
+      "root": "cand",
+      "meaning_zh": "發光/白色",
+      "origin": "Latin"
+    }
+  ],
+  "cardboard": [],
+  "carpet": [
+    {
+      "root": "carp",
+      "meaning_zh": "摘/採",
+      "origin": "Latin"
+    }
+  ],
+  "clothespin": [],
+  "cockroach": [],
+  "dryer": [],
+  "dustpan": [],
+  "fence": [
+    {
+      "root": "fend",
+      "meaning_zh": "打擊/防禦",
+      "origin": "Latin"
+    }
   ]
 }
