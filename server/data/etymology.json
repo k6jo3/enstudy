@@ -14938,7 +14938,13 @@
   "eighth": [],
   "ninth": [],
   "tenth": [],
-  "fireplace": [],
+  "fireplace": [
+    {
+      "root": "plat",
+      "meaning_zh": "平坦/寬廣",
+      "origin": "Greek"
+    }
+  ],
   "flashlight": [],
   "freezer": [],
   "garage": [],
@@ -14954,7 +14960,13 @@
   "lid": [],
   "lighter": [],
   "lock": [],
-  "mop": [],
+  "mop": [
+    {
+      "root": "map",
+      "meaning_zh": "布/巾",
+      "origin": "Latin"
+    }
+  ],
   "oven": [],
   "plug": [],
   "rug": [],
@@ -14968,7 +14980,13 @@
   "screwdriver": [],
   "shower": [],
   "sink": [],
-  "sponge": [],
+  "sponge": [
+    {
+      "root": "spong",
+      "meaning_zh": "海綿",
+      "origin": "Greek"
+    }
+  ],
   "stool": [],
   "stove": [],
   "switch": [],
@@ -14986,16 +15004,34 @@
       "origin": "Latin"
     }
   ],
-  "toaster": [],
+  "toaster": [
+    {
+      "root": "tost",
+      "meaning_zh": "烘烤/烘乾",
+      "origin": "Latin"
+    }
+  ],
   "toolbox": [],
   "tray": [],
-  "vase": [],
+  "vase": [
+    {
+      "root": "vas",
+      "meaning_zh": "容器",
+      "origin": "Latin"
+    }
+  ],
   "doorstep": [],
   "lampshade": [],
   "teapot": [],
   "saucepan": [],
   "clothesline": [],
-  "coaster": [],
+  "coaster": [
+    {
+      "root": "cost",
+      "meaning_zh": "側面/肋骨",
+      "origin": "Latin"
+    }
+  ],
   "doorknob": [],
   "placemat": [],
   "corkboard": [],
@@ -15006,7 +15042,13 @@
   "ashtray": [],
   "dishcloth": [],
   "pillowcase": [],
-  "annoy": [],
+  "annoy": [
+    {
+      "root": "od",
+      "meaning_zh": "恨",
+      "origin": "Latin"
+    }
+  ],
   "confuse": [
     {
       "root": "fus",
@@ -15014,10 +15056,22 @@
       "origin": "Latin"
     }
   ],
-  "calm": [],
+  "calm": [
+    {
+      "root": "caum",
+      "meaning_zh": "熱",
+      "origin": "Greek"
+    }
+  ],
   "frighten": [],
   "narrow": [],
-  "perhaps": [],
+  "perhaps": [
+    {
+      "root": "per",
+      "meaning_zh": "穿過",
+      "origin": "Latin"
+    }
+  ],
   "plenty": [
     {
       "root": "plen",
@@ -15354,7 +15408,13 @@
     }
   ],
   "warehouse": [],
-  "budget": [],
+  "budget": [
+    {
+      "root": "bulg",
+      "meaning_zh": "袋子",
+      "origin": "Latin"
+    }
+  ],
   "applicant": [
     {
       "root": "plic",
@@ -16107,8 +16167,20 @@
   ],
   "simmer": [],
   "seasoning": [],
-  "bland": [],
-  "aroma": [],
+  "bland": [
+    {
+      "root": "bland",
+      "meaning_zh": "溫和",
+      "origin": "Latin"
+    }
+  ],
+  "aroma": [
+    {
+      "root": "arom",
+      "meaning_zh": "芳香",
+      "origin": "Greek"
+    }
+  ],
   "nutritious": [
     {
       "root": "nutri",
@@ -16131,7 +16203,13 @@
       "origin": "Greek"
     }
   ],
-  "grease": [],
+  "grease": [
+    {
+      "root": "crass",
+      "meaning_zh": "肥厚",
+      "origin": "Latin"
+    }
+  ],
   "leftover": [],
   "feast": [
     {
@@ -16152,8 +16230,20 @@
   "zest": [],
   "whisk": [],
   "braise": [],
-  "palate": [],
-  "peel": [],
+  "palate": [
+    {
+      "root": "palat",
+      "meaning_zh": "顎/味覺",
+      "origin": "Latin"
+    }
+  ],
+  "peel": [
+    {
+      "root": "pil",
+      "meaning_zh": "剝皮/去毛",
+      "origin": "Latin"
+    }
+  ],
   "drizzle": [],
   "steep": [],
   "humble": [
@@ -16853,6 +16943,44 @@
     {
       "root": "vi",
       "meaning_zh": "道路",
+      "origin": "Latin"
+    }
+  ],
+  "tenderize": [
+    {
+      "root": "ten",
+      "meaning_zh": "拉長/細薄",
+      "origin": "Latin"
+    }
+  ],
+  "aromatic": [
+    {
+      "root": "arom",
+      "meaning_zh": "芳香",
+      "origin": "Greek"
+    }
+  ],
+  "tipsy": [],
+  "broth": [],
+  "scrumptious": [],
+  "athletics": [
+    {
+      "root": "athl",
+      "meaning_zh": "競賽",
+      "origin": "Greek"
+    }
+  ],
+  "tournament": [
+    {
+      "root": "torn",
+      "meaning_zh": "轉動",
+      "origin": "Latin"
+    }
+  ],
+  "opponent": [
+    {
+      "root": "pon",
+      "meaning_zh": "放置",
       "origin": "Latin"
     }
   ]
