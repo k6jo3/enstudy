@@ -2468,140 +2468,7 @@
       "origin": "Latin"
     }
   ],
-  "word": [
-    {
-      "word": "violation",
-      "root": "viol",
-      "meaning_zh": "力量",
-      "origin": "Latin"
-    },
-    {
-      "word": "infraction",
-      "root": "fract",
-      "meaning_zh": "打破",
-      "origin": "Latin"
-    },
-    {
-      "word": "infringement",
-      "root": "fring",
-      "meaning_zh": "打破",
-      "origin": "Latin"
-    },
-    {
-      "word": "trespass",
-      "root": "pass",
-      "meaning_zh": "步、踏",
-      "origin": "Latin"
-    },
-    {
-      "word": "accomplice",
-      "root": "plic",
-      "meaning_zh": "摺疊",
-      "origin": "Latin"
-    },
-    {
-      "word": "perpetrator",
-      "root": "patr",
-      "meaning_zh": "執行",
-      "origin": "Latin"
-    },
-    {
-      "word": "allege",
-      "root": "leg",
-      "meaning_zh": "派遣",
-      "origin": "Latin"
-    },
-    {
-      "word": "implicate",
-      "root": "plic",
-      "meaning_zh": "摺疊",
-      "origin": "Latin"
-    },
-    {
-      "word": "infringe",
-      "root": "fring",
-      "meaning_zh": "打破",
-      "origin": "Latin"
-    },
-    {
-      "word": "omission",
-      "root": "miss",
-      "meaning_zh": "發送",
-      "origin": "Latin"
-    },
-    {
-      "word": "deterrent",
-      "root": "terr",
-      "meaning_zh": "恐懼",
-      "origin": "Latin"
-    },
-    {
-      "word": "divulge",
-      "root": "vulg",
-      "meaning_zh": "平民",
-      "origin": "Latin"
-    },
-    {
-      "word": "immunity",
-      "root": "mun",
-      "meaning_zh": "服務、職責",
-      "origin": "Latin"
-    },
-    {
-      "word": "exempt",
-      "root": "empt",
-      "meaning_zh": "拿取",
-      "origin": "Latin"
-    },
-    {
-      "word": "exemption",
-      "root": "empt",
-      "meaning_zh": "拿取",
-      "origin": "Latin"
-    },
-    {
-      "word": "fugitive",
-      "root": "fug",
-      "meaning_zh": "逃跑",
-      "origin": "Latin"
-    },
-    {
-      "word": "culprit",
-      "root": "culp",
-      "meaning_zh": "過錯",
-      "origin": "Latin"
-    },
-    {
-      "word": "requisite",
-      "root": "quis",
-      "meaning_zh": "尋求",
-      "origin": "Latin"
-    },
-    {
-      "word": "prohibition",
-      "root": "hibit",
-      "meaning_zh": "持有",
-      "origin": "Latin"
-    },
-    {
-      "word": "supersede",
-      "root": "sede",
-      "meaning_zh": "坐",
-      "origin": "Latin"
-    },
-    {
-      "word": "defraud",
-      "root": "fraud",
-      "meaning_zh": "欺騙",
-      "origin": "Latin"
-    },
-    {
-      "word": "affirm",
-      "root": "firm",
-      "meaning_zh": "堅定",
-      "origin": "Latin"
-    }
-  ],
+  "word": [],
   "galvanize": [],
   "garrison": [],
   "genesis": [
@@ -15664,8 +15531,25 @@
   "ward": [],
   "drowsy": [],
   "wellness": [],
-  "sprain": [],
-  "database": [],
+  "sprain": [
+    {
+      "root": "prem",
+      "meaning_zh": "壓",
+      "origin": "Latin"
+    }
+  ],
+  "database": [
+    {
+      "root": "dat",
+      "meaning_zh": "給予",
+      "origin": "Latin"
+    },
+    {
+      "root": "bas",
+      "meaning_zh": "底部",
+      "origin": "Latin"
+    }
+  ],
   "firewall": [],
   "hardware": [],
   "interface": [
@@ -15729,7 +15613,13 @@
     }
   ],
   "glitch": [],
-  "pixel": [],
+  "pixel": [
+    {
+      "root": "pict",
+      "meaning_zh": "描繪",
+      "origin": "Latin"
+    }
+  ],
   "wireless": [],
   "configuration": [
     {
@@ -15755,7 +15645,13 @@
       "origin": "Latin"
     }
   ],
-  "storage": [],
+  "storage": [
+    {
+      "root": "staur",
+      "meaning_zh": "修復、設立",
+      "origin": "Latin"
+    }
+  ],
   "artificial": [
     {
       "root": "fac",
@@ -15896,7 +15792,13 @@
       "origin": "Latin"
     }
   ],
-  "academic": [],
+  "academic": [
+    {
+      "root": "acad",
+      "meaning_zh": "學院",
+      "origin": "Greek"
+    }
+  ],
   "concentration": [
     {
       "root": "centr",
@@ -15925,7 +15827,13 @@
       "origin": "Greek"
     }
   ],
-  "mentor": [],
+  "mentor": [
+    {
+      "root": "ment",
+      "meaning_zh": "心智",
+      "origin": "Latin"
+    }
+  ],
   "orientation": [
     {
       "root": "ori",
@@ -15961,7 +15869,13 @@
       "origin": "Latin"
     }
   ],
-  "interpret": [],
+  "interpret": [
+    {
+      "root": "pret",
+      "meaning_zh": "價值",
+      "origin": "Latin"
+    }
+  ],
   "textbook": [
     {
       "root": "tex",
@@ -16166,7 +16080,13 @@
     }
   ],
   "simmer": [],
-  "seasoning": [],
+  "seasoning": [
+    {
+      "root": "sat",
+      "meaning_zh": "播種",
+      "origin": "Latin"
+    }
+  ],
   "bland": [
     {
       "root": "bland",
@@ -16760,7 +16680,13 @@
       "origin": "Latin"
     }
   ],
-  "margin": [],
+  "margin": [
+    {
+      "root": "marg",
+      "meaning_zh": "邊緣",
+      "origin": "Latin"
+    }
+  ],
   "forecast": [],
   "trend": [],
   "competitor": [
@@ -16868,7 +16794,13 @@
     }
   ],
   "settlement": [],
-  "dispatch": [],
+  "dispatch": [
+    {
+      "root": "ped",
+      "meaning_zh": "腳、束縛",
+      "origin": "Latin"
+    }
+  ],
   "courier": [
     {
       "root": "curr",
@@ -16981,6 +16913,346 @@
     {
       "root": "pon",
       "meaning_zh": "放置",
+      "origin": "Latin"
+    }
+  ],
+  "trophy": [
+    {
+      "root": "trop",
+      "meaning_zh": "轉向",
+      "origin": "Greek"
+    }
+  ],
+  "enthusiasm": [
+    {
+      "root": "theo",
+      "meaning_zh": "神",
+      "origin": "Greek"
+    }
+  ],
+  "meditation": [
+    {
+      "root": "med",
+      "meaning_zh": "思考",
+      "origin": "Latin"
+    }
+  ],
+  "scuba": [],
+  "kayak": [],
+  "fencing": [
+    {
+      "root": "fend",
+      "meaning_zh": "防禦",
+      "origin": "Latin"
+    }
+  ],
+  "surfing": [],
+  "stamina": [
+    {
+      "root": "sta",
+      "meaning_zh": "站立",
+      "origin": "Latin"
+    }
+  ],
+  "pottery": [],
+  "aerobics": [
+    {
+      "root": "aer",
+      "meaning_zh": "空氣",
+      "origin": "Greek"
+    },
+    {
+      "root": "bio",
+      "meaning_zh": "生命",
+      "origin": "Greek"
+    }
+  ],
+  "pastime": [],
+  "contestant": [
+    {
+      "root": "test",
+      "meaning_zh": "證人",
+      "origin": "Latin"
+    }
+  ],
+  "venue": [
+    {
+      "root": "ven",
+      "meaning_zh": "來到",
+      "origin": "Latin"
+    }
+  ],
+  "triathlon": [
+    {
+      "root": "tri",
+      "meaning_zh": "三",
+      "origin": "Greek"
+    },
+    {
+      "root": "athl",
+      "meaning_zh": "競賽",
+      "origin": "Greek"
+    }
+  ],
+  "instructor": [
+    {
+      "root": "struct",
+      "meaning_zh": "建造",
+      "origin": "Latin"
+    }
+  ],
+  "solo": [
+    {
+      "root": "sol",
+      "meaning_zh": "獨自",
+      "origin": "Latin"
+    }
+  ],
+  "warmup": [],
+  "outperform": [
+    {
+      "root": "form",
+      "meaning_zh": "形式",
+      "origin": "Latin"
+    }
+  ],
+  "hiking": [],
+  "sportsmanship": [],
+  "anxious": [
+    {
+      "root": "ang",
+      "meaning_zh": "窒息",
+      "origin": "Latin"
+    }
+  ],
+  "compassion": [
+    {
+      "root": "pass",
+      "meaning_zh": "感受",
+      "origin": "Latin"
+    }
+  ],
+  "frustration": [],
+  "gratitude": [
+    {
+      "root": "grat",
+      "meaning_zh": "感激",
+      "origin": "Latin"
+    }
+  ],
+  "hesitant": [
+    {
+      "root": "haer",
+      "meaning_zh": "黏附",
+      "origin": "Latin"
+    }
+  ],
+  "jealous": [
+    {
+      "root": "zel",
+      "meaning_zh": "熱誠",
+      "origin": "Greek"
+    }
+  ],
+  "sentimental": [
+    {
+      "root": "sent",
+      "meaning_zh": "感覺",
+      "origin": "Latin"
+    }
+  ],
+  "stubborn": [],
+  "diligent": [
+    {
+      "root": "lig",
+      "meaning_zh": "選擇",
+      "origin": "Latin"
+    }
+  ],
+  "ecstatic": [
+    {
+      "root": "sta",
+      "meaning_zh": "站立",
+      "origin": "Greek"
+    }
+  ],
+  "furious": [
+    {
+      "root": "fur",
+      "meaning_zh": "憤怒",
+      "origin": "Latin"
+    }
+  ],
+  "genuine": [
+    {
+      "root": "gen",
+      "meaning_zh": "產生/出生",
+      "origin": "Latin"
+    }
+  ],
+  "committee": [
+    {
+      "root": "mit",
+      "meaning_zh": "發送/委派",
+      "origin": "Latin"
+    }
+  ],
+  "boardroom": [],
+  "attendee": [
+    {
+      "root": "tend",
+      "meaning_zh": "伸展/趨向",
+      "origin": "Latin"
+    }
+  ],
+  "participant": [
+    {
+      "root": "part",
+      "meaning_zh": "部份",
+      "origin": "Latin"
+    },
+    {
+      "root": "cap",
+      "meaning_zh": "拿取",
+      "origin": "Latin"
+    }
+  ],
+  "moderator": [
+    {
+      "root": "mod",
+      "meaning_zh": "方式/測量",
+      "origin": "Latin"
+    }
+  ],
+  "keynote": [],
+  "projector": [
+    {
+      "root": "ject",
+      "meaning_zh": "投擲",
+      "origin": "Latin"
+    }
+  ],
+  "handout": [],
+  "workshop": [],
+  "postpone": [
+    {
+      "root": "pon",
+      "meaning_zh": "放置",
+      "origin": "Latin"
+    }
+  ],
+  "reschedule": [],
+  "teleconference": [
+    {
+      "root": "tele",
+      "meaning_zh": "遠",
+      "origin": "Greek"
+    },
+    {
+      "root": "fer",
+      "meaning_zh": "攜帶/傳送",
+      "origin": "Latin"
+    }
+  ],
+  "brainstorm": [],
+  "shareholder": [],
+  "confidential": [
+    {
+      "root": "fid",
+      "meaning_zh": "信任/信仰",
+      "origin": "Latin"
+    }
+  ],
+  "initiative": [
+    {
+      "root": "it",
+      "meaning_zh": "行走",
+      "origin": "Latin"
+    }
+  ],
+  "downsizing": [],
+  "interest": [
+    {
+      "root": "ess",
+      "meaning_zh": "存在",
+      "origin": "Latin"
+    }
+  ],
+  "debit": [
+    {
+      "root": "hab",
+      "meaning_zh": "持有、欠債",
+      "origin": "Latin"
+    }
+  ],
+  "credit": [
+    {
+      "root": "cred",
+      "meaning_zh": "相信、信任",
+      "origin": "Latin"
+    }
+  ],
+  "payable": [
+    {
+      "root": "pac",
+      "meaning_zh": "平息、結算",
+      "origin": "Latin"
+    }
+  ],
+  "gross": [
+    {
+      "root": "gross",
+      "meaning_zh": "粗大、厚",
+      "origin": "Latin"
+    }
+  ],
+  "binding": [],
+  "propose": [
+    {
+      "root": "pon",
+      "meaning_zh": "放置",
+      "origin": "Latin"
+    }
+  ],
+  "persuade": [
+    {
+      "root": "suad",
+      "meaning_zh": "勸告、建議",
+      "origin": "Latin"
+    }
+  ],
+  "mutual": [
+    {
+      "root": "mut",
+      "meaning_zh": "改變、交換",
+      "origin": "Latin"
+    }
+  ],
+  "facilitate": [
+    {
+      "root": "fac",
+      "meaning_zh": "做、製造",
+      "origin": "Latin"
+    }
+  ],
+  "counterpart": [
+    {
+      "root": "part",
+      "meaning_zh": "部分、分開",
+      "origin": "Latin"
+    }
+  ],
+  "provision": [
+    {
+      "root": "vis",
+      "meaning_zh": "看",
+      "origin": "Latin"
+    }
+  ],
+  "renewal": [
+    {
+      "root": "nov",
+      "meaning_zh": "新",
       "origin": "Latin"
     }
   ]
