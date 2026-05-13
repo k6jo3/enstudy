@@ -13827,7 +13827,13 @@
   ],
   "garden": [],
   "roof": [],
-  "lamp": [],
+  "lamp": [
+    {
+      "root": "lamp",
+      "meaning_zh": "閃耀",
+      "origin": "Greek"
+    }
+  ],
   "school": [
     {
       "root": "schol",
@@ -14418,7 +14424,13 @@
   "treadmill": [],
   "dumbbell": [],
   "blister": [],
-  "rash": [],
+  "rash": [
+    {
+      "root": "ras",
+      "meaning_zh": "刮/擦",
+      "origin": "Latin"
+    }
+  ],
   "stitches": [],
   "posture": [
     {
@@ -14484,7 +14496,13 @@
       "origin": "Greek"
     }
   ],
-  "juggling": [],
+  "juggling": [
+    {
+      "root": "joc",
+      "meaning_zh": "玩笑",
+      "origin": "Latin"
+    }
+  ],
   "origami": [],
   "acrobat": [
     {
@@ -14538,7 +14556,13 @@
     }
   ],
   "misunderstanding": [],
-  "quarrel": [],
+  "quarrel": [
+    {
+      "root": "quer",
+      "meaning_zh": "抱怨",
+      "origin": "Latin"
+    }
+  ],
   "affectionate": [
     {
       "root": "fac",
@@ -14546,7 +14570,13 @@
       "origin": "Latin"
     }
   ],
-  "trunk": [],
+  "trunk": [
+    {
+      "root": "trunc",
+      "meaning_zh": "切斷",
+      "origin": "Latin"
+    }
+  ],
   "brake": [],
   "alley": [],
   "attendance": [
@@ -14568,9 +14598,21 @@
   ],
   "bend": [],
   "block": [],
-  "boil": [],
+  "boil": [
+    {
+      "root": "bull",
+      "meaning_zh": "氣泡",
+      "origin": "Latin"
+    }
+  ],
   "borrow": [],
-  "celebrate": [],
+  "celebrate": [
+    {
+      "root": "celebr",
+      "meaning_zh": "慶祝",
+      "origin": "Latin"
+    }
+  ],
   "chase": [
     {
       "root": "cap",
@@ -14609,7 +14651,13 @@
     }
   ],
   "lend": [],
-  "ceiling": [],
+  "ceiling": [
+    {
+      "root": "cael",
+      "meaning_zh": "天空",
+      "origin": "Latin"
+    }
+  ],
   "chapter": [
     {
       "root": "capit",
@@ -14618,9 +14666,21 @@
     }
   ],
   "clue": [],
-  "coin": [],
+  "coin": [
+    {
+      "root": "cune",
+      "meaning_zh": "楔子",
+      "origin": "Latin"
+    }
+  ],
   "crowd": [],
-  "customer": [],
+  "customer": [
+    {
+      "root": "sue",
+      "meaning_zh": "習慣",
+      "origin": "Latin"
+    }
+  ],
   "direction": [
     {
       "root": "rect",
@@ -14654,9 +14714,21 @@
       "origin": "Latin"
     }
   ],
-  "hero": [],
+  "hero": [
+    {
+      "root": "hero",
+      "meaning_zh": "英雄",
+      "origin": "Greek"
+    }
+  ],
   "item": [],
-  "joy": [],
+  "joy": [
+    {
+      "root": "gaud",
+      "meaning_zh": "歡樂",
+      "origin": "Latin"
+    }
+  ],
   "length": [],
   "luck": [],
   "memory": [
@@ -14682,7 +14754,13 @@
   ],
   "shadow": [],
   "skill": [],
-  "taste": [],
+  "taste": [
+    {
+      "root": "tax",
+      "meaning_zh": "評估",
+      "origin": "Latin"
+    }
+  ],
   "trouble": [
     {
       "root": "turb",
@@ -14712,7 +14790,13 @@
     }
   ],
   "lonely": [],
-  "neat": [],
+  "neat": [
+    {
+      "root": "nit",
+      "meaning_zh": "潔淨",
+      "origin": "Latin"
+    }
+  ],
   "opposite": [
     {
       "root": "pos",
@@ -14720,7 +14804,13 @@
       "origin": "Latin"
     }
   ],
-  "proud": [],
+  "proud": [
+    {
+      "root": "pro",
+      "meaning_zh": "有利",
+      "origin": "Latin"
+    }
+  ],
   "raw": [],
   "sharp": [],
   "smooth": [],
@@ -14775,5 +14865,77 @@
       "meaning_zh": "打擊/防禦",
       "origin": "Latin"
     }
-  ]
+  ],
+  "near": [],
+  "with": [],
+  "for": [],
+  "from": [],
+  "about": [],
+  "and": [],
+  "but": [],
+  "because": [],
+  "very": [
+    {
+      "root": "ver",
+      "meaning_zh": "真實",
+      "origin": "Latin"
+    }
+  ],
+  "also": [],
+  "together": [],
+  "january": [],
+  "february": [],
+  "march": [],
+  "april": [],
+  "august": [
+    {
+      "root": "aug",
+      "meaning_zh": "增加/生長",
+      "origin": "Latin"
+    }
+  ],
+  "september": [
+    {
+      "root": "sept",
+      "meaning_zh": "七",
+      "origin": "Latin"
+    }
+  ],
+  "october": [
+    {
+      "root": "oct",
+      "meaning_zh": "八",
+      "origin": "Latin"
+    }
+  ],
+  "november": [
+    {
+      "root": "nov",
+      "meaning_zh": "九",
+      "origin": "Latin"
+    }
+  ],
+  "december": [
+    {
+      "root": "dec",
+      "meaning_zh": "十",
+      "origin": "Latin"
+    }
+  ],
+  "midnight": [],
+  "noon": [
+    {
+      "root": "non",
+      "meaning_zh": "九",
+      "origin": "Latin"
+    }
+  ],
+  "third": [],
+  "fourth": [],
+  "fifth": [],
+  "sixth": [],
+  "seventh": [],
+  "eighth": [],
+  "ninth": [],
+  "tenth": []
 }
