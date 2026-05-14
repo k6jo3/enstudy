@@ -2468,74 +2468,7 @@
       "origin": "Latin"
     }
   ],
-  "word": [
-    {
-      "word": "propeller",
-      "root": "pel",
-      "meaning_zh": "驅動/推",
-      "origin": "Latin"
-    },
-    {
-      "word": "tailor",
-      "root": "tail",
-      "meaning_zh": "切/剪",
-      "origin": "Latin"
-    },
-    {
-      "word": "adapter",
-      "root": "apt",
-      "meaning_zh": "適應/適合",
-      "origin": "Latin"
-    },
-    {
-      "word": "expiry",
-      "root": "spir",
-      "meaning_zh": "呼吸",
-      "origin": "Latin"
-    },
-    {
-      "word": "polyester",
-      "root": "poly",
-      "meaning_zh": "許多",
-      "origin": "Greek"
-    },
-    {
-      "word": "eruption",
-      "root": "rupt",
-      "meaning_zh": "破裂/斷裂",
-      "origin": "Latin"
-    },
-    {
-      "word": "reservoir",
-      "root": "serv",
-      "meaning_zh": "保存/服務",
-      "origin": "Latin"
-    },
-    {
-      "word": "adolescent",
-      "root": "olesc",
-      "meaning_zh": "生長",
-      "origin": "Latin"
-    },
-    {
-      "word": "punctuality",
-      "root": "punct",
-      "meaning_zh": "點/刺",
-      "origin": "Latin"
-    },
-    {
-      "word": "prolong",
-      "root": "long",
-      "meaning_zh": "長",
-      "origin": "Latin"
-    },
-    {
-      "word": "precede",
-      "root": "cede",
-      "meaning_zh": "走/行走",
-      "origin": "Latin"
-    }
-  ],
+  "word": [],
   "galvanize": [],
   "garrison": [],
   "genesis": [
@@ -19592,34 +19525,106 @@
   "futon": [],
   "curbside": [],
   "sleeper": [],
-  "propeller": [],
+  "propeller": [
+    {
+      "root": "pel",
+      "meaning_zh": "推",
+      "origin": "Latin"
+    }
+  ],
   "canteen": [],
   "hammock": [],
   "hem": [],
   "stitch": [],
-  "tailor": [],
+  "tailor": [
+    {
+      "root": "tail",
+      "meaning_zh": "切割",
+      "origin": "Latin"
+    }
+  ],
   "refurbished": [],
-  "adapter": [],
-  "expiry": [],
+  "adapter": [
+    {
+      "root": "apt",
+      "meaning_zh": "適合",
+      "origin": "Latin"
+    }
+  ],
+  "expiry": [
+    {
+      "root": "spir",
+      "meaning_zh": "呼吸",
+      "origin": "Latin"
+    }
+  ],
   "flagship": [],
   "showroom": [],
   "overstock": [],
-  "scalper": [],
+  "scalper": [
+    {
+      "root": "scalp",
+      "meaning_zh": "切割",
+      "origin": "Latin"
+    }
+  ],
   "resale": [],
   "trinket": [],
   "denim": [],
-  "polyester": [],
+  "polyester": [
+    {
+      "root": "poly",
+      "meaning_zh": "多",
+      "origin": "Greek"
+    }
+  ],
   "velvet": [],
   "tuxedo": [],
   "lace": [],
   "hailstorm": [],
-  "eruption": [],
+  "eruption": [
+    {
+      "root": "rupt",
+      "meaning_zh": "斷裂",
+      "origin": "Latin"
+    }
+  ],
   "lush": [],
-  "reservoir": [],
-  "adolescent": [],
-  "punctuality": [],
-  "prolong": [],
-  "precede": [],
+  "reservoir": [
+    {
+      "root": "serv",
+      "meaning_zh": "保持",
+      "origin": "Latin"
+    }
+  ],
+  "adolescent": [
+    {
+      "root": "al",
+      "meaning_zh": "滋養/生長",
+      "origin": "Latin"
+    }
+  ],
+  "punctuality": [
+    {
+      "root": "punct",
+      "meaning_zh": "點/刺",
+      "origin": "Latin"
+    }
+  ],
+  "prolong": [
+    {
+      "root": "long",
+      "meaning_zh": "長",
+      "origin": "Latin"
+    }
+  ],
+  "precede": [
+    {
+      "root": "ced",
+      "meaning_zh": "行進/讓步",
+      "origin": "Latin"
+    }
+  ],
   "insure": [
     {
       "root": "cur",
@@ -19975,10 +19980,22 @@
     }
   ],
   "pelvis": [],
-  "blanch": [],
+  "blanch": [
+    {
+      "root": "blanc",
+      "meaning_zh": "白色",
+      "origin": "Latin"
+    }
+  ],
   "caramelize": [],
   "baste": [],
-  "colander": [],
+  "colander": [
+    {
+      "root": "col",
+      "meaning_zh": "過濾",
+      "origin": "Latin"
+    }
+  ],
   "skewer": [],
   "marinade": [
     {
@@ -20235,7 +20252,13 @@
     }
   ],
   "eaves": [],
-  "gutter": [],
+  "gutter": [
+    {
+      "root": "gutt",
+      "meaning_zh": "滴",
+      "origin": "Latin"
+    }
+  ],
   "pergola": [
     {
       "root": "reg",
@@ -20260,7 +20283,13 @@
       "origin": "Latin"
     }
   ],
-  "banister": [],
+  "banister": [
+    {
+      "root": "balust",
+      "meaning_zh": "石榴花",
+      "origin": "Greek"
+    }
+  ],
   "drainpipe": [],
   "caulk": [
     {
@@ -20272,11 +20301,23 @@
   "deadbolt": [],
   "spackle": [],
   "trowel": [],
-  "spigot": [],
+  "spigot": [
+    {
+      "root": "spic",
+      "meaning_zh": "穗/尖端",
+      "origin": "Latin"
+    }
+  ],
   "squeegee": [],
   "wicker": [],
   "gazebo": [],
-  "parquet": [],
+  "parquet": [
+    {
+      "root": "parc",
+      "meaning_zh": "圍欄",
+      "origin": "Latin"
+    }
+  ],
   "molding": [
     {
       "root": "mod",
@@ -20365,10 +20406,28 @@
       "origin": "Latin"
     }
   ],
-  "plumage": [],
+  "plumage": [
+    {
+      "root": "plum",
+      "meaning_zh": "羽毛",
+      "origin": "Latin"
+    }
+  ],
   "burrow": [],
-  "pollination": [],
-  "arable": [],
+  "pollination": [
+    {
+      "root": "poll",
+      "meaning_zh": "粉末",
+      "origin": "Latin"
+    }
+  ],
+  "arable": [
+    {
+      "root": "ar",
+      "meaning_zh": "耕作",
+      "origin": "Latin"
+    }
+  ],
   "amphibian": [
     {
       "root": "amphi",
@@ -20381,7 +20440,13 @@
       "origin": "Greek"
     }
   ],
-  "talon": [],
+  "talon": [
+    {
+      "root": "tal",
+      "meaning_zh": "腳踝",
+      "origin": "Latin"
+    }
+  ],
   "antler": [
     {
       "root": "ante",
@@ -21310,6 +21375,195 @@
     {
       "root": "du",
       "meaning_zh": "欠債/負擔",
+      "origin": "Latin"
+    }
+  ],
+  "maintain": [
+    {
+      "root": "man",
+      "meaning_zh": "手",
+      "origin": "Latin"
+    },
+    {
+      "root": "tain",
+      "meaning_zh": "拿/握",
+      "origin": "Latin"
+    }
+  ],
+  "measure": [
+    {
+      "root": "mens",
+      "meaning_zh": "測量",
+      "origin": "Latin"
+    }
+  ],
+  "mention": [
+    {
+      "root": "ment",
+      "meaning_zh": "心智",
+      "origin": "Latin"
+    }
+  ],
+  "observe": [
+    {
+      "root": "serv",
+      "meaning_zh": "保持/觀察",
+      "origin": "Latin"
+    }
+  ],
+  "obtain": [
+    {
+      "root": "tain",
+      "meaning_zh": "拿/握",
+      "origin": "Latin"
+    }
+  ],
+  "occur": [
+    {
+      "root": "curr",
+      "meaning_zh": "跑",
+      "origin": "Latin"
+    }
+  ],
+  "ability": [
+    {
+      "root": "hab",
+      "meaning_zh": "持有/能力",
+      "origin": "Latin"
+    }
+  ],
+  "achievement": [
+    {
+      "root": "cap",
+      "meaning_zh": "頭",
+      "origin": "Latin"
+    }
+  ],
+  "advantage": [
+    {
+      "root": "ante",
+      "meaning_zh": "在...之前",
+      "origin": "Latin"
+    }
+  ],
+  "anxiety": [
+    {
+      "root": "ang",
+      "meaning_zh": "勒緊/窒息",
+      "origin": "Latin"
+    }
+  ],
+  "appearance": [
+    {
+      "root": "par",
+      "meaning_zh": "看見/出現",
+      "origin": "Latin"
+    }
+  ],
+  "approval": [
+    {
+      "root": "prob",
+      "meaning_zh": "測試/證明",
+      "origin": "Latin"
+    }
+  ],
+  "argument": [],
+  "arrangement": [],
+  "aspect": [
+    {
+      "root": "spec",
+      "meaning_zh": "看",
+      "origin": "Latin"
+    }
+  ],
+  "authority": [
+    {
+      "root": "aug",
+      "meaning_zh": "增加/成長",
+      "origin": "Latin"
+    }
+  ],
+  "barrier": [
+    {
+      "root": "bar",
+      "meaning_zh": "棒/障礙",
+      "origin": "Latin"
+    }
+  ],
+  "basis": [],
+  "benefit": [
+    {
+      "root": "bene",
+      "meaning_zh": "好",
+      "origin": "Latin"
+    },
+    {
+      "root": "fac",
+      "meaning_zh": "做",
+      "origin": "Latin"
+    }
+  ],
+  "career": [],
+  "ceremony": [],
+  "characteristic": [],
+  "circumstance": [
+    {
+      "root": "circum",
+      "meaning_zh": "周圍",
+      "origin": "Latin"
+    },
+    {
+      "root": "sta",
+      "meaning_zh": "站立",
+      "origin": "Latin"
+    }
+  ],
+  "collection": [
+    {
+      "root": "leg",
+      "meaning_zh": "收集、選擇",
+      "origin": "Latin"
+    }
+  ],
+  "competition": [
+    {
+      "root": "pet",
+      "meaning_zh": "追求、尋求",
+      "origin": "Latin"
+    }
+  ],
+  "concept": [
+    {
+      "root": "cap",
+      "meaning_zh": "拿、取",
+      "origin": "Latin"
+    }
+  ],
+  "conclusion": [
+    {
+      "root": "claud",
+      "meaning_zh": "關閉",
+      "origin": "Latin"
+    }
+  ],
+  "condition": [
+    {
+      "root": "dic",
+      "meaning_zh": "說",
+      "origin": "Latin"
+    }
+  ],
+  "conflict": [
+    {
+      "root": "flig",
+      "meaning_zh": "打擊",
+      "origin": "Latin"
+    }
+  ],
+  "confusion": [
+    {
+      "root": "fus",
+      "meaning_zh": "流、傾倒",
       "origin": "Latin"
     }
   ]
