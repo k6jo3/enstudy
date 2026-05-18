@@ -1323,7 +1323,7 @@ module.exports = [
   {
     "word": "exact",
     "phonetic": "/ɪɡˈzækt/",
-    "meaning": "精確；確切；強求；索取",
+    "meaning": "精確的；確切的；強求；索取",
     "pos": "adj",
     "difficulty": 1,
     "example": "I don't remember the exact date.",

@@ -27974,7 +27974,7 @@ module.exports = [
   {
     "word": "exactly",
     "phonetic": "",
-    "meaning": "確切；精確；正是；沒錯",
+    "meaning": "確切地；精確地；正是；沒錯",
     "pos": "phrase",
     "difficulty": 2,
     "example": "\"So basically they lied to us.\" \"Exactly! That's what I've been saying.\"",
@@ -42185,7 +42185,7 @@ module.exports = [
   {
     "word": "exact",
     "phonetic": "/ɪɡˈzækt/",
-    "meaning": "精確；確切；強求；索取",
+    "meaning": "精確的；確切的；強求；索取",
     "pos": "adj",
     "difficulty": 1,
     "example": "I don't remember the exact date.",

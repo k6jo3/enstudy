@@ -588,7 +588,7 @@ module.exports = [
   {
     "word": "exactly",
     "phonetic": "",
-    "meaning": "確切；精確；正是；沒錯",
+    "meaning": "確切地；精確地；正是；沒錯",
     "pos": "phrase",
     "difficulty": 2,
     "example": "\"So basically they lied to us.\" \"Exactly! That's what I've been saying.\"",
