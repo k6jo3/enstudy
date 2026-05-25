@@ -1585,7 +1585,7 @@ module.exports = [
   },
   {
     "phrase": "go live",
-    "meaning": "開直播",
+    "meaning": "開始直播；正式上線",
     "example": "She goes live on Instagram every night to chat with her fans.",
     "exampleZh": "她每天晚上都在Instagram開直播和粉絲聊天。",
     "difficulty": 2,

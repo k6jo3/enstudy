@@ -537,7 +537,7 @@ module.exports = [
   },
   {
     "phrase": "live stream",
-    "meaning": "直播",
+    "meaning": "直播串流；即時播送",
     "example": "The event was available to watch via live stream.",
     "exampleZh": "該活動可以透過直播觀看。",
     "difficulty": 3,
