@@ -130,7 +130,7 @@ function buildChoices(item, distractors) {
     const similarMeaning = areMeaningsSimilar(item.meaning, d.meaning);
     const normalizedText = choiceText.toLowerCase();
     if (seen.has(normalizedText)) continue;
-    if (similarMeaning && normalizedText === correct.toLowerCase()) continue;
+    if (similarMeaning) continue;
     seen.add(normalizedText);
     wrongs.push({ text: choiceText, correct: false });
     if (wrongs.length === 3) break;
@@ -156,6 +156,19 @@ async function fetchDistractors(item) {
   let d = await phraseService.getLearnedRandomPhrases(desiredCount, excludeIds, diff);
   if (d.length < desiredCount) d = await phraseService.getRandomPhrases(desiredCount, excludeIds);
   return d;
+}
+
+// Remove items whose meaning is too similar to one already kept (within same item_type).
+// Items earlier in the array (higher priority) are preferred.
+function deduplicateBySimilarMeaning(items) {
+  const kept = [];
+  for (const item of items) {
+    const clash = kept.some(
+      (k) => areMeaningsSimilar(k.meaning, item.meaning)
+    );
+    if (!clash) kept.push(item);
+  }
+  return kept;
 }
 
 // Fisher-Yates shuffle
@@ -358,7 +371,7 @@ async function selectItemsByTier(quizCount, today, roundNumber = 1, avgReview = 
     }
   }
 
-  return shuffle(result.slice(0, quizCount));
+  return shuffle(deduplicateBySimilarMeaning(result).slice(0, quizCount));
 }
 
 // ---------- Routes ----------
