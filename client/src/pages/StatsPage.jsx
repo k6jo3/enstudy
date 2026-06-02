@@ -152,6 +152,9 @@ function LearnedWordsList({ words, phrases, filter, setFilter }) {
         ...phrases.map(p => ({ ...p, display: p.phrase }))
       ];
 
+  const totalQuizzes = items.reduce((sum, item) => sum + (item.review_count || 0), 0);
+  const quizzedCount = items.filter(item => (item.review_count || 0) > 0).length;
+
   return (
     <div className="learned-list">
       <div className="learned-filters">
@@ -159,6 +162,9 @@ function LearnedWordsList({ words, phrases, filter, setFilter }) {
         <button className={filter === 'word' ? 'active' : ''} onClick={() => setFilter('word')}>單字 ({words.length})</button>
         <button className={filter === 'phrase' ? 'active' : ''} onClick={() => setFilter('phrase')}>片語 ({phrases.length})</button>
       </div>
+      <p className="learned-quiz-summary">
+        累計測驗 {totalQuizzes} 次 | 已測驗 {quizzedCount} / {items.length} 個
+      </p>
       <div className="learned-table">
         {items.map((item) => {
           const errorRate = item.review_count >= 4
@@ -176,6 +182,7 @@ function LearnedWordsList({ words, phrases, filter, setFilter }) {
               <span className={`learned-mastery ${getScoreClass(item.score, item.paused)}`}>
                 {item.paused ? `暫停 ${item.score}分` : item.score < 0 ? '未計分' : `${item.score} 分`}
               </span>
+              <span className="learned-quiz-count" title="測驗次數">{item.review_count} 次</span>
               <span className={`learned-error-rate ${errClass}`}>
                 {errorRate === null ? '-' : `${errorRate.toFixed(1)}%`}
               </span>
