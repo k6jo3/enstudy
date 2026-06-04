@@ -44783,7 +44783,7 @@ module.exports = [
   {
     "word": "uniquity",
     "phonetic": "/juˈnɪkwəti/",
-    "meaning": "邪惡；不公；罪大惡極",
+    "meaning": "獨特性；唯一性",
     "pos": "n",
     "difficulty": 2,
     "example": "The uniquity of the design made it stand out.",
