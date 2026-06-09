@@ -134,21 +134,21 @@ async function updateMastery(itemType, itemId, isCorrect, date, questionMode) {
 
 // Called when daily learning is completed. Paused items decay each day so mastery eventually
 // falls back below the pause threshold. Decay is tiered by practice volume + lifetime error rate:
-//   - ≥200 attempts & err ≥15% → -0.7  (volatile despite heavy practice)
-//   - ≥150 attempts & err ≤ 5% → -0.4  (well-mastered, decay slower)
-//   - ≥100 attempts & err ≥15% → -0.6
+//   - ≥100 attempts & err ≥15% → -0.7  (volatile despite heavy practice)
+//   - ≥75 attempts & err ≤ 5%  → -0.4  (well-mastered, decay slower)
+//   - ≥50 attempts & err ≥15%  → -0.6
 //   - otherwise                 → -0.5
 // If score drops below 6, unpause and mark just_unpaused.
 async function decayPausedItems() {
   await run(`
     UPDATE word_mastery SET score = ROUND(score - CASE
-      WHEN review_count >= 200
+      WHEN review_count >= 100
            AND review_count > 0
            AND (COALESCE(total_wrong, 0) * 1.0 / review_count) >= 0.15 THEN 0.7
-      WHEN review_count >= 150
+      WHEN review_count >= 75
            AND review_count > 0
            AND (COALESCE(total_wrong, 0) * 1.0 / review_count) <= 0.05 THEN 0.4
-      WHEN review_count >= 100
+      WHEN review_count >= 50
            AND review_count > 0
            AND (COALESCE(total_wrong, 0) * 1.0 / review_count) >= 0.15 THEN 0.6
       ELSE 0.5
@@ -209,7 +209,7 @@ async function getDueReviews(date, limit = 40, roundNumber = 1) {
       FROM errors
       GROUP BY item_type, item_id
     ) err ON err.item_type = wm.item_type AND err.item_id = wm.item_id
-    WHERE wm.next_review_date <= ?
+    WHERE wm.next_review_date <= ? AND COALESCE(wm.paused, 0) = 0
     LIMIT ?
   `, [date, date, candidateLimit]);
 
@@ -240,7 +240,7 @@ async function getDueReviews(date, limit = 40, roundNumber = 1) {
 
 async function getDueCount(date) {
   return await queryScalar(
-    'SELECT COUNT(*) FROM word_mastery WHERE next_review_date <= ?',
+    'SELECT COUNT(*) FROM word_mastery WHERE next_review_date <= ? AND COALESCE(paused, 0) = 0',
     [date]
   ) || 0;
 }

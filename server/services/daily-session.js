@@ -39,8 +39,8 @@ async function getDailyPace(sessionDate) {
       words = 10;
       phrases = 5;
     } else {
-      words = 15;
-      phrases = 5;
+      words = 20;
+      phrases = 6;
     }
   }
 
